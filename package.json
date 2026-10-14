@@ -1,0 +1,23 @@
+{
+  "name": "endemic-birds",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Endemic Birds Tanzania – specialist birding safaris site",
+  "scripts": {
+    "build": "node scripts/build-pages.mjs",
+    "fetch:southern-images": "node scripts/fetch-southern-images.mjs",
+    "fetch:circuit-images": "node scripts/fetch-southern-images.mjs && node scripts/fetch-circuit-images.mjs",
+    "extract:live": "node scripts/extract-live-content.mjs",
+    "merge:live": "node scripts/extract-live-content.mjs && node scripts/merge-live-into-content.mjs",
+    "import:itineraries": "node scripts/import-itineraries-from-live.mjs",
+    "import:wildlife": "node scripts/import-wildlife-from-ttb.mjs && node scripts/apply-wildlife-packages.mjs",
+    "verify:wildlife": "node scripts/verify-wildlife-assets.mjs",
+    "normalize:dashes": "node scripts/normalize-dashes.mjs",
+    "dev": "npm run build && serve . -l 3000",
+    "start": "npm run build && serve . -l 3000",
+    "preview": "npm run build && serve . -l 4173"
+  },
+  "devDependencies": {
+    "serve": "^14.2.4"
+  }
+}

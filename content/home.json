@@ -1,0 +1,248 @@
+{
+  "heroSlides": [
+    {
+      "_comment": "HERO_PRIMARY – keep slideshow-main.jpg first for easy reverse",
+      "primary": true,
+      "image": "endemics/slideshow-main.jpg",
+      "alt": "Malachite kingfisher, Tanzania birding",
+      "objectPosition": "72% 42%",
+      "durationMs": 14000,
+      "eyebrow": "Specialist birding safaris - Tanzania",
+      "titleLine1": "Discover Tanzania",
+      "titleLine2": "through its birds",
+      "lead": "Forests, miombo and savanna – specialist-led birding across Tanzania.",
+      "ctaText": "Explore birding safaris",
+      "ctaHref": "birding/index.html"
+    },
+    {
+      "image": "endemics/perfect-moment-bird-watching-1536x872.jpg",
+      "alt": "Bird watching moment in Tanzania",
+      "objectPosition": "55% 40%",
+      "durationMs": 12000,
+      "eyebrow": "Specialist birding safaris - Tanzania",
+      "titleLine1": "Discover Tanzania",
+      "titleLine2": "through its birds",
+      "lead": "Unhurried field time with guides who know calls, forests and open country.",
+      "ctaText": "Explore birding safaris",
+      "ctaHref": "birding/index.html"
+    },
+    {
+      "image": "endemics/lilac-breasted-roller-birding-safari-768x602.jpg",
+      "alt": "Lilac-breasted roller on safari",
+      "objectPosition": "60% 35%",
+      "durationMs": 12000,
+      "eyebrow": "Specialist birding safaris - Tanzania",
+      "titleLine1": "Discover Tanzania",
+      "titleLine2": "through its birds",
+      "lead": "Savanna colour and classic East African birding on tailor-made routes.",
+      "ctaText": "Explore birding safaris",
+      "ctaHref": "birding/index.html"
+    },
+    {
+      "image": "endemics/hero-MG_7124-scaled.jpg",
+      "alt": "Birding safari in Tanzania",
+      "objectPosition": "65% 45%",
+      "durationMs": 12000,
+      "eyebrow": "Specialist birding safaris - Tanzania",
+      "titleLine1": "Discover Tanzania",
+      "titleLine2": "through its birds",
+      "lead": "Forests, miombo and savanna – specialist-led birding across Tanzania.",
+      "ctaText": "Explore birding safaris",
+      "ctaHref": "birding/index.html"
+    }
+  ],
+  "stickyQuote": {
+    "image": "endemics/sticky section.jpg",
+    "quote": "When the savanna opens, every window seat becomes a blind.",
+    "cite": "Wildlife safari · Tanzania"
+  },
+  "birdingDestinations": [
+    { "slug": "serengeti-national-park", "name": "Serengeti National Park", "image": "endemics/serengeti-birds-tanzania-joy-tours.webp" },
+    { "slug": "arusha-national-park", "name": "Arusha National Park", "image": "endemics/arusha park.jpg" },
+    { "slug": "ngorongoro-crater", "name": "Ngorongoro Conservation Area", "image": "endemics/flamingos-lake-arusha-1536x872.jpg" },
+    { "slug": "mahale-mountains-national-park", "name": "Mahale Mountains National Park", "image": "endemics/western-destination.jpg" },
+    { "slug": "gombe-stream-national-park", "name": "Gombe Stream National Park", "image": "endemics/western-destination.jpg" },
+    { "slug": "katavi-national-park", "name": "Katavi National Park", "image": "endemics/southern-destination.jpg" },
+    { "slug": "nyerere-national-park", "name": "Nyerere National Park", "image": "endemics/southern-destination.jpg" },
+    { "slug": "uluti-mountain", "name": "Uluguru Mountains", "image": "endemics/european-bee-eater-bee-ea.jpeg" },
+    { "slug": "mkomazi-national-park", "name": "Mkomazi National Park", "image": "endemics/arusha.jpg" }
+  ],
+  "wildlifeDestinations": [
+    { "slug": "serengeti-national-park", "name": "Serengeti", "image": "endemics/leons.jpg" },
+    { "slug": "ruaha-national-park", "name": "Ruaha", "image": "endemics/southern-destination.jpg" },
+    { "slug": "tarangire-national-park", "name": "Tarangire", "image": "endemics/Bird-Watching-in-mikumi-national-park.jpg" },
+    { "slug": "ngorongoro-crater", "name": "Ngorongoro", "image": "endemics/flamingos-lake-arusha-1536x872.jpg" },
+    { "slug": "nyerere-national-park", "name": "Nyerere", "image": "endemics/southern-destination.jpg" },
+    { "slug": "katavi-national-park", "name": "Katavi", "image": "endemics/kori-bustard-serengeti-savannah-1536x872.jpg" }
+  ],
+  "wildlifeActivities": [
+    { "slug": "great-migration", "title": "Great Migration", "href": "wildlife/index.html#great-migration" },
+    { "slug": "chimp-tracking", "title": "Chimpanzee Tracking", "href": "wildlife/index.html#chimp-tracking" },
+    { "slug": "day-walking", "title": "Day Walking Safaris", "href": "wildlife/index.html#walking" },
+    { "slug": "trekking", "title": "Trekking & Escarpments", "href": "wildlife/index.html#trekking" },
+    { "slug": "photographic", "title": "Photographic Safaris", "href": "wildlife/index.html#photographic" },
+    { "slug": "luxury-flying", "title": "Luxury Flying Safaris", "href": "packages/10-days-luxury-flying-safari/" }
+  ],
+  "partners": [
+    { "name": "TATO", "logo": "assets/images/partners/tato.svg" },
+    { "name": "TANAPA", "logo": "assets/images/partners/tanapa.svg" },
+    { "name": "TTB", "logo": "assets/images/partners/ttb.svg" }
+  ],
+  "whySplit": {
+    "eyebrowScript": "Why choose us",
+    "titleScript": "Let your list",
+    "titleBold": "take flight",
+    "lead": "We are a dedicated safari company based in Tanzania, East Africa, and we are leading top birding safaris, wildlife safaris and nature tours in Tanzania, Uganda and Rwanda. Our birding tours have become a top choice for many first-time visitors and even returning clients to our birding destinations in the region. We also offer a wide variety of tailor-made tours, where our guests help to select the destinations and species they would love to see on their safari in Tanzania and East Africa.",
+    "ctaPrimary": { "label": "Plan your trip", "href": "plan-your-trip/index.html" },
+    "ctaSecondary": { "label": "Explore birding", "href": "birding/index.html" },
+    "collage": [
+      {
+        "src": "endemics/perfect-moment-bird-watching-1536x872.jpg",
+        "alt": "Guests bird watching in Tanzania",
+        "slot": "top",
+        "objectPosition": "50% 40%"
+      },
+      {
+        "src": "endemics/lilac-breasted-roller-birding-safari-768x602.jpg",
+        "alt": "Lilac-breasted roller",
+        "slot": "left",
+        "objectPosition": "62% 45%"
+      },
+      {
+        "src": "endemics/Tanzania-Bird-Watching-Safaris-1536x862.jpg",
+        "alt": "Safari guests with binoculars",
+        "slot": "right",
+        "objectPosition": "48% 50%"
+      },
+      {
+        "src": "endemics/leons.jpg",
+        "alt": "Lions on safari, Tanzania",
+        "slot": "bottom",
+        "objectPosition": "50% 30%"
+      }
+    ]
+  },
+  "whyCards": [
+    {
+      "icon": "binoculars",
+      "title": "Birding-first routes",
+      "body": "Routes built for habitats and target species."
+    },
+    {
+      "icon": "users",
+      "title": "Max six guests",
+      "body": "Window seats for all; second guide when needed."
+    },
+    {
+      "icon": "map",
+      "title": "Field-tested circuits",
+      "body": "We walk every route before we sell it."
+    },
+    {
+      "icon": "leaf",
+      "title": "Indigenous guides",
+      "body": "East African leaders who know calls and culture."
+    }
+  ],
+  "reviews": [
+    {
+      "name": "Elena M.",
+      "country": "Germany",
+      "countryCode": "DE",
+      "flag": "🇩🇪",
+      "source": "TripAdvisor",
+      "tour": "Southern endemic birding",
+      "date": "Mar 2025",
+      "rating": 5,
+      "text": "Our birding guide knew every call on the Uluguru trails – unhurried, professional, and worth every mile from Dar."
+    },
+    {
+      "name": "James & Priya",
+      "country": "United Kingdom",
+      "countryCode": "GB",
+      "flag": "🇬🇧",
+      "source": "Google",
+      "tour": "Northern birding circuit",
+      "date": "Aug 2024",
+      "rating": 5,
+      "text": "Serengeti mornings for raptors, crater afternoon for forest edge species – perfectly paced for photographers."
+    },
+    {
+      "name": "Henrik L.",
+      "country": "Sweden",
+      "countryCode": "SE",
+      "flag": "🇸🇪",
+      "source": "TripAdvisor",
+      "tour": "Western wilderness birding",
+      "date": "Jun 2025",
+      "rating": 5,
+      "text": "Mahale and Katavi felt truly remote. Small group, two guides when we needed them – exactly as promised on the website."
+    },
+    {
+      "name": "Sarah K.",
+      "country": "United States",
+      "countryCode": "US",
+      "flag": "🇺🇸",
+      "source": "Booking.com",
+      "tour": "Tarangire & Serengeti combo",
+      "date": "Jan 2025",
+      "rating": 5,
+      "text": "Endemic Birds adapted our route when rains shifted – still hit Ashy Starling and lovebirds in Tarangire."
+    },
+    {
+      "name": "Marie-Claire D.",
+      "country": "France",
+      "countryCode": "FR",
+      "flag": "🇫🇷",
+      "source": "TripAdvisor",
+      "tour": "Eastern Arc endemics",
+      "date": "Oct 2024",
+      "rating": 5,
+      "text": "Udzungwa trails were tough but rewarding – the team paced us perfectly and knew every forest call."
+    },
+    {
+      "name": "Tom & Anja",
+      "country": "Netherlands",
+      "countryCode": "NL",
+      "flag": "🇳🇱",
+      "source": "Facebook",
+      "tour": "Combined birding & wildlife",
+      "date": "Jul 2025",
+      "rating": 5,
+      "text": "Crater rim one morning, Serengeti plains the next – seamless logistics and superb guiding."
+    },
+    {
+      "name": "David R.",
+      "country": "Australia",
+      "countryCode": "AU",
+      "flag": "🇦🇺",
+      "source": "TripAdvisor",
+      "tour": "22-day endemic route",
+      "date": "Feb 2025",
+      "rating": 5,
+      "text": "List-focused without feeling rushed – miombo, coast and mountains all delivered quality field time."
+    },
+    {
+      "name": "Yuki T.",
+      "country": "Japan",
+      "countryCode": "JP",
+      "flag": "🇯🇵",
+      "source": "Booking.com",
+      "tour": "Northern birding",
+      "date": "Nov 2024",
+      "rating": 5,
+      "text": "Photography-friendly stops and patient guides – exactly the specialist birding safari we wanted."
+    },
+    {
+      "name": "Ingrid H.",
+      "country": "Norway",
+      "countryCode": "NO",
+      "flag": "🇳🇴",
+      "source": "TripAdvisor",
+      "tour": "Ruaha & southern wildlife",
+      "date": "Sep 2025",
+      "rating": 5,
+      "text": "Remote, quiet camps and sharp-eyed guides – wildlife and birds without the northern crowds."
+    }
+  ]
+}

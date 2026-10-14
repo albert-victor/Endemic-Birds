@@ -1,0 +1,362 @@
+/* Sitewide: warm paper, no drop shadows, depth via border + fill hover */
+
+:root {
+  --color-paper: #faf9f7;
+  --color-bg: #faf9f7;
+  --color-bg-muted: #faf9f7;
+  --shadow-soft: none;
+  --shadow-nav: none;
+  --depth-line: 1px solid rgba(107, 95, 82, 0.18);
+}
+
+body.has-grain::before {
+  display: none !important;
+}
+
+body,
+#main,
+.home-section,
+.section,
+.section--intro,
+.section--destinations,
+.section--paper-band {
+  background-color: var(--color-paper) !important;
+}
+
+.section--cta-band {
+  background-color: var(--color-forest-deep) !important;
+  color: #fff !important;
+}
+
+.section--cta-band .cta-band h2 {
+  color: #fff !important;
+}
+
+/* No drop shadows – depth from borders only (nav pill motion lives in styles.css) */
+.nav-dropdown,
+.nav-dropdown--hub,
+.nav-mega,
+.filters-bar,
+.why-bullet,
+.why-gem,
+.pkg-corp-card:hover,
+.why-bullet:hover,
+.review-card:hover {
+  transform: none !important;
+}
+
+.why-diamond-shape,
+.why-diamond:hover .why-diamond-shape {
+  transform: rotate(45deg) !important;
+}
+
+.why-diamond:hover .why-diamond-shape {
+  transform: rotate(45deg) scale(1.04) !important;
+}
+
+.why-cta-primary,
+.why-cta-primary:hover {
+  transform: none !important;
+}
+
+.pkg-corp-card:hover {
+  border-color: var(--color-forest) !important;
+}
+
+.pkg-corp-card,
+.reviews-shell-inner,
+.reviews-nav,
+.dest-script-card,
+.pkg-list-side,
+.card,
+.site-header.nav-is-open .nav-panel,
+.inquiry-panel,
+.fab-whatsapp,
+.btn-solid,
+.btn-nav-cta,
+.partner-logo img {
+  box-shadow: none !important;
+}
+
+/* Primary buttons: outline → solid fill on hover (no shadow) */
+.nav-book:not(.nav-book--safari) {
+  background: transparent !important;
+  border: 1.5px solid var(--color-gold) !important;
+  color: var(--color-forest) !important;
+  filter: none !important;
+}
+
+.nav-book:not(.nav-book--safari):hover {
+  background: #c9922a !important;
+  border-color: #c9922a !important;
+  color: #1a1408 !important;
+}
+
+.nav-book--safari {
+  background: var(--color-forest) !important;
+  border: 2px solid var(--color-forest) !important;
+  color: #fff !important;
+  transform: none !important;
+}
+
+.nav-book--safari:hover {
+  background: transparent !important;
+  color: var(--color-forest) !important;
+  border-color: var(--color-forest) !important;
+}
+
+.nav-menu-btn,
+.site-header.is-compact .nav-pill,
+.site-header.nav-is-open .nav-menu-btn {
+  transform: unset;
+}
+
+.site-header.nav-is-ready.nav-is-visible .nav-pill {
+  transform: translateY(0) scale(1);
+}
+
+.site-header.is-compact.nav-is-visible .nav-pill {
+  transform: scale(0.985);
+}
+
+.site-header.nav-is-open .nav-menu-btn {
+  transform: rotate(-90deg) !important;
+}
+
+.btn-solid,
+.btn-primary {
+  background: transparent !important;
+  border: 1.5px solid var(--color-gold) !important;
+  color: var(--color-forest) !important;
+}
+
+.btn-solid::before {
+  display: none !important;
+}
+
+.btn-solid:hover,
+.btn-primary:hover,
+.btn-interactive.btn-solid:hover {
+  background: var(--color-forest) !important;
+  border-color: var(--color-forest) !important;
+  color: #fff !important;
+  transform: none !important;
+}
+
+.btn-solid.why-cta-primary {
+  background: #c9922a !important;
+  border-color: #c9922a !important;
+  color: #1a1408 !important;
+}
+
+.btn-solid.why-cta-primary:hover {
+  background: #3a342e !important;
+  border-color: #3a342e !important;
+  color: #fff !important;
+}
+
+.page-hero .btn-solid,
+.section--cta-band .btn-solid,
+.hero-actions .btn-solid {
+  background: linear-gradient(135deg, #e4b84a 0%, #c9922a 100%) !important;
+  border-color: #c9922a !important;
+  color: #1a1408 !important;
+}
+
+.page-hero .btn-solid:hover,
+.section--cta-band .btn-solid:hover,
+.hero-actions .btn-solid:hover {
+  background: #3a342e !important;
+  border-color: #3a342e !important;
+  color: #fff !important;
+}
+
+.page-hero .btn-outline {
+  background: rgba(255, 255, 255, 0.12) !important;
+  border-color: rgba(255, 255, 255, 0.72) !important;
+  color: #fff !important;
+}
+
+.page-hero .btn-outline:hover {
+  background: #fff !important;
+  border-color: #fff !important;
+  color: var(--color-forest) !important;
+}
+
+.btn-outline,
+.filters-bar .btn-outline {
+  background: transparent !important;
+  border: 1.5px solid rgba(58, 52, 46, 0.28) !important;
+  color: var(--color-forest) !important;
+}
+
+.btn-outline:hover {
+  background: var(--color-forest) !important;
+  border-color: var(--color-forest) !important;
+  color: #fff !important;
+}
+
+.btn-nav-cta {
+  background: transparent !important;
+  border: 1px solid var(--color-border) !important;
+}
+
+.btn-nav-cta:hover {
+  background: var(--color-forest) !important;
+  color: #fff !important;
+  border-color: var(--color-forest) !important;
+  transform: none !important;
+}
+
+.fab-whatsapp:not(.fab-whatsapp--enriched):hover {
+  transform: scale(1.04);
+}
+
+.fab-whatsapp--enriched:hover {
+  transform: scale(1.02);
+}
+
+/* Destinations hub dropdown – modern cards */
+.nav-item.nav-dest-hub .nav-dropdown--hub {
+  min-width: min(340px, 92vw);
+  padding: 0.5rem;
+  background: #fff;
+  border: var(--depth-line);
+  backdrop-filter: none;
+}
+
+.nav-item.nav-dest-hub .nav-dropdown--hub ul {
+  gap: 0.5rem;
+}
+
+.nav-hub-link {
+  display: grid !important;
+  grid-template-columns: auto 1fr auto;
+  gap: 0.75rem;
+  align-items: center;
+  padding: 0.85rem 0.95rem !important;
+  border: var(--depth-line);
+  background: var(--color-paper);
+  transform: none !important;
+}
+
+.nav-hub-link:hover {
+  background: var(--color-forest) !important;
+  border-color: var(--color-forest) !important;
+  color: #fff !important;
+}
+
+.nav-hub-link:hover .nav-hub-link-desc,
+.nav-hub-link:hover .nav-hub-arrow {
+  color: rgba(255, 255, 255, 0.82) !important;
+}
+
+.nav-hub-icon {
+  width: 2.25rem;
+  height: 2.25rem;
+  display: grid;
+  place-items: center;
+  border-radius: 0.65rem;
+  background: rgba(58, 52, 46, 0.06);
+  color: var(--color-forest);
+  font-size: 0.95rem;
+  transition: background 0.35s, color 0.35s;
+}
+
+.nav-hub-link:hover .nav-hub-icon {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+
+.nav-hub-arrow {
+  font-size: 1.1rem;
+  opacity: 0.45;
+  transition: transform 0.35s var(--ease-out), opacity 0.35s, color 0.35s;
+}
+
+.nav-hub-link:hover .nav-hub-arrow {
+  opacity: 1;
+  transform: translateX(3px);
+}
+
+.nav-hub-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.12rem;
+  min-width: 0;
+}
+
+.nav-mega-col a {
+  border-radius: 0.5rem;
+  transition: background 0.3s, color 0.3s;
+}
+
+.nav-mega-col a:hover {
+  background: var(--color-forest);
+  color: #fff;
+}
+
+.nav-mega-cta {
+  border: 1.5px solid var(--color-gold);
+  background: transparent !important;
+}
+
+.nav-mega-cta:hover {
+  background: var(--color-forest) !important;
+  color: #fff !important;
+  border-color: var(--color-forest) !important;
+}
+
+.site-header.nav-is-ready .nav-pill {
+  transition:
+    opacity 0.55s var(--ease-out),
+    transform 0.55s var(--ease-out),
+    border-color 0.35s,
+    background 0.35s;
+}
+
+.site-header.nav-is-ready:not(.nav-is-visible) .nav-pill {
+  opacity: 0;
+  transform: translateY(-8px);
+}
+
+.site-header.nav-is-visible .nav-pill {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.nav-links > li > a,
+.nav-dropdown-trigger {
+  transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+.nav-item.has-dropdown.is-hover .nav-dropdown-trigger,
+.nav-item.has-dropdown.is-open .nav-dropdown-trigger {
+  color: var(--color-gold);
+}
+
+.nav-item.nav-dest-hub.is-hover .nav-hub-link,
+.nav-item.nav-dest-hub.is-open .nav-hub-link {
+  animation: nav-hub-in 0.45s var(--ease-out) both;
+}
+
+.nav-item.nav-dest-hub.is-hover .nav-hub-link:nth-child(1),
+.nav-item.nav-dest-hub.is-open .nav-hub-link:nth-child(1) {
+  animation-delay: 0.04s;
+}
+
+.nav-item.nav-dest-hub.is-hover .nav-hub-link:nth-child(2),
+.nav-item.nav-dest-hub.is-open .nav-hub-link:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+@keyframes nav-hub-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

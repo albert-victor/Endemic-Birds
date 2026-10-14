@@ -1,0 +1,121 @@
+body.audit-clean {
+  background: var(--color-paper);
+}
+
+body.audit-clean::before {
+  display: none !important;
+}
+
+.audit-shell {
+  max-width: 76rem;
+  margin: 0 auto;
+  padding: clamp(1.75rem, 4vw, 2.75rem) clamp(1rem, 4vw, 2rem) 4rem;
+}
+
+.audit-chosen {
+  margin-bottom: 2rem;
+  padding: 0.85rem 1rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  background: var(--color-forest);
+  color: #fff;
+}
+
+.audit-chosen p {
+  margin: 0;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  opacity: 0.75;
+}
+
+.audit-chosen strong {
+  display: block;
+  margin-top: 0.15rem;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.audit-tier {
+  margin-bottom: 3rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.audit-tier:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.audit-tier--group {
+  padding: 1.25rem 1.15rem 1.5rem;
+  border-radius: 0.5rem;
+  border: 2px solid rgba(196, 160, 98, 0.55);
+  background: #fff;
+  border-bottom: 2px solid rgba(196, 160, 98, 0.55);
+}
+
+.audit-tier__head h2 {
+  margin: 0 0 0.4rem;
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-text-soft);
+}
+
+.audit-tier--group .audit-tier__head h2 {
+  color: var(--color-forest);
+}
+
+.audit-tier__head p {
+  margin: 0 0 1rem;
+  max-width: 44rem;
+  font-size: 0.84rem;
+  line-height: 1.55;
+  color: var(--color-text-soft);
+}
+
+.audit-tier__foot {
+  margin: 1rem 0 0;
+  font-size: 0.75rem;
+  color: var(--color-text-soft);
+}
+
+.audit-sub {
+  margin: 1.25rem 0 0.5rem;
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-text-soft);
+}
+
+.audit-sub:first-child {
+  margin-top: 0;
+}
+
+.audit-compare {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 880px) {
+  .audit-compare {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+}
+
+.audit-compare__col h3 {
+  margin: 0 0 0.65rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid var(--color-border);
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--color-forest);
+}

@@ -1,0 +1,450 @@
+(function () {
+  const prefix = window.__ASSET_PREFIX__ || "/";
+  const asset = (p) => (p.startsWith("http") ? p : prefix + p.replace(/^\//, ""));
+
+  function rootMediaUrl(path) {
+    const raw = String(path || "").replace(/^\//, "");
+    if (raw.startsWith("http://") || raw.startsWith("https://")) return raw;
+    const stripped = raw.replace(/^(\.\.\/)+/, "");
+    if (stripped.startsWith("assets/") || stripped.startsWith("endemics/")) return `/${stripped}`;
+    return asset(raw);
+  }
+
+  const DEFAULT_MEDIA = {
+    brandLogo: "assets/images/from-live-site/brand/bird-logo.png",
+    footerBackground: "endemics/FOOTER.jpg",
+  };
+
+  if (!document.querySelector('link[href*="clean-depth.css"]')) {
+    const clean = document.createElement("link");
+    clean.rel = "stylesheet";
+    clean.href = asset("assets/css/clean-depth.css");
+    document.head.appendChild(clean);
+  }
+
+  if (!document.querySelector('link[href*="font-awesome"]')) {
+    const fa = document.createElement("link");
+    fa.rel = "stylesheet";
+    fa.href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css";
+    fa.crossOrigin = "anonymous";
+    document.head.appendChild(fa);
+  }
+
+  const destinationHubLinks = [
+    {
+      href: "birding/index.html#destinations",
+      label: "Birding destinations",
+      desc: "Forests, miombo and key birding circuits across Tanzania",
+    },
+    {
+      href: "wildlife/index.html#destinations",
+      label: "Wildlife destinations",
+      desc: "National parks & conservation areas for safaris",
+    },
+  ];
+
+  const wildlifeActivities = [
+    { href: "wildlife/activities/great-migration-plains/", label: "Great Migration" },
+    { href: "wildlife/activities/ngorongoro-northern-icons/", label: "Northern Icons" },
+    { href: "wildlife/activities/chimps-lake-forests/", label: "Chimps & Lakes" },
+    { href: "wildlife/activities/southern-western-wilderness/", label: "Southern Wilderness" },
+    { href: "wildlife/activities/bush-beach-luxury/", label: "Bush & Beach" },
+    { href: "wildlife/index.html#activities", label: "All activities" },
+  ];
+
+  const drawerLinks = [
+    { href: "about/index.html", label: "About Us" },
+    { href: "plan-your-trip/index.html", label: "Booking & Enquiries" },
+    { href: "packages/index.html", label: "All Safari Packages" },
+    { href: "destinations/index.html", label: "All destinations" },
+    { href: "combined/index.html", label: "Birding + Wildlife" },
+    { href: "privacy/index.html", label: "Privacy policy" },
+    { href: "about/index.html#contact", label: "Contact" },
+  ];
+
+  const navItems = [
+    { href: asset("index.html"), label: "Home", id: "home" },
+    { href: asset("birding/index.html"), label: "Birding", id: "birding" },
+    {
+      label: "Destinations",
+      id: "destinations",
+      dropdown: destinationHubLinks,
+    },
+    {
+      label: "Wildlife",
+      id: "wildlife",
+      mega: true,
+      columns: [{ title: "Experiences", links: wildlifeActivities }],
+      megaCta: { href: "wildlife/index.html", label: "View wildlife safaris →" },
+    },
+  ];
+
+  function isActive(item) {
+    const current = document.body.dataset.nav || "";
+    return item.id && current === item.id;
+  }
+
+  function renderNavLink(item) {
+    const active = isActive(item) ? ' aria-current="page"' : "";
+    return `<a class="nav-rail-link nav-link-animated" href="${item.href}"${active}>${item.label}</a>`;
+  }
+
+  function renderMegaColumn(col) {
+    const links = col.links
+      .map((l) => `<li><a href="${asset(l.href)}">${l.label}</a></li>`)
+      .join("");
+    return `<div class="nav-mega-col"><h3>${col.title}</h3><ul>${links}</ul></div>`;
+  }
+
+  function buildNav(logoPath) {
+    const links = navItems
+      .map((item) => {
+        if (item.dropdown) {
+          const menuLinks = item.dropdown
+            .map((l) => {
+              const birding = String(l.href).includes("birding");
+              const icon = birding ? "fa-binoculars" : "fa-paw";
+              return `<li><a class="nav-hub-link" href="${asset(l.href)}" role="menuitem">
+                  <span class="nav-hub-icon" aria-hidden="true"><i class="fa-solid ${icon}"></i></span>
+                  <span class="nav-hub-text">
+                    <span class="nav-hub-link-title">${l.label}</span>
+                    ${l.desc ? `<span class="nav-hub-link-desc">${l.desc}</span>` : ""}
+                  </span>
+                  <span class="nav-hub-arrow" aria-hidden="true">→</span>
+                </a></li>`;
+            })
+            .join("");
+          const activeParent = item.id === document.body.dataset.nav ? " is-active" : "";
+          return `<li class="nav-item has-dropdown nav-dest-hub${activeParent}">
+            <button type="button" class="nav-dropdown-trigger nav-rail-link nav-link-animated" aria-expanded="false" aria-haspopup="true">
+              <span>${item.label}</span>
+              <svg class="nav-chevron" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+            </button>
+            <div class="nav-dropdown nav-dropdown--hub" role="menu"><ul>${menuLinks}</ul></div>
+          </li>`;
+        }
+        if (item.mega) {
+          const cols = item.columns.map(renderMegaColumn).join("");
+          const cta = item.megaCta
+            ? `<a class="nav-mega-cta" href="${asset(item.megaCta.href)}">${item.megaCta.label}</a>`
+            : "";
+          const activeParent = item.id === document.body.dataset.nav ? " is-active" : "";
+          return `<li class="nav-item has-dropdown has-mega${activeParent}">
+            <button type="button" class="nav-dropdown-trigger nav-rail-link nav-link-animated" aria-expanded="false" aria-haspopup="true">
+              <span>${item.label}</span>
+              <svg class="nav-chevron" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+            </button>
+            <div class="nav-dropdown nav-mega" role="menu">${cols}${cta}</div>
+          </li>`;
+        }
+        if (item.href) {
+          const active = isActive(item) ? ' class="is-active"' : "";
+          return `<li${active}>${renderNavLink(item)}</li>`;
+        }
+        return "";
+      })
+      .join("");
+
+    function buildDrawerNav() {
+      const primary = navItems
+        .map((item) => {
+          if (item.href && !item.dropdown && !item.mega) {
+            const active = isActive(item) ? ' aria-current="page"' : "";
+            return `<li><a class="nav-drawer-tile" href="${item.href}"${active}>${item.label}</a></li>`;
+          }
+          if (item.dropdown) {
+            const subs = item.dropdown
+              .map(
+                (l) =>
+                  `<li><a href="${asset(l.href)}"><span class="nav-drawer-sub-title">${l.label}</span>${l.desc ? `<span class="nav-drawer-sub-desc">${l.desc}</span>` : ""}</a></li>`
+              )
+              .join("");
+            return `<li class="nav-drawer-group">
+              <button type="button" class="nav-drawer-accordion nav-drawer-tile" aria-expanded="false" data-drawer-accordion>${item.label}</button>
+              <ul class="nav-drawer-sub">${subs}</ul>
+            </li>`;
+          }
+          if (item.mega) {
+            const subs = item.columns
+              .flatMap((col) => col.links)
+              .map((l) => `<li><a href="${asset(l.href)}">${l.label}</a></li>`)
+              .join("");
+            const cta = item.megaCta
+              ? `<li><a class="nav-drawer-sub-cta" href="${asset(item.megaCta.href)}">${item.megaCta.label}</a></li>`
+              : "";
+            return `<li class="nav-drawer-group">
+              <button type="button" class="nav-drawer-accordion nav-drawer-tile" aria-expanded="false" data-drawer-accordion>${item.label}</button>
+              <ul class="nav-drawer-sub">${subs}${cta}</ul>
+            </li>`;
+          }
+          return "";
+        })
+        .join("");
+
+      const secondary = drawerLinks
+        .map((l) => `<li class="nav-drawer-secondary"><a class="nav-drawer-tile" href="${asset(l.href)}">${l.label}</a></li>`)
+        .join("");
+
+      return `${primary}
+        <li class="nav-drawer-divider" aria-hidden="true"></li>
+        ${secondary}`;
+    }
+
+    const drawer = buildDrawerNav();
+
+    return `<header class="site-header site-header--rail" data-header>
+      <nav class="nav-pill nav-rail" aria-label="Primary">
+        <a class="nav-brand" href="${asset("index.html")}" aria-label="Endemic Birds Tanzania home">
+          <img class="nav-brand-logo" src="${asset(logoPath)}" alt="" width="44" height="44" decoding="async" />
+          <span class="nav-brand-text">Endemic Birds</span>
+        </a>
+        <div class="nav-panel" id="nav-panel">
+          <ul class="nav-links nav-rail-links">${links}</ul>
+        </div>
+        <div class="nav-rail-actions">
+          <button type="button" class="nav-search" data-site-search-open aria-label="Search site">
+            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+          </button>
+          <a class="nav-book nav-book--safari" href="${asset("plan-your-trip/index.html")}" aria-label="Book a safari">
+            <i class="fa-solid fa-plane-departure nav-book-icon" aria-hidden="true"></i>
+            <span class="nav-book-label">Book a safari</span>
+          </a>
+          <button type="button" class="nav-menu-btn" aria-expanded="false" aria-controls="nav-drawer" data-nav-menu-btn aria-label="Open menu">
+            <span class="nav-menu-btn-lines" aria-hidden="true"></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <div class="nav-drawer-backdrop" data-nav-drawer-backdrop aria-hidden="true"></div>
+    <aside class="nav-drawer" id="nav-drawer" aria-label="Site menu" aria-hidden="true">
+      <button type="button" class="nav-drawer-close" data-nav-drawer-close aria-label="Close menu">×</button>
+      <h2>Menu</h2>
+      <ul class="nav-drawer-links">${drawer}</ul>
+      <a class="nav-drawer-book btn btn-solid" href="${asset("plan-your-trip/index.html")}"><i class="fa-solid fa-plane-departure" aria-hidden="true"></i> Book a safari</a>
+      <p class="nav-drawer-note">Specialist birding safaris · Iringa, Tanzania</p>
+    </aside>`;
+  }
+
+  function buildSearchPanel() {
+    return `<div class="site-search" id="site-search" aria-hidden="true" role="dialog" aria-label="Search the site">
+      <div class="site-search-backdrop" data-site-search-backdrop aria-hidden="true"></div>
+      <div class="site-search-panel">
+        <div class="site-search-head">
+          <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+          <input type="search" data-site-search-input placeholder="Packages, parks, destinations…" autocomplete="off" spellcheck="false" />
+          <button type="button" class="site-search-close" data-site-search-close aria-label="Close search">×</button>
+        </div>
+        <ul class="site-search-results" data-site-search-results>
+          <li class="site-search-hint">Start typing to search all packages and destinations</li>
+        </ul>
+      </div>
+    </div>`;
+  }
+
+  function mountWhatsAppFab() {
+    if (!document.querySelector(".fab-whatsapp")) {
+      document.body.insertAdjacentHTML(
+        "beforeend",
+        `<a class="fab-whatsapp" href="https://wa.me/255627013348" rel="noopener noreferrer"></a>`
+      );
+    }
+    document.querySelectorAll(".fab-whatsapp").forEach((fab) => {
+      if (fab.dataset.fabReady) return;
+      fab.dataset.fabReady = "true";
+      fab.classList.add("fab-whatsapp--enriched");
+      fab.setAttribute("aria-label", "Plan your safari with Leon on WhatsApp");
+      const href = fab.getAttribute("href") || "https://wa.me/255627013348";
+      fab.setAttribute("href", href);
+      fab.innerHTML = `<span class="fab-whatsapp-pulse" aria-hidden="true"></span>
+        <span class="fab-whatsapp-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.511-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.881 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </span>
+        <span class="fab-whatsapp-label">Plan with Leon</span>`;
+    });
+  }
+
+  function footerLink(href, label) {
+    return `<li><a href="${href}">${label}</a></li>`;
+  }
+
+  function buildFooterSocial(site) {
+    const contact = site?.contact || {};
+    const social = site?.social || {};
+    const items = [];
+    const push = (href, icon, label) => {
+      if (!href) return;
+      items.push({ href, icon, label });
+    };
+    push(contact.email ? `mailto:${contact.email}` : "mailto:info@endemicbirds.co.tz", "fa-solid fa-envelope", "Email");
+    push(social.facebook, "fa-brands fa-facebook-f", "Facebook");
+    push(social.instagram, "fa-brands fa-instagram", "Instagram");
+    push(social.tripadvisor, "fa-brands fa-tripadvisor", "TripAdvisor");
+    push(social.youtube, "fa-brands fa-youtube", "YouTube");
+    return items
+      .map(
+        (item, i) =>
+          `<a class="footer-social-link" href="${item.href}" rel="noopener noreferrer" aria-label="${item.label}" style="--social-i:${i}"><span class="footer-social-link__rim" aria-hidden="true"></span><span class="footer-social-link__icon" aria-hidden="true"><i class="${item.icon}"></i></span></a>`
+      )
+      .join("");
+  }
+
+  function buildFooter(site, logoPath, footerBg) {
+    const year = new Date().getFullYear();
+    const footerPhoto = rootMediaUrl(footerBg);
+    const contact = site?.contact || {};
+    const location = contact.location || "Iringa, Tanzania";
+    const phone = contact.phone || "+255 627 013 348";
+    const phoneTel = contact.phoneTel || "+255627013348";
+    const email = contact.email || "info@endemicbirds.co.tz";
+    const blurb =
+      site?.footerBlurb ||
+      "Specialist birding and wildlife safaris from Tanzania – tailor-made routes across East Africa.";
+    const plan = asset("plan-your-trip/index.html");
+
+    const exploreLinks = [
+      footerLink(asset("birding/index.html"), "Birding safaris"),
+      footerLink(asset("wildlife/index.html"), "Wildlife safaris"),
+      footerLink(asset("combined/index.html"), "Birding + wildlife"),
+      footerLink(asset("packages/index.html"), "Safari packages"),
+      footerLink(asset("destinations/index.html"), "All destinations"),
+      footerLink(asset("about/index.html"), "About us"),
+    ].join("");
+
+    const quickLinks = [
+      footerLink(asset("birding/index.html#journeys"), "Birding journeys"),
+      footerLink(asset("birding/index.html#destinations"), "Birding circuits"),
+      footerLink(asset("wildlife/index.html#destinations"), "Wildlife parks"),
+      footerLink(asset("wildlife/index.html#activities"), "Safari experiences"),
+      footerLink(`${asset("index.html")}#reviews`, "Guest reviews"),
+      footerLink(`${asset("index.html")}#packages`, "Featured journeys"),
+    ].join("");
+
+    return `<footer class="site-footer site-footer--photo" style="--footer-photo: url('${footerPhoto}')">
+      <div class="site-footer-scrim" aria-hidden="true"></div>
+      <div class="container footer-grid footer-grid--rich">
+        <div class="footer-brand footer-brand-col">
+          <div class="footer-brand-head">
+            <img class="footer-brand-logo" src="${asset(logoPath)}" alt="" width="52" height="52" decoding="async" />
+            <div>
+              <p class="footer-brand-name">Endemic Birds Tanzania</p>
+              <p class="footer-tagline footer-tagline--soft">Birding &amp; wildlife · East Africa</p>
+            </div>
+          </div>
+          <p class="footer-blurb">${blurb}</p>
+          <div class="footer-cta-row">
+            <a class="footer-cta footer-cta--primary" href="${plan}"><i class="fa-solid fa-plane-departure" aria-hidden="true"></i> Book a safari</a>
+            <a class="footer-cta footer-cta--ghost" href="${contact.whatsapp || "https://wa.me/255627013348"}" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> WhatsApp Leon</a>
+          </div>
+          <div class="footer-social" aria-label="Follow us">${buildFooterSocial(site)}</div>
+        </div>
+        <div class="footer-links-row">
+          <div class="footer-col footer-col--links">
+            <p class="footer-col-title">Explore</p>
+            <ul class="footer-link-list">${exploreLinks}</ul>
+          </div>
+          <div class="footer-col footer-col--links">
+            <p class="footer-col-title">Quick links</p>
+            <ul class="footer-link-list footer-link-list--dense">${quickLinks}</ul>
+          </div>
+        </div>
+        <div class="footer-col footer-contact">
+          <p class="footer-col-title">Contact</p>
+          <ul class="footer-contact-list">
+            <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i> ${location}</li>
+            <li><a href="tel:${phoneTel}"><i class="fa-solid fa-phone" aria-hidden="true"></i> ${phone}</a></li>
+            <li><a href="mailto:${email}"><i class="fa-solid fa-envelope" aria-hidden="true"></i> ${email}</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom footer-bottom--rich">
+        <p>© ${year} Endemic Birds &amp; Wildlife Experiences Ltd.</p>
+        <nav class="footer-bottom-links" aria-label="Footer legal">
+          <a href="${asset("about/index.html")}">About</a>
+          <a href="${asset("about/index.html#contact")}">Contact</a>
+          <a href="${asset("privacy/index.html")}">Privacy</a>
+          <a href="${plan}">Enquire</a>
+        </nav>
+      </div>
+    </footer>`;
+  }
+
+  async function ensureSiteSearchScript() {
+    if (window.EndemicSearch) return;
+    let el = document.querySelector('script[src*="site-search.js"]');
+    if (!el) {
+      el = document.createElement("script");
+      el.src = asset("assets/js/site-search.js");
+      document.body.appendChild(el);
+    }
+    await new Promise((resolve) => {
+      if (window.EndemicSearch) return resolve();
+      el.addEventListener("load", () => resolve(), { once: true });
+      el.addEventListener("error", () => resolve(), { once: true });
+      setTimeout(resolve, 150);
+    });
+  }
+
+  async function loadSite() {
+    try {
+      const res = await fetch(asset("content/site.json"));
+      if (!res.ok) return null;
+      return await res.json();
+    } catch {
+      return null;
+    }
+  }
+
+  async function mountLayout() {
+    const site = (await loadSite()) || {};
+    const media = { ...DEFAULT_MEDIA, ...(site.media || {}) };
+    const logoPath = media.brandLogo || DEFAULT_MEDIA.brandLogo;
+    const footerBg = media.footerBackground || DEFAULT_MEDIA.footerBackground;
+
+    const headerEl = document.getElementById("site-header");
+    const footerEl = document.getElementById("site-footer");
+    if (headerEl) headerEl.outerHTML = buildNav(logoPath);
+    if (footerEl) footerEl.outerHTML = buildFooter(site, logoPath, footerBg);
+
+    const header = document.querySelector("[data-header]");
+    if (header && !document.getElementById("site-search")) {
+      header.insertAdjacentHTML("afterend", buildSearchPanel());
+    }
+    header?.classList.add("nav-is-ready");
+    requestAnimationFrame(() => header?.classList.add("nav-is-visible"));
+
+    mountWhatsAppFab();
+
+    await ensureSiteSearchScript();
+
+    if (!document.querySelector('script[src*="endemic-media.js"]')) {
+      const em = document.createElement("script");
+      em.src = asset("assets/js/endemic-media.js");
+      em.defer = true;
+      document.head.appendChild(em);
+    }
+
+    if (!document.querySelector('script[src*="nav-motion.js"]')) {
+      const navScript = document.createElement("script");
+      navScript.src = asset("assets/js/nav-motion.js");
+      navScript.defer = true;
+      document.body.appendChild(navScript);
+    }
+
+    const footerBgResolved =
+      media.footerBackground && !media.footerBackground.includes("sticky section")
+        ? media.footerBackground
+        : DEFAULT_MEDIA.footerBackground;
+
+    const layoutDetail = { media: { ...media, footerBackground: footerBgResolved } };
+    queueMicrotask(() => {
+      document.dispatchEvent(new CustomEvent("site:layout-ready", { detail: layoutDetail }));
+      window.EndemicSearch?.initSearch?.();
+    });
+  }
+
+  document.addEventListener("endemic:media-ready", () => {
+    if (window.EndemicMedia?.applyStaticHeroes) window.EndemicMedia.applyStaticHeroes();
+  });
+
+  mountLayout();
+})();

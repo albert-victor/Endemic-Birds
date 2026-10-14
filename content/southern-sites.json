@@ -1,0 +1,273 @@
+{
+  "circuit": "Southern",
+  "parentDestinationId": "southern",
+  "parentSlug": "southern-destination",
+  "sites": [
+    {
+      "id": "udzungwa",
+      "slug": "udzungwa-mountains",
+      "name": "Udzungwa Mountains",
+      "location": "Udzungwa Mountains National Park, Morogoro & Iringa regions",
+      "summary": "Rainforest peaks and waterfalls at the heart of the Eastern Arc – a global biodiversity hotspot and essential stop for forest endemics and primate-rich birding.",
+      "keySpecies": [
+        "Udzungwa Forest Partridge",
+        "Iringa Akalat",
+        "Rufous-winged Sunbird",
+        "Dapple-throat",
+        "Green-headed Oriole",
+        "Uluguru Violet-backed Sunbird (range overlap)"
+      ],
+      "whyItMatters": [
+        "Part of the ancient Eastern Arc Mountains, often called the “Galápagos of Africa” for exceptional levels of endemism.",
+        "Misty escarpment forests isolate populations that evolved into species found nowhere else on Earth.",
+        "Sanje Falls trails and forest walks give unhurried time for skulkers, mixed-species flocks and photographic forest light."
+      ],
+      "generalNotes": "Gateway forests on many southern endemic birding routes between Mikumi, Ruaha and the Kilombero floodplain.",
+      "heroImage": "assets/images/southern-circuit/udzungwa/hero.jpg",
+      "gallery": [
+        "assets/images/southern-circuit/udzungwa/gallery-1.jpg",
+        "assets/images/southern-circuit/udzungwa/gallery-2.jpg",
+        "assets/images/southern-circuit/udzungwa/gallery-3.jpg",
+        "assets/images/southern-circuit/udzungwa/gallery-4.jpg",
+        "assets/images/southern-circuit/udzungwa/gallery-5.jpg"
+      ],
+      "imageStatus": "complete"
+    },
+    {
+      "id": "ukaguru",
+      "slug": "ukaguru-mountains",
+      "name": "Ukaguru Mountains",
+      "location": "Morogoro Region · Eastern Arc Mountains",
+      "summary": "Remote Eastern Arc block east of the Rubeho–Uluguru chain – low-traffic montane forest birding for travellers who want quiet forest endemics.",
+      "keySpecies": [
+        "Eastern Arc forest specialists (mixed flocks)",
+        "Green-headed Oriole",
+        "Uluguru Bush-shrike (regional)",
+        "African Broadbill",
+        "Montane sunbirds and white-eyes"
+      ],
+      "whyItMatters": [
+        "One of the least-visited Eastern Arc ranges, with intact forest patches that still hold arc endemics.",
+        "Ideal for listers combining southern parks with arc forest targets without the crowds of northern circuits.",
+        "Important Important Bird Area (IBA) connectivity between Uluguru, Rubeho and Udzungwa forests."
+      ],
+      "generalNotes": "Access and timing are route-specific; we plan Ukaguru as a focused forest extension on tailor-made southern endemic itineraries.",
+      "heroImage": "assets/images/southern-circuit/uluti/hero.jpg",
+      "gallery": [
+        "assets/images/southern-circuit/uluti/hero.jpg"
+      ],
+      "imageStatus": "complete"
+    },
+    {
+      "id": "mikumi",
+      "slug": "mikumi-national-park",
+      "name": "Mikumi National Park",
+      "location": "Morogoro Region · Southern / Mikumi highway corridor",
+      "summary": "Open Mkata floodplain and miombo-fringed hills – reliable savanna birding en route to Udzungwa and Ruaha with 400+ recorded species.",
+      "keySpecies": [
+        "Lilac-breasted Roller",
+        "Bateleur",
+        "Yellow-throated Longclaw",
+        "Black-bellied Bustard",
+        "Miombo and woodland raptors",
+        "Waterbirds at hippo pools"
+      ],
+      "whyItMatters": [
+        "Year-round wildlife and birding on the main southern corridor – perfect first stop after Dar es Salaam or Morogoro.",
+        "Mkata plain mirrors classic East African savanna while miombo slopes add different guilds in a single park.",
+        "Strong complement to forest days in Udzungwa and wilderness days in Ruaha on one southern circuit."
+      ],
+      "generalNotes": "Hippo pools and baobab-lined plains are standard birding stops on Endemic Birds southern routes.",
+      "heroImage": "assets/images/southern-circuit/mikumi/hero.jpg",
+      "gallery": [
+        "assets/images/southern-circuit/mikumi/gallery-1.jpg",
+        "assets/images/southern-circuit/mikumi/gallery-2.jpg",
+        "assets/images/southern-circuit/mikumi/gallery-3.jpg",
+        "assets/images/southern-circuit/mikumi/gallery-4.jpg",
+        "assets/images/southern-circuit/mikumi/gallery-5.jpg"
+      ],
+      "imageStatus": "complete"
+    },
+    {
+      "id": "ruaha",
+      "slug": "ruaha-national-park",
+      "name": "Ruaha National Park",
+      "location": "Iringa & Mbeya regions · Southern Circuit",
+      "summary": "Vast miombo wilderness where East African savanna meets southern Africa – world-renowned for Ruaha Red-billed Hornbill and miombo specialists.",
+      "keySpecies": [
+        "Ruaha Red-billed Hornbill",
+        "Ashy Starling",
+        "Racket-tailed Roller",
+        "Pale-billed Hornbill",
+        "Shelley’s Sunbird",
+        "Miombo woodland raptors"
+      ],
+      "whyItMatters": [
+        "One of the few places where East and South meet ecologically – unique hornbill taxonomy and miombo bird communities.",
+        "Ruaha Red-billed Hornbill is recognised from this landscape and is a must for serious southern listers.",
+        "Huge, remote country means quiet roads, riverine gullies and baobab studded ridges – excellent for photographers."
+      ],
+      "generalNotes": "Based in Iringa, Endemic Birds treats Ruaha as a core southern endemic and wildlife anchor.",
+      "heroImage": "assets/images/southern-circuit/ruaha/hero.jpg",
+      "gallery": [
+        "assets/images/southern-circuit/ruaha/gallery-1.jpg",
+        "assets/images/southern-circuit/ruaha/gallery-2.jpg",
+        "assets/images/southern-circuit/ruaha/gallery-3.jpg",
+        "assets/images/southern-circuit/ruaha/gallery-4.jpg",
+        "assets/images/southern-circuit/ruaha/gallery-5.jpg"
+      ],
+      "imageStatus": "complete"
+    },
+    {
+      "id": "uluti",
+      "slug": "uluti-mountain",
+      "name": "Uluti Mountain",
+      "displayNameNote": "Listed on endemicbirds.co.tz; corresponds to the Uluguru massif above Morogoro (Eastern Arc).",
+      "location": "Morogoro Region · Uluguru Mountains, Eastern Arc",
+      "summary": "Green Uluguru escarpments rising above Morogoro – montane forest, Choma waterfalls and arc endemics on the southern/eastern birding corridor.",
+      "keySpecies": [
+        "Uluguru Bush-shrike",
+        "Loveridge’s Sunbird",
+        "Green-headed Oriole",
+        "Bertram’s Weaver",
+        "Montane white-eyes and apalis"
+      ],
+      "whyItMatters": [
+        "Uluguru forests are a global biodiversity hotspot with dozens of plants and animals found nowhere else.",
+        "Water catchment forests feed the Ruvu system and hold montane species at accessible day-hike or multi-day altitudes.",
+        "Natural pairing with Mikumi savanna and Udzungwa forest on combined southern–Eastern Arc itineraries."
+      ],
+      "generalNotes": "We use the Uluti listing name from the live site menu; field routes target Uluguru forest and village trails from Morogoro.",
+      "heroImage": "assets/images/southern-circuit/uluti/hero.jpg",
+      "gallery": [
+        "assets/images/southern-circuit/uluti/gallery-1.jpg",
+        "assets/images/southern-circuit/uluti/gallery-2.jpg",
+        "assets/images/southern-circuit/uluti/gallery-3.jpg",
+        "assets/images/southern-circuit/uluti/gallery-4.jpg",
+        "assets/images/southern-circuit/uluti/gallery-5.jpg"
+      ],
+      "imageStatus": "complete"
+    },
+    {
+      "id": "rubeho",
+      "slug": "rubeho-mountains",
+      "name": "Rubeho Mountains",
+      "location": "Morogoro & Dodoma regions · Eastern Arc Mountains",
+      "summary": "High, little-visited Eastern Arc range – forest endemics including Rubeho Akalat and Rubeho Warbler for dedicated arc listers.",
+      "keySpecies": [
+        "Rubeho Akalat",
+        "Rubeho Warbler",
+        "Eastern Arc robin-chat complex",
+        "Green-headed Oriole",
+        "Montane forest sunbirds"
+      ],
+      "whyItMatters": [
+        "Named for endemic birds restricted to these forests – a priority for world listers completing the Eastern Arc suite.",
+        "Connects the Uluguru–Ukaguru forests with the Udzungwa block for landscape-scale conservation.",
+        "Low tourism footprint means authentic forest birding when access and season align."
+      ],
+      "generalNotes": "Typically combined with Morogoro-area arc sites on advanced southern endemic routes – logistics confirmed per departure.",
+      "heroImage": "assets/images/from-live-site/destinations/eastern-arc-mountain.jpg",
+      "gallery": [
+        "assets/images/from-live-site/destinations/eastern-arc-mountain.jpg"
+      ],
+      "imageStatus": "complete"
+    },
+    {
+      "id": "nyerere",
+      "slug": "nyerere-national-park",
+      "name": "Nyerere National Park",
+      "location": "Southern Tanzania · Rufiji River basin (former Selous core)",
+      "summary": "Africa’s largest national park – vast miombo, Rufiji rivers and lakes with wild dogs, elephants and rich riparian birding on the southern circuit.",
+      "keySpecies": [
+        "Pel’s Fishing-Owl",
+        "African Skimmer",
+        "White-backed Night-Heron",
+        "Miombo pied barbet (woodland blocks)",
+        "Waterbirds on oxbow lakes"
+      ],
+      "whyItMatters": [
+        "UNESCO-scale wilderness now branded Nyerere – boat safaris on the Rufiji unlock species rare elsewhere in the south.",
+        "Wild dog and elephant stronghold with excellent raptor and hornbill viewing in miombo.",
+        "Natural complement to Ruaha and coastal extensions on extended southern itineraries."
+      ],
+      "generalNotes": "Formerly marketed as Selous Game Reserve; boat and foot safari options shape birding access.",
+      "packageSlugs": [
+        "14-days-southern-tanzania-birding-tour",
+        "19-days-southern-tanzania-birding-trip",
+        "19-days-southern-endemic-birding",
+        "10-days-south-west-tanzania"
+      ],
+      "heroImage": "assets/images/southern-circuit/nyerere/hero.jpg",
+      "gallery": [
+        "assets/images/southern-circuit/nyerere/gallery-1.jpg",
+        "assets/images/southern-circuit/nyerere/gallery-2.jpg",
+        "assets/images/southern-circuit/nyerere/gallery-3.jpg",
+        "assets/images/southern-circuit/nyerere/gallery-4.jpg",
+        "assets/images/southern-circuit/nyerere/gallery-5.jpg"
+      ],
+      "imageStatus": "complete"
+    },
+    {
+      "id": "rondo-plateau",
+      "slug": "rondo-plateau",
+      "name": "Rondo Plateau",
+      "location": "Lindi Region · Coastal Eastern Arc forest",
+      "summary": "Remnant coastal forest on the Rondo Plateau – Rondo endemic birds and lowland forest specialists at the southern edge of the Eastern Arc.",
+      "keySpecies": [
+        "Rondo Apalis",
+        "Livingstone’s Flycatcher",
+        "East Coast Akalat",
+        "Green-headed Oriole",
+        "Forest batis and sunbirds"
+      ],
+      "whyItMatters": [
+        "One of the most isolated Eastern Arc forest islands – unique species assemblage for dedicated listers.",
+        "Pairs with Kilombero and Udzungwa blocks on south-east endemic routes.",
+        "Low traffic compared to Usambara or Udzungwa – authentic forest listening."
+      ],
+      "generalNotes": "Access via Lindi / Mbwawa; typically a targeted extension on southeast birding departures.",
+      "packageSlugs": [
+        "10-day-birding-southeast",
+        "19-days-southern-endemic-birding",
+        "22-days-birding-itinerary-north-east-south-pemba"
+      ],
+      "heroImage": "assets/images/from-live-site/destinations/eastern-destination.jpg",
+      "gallery": [
+        "assets/images/from-live-site/destinations/eastern-destination.jpg"
+      ],
+      "imageStatus": "complete"
+    },
+    {
+      "id": "kilombero-plains",
+      "slug": "kilombero-plains",
+      "name": "Kilombero Plains",
+      "location": "Morogoro Region · Kilombero floodplain IBA",
+      "summary": "Vast seasonal floodplain and wetland mosaic – global stronghold for Kilombero endemics where the river meets miombo and grassland.",
+      "keySpecies": [
+        "Kilombero Weaver",
+        "Kilombero Cisticola",
+        "Udzungwa Forest Partridge (adjacent hills)",
+        "Papyrus and swamp warblers",
+        "Wetland raptors and waterbirds"
+      ],
+      "whyItMatters": [
+        "Among Tanzania’s most important IBAs for range-restricted wetland birds.",
+        "Essential stop between Udzungwa forests and southern miombo on endemic-focused routes.",
+        "Open plains and swamp edges allow scope views after dense forest days."
+      ],
+      "generalNotes": "Ifunga and Kilombero valley access is planned with local guides on Iringa–Morogoro birding weeks.",
+      "packageSlugs": [
+        "8-days-birding-around-iringa",
+        "19-days-southern-endemic-birding",
+        "20-day-endemic-birds-southern",
+        "14-days-southern-tanzania-birding-tour"
+      ],
+      "heroImage": "assets/images/southern-circuit/mikumi/hero.jpg",
+      "gallery": [
+        "assets/images/southern-circuit/mikumi/hero.jpg"
+      ],
+      "imageStatus": "complete"
+    }
+  ]
+}

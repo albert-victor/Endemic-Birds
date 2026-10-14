@@ -1,0 +1,78 @@
+{
+  "circuit": "Northern",
+  "circuitLabel": "Northern circuit",
+  "parentDestinationId": "northern",
+  "parentSlug": "northern-destination",
+  "sites": [
+    {
+      "id": "tarangire",
+      "slug": "tarangire-national-park",
+      "name": "Tarangire National Park",
+      "location": "Manyara Region · Northern Circuit",
+      "summary": "Baobab-studded woodlands and the life-giving Tarangire River – one of East Africa’s great dry-season birding and wildlife parks.",
+      "keySpecies": [
+        "Yellow-collared Lovebird",
+        "Ashy Starling",
+        "Rufous-tailed Weaver",
+        "Northern Pied Babbler",
+        "Raptors and ground-hornbill"
+      ],
+      "whyItMatters": [
+        "World-famous day-list potential – more than 550 species recorded in the ecosystem.",
+        "Only Tanzanian stronghold for Yellow-collared Lovebird and Ashy Starling in the north.",
+        "Acacia–baobab mosaic is ideal for lovebirds, weavers, barbets and photographic savanna birding."
+      ],
+      "generalNotes": "Standard northern birding stop on 10-day and 15-day Endemic Birds itineraries.",
+      "packageSlugs": [
+        "10-day-birdwatching-northern",
+        "15-days-tanzania-birding-tour",
+        "12-day-endemic-birds-northern",
+        "22-days-endemic-birding-tours"
+      ],
+      "heroImage": "assets/images/northern-circuit/tarangire/hero.jpg",
+      "gallery": [
+        "assets/images/northern-circuit/tarangire/gallery-1.jpg",
+        "assets/images/northern-circuit/tarangire/gallery-2.jpg",
+        "assets/images/northern-circuit/tarangire/gallery-3.jpg",
+        "assets/images/northern-circuit/tarangire/gallery-4.jpg",
+        "assets/images/northern-circuit/tarangire/gallery-5.jpg"
+      ],
+      "imageStatus": "complete"
+    },
+    {
+      "id": "serengeti",
+      "slug": "serengeti-national-park",
+      "name": "Serengeti National Park",
+      "location": "Mara & Arusha regions · Northern Circuit",
+      "summary": "Endless plains and iconic savanna – raptors, grassland specialists and migration spectacle alongside classic northern birding routes.",
+      "keySpecies": [
+        "Kori Bustard",
+        "Secretarybird",
+        "Usambiro Barbet (Serengeti edges)",
+        "Fischer’s Lovebird (range margins)",
+        "Vultures, coursers and larks"
+      ],
+      "whyItMatters": [
+        "Globally recognised savanna ecosystem with exceptional raptor and bustard viewing.",
+        "Migration season adds density and predator action – complementary to specialist forest days elsewhere.",
+        "Pairs with Ngorongoro and Tarangire on combined wildlife-and-birding northern safaris."
+      ],
+      "generalNotes": "Birding-focused departures target kopjes, river lines and woodland ecotones – not only big-game loops.",
+      "packageSlugs": [
+        "6-days-tanzania-safari",
+        "10-day-birdwatching-northern",
+        "15-days-birding-wildlife-photographic",
+        "22-days-endemic-birding-tours"
+      ],
+      "heroImage": "assets/images/northern-circuit/serengeti/hero.jpg",
+      "gallery": [
+        "assets/images/northern-circuit/serengeti/gallery-1.jpg",
+        "assets/images/northern-circuit/serengeti/gallery-2.jpg",
+        "assets/images/northern-circuit/serengeti/gallery-3.jpg",
+        "assets/images/northern-circuit/serengeti/gallery-4.jpg",
+        "assets/images/northern-circuit/serengeti/gallery-5.jpg"
+      ],
+      "imageStatus": "complete"
+    }
+  ]
+}

@@ -1,0 +1,1870 @@
+{
+  "generatedAt": "2026-10-14T20:49:33.979Z",
+  "totalPackages": 29,
+  "sourceNotes": "Primary import: endemicbirds.co.tz package cards merged via scripts/merge-live-into-content.mjs from content/live-extract.json (site scrape). Wildlife park copy/images partly from scripts/import-wildlife-from-ttb.mjs (Tanzania Tourism).",
+  "liveExtractPackageCards": 26,
+  "summary": {
+    "withItinerary": 29,
+    "withWildlifeDestSlugs": 12,
+    "withPrice": 0,
+    "fullyComplete": 0,
+    "birdingMissingItinerary": 0
+  },
+  "incomplete": [
+    {
+      "slug": "22-days-endemic-birding-tours",
+      "title": "22 Days Endemic Birding Tours",
+      "category": "birding",
+      "durationDays": 22,
+      "liveUrl": "https://endemicbirds.co.tz/index.php/22-days-endemic-birding-tour/",
+      "liveListingTitle": "22 DAYS ENDEMIC BIRDING TOURS",
+      "importSource": "endemicbirds.co.tz",
+      "circuits": [
+        "Southern",
+        "Eastern",
+        "Northern"
+      ],
+      "destinationHubs": [
+        "southern",
+        "eastern-arc",
+        "northern",
+        "eastern"
+      ],
+      "wildlifeDestinations": [],
+      "itineraryDays": 16,
+      "hasIncluded": false,
+      "hasExcluded": false,
+      "hasBestTime": false,
+      "hasPrice": false,
+      "needsOwnerReview": [
+        "included",
+        "excluded",
+        "bestTime"
+      ],
+      "missingFields": [
+        "highlights",
+        "included",
+        "excluded",
+        "bestTime",
+        "price"
+      ],
+      "complete": false
+    },
+    {
+      "slug": "14-days-southern-tanzania-birding-tour",
+      "title": "14 Days Southern Tanzania Birding Tour",
+      "category": "birding",
+      "durationDays": 14,
+      "liveUrl": "https://endemicbirds.co.tz/index.php/14-days-southern-tanzania-birding-tour/",
+      "liveListingTitle": "14 DAYS SOUTHERN TANZANIA BIRDING TOUR",
+      "importSource": "endemicbirds.co.tz",
+      "circuits": [
+        "Southern"
+      ],
+      "destinationHubs": [
+        "southern"
+      ],
+      "wildlifeDestinations": [],
+      "itineraryDays": 12,
+      "hasIncluded": false,
+      "hasExcluded": false,
+      "hasBestTime": false,
+      "hasPrice": false,
+      "needsOwnerReview": [
+        "included",
+        "excluded",
+        "bestTime"
+      ],
+      "missingFields": [
+        "highlights",
+        "included",
+        "excluded",
+        "bestTime",
+        "price"
+      ],
+      "complete": false
+    },
+    {
+      "slug": "19-days-southern-tanzania-birding-trip",
+      "title": "19 Days Southern Tanzania Birding Trip",
+      "category": "birding",
+      "durationDays": 19,
+      "liveUrl": "https://endemicbirds.co.tz/index.php/19-days-southern-tanzania-birding-trip/",
+      "liveListingTitle": "19 Days Southern Tanzania Endemic birding tour itinerary",
+      "importSource": "endemicbirds.co.tz",
+      "circuits": [
+        "Southern"
+      ],
+      "destinationHubs": [
+        "southern"
+      ],
+      "wildlifeDestinations": [],
+      "itineraryDays": 18,
+      "hasIncluded": false,
+      "hasExcluded": false,
+      "hasBestTime": false,
+      "hasPrice": false,
+      "needsOwnerReview": [],
+      "missingFields": [
+        "highlights",
+        "included",
+        "excluded",
+        "bestTime",
+        "price"
+      ],
+      "complete": false
+    },
+    {
+      "slug": "15-days-tanzania-birding-tour",
+      "title": "15 Days Tanzania Birding Tour",
+      "category": "birding",
+      "durationDays": 15,
+      "liveUrl": "https://endemicbirds.co.tz/index.php/tanzania-birding-tour/",
+      "liveListingTitle": "15 Days Tanzania Birding tour (Tarangire,Lake Manyara, Ngorongoro,Serengeti,etc",
+      "importSource": "endemicbirds.co.tz",
+      "circuits": [
+        "Northern",
+        "Southern"
+      ],
+      "destinationHubs": [
+        "northern",
+        "southern"
+      ],
+      "wildlifeDestinations": [],
+      "itineraryDays": 10,
+      "hasIncluded": false,
+      "hasExcluded": false,
+      "hasBestTime": false,
+      "hasPrice": false,
+      "needsOwnerReview": [
+        "daily route detail"
+      ],
+      "missingFields": [
+        "highlights",
+        "included",
+        "excluded",
+        "bestTime",
+        "price"
+      ],
+      "complete": false
+    },
+    {
+      "slug": "19-days-southern-endemic-birding",
+      "title": "19 Days Southern Tanzania Endemic Birding Tour",
+      "category": "birding",
+      "durationDays": 19,
+      "liveUrl": "https://endemicbirds.co.tz/index.php/19-days-southern-tanzania-birding-trip/",
+      "liveListingTitle": "19 Days Southern Tanzania Endemic birding tour itinerary",
+      "importSource": "endemicbirds.co.tz",
+      "circuits": [
+        "Southern"
+      ],
+      "destinationHubs": [
+        "southern",
+        "eastern-arc"
+      ],
+      "wildlifeDestinations": [],
+      "itineraryDays": 18,
+      "hasIncluded": false,
+      "hasExcluded": false,
+      "hasBestTime": false,
+      "hasPrice": false,
+      "needsOwnerReview": [
+        "distinction from 19-day southern trip"
+      ],
+      "missingFields": [
+        "highlights",
+        "included",
+        "excluded",
+        "bestTime",
+        "price"
+      ],
+      "complete": false
+    },
+    {
+      "slug": "20-day-endemic-birds-southern",
+      "title": "20-Day Itinerary for Endemic Birds in Southern Tanzania",
+      "category": "birding",
+      "durationDays": 20,
+      "liveUrl": "https://endemicbirds.co.tz/index.php/20-day-itinerary-for-endemic-birds-in-southern-tanzania/",
+      "liveListingTitle": "20-Day Itinerary for Endemic Birds in Southern Tanzania",
+      "importSource": "endemicbirds.co.tz",
+      "circuits": [
+        "Southern"
+      ],
+      "destinationHubs": [
+        "southern",
+        "eastern-arc"
+      ],
+      "wildlifeDestinations": [],
+      "itineraryDays": 15,
+      "hasIncluded": false,
+      "hasExcluded": false,
+      "hasBestTime": false,
+      "hasPrice": false,
+      "needsOwnerReview": [],
+      "missingFields": [
+        "highlights",
+        "included",
+        "excluded",
+        "bestTime",
+        "price"
+      ],
+      "complete": false
+    },
+    {
+      "slug": "20-day-endemic-birding-tanzania",
+      "title": "20-Day Endemic Birding Tour in Tanzania",
+      "category": "birding",
+      "durationDays": 20,
+      "liveUrl": "https://endemicbirds.co.tz/index.php/20-day-itinerary-for-endemic-birds-in-tanzania-2/",
+      "liveListingTitle": "20-Day Itinerary for Endemic Birding tour in Tanzania",
+      "importSource": "endemicbirds.co.tz",
+      "circuits": [
+        "Northern",
+        "Southern"
+      ],
+      "destinationHubs": [
+        "northern",
+        "southern",
+        "eastern-arc"
+      ],
+      "wildlifeDestinations": [],
+      "itineraryDays": 12,
+      "hasIncluded": false,
+      "hasExcluded": false,
+      "hasBestTime": false,
+      "hasPrice": false,
+      "needsOwnerReview": [
+        "overlap with 20-day southern route"
+      ],
+      "missingFields": [
+        "highlights",
+        "included",
+        "excluded",
+        "bestTime",
+        "price"
+      ],
+      "complete": false
+    },
+    {
+      "slug": "12-day-endemic-birds-northern",
+      "title": "12-Day Endemic Birds in Northern Tanzania",
+      "category": "birding",
+      "durationDays": 12,
+      "liveUrl": "https://endemicbirds.co.tz/index.php/12-day-itinerary-for-endemic-birds-in-northern-tanzania/",
+      "liveListingTitle": "12-Day Itinerary for Endemic Birds in Northern Tanzania",
+      "importSource": "endemicbirds.co.tz",
+      "circuits": [
+        "Northern"
+      ],
+      "destinationHubs": [
+        "northern"
+      ],
+      "wildlifeDestinations": [],
+      "itineraryDays": 10,
+      "hasIncluded": false,
+      "hasExcluded": false,
+      "hasBestTime": false,
+      "hasPrice": false,
+      "needsOwnerReview": [],
+      "missingFields": [
+        "highlights",
+        "included",
+        "excluded",
+        "bestTime",
+        "price"
+      ],
+      "complete": false
+    },
+    {
+      "slug": "10-day-birding-northern-eastern",
+      "title": "10-Day Birding Safaris Northern and Eastern Tanzania",
+      "category": "birding",
+      "durationDays": 10,
+      "liveUrl": "https://endemicbirds.co.tz/index.php/10-day-birding-safaris-eastern-tanzania/",
+      "liveListingTitle": "10-Day Birding Safaris Northern and Eastern Tanzania",
+      "importSource": "endemicbirds.co.tz",
+      "circuits": [
+        "Northern",
+        "Eastern"
+      ],
+      "destinationHubs": [
+        "northern",
+        "eastern"
+      ],
+      "wildlifeDestinations": [],
+      "itineraryDays": 10,
+      "hasIncluded": false,
+      "hasExcluded": false,
+      "hasBestTime": false,
+      "hasPrice": false,
+      "needsOwnerReview": [],
+      "missingFields": [
+        "highlights",
+        "included",
+        "excluded",
+        "bestTime",
+        "price"
+      ],
+      "complete": false
+    },
+    {
+      "slug": "10-day-birding-southeast",
+      "title": "10-Day Birding Safari in Southeast Tanzania",
+      "category": "birding",
+      "durationDays": 10,
+      "liveUrl": "https://endemicbirds.co.tz/index.php/10-day-birding-safari-itinerary-in-southeast-tanzania/",
+      "liveListingTitle": "10-Day Birding Safari Itinerary in Southeast Tanzania",
+      "importSource": "endemicbirds.co.tz",
+      "circuits": [
+        "Eastern",
+        "Southern"
+      ],
+      "destinationHubs": [
+        "eastern",
+        "southern"
+      ],
+      "wildlifeDestinations": [],
+      "itineraryDays": 10,
+      "hasIncluded": false,
+      "hasExcluded": false,
+      "hasBestTime": false,
+      "hasPrice": false,
+      "needsOwnerReview": [],
+      "missingFields": [
+        "highlights",
+        "included",
+        "excluded",
+        "bestTime",
+        "price"
+      ],
+      "complete": false
+    },
+    {
+      "slug": "10-days-south-west-tanzania",
+      "title": "10 Days South West Tanzania",
+      "category": "birding",
+      "durationDays": 10,
+      "liveUrl": "https://endemicbirds.co.tz/index.php/10-days-south-west-tanzania/",
+      "liveListingTitle": "10 Days South West Tanzania",
+      "importSource": "endemicbirds.co.tz",
+      "circuits": [
+        "Western",
+        "Southern"
+      ],
+      "destinationHubs": [
+        "western",
+        "southern"
+      ],
+      "wildlifeDestinations": [],
+      "itineraryDays": 10,
+      "hasIncluded": false,
+      "hasExcluded": false,
+      "hasBestTime": false,
+      "hasPrice": false,
+      "needsOwnerReview": [],
+      "missingFields": [
+        "highlights",
+        "included",
+        "excluded",
+        "bestTime",
+        "price"
+      ],
+      "complete": false
+    },
+    {
+      "slug": "9-days-mahale-gombe-burigi-minziro",
+      "title": "9 Days Birding – Mahale, Gombe, Burigi-Chato & Minziro Forest",
+      "category": "birding",
+      "durationDays": 9,
+      "liveUrl": "https://endemicbirds.co.tz/index.php/9-days-birding-itinerary-for-mahale-gombe-burigi-chato-and-minziro-forest/",
+      "liveListingTitle": "9 Days Birding Itinerary for Mahale, Gombe, Burigi-Chato, and Minziro Forest",
+      "importSource": "endemicbirds.co.tz",
+      "circuits": [
+        "Western",
+        "North West"
+      ],
+      "destinationHubs": [
+        "western",
+        "north-west"
+      ],
+      "wildlifeDestinations": [],
+      "itineraryDays": 9,
+      "hasIncluded": false,
+      "hasExcluded": false,
+      "hasBestTime": false,
+      "hasPrice": false,
+      "needsOwnerReview": [],
+      "missingFields": [
+        "highlights",
+        "included",
+        "excluded",
+        "bestTime",
+        "price"
+      ],
+      "complete": false
+    },
+    {
+      "slug": "8-days-birding-around-iringa",
+      "title": "8 Days Birding Around Iringa",
+      "category": "birding",
+      "durationDays": 8,
+      "liveUrl": "https://endemicbirds.co.tz/index.php/birding-around-iringa/",
+      "liveListingTitle": "8 Days Birding Around Iringa (Kiponzero,Kisolanza,Uluti,Mufindi)",
+      "importSource": "endemicbirds.co.tz",
+      "circuits": [
+        "Southern"
+      ],
+      "destinationHubs": [
+        "southern",
+        "eastern-arc"
+      ],
+      "wildlifeDestinations": [],
+      "itineraryDays": 8,
+      "hasIncluded": false,
+      "hasExcluded": false,
+      "hasBestTime": false,
+      "hasPrice": false,
+      "needsOwnerReview": [],
+      "missingFields": [
+        "highlights",
+        "included",
+        "excluded",
+        "bestTime",
+        "price"
+      ],
+      "complete": false
+    },
+    {
+      "slug": "7-days-mpanda-to-mbeya",
+      "title": "7 Days – Mpanda to Inyonga, Rungwe, Bitimanyanga, Chunya, Kitulo & Mbeya",
+      "category": "birding",
+      "durationDays": 7,
+      "liveUrl": "https://endemicbirds.co.tz/index.php/7-days-itinerary-from-mpanda-to-inyonga-rungwe-bitimanyanga-chunya-kituro-and-mbeya/",
+      "liveListingTitle": "7 Days Itinerary from Mpanda to Inyonga, Rungwe, Bitimanyanga, Chunya, Kituro, and Mbeya",
+      "importSource": "endemicbirds.co.tz",
+      "circuits": [
+        "Southern",
+        "Western"
+      ],
+      "destinationHubs": [
+        "southern",
+        "western"
+      ],
+      "wildlifeDestinations": [],
+      "itineraryDays": 7,
+      "hasIncluded": false,
+      "hasExcluded": false,
+      "hasBestTime": false,
+      "hasPrice": false,
+      "needsOwnerReview": [],
+      "missingFields": [
+        "highlights",
+        "included",
+        "excluded",
+        "bestTime",
+        "price"
+      ],
+      "complete": false
+    },
+    {
+      "slug": "10-day-birdwatching-northern",
+      "title": "10-Day Birdwatching Safari in Northern Tanzania",
+      "category": "combined",
+      "durationDays": 10,
+      "liveUrl": "https://endemicbirds.co.tz/index.php/10-day-birdwatching-safari-in-northern-tanzania/",
+      "liveListingTitle": "10-Day Birdwatching Safari in Northern Tanzania",
+      "importSource": "endemicbirds.co.tz",
+      "circuits": [
+        "Northern"
+      ],
+      "destinationHubs": [
+        "northern"
+      ],
+      "wildlifeDestinations": [],
+      "itineraryDays": 10,
+      "hasIncluded": false,
+      "hasExcluded": false,
+      "hasBestTime": false,
+      "hasPrice": false,
+      "needsOwnerReview": [
+        "category confirmation"
+      ],
+      "missingFields": [
+        "highlights",
+        "included",
+        "excluded",
+        "bestTime",
+        "price",
+        "wildlifeDestinations (park slugs)"
+      ],
+      "complete": false
+    },
+    {
+      "slug": "15-days-birding-wildlife-photographic",
+      "title": "15 Days Birding and Wildlife Photographic",
+      "category": "combined",
+      "durationDays": 15,
+      "liveUrl": "https://endemicbirds.co.tz/index.php/2023/09/06/15-days-birding-and-wildlife-photographic/",
+      "liveListingTitle": "15 Days Birding And Wildlife Photographic",
+      "importSource": "endemicbirds.co.tz",
+      "circuits": [
+        "Northern",
+        "Southern"
+      ],
+      "destinationHubs": [
+        "northern",
+        "southern"
+      ],
+      "wildlifeDestinations": [],
+      "itineraryDays": 10,
+      "hasIncluded": false,
+      "hasExcluded": false,
+      "hasBestTime": false,
+      "hasPrice": false,
+      "needsOwnerReview": [
+        "full route"
+      ],
+      "missingFields": [
+        "highlights",
+        "included",
+        "excluded",
+        "bestTime",
+        "price",
+        "wildlifeDestinations (park slugs)"
+      ],
+      "complete": false
+    },
+    {
+      "slug": "6-days-tanzania-safari",
+      "title": "6 Days Tanzania Safari",
+      "category": "wildlife",
+      "durationDays": 6,
+      "liveUrl": "https://endemicbirds.co.tz/index.php/6-days-tanzania-safari/",
+      "liveListingTitle": "6 Days Tanzania Safari",
+      "importSource": "endemicbirds.co.tz",
+      "circuits": [
+        "Northern"
+      ],
+      "destinationHubs": [
+        "northern"
+      ],
+      "wildlifeDestinations": [
+        "tarangire-national-park",
+        "ngorongoro-conservation-area",
+        "serengeti-national-park"
+      ],
+      "itineraryDays": 6,
+      "hasIncluded": true,
+      "hasExcluded": true,
+      "hasBestTime": true,
+      "hasPrice": false,
+      "needsOwnerReview": [],
+      "missingFields": [
+        "price"
+      ],
+      "complete": false
+    },
+    {
+      "slug": "7-days-wildebeest-migration-hadzabe",
+      "title": "7 Days Wildebeest Migration Calving Safari and Hadzabe",
+      "category": "wildlife",
+      "durationDays": 7,
+      "liveUrl": "https://endemicbirds.co.tz/index.php/7-days-wildebeest-migration-calving-safari-and-hadzabe/",
+      "liveListingTitle": "7 Days Wildebeest Migration Calving Safari and Hadzabe",
+      "importSource": "endemicbirds.co.tz",
+      "circuits": [
+        "Northern"
+      ],
+      "destinationHubs": [
+        "northern"
+      ],
+      "wildlifeDestinations": [
+        "serengeti-national-park",
+        "ngorongoro-conservation-area"
+      ],
+      "itineraryDays": 7,
+      "hasIncluded": true,
+      "hasExcluded": true,
+      "hasBestTime": false,
+      "hasPrice": false,
+      "needsOwnerReview": [],
+      "missingFields": [
+        "bestTime",
+        "price"
+      ],
+      "complete": false
+    },
+    {
+      "slug": "8-days-wildebeest-calving-migration",
+      "title": "8 Days Great Wildebeest Calving Migration Safari",
+      "category": "wildlife",
+      "durationDays": 8,
+      "liveUrl": "https://endemicbirds.co.tz/index.php/2023/09/06/8-days-wildebeest-migration-calving-safari-and-hadzabe/",
+      "liveListingTitle": "8 Days Wildebeest Migration Calving Safari And Hadzabe",
+      "importSource": "endemicbirds.co.tz",
+      "circuits": [
+        "Northern"
+      ],
+      "destinationHubs": [
+        "northern"
+      ],
+      "wildlifeDestinations": [
+        "serengeti-national-park",
+        "ngorongoro-conservation-area"
+      ],
+      "itineraryDays": 8,
+      "hasIncluded": true,
+      "hasExcluded": true,
+      "hasBestTime": false,
+      "hasPrice": false,
+      "needsOwnerReview": [],
+      "missingFields": [
+        "bestTime",
+        "price"
+      ],
+      "complete": false
+    },
+    {
+      "slug": "9-days-wildlife-safari-zanzibar",
+      "title": "9 Days Tanzania Wildlife Safari and Zanzibar Beach Holiday",
+      "category": "wildlife",
+      "durationDays": 9,
+      "liveUrl": "https://endemicbirds.co.tz/index.php/9-days-tanzania-wildlife-safari-and-zanzibar-beach-holiday/",
+      "liveListingTitle": "9 Days Tanzania Wildlife Safari and Zanzibar Beach Holiday",
+      "importSource": "endemicbirds.co.tz",
+      "circuits": [
+        "Northern",
+        "Eastern"
+      ],
+      "destinationHubs": [
+        "northern",
+        "eastern"
+      ],
+      "wildlifeDestinations": [
+        "serengeti-national-park",
+        "ngorongoro-conservation-area"
+      ],
+      "itineraryDays": 9,
+      "hasIncluded": true,
+      "hasExcluded": true,
+      "hasBestTime": false,
+      "hasPrice": false,
+      "needsOwnerReview": [],
+      "missingFields": [
+        "highlights",
+        "bestTime",
+        "price"
+      ],
+      "complete": false
+    },
+    {
+      "slug": "10-days-luxury-flying-safari",
+      "title": "10 Days Tanzania Luxury Flying Safari",
+      "category": "wildlife",
+      "durationDays": 10,
+      "liveUrl": "https://endemicbirds.co.tz/index.php/10-days-tanzania-luxury-flying-safari/",
+      "liveListingTitle": "10 Days Tanzania Luxury Flying Safari",
+      "importSource": "endemicbirds.co.tz",
+      "circuits": [
+        "Northern",
+        "Southern"
+      ],
+      "destinationHubs": [
+        "northern",
+        "southern"
+      ],
+      "wildlifeDestinations": [
+        "serengeti-national-park",
+        "ngorongoro-conservation-area",
+        "ruaha-national-park"
+      ],
+      "itineraryDays": 10,
+      "hasIncluded": true,
+      "hasExcluded": true,
+      "hasBestTime": false,
+      "hasPrice": false,
+      "needsOwnerReview": [],
+      "missingFields": [
+        "highlights",
+        "bestTime",
+        "price"
+      ],
+      "complete": false
+    },
+    {
+      "slug": "10-days-chimpanzee-tracking",
+      "title": "10 Days Chimpanzee Tracking",
+      "category": "wildlife",
+      "durationDays": 10,
+      "liveUrl": "https://endemicbirds.co.tz/index.php/10-days-chimpanzee-tracking/",
+      "liveListingTitle": "10 Days Chimpanzee Tracking",
+      "importSource": "endemicbirds.co.tz",
+      "circuits": [
+        "Western"
+      ],
+      "destinationHubs": [
+        "western"
+      ],
+      "wildlifeDestinations": [
+        "mahale-mountains-national-park"
+      ],
+      "itineraryDays": 10,
+      "hasIncluded": true,
+      "hasExcluded": true,
+      "hasBestTime": false,
+      "hasPrice": false,
+      "needsOwnerReview": [],
+      "missingFields": [
+        "bestTime",
+        "price"
+      ],
+      "complete": false
+    },
+    {
+      "slug": "22-days-birding-itinerary-north-east-south-pemba",
+      "title": "22 Days Birding Itinerary for North, East, South and Pemba",
+      "category": "birding",
+      "durationDays": 22,
+      "liveUrl": "https://endemicbirds.co.tz/index.php/2023/09/23/22-days-birding-itinerary-for-north-east-south-and-pemba/",
+      "liveListingTitle": "22 Days Birding Itinerary For North East South And Pemba",
+      "importSource": "endemicbirds.co.tz",
+      "circuits": [
+        "Northern",
+        "Eastern",
+        "Southern"
+      ],
+      "destinationHubs": [
+        "northern",
+        "eastern",
+        "southern",
+        "eastern"
+      ],
+      "wildlifeDestinations": [],
+      "itineraryDays": 20,
+      "hasIncluded": false,
+      "hasExcluded": false,
+      "hasBestTime": false,
+      "hasPrice": false,
+      "needsOwnerReview": [
+        "distinction from 22-day endemic birding tour"
+      ],
+      "missingFields": [
+        "highlights",
+        "included",
+        "excluded",
+        "bestTime",
+        "price"
+      ],
+      "complete": false
+    },
+    {
+      "slug": "5-days-serengeti-migration-focus",
+      "title": "5 Days Serengeti Migration Focus Safari",
+      "category": "wildlife",
+      "durationDays": 5,
+      "liveUrl": null,
+      "liveListingTitle": null,
+      "importSource": "manual/seed",
+      "circuits": [
+        "Northern"
+      ],
+      "destinationHubs": [
+        "northern"
+      ],
+      "wildlifeDestinations": [
+        "serengeti-national-park",
+        "ngorongoro-conservation-area"
+      ],
+      "itineraryDays": 5,
+      "hasIncluded": true,
+      "hasExcluded": true,
+      "hasBestTime": true,
+      "hasPrice": false,
+      "needsOwnerReview": [],
+      "missingFields": [
+        "price"
+      ],
+      "complete": false
+    },
+    {
+      "slug": "4-days-ngorongoro-crater-escape",
+      "title": "4 Days Ngorongoro Crater Escape",
+      "category": "wildlife",
+      "durationDays": 4,
+      "liveUrl": null,
+      "liveListingTitle": null,
+      "importSource": "manual/seed",
+      "circuits": [
+        "Northern"
+      ],
+      "destinationHubs": [
+        "northern"
+      ],
+      "wildlifeDestinations": [
+        "arusha-national-park",
+        "lake-manyara-national-park",
+        "ngorongoro-conservation-area"
+      ],
+      "itineraryDays": 4,
+      "hasIncluded": true,
+      "hasExcluded": true,
+      "hasBestTime": true,
+      "hasPrice": false,
+      "needsOwnerReview": [],
+      "missingFields": [
+        "price"
+      ],
+      "complete": false
+    },
+    {
+      "slug": "8-days-northern-tarangire-manyara-ngorongoro-serengeti",
+      "title": "8 Days Tarangire, Manyara, Ngorongoro & Serengeti",
+      "category": "wildlife",
+      "durationDays": 8,
+      "liveUrl": null,
+      "liveListingTitle": null,
+      "importSource": "manual/seed",
+      "circuits": [
+        "Northern"
+      ],
+      "destinationHubs": [
+        "northern"
+      ],
+      "wildlifeDestinations": [
+        "tarangire-national-park",
+        "lake-manyara-national-park",
+        "ngorongoro-conservation-area",
+        "serengeti-national-park"
+      ],
+      "itineraryDays": 8,
+      "hasIncluded": true,
+      "hasExcluded": true,
+      "hasBestTime": true,
+      "hasPrice": false,
+      "needsOwnerReview": [],
+      "missingFields": [
+        "price"
+      ],
+      "complete": false
+    },
+    {
+      "slug": "7-days-mahale-gombe-chimp-safari",
+      "title": "7 Days Mahale & Gombe Chimp Safari",
+      "category": "wildlife",
+      "durationDays": 7,
+      "liveUrl": null,
+      "liveListingTitle": null,
+      "importSource": "manual/seed",
+      "circuits": [
+        "Western"
+      ],
+      "destinationHubs": [
+        "western"
+      ],
+      "wildlifeDestinations": [
+        "mahale-mountains-national-park"
+      ],
+      "itineraryDays": 7,
+      "hasIncluded": true,
+      "hasExcluded": true,
+      "hasBestTime": true,
+      "hasPrice": false,
+      "needsOwnerReview": [],
+      "missingFields": [
+        "price"
+      ],
+      "complete": false
+    },
+    {
+      "slug": "8-days-ruaha-mikumi-safari",
+      "title": "8 Days Ruaha & Mikumi Safari",
+      "category": "wildlife",
+      "durationDays": 8,
+      "liveUrl": null,
+      "liveListingTitle": null,
+      "importSource": "manual/seed",
+      "circuits": [
+        "Southern"
+      ],
+      "destinationHubs": [
+        "southern"
+      ],
+      "wildlifeDestinations": [
+        "mikumi-national-park",
+        "ruaha-national-park"
+      ],
+      "itineraryDays": 8,
+      "hasIncluded": true,
+      "hasExcluded": true,
+      "hasBestTime": true,
+      "hasPrice": false,
+      "needsOwnerReview": [],
+      "missingFields": [
+        "price"
+      ],
+      "complete": false
+    },
+    {
+      "slug": "10-days-nyerere-katavi-expedition",
+      "title": "10 Days Nyerere & Katavi Expedition",
+      "category": "wildlife",
+      "durationDays": 10,
+      "liveUrl": null,
+      "liveListingTitle": null,
+      "importSource": "manual/seed",
+      "circuits": [
+        "Southern",
+        "Western"
+      ],
+      "destinationHubs": [
+        "southern",
+        "western"
+      ],
+      "wildlifeDestinations": [
+        "nyerere-national-park",
+        "katavi-national-park"
+      ],
+      "itineraryDays": 10,
+      "hasIncluded": true,
+      "hasExcluded": true,
+      "hasBestTime": true,
+      "hasPrice": false,
+      "needsOwnerReview": [],
+      "missingFields": [
+        "price"
+      ],
+      "complete": false
+    }
+  ],
+  "complete": [],
+  "all": [
+    {
+      "slug": "22-days-endemic-birding-tours",
+      "title": "22 Days Endemic Birding Tours",
+      "category": "birding",
+      "durationDays": 22,
+      "liveUrl": "https://endemicbirds.co.tz/index.php/22-days-endemic-birding-tour/",
+      "liveListingTitle": "22 DAYS ENDEMIC BIRDING TOURS",
+      "importSource": "endemicbirds.co.tz",
+      "circuits": [
+        "Southern",
+        "Eastern",
+        "Northern"
+      ],
+      "destinationHubs": [
+        "southern",
+        "eastern-arc",
+        "northern",
+        "eastern"
+      ],
+      "wildlifeDestinations": [],
+      "itineraryDays": 16,
+      "hasIncluded": false,
+      "hasExcluded": false,
+      "hasBestTime": false,
+      "hasPrice": false,
+      "needsOwnerReview": [
+        "included",
+        "excluded",
+        "bestTime"
+      ],
+      "missingFields": [
+        "highlights",
+        "included",
+        "excluded",
+        "bestTime",
+        "price"
+      ],
+      "complete": false
+    },
+    {
+      "slug": "14-days-southern-tanzania-birding-tour",
+      "title": "14 Days Southern Tanzania Birding Tour",
+      "category": "birding",
+      "durationDays": 14,
+      "liveUrl": "https://endemicbirds.co.tz/index.php/14-days-southern-tanzania-birding-tour/",
+      "liveListingTitle": "14 DAYS SOUTHERN TANZANIA BIRDING TOUR",
+      "importSource": "endemicbirds.co.tz",
+      "circuits": [
+        "Southern"
+      ],
+      "destinationHubs": [
+        "southern"
+      ],
+      "wildlifeDestinations": [],
+      "itineraryDays": 12,
+      "hasIncluded": false,
+      "hasExcluded": false,
+      "hasBestTime": false,
+      "hasPrice": false,
+      "needsOwnerReview": [
+        "included",
+        "excluded",
+        "bestTime"
+      ],
+      "missingFields": [
+        "highlights",
+        "included",
+        "excluded",
+        "bestTime",
+        "price"
+      ],
+      "complete": false
+    },
+    {
+      "slug": "19-days-southern-tanzania-birding-trip",
+      "title": "19 Days Southern Tanzania Birding Trip",
+      "category": "birding",
+      "durationDays": 19,
+      "liveUrl": "https://endemicbirds.co.tz/index.php/19-days-southern-tanzania-birding-trip/",
+      "liveListingTitle": "19 Days Southern Tanzania Endemic birding tour itinerary",
+      "importSource": "endemicbirds.co.tz",
+      "circuits": [
+        "Southern"
+      ],
+      "destinationHubs": [
+        "southern"
+      ],
+      "wildlifeDestinations": [],
+      "itineraryDays": 18,
+      "hasIncluded": false,
+      "hasExcluded": false,
+      "hasBestTime": false,
+      "hasPrice": false,
+      "needsOwnerReview": [],
+      "missingFields": [
+        "highlights",
+        "included",
+        "excluded",
+        "bestTime",
+        "price"
+      ],
+      "complete": false
+    },
+    {
+      "slug": "15-days-tanzania-birding-tour",
+      "title": "15 Days Tanzania Birding Tour",
+      "category": "birding",
+      "durationDays": 15,
+      "liveUrl": "https://endemicbirds.co.tz/index.php/tanzania-birding-tour/",
+      "liveListingTitle": "15 Days Tanzania Birding tour (Tarangire,Lake Manyara, Ngorongoro,Serengeti,etc",
+      "importSource": "endemicbirds.co.tz",
+      "circuits": [
+        "Northern",
+        "Southern"
+      ],
+      "destinationHubs": [
+        "northern",
+        "southern"
+      ],
+      "wildlifeDestinations": [],
+      "itineraryDays": 10,
+      "hasIncluded": false,
+      "hasExcluded": false,
+      "hasBestTime": false,
+      "hasPrice": false,
+      "needsOwnerReview": [
+        "daily route detail"
+      ],
+      "missingFields": [
+        "highlights",
+        "included",
+        "excluded",
+        "bestTime",
+        "price"
+      ],
+      "complete": false
+    },
+    {
+      "slug": "19-days-southern-endemic-birding",
+      "title": "19 Days Southern Tanzania Endemic Birding Tour",
+      "category": "birding",
+      "durationDays": 19,
+      "liveUrl": "https://endemicbirds.co.tz/index.php/19-days-southern-tanzania-birding-trip/",
+      "liveListingTitle": "19 Days Southern Tanzania Endemic birding tour itinerary",
+      "importSource": "endemicbirds.co.tz",
+      "circuits": [
+        "Southern"
+      ],
+      "destinationHubs": [
+        "southern",
+        "eastern-arc"
+      ],
+      "wildlifeDestinations": [],
+      "itineraryDays": 18,
+      "hasIncluded": false,
+      "hasExcluded": false,
+      "hasBestTime": false,
+      "hasPrice": false,
+      "needsOwnerReview": [
+        "distinction from 19-day southern trip"
+      ],
+      "missingFields": [
+        "highlights",
+        "included",
+        "excluded",
+        "bestTime",
+        "price"
+      ],
+      "complete": false
+    },
+    {
+      "slug": "20-day-endemic-birds-southern",
+      "title": "20-Day Itinerary for Endemic Birds in Southern Tanzania",
+      "category": "birding",
+      "durationDays": 20,
+      "liveUrl": "https://endemicbirds.co.tz/index.php/20-day-itinerary-for-endemic-birds-in-southern-tanzania/",
+      "liveListingTitle": "20-Day Itinerary for Endemic Birds in Southern Tanzania",
+      "importSource": "endemicbirds.co.tz",
+      "circuits": [
+        "Southern"
+      ],
+      "destinationHubs": [
+        "southern",
+        "eastern-arc"
+      ],
+      "wildlifeDestinations": [],
+      "itineraryDays": 15,
+      "hasIncluded": false,
+      "hasExcluded": false,
+      "hasBestTime": false,
+      "hasPrice": false,
+      "needsOwnerReview": [],
+      "missingFields": [
+        "highlights",
+        "included",
+        "excluded",
+        "bestTime",
+        "price"
+      ],
+      "complete": false
+    },
+    {
+      "slug": "20-day-endemic-birding-tanzania",
+      "title": "20-Day Endemic Birding Tour in Tanzania",
+      "category": "birding",
+      "durationDays": 20,
+      "liveUrl": "https://endemicbirds.co.tz/index.php/20-day-itinerary-for-endemic-birds-in-tanzania-2/",
+      "liveListingTitle": "20-Day Itinerary for Endemic Birding tour in Tanzania",
+      "importSource": "endemicbirds.co.tz",
+      "circuits": [
+        "Northern",
+        "Southern"
+      ],
+      "destinationHubs": [
+        "northern",
+        "southern",
+        "eastern-arc"
+      ],
+      "wildlifeDestinations": [],
+      "itineraryDays": 12,
+      "hasIncluded": false,
+      "hasExcluded": false,
+      "hasBestTime": false,
+      "hasPrice": false,
+      "needsOwnerReview": [
+        "overlap with 20-day southern route"
+      ],
+      "missingFields": [
+        "highlights",
+        "included",
+        "excluded",
+        "bestTime",
+        "price"
+      ],
+      "complete": false
+    },
+    {
+      "slug": "12-day-endemic-birds-northern",
+      "title": "12-Day Endemic Birds in Northern Tanzania",
+      "category": "birding",
+      "durationDays": 12,
+      "liveUrl": "https://endemicbirds.co.tz/index.php/12-day-itinerary-for-endemic-birds-in-northern-tanzania/",
+      "liveListingTitle": "12-Day Itinerary for Endemic Birds in Northern Tanzania",
+      "importSource": "endemicbirds.co.tz",
+      "circuits": [
+        "Northern"
+      ],
+      "destinationHubs": [
+        "northern"
+      ],
+      "wildlifeDestinations": [],
+      "itineraryDays": 10,
+      "hasIncluded": false,
+      "hasExcluded": false,
+      "hasBestTime": false,
+      "hasPrice": false,
+      "needsOwnerReview": [],
+      "missingFields": [
+        "highlights",
+        "included",
+        "excluded",
+        "bestTime",
+        "price"
+      ],
+      "complete": false
+    },
+    {
+      "slug": "10-day-birding-northern-eastern",
+      "title": "10-Day Birding Safaris Northern and Eastern Tanzania",
+      "category": "birding",
+      "durationDays": 10,
+      "liveUrl": "https://endemicbirds.co.tz/index.php/10-day-birding-safaris-eastern-tanzania/",
+      "liveListingTitle": "10-Day Birding Safaris Northern and Eastern Tanzania",
+      "importSource": "endemicbirds.co.tz",
+      "circuits": [
+        "Northern",
+        "Eastern"
+      ],
+      "destinationHubs": [
+        "northern",
+        "eastern"
+      ],
+      "wildlifeDestinations": [],
+      "itineraryDays": 10,
+      "hasIncluded": false,
+      "hasExcluded": false,
+      "hasBestTime": false,
+      "hasPrice": false,
+      "needsOwnerReview": [],
+      "missingFields": [
+        "highlights",
+        "included",
+        "excluded",
+        "bestTime",
+        "price"
+      ],
+      "complete": false
+    },
+    {
+      "slug": "10-day-birding-southeast",
+      "title": "10-Day Birding Safari in Southeast Tanzania",
+      "category": "birding",
+      "durationDays": 10,
+      "liveUrl": "https://endemicbirds.co.tz/index.php/10-day-birding-safari-itinerary-in-southeast-tanzania/",
+      "liveListingTitle": "10-Day Birding Safari Itinerary in Southeast Tanzania",
+      "importSource": "endemicbirds.co.tz",
+      "circuits": [
+        "Eastern",
+        "Southern"
+      ],
+      "destinationHubs": [
+        "eastern",
+        "southern"
+      ],
+      "wildlifeDestinations": [],
+      "itineraryDays": 10,
+      "hasIncluded": false,
+      "hasExcluded": false,
+      "hasBestTime": false,
+      "hasPrice": false,
+      "needsOwnerReview": [],
+      "missingFields": [
+        "highlights",
+        "included",
+        "excluded",
+        "bestTime",
+        "price"
+      ],
+      "complete": false
+    },
+    {
+      "slug": "10-days-south-west-tanzania",
+      "title": "10 Days South West Tanzania",
+      "category": "birding",
+      "durationDays": 10,
+      "liveUrl": "https://endemicbirds.co.tz/index.php/10-days-south-west-tanzania/",
+      "liveListingTitle": "10 Days South West Tanzania",
+      "importSource": "endemicbirds.co.tz",
+      "circuits": [
+        "Western",
+        "Southern"
+      ],
+      "destinationHubs": [
+        "western",
+        "southern"
+      ],
+      "wildlifeDestinations": [],
+      "itineraryDays": 10,
+      "hasIncluded": false,
+      "hasExcluded": false,
+      "hasBestTime": false,
+      "hasPrice": false,
+      "needsOwnerReview": [],
+      "missingFields": [
+        "highlights",
+        "included",
+        "excluded",
+        "bestTime",
+        "price"
+      ],
+      "complete": false
+    },
+    {
+      "slug": "9-days-mahale-gombe-burigi-minziro",
+      "title": "9 Days Birding – Mahale, Gombe, Burigi-Chato & Minziro Forest",
+      "category": "birding",
+      "durationDays": 9,
+      "liveUrl": "https://endemicbirds.co.tz/index.php/9-days-birding-itinerary-for-mahale-gombe-burigi-chato-and-minziro-forest/",
+      "liveListingTitle": "9 Days Birding Itinerary for Mahale, Gombe, Burigi-Chato, and Minziro Forest",
+      "importSource": "endemicbirds.co.tz",
+      "circuits": [
+        "Western",
+        "North West"
+      ],
+      "destinationHubs": [
+        "western",
+        "north-west"
+      ],
+      "wildlifeDestinations": [],
+      "itineraryDays": 9,
+      "hasIncluded": false,
+      "hasExcluded": false,
+      "hasBestTime": false,
+      "hasPrice": false,
+      "needsOwnerReview": [],
+      "missingFields": [
+        "highlights",
+        "included",
+        "excluded",
+        "bestTime",
+        "price"
+      ],
+      "complete": false
+    },
+    {
+      "slug": "8-days-birding-around-iringa",
+      "title": "8 Days Birding Around Iringa",
+      "category": "birding",
+      "durationDays": 8,
+      "liveUrl": "https://endemicbirds.co.tz/index.php/birding-around-iringa/",
+      "liveListingTitle": "8 Days Birding Around Iringa (Kiponzero,Kisolanza,Uluti,Mufindi)",
+      "importSource": "endemicbirds.co.tz",
+      "circuits": [
+        "Southern"
+      ],
+      "destinationHubs": [
+        "southern",
+        "eastern-arc"
+      ],
+      "wildlifeDestinations": [],
+      "itineraryDays": 8,
+      "hasIncluded": false,
+      "hasExcluded": false,
+      "hasBestTime": false,
+      "hasPrice": false,
+      "needsOwnerReview": [],
+      "missingFields": [
+        "highlights",
+        "included",
+        "excluded",
+        "bestTime",
+        "price"
+      ],
+      "complete": false
+    },
+    {
+      "slug": "7-days-mpanda-to-mbeya",
+      "title": "7 Days – Mpanda to Inyonga, Rungwe, Bitimanyanga, Chunya, Kitulo & Mbeya",
+      "category": "birding",
+      "durationDays": 7,
+      "liveUrl": "https://endemicbirds.co.tz/index.php/7-days-itinerary-from-mpanda-to-inyonga-rungwe-bitimanyanga-chunya-kituro-and-mbeya/",
+      "liveListingTitle": "7 Days Itinerary from Mpanda to Inyonga, Rungwe, Bitimanyanga, Chunya, Kituro, and Mbeya",
+      "importSource": "endemicbirds.co.tz",
+      "circuits": [
+        "Southern",
+        "Western"
+      ],
+      "destinationHubs": [
+        "southern",
+        "western"
+      ],
+      "wildlifeDestinations": [],
+      "itineraryDays": 7,
+      "hasIncluded": false,
+      "hasExcluded": false,
+      "hasBestTime": false,
+      "hasPrice": false,
+      "needsOwnerReview": [],
+      "missingFields": [
+        "highlights",
+        "included",
+        "excluded",
+        "bestTime",
+        "price"
+      ],
+      "complete": false
+    },
+    {
+      "slug": "10-day-birdwatching-northern",
+      "title": "10-Day Birdwatching Safari in Northern Tanzania",
+      "category": "combined",
+      "durationDays": 10,
+      "liveUrl": "https://endemicbirds.co.tz/index.php/10-day-birdwatching-safari-in-northern-tanzania/",
+      "liveListingTitle": "10-Day Birdwatching Safari in Northern Tanzania",
+      "importSource": "endemicbirds.co.tz",
+      "circuits": [
+        "Northern"
+      ],
+      "destinationHubs": [
+        "northern"
+      ],
+      "wildlifeDestinations": [],
+      "itineraryDays": 10,
+      "hasIncluded": false,
+      "hasExcluded": false,
+      "hasBestTime": false,
+      "hasPrice": false,
+      "needsOwnerReview": [
+        "category confirmation"
+      ],
+      "missingFields": [
+        "highlights",
+        "included",
+        "excluded",
+        "bestTime",
+        "price",
+        "wildlifeDestinations (park slugs)"
+      ],
+      "complete": false
+    },
+    {
+      "slug": "15-days-birding-wildlife-photographic",
+      "title": "15 Days Birding and Wildlife Photographic",
+      "category": "combined",
+      "durationDays": 15,
+      "liveUrl": "https://endemicbirds.co.tz/index.php/2023/09/06/15-days-birding-and-wildlife-photographic/",
+      "liveListingTitle": "15 Days Birding And Wildlife Photographic",
+      "importSource": "endemicbirds.co.tz",
+      "circuits": [
+        "Northern",
+        "Southern"
+      ],
+      "destinationHubs": [
+        "northern",
+        "southern"
+      ],
+      "wildlifeDestinations": [],
+      "itineraryDays": 10,
+      "hasIncluded": false,
+      "hasExcluded": false,
+      "hasBestTime": false,
+      "hasPrice": false,
+      "needsOwnerReview": [
+        "full route"
+      ],
+      "missingFields": [
+        "highlights",
+        "included",
+        "excluded",
+        "bestTime",
+        "price",
+        "wildlifeDestinations (park slugs)"
+      ],
+      "complete": false
+    },
+    {
+      "slug": "6-days-tanzania-safari",
+      "title": "6 Days Tanzania Safari",
+      "category": "wildlife",
+      "durationDays": 6,
+      "liveUrl": "https://endemicbirds.co.tz/index.php/6-days-tanzania-safari/",
+      "liveListingTitle": "6 Days Tanzania Safari",
+      "importSource": "endemicbirds.co.tz",
+      "circuits": [
+        "Northern"
+      ],
+      "destinationHubs": [
+        "northern"
+      ],
+      "wildlifeDestinations": [
+        "tarangire-national-park",
+        "ngorongoro-conservation-area",
+        "serengeti-national-park"
+      ],
+      "itineraryDays": 6,
+      "hasIncluded": true,
+      "hasExcluded": true,
+      "hasBestTime": true,
+      "hasPrice": false,
+      "needsOwnerReview": [],
+      "missingFields": [
+        "price"
+      ],
+      "complete": false
+    },
+    {
+      "slug": "7-days-wildebeest-migration-hadzabe",
+      "title": "7 Days Wildebeest Migration Calving Safari and Hadzabe",
+      "category": "wildlife",
+      "durationDays": 7,
+      "liveUrl": "https://endemicbirds.co.tz/index.php/7-days-wildebeest-migration-calving-safari-and-hadzabe/",
+      "liveListingTitle": "7 Days Wildebeest Migration Calving Safari and Hadzabe",
+      "importSource": "endemicbirds.co.tz",
+      "circuits": [
+        "Northern"
+      ],
+      "destinationHubs": [
+        "northern"
+      ],
+      "wildlifeDestinations": [
+        "serengeti-national-park",
+        "ngorongoro-conservation-area"
+      ],
+      "itineraryDays": 7,
+      "hasIncluded": true,
+      "hasExcluded": true,
+      "hasBestTime": false,
+      "hasPrice": false,
+      "needsOwnerReview": [],
+      "missingFields": [
+        "bestTime",
+        "price"
+      ],
+      "complete": false
+    },
+    {
+      "slug": "8-days-wildebeest-calving-migration",
+      "title": "8 Days Great Wildebeest Calving Migration Safari",
+      "category": "wildlife",
+      "durationDays": 8,
+      "liveUrl": "https://endemicbirds.co.tz/index.php/2023/09/06/8-days-wildebeest-migration-calving-safari-and-hadzabe/",
+      "liveListingTitle": "8 Days Wildebeest Migration Calving Safari And Hadzabe",
+      "importSource": "endemicbirds.co.tz",
+      "circuits": [
+        "Northern"
+      ],
+      "destinationHubs": [
+        "northern"
+      ],
+      "wildlifeDestinations": [
+        "serengeti-national-park",
+        "ngorongoro-conservation-area"
+      ],
+      "itineraryDays": 8,
+      "hasIncluded": true,
+      "hasExcluded": true,
+      "hasBestTime": false,
+      "hasPrice": false,
+      "needsOwnerReview": [],
+      "missingFields": [
+        "bestTime",
+        "price"
+      ],
+      "complete": false
+    },
+    {
+      "slug": "9-days-wildlife-safari-zanzibar",
+      "title": "9 Days Tanzania Wildlife Safari and Zanzibar Beach Holiday",
+      "category": "wildlife",
+      "durationDays": 9,
+      "liveUrl": "https://endemicbirds.co.tz/index.php/9-days-tanzania-wildlife-safari-and-zanzibar-beach-holiday/",
+      "liveListingTitle": "9 Days Tanzania Wildlife Safari and Zanzibar Beach Holiday",
+      "importSource": "endemicbirds.co.tz",
+      "circuits": [
+        "Northern",
+        "Eastern"
+      ],
+      "destinationHubs": [
+        "northern",
+        "eastern"
+      ],
+      "wildlifeDestinations": [
+        "serengeti-national-park",
+        "ngorongoro-conservation-area"
+      ],
+      "itineraryDays": 9,
+      "hasIncluded": true,
+      "hasExcluded": true,
+      "hasBestTime": false,
+      "hasPrice": false,
+      "needsOwnerReview": [],
+      "missingFields": [
+        "highlights",
+        "bestTime",
+        "price"
+      ],
+      "complete": false
+    },
+    {
+      "slug": "10-days-luxury-flying-safari",
+      "title": "10 Days Tanzania Luxury Flying Safari",
+      "category": "wildlife",
+      "durationDays": 10,
+      "liveUrl": "https://endemicbirds.co.tz/index.php/10-days-tanzania-luxury-flying-safari/",
+      "liveListingTitle": "10 Days Tanzania Luxury Flying Safari",
+      "importSource": "endemicbirds.co.tz",
+      "circuits": [
+        "Northern",
+        "Southern"
+      ],
+      "destinationHubs": [
+        "northern",
+        "southern"
+      ],
+      "wildlifeDestinations": [
+        "serengeti-national-park",
+        "ngorongoro-conservation-area",
+        "ruaha-national-park"
+      ],
+      "itineraryDays": 10,
+      "hasIncluded": true,
+      "hasExcluded": true,
+      "hasBestTime": false,
+      "hasPrice": false,
+      "needsOwnerReview": [],
+      "missingFields": [
+        "highlights",
+        "bestTime",
+        "price"
+      ],
+      "complete": false
+    },
+    {
+      "slug": "10-days-chimpanzee-tracking",
+      "title": "10 Days Chimpanzee Tracking",
+      "category": "wildlife",
+      "durationDays": 10,
+      "liveUrl": "https://endemicbirds.co.tz/index.php/10-days-chimpanzee-tracking/",
+      "liveListingTitle": "10 Days Chimpanzee Tracking",
+      "importSource": "endemicbirds.co.tz",
+      "circuits": [
+        "Western"
+      ],
+      "destinationHubs": [
+        "western"
+      ],
+      "wildlifeDestinations": [
+        "mahale-mountains-national-park"
+      ],
+      "itineraryDays": 10,
+      "hasIncluded": true,
+      "hasExcluded": true,
+      "hasBestTime": false,
+      "hasPrice": false,
+      "needsOwnerReview": [],
+      "missingFields": [
+        "bestTime",
+        "price"
+      ],
+      "complete": false
+    },
+    {
+      "slug": "22-days-birding-itinerary-north-east-south-pemba",
+      "title": "22 Days Birding Itinerary for North, East, South and Pemba",
+      "category": "birding",
+      "durationDays": 22,
+      "liveUrl": "https://endemicbirds.co.tz/index.php/2023/09/23/22-days-birding-itinerary-for-north-east-south-and-pemba/",
+      "liveListingTitle": "22 Days Birding Itinerary For North East South And Pemba",
+      "importSource": "endemicbirds.co.tz",
+      "circuits": [
+        "Northern",
+        "Eastern",
+        "Southern"
+      ],
+      "destinationHubs": [
+        "northern",
+        "eastern",
+        "southern",
+        "eastern"
+      ],
+      "wildlifeDestinations": [],
+      "itineraryDays": 20,
+      "hasIncluded": false,
+      "hasExcluded": false,
+      "hasBestTime": false,
+      "hasPrice": false,
+      "needsOwnerReview": [
+        "distinction from 22-day endemic birding tour"
+      ],
+      "missingFields": [
+        "highlights",
+        "included",
+        "excluded",
+        "bestTime",
+        "price"
+      ],
+      "complete": false
+    },
+    {
+      "slug": "5-days-serengeti-migration-focus",
+      "title": "5 Days Serengeti Migration Focus Safari",
+      "category": "wildlife",
+      "durationDays": 5,
+      "liveUrl": null,
+      "liveListingTitle": null,
+      "importSource": "manual/seed",
+      "circuits": [
+        "Northern"
+      ],
+      "destinationHubs": [
+        "northern"
+      ],
+      "wildlifeDestinations": [
+        "serengeti-national-park",
+        "ngorongoro-conservation-area"
+      ],
+      "itineraryDays": 5,
+      "hasIncluded": true,
+      "hasExcluded": true,
+      "hasBestTime": true,
+      "hasPrice": false,
+      "needsOwnerReview": [],
+      "missingFields": [
+        "price"
+      ],
+      "complete": false
+    },
+    {
+      "slug": "4-days-ngorongoro-crater-escape",
+      "title": "4 Days Ngorongoro Crater Escape",
+      "category": "wildlife",
+      "durationDays": 4,
+      "liveUrl": null,
+      "liveListingTitle": null,
+      "importSource": "manual/seed",
+      "circuits": [
+        "Northern"
+      ],
+      "destinationHubs": [
+        "northern"
+      ],
+      "wildlifeDestinations": [
+        "arusha-national-park",
+        "lake-manyara-national-park",
+        "ngorongoro-conservation-area"
+      ],
+      "itineraryDays": 4,
+      "hasIncluded": true,
+      "hasExcluded": true,
+      "hasBestTime": true,
+      "hasPrice": false,
+      "needsOwnerReview": [],
+      "missingFields": [
+        "price"
+      ],
+      "complete": false
+    },
+    {
+      "slug": "8-days-northern-tarangire-manyara-ngorongoro-serengeti",
+      "title": "8 Days Tarangire, Manyara, Ngorongoro & Serengeti",
+      "category": "wildlife",
+      "durationDays": 8,
+      "liveUrl": null,
+      "liveListingTitle": null,
+      "importSource": "manual/seed",
+      "circuits": [
+        "Northern"
+      ],
+      "destinationHubs": [
+        "northern"
+      ],
+      "wildlifeDestinations": [
+        "tarangire-national-park",
+        "lake-manyara-national-park",
+        "ngorongoro-conservation-area",
+        "serengeti-national-park"
+      ],
+      "itineraryDays": 8,
+      "hasIncluded": true,
+      "hasExcluded": true,
+      "hasBestTime": true,
+      "hasPrice": false,
+      "needsOwnerReview": [],
+      "missingFields": [
+        "price"
+      ],
+      "complete": false
+    },
+    {
+      "slug": "7-days-mahale-gombe-chimp-safari",
+      "title": "7 Days Mahale & Gombe Chimp Safari",
+      "category": "wildlife",
+      "durationDays": 7,
+      "liveUrl": null,
+      "liveListingTitle": null,
+      "importSource": "manual/seed",
+      "circuits": [
+        "Western"
+      ],
+      "destinationHubs": [
+        "western"
+      ],
+      "wildlifeDestinations": [
+        "mahale-mountains-national-park"
+      ],
+      "itineraryDays": 7,
+      "hasIncluded": true,
+      "hasExcluded": true,
+      "hasBestTime": true,
+      "hasPrice": false,
+      "needsOwnerReview": [],
+      "missingFields": [
+        "price"
+      ],
+      "complete": false
+    },
+    {
+      "slug": "8-days-ruaha-mikumi-safari",
+      "title": "8 Days Ruaha & Mikumi Safari",
+      "category": "wildlife",
+      "durationDays": 8,
+      "liveUrl": null,
+      "liveListingTitle": null,
+      "importSource": "manual/seed",
+      "circuits": [
+        "Southern"
+      ],
+      "destinationHubs": [
+        "southern"
+      ],
+      "wildlifeDestinations": [
+        "mikumi-national-park",
+        "ruaha-national-park"
+      ],
+      "itineraryDays": 8,
+      "hasIncluded": true,
+      "hasExcluded": true,
+      "hasBestTime": true,
+      "hasPrice": false,
+      "needsOwnerReview": [],
+      "missingFields": [
+        "price"
+      ],
+      "complete": false
+    },
+    {
+      "slug": "10-days-nyerere-katavi-expedition",
+      "title": "10 Days Nyerere & Katavi Expedition",
+      "category": "wildlife",
+      "durationDays": 10,
+      "liveUrl": null,
+      "liveListingTitle": null,
+      "importSource": "manual/seed",
+      "circuits": [
+        "Southern",
+        "Western"
+      ],
+      "destinationHubs": [
+        "southern",
+        "western"
+      ],
+      "wildlifeDestinations": [
+        "nyerere-national-park",
+        "katavi-national-park"
+      ],
+      "itineraryDays": 10,
+      "hasIncluded": true,
+      "hasExcluded": true,
+      "hasBestTime": true,
+      "hasPrice": false,
+      "needsOwnerReview": [],
+      "missingFields": [
+        "price"
+      ],
+      "complete": false
+    }
+  ]
+}

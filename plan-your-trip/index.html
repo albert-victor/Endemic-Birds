@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plan Your Trip | Endemic Birds Tanzania</title>
+    <meta name="description" content="Tell us your birding or wildlife interests, dates and pace – we'll shape a Tanzania itinerary around you." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Marck+Script&display=swap" rel="stylesheet" />
+    <link rel="icon" href="../assets/images/from-live-site/brand/bird-logo.png" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body class="has-grain" data-nav="plan">
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <div id="site-header"></div>
+    <main id="main">
+      <section class="section section--cta" style="padding-top: 7rem">
+        <div class="container cta-panel reveal" data-reveal>
+          <div>
+            <p class="eyebrow">Plan your trip</p>
+            <h1 class="section-title">Start with a conversation</h1>
+            <p class="section-lead">
+              Share what interests you most, when you hope to travel, and how long you have – we'll respond with route ideas aligned to birding, wildlife, or both.
+            </p>
+            <ul class="contact-list">
+              <li><strong>Location</strong> Iringa, Tanzania</li>
+              <li><strong>Phone</strong> <a href="tel:+255627013348">+255 627 013 348</a></li>
+              <li><strong>Email</strong> <a href="mailto:info@endemicbirds.co.tz">info@endemicbirds.co.tz</a></li>
+              <li><strong>WhatsApp</strong> <a href="https://wa.me/255627013348">+255 627 013 348</a></li>
+            </ul>
+          </div>
+          <form
+            class="contact-form plan-form-grid"
+            data-inquiry-form
+            data-form-submit="true"
+            action="https://formsubmit.co/info@endemicbirds.co.tz"
+            method="POST"
+          >
+            <input type="hidden" name="_subject" value="Trip inquiry – Endemic Birds website" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" autocomplete="name" required />
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" autocomplete="email" required />
+            </label>
+            <fieldset class="radio-group">
+              <legend>Primary interest</legend>
+              <label><input type="radio" name="interest" value="birding" required /> Birds</label>
+              <label><input type="radio" name="interest" value="wildlife" /> Wildlife</label>
+              <label><input type="radio" name="interest" value="both" /> Both</label>
+              <label><input type="radio" name="interest" value="unsure" /> Not sure yet</label>
+            </fieldset>
+            <label>
+              <span>Preferred region (if known)</span>
+              <input type="text" name="region" placeholder="e.g. Southern miombo, Eastern Arc" />
+            </label>
+            <label>
+              <span>Approximate travel dates</span>
+              <input type="text" name="dates" autocomplete="off" />
+            </label>
+            <label>
+              <span>Duration &amp; travellers</span>
+              <input type="text" name="party" placeholder="e.g. 14 days, 2 guests" />
+            </label>
+            <label>
+              <span>Targets, pace &amp; notes</span>
+              <textarea name="message" rows="5"></textarea>
+            </label>
+            <button class="btn btn-solid" type="submit">Send enquiry</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <div id="site-footer"></div>
+    <script>window.__ASSET_PREFIX__ = "../";</script>
+    <script src="../assets/js/layout.js" defer></script>
+    <script src="../assets/js/site-search.js" defer></script>
+    <script src="../assets/js/motion.js" defer></script>
+    <script src="../assets/js/main.js" defer></script>
+  </body>
+</html>

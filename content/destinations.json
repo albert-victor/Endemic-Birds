@@ -1,0 +1,184 @@
+[
+  {
+    "id": "northern",
+    "slug": "northern-destination",
+    "name": "Northern Destination",
+    "circuit": "Northern",
+    "experienceTypes": [
+      "birding",
+      "wildlife"
+    ],
+    "summary": "Tarangire woodlands, Serengeti plains and highland forests – classic northern birding with endemic lovebirds and savanna specialists.",
+    "heroImage": "assets/images/northern-circuit/serengeti/hero.jpg",
+    "thumbnail": "assets/images/northern-circuit/tarangire/hero.jpg",
+    "location": "Northern Tanzania",
+    "birdingNotes": "Tarangire lovebirds and weavers, Serengeti raptors and grassland species; crater highlands on combined routes.",
+    "wildlifeNotes": "Iconic plains wildlife circuits often combined with birding stops when requested on tailor-made routes.",
+    "activities": [
+      "Birding",
+      "Wildlife viewing",
+      "Photography"
+    ],
+    "bestTime": null,
+    "needsOwnerReview": [
+      "bestTime",
+      "detailed species highlights"
+    ],
+    "seo": {
+      "title": "Northern Tanzania Birding & Wildlife | Endemic Birds",
+      "description": "Explore northern Tanzania birding and wildlife destinations with specialist-led safaris from Endemic Birds."
+    },
+    "liveUrl": "https://endemicbirds.co.tz/index.php/northern-destination/"
+  },
+  {
+    "id": "southern",
+    "slug": "southern-destination",
+    "name": "Southern Destination",
+    "circuit": "Southern",
+    "experienceTypes": [
+      "birding",
+      "wildlife"
+    ],
+    "summary": "Udzungwa forests, Mikumi savanna, Ruaha miombo and Eastern Arc extensions – specialist southern endemic birding away from the crowds.",
+    "heroImage": "assets/images/southern-circuit/ruaha/hero.jpg",
+    "thumbnail": "assets/images/southern-circuit/mikumi/hero.jpg",
+    "location": "Southern Tanzania (Iringa, Morogoro & miombo wilds)",
+    "birdingNotes": "Ruaha hornbill and miombo specialists, Nyerere riverine birding, Kilombero weaver/cisticola, Udzungwa forest partridge, Mikumi savanna and Eastern Arc forest blocks (Uluguru, Ukaguru, Rubeho, Rondo).",
+    "wildlifeNotes": "Remote southern parks and reserves for unhurried wildlife viewing.",
+    "activities": [
+      "Birding",
+      "Wildlife viewing"
+    ],
+    "bestTime": null,
+    "needsOwnerReview": [
+      "bestTime"
+    ],
+    "seo": {
+      "title": "Southern Tanzania Birding | Endemic Birds",
+      "description": "Southern Tanzania birding destinations – miombo, riverine forest and endemic-focused routes."
+    },
+    "liveUrl": "https://endemicbirds.co.tz/index.php/southern-destination/",
+    "liveAlternateUrls": [
+      "https://endemicbirds.co.tz/index.php/southern-circuit-1/"
+    ]
+  },
+  {
+    "id": "eastern-arc",
+    "slug": "eastern-arc-mountain",
+    "name": "Eastern Arc Mountain",
+    "circuit": "Eastern",
+    "experienceTypes": [
+      "birding"
+    ],
+    "summary": "Misty escarpments and ancient forest endemics in Tanzania's Eastern Arc biodiversity hotspot.",
+    "heroImage": "assets/images/from-live-site/destinations/eastern-arc-mountain.jpg",
+    "thumbnail": "assets/images/from-live-site/destinations/eastern-arc-mountain.jpg",
+    "location": "Eastern Arc Mountains, Tanzania",
+    "birdingNotes": "Forest-edge and montane birding; core habitat for endemic-focused tours.",
+    "wildlifeNotes": null,
+    "activities": [
+      "Birding",
+      "Forest walks",
+      "Photography"
+    ],
+    "bestTime": null,
+    "needsOwnerReview": [
+      "bestTime",
+      "park-level detail"
+    ],
+    "seo": {
+      "title": "Eastern Arc Mountain Birding | Endemic Birds",
+      "description": "Eastern Arc forest birding destinations with Endemic Birds Tanzania."
+    },
+    "liveUrl": "https://endemicbirds.co.tz/index.php/southern-destinations/"
+  },
+  {
+    "id": "western",
+    "slug": "western-destination",
+    "name": "Western Destination",
+    "circuit": "Western",
+    "experienceTypes": [
+      "birding",
+      "wildlife"
+    ],
+    "summary": "Mahale and Gombe forests, Katavi wilderness, Rubondo island, Burigi-Chato lakes and Minziro lowland forest – western Tanzania birding.",
+    "heroImage": "assets/images/western-circuit/mahale/hero.jpg",
+    "thumbnail": "assets/images/western-circuit/katavi/hero.jpg",
+    "location": "Western Tanzania & Lake Tanganyika / Victoria",
+    "birdingNotes": "Lake Tanganyika forests, Katavi floodplains, Rubondo island birds, Burigi lakes and Minziro Congo-biome targets on published western itineraries.",
+    "wildlifeNotes": "Wetland and lakeshore wildlife where included on combined routes.",
+    "activities": [
+      "Birding",
+      "Boat trips"
+    ],
+    "bestTime": null,
+    "needsOwnerReview": [
+      "bestTime"
+    ],
+    "seo": {
+      "title": "Western Tanzania Birding | Endemic Birds",
+      "description": "Western Tanzania wetlands and forests for specialist birding safaris."
+    },
+    "liveUrl": "https://endemicbirds.co.tz/index.php/birding-in-west-tanzania/"
+  },
+  {
+    "id": "north-west",
+    "slug": "north-west-tanzania",
+    "name": "North West Tanzania",
+    "circuit": "North West",
+    "experienceTypes": [
+      "birding"
+    ],
+    "summary": "Remote floodplains and iconic waterbirds – including shoebill country on relevant routes.",
+    "heroImage": "assets/images/from-live-site/destinations/north-west-tanzania.jpg",
+    "thumbnail": "assets/images/from-live-site/destinations/north-west-tanzania.jpg",
+    "location": "North West Tanzania",
+    "birdingNotes": "Floodplain and swamp specialists; confirm shoebill sites per confirmed itinerary with owner.",
+    "wildlifeNotes": null,
+    "activities": [
+      "Birding"
+    ],
+    "bestTime": null,
+    "needsOwnerReview": [
+      "bestTime",
+      "shoebill site confirmation"
+    ],
+    "seo": {
+      "title": "North West Tanzania Birding | Endemic Birds",
+      "description": "North West Tanzania birding – floodplains and wetland specialists."
+    },
+    "liveUrl": "https://endemicbirds.co.tz/index.php/birding-in-north-west-tanzania/"
+  },
+  {
+    "id": "eastern",
+    "slug": "eastern-destination",
+    "name": "Eastern Destination",
+    "circuit": "Eastern",
+    "experienceTypes": [
+      "birding",
+      "wildlife"
+    ],
+    "summary": "Coastal forests, islands and migration corridors along the Indian Ocean belt.",
+    "heroImage": "assets/images/from-live-site/destinations/eastern-destination.jpg",
+    "thumbnail": "assets/images/from-live-site/destinations/eastern-destination.jpg",
+    "location": "Eastern Tanzania & coast",
+    "birdingNotes": "Coastal forest and island birding (including Pemba on multi-region itineraries listed on the live site).",
+    "wildlifeNotes": "Coastal and island nature experiences where included on combined tours.",
+    "activities": [
+      "Birding",
+      "Coastal exploration"
+    ],
+    "bestTime": null,
+    "needsOwnerReview": [
+      "bestTime"
+    ],
+    "seo": {
+      "title": "Eastern Tanzania Birding | Endemic Birds",
+      "description": "Eastern Tanzania and coastal birding destinations."
+    },
+    "liveUrl": "https://endemicbirds.co.tz/index.php/eastern-destination/",
+    "liveAlternateUrls": [
+      "https://endemicbirds.co.tz/index.php/south-east-birding-destination/"
+    ]
+  }
+]

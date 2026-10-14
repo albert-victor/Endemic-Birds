@@ -1,0 +1,318 @@
+{
+  "extractedAt": "2026-10-08T23:07:53.094Z",
+  "sourcePages": {
+    "home": "https://endemicbirds.co.tz/",
+    "birding": "https://endemicbirds.co.tz/index.php/tanzania-birding-tours/",
+    "safaris": "https://endemicbirds.co.tz/index.php/tanzania-birding-safaris/",
+    "about": "https://endemicbirds.co.tz/index.php/about-endemic-birds-tanzania/"
+  },
+  "packages": [
+    {
+      "title": "10 Days Chimpanzee Tracking",
+      "liveUrl": "https://endemicbirds.co.tz/index.php/10-days-chimpanzee-tracking/",
+      "source": "safaris",
+      "kind": "package-card"
+    },
+    {
+      "title": "10 Days South West Tanzania",
+      "liveUrl": "https://endemicbirds.co.tz/index.php/10-days-south-west-tanzania/",
+      "source": "birding",
+      "kind": "package-card"
+    },
+    {
+      "title": "10 Days Tanzania Luxury Flying Safari",
+      "liveUrl": "https://endemicbirds.co.tz/index.php/10-days-tanzania-luxury-flying-safari/",
+      "source": "safaris",
+      "kind": "package-card"
+    },
+    {
+      "title": "10-Day Birding Safari Itinerary in Southeast Tanzania",
+      "liveUrl": "https://endemicbirds.co.tz/index.php/10-day-birding-safari-itinerary-in-southeast-tanzania/",
+      "source": "birding",
+      "kind": "package-card"
+    },
+    {
+      "title": "10-Day Birding Safaris Northern and Eastern Tanzania",
+      "liveUrl": "https://endemicbirds.co.tz/index.php/10-day-birding-safaris-eastern-tanzania/",
+      "source": "birding",
+      "kind": "package-card"
+    },
+    {
+      "title": "10-Day Birdwatching Safari in Northern Tanzania",
+      "liveUrl": "https://endemicbirds.co.tz/index.php/10-day-birdwatching-safari-in-northern-tanzania/",
+      "source": "safaris",
+      "kind": "package-card"
+    },
+    {
+      "title": "12-Day Itinerary for Endemic Birds in Northern Tanzania",
+      "liveUrl": "https://endemicbirds.co.tz/index.php/12-day-itinerary-for-endemic-birds-in-northern-tanzania/",
+      "source": "birding",
+      "kind": "package-card"
+    },
+    {
+      "title": "14 DAYS SOUTHERN TANZANIA BIRDING TOUR",
+      "liveUrl": "https://endemicbirds.co.tz/index.php/14-days-southern-tanzania-birding-tour/",
+      "source": "home",
+      "kind": "package-card"
+    },
+    {
+      "title": "15 Days Birding And Wildlife Photographic",
+      "liveUrl": "https://endemicbirds.co.tz/index.php/2023/09/06/15-days-birding-and-wildlife-photographic/",
+      "source": "home",
+      "kind": "blog-post"
+    },
+    {
+      "title": "15 DAYS TANZANIA BIRDING TOUR",
+      "liveUrl": "https://endemicbirds.co.tz/index.php/tanzania-birding-tour/",
+      "source": "home",
+      "kind": "package-card"
+    },
+    {
+      "title": "15 Days Tanzania Birding tour (Tarangire,Lake Manyara, Ngorongoro,Serengeti,etc",
+      "liveUrl": "https://endemicbirds.co.tz/index.php/tanzania-birding-tour/",
+      "source": "birding",
+      "kind": "package-card"
+    },
+    {
+      "title": "19 DAYS SOUTHERN TANZANIA BIRDING TRIP",
+      "liveUrl": "https://endemicbirds.co.tz/index.php/19-days-southern-tanzania-birding-trip/",
+      "source": "home",
+      "kind": "package-card"
+    },
+    {
+      "title": "19 Days Southern Tanzania Endemic birding tour itinerary",
+      "liveUrl": "https://endemicbirds.co.tz/index.php/19-days-southern-tanzania-birding-trip/",
+      "source": "birding",
+      "kind": "package-card"
+    },
+    {
+      "title": "20-Day Itinerary for Endemic Birding tour in Tanzania",
+      "liveUrl": "https://endemicbirds.co.tz/index.php/20-day-itinerary-for-endemic-birds-in-tanzania-2/",
+      "source": "birding",
+      "kind": "package-card"
+    },
+    {
+      "title": "20-Day Itinerary for Endemic Birds in Southern Tanzania",
+      "liveUrl": "https://endemicbirds.co.tz/index.php/20-day-itinerary-for-endemic-birds-in-southern-tanzania/",
+      "source": "birding",
+      "kind": "package-card"
+    },
+    {
+      "title": "22 Days Birding Itinerary For North East South And Pemba",
+      "liveUrl": "https://endemicbirds.co.tz/index.php/2023/09/23/22-days-birding-itinerary-for-north-east-south-and-pemba/",
+      "source": "home",
+      "kind": "blog-post"
+    },
+    {
+      "title": "22 days endemic birding tour",
+      "liveUrl": "https://endemicbirds.co.tz/index.php/22-days-endemic-birding-tour/",
+      "source": "birding",
+      "kind": "package-card"
+    },
+    {
+      "title": "22 DAYS ENDEMIC BIRDING TOURS",
+      "liveUrl": "https://endemicbirds.co.tz/index.php/22-days-endemic-birding-tour/",
+      "source": "home",
+      "kind": "package-card"
+    },
+    {
+      "title": "6 Days Tanzania Safari",
+      "liveUrl": "https://endemicbirds.co.tz/index.php/6-days-tanzania-safari/",
+      "source": "safaris",
+      "kind": "package-card"
+    },
+    {
+      "title": "7 Days Itinerary from Mpanda to Inyonga, Rungwe, Bitimanyanga, Chunya, Kituro, and Mbeya",
+      "liveUrl": "https://endemicbirds.co.tz/index.php/7-days-itinerary-from-mpanda-to-inyonga-rungwe-bitimanyanga-chunya-kituro-and-mbeya/",
+      "source": "birding",
+      "kind": "package-card"
+    },
+    {
+      "title": "7 Days Wildebeest Migration Calving Safari and Hadzabe",
+      "liveUrl": "https://endemicbirds.co.tz/index.php/7-days-wildebeest-migration-calving-safari-and-hadzabe/",
+      "source": "safaris",
+      "kind": "package-card"
+    },
+    {
+      "title": "8 Days Birding Around Iringa (Kiponzero,Kisolanza,Uluti,Mufindi)",
+      "liveUrl": "https://endemicbirds.co.tz/index.php/birding-around-iringa/",
+      "source": "birding",
+      "kind": "package-card"
+    },
+    {
+      "title": "8 Days Great Wildebeest Calving Migration Safari",
+      "liveUrl": "https://endemicbirds.co.tz/index.php/8-days-great-wildebeest-calving-migration-safari/",
+      "source": "safaris",
+      "kind": "package-card"
+    },
+    {
+      "title": "8 Days Wildebeest Migration Calving Safari And Hadzabe",
+      "liveUrl": "https://endemicbirds.co.tz/index.php/2023/09/06/8-days-wildebeest-migration-calving-safari-and-hadzabe/",
+      "source": "home",
+      "kind": "blog-post"
+    },
+    {
+      "title": "9 Days Birding Itinerary for Mahale, Gombe, Burigi-Chato, and Minziro Forest",
+      "liveUrl": "https://endemicbirds.co.tz/index.php/9-days-birding-itinerary-for-mahale-gombe-burigi-chato-and-minziro-forest/",
+      "source": "birding",
+      "kind": "package-card"
+    },
+    {
+      "title": "9 Days Tanzania Wildlife Safari and Zanzibar Beach Holiday",
+      "liveUrl": "https://endemicbirds.co.tz/index.php/9-days-tanzania-wildlife-safari-and-zanzibar-beach-holiday/",
+      "source": "safaris",
+      "kind": "package-card"
+    },
+    {
+      "title": "Eastern Arc Mountain",
+      "liveUrl": "https://endemicbirds.co.tz/index.php/southern-destinations/",
+      "source": "home",
+      "kind": "destination-card"
+    },
+    {
+      "title": "Eastern Destination",
+      "liveUrl": "https://endemicbirds.co.tz/index.php/south-east-birding-destination/",
+      "source": "home",
+      "kind": "destination-card"
+    },
+    {
+      "title": "North West Tanzania",
+      "liveUrl": "https://endemicbirds.co.tz/index.php/birding-in-north-west-tanzania/",
+      "source": "home",
+      "kind": "destination-card"
+    },
+    {
+      "title": "Northern Destination",
+      "liveUrl": "https://endemicbirds.co.tz/index.php/northern-circuit/",
+      "source": "home",
+      "kind": "destination-card"
+    },
+    {
+      "title": "Southern Destination",
+      "liveUrl": "https://endemicbirds.co.tz/index.php/southern-circuit-1/",
+      "source": "home",
+      "kind": "destination-card"
+    },
+    {
+      "title": "Western Destination",
+      "liveUrl": "https://endemicbirds.co.tz/index.php/birding-in-west-tanzania/",
+      "source": "home",
+      "kind": "destination-card"
+    }
+  ],
+  "destinationPages": {
+    "quickLinks": [
+      {
+        "title": "Birding in West Tanzania",
+        "liveUrl": "https://endemicbirds.co.tz/index.php/birding-in-west-tanzania/"
+      },
+      {
+        "title": "South east birding destination",
+        "liveUrl": "https://endemicbirds.co.tz/index.php/south-east-birding-destination/"
+      },
+      {
+        "title": "Birding in North West Tanzania",
+        "liveUrl": "https://endemicbirds.co.tz/index.php/birding-in-north-west-tanzania/"
+      },
+      {
+        "title": "Southern Circuit",
+        "liveUrl": "https://endemicbirds.co.tz/index.php/southern-circuit-1/"
+      },
+      {
+        "title": "Eastern Arc Mountain",
+        "liveUrl": "https://endemicbirds.co.tz/index.php/southern-destinations/"
+      }
+    ],
+    "circuits": [
+      {
+        "name": "Northern Destination",
+        "verifiedOnHome": true
+      },
+      {
+        "name": "Southern Destination",
+        "verifiedOnHome": true
+      },
+      {
+        "name": "Eastern Arc Mountain",
+        "verifiedOnHome": true
+      },
+      {
+        "name": "Western Destination",
+        "verifiedOnHome": true
+      },
+      {
+        "name": "North West Tanzania",
+        "verifiedOnHome": true
+      },
+      {
+        "name": "Eastern Destination",
+        "verifiedOnHome": true
+      }
+    ]
+  },
+  "social": [
+    {
+      "platform": "facebook",
+      "href": null,
+      "placeholderOnLiveSite": true
+    },
+    {
+      "platform": "twitter",
+      "href": null,
+      "placeholderOnLiveSite": true
+    },
+    {
+      "platform": "instagram",
+      "href": null,
+      "placeholderOnLiveSite": true
+    },
+    {
+      "platform": "linkedin",
+      "href": null,
+      "placeholderOnLiveSite": true
+    }
+  ],
+  "emails": [
+    "info@endemicbirds.co.tz"
+  ],
+  "about": {
+    "liveUrl": "https://endemicbirds.co.tz/index.php/about-endemic-birds-tanzania/",
+    "intro": "We are a dedicated safari company based in Tanzania East Africa and we are leading top Birding safaris, wildlife safaris and Nature Tours in Tanzania, Uganda and Rwanda Endemic Birds Tanzania is dedicated to providing exceptional birdwatching experiences in the stunning landscapes of Tanzania. With a focus on sustainable tourism, we aim to connect bird enthusiasts with the rich avian diversity found across various ecosystems, from lush forests to expansive savannas.",
+    "sections": [
+      {
+        "title": "Indigenous knowledge",
+        "body": "Our African safari team is composed of indigenous Tour Guides drawn from Tanzania, Kenya, Uganda and Rwanda. These knowledgeable guides will lead you through their home region (East Africa); sharing with you their ways of life and helping you learn all forms of nature as you traverse this magical region of Africa."
+      },
+      {
+        "title": "Time flexibility",
+        "body": "We can put a tour together in just a few minutes, so you can make that last minute decision to go out and enjoy some of our best safari destinations. This has been our best tool when helping business travelers and conference attendees enjoy a tour in Kenya, Tanzania, Uganda or Rwanda. Just in case you get some few free hours during your meeting, please contact us and we shall help you enjoy an African safari within your business schedule. Kindly see our Day and Half-day Tours as well as our Excursion Tours; for some great inspiration."
+      },
+      {
+        "title": "Varied safari destinations and itineraries",
+        "body": "Our unmatched wide range of safari destinations and tour itineraries has set us on top of the table. We take you to all the known tour and safari destinations in, Tanzania, Uganda Kenya and Rwanda. Further, we take you to exciting less-known locations that will make your African safari experience memorable. We physically visit all our tour destinations prior to taking our guests; to ensure we have the most up-to-date information on our safari itineraries. We have over 100 tour itineraries to all destinations across East Africa and we shall help you pick your best tour or safari."
+      },
+      {
+        "title": "Value for Money",
+        "body": "We ensure you get real value for money by helping you get the best tour facilities and professional safari guides; at the best market price. We do not hold back when giving you our tour services. You get to enjoy the full knowledge of our tour leaders and guides, valuable indigenous knowledge of the local communities we visit, stay in comfortable and neat accommodation facilities, and get the most delicious meals; while on safari with us."
+      },
+      {
+        "title": "Group sizes on Tours",
+        "body": "We understand the need to have a tour group size that will maximize the experience of each participant. Therefore, we ensure that our vehicles carry a maximum of six guests each, allowing all safari participants a window seat. When the tour group is larger than one guide can adequately attend to, we ensure we have two or more Safari Guides on the tour. This ensures that each guest is given the best tour services at all times during our tours and safaris."
+      },
+      {
+        "title": "Adaptability to your safari needs",
+        "body": "We offer a varied and holistic approach during all our tours. We adapt to the needs of our guests and offer exactly what you would wish to enjoy on safari here in Africa. Our friendly tour leaders will adapt to your speed and ensure the tour moves at your pace. We also host all levels of experience, from the safari pros, holiday travellers, honeymooners, researchers, species specialists, photographers and even life-listers. This ensures that all our clients enjoy that memorable tour in all our destinations- Tanzania, Kenya,Uganda and Rwanda."
+      }
+    ]
+  },
+  "contact": {
+    "location": "Iringa, Tanzania",
+    "phone": "+255 627 013 348",
+    "phoneTel": "+255627013348",
+    "whatsapp": "https://wa.me/255627013348",
+    "email": "info@endemicbirds.co.tz",
+    "emails": [
+      "info@endemicbirds.co.tz"
+    ]
+  }
+}

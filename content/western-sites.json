@@ -1,0 +1,199 @@
+{
+  "circuit": "Western",
+  "circuitLabel": "Western circuit",
+  "parentDestinationId": "western",
+  "parentSlug": "western-destination",
+  "sites": [
+    {
+      "id": "mahale",
+      "slug": "mahale-mountains-national-park",
+      "name": "Mahale Mountains National Park",
+      "location": "Kigoma Region · Lake Tanganyika shoreline",
+      "summary": "Forested mountains dropping into crystal-clear Lake Tanganyika – chimps, lake shore birding and West African range extensions in remote western Tanzania.",
+      "keySpecies": [
+        "Pel’s Fishing-Owl",
+        "Palm-nut Vulture",
+        "Crowned Eagle",
+        "Lake Tanganyika specials",
+        "Forest robin-chats and sunbirds"
+      ],
+      "whyItMatters": [
+        "One of Africa’s great lakeshore wilderness parks – forest and freshwater habitats in one compact block.",
+        "Western forest bird communities overlap with the Congo basin on selected species.",
+        "Ideal western finale after Katavi or Gombe on specialist forest-and-lake itineraries."
+      ],
+      "generalNotes": "Boat transfers on Tanganyika and guided forest walks define the birding pace here.",
+      "packageSlugs": [
+        "9-days-mahale-gombe-burigi-minziro",
+        "10-days-chimpanzee-tracking",
+        "10-days-south-west-tanzania"
+      ],
+      "heroImage": "assets/images/western-circuit/mahale/hero.jpg",
+      "gallery": [
+        "assets/images/western-circuit/mahale/gallery-1.jpg",
+        "assets/images/western-circuit/mahale/gallery-2.jpg",
+        "assets/images/western-circuit/mahale/gallery-3.jpg",
+        "assets/images/western-circuit/mahale/gallery-4.jpg",
+        "assets/images/western-circuit/mahale/gallery-5.jpg"
+      ],
+      "imageStatus": "complete"
+    },
+    {
+      "id": "gombe",
+      "slug": "gombe-stream-national-park",
+      "name": "Gombe Stream National Park",
+      "location": "Kigoma Region · Lake Tanganyika",
+      "summary": "Tiny, steep rainforest park famous for chimpanzees – tight forest trails with rich understory birdlife on the lake escarpment.",
+      "keySpecies": [
+        "African Pitta (seasonal)",
+        "Blue-headed Bee-eater",
+        "Red-capped Robin-chat",
+        "Lake Tanganyika cormorants and kingfishers",
+        "Forest greenbuls and illadopsises"
+      ],
+      "whyItMatters": [
+        "Classic Jane Goodall chimp country with equally rewarding forest birding on narrow ridge trails.",
+        "Boat access on Tanganyika links lake-level waterbirds with montane forest species in one day.",
+        "Pairs naturally with Mahale on western forest birding safaris."
+      ],
+      "generalNotes": "Steep hiking – birding is on foot with guide-led listening stops.",
+      "packageSlugs": [
+        "9-days-mahale-gombe-burigi-minziro",
+        "10-days-chimpanzee-tracking"
+      ],
+      "heroImage": "assets/images/western-circuit/gombe/hero.jpg",
+      "gallery": [
+        "assets/images/western-circuit/gombe/gallery-1.jpg",
+        "assets/images/western-circuit/gombe/gallery-2.jpg",
+        "assets/images/western-circuit/gombe/gallery-3.jpg",
+        "assets/images/western-circuit/gombe/gallery-4.jpg",
+        "assets/images/western-circuit/gombe/gallery-5.jpg"
+      ],
+      "imageStatus": "complete"
+    },
+    {
+      "id": "katavi",
+      "slug": "katavi-national-park",
+      "name": "Katavi National Park",
+      "location": "Katavi Region · Western Circuit",
+      "summary": "Raw, remote floodplains and miombo – enormous hippo and buffalo concentrations with open-country and woodland birding far from crowds.",
+      "keySpecies": [
+        "Yellow-throated Sandgrouse",
+        "African Skimmer (seasonal)",
+        "Stierling’s Wren-warbler (miombo edge)",
+        "Raptors over plains",
+        "Waterbirds on seasonal lakes"
+      ],
+      "whyItMatters": [
+        "Among Tanzania’s least visited big parks – authentic wilderness birding and wildlife.",
+        "Seasonal Lake Katavi and Katisunga Plains concentrate birds and mammals dramatically.",
+        "Core western anchor on 10-day south-west routes linking to Mahale or Ruaha extensions."
+      ],
+      "generalNotes": "Dry-season concentrations are legendary; green season brings different breeders and migrants.",
+      "packageSlugs": [
+        "10-days-south-west-tanzania"
+      ],
+      "heroImage": "assets/images/western-circuit/katavi/hero.jpg",
+      "gallery": [
+        "assets/images/western-circuit/katavi/gallery-1.jpg",
+        "assets/images/western-circuit/katavi/gallery-2.jpg",
+        "assets/images/western-circuit/katavi/gallery-3.jpg",
+        "assets/images/western-circuit/katavi/gallery-4.jpg",
+        "assets/images/western-circuit/katavi/gallery-5.jpg"
+      ],
+      "imageStatus": "complete"
+    },
+    {
+      "id": "rubondo",
+      "slug": "rubondo-island-national-park",
+      "name": "Rubondo Island National Park",
+      "location": "Lake Victoria · Geita / Mwanza corridor",
+      "summary": "Forest island on Lake Victoria – reintroduced chimps, shy sitatunga and a mix of lake, papyrus and gallery forest birds.",
+      "keySpecies": [
+        "African Fish-Eagle",
+        "Papyrus endemics (regional)",
+        "Malachite Kingfisher",
+        "Island forest robin-chats",
+        "Waterbirds on Lake Victoria"
+      ],
+      "whyItMatters": [
+        "Unique island ecosystem on Africa’s largest lake – different feel from mainland parks.",
+        "Forest walks and boat trips combine for varied daily birding.",
+        "Often paired with western lake routes or fly-in extensions from Mwanza."
+      ],
+      "generalNotes": "Boat logistics from Kasenda or Mwanza define access; pace is relaxed and exploratory.",
+      "packageSlugs": [
+        "10-days-south-west-tanzania"
+      ],
+      "heroImage": "assets/images/western-circuit/rubondo/hero.jpg",
+      "gallery": [
+        "assets/images/western-circuit/rubondo/gallery-1.jpg",
+        "assets/images/western-circuit/rubondo/gallery-2.jpg",
+        "assets/images/western-circuit/rubondo/gallery-3.jpg",
+        "assets/images/western-circuit/rubondo/gallery-4.jpg",
+        "assets/images/western-circuit/rubondo/gallery-5.jpg"
+      ],
+      "imageStatus": "complete"
+    },
+    {
+      "id": "burigi-chato",
+      "slug": "burigi-chato-national-park",
+      "name": "Burigi-Chato National Park",
+      "location": "Kagera Region · Lake Burigi & savanna woodlands",
+      "summary": "Newer western park mosaic of lakes, savanna and woodland – growing reputation for quiet game viewing and regional bird diversity.",
+      "keySpecies": [
+        "Secretarybird",
+        "African Wattled Lapwing",
+        "Hornbills and rollers",
+        "Lake Burigi waterbirds",
+        "Woodland weavers and shrikes"
+      ],
+      "whyItMatters": [
+        "Expands Tanzania’s western birding map beyond Mahale–Gombe with open-country and lake habitats.",
+        "Featured on Endemic Birds’ 9-day western forest-and-lake birding itinerary.",
+        "Low visitor numbers mean undisturbed scanning along lake shores and game tracks."
+      ],
+      "generalNotes": "Often combined with Minziro forest and Mahale on north-western birding loops.",
+      "packageSlugs": [
+        "9-days-mahale-gombe-burigi-minziro"
+      ],
+      "heroImage": "assets/images/western-circuit/burigi-chato/hero.jpg",
+      "gallery": [
+        "assets/images/western-circuit/burigi-chato/gallery-1.jpg",
+        "assets/images/western-circuit/burigi-chato/gallery-2.jpg",
+        "assets/images/western-circuit/burigi-chato/gallery-3.jpg",
+        "assets/images/western-circuit/burigi-chato/gallery-4.jpg",
+        "assets/images/western-circuit/burigi-chato/gallery-5.jpg"
+      ],
+      "imageStatus": "complete"
+    },
+    {
+      "id": "minziro",
+      "slug": "minziro-forest-reserve",
+      "name": "Minziro Forest Reserve",
+      "location": "Kagera Region · Uganda border lowland forest",
+      "summary": "Tanzania’s largest lowland forest – Congo–Guinea biome species at the edge of their range, central to western endemic birding routes.",
+      "keySpecies": [
+        "Grey Parrot (regional)",
+        "Black-and-white Casqued Hornbill",
+        "Yellow-crested Woodpecker",
+        "Forest greenbuls and cuckoos",
+        "Specialist understory birds"
+      ],
+      "whyItMatters": [
+        "Critical Important Bird Area linking eastern Africa to Congolian forest avifauna.",
+        "Anchor site on the published 9-day Mahale–Gombe–Burigi–Minziro birding itinerary.",
+        "Essential for listers seeking western forest species rarely seen on northern or southern circuits."
+      ],
+      "generalNotes": "Forest interior birding with local guides; often accessed from the Kagera / Minziro village area.",
+      "packageSlugs": [
+        "9-days-mahale-gombe-burigi-minziro"
+      ],
+      "heroImage": "assets/images/from-live-site/destinations/western-destination.jpg",
+      "gallery": [
+        "assets/images/from-live-site/destinations/western-destination.jpg"
+      ],
+      "imageStatus": "complete"
+    }
+  ]
+}

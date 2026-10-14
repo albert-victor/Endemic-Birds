@@ -1,0 +1,96 @@
+[
+  {
+    "id": "great-migration",
+    "slug": "great-migration-plains",
+    "name": "Great Migration & Plains Safari",
+    "summary": "Follow wildebeest columns, predator action and golden Serengeti light – timed for calving or river-crossing seasons when you travel.",
+    "overview": "Tanzania’s Serengeti ecosystem defines the African safari imagination. We plan migration safaris around where herds are likely to be – Ndutu calving flats, central Serengeti or northern river lines – with unhurried game drives and small groups (max six per vehicle).",
+    "heroImage": "assets/images/wildlife/destinations/serengeti-national-park/hero.jpg",
+    "wildlifeFocus": ["Wildebeest migration", "Lion & cheetah on plains", "Calving season (Ndutu)", "Photographic golden hours"],
+    "destinationSlugs": ["serengeti-national-park", "ngorongoro-conservation-area"],
+    "packageSlugs": [
+      "5-days-serengeti-migration-focus",
+      "7-days-wildebeest-migration-hadzabe",
+      "8-days-wildebeest-calving-migration"
+    ],
+    "seo": {
+      "title": "Great Migration Safaris Tanzania | Endemic Birds",
+      "description": "Serengeti migration safaris – calving season and plains wildlife with small-group guides."
+    }
+  },
+  {
+    "id": "northern-icons",
+    "slug": "ngorongoro-northern-icons",
+    "name": "Ngorongoro & Northern Icons",
+    "summary": "Crater floor drama, Tarangire elephants, Manyara forest lakes and Arusha’s Momella – the classic northern circuit without the rush.",
+    "overview": "The northern circuit packs UNESCO-calibre scenery and dense wildlife into a week or less. We sequence drives for crater descent timing, river-line elephants in Tarangire and lake viewpoints at Manyara – always with window seats and adaptable pacing.",
+    "heroImage": "assets/images/wildlife/destinations/ngorongoro-conservation-area/hero.jpg",
+    "wildlifeFocus": ["Ngorongoro Crater big five", "Tarangire elephant herds", "Lake Manyara viewpoints", "Momella Lakes (Arusha NP)"],
+    "destinationSlugs": [
+      "ngorongoro-conservation-area",
+      "tarangire-national-park",
+      "lake-manyara-national-park",
+      "arusha-national-park",
+      "serengeti-national-park"
+    ],
+    "packageSlugs": [
+      "4-days-ngorongoro-crater-escape",
+      "6-days-tanzania-safari",
+      "8-days-northern-tarangire-manyara-ngorongoro-serengeti"
+    ],
+    "seo": {
+      "title": "Northern Circuit Wildlife Safaris | Endemic Birds",
+      "description": "Ngorongoro, Tarangire, Manyara and Serengeti wildlife safaris with specialist guides."
+    }
+  },
+  {
+    "id": "chimps-lakes",
+    "slug": "chimps-lake-forests",
+    "name": "Chimps & Lake Forests",
+    "summary": "Track chimpanzees in Mahale and Gombe, then unwind on Lake Tanganyika – forest mornings and beach afternoons.",
+    "overview": "Western Tanzania delivers primate encounters that feel worlds away from the busier north. Chimp treks are on foot with park rangers; we build in lake time, boat transfers and comfortable pacing for repeat photographers and first-time Africa travellers alike.",
+    "heroImage": "assets/images/wildlife/destinations/mahale-mountains-national-park/hero.jpg",
+    "wildlifeFocus": ["Chimpanzee tracking", "Lake Tanganyika shoreline", "Forest birds & primates", "Boat transfers"],
+    "destinationSlugs": ["mahale-mountains-national-park", "katavi-national-park"],
+    "packageSlugs": ["10-days-chimpanzee-tracking", "7-days-mahale-gombe-chimp-safari"],
+    "seo": {
+      "title": "Chimpanzee Safaris Tanzania | Endemic Birds",
+      "description": "Mahale and western Tanzania chimp tracking safaris with Endemic Birds."
+    }
+  },
+  {
+    "id": "southern-wilderness",
+    "slug": "southern-western-wilderness",
+    "name": "Southern & Western Wilderness",
+    "summary": "Ruaha’s baobab wilds, Mikumi savanna, Nyerere’s Rufiji boats and Katavi hippo seas – remote circuits for repeat safari travellers.",
+    "overview": "When you want distance from crowds, southern and western parks reward with river systems, miombo hills and raw predator-prey dynamics. We combine flight or road links with realistic drive days so you arrive fresh for morning game drives.",
+    "heroImage": "assets/images/wildlife/destinations/ruaha-national-park/hero.jpg",
+    "wildlifeFocus": ["Ruaha elephant & kudu", "Nyerere boat safaris", "Katavi dry-season hippo pools", "Mikumi floodplain"],
+    "destinationSlugs": [
+      "ruaha-national-park",
+      "mikumi-national-park",
+      "nyerere-national-park",
+      "katavi-national-park"
+    ],
+    "packageSlugs": ["8-days-ruaha-mikumi-safari", "10-days-nyerere-katavi-expedition"],
+    "seo": {
+      "title": "Southern Tanzania Wildlife Safaris | Endemic Birds",
+      "description": "Ruaha, Nyerere, Mikumi and Katavi wilderness safaris – remote Tanzania wildlife."
+    }
+  },
+  {
+    "id": "bush-beach",
+    "slug": "bush-beach-luxury",
+    "name": "Bush, Beach & Luxury Flying",
+    "summary": "Pair classic wildlife with Zanzibar stone-town and spice-island coast – or hop camps by light aircraft across the country.",
+    "overview": "These journeys suit honeymoons, celebrations and travellers who want both big-game time and Indian Ocean recovery. Flying safaris cut long road days; bush-and-beach routes hand off cleanly from savanna to sea.",
+    "heroImage": "assets/images/wildlife/destinations/serengeti-national-park/gallery-1.jpg",
+    "wildlifeFocus": ["Northern wildlife loop", "Zanzibar beach extension", "Luxury fly-in camps", "Migration or crater highlights"],
+    "destinationSlugs": ["serengeti-national-park", "ngorongoro-conservation-area"],
+    "packageSlugs": ["9-days-wildlife-safari-zanzibar", "10-days-luxury-flying-safari"],
+    "seo": {
+      "title": "Luxury & Bush-Beach Safaris Tanzania | Endemic Birds",
+      "description": "Flying safaris and bush-to-beach Tanzania wildlife holidays with Endemic Birds."
+    }
+  }
+]

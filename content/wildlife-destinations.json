@@ -1,0 +1,423 @@
+[
+  {
+    "id": "serengeti",
+    "slug": "serengeti-national-park",
+    "name": "Serengeti National Park",
+    "displaySubtitle": null,
+    "circuit": "Northern",
+    "location": "Northern Tanzania",
+    "summary": "Serengeti National Park is undoubtedly the best-known wildlife sanctuary in the world, unequalled for its natural beauty and scientific value, it has the greatest concentration of plains game in AfricaThe Serengeti National Park in Tanzania was established in 1952. It is home to the greatest...",
+    "overview": "Serengeti National Park is undoubtedly the best-known wildlife sanctuary in the world, unequalled for its natural beauty and scientific value, it has the greatest concentration of plains game in AfricaThe Serengeti National Park in Tanzania was established in 1952. It is home to the greatest... This page summarises why safari travellers include Serengeti National Park on northern, southern or western circuits with Endemic Birds – small groups, max six guests per vehicle.",
+    "wildlifeHighlights": [
+      "Great Migration river crossings and endless plains",
+      "Lion, leopard and cheetah on open savanna",
+      "Kopje cats and golden-hour photography"
+    ],
+    "parkActivities": [
+      "Game drives",
+      "Photography"
+    ],
+    "bestTime": "Dry season (June–October) for general wildlife; calving migration Dec–Mar in Ndutu/Serengeti south.",
+    "practicalNotes": "Park fees, lodge availability and drive times vary by season. We confirm routing, guides and vehicle allocation when you enquire – maximum six guests per vehicle with window seats.",
+    "heroImage": "assets/images/wildlife/destinations/serengeti-national-park/hero.jpg",
+    "gallery": [
+      "assets/images/wildlife/destinations/serengeti-national-park/gallery-1.jpg",
+      "assets/images/wildlife/destinations/serengeti-national-park/gallery-2.jpg",
+      "assets/images/wildlife/destinations/serengeti-national-park/gallery-3.jpg",
+      "assets/images/wildlife/destinations/serengeti-national-park/gallery-4.jpg",
+      "assets/images/wildlife/destinations/serengeti-national-park/gallery-5.jpg"
+    ],
+    "packageSlugs": [
+      "6-days-tanzania-safari",
+      "7-days-wildebeest-migration-hadzabe",
+      "8-days-wildebeest-calving-migration",
+      "9-days-wildlife-safari-zanzibar",
+      "10-days-luxury-flying-safari",
+      "5-days-serengeti-migration-focus",
+      "8-days-northern-tarangire-manyara-ngorongoro-serengeti"
+    ],
+    "activitySlugs": [
+      "great-migration-plains",
+      "ngorongoro-northern-icons",
+      "bush-beach-luxury"
+    ],
+    "seo": {
+      "title": "Serengeti National Park Wildlife Safari | Endemic Birds Tanzania",
+      "description": "Serengeti National Park is undoubtedly the best-known wildlife sanctuary in the world, unequalled for its natural beauty and scientific value, it has the g"
+    }
+  },
+  {
+    "id": "ngorongoro-nca",
+    "slug": "ngorongoro-conservation-area",
+    "name": "Ngorongoro Conservation Area",
+    "displaySubtitle": null,
+    "circuit": "Northern",
+    "location": "Northern Tanzania",
+    "summary": "The Ngorongoro Conservation Area spans from Serengeti National Park in the north, to the Great Rift Valley in the east. In total, the conservation area covers more than 8,000 km² (3,200 sq. miles). It consists of the Ngorongoro Crater, Ndutu, Olduvai Gorge, Empakaai, Olmoti Crater and Oldonyo...",
+    "overview": "The Ngorongoro Conservation Area spans from Serengeti National Park in the north, to the Great Rift Valley in the east. In total, the conservation area covers more than 8,000 km² (3,200 sq. miles). It consists of the Ngorongoro Crater, Ndutu, Olduvai Gorge, Empakaai, Olmoti Crater and Oldonyo... This page summarises why safari travellers include Ngorongoro Conservation Area on northern, southern or western circuits with Endemic Birds – small groups, max six guests per vehicle.",
+    "wildlifeHighlights": [
+      "Ngorongoro Crater floor – dense big-game viewing",
+      "Black rhino, flamingo lakes and crater rim scenery",
+      "Ndutu calving season (Dec–Mar) on the same conservation area"
+    ],
+    "parkActivities": [
+      "Game drives",
+      "Photography",
+      "Crater floor drives",
+      "Cultural visits on NCA"
+    ],
+    "bestTime": "Dry season (June–October) for general wildlife; calving migration Dec–Mar in Ndutu/Serengeti south.",
+    "practicalNotes": "Park fees, lodge availability and drive times vary by season. We confirm routing, guides and vehicle allocation when you enquire – maximum six guests per vehicle with window seats.",
+    "heroImage": "assets/images/wildlife/destinations/ngorongoro-conservation-area/hero.jpg",
+    "gallery": [
+      "assets/images/wildlife/destinations/ngorongoro-conservation-area/gallery-1.jpg",
+      "assets/images/wildlife/destinations/ngorongoro-conservation-area/gallery-2.jpg",
+      "assets/images/wildlife/destinations/ngorongoro-conservation-area/gallery-3.jpg",
+      "assets/images/wildlife/destinations/ngorongoro-conservation-area/gallery-4.jpg",
+      "assets/images/wildlife/destinations/ngorongoro-conservation-area/gallery-5.jpg"
+    ],
+    "packageSlugs": [
+      "6-days-tanzania-safari",
+      "7-days-wildebeest-migration-hadzabe",
+      "8-days-wildebeest-calving-migration",
+      "9-days-wildlife-safari-zanzibar",
+      "10-days-luxury-flying-safari",
+      "5-days-serengeti-migration-focus",
+      "4-days-ngorongoro-crater-escape",
+      "8-days-northern-tarangire-manyara-ngorongoro-serengeti"
+    ],
+    "activitySlugs": [
+      "great-migration-plains",
+      "ngorongoro-northern-icons",
+      "bush-beach-luxury"
+    ],
+    "seo": {
+      "title": "Ngorongoro Conservation Area Wildlife Safari | Endemic Birds Tanzania",
+      "description": "The Ngorongoro Conservation Area spans from Serengeti National Park in the north, to the Great Rift Valley in the east. In total, the conservation area cov"
+    }
+  },
+  {
+    "id": "tarangire",
+    "slug": "tarangire-national-park",
+    "name": "Tarangire National Park",
+    "displaySubtitle": null,
+    "circuit": "Northern",
+    "location": "Northern Tanzania",
+    "summary": "Tarangire National Park is one of the most renowned national parks of the northern circuit in Tanzania. It",
+    "overview": "Tarangire National Park is one of the most renowned national parks of the northern circuit in Tanzania. It This page summarises why safari travellers include Tarangire National Park on northern, southern or western circuits with Endemic Birds – small groups, max six guests per vehicle.",
+    "wildlifeHighlights": [
+      "Elephant herds along the Tarangire River",
+      "Iconic baobab landscapes",
+      "Dry-season wildlife concentrations"
+    ],
+    "parkActivities": [
+      "Game drives",
+      "Photography"
+    ],
+    "bestTime": "Dry season (June–October) for general wildlife; calving migration Dec–Mar in Ndutu/Serengeti south.",
+    "practicalNotes": "Park fees, lodge availability and drive times vary by season. We confirm routing, guides and vehicle allocation when you enquire – maximum six guests per vehicle with window seats.",
+    "heroImage": "assets/images/wildlife/destinations/tarangire-national-park/hero.jpg",
+    "gallery": [
+      "assets/images/wildlife/destinations/tarangire-national-park/gallery-1.jpg",
+      "assets/images/wildlife/destinations/tarangire-national-park/gallery-2.jpg",
+      "assets/images/wildlife/destinations/tarangire-national-park/gallery-3.jpg",
+      "assets/images/wildlife/destinations/tarangire-national-park/gallery-4.jpg",
+      "assets/images/wildlife/destinations/tarangire-national-park/gallery-5.jpg"
+    ],
+    "packageSlugs": [
+      "6-days-tanzania-safari",
+      "8-days-northern-tarangire-manyara-ngorongoro-serengeti"
+    ],
+    "activitySlugs": [
+      "ngorongoro-northern-icons"
+    ],
+    "seo": {
+      "title": "Tarangire National Park Wildlife Safari | Endemic Birds Tanzania",
+      "description": "Tarangire National Park is one of the most renowned national parks of the northern circuit in Tanzania. It"
+    }
+  },
+  {
+    "id": "lake-manyara",
+    "slug": "lake-manyara-national-park",
+    "name": "Lake Manyara National Park",
+    "displaySubtitle": null,
+    "circuit": "Northern",
+    "location": "Northern Tanzania",
+    "summary": "Located beneath the cliffs of the Manyara Escarpment, on the edge of the Rift Valley, Lake Manyara National Park offers varied ecosystems, incredible bird life, and breathtaking views.Located on the way to Ngorongoro Crater and the Serengeti, Lake Manyara National Park is worth a stop in its own...",
+    "overview": "Located beneath the cliffs of the Manyara Escarpment, on the edge of the Rift Valley, Lake Manyara National Park offers varied ecosystems, incredible bird life, and breathtaking views.Located on the way to Ngorongoro Crater and the Serengeti, Lake Manyara National Park is worth a stop in its own... This page summarises why safari travellers include Lake Manyara National Park on northern, southern or western circuits with Endemic Birds – small groups, max six guests per vehicle.",
+    "wildlifeHighlights": [
+      "Groundwater forest and lake viewpoints",
+      "Flamingo flocks and hippo pools",
+      "Classic northern circuit in a compact park"
+    ],
+    "parkActivities": [
+      "Game drives",
+      "Photography",
+      "Walking (where permitted)",
+      "Canoeing at Momella (Arusha)"
+    ],
+    "bestTime": "Dry season (June–October) for general wildlife; calving migration Dec–Mar in Ndutu/Serengeti south.",
+    "practicalNotes": "Park fees, lodge availability and drive times vary by season. We confirm routing, guides and vehicle allocation when you enquire – maximum six guests per vehicle with window seats.",
+    "heroImage": "assets/images/wildlife/destinations/lake-manyara-national-park/hero.jpg",
+    "gallery": [
+      "assets/images/wildlife/destinations/lake-manyara-national-park/gallery-1.jpg",
+      "assets/images/wildlife/destinations/lake-manyara-national-park/gallery-2.jpg",
+      "assets/images/wildlife/destinations/lake-manyara-national-park/gallery-3.jpg",
+      "assets/images/wildlife/destinations/lake-manyara-national-park/gallery-4.jpg",
+      "assets/images/wildlife/destinations/lake-manyara-national-park/gallery-5.jpg"
+    ],
+    "packageSlugs": [
+      "4-days-ngorongoro-crater-escape",
+      "8-days-northern-tarangire-manyara-ngorongoro-serengeti"
+    ],
+    "activitySlugs": [
+      "ngorongoro-northern-icons"
+    ],
+    "seo": {
+      "title": "Lake Manyara National Park Wildlife Safari | Endemic Birds Tanzania",
+      "description": "Located beneath the cliffs of the Manyara Escarpment, on the edge of the Rift Valley, Lake Manyara National Park offers varied ecosystems, incredible bird "
+    }
+  },
+  {
+    "id": "arusha",
+    "slug": "arusha-national-park",
+    "name": "Arusha National Park",
+    "displaySubtitle": "Momella Lakes & Mount Meru foothills",
+    "circuit": "Northern",
+    "location": "Northern Tanzania",
+    "summary": "Arusha National Park (ANAPA) is a gem of varied ecosystems and spectacular views of Mt. Meru, the crater that gives the region its nameIt is a popular destination for day trip visitors who are about to embark from the town of Arusha on longer northern circuit safaris. The small national park...",
+    "overview": "Arusha National Park (ANAPA) is a gem of varied ecosystems and spectacular views of Mt. Meru, the crater that gives the region its nameIt is a popular destination for day trip visitors who are about to embark from the town of Arusha on longer northern circuit safaris. The small national park... This page summarises why safari travellers include Arusha National Park on northern, southern or western circuits with Endemic Birds – small groups, max six guests per vehicle.",
+    "wildlifeHighlights": [
+      "Momella Lakes – flamingos and waterbirds",
+      "Ngurdoto Crater viewpoints",
+      "Mount Meru foothills and fig-tree arch walks"
+    ],
+    "parkActivities": [
+      "Game drives",
+      "Photography",
+      "Walking (where permitted)",
+      "Canoeing at Momella (Arusha)"
+    ],
+    "bestTime": "Dry season (June–October) for general wildlife; calving migration Dec–Mar in Ndutu/Serengeti south.",
+    "practicalNotes": "Park fees, lodge availability and drive times vary by season. We confirm routing, guides and vehicle allocation when you enquire – maximum six guests per vehicle with window seats.",
+    "heroImage": "assets/images/wildlife/destinations/arusha-national-park/hero.jpg",
+    "gallery": [
+      "assets/images/wildlife/destinations/arusha-national-park/gallery-1.jpg",
+      "assets/images/wildlife/destinations/arusha-national-park/gallery-2.jpg",
+      "assets/images/wildlife/destinations/arusha-national-park/gallery-3.jpg",
+      "assets/images/wildlife/destinations/arusha-national-park/gallery-4.jpg",
+      "assets/images/wildlife/destinations/arusha-national-park/gallery-5.jpg"
+    ],
+    "packageSlugs": [
+      "4-days-ngorongoro-crater-escape"
+    ],
+    "activitySlugs": [
+      "ngorongoro-northern-icons"
+    ],
+    "seo": {
+      "title": "Arusha National Park Wildlife Safari | Endemic Birds Tanzania",
+      "description": "Arusha National Park (ANAPA) is a gem of varied ecosystems and spectacular views of Mt. Meru, the crater that gives the region its nameIt is a popular dest"
+    }
+  },
+  {
+    "id": "ruaha",
+    "slug": "ruaha-national-park",
+    "name": "Ruaha National Park",
+    "displaySubtitle": null,
+    "circuit": "Southern",
+    "location": "Southern Tanzania",
+    "summary": "Ruaha National Park is located just south of the central midpoint of Tanzania. The national park encompasses an area of 7,809 square miles (20,226 sq km) making it the largest national park in Tanzania and one of the largest in Africa.Ruaha National Park is part of the larger Rungwa-Kizigo-Muhesi...",
+    "overview": "Ruaha National Park is located just south of the central midpoint of Tanzania. The national park encompasses an area of 7,809 square miles (20,226 sq km) making it the largest national park in Tanzania and one of the largest in Africa.Ruaha National Park is part of the larger Rungwa-Kizigo-Muhesi... This page summarises why safari travellers include Ruaha National Park on northern, southern or western circuits with Endemic Birds – small groups, max six guests per vehicle.",
+    "wildlifeHighlights": [
+      "Remote miombo wilderness with low visitor numbers",
+      "Ruaha River elephant and predator action",
+      "Greater kudu, wild dog and baobab-studded hills"
+    ],
+    "parkActivities": [
+      "Game drives",
+      "Photography"
+    ],
+    "bestTime": "Dry season (June–November) for Ruaha and Nyerere river viewing; Mikumi accessible year-round.",
+    "practicalNotes": "Park fees, lodge availability and drive times vary by season. We confirm routing, guides and vehicle allocation when you enquire – maximum six guests per vehicle with window seats.",
+    "heroImage": "assets/images/wildlife/destinations/ruaha-national-park/hero.jpg",
+    "gallery": [
+      "assets/images/wildlife/destinations/ruaha-national-park/gallery-1.jpg",
+      "assets/images/wildlife/destinations/ruaha-national-park/gallery-2.jpg",
+      "assets/images/wildlife/destinations/ruaha-national-park/gallery-3.jpg",
+      "assets/images/wildlife/destinations/ruaha-national-park/gallery-4.jpg",
+      "assets/images/wildlife/destinations/ruaha-national-park/gallery-5.jpg"
+    ],
+    "packageSlugs": [
+      "10-days-luxury-flying-safari",
+      "8-days-ruaha-mikumi-safari"
+    ],
+    "activitySlugs": [
+      "southern-western-wilderness"
+    ],
+    "seo": {
+      "title": "Ruaha National Park Wildlife Safari | Endemic Birds Tanzania",
+      "description": "Ruaha National Park is located just south of the central midpoint of Tanzania. The national park encompasses an area of 7,809 square miles (20,226 sq km) m"
+    }
+  },
+  {
+    "id": "mikumi",
+    "slug": "mikumi-national-park",
+    "name": "Mikumi National Park",
+    "displaySubtitle": null,
+    "circuit": "Southern",
+    "location": "Southern Tanzania",
+    "summary": "Mikumi National Park is only three to four hours drive from Dar es Salaam, lying astride the main highway to Zambia, and en route to the National Parks of Udzungwa Mountains, Ruaha and Kitulo. The main feature of the park is the Mikumi flood plain, along with the mountain ranges that border the...",
+    "overview": "Mikumi National Park is only three to four hours drive from Dar es Salaam, lying astride the main highway to Zambia, and en route to the National Parks of Udzungwa Mountains, Ruaha and Kitulo. The main feature of the park is the Mikumi flood plain, along with the mountain ranges that border the... This page summarises why safari travellers include Mikumi National Park on northern, southern or western circuits with Endemic Birds – small groups, max six guests per vehicle.",
+    "wildlifeHighlights": [
+      "Mkata floodplain – zebra, wildebeest and giraffe",
+      "Easy access from Dar es Salaam / Morogoro corridor",
+      "Gateway to southern Tanzania safaris"
+    ],
+    "parkActivities": [
+      "Game drives",
+      "Photography"
+    ],
+    "bestTime": "Dry season (June–November) for Ruaha and Nyerere river viewing; Mikumi accessible year-round.",
+    "practicalNotes": "Park fees, lodge availability and drive times vary by season. We confirm routing, guides and vehicle allocation when you enquire – maximum six guests per vehicle with window seats.",
+    "heroImage": "assets/images/wildlife/destinations/mikumi-national-park/hero.jpg",
+    "gallery": [
+      "assets/images/wildlife/destinations/mikumi-national-park/gallery-1.jpg",
+      "assets/images/wildlife/destinations/mikumi-national-park/gallery-2.jpg",
+      "assets/images/wildlife/destinations/mikumi-national-park/gallery-3.jpg",
+      "assets/images/wildlife/destinations/mikumi-national-park/gallery-4.jpg",
+      "assets/images/wildlife/destinations/mikumi-national-park/gallery-5.jpg"
+    ],
+    "packageSlugs": [
+      "8-days-ruaha-mikumi-safari"
+    ],
+    "activitySlugs": [
+      "southern-western-wilderness"
+    ],
+    "seo": {
+      "title": "Mikumi National Park Wildlife Safari | Endemic Birds Tanzania",
+      "description": "Mikumi National Park is only three to four hours drive from Dar es Salaam, lying astride the main highway to Zambia, and en route to the National Parks of "
+    }
+  },
+  {
+    "id": "nyerere",
+    "slug": "nyerere-national-park",
+    "name": "Nyerere National Park",
+    "displaySubtitle": null,
+    "circuit": "Southern",
+    "location": "Southern Tanzania",
+    "summary": "Nyerere National Park is the northeastern part of the huge Selous Game Reserve set aside for photographic safaris, which was upgraded to the national park status in November 2019. The park was named after the first president of Tanzania, Mr Julius Nyerere (late), in recognition for championing...",
+    "overview": "Nyerere National Park is the northeastern part of the huge Selous Game Reserve set aside for photographic safaris, which was upgraded to the national park status in November 2019. The park was named after the first president of Tanzania, Mr Julius Nyerere (late), in recognition for championing... This page summarises why safari travellers include Nyerere National Park on northern, southern or western circuits with Endemic Birds – small groups, max six guests per vehicle.",
+    "wildlifeHighlights": [
+      "Rufiji River boat safaris and oxbow lakes",
+      "Wild dog, elephant and hippo on river circuits",
+      "Vast wilderness – former Selous heartlands"
+    ],
+    "parkActivities": [
+      "Game drives",
+      "Photography",
+      "Boat safaris on the Rufiji"
+    ],
+    "bestTime": "Dry season (June–November) for Ruaha and Nyerere river viewing; Mikumi accessible year-round.",
+    "practicalNotes": "Park fees, lodge availability and drive times vary by season. We confirm routing, guides and vehicle allocation when you enquire – maximum six guests per vehicle with window seats.",
+    "heroImage": "assets/images/wildlife/destinations/nyerere-national-park/hero.jpg",
+    "gallery": [
+      "assets/images/wildlife/destinations/nyerere-national-park/gallery-1.jpg",
+      "assets/images/wildlife/destinations/nyerere-national-park/gallery-2.jpg",
+      "assets/images/wildlife/destinations/nyerere-national-park/gallery-3.jpg",
+      "assets/images/wildlife/destinations/nyerere-national-park/gallery-4.jpg",
+      "assets/images/wildlife/destinations/nyerere-national-park/gallery-5.jpg"
+    ],
+    "packageSlugs": [
+      "10-days-nyerere-katavi-expedition"
+    ],
+    "activitySlugs": [
+      "southern-western-wilderness"
+    ],
+    "seo": {
+      "title": "Nyerere National Park Wildlife Safari | Endemic Birds Tanzania",
+      "description": "Nyerere National Park is the northeastern part of the huge Selous Game Reserve set aside for photographic safaris, which was upgraded to the national park "
+    }
+  },
+  {
+    "id": "katavi",
+    "slug": "katavi-national-park",
+    "name": "Katavi National Park",
+    "displaySubtitle": null,
+    "circuit": "Western",
+    "location": "Western Tanzania",
+    "summary": "It offers un-spoilt wildlife viewing in the country’s third-largest national park, in a remote location far off the beaten track. The national park is Africa at its most wild – unadulterated bush settings, spectacular views, and rich wildlife.Tanzania’s third largest national park; it lies in...",
+    "overview": "It offers un-spoilt wildlife viewing in the country’s third-largest national park, in a remote location far off the beaten track. The national park is Africa at its most wild – unadulterated bush settings, spectacular views, and rich wildlife.Tanzania’s third largest national park; it lies in... This page summarises why safari travellers include Katavi National Park on northern, southern or western circuits with Endemic Birds – small groups, max six guests per vehicle.",
+    "wildlifeHighlights": [
+      "Hippo pools and crocodile congregations in dry season",
+      "Buffalo herds on floodplains",
+      "Among Tanzania’s least crowded big-game parks"
+    ],
+    "parkActivities": [
+      "Game drives",
+      "Photography"
+    ],
+    "bestTime": "Dry season (May–October) for Katavi hippo pools; Mahale chimps best in dry months with clearer forest trails.",
+    "practicalNotes": "Park fees, lodge availability and drive times vary by season. We confirm routing, guides and vehicle allocation when you enquire – maximum six guests per vehicle with window seats.",
+    "heroImage": "assets/images/wildlife/destinations/katavi-national-park/hero.jpg",
+    "gallery": [
+      "assets/images/wildlife/destinations/katavi-national-park/gallery-1.jpg",
+      "assets/images/wildlife/destinations/katavi-national-park/gallery-2.jpg",
+      "assets/images/wildlife/destinations/katavi-national-park/gallery-3.jpg",
+      "assets/images/wildlife/destinations/katavi-national-park/gallery-4.jpg",
+      "assets/images/wildlife/destinations/katavi-national-park/gallery-5.jpg"
+    ],
+    "packageSlugs": [
+      "10-days-nyerere-katavi-expedition"
+    ],
+    "activitySlugs": [
+      "chimps-lake-forests",
+      "southern-western-wilderness"
+    ],
+    "seo": {
+      "title": "Katavi National Park Wildlife Safari | Endemic Birds Tanzania",
+      "description": "It offers un-spoilt wildlife viewing in the country’s third-largest national park, in a remote location far off the beaten track. The national park is Afri"
+    }
+  },
+  {
+    "id": "mahale-mountains",
+    "slug": "mahale-mountains-national-park",
+    "name": "Mahale Mountains National Park",
+    "displaySubtitle": null,
+    "circuit": "Western",
+    "location": "Western Tanzania",
+    "summary": "Mahale is located in the Western Tanzania to the South of Kigoma town, it is bordering Lake Tanganyika-the World’s longest, second deepest and least polluted freshwater lake-harbouring an estimated 1000 fish species.The park is famous among visitors because of holding an abundant number of...",
+    "overview": "Mahale is located in the Western Tanzania to the South of Kigoma town, it is bordering Lake Tanganyika-the World’s longest, second deepest and least polluted freshwater lake-harbouring an estimated 1000 fish species.The park is famous among visitors because of holding an abundant number of... This page summarises why safari travellers include Mahale Mountains National Park on northern, southern or western circuits with Endemic Birds – small groups, max six guests per vehicle.",
+    "wildlifeHighlights": [
+      "Chimpanzee trekking in montane forest",
+      "Lake Tanganyika beaches and dhow sunsets",
+      "Forest trails with primate and bird life"
+    ],
+    "parkActivities": [
+      "Game drives",
+      "Photography",
+      "Chimpanzee tracking",
+      "Lake swimming & beach time"
+    ],
+    "bestTime": "Dry season (May–October) for Katavi hippo pools; Mahale chimps best in dry months with clearer forest trails.",
+    "practicalNotes": "Park fees, lodge availability and drive times vary by season. We confirm routing, guides and vehicle allocation when you enquire – maximum six guests per vehicle with window seats.",
+    "heroImage": "assets/images/wildlife/destinations/mahale-mountains-national-park/hero.jpg",
+    "gallery": [
+      "assets/images/wildlife/destinations/mahale-mountains-national-park/gallery-1.jpg",
+      "assets/images/wildlife/destinations/mahale-mountains-national-park/gallery-2.jpg",
+      "assets/images/wildlife/destinations/mahale-mountains-national-park/gallery-3.jpg",
+      "assets/images/wildlife/destinations/mahale-mountains-national-park/gallery-4.jpg",
+      "assets/images/wildlife/destinations/mahale-mountains-national-park/gallery-5.jpg"
+    ],
+    "packageSlugs": [
+      "10-days-chimpanzee-tracking",
+      "7-days-mahale-gombe-chimp-safari"
+    ],
+    "activitySlugs": [
+      "chimps-lake-forests"
+    ],
+    "seo": {
+      "title": "Mahale Mountains National Park Wildlife Safari | Endemic Birds Tanzania",
+      "description": "Mahale is located in the Western Tanzania to the South of Kigoma town, it is bordering Lake Tanganyika-the World’s longest, second deepest and least pollut"
+    }
+  }
+]

@@ -1,0 +1,121 @@
+{
+  "name": "Endemic Birds & Wildlife Experiences Ltd",
+  "shortName": "Endemic Birds",
+  "tagline": "Specialist birding safaris across Tanzania and East Africa",
+  "media": {
+    "brandLogo": "assets/images/from-live-site/brand/bird-logo.png",
+    "homeHeroSlides": [
+      "endemics/slideshow-main.jpg",
+      "endemics/perfect-moment-bird-watching-1536x872.jpg",
+      "endemics/lilac-breasted-roller-birding-safari-768x602.jpg",
+      "endemics/hero-MG_7124-scaled.jpg"
+    ],
+    "footerBackground": "endemics/FOOTER.jpg",
+    "aboutHero": "endemics/about-page.jpg",
+    "aboutInline": "endemics/perfect-moment-bird-watching-1536x872.jpg"
+  },
+  "contact": {
+    "location": "Iringa, Tanzania",
+    "phone": "+255 627 013 348",
+    "phoneTel": "+255627013348",
+    "email": "info@endemicbirds.co.tz",
+    "whatsapp": "https://wa.me/255627013348",
+    "emails": [
+      "info@endemicbirds.co.tz"
+    ]
+  },
+  "formSubmit": {
+    "action": "https://formsubmit.co/info@endemicbirds.co.tz",
+    "enabled": true
+  },
+  "social": {
+    "facebook": "https://www.facebook.com/",
+    "twitter": null,
+    "instagram": "https://www.instagram.com/",
+    "linkedin": null,
+    "youtube": null,
+    "tripadvisor": "https://www.tripadvisor.com/Search?q=Endemic+Birds+Tanzania"
+  },
+  "footerBlurb": "Based in Iringa, Tanzania – specialist birding and wildlife safaris across East Africa. Tailor-made routes, indigenous guides, max six guests per vehicle.",
+  "about": {
+    "liveUrl": "https://endemicbirds.co.tz/index.php/about-endemic-birds-tanzania/",
+    "intro": "We are a dedicated safari company based in Tanzania East Africa and we are leading top Birding safaris, wildlife safaris and Nature Tours in Tanzania, Uganda and Rwanda Endemic Birds Tanzania is dedicated to providing exceptional birdwatching experiences in the stunning landscapes of Tanzania. With a focus on sustainable tourism, we aim to connect bird enthusiasts with the rich avian diversity found across various ecosystems, from lush forests to expansive savannas.",
+    "sections": [
+      {
+        "title": "Indigenous knowledge",
+        "body": "Our African safari team is composed of indigenous Tour Guides drawn from Tanzania, Kenya, Uganda and Rwanda. These knowledgeable guides will lead you through their home region (East Africa); sharing with you their ways of life and helping you learn all forms of nature as you traverse this magical region of Africa."
+      },
+      {
+        "title": "Time flexibility",
+        "body": "We can put a tour together in just a few minutes, so you can make that last minute decision to go out and enjoy some of our best safari destinations. This has been our best tool when helping business travelers and conference attendees enjoy a tour in Kenya, Tanzania, Uganda or Rwanda. Just in case you get some few free hours during your meeting, please contact us and we shall help you enjoy an African safari within your business schedule. Kindly see our Day and Half-day Tours as well as our Excursion Tours; for some great inspiration."
+      },
+      {
+        "title": "Varied safari destinations and itineraries",
+        "body": "Our unmatched wide range of safari destinations and tour itineraries has set us on top of the table. We take you to all the known tour and safari destinations in, Tanzania, Uganda Kenya and Rwanda. Further, we take you to exciting less-known locations that will make your African safari experience memorable. We physically visit all our tour destinations prior to taking our guests; to ensure we have the most up-to-date information on our safari itineraries. We have over 100 tour itineraries to all destinations across East Africa and we shall help you pick your best tour or safari."
+      },
+      {
+        "title": "Value for Money",
+        "body": "We ensure you get real value for money by helping you get the best tour facilities and professional safari guides; at the best market price. We do not hold back when giving you our tour services. You get to enjoy the full knowledge of our tour leaders and guides, valuable indigenous knowledge of the local communities we visit, stay in comfortable and neat accommodation facilities, and get the most delicious meals; while on safari with us."
+      },
+      {
+        "title": "Group sizes on Tours",
+        "body": "We understand the need to have a tour group size that will maximize the experience of each participant. Therefore, we ensure that our vehicles carry a maximum of six guests each, allowing all safari participants a window seat. When the tour group is larger than one guide can adequately attend to, we ensure we have two or more Safari Guides on the tour. This ensures that each guest is given the best tour services at all times during our tours and safaris."
+      },
+      {
+        "title": "Adaptability to your safari needs",
+        "body": "We offer a varied and holistic approach during all our tours. We adapt to the needs of our guests and offer exactly what you would wish to enjoy on safari here in Africa. Our friendly tour leaders will adapt to your speed and ensure the tour moves at your pace. We also host all levels of experience, from the safari pros, holiday travellers, honeymooners, researchers, species specialists, photographers and even life-listers. This ensures that all our clients enjoy that memorable tour in all our destinations- Tanzania, Kenya,Uganda and Rwanda."
+      }
+    ]
+  },
+  "destinationPages": {
+    "quickLinks": [
+      {
+        "title": "Birding in West Tanzania",
+        "liveUrl": "https://endemicbirds.co.tz/index.php/birding-in-west-tanzania/"
+      },
+      {
+        "title": "South east birding destination",
+        "liveUrl": "https://endemicbirds.co.tz/index.php/south-east-birding-destination/"
+      },
+      {
+        "title": "Birding in North West Tanzania",
+        "liveUrl": "https://endemicbirds.co.tz/index.php/birding-in-north-west-tanzania/"
+      },
+      {
+        "title": "Southern Circuit",
+        "liveUrl": "https://endemicbirds.co.tz/index.php/southern-circuit-1/"
+      },
+      {
+        "title": "Eastern Arc Mountain",
+        "liveUrl": "https://endemicbirds.co.tz/index.php/southern-destinations/"
+      }
+    ],
+    "circuits": [
+      {
+        "name": "Northern Destination",
+        "verifiedOnHome": true
+      },
+      {
+        "name": "Southern Destination",
+        "verifiedOnHome": true
+      },
+      {
+        "name": "Eastern Arc Mountain",
+        "verifiedOnHome": true
+      },
+      {
+        "name": "Western Destination",
+        "verifiedOnHome": true
+      },
+      {
+        "name": "North West Tanzania",
+        "verifiedOnHome": true
+      },
+      {
+        "name": "Eastern Destination",
+        "verifiedOnHome": true
+      }
+    ]
+  },
+  "socialNote": "Live endemicbirds.co.tz footer uses social icons with href=\"#\" placeholders – profile URLs were not published at scrape time."
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destinations | Endemic Birds Tanzania</title>
+    <meta name="description" content="Explore Tanzania birding and wildlife destinations." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Marck+Script&display=swap" rel="stylesheet" />
+    <link rel="icon" href="../assets/images/from-live-site/brand/bird-logo.png" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body class="has-grain" data-nav="destinations">
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <div id="site-header"></div>
+    <main id="main">
+      <section class="section" style="padding-top: 7rem">
+        <div class="container catalog-page">
+          <header class="catalog-page-head">
+            <p class="eyebrow">Destinations</p>
+            <h1 class="section-title">Circuits &amp; regions</h1>
+            <p class="section-lead">Northern, Southern, Eastern Arc, Western and coastal belts – filter by birding or wildlife and by circuit.</p>
+          </header>
+          <form class="filters-bar filters-bar--compact" data-filters>
+            <label>Experience
+              <select name="type">
+                <option value="all">All</option>
+                <option value="birding">Birding</option>
+                <option value="wildlife">Wildlife</option>
+              </select>
+            </label>
+            <label>Circuit
+              <select name="circuit">
+                <option value="all">All</option>
+                <option value="Northern">Northern</option>
+                <option value="Southern">Southern</option>
+                <option value="Eastern">Eastern</option>
+                <option value="Western">Western</option>
+                <option value="North West">North West</option>
+              </select>
+            </label>
+            <button type="button" class="btn btn-outline" data-clear-filters>Clear filters</button>
+          </form>
+          <div data-catalog="destinations">
+            <p class="catalog-meta"><span data-count>0</span> destinations</p>
+            <div data-catalog-grid></div>
+            <p class="catalog-empty" data-empty hidden>No destinations match these filters.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div id="site-footer"></div>
+    <script>window.__ASSET_PREFIX__ = "../";</script>
+    <script src="../assets/js/ui-cards.js" defer></script>
+    <script src="../assets/js/layout.js" defer></script>
+    <script src="../assets/js/site-search.js" defer></script>
+    <script src="../assets/js/motion.js" defer></script>
+    <script src="../assets/js/catalog.js" defer></script>
+    <script src="../assets/js/main.js" defer></script>
+  </body>
+</html>
