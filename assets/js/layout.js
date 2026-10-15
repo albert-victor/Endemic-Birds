@@ -12,6 +12,7 @@
 
   const DEFAULT_MEDIA = {
     brandLogo: "assets/images/from-live-site/brand/bird-logo.png",
+    brandLogoLight: "assets/images/from-live-site/brand/endemic-birds-logo-light.png",
     footerBackground: "endemics/FOOTER.jpg",
   };
 
@@ -20,6 +21,13 @@
     clean.rel = "stylesheet";
     clean.href = asset("assets/css/clean-depth.css");
     document.head.appendChild(clean);
+  }
+
+  if (!document.querySelector('link[href*="site-enhancements.css"]')) {
+    const enh = document.createElement("link");
+    enh.rel = "stylesheet";
+    enh.href = asset("assets/css/site-enhancements.css");
+    document.head.appendChild(enh);
   }
 
   if (!document.querySelector('link[href*="font-awesome"]')) {
@@ -32,14 +40,16 @@
 
   const destinationHubLinks = [
     {
-      href: "birding/index.html#destinations",
+      href: "destinations/birding/index.html#destinations-grid",
       label: "Birding destinations",
-      desc: "Forests, miombo and key birding circuits across Tanzania",
+      desc: "Forests, miombo & endemics – Tanzania, Uganda & Rwanda",
+      image: "endemics/perfect-moment-bird-watching-1536x872.jpg",
     },
     {
       href: "wildlife/index.html#destinations",
       label: "Wildlife destinations",
-      desc: "National parks & conservation areas for safaris",
+      desc: "Iconic parks & conservation areas on tailor-made safaris",
+      image: "assets/images/wildlife/destinations/serengeti-national-park/hero.jpg",
     },
   ];
 
@@ -53,7 +63,6 @@
   ];
 
   const drawerLinks = [
-    { href: "about/index.html", label: "About Us" },
     { href: "plan-your-trip/index.html", label: "Booking & Enquiries" },
     { href: "packages/index.html", label: "All Safari Packages" },
     { href: "destinations/index.html", label: "All destinations" },
@@ -77,6 +86,7 @@
       columns: [{ title: "Experiences", links: wildlifeActivities }],
       megaCta: { href: "wildlife/index.html", label: "View wildlife safaris →" },
     },
+    { href: asset("about/index.html"), label: "About Us", id: "about" },
   ];
 
   function isActive(item) {
@@ -96,16 +106,19 @@
     return `<div class="nav-mega-col"><h3>${col.title}</h3><ul>${links}</ul></div>`;
   }
 
-  function buildNav(logoPath) {
+  function buildNav(logos) {
+    const logoOnLight = logos.onLight || DEFAULT_MEDIA.brandLogo;
+    const logoOnDark = logos.onDark || DEFAULT_MEDIA.brandLogoLight;
     const links = navItems
       .map((item) => {
         if (item.dropdown) {
           const menuLinks = item.dropdown
             .map((l) => {
-              const birding = String(l.href).includes("birding");
-              const icon = birding ? "fa-binoculars" : "fa-paw";
+              const thumb = l.image
+                ? `<span class="nav-hub-thumb"><img src="${asset(l.image)}" alt="" width="80" height="60" loading="lazy" decoding="async" /></span>`
+                : "";
               return `<li><a class="nav-hub-link" href="${asset(l.href)}" role="menuitem">
-                  <span class="nav-hub-icon" aria-hidden="true"><i class="fa-solid ${icon}"></i></span>
+                  ${thumb}
                   <span class="nav-hub-text">
                     <span class="nav-hub-link-title">${l.label}</span>
                     ${l.desc ? `<span class="nav-hub-link-desc">${l.desc}</span>` : ""}
@@ -128,8 +141,9 @@
           const cta = item.megaCta
             ? `<a class="nav-mega-cta" href="${asset(item.megaCta.href)}">${item.megaCta.label}</a>`
             : "";
+          const megaClass = item.id === "wildlife" ? " nav-wildlife-mega" : "";
           const activeParent = item.id === document.body.dataset.nav ? " is-active" : "";
-          return `<li class="nav-item has-dropdown has-mega${activeParent}">
+          return `<li class="nav-item has-dropdown has-mega${megaClass}${activeParent}">
             <button type="button" class="nav-dropdown-trigger nav-rail-link nav-link-animated" aria-expanded="false" aria-haspopup="true">
               <span>${item.label}</span>
               <svg class="nav-chevron" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
@@ -195,8 +209,8 @@
     return `<header class="site-header site-header--rail" data-header>
       <nav class="nav-pill nav-rail" aria-label="Primary">
         <a class="nav-brand" href="${asset("index.html")}" aria-label="Endemic Birds Tanzania home">
-          <img class="nav-brand-logo" src="${asset(logoPath)}" alt="" width="44" height="44" decoding="async" />
-          <span class="nav-brand-text">Endemic Birds</span>
+          <img class="nav-brand-logo nav-brand-logo--on-light" src="${asset(logoOnLight)}" alt="Endemic Birds Tanzania" width="240" height="56" decoding="async" />
+          <img class="nav-brand-logo nav-brand-logo--on-dark" src="${asset(logoOnDark)}" alt="" width="240" height="56" decoding="async" aria-hidden="true" />
         </a>
         <div class="nav-panel" id="nav-panel">
           <ul class="nav-links nav-rail-links">${links}</ul>
@@ -288,7 +302,7 @@
       .join("");
   }
 
-  function buildFooter(site, logoPath, footerBg) {
+  function buildFooter(site, logoOnDark, footerBg) {
     const year = new Date().getFullYear();
     const footerPhoto = rootMediaUrl(footerBg);
     const contact = site?.contact || {};
@@ -323,13 +337,10 @@
       <div class="site-footer-scrim" aria-hidden="true"></div>
       <div class="container footer-grid footer-grid--rich">
         <div class="footer-brand footer-brand-col">
-          <div class="footer-brand-head">
-            <img class="footer-brand-logo" src="${asset(logoPath)}" alt="" width="52" height="52" decoding="async" />
-            <div>
-              <p class="footer-brand-name">Endemic Birds Tanzania</p>
-              <p class="footer-tagline footer-tagline--soft">Birding &amp; wildlife · East Africa</p>
-            </div>
-          </div>
+          <a class="footer-brand-lockup" href="${asset("index.html")}">
+            <img class="footer-brand-logo-full" src="${asset(logoOnDark)}" alt="Endemic Birds Tanzania" width="300" height="72" decoding="async" />
+          </a>
+          <p class="footer-tagline footer-tagline--soft">Birding &amp; wildlife · East Africa</p>
           <p class="footer-blurb">${blurb}</p>
           <div class="footer-cta-row">
             <a class="footer-cta footer-cta--primary" href="${plan}"><i class="fa-solid fa-plane-departure" aria-hidden="true"></i> Book a safari</a>
@@ -397,13 +408,14 @@
   async function mountLayout() {
     const site = (await loadSite()) || {};
     const media = { ...DEFAULT_MEDIA, ...(site.media || {}) };
-    const logoPath = media.brandLogo || DEFAULT_MEDIA.brandLogo;
+    const logoOnLight = media.brandLogo || DEFAULT_MEDIA.brandLogo;
+    const logoOnDark = media.brandLogoLight || DEFAULT_MEDIA.brandLogoLight;
     const footerBg = media.footerBackground || DEFAULT_MEDIA.footerBackground;
 
     const headerEl = document.getElementById("site-header");
     const footerEl = document.getElementById("site-footer");
-    if (headerEl) headerEl.outerHTML = buildNav(logoPath);
-    if (footerEl) footerEl.outerHTML = buildFooter(site, logoPath, footerBg);
+    if (headerEl) headerEl.outerHTML = buildNav({ onLight: logoOnLight, onDark: logoOnDark });
+    if (footerEl) footerEl.outerHTML = buildFooter(site, logoOnDark, footerBg);
 
     const header = document.querySelector("[data-header]");
     if (header && !document.getElementById("site-search")) {
@@ -415,6 +427,13 @@
     mountWhatsAppFab();
 
     await ensureSiteSearchScript();
+
+    if (!document.querySelector('script[src*="whatsapp-chat.js"]')) {
+      const wa = document.createElement("script");
+      wa.src = asset("assets/js/whatsapp-chat.js");
+      wa.defer = true;
+      document.body.appendChild(wa);
+    }
 
     if (!document.querySelector('script[src*="endemic-media.js"]')) {
       const em = document.createElement("script");

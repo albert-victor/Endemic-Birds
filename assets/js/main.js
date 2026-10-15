@@ -43,7 +43,18 @@
         header.classList.remove("is-nav-reveal-hidden", "is-nav-reveal-visible");
       }
 
-      if (y > Math.min(heroEnd * 0.35, 420)) {
+      const heroThreshold = Math.min(heroEnd * 0.35, 420);
+      let navTransparent = false;
+      if (hero) {
+        if (revealNav) {
+          const revealThreshold = Math.min(heroEnd * 0.08, 88);
+          navTransparent = y <= revealThreshold;
+        } else {
+          navTransparent = y <= heroThreshold;
+        }
+      }
+      header.classList.toggle("is-nav-on-dark", navTransparent);
+      if (y > heroThreshold) {
         header.classList.add("is-clear-of-hero");
       } else {
         header.classList.remove("is-clear-of-hero");
@@ -67,6 +78,10 @@
         ticking = false;
         setHeaderState();
       });
+    }
+
+    if (document.querySelector(".hero--landing, .hero:not(.hero-push), .page-hero, .hero-push")) {
+      document.body.classList.add("has-hero-nav");
     }
 
     window.__refreshHeaderState = setHeaderState;

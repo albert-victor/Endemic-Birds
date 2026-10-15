@@ -1,0 +1,31 @@
+---
+description: Use en dash (–) never em dash (—) in all site copy and code strings
+alwaysApply: true
+---
+
+# Dashes: en dash only (U+2013)
+
+This project uses the **en dash** `–` (Unicode U+2013), not the **em dash** `—` (U+2014).
+
+## When writing or editing
+
+- In user-facing copy, meta descriptions, comments meant for the site, JSON content, HTML, JS string literals, and CSS: use **en dash** `–`.
+- Do **not** insert em dash `—`, `--` as a typographic dash, or `&mdash;` / `&#8212;` for punctuation.
+- Hyphen `-` is only for compound words, URLs, code, and CSS properties – not as a substitute for an en dash in prose.
+
+## Examples
+
+| Wrong | Right |
+|-------|-------|
+| `Safaris — Tanzania` | `Safaris – Tanzania` |
+| `Life is short — bird` | `Life is short – bird` |
+| `&mdash;` in HTML copy | `&ndash;` or literal `–` |
+
+## Before finishing a task
+
+- Search changed files for `—` (U+2014) and replace with `–`.
+- Optional check: `npm run normalize:dashes` from repo root.
+
+## Scope
+
+Applies to all project text except third-party scrapes under `content/scrapes/` (historical imports).

@@ -141,6 +141,12 @@ html.is-loading {
   pointer-events: auto;
 }
 
+body.nav-dropdown-open .hero-push-arrow {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 .hero-push-arrow {
   position: absolute;
   z-index: 6;
@@ -234,9 +240,12 @@ html.is-loading {
 .hero-push-grade {
   position: absolute;
   inset: 0;
-  background:
-    linear-gradient(90deg, rgba(12, 10, 8, 0.78) 0%, rgba(12, 10, 8, 0.42) 32%, rgba(12, 10, 8, 0.08) 58%, transparent 72%),
-    linear-gradient(180deg, rgba(12, 10, 8, 0.28) 0%, transparent 38%, rgba(12, 10, 8, 0.45) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(18, 40, 32, 0.42) 0%,
+    rgba(18, 40, 32, 0.28) 45%,
+    rgba(18, 40, 32, 0.62) 100%
+  );
   pointer-events: none;
 }
 
@@ -255,9 +264,13 @@ html.is-loading {
   grid-row: 1;
   grid-column: 1;
   width: 100%;
-  max-width: min(29rem, 88vw);
+  max-width: min(36rem, 92vw);
   margin: 0;
-  padding: clamp(5rem, 12vh, 7rem) var(--gutter, 1.25rem) clamp(6rem, 14vh, 8rem);
+  padding:
+    clamp(5rem, 12vh, 7rem)
+    clamp(1.25rem, 4vw, 2rem)
+    clamp(6rem, 14vh, 8rem)
+    clamp(1.85rem, 6.5vw, 3.5rem);
   text-align: left;
   transition: opacity 0.45s ease, transform 0.45s var(--ease-out);
 }
@@ -308,7 +321,7 @@ html.is-loading {
   }
 }
 
-/* Hero typography – locked to reference mock (script headline + sans UI) */
+/* Hero headline – bold sans stack (legacy site style, tighter 3-line layout) */
 .hero-push-eyebrow {
   display: flex;
   align-items: center;
@@ -332,37 +345,44 @@ html.is-loading {
 }
 
 .hero-push-title {
-  margin: 0 0 0.7rem;
-  font-family: "Marck Script", "Segoe Script", cursive;
-  font-size: clamp(2.25rem, 4.85vw, 3.85rem);
-  font-weight: 400;
+  margin: 0 0 1rem;
+  font-family: var(--font-body);
+  font-size: clamp(2.05rem, 4.8vw, 3.45rem);
+  font-weight: 700;
   font-style: normal;
-  line-height: 0.98;
-  letter-spacing: -0.01em;
-  word-spacing: -0.06em;
+  line-height: 1.05;
+  letter-spacing: -0.028em;
   color: #fff;
   display: block;
-  max-width: 17.5em;
+  max-width: 14em;
+  text-wrap: balance;
+}
+
+.hero-push-title--stack {
+  max-width: 15em;
 }
 
 .hero-push-title-line {
   display: block;
-  white-space: nowrap;
-  word-spacing: inherit;
+  white-space: normal;
 }
 
 .hero-push-title-line + .hero-push-title-line {
-  margin-top: -0.06em;
+  margin-top: 0.06em;
+}
+
+.hero-push-title-line--last {
+  letter-spacing: -0.02em;
 }
 
 .hero-push-lead {
-  margin: 0 0 1.35rem;
+  margin: 0 0 1.5rem;
   font-family: var(--font-body);
-  font-size: clamp(0.875rem, 1.6vw, 0.975rem);
+  font-size: clamp(0.95rem, 1.85vw, 1.1rem);
   font-weight: 400;
-  line-height: 1.5;
-  color: rgba(255, 255, 255, 0.92);
-  max-width: 34ch;
+  line-height: 1.58;
+  color: rgba(255, 255, 255, 0.94);
+  max-width: 46ch;
 }
 
 .hero-push .btn-rect {
@@ -1596,15 +1616,18 @@ html.is-loading {
   }
 
   .hero-push-inner {
-    padding: 5.5rem var(--gutter, 1rem) 5.75rem;
+    padding:
+      5.5rem
+      clamp(1.15rem, 4vw, 1.5rem)
+      5.75rem
+      clamp(1.5rem, 5.5vw, 2rem);
     max-width: 100%;
   }
 
   .hero-push-title {
-    font-size: clamp(1.95rem, 8.5vw, 2.65rem);
-    line-height: 0.99;
-    max-width: 16em;
-    word-spacing: -0.05em;
+    font-size: clamp(1.75rem, 7.8vw, 2.45rem);
+    line-height: 1.07;
+    max-width: 14em;
   }
 
   .hero-push-title-line {
@@ -1616,7 +1639,8 @@ html.is-loading {
   }
 
   .hero-push-lead {
-    max-width: 26ch;
+    max-width: 38ch;
+    font-size: clamp(0.92rem, 3.8vw, 1.02rem);
   }
 
   .hero-push-slide img {

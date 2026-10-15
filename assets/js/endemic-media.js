@@ -122,7 +122,15 @@
 
     document.querySelectorAll(".field-mosaic img, .quote-band-media img, .page-hero img").forEach((img, i) => {
       const src = img.getAttribute("src") || "";
-      if (isRealMediaRef(src) || src.includes("partners/") || src.includes("brand/")) return;
+      if (
+        isRealMediaRef(src) ||
+        src.includes("partners/") ||
+        src.includes("certifications/") ||
+        src.includes("brand/") ||
+        img.classList.contains("nav-brand-logo") ||
+        img.classList.contains("footer-brand-logo-full")
+      )
+        return;
       if (img.closest(".nav-pill, .site-header, .partner-marquee")) return;
       const path = pickForKey(`${key}-mosaic-${i}`);
       if (!path) return;

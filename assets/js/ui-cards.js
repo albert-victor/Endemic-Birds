@@ -459,6 +459,14 @@
     </a>`;
   }
 
+  function birdingSiteSpotSubtitle(site) {
+    if (site.location) {
+      const line = String(site.location).split("·")[0].trim();
+      return line.length > 58 ? `${line.slice(0, 55)}…` : line;
+    }
+    return "Birding in Tanzania";
+  }
+
   function renderBirdingSiteSpot(site, asset, circuitLabel) {
     const href = asset(`destinations/${site.slug}/`);
     const hero = window.EndemicMedia?.resolveHero?.(site.slug, site.heroImage) || site.heroImage;
@@ -466,9 +474,17 @@
       href,
       imgSrc: asset(hero),
       title: site.name,
-      subtitle: circuitLabel || "Birding Tanzania",
+      subtitle: circuitLabel || birdingSiteSpotSubtitle(site),
       tag: "Birding",
     });
+  }
+
+  /** All individual birding parks/reserves – explore-style cards (no circuit hubs). */
+  function renderBirdingDestinationsGrid(sites, asset) {
+    if (!sites?.length) return "";
+    return `<div class="alt-card-grid alt-card-grid--dest-spot reveal-stagger" data-reveal-stagger>${sites
+      .map((s) => renderBirdingSiteSpot(s, asset))
+      .join("")}</div>`;
   }
 
   function renderWildlifeDestSpot(d, asset) {
@@ -658,6 +674,8 @@
     renderGroupPackageGrid,
     renderIndividualDestSpot,
     renderBirdingSiteSpot,
+    renderBirdingDestinationsGrid,
+    birdingSiteSpotSubtitle,
     renderWildlifeDestSpot,
     renderIndividualDestSpotGrid,
     renderIndividualDestC,

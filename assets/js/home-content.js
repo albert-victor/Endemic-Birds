@@ -167,13 +167,20 @@
   }
 
   function renderPartners(partners) {
-    const items = partners
+    if (!partners?.length) return "";
+    const oneSet = partners
       .map(
-        (p) => `<div class="partner-logo"><img src="${asset(p.logo)}" alt="${escapeHtml(p.name)}" width="140" height="40" loading="lazy" /></div>`
+        (p) =>
+          `<div class="partners-flow__item" data-partners-item>
+            <img src="${asset(p.logo)}" alt="${escapeHtml(p.name)}" loading="lazy" decoding="async" />
+          </div>`
       )
       .join("");
-    return `<div class="partners-marquee" aria-label="Partner logos">
-      <div class="partners-marquee-track">${items}${items}</div>
+    const trackHtml = oneSet + oneSet + oneSet;
+    return `<div class="partners-flow" data-partners-flow data-partners-interval="2000" data-partners-count="${partners.length}" aria-label="Our partners">
+      <div class="partners-flow__viewport">
+        <div class="partners-flow__track">${trackHtml}</div>
+      </div>
     </div>`;
   }
 

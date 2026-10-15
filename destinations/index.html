@@ -11,18 +11,19 @@
     <link rel="icon" href="../assets/images/from-live-site/brand/bird-logo.png" />
     <link rel="stylesheet" href="../assets/css/styles.css" />
   </head>
-  <body class="has-grain" data-nav="destinations">
+  <body class="has-grain" data-nav="destinations" data-destinations-page>
     <a class="skip-link" href="#main">Skip to main content</a>
     <div id="site-header"></div>
     <main id="main">
-      <section class="section" style="padding-top: 7rem">
+      <section class="section destinations-landing" style="padding-top: 7rem" data-destinations-hero>
         <div class="container catalog-page">
           <header class="catalog-page-head">
-            <p class="eyebrow">Destinations</p>
-            <h1 class="section-title">Circuits &amp; regions</h1>
-            <p class="section-lead">Northern, Southern, Eastern Arc, Western and coastal belts – filter by birding or wildlife and by circuit.</p>
+            <h1 class="section-title" data-dest-title>Places we explore</h1>
+            <p class="section-lead" data-dest-lead>
+              National parks, forests and reserves across Tanzania.
+            </p>
           </header>
-          <form class="filters-bar filters-bar--compact" data-filters>
+          <form class="filters-bar filters-bar--compact" data-filters data-filters-optional>
             <label>Experience
               <select name="type">
                 <option value="all">All</option>
@@ -30,7 +31,7 @@
                 <option value="wildlife">Wildlife</option>
               </select>
             </label>
-            <label>Circuit
+            <label>Region
               <select name="circuit">
                 <option value="all">All</option>
                 <option value="Northern">Northern</option>
@@ -42,21 +43,38 @@
             </label>
             <button type="button" class="btn btn-outline" data-clear-filters>Clear filters</button>
           </form>
-          <div data-catalog="destinations">
+          <div id="destinations-grid" data-catalog="destinations">
             <p class="catalog-meta"><span data-count>0</span> destinations</p>
             <div data-catalog-grid></div>
             <p class="catalog-empty" data-empty hidden>No destinations match these filters.</p>
           </div>
         </div>
       </section>
+
+      <section class="section section--paper-band" data-destinations-packages hidden>
+        <div class="container">
+          <header class="section-head">
+            <p class="eyebrow">You may also like</p>
+            <h2 class="section-title">Safari packages for these regions</h2>
+            <p class="section-lead">Ready-made journeys with full day-by-day itineraries – or ask us to tailor dates and pace.</p>
+            <div class="section-head-cta">
+              <a class="btn btn-solid" href="../packages/index.html">View all safari packages</a>
+            </div>
+          </header>
+          <div data-destinations-package-row></div>
+        </div>
+      </section>
     </main>
     <div id="site-footer"></div>
     <script>window.__ASSET_PREFIX__ = "../";</script>
+    <script src="../assets/js/package-visits.js" defer></script>
     <script src="../assets/js/ui-cards.js" defer></script>
     <script src="../assets/js/layout.js" defer></script>
     <script src="../assets/js/site-search.js" defer></script>
+    <script src="../assets/js/whatsapp-chat.js" defer></script>
     <script src="../assets/js/motion.js" defer></script>
     <script src="../assets/js/catalog.js" defer></script>
+    <script src="../assets/js/destinations-page.js" defer></script>
     <script src="../assets/js/main.js" defer></script>
   </body>
 </html>

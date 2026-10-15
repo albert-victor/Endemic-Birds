@@ -15,9 +15,35 @@
     const cta = root.querySelector("[data-hero-cta]");
     const ctaText = root.querySelector("[data-hero-cta-text]");
 
-    if (eyebrow) eyebrow.textContent = s.eyebrow || "Specialist birding safaris - Tanzania";
-    if (titleA) titleA.textContent = s.titleLine1 || "Discover Tanzania";
-    if (titleB) titleB.textContent = s.titleLine2 || "through its birds";
+    const titleHost = root.querySelector("[data-hero-title]");
+    const rawLines = Array.isArray(s.titleLines)
+      ? s.titleLines
+      : [s.titleLine1, s.titleLine2].filter((l) => String(l || "").trim());
+    const lines = rawLines.map((l) => String(l).trim()).filter(Boolean);
+    if (titleHost) {
+      titleHost.innerHTML = lines
+        .map(
+          (line, i) =>
+            `<span class="hero-push-title-line${i === lines.length - 1 && lines.length > 1 ? " hero-push-title-line--last" : ""}">${line.replace(/&/g, "&amp;").replace(/</g, "&lt;")}</span>`
+        )
+        .join("");
+    } else if (titleA) {
+      titleA.textContent = lines[0] || "Discover Tanzania through its birds";
+      if (titleB) {
+        const line2 = lines[1] || "";
+        if (line2) {
+          titleB.textContent = line2;
+          titleB.hidden = false;
+          titleB.removeAttribute("aria-hidden");
+          titleB.classList.remove("is-hidden");
+        } else {
+          titleB.textContent = "";
+          titleB.hidden = true;
+          titleB.setAttribute("aria-hidden", "true");
+          titleB.classList.add("is-hidden");
+        }
+      }
+    }
     if (lead) lead.textContent = s.lead || "";
     if (cta && s.ctaHref) {
       const prefix = window.__ASSET_PREFIX__ || "";

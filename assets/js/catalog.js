@@ -91,12 +91,16 @@
 
     function renderFiltered(filtered) {
       const sorted = [...filtered].sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0));
-      if (bentoHost && window.EndemicUI?.renderPackageBento) {
+      const teaserLimit = listHost?.dataset?.packageTeaserLimit
+        ? Number(listHost.dataset.packageTeaserLimit)
+        : 0;
+      const show = teaserLimit > 0 ? sorted.slice(0, teaserLimit) : sorted;
+      if (bentoHost && window.EndemicUI?.renderPackageBento && !teaserLimit) {
         bentoHost.innerHTML = window.EndemicUI.renderPackageBento(sorted, asset);
       } else if (bentoHost) {
         bentoHost.innerHTML = "";
       }
-      const html = window.EndemicUI?.renderPackageCorpGrid(sorted, asset) || "";
+      const html = window.EndemicUI?.renderPackageCorpGrid(show, asset) || "";
       if (listHost) listHost.innerHTML = html;
       else if (grid) grid.innerHTML = html;
     }
@@ -120,11 +124,51 @@
     document.dispatchEvent(new CustomEvent("site:content-rendered"));
   }
 
+  async function loadBirdingDestinationSites() {
+    const [southern, western, northern] = await Promise.all([
+      loadJson("southern-sites.json"),
+      loadJson("western-sites.json"),
+      loadJson("northern-sites.json"),
+    ]);
+    const sites = [
+      ...(southern.sites || []).map((s) => ({ ...s, circuit: southern.circuit })),
+      ...(western.sites || []).map((s) => ({ ...s, circuit: western.circuit })),
+      ...(northern.sites || []).map((s) => ({ ...s, circuit: northern.circuit })),
+    ];
+    const seen = new Set();
+    const unique = sites.filter((s) => {
+      if (seen.has(s.slug)) return false;
+      seen.add(s.slug);
+      return true;
+    });
+    unique.sort((a, b) => String(a.name).localeCompare(String(b.name)));
+    return unique;
+  }
+
+  window.EndemicBirdingDests = { loadBirdingDestinationSites };
+
   async function initDestinations() {
-    const [destinations, packages] = await Promise.all([loadJson("destinations.json"), loadJson("packages.json")]);
     const grid = root.querySelector("[data-catalog-grid]");
     const emptyEl = root.querySelector("[data-empty]") || document.querySelector("[data-empty]");
     const countEl = root.querySelector("[data-count]") || document.querySelector("[data-count]");
+    const typeParam =
+      getParams().get("type") ||
+      root.dataset.destinationsPreset ||
+      document.body.dataset.destinationsPreset;
+
+    if (typeParam === "birding" && window.EndemicUI?.renderBirdingDestinationsGrid) {
+      document.body.classList.add("destinations-mode-birding");
+      document.querySelector("[data-filters]")?.setAttribute("hidden", "");
+      const unique = await loadBirdingDestinationSites();
+      grid.innerHTML = window.EndemicUI.renderBirdingDestinationsGrid(unique, asset);
+      grid.className = "";
+      if (countEl) countEl.textContent = String(unique.length);
+      if (emptyEl) emptyEl.hidden = unique.length > 0;
+      document.dispatchEvent(new CustomEvent("site:content-rendered"));
+      return;
+    }
+
+    const [destinations, packages] = await Promise.all([loadJson("destinations.json"), loadJson("packages.json")]);
 
     function renderList(list) {
       if (window.EndemicUI) {

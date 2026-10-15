@@ -10,69 +10,97 @@
     <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Marck+Script&display=swap" rel="stylesheet" />
     <link rel="icon" href="../assets/images/from-live-site/brand/bird-logo.png" />
     <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link rel="stylesheet" href="../assets/css/booking-form.css" />
   </head>
   <body class="has-grain" data-nav="plan">
     <a class="skip-link" href="#main">Skip to main content</a>
     <div id="site-header"></div>
     <main id="main">
       <section class="section section--cta" style="padding-top: 7rem">
-        <div class="container cta-panel reveal" data-reveal>
+        <div class="container booking-shell reveal" data-reveal>
           <div>
-            <p class="eyebrow">Plan your trip</p>
-            <h1 class="section-title">Start with a conversation</h1>
+            <h1 class="section-title">Safari enquiry</h1>
             <p class="section-lead">
-              Share what interests you most, when you hope to travel, and how long you have – we'll respond with route ideas aligned to birding, wildlife, or both.
+              Share what matters most – species, parks, dates and pace. We respond with a clear route proposal and transparent inclusions.
             </p>
             <ul class="contact-list">
               <li><strong>Location</strong> Iringa, Tanzania</li>
               <li><strong>Phone</strong> <a href="tel:+255627013348">+255 627 013 348</a></li>
               <li><strong>Email</strong> <a href="mailto:info@endemicbirds.co.tz">info@endemicbirds.co.tz</a></li>
-              <li><strong>WhatsApp</strong> <a href="https://wa.me/255627013348">+255 627 013 348</a></li>
             </ul>
           </div>
-          <form
-            class="contact-form plan-form-grid"
-            data-inquiry-form
-            data-form-submit="true"
-            action="https://formsubmit.co/info@endemicbirds.co.tz"
-            method="POST"
-          >
-            <input type="hidden" name="_subject" value="Trip inquiry – Endemic Birds website" />
-            <input type="hidden" name="_captcha" value="false" />
-            <input type="hidden" name="_template" value="table" />
-            <label>
-              <span>Name</span>
-              <input type="text" name="name" autocomplete="name" required />
-            </label>
-            <label>
-              <span>Email</span>
-              <input type="email" name="email" autocomplete="email" required />
-            </label>
-            <fieldset class="radio-group">
-              <legend>Primary interest</legend>
-              <label><input type="radio" name="interest" value="birding" required /> Birds</label>
-              <label><input type="radio" name="interest" value="wildlife" /> Wildlife</label>
-              <label><input type="radio" name="interest" value="both" /> Both</label>
-              <label><input type="radio" name="interest" value="unsure" /> Not sure yet</label>
-            </fieldset>
-            <label>
-              <span>Preferred region (if known)</span>
-              <input type="text" name="region" placeholder="e.g. Southern miombo, Eastern Arc" />
-            </label>
-            <label>
-              <span>Approximate travel dates</span>
-              <input type="text" name="dates" autocomplete="off" />
-            </label>
-            <label>
-              <span>Duration &amp; travellers</span>
-              <input type="text" name="party" placeholder="e.g. 14 days, 2 guests" />
-            </label>
-            <label>
-              <span>Targets, pace &amp; notes</span>
-              <textarea name="message" rows="5"></textarea>
-            </label>
-            <button class="btn btn-solid" type="submit">Send enquiry</button>
-          </form>
+          <div class="booking-card">
+            <form
+              class="contact-form plan-form-grid booking-form-straight"
+              data-inquiry-form
+              data-form-submit="true"
+              action="https://formsubmit.co/info@endemicbirds.co.tz"
+              method="POST"
+            >
+              <input type="hidden" name="_subject" value="Trip inquiry – Endemic Birds website" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_template" value="table" />
+
+              <p class="booking-form-section-label">Your details</p>
+              <div class="booking-form-row booking-form-row--2">
+                <label>
+                  <span>Full name</span>
+                  <input type="text" name="name" autocomplete="name" required />
+                </label>
+                <label>
+                  <span>Email</span>
+                  <input type="email" name="email" autocomplete="email" required />
+                </label>
+              </div>
+              <label>
+                <span>Phone / WhatsApp</span>
+                <input type="tel" name="phone" autocomplete="tel" />
+              </label>
+
+              <p class="booking-form-section-label">Trip</p>
+              <fieldset class="radio-group">
+                <legend>Primary interest</legend>
+                <label><input type="radio" name="interest" value="birding" required /> Birding</label>
+                <label><input type="radio" name="interest" value="wildlife" /> Wildlife</label>
+                <label><input type="radio" name="interest" value="both" /> Both</label>
+                <label><input type="radio" name="interest" value="unsure" /> Not sure yet</label>
+              </fieldset>
+              <label>
+                <span>Preferred region or parks</span>
+                <select name="region">
+                  <option value="">Select (optional)</option>
+                  <option>Northern Tanzania</option>
+                  <option>Southern miombo</option>
+                  <option>Eastern Arc forests</option>
+                  <option>Western lakes & forests</option>
+                  <option>Multi-region</option>
+                </select>
+              </label>
+
+              <p class="booking-form-section-label">Dates &amp; group</p>
+              <div class="booking-date-row">
+                <label>
+                  <span>Arrival date</span>
+                  <input type="date" name="arrival_date" />
+                </label>
+                <label>
+                  <span>Departure date</span>
+                  <input type="date" name="departure_date" />
+                </label>
+              </div>
+              <label>
+                <span>Duration &amp; travellers</span>
+                <input type="text" name="party" placeholder="e.g. 14 days, 2 guests" required />
+              </label>
+
+              <label>
+                <span>Target species, pace &amp; notes</span>
+                <textarea name="message" rows="5" placeholder="Endemics, photography, lodge style…"></textarea>
+              </label>
+
+              <button class="btn btn-solid booking-submit" type="submit">Send enquiry</button>
+            </form>
+          </div>
         </div>
       </section>
     </main>
@@ -80,6 +108,7 @@
     <script>window.__ASSET_PREFIX__ = "../";</script>
     <script src="../assets/js/layout.js" defer></script>
     <script src="../assets/js/site-search.js" defer></script>
+    <script src="../assets/js/whatsapp-chat.js" defer></script>
     <script src="../assets/js/motion.js" defer></script>
     <script src="../assets/js/main.js" defer></script>
   </body>

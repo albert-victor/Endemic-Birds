@@ -11,12 +11,16 @@
     return res.json();
   }
 
-  Promise.all([loadJson("destinations.json"), loadJson("packages.json")])
-    .then(([destinations, packages]) => {
-      const birding = destinations.filter((d) => (d.experienceTypes || []).includes("birding"));
-      if (window.EndemicUI?.renderDestScriptGrid) {
-        mount.innerHTML = window.EndemicUI.renderDestScriptGrid(birding, packages, asset);
-      }
+  const limit = Number(mount.dataset.birdingDestLimit) || 0;
+
+  const loadSites = window.EndemicBirdingDests?.loadBirdingDestinationSites;
+  if (!loadSites || !window.EndemicUI?.renderBirdingDestinationsGrid) return;
+
+  loadSites()
+    .then((sites) => {
+      let list = sites;
+      if (limit > 0) list = sites.slice(0, limit);
+      mount.innerHTML = window.EndemicUI.renderBirdingDestinationsGrid(list, asset);
       document.dispatchEvent(new CustomEvent("site:content-rendered"));
     })
     .catch(console.error);

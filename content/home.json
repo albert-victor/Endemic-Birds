@@ -1,52 +1,24 @@
 {
   "heroSlides": [
     {
-      "_comment": "HERO_PRIMARY – keep slideshow-main.jpg first for easy reverse",
+      "_comment": "HERO_PRIMARY – eastern destination landscape, then birding hero",
       "primary": true,
+      "image": "assets/images/from-live-site/destinations/eastern-destination.jpg",
+      "alt": "Eastern Tanzania birding and safari landscapes",
+      "objectPosition": "center 42%",
+      "durationMs": 14000,
+      "titleLines": ["Life Is Short,", "Let's Go Birding,", "Tanzania"],
+      "lead": "Specialist-led birding and wildlife safaris from Iringa – Tanzania and East Africa, with indigenous guides and small groups.",
+      "ctaText": "Explore birding safaris",
+      "ctaHref": "birding/index.html"
+    },
+    {
       "image": "endemics/slideshow-main.jpg",
       "alt": "Malachite kingfisher, Tanzania birding",
       "objectPosition": "72% 42%",
-      "durationMs": 14000,
-      "eyebrow": "Specialist birding safaris - Tanzania",
-      "titleLine1": "Discover Tanzania",
-      "titleLine2": "through its birds",
-      "lead": "Forests, miombo and savanna – specialist-led birding across Tanzania.",
-      "ctaText": "Explore birding safaris",
-      "ctaHref": "birding/index.html"
-    },
-    {
-      "image": "endemics/perfect-moment-bird-watching-1536x872.jpg",
-      "alt": "Bird watching moment in Tanzania",
-      "objectPosition": "55% 40%",
       "durationMs": 12000,
-      "eyebrow": "Specialist birding safaris - Tanzania",
-      "titleLine1": "Discover Tanzania",
-      "titleLine2": "through its birds",
-      "lead": "Unhurried field time with guides who know calls, forests and open country.",
-      "ctaText": "Explore birding safaris",
-      "ctaHref": "birding/index.html"
-    },
-    {
-      "image": "endemics/lilac-breasted-roller-birding-safari-768x602.jpg",
-      "alt": "Lilac-breasted roller on safari",
-      "objectPosition": "60% 35%",
-      "durationMs": 12000,
-      "eyebrow": "Specialist birding safaris - Tanzania",
-      "titleLine1": "Discover Tanzania",
-      "titleLine2": "through its birds",
-      "lead": "Savanna colour and classic East African birding on tailor-made routes.",
-      "ctaText": "Explore birding safaris",
-      "ctaHref": "birding/index.html"
-    },
-    {
-      "image": "endemics/hero-MG_7124-scaled.jpg",
-      "alt": "Birding safari in Tanzania",
-      "objectPosition": "65% 45%",
-      "durationMs": 12000,
-      "eyebrow": "Specialist birding safaris - Tanzania",
-      "titleLine1": "Discover Tanzania",
-      "titleLine2": "through its birds",
-      "lead": "Forests, miombo and savanna – specialist-led birding across Tanzania.",
+      "titleLines": ["Life Is Short,", "Let's Go Birding,", "Tanzania"],
+      "lead": "Forests, miombo and savanna – unhurried field time, tailor-made routes and max six guests per vehicle.",
       "ctaText": "Explore birding safaris",
       "ctaHref": "birding/index.html"
     }
@@ -84,9 +56,15 @@
     { "slug": "luxury-flying", "title": "Luxury Flying Safaris", "href": "packages/10-days-luxury-flying-safari/" }
   ],
   "partners": [
-    { "name": "TATO", "logo": "assets/images/partners/tato.svg" },
-    { "name": "TANAPA", "logo": "assets/images/partners/tanapa.svg" },
-    { "name": "TTB", "logo": "assets/images/partners/ttb.svg" }
+    { "name": "TATO – Tanzania Association of Tour Operators", "logo": "assets/images/certifications/tato.png" },
+    { "name": "TANAPA – Tanzania National Parks", "logo": "assets/images/certifications/tanapa-logo.png" },
+    { "name": "Tanzania Tourist Board", "logo": "assets/images/certifications/tanzania-tourist-board.svg" },
+    { "name": "NCAA – Ngorongoro Conservation Area Authority", "logo": "assets/images/certifications/ncaa-logo.png" },
+    { "name": "ZCT – Zanzibar Commission for Tourism", "logo": "assets/images/certifications/zct-logo.jpg" },
+    { "name": "UNESCO World Heritage", "logo": "assets/images/certifications/unesco-logo.png" },
+    { "name": "UNWTO", "logo": "assets/images/certifications/unwto-mark.svg" },
+    { "name": "African Tourism Board", "logo": "assets/images/certifications/atb-official.jpg" },
+    { "name": "Unforgettable Tanzania", "logo": "assets/images/certifications/unforgettable-tanzania.svg" }
   ],
   "whySplit": {
     "eyebrowScript": "Why choose us",

@@ -23,6 +23,13 @@
     combined: "Birding + Wildlife",
   };
 
+  function shortTitle(title) {
+    return String(title || "")
+      .replace(/^\d+\s+Days?\s+/i, "")
+      .replace(/^\d+-Day\s+/i, "")
+      .trim();
+  }
+
   function escapeHtml(str) {
     return String(str)
       .replace(/&/g, "&amp;")
@@ -217,10 +224,9 @@
               href: asset(pkg.category === "wildlife" ? "wildlife/index.html" : "packages/index.html"),
               label: pkg.category === "wildlife" ? "Wildlife safaris" : "All journeys",
             },
-            { label: pkg.title, current: pkg.title },
+            { label: shortTitle(pkg.title) || pkg.title, current: shortTitle(pkg.title) || pkg.title },
           ])}
-          <p class="eyebrow reveal" data-reveal>${categoryLabels[pkg.category]}</p>
-          <h1 class="page-hero-title reveal" data-reveal>${escapeHtml(pkg.title)}</h1>
+          <h1 class="page-hero-title reveal" data-reveal>${escapeHtml(shortTitle(pkg.title) || pkg.title)}</h1>
           <p class="page-hero-meta reveal" data-reveal>${pkg.durationDays} days${destLinks ? ` · ${escapeHtml(destLinks)}` : ""}</p>
           <div class="hero-actions reveal" data-reveal>
             <a class="btn btn-solid" href="${asset("plan-your-trip/index.html")}?journey=${encodeURIComponent(pkg.slug)}">Plan this journey</a>

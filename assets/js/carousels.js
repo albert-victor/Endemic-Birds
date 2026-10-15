@@ -199,10 +199,83 @@
     });
   }
 
+  function initPartnersFlow(root) {
+    if (root.dataset.partnersFlowInit) return;
+    const track = root.querySelector(".partners-flow__track");
+    const viewport = root.querySelector(".partners-flow__viewport");
+    const items = track ? [...track.querySelectorAll("[data-partners-item]")] : [];
+    const setCount = parseInt(root.dataset.partnersCount || "0", 10);
+    const n = setCount > 0 ? setCount : items.length;
+    if (items.length < 2 || n < 1 || !track || !viewport) return;
+    root.dataset.partnersFlowInit = "true";
+
+    const intervalMs = parseInt(root.dataset.partnersInterval || "2000", 10);
+    let active = n;
+
+    function applyClasses() {
+      items.forEach((el, i) => {
+        el.classList.remove("is-active", "is-adjacent", "is-far");
+        const diff = Math.abs(i - active);
+        if (diff === 0) el.classList.add("is-active");
+        else if (diff === 1) el.classList.add("is-adjacent");
+        else el.classList.add("is-far");
+      });
+    }
+
+    function centerActive(animate) {
+      applyClasses();
+      const el = items[active];
+      if (!el) return;
+      const vpW = viewport.offsetWidth;
+      const center = el.offsetLeft + el.offsetWidth / 2;
+      const tx = vpW / 2 - center;
+      track.style.transition = animate && !reduceMotion ? "transform 0.55s cubic-bezier(0.34, 1.2, 0.64, 1)" : "none";
+      track.style.transform = `translateX(${tx}px)`;
+    }
+
+    function normalizeIndex() {
+      if (active >= n * 2) {
+        active -= n;
+        centerActive(false);
+      } else if (active < n) {
+        active += n;
+        centerActive(false);
+      }
+    }
+
+    function step() {
+      active += 1;
+      centerActive(true);
+    }
+
+    track.addEventListener("transitionend", (e) => {
+      if (e.propertyName !== "transform") return;
+      normalizeIndex();
+    });
+
+    centerActive(false);
+    window.addEventListener(
+      "resize",
+      () => {
+        centerActive(false);
+      },
+      { passive: true }
+    );
+
+    if (reduceMotion) return;
+    let timer = setInterval(step, intervalMs);
+    root.addEventListener("pointerenter", () => clearInterval(timer));
+    root.addEventListener("pointerleave", () => {
+      clearInterval(timer);
+      timer = setInterval(step, intervalMs);
+    });
+  }
+
   window.initCarousels = function () {
     document.querySelectorAll("[data-carousel]").forEach(initTrackCarousel);
     document.querySelectorAll("[data-dest-carousel]").forEach(initDestRowCarousel);
     document.querySelectorAll("[data-reviews-slider], [data-home-reviews]").forEach(initReviews);
+    document.querySelectorAll("[data-partners-flow]").forEach(initPartnersFlow);
   };
 
   document.addEventListener("DOMContentLoaded", window.initCarousels);

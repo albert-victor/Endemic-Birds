@@ -149,6 +149,7 @@ const sitemapUrls = [
   "/combined/index.html",
   "/packages/index.html",
   "/destinations/index.html",
+  "/destinations/birding/index.html",
   "/about/index.html",
   "/plan-your-trip/index.html",
   ...packages.map((p) => `/packages/${p.slug}/`),

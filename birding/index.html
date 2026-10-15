@@ -11,7 +11,7 @@
     <link rel="icon" href="../assets/images/from-live-site/brand/bird-logo.png" />
     <link rel="stylesheet" href="../assets/css/styles.css" />
   </head>
-  <body class="has-grain" data-nav="birding">
+  <body class="has-grain has-hero-nav" data-nav="birding">
     <a class="skip-link" href="#main">Skip to main content</a>
     <div id="site-header"></div>
     <main id="main">
@@ -23,51 +23,48 @@
         </div>
         <div class="hero-scrim"></div>
         <div class="container page-hero-inner hero-inner">
-          <p class="eyebrow reveal" data-reveal>Birding safaris</p>
           <h1 class="page-hero-title reveal" data-reveal>Specialist birding across Tanzania</h1>
           <p class="page-hero-lead reveal" data-reveal>
             Routes built around habitat, endemics and field time – led by guides who know forests, wetlands and miombo.
           </p>
           <div class="hero-actions reveal" data-reveal>
-            <a class="btn btn-solid" href="#journeys">Explore birding safaris</a>
-            <a class="btn btn-ghost" href="#destinations">Birding destinations</a>
+            <a class="btn btn-solid" href="#destinations">Explore destinations</a>
+            <a class="btn btn-ghost" href="#journeys">View safaris</a>
           </div>
         </div>
       </section>
 
-      <section class="section section--paper-band" id="journeys">
+      <section class="section section--paper-band" id="destinations">
         <div class="container landing-lede">
-          <header class="section-head">
-            <p class="eyebrow reveal" data-reveal>Safari packages</p>
-            <h2 class="section-title reveal" data-reveal>Birding journeys</h2>
-            <p class="section-lead reveal" data-reveal>Featured routes and our full list of specialist birding safaris.</p>
+          <header class="section-head section-head--landing">
+            <h2 class="section-title reveal" data-reveal>Birding destinations</h2>
+            <div class="section-head-cta reveal" data-reveal>
+              <a class="btn btn-solid" href="../destinations/birding/index.html#destinations-grid">View all birding destinations</a>
+            </div>
+          </header>
+        </div>
+        <div class="container" data-birding-destinations data-birding-dest-limit="6"></div>
+      </section>
+
+      <section class="section" id="journeys">
+        <div class="container landing-lede">
+          <header class="section-head section-head--landing">
+            <h2 class="section-title reveal" data-reveal>Ready-made birding safaris</h2>
+            <div class="section-head-cta reveal" data-reveal>
+              <a class="btn btn-outline" href="../packages/index.html?category=birding">View all safari packages</a>
+            </div>
           </header>
         </div>
         <div class="container" data-catalog="packages" data-default-category="birding" data-layout="bento">
           <div class="catalog-bento-wrap" data-catalog-bento></div>
-          <p class="catalog-meta">All birding journeys · <span data-count>0</span> listed</p>
-          <div data-catalog-list></div>
-        </div>
-      </section>
-
-      <section class="section" id="destinations">
-        <div class="container">
-          <header class="section-head">
-            <p class="eyebrow reveal" data-reveal>Regions &amp; circuits</p>
-            <h2 class="section-title reveal" data-reveal>Birding by circuit</h2>
-            <p class="section-lead reveal" data-reveal>
-              Northern, Southern, Eastern Arc, Western and more – each card is a birding region with tour counts and habitat tags.
-              <a href="../destinations/index.html?type=birding">All destinations index</a>.
-            </p>
-          </header>
-          <div data-birding-destinations></div>
+          <div data-catalog-list data-package-teaser-limit="4"></div>
         </div>
       </section>
 
       <section class="section section--cta-band">
         <div class="container cta-band reveal" data-reveal>
           <h2>Tailor a route around your target list</h2>
-          <a class="btn btn-solid" href="../plan-your-trip/index.html?interest=birding">Plan Your Trip</a>
+          <a class="btn btn-solid" href="../plan-your-trip/index.html?interest=birding">Plan your trip</a>
         </div>
       </section>
     </main>
@@ -77,6 +74,7 @@
     <script src="../assets/js/ui-cards.js" defer></script>
     <script src="../assets/js/layout.js" defer></script>
     <script src="../assets/js/site-search.js" defer></script>
+    <script src="../assets/js/whatsapp-chat.js" defer></script>
     <script src="../assets/js/motion.js" defer></script>
     <script src="../assets/js/scroll-gallery.js" defer></script>
     <script src="../assets/js/catalog.js" defer></script>
