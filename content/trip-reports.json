@@ -1,0 +1,21 @@
+{
+  "page": {
+    "seo": {
+      "title": "Trip Reports | Endemic Birds Tanzania",
+      "description": "Owner-approved field trip reports from Endemic Birds safaris – habitat, season and documented sightings. Sample packages are labelled separately from post-trip reports."
+    }
+  },
+  "meta": {
+    "filterMinReports": 5,
+    "types": {
+      "field-report": "Field trip report",
+      "sample-itinerary": "Sample itinerary (planning template – not a post-trip report)"
+    },
+    "disclaimer": "Trip reports describe conditions on specific dates. They are not guarantees of the same access, weather or species on your journey.",
+    "emptyTitle": "Reports in preparation",
+    "emptyBody": "We publish field reports only after the owner reviews routes and approves wording. Until then, you can browse sample itineraries on our packages page or ask us for recent informal route notes.",
+    "packagesHref": "packages/index.html",
+    "enquiryHref": "plan-your-trip/index.html?interest=birding&note=Please%20share%20recent%20informal%20route%20notes%20for%20my%20planned%20dates."
+  },
+  "reports": []
+}

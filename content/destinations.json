@@ -65,16 +65,16 @@
   {
     "id": "eastern-arc",
     "slug": "eastern-arc-mountain",
-    "name": "Eastern Arc Mountain",
+    "name": "Eastern Arc Mountains",
     "circuit": "Eastern",
     "experienceTypes": [
       "birding"
     ],
-    "summary": "Misty escarpments and ancient forest endemics in Tanzania's Eastern Arc biodiversity hotspot.",
+    "summary": "Tanzania's Eastern Arc – isolated montane forests from Udzungwa and Kilombero to Usambara, Uluguru and Rondo, harbouring dozens of species found nowhere else.",
     "heroImage": "assets/images/from-live-site/destinations/eastern-arc-mountain.jpg",
     "thumbnail": "assets/images/from-live-site/destinations/eastern-arc-mountain.jpg",
     "location": "Eastern Arc Mountains, Tanzania",
-    "birdingNotes": "Forest-edge and montane birding; core habitat for endemic-focused tours.",
+    "birdingNotes": "Stack forest blocks by altitude and season – arc endemics, floodplain weavers and escarpment specialists on routes built from Iringa, Morogoro or the northeast.",
     "wildlifeNotes": null,
     "activities": [
       "Birding",

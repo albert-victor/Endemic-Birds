@@ -55,17 +55,7 @@
     { "slug": "photographic", "title": "Photographic Safaris", "href": "wildlife/index.html#photographic" },
     { "slug": "luxury-flying", "title": "Luxury Flying Safaris", "href": "packages/10-days-luxury-flying-safari/" }
   ],
-  "partners": [
-    { "name": "TATO – Tanzania Association of Tour Operators", "logo": "assets/images/certifications/tato.png" },
-    { "name": "TANAPA – Tanzania National Parks", "logo": "assets/images/certifications/tanapa-logo.png" },
-    { "name": "Tanzania Tourist Board", "logo": "assets/images/certifications/tanzania-tourist-board.svg" },
-    { "name": "NCAA – Ngorongoro Conservation Area Authority", "logo": "assets/images/certifications/ncaa-logo.png" },
-    { "name": "ZCT – Zanzibar Commission for Tourism", "logo": "assets/images/certifications/zct-logo.jpg" },
-    { "name": "UNESCO World Heritage", "logo": "assets/images/certifications/unesco-logo.png" },
-    { "name": "UNWTO", "logo": "assets/images/certifications/unwto-mark.svg" },
-    { "name": "African Tourism Board", "logo": "assets/images/certifications/atb-official.jpg" },
-    { "name": "Unforgettable Tanzania", "logo": "assets/images/certifications/unforgettable-tanzania.svg" }
-  ],
+  "partners": [],
   "whySplit": {
     "eyebrowScript": "Why choose us",
     "titleScript": "Let your list",

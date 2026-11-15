@@ -1,0 +1,213 @@
+{
+  "defaults": {
+    "travelStyle": "Private tailor-made – dates and pace confirmed on enquiry",
+    "physicalDemands": "Mix of vehicle travel and forest walking; some southern and arc days involve early starts, uneven trails and altitude. Tell us your mobility needs when you enquire.",
+    "logisticsNote": "Park fees, permits and lodge blocks are arranged after you confirm dates. Final drive times depend on season, road conditions and your target stops.",
+    "seasonalityFallback": "See our tour calendar for regional seasons, then enquire for this route.",
+    "accommodationUnconfirmed": "Lodges and camps are named in your written proposal once dates are fixed – not all properties are pre-published on this page.",
+    "whyChooseFallback": "This route is built for field time: listening points, forest trails and realistic drives – not a checklist coach tour.",
+    "travellerFallback": "Serious birders, listers and photographers; mixed-interest couples when wildlife modules are added on enquiry.",
+    "wildlifePhotoFallback": "Wildlife and scenic opportunities appear on drives and at camp; photographers should ask us to weight the schedule toward light and stake-out time.",
+    "downloadMissingLabel": "Request the detailed itinerary",
+    "showRouteMap": false
+  },
+  "bySlug": {
+    "14-days-southern-tanzania-birding-tour": {
+      "whyChoose": "Two weeks in the Southern circuit heartland – arc forests, miombo and wetland edges with time for Udzungwa, Ruaha and Kilombero contexts without rushing single-day hops.",
+      "travellerProfile": "Listers and photographers targeting southern endemics and miombo specials who accept drive days between forests.",
+      "habitats": [
+        "Eastern Arc montane forest",
+        "Miombo woodland",
+        "Floodplain and riverine wetlands",
+        "Southern savanna"
+      ],
+      "targetBirds": [
+        "Udzungwa forest endemics (route-dependent)",
+        "Miombo woodland specialists",
+        "Kilombero floodplain birds",
+        "Ruaha raptors and bush birds"
+      ],
+      "wildlifePhoto": "Elephants, antelope and cats possible on Ruaha and wetland legs; forest bird photography needs patience on arc trails.",
+      "seasonality": "Often planned in drier months (May–Nov) for miombo and track access; forests bird year-round with weather flexibility.",
+      "routeStops": [
+        {
+          "stop": 1,
+          "name": "Iringa hub",
+          "lat": -7.769,
+          "lng": 35.691,
+          "dayFrom": 1,
+          "dayTo": 1,
+          "approximate": true
+        },
+        {
+          "stop": 2,
+          "name": "Udzungwa Mountains",
+          "lat": -7.85,
+          "lng": 36.85,
+          "dayFrom": 2,
+          "dayTo": 4,
+          "approximate": true
+        },
+        {
+          "stop": 3,
+          "name": "Mikumi / Kilombero",
+          "lat": -7.4,
+          "lng": 37,
+          "dayFrom": 5,
+          "dayTo": 7,
+          "approximate": true
+        },
+        {
+          "stop": 4,
+          "name": "Ruaha National Park",
+          "lat": -7.5,
+          "lng": 34.75,
+          "dayFrom": 8,
+          "dayTo": 11,
+          "approximate": true
+        }
+      ],
+      "mapNote": "Stops are approximate planning points for discussion – not GPS navigation or sensitive species locations."
+    },
+    "19-days-southern-tanzania-birding-trip": {
+      "whyChoose": "An intensive southern sweep with miombo, Ruvuma-border country, Selous/Nyerere context and Rondo plateau forest – for guests who want the full inventory-style southern route.",
+      "travellerProfile": "Experienced birders comfortable with bush camps, long drives and variable lodge standards.",
+      "editorialBanner": "Day 19 is not broken out separately in the published schedule below. A second southern listing shares the same routing – enquire so we match you to the right departure and pacing.",
+      "habitats": [
+        "Southern miombo",
+        "Mufindi forest patches",
+        "Ruvuma riverine areas",
+        "Rondo plateau forest",
+        "Coastal birding near Dar es Salaam"
+      ],
+      "seasonality": "Dry-season planning preferred for miombo tracks and camp access; confirm with us before booking."
+    },
+    "19-days-southern-endemic-birding": {
+      "editorialBanner": "This journey follows the same southern routing as our 19-day southern birding trip – tell us your target list and we will confirm which title fits your dates."
+    },
+    "20-day-endemic-birds-southern": {
+      "whyChoose": "A southern endemic arc from Dar es Salaam through Mikumi, Udzungwa, Nyerere (Selous), Ruaha and Kitulo – suited to guests wanting parks and plateau habitats in one long route.",
+      "editorialBanner": "Some day numbers in the outline below skip or repeat – contact us for the latest operating version with corrected day-by-day timings.",
+      "travellerProfile": "Guests wanting a broad southern habitat sample with wildlife parks and montane grassland (Kitulo)."
+    },
+    "8-days-northern-tarangire-manyara-ngorongoro-serengeti": {
+      "whyChoose": "Classic northern circuit from Tarangire’s elephant rivers through Ngorongoro Crater and multi-day Serengeti time via Olduvai Gorge – aligned to the owner’s SAFARIS TANZANIA itinerary document.",
+      "travellerProfile": "First-time Tanzania visitors and wildlife photographers wanting migration context, crater descent and Manyara’s tree-climbing lions on one route.",
+      "wildlifePhoto": "Golden-hour plains in Serengeti, crater rim viewpoints, Tarangire baobabs and elephant herds; Manyara forest-light for lions in trees.",
+      "seasonality": "Year-round; Great Migration sectors vary by month – June onward for northbound herds per the published safari copy.",
+      "routeStops": [
+        {
+          "stop": 1,
+          "name": "Arusha",
+          "lat": -3.386,
+          "lng": 36.683,
+          "dayFrom": 1,
+          "dayTo": 1,
+          "approximate": true
+        },
+        {
+          "stop": 2,
+          "name": "Tarangire National Park",
+          "lat": -3.833,
+          "lng": 35.85,
+          "dayFrom": 2,
+          "dayTo": 2,
+          "approximate": true
+        },
+        {
+          "stop": 3,
+          "name": "Ngorongoro Crater",
+          "lat": -3.2,
+          "lng": 35.5,
+          "dayFrom": 3,
+          "dayTo": 3,
+          "approximate": true
+        },
+        {
+          "stop": 4,
+          "name": "Serengeti National Park",
+          "lat": -2.333,
+          "lng": 34.833,
+          "dayFrom": 4,
+          "dayTo": 7,
+          "approximate": true
+        },
+        {
+          "stop": 5,
+          "name": "Lake Manyara",
+          "lat": -3.35,
+          "lng": 35.8,
+          "dayFrom": 8,
+          "dayTo": 8,
+          "approximate": true
+        }
+      ]
+    },
+    "20-day-endemic-birding-tanzania": {
+      "whyChoose": "National endemic tour spanning Pemba, Uluguru, Ukaguru, Udzungwa, Kilombero, Mikumi and Usambara forests – a country-wide arc and island module.",
+      "editorialBanner": "A different route from our 20-day southern endemic tour. The outline below may skip days 12–13 – enquire for the full twenty-day schedule.",
+      "habitats": [
+        "Pemba island forest",
+        "Eastern Arc forests",
+        "Kilombero wetland",
+        "Miombo and savanna"
+      ],
+      "routeStops": [
+        {
+          "stop": 1,
+          "name": "Dar es Salaam",
+          "lat": -6.792,
+          "lng": 39.208,
+          "dayFrom": 1,
+          "dayTo": 1,
+          "approximate": true
+        },
+        {
+          "stop": 2,
+          "name": "Pemba Island",
+          "lat": -5.031,
+          "lng": 39.775,
+          "dayFrom": 2,
+          "dayTo": 3,
+          "approximate": true
+        },
+        {
+          "stop": 3,
+          "name": "Uluguru Mountains",
+          "lat": -7,
+          "lng": 37.5,
+          "dayFrom": 5,
+          "dayTo": 5,
+          "approximate": true
+        },
+        {
+          "stop": 4,
+          "name": "Udzungwa",
+          "lat": -7.85,
+          "lng": 36.85,
+          "dayFrom": 7,
+          "dayTo": 8,
+          "approximate": true
+        },
+        {
+          "stop": 5,
+          "name": "East Usambara",
+          "lat": -5.07,
+          "lng": 38.67,
+          "dayFrom": 11,
+          "dayTo": 11,
+          "approximate": true
+        }
+      ],
+      "mapNote": "Approximate corridor for planning – verify on enquiry."
+    },
+    "22-days-endemic-birding-tours": {
+      "whyChoose": "The flagship multi-region endemic tour – Usambara, eastern transit, Udzungwa, southern links and Pemba when scheduled – for comprehensive Tanzania listers.",
+      "editorialBanner": "The published outline may not list every calendar day of this 22-day flagship – we will send the operational schedule when you confirm dates.",
+      "travellerProfile": "Dedicated listers on a once-in-a-lifetime Tanzania endemic circuit who accept complex logistics."
+    },
+    "13-days-northern-tanzania-birding": {
+      "tripConsiderations": "Trip Considerations\n\nPACE: Moderate. We’ll typically be up early (around 6 am), and stay out until around 5 pm. Where possible we will use the middle of the day to rest up, or travel between localities. There will also be a few days that are full days in the field. There will be a few optional nocturnal outings to search for owls and nightjars; these are normally done just before dinner and seldom last for more than an hour (typically between 6–7 pm). Tanzania is a large country, and driving can often be slow because there is so much to see along the way! Most drives are under 4 hours in duration with the exception of a 5-6-hour drive on day 13 and a 6-7-hour drive on day 9 of the extension. There will be packed lunches on many days; but sitting with a packed lunch for a siesta under a tree is often a far more relaxing way to do things than spending a long time driving back to camp for lunch, only to head out again in two hours.\n\nPHYSICAL DIFFICULTY: Easy. Almost all the birding is done from mostly flat roads and other easily accessible areas, and much time is spent birding from the safari vehicle. There is little walking on this tour, at the most you can expect to walk about 2 miles (3 km) on a few days; there is a bit more walking required on the extension than on the main tour.\n\nCLIMATE: Quite pleasant both on the higher plateau and in the main Rift Valley localities (usually 65°-80°F, 18°-27°C). At the Ngorongoro Crater rim, and in the Usambara highlands on the extension, it is cooler, with some rain highly likely.\n\nACCOMMODATION: Very good to superb on the main tour (including some of the nicest accommodation available on a birding tour!), all have private, en-suite bathrooms, and full-time hot water. In most places electricity is available 24 hours a day. Several lodges have generators, and they will switch it off for part of the night, but alternate light sources are provided. On the extension, the accommodation at Same and in the East Usambaras is fairly rustic.\n\nPHOTOGRAPHY: If you are a casual photographer, you will love this trip! Nowhere in Africa are birds more cooperative, and nowhere are mammals so easier to see. We are visiting many places where birds are common and approachable, so there are ample of opportunities for the casual photographer to indulge and enjoy shooting. However, this is primarily a birding trip, and if you are a serious photographer, you may want to consider some of our Photo and Birding with Camera Tours in other parts of Africa.\n\nWHEN TO GO: We usually run our set-departure trip around April trip when the birds are all breeding, in plumage and very vocal. This trip can be run as a custom tour at almost any time of the year, and in the boreal winter (October – March) many migrants flood into Tanzania meaning your bird list can even be longer. If you want to include Grumeti river crossings, June –August is the best time. In our opinion, the best of the wildebeest and zebra migration is during the birthing cycle, when the set-departure tour runs.\n\nOther Information\n\nTRAVEL REQUIREMENTS: A valid passport is required; the passport must be valid for at least six months past your intended stay. Visas are required for most nationalities. They can be obtained on arrival by citizens of the US, Canada, UK, Australia, New Zealand, Japan, India and China, most European countries, and others. However, it is a good idea to obtain a visa in advance just in case travel requirements change at short notice – it is important to double check about six weeks before the tour.\n\nWHAT’S INCLUDED?: Tips to drivers, local guides, and lodge/restaurant staff; accommodation from the night of day 1 to the night day 9 (extension), and the night of day 1 through the night of day 12 (main tour); meals from lunch on day 1 to breakfast on day 10 (extension), and from dinner on day 1 to lunch of day 13 (main tour); reasonable non-alcoholic drinks with meals; safe drinking water between meals; Tropical Birding tour leader from mid-day of day 1 to the afternoon of day 9 (extension), and from the evening of day 1 to the afternoon of day 13 (main tour); ground transport for the group to all sites in the itinerary in suitable safari pop-top vehicle(s) from day 1 to day 9 (extension), and from day 1 to day 13 (main tour); entrance fees to sites mentioned in the itinerary; flight from Pemba Island to Arusha (extension only); a printed and bound checklist to help you keep track of what you have seen (given to you at the start of the tour – only electronic copies can be provided in advance).\n\nWHAT’S NOT INCLUDED?: Optional tips to the tour leader; tips for luggage porters at hotels (if you require their services); flights other than those included on the extension; snacks; additional drinks apart from those included; alcoholic beverages; travel insurance; excursions not included in the tour itinerary; extras in hotels such as laundry service, minibar, room service, telephone calls, and personal items; medical fees; excess baggage charges; other items or services not specifically mentioned as being included. NOTE ABOUT FLIGHT TIMES: On Day 13, participants should plan to depart from Arusha no earlier than 8pm. Most international departures from Arusha are in the late evening. In the event that you choose a flight leaving on the next day, we will be happy to help arrange a hotel for this night."
+    }
+  }
+}

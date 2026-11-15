@@ -419,5 +419,47 @@
       "title": "Mahale Mountains National Park Wildlife Safari | Endemic Birds Tanzania",
       "description": "Mahale is located in the Western Tanzania to the South of Kigoma town, it is bordering Lake Tanganyika-the World’s longest, second deepest and least pollut"
     }
+  },
+  {
+    "id": "gombe-stream",
+    "slug": "gombe-stream-national-park",
+    "name": "Gombe Stream National Park",
+    "displaySubtitle": "Western · chimpanzees & lake forest",
+    "circuit": "Western",
+    "location": "Kigoma Region · Lake Tanganyika",
+    "summary": "Steep rainforest on the Tanganyika shore – Jane Goodall’s chimpanzee country with tight ridge trails, boat access and rich understory birdlife.",
+    "overview": "Gombe Stream is Tanzania’s smallest national park – a strip of montane forest on Lake Tanganyika where guided chimp treks and lake transport define the rhythm. Birders combine forest listening stops with waterbirds at the lake edge. We include Gombe on western chimp itineraries paired with Mahale.",
+    "wildlifeHighlights": [
+      "Chimpanzee trekking on steep forest trails",
+      "Lake Tanganyika boat transfers and shoreline birding",
+      "Seasonal African Pitta and forest specialists on the escarpment"
+    ],
+    "parkActivities": [
+      "Chimpanzee tracking",
+      "Forest birding walks",
+      "Lake boating"
+    ],
+    "bestTime": "Dry months (June–October) for clearer forest trails; chimps trackable year-round with local guidance.",
+    "practicalNotes": "Steep hiking is required – fitness and sturdy footwear matter. Park fees, boat timings and lodge nights are confirmed when you enquire.",
+    "heroImage": "assets/images/western-circuit/gombe/hero.jpg",
+    "gallery": [
+      "assets/images/western-circuit/gombe/gallery-1.jpg",
+      "assets/images/western-circuit/gombe/gallery-2.jpg",
+      "assets/images/western-circuit/gombe/gallery-3.jpg",
+      "assets/images/western-circuit/gombe/gallery-4.jpg",
+      "assets/images/western-circuit/gombe/gallery-5.jpg"
+    ],
+    "packageSlugs": [
+      "9-days-mahale-gombe-burigi-minziro",
+      "10-days-chimpanzee-tracking",
+      "7-days-mahale-gombe-chimp-safari"
+    ],
+    "activitySlugs": [
+      "chimps-lake-forests"
+    ],
+    "seo": {
+      "title": "Gombe Stream National Park Safari | Endemic Birds Tanzania",
+      "description": "Chimpanzee forest on Lake Tanganyika – Gombe Stream with Mahale on western Tanzania safaris with Endemic Birds."
+    }
   }
 ]

@@ -1,0 +1,142 @@
+{
+  "circuit": "Supplement",
+  "circuitLabel": "Tanzania birding sites",
+  "sites": [
+    {
+      "id": "amani",
+      "slug": "amani-nature-reserve",
+      "circuit": "Eastern",
+      "siteKind": "forest-reserve",
+      "name": "Amani Nature Reserve (East Usambara)",
+      "location": "Tanga Region · East Usambara Mountains",
+      "summary": "Lowland and mid-elevation East Usambara forest – classic Eastern Arc birding with Usambara akalat, greenbuls and forest-edge species on the Amani plateau.",
+      "keySpecies": ["Usambara Akalat", "Usambara Weaver", "Green-headed Oriole", "East Usambara forest greenbuls"],
+      "whyItMatters": [
+        "Anchor site on multi-day Usambara modules in national endemic itineraries.",
+        "Pairs with West Usambara (Magamba) for a full East Arc list on one trip."
+      ],
+      "packageSlugs": ["22-days-endemic-birding-tours", "22-days-birding-itinerary-north-east-south-pemba", "15-days-tanzania-birding-tour"],
+      "heroImage": "assets/images/from-live-site/destinations/eastern-destination.jpg",
+      "imageStatus": "placeholder"
+    },
+    {
+      "id": "magamba",
+      "slug": "west-usambara-magamba",
+      "circuit": "Eastern",
+      "siteKind": "forest-reserve",
+      "name": "West Usambara (Magamba)",
+      "location": "Tanga Region · West Usambara Mountains",
+      "summary": "Magamba and West Usambara escarpment forests – montane specialists and views over the Usambara–Pare block.",
+      "keySpecies": ["Usambara Eagle-Owl", "Fischer's Turaco", "Montane forest robin-chats and white-eyes"],
+      "packageSlugs": ["22-days-endemic-birding-tours", "15-days-tanzania-birding-tour"],
+      "heroImage": "assets/images/from-live-site/destinations/eastern-destination.jpg",
+      "imageStatus": "placeholder"
+    },
+    {
+      "id": "pemba",
+      "slug": "pemba-island-birding",
+      "circuit": "Eastern",
+      "siteKind": "island",
+      "name": "Pemba Island",
+      "location": "Pemba · Zanzibar archipelago",
+      "summary": "Island endemics in clove-forest mosaics – Pemba scops-owl, sunbirds and Ngezi forest specials on short flights from Dar es Salaam.",
+      "keySpecies": ["Pemba Scops-Owl", "Pemba Sunbird", "Pemba White-eye", "Mangrove and coastal species"],
+      "packageSlugs": ["22-days-endemic-birding-tours", "20-day-endemic-birding-tanzania", "22-days-birding-itinerary-north-east-south-pemba"],
+      "heroImage": "assets/images/from-live-site/destinations/eastern-destination.jpg",
+      "imageStatus": "placeholder"
+    },
+    {
+      "id": "chome",
+      "slug": "south-pare-chome",
+      "circuit": "Eastern",
+      "siteKind": "forest-reserve",
+      "name": "South Pare & Chome",
+      "location": "Kilimanjaro / Tanga · South Pare Mountains",
+      "summary": "Undervisited South Pare ridges linking East Usambara travel days – forest patches and escarpment birding when routes include the Pare block.",
+      "keySpecies": ["South Pare forest specialists", "Eastern Arc transition species"],
+      "packageSlugs": [],
+      "heroImage": "assets/images/from-live-site/destinations/eastern-destination.jpg",
+      "imageStatus": "placeholder",
+      "generalNotes": "Included when owner confirms active routes – enquire before assuming on a fixed departure."
+    },
+    {
+      "id": "kitulo",
+      "slug": "kitulo-national-park",
+      "circuit": "Southern",
+      "siteKind": "national-park",
+      "name": "Kitulo Plateau National Park",
+      "location": "Mbeya Region · Southern Highlands",
+      "summary": "Montane grassland plateau ('Serengeti of flowers') with highland birds and seasonal botany – often paired with Ruaha or Mbeya legs.",
+      "keySpecies": ["Blue Swallow (seasonal)", "Highland pipits and chats", "Ridge forest edge species"],
+      "packageSlugs": ["20-day-endemic-birds-southern"],
+      "heroImage": "assets/images/southern-circuit/ruaha/hero.jpg",
+      "imageStatus": "placeholder"
+    },
+    {
+      "id": "rungwe",
+      "slug": "mount-rungwe",
+      "circuit": "Southern",
+      "siteKind": "mountain",
+      "name": "Mount Rungwe",
+      "location": "Mbeya Region · Southern Highlands",
+      "summary": "Volcanic massif above Mbeya – montane forest transitions near Kitulo and Southern Highland endemics on exploratory routes.",
+      "keySpecies": ["Montane forest birds of the Mbeya highlands"],
+      "packageSlugs": [],
+      "heroImage": "assets/images/southern-circuit/ruaha/hero.jpg",
+      "imageStatus": "placeholder",
+      "generalNotes": "Offered on customised southern highland routes – confirm with us."
+    },
+    {
+      "id": "mufindi",
+      "slug": "mufindi-forest",
+      "circuit": "Southern",
+      "siteKind": "forest",
+      "name": "Mufindi Forest",
+      "location": "Iringa Region · Southern Highlands",
+      "summary": "Cool rainforest patches above the Iringa–Mufindi escarpment – published on southern endemic itineraries with lodge-based forest birding.",
+      "keySpecies": ["Southern highland forest species", "Fruit-eaters and robin-chats in lodge forest"],
+      "packageSlugs": ["19-days-southern-tanzania-birding-trip", "19-days-southern-endemic-birding", "14-days-southern-tanzania-birding-tour"],
+      "heroImage": "assets/images/from-live-site/destinations/southern-destination.jpg",
+      "imageStatus": "placeholder"
+    },
+    {
+      "id": "arusha-birding",
+      "slug": "arusha-national-park-birding",
+      "circuit": "Northern",
+      "siteKind": "national-park",
+      "name": "Arusha National Park",
+      "location": "Arusha Region · Northern Circuit",
+      "summary": "Momella lakes, montane forest on Mount Meru skirts and Ngurdoto crater rim – strong northern starter or finisher for birding groups.",
+      "keySpecies": ["Flamingos on Momella", "Narina Trogon", "Hartlaub's Turaco", "Forest and wetland edge species"],
+      "packageSlugs": ["10-day-birdwatching-northern", "12-day-endemic-birds-northern", "15-days-tanzania-birding-tour"],
+      "heroImage": "assets/images/wildlife/destinations/arusha-national-park/hero.jpg",
+      "imageStatus": "partial"
+    },
+    {
+      "id": "manyara-birding",
+      "slug": "lake-manyara-birding",
+      "circuit": "Northern",
+      "siteKind": "national-park",
+      "name": "Lake Manyara National Park",
+      "location": "Manyara Region · Rift Valley",
+      "summary": "Rift escarpment, groundwater forest and soda lake edge – thousands of flamingos and classic Manyara forest birds on northern combination routes.",
+      "keySpecies": ["Pink-backed Pelican", "Silvery-cheeked Hornbill", "Ground-hornbill", "Flamingos"],
+      "packageSlugs": ["15-days-tanzania-birding-tour", "15-days-birding-wildlife-photographic", "8-days-northern-tarangire-manyara-ngorongoro-serengeti"],
+      "heroImage": "assets/images/wildlife/destinations/lake-manyara-national-park/hero.jpg",
+      "imageStatus": "partial"
+    },
+    {
+      "id": "ngorongoro-birding",
+      "slug": "ngorongoro-birding",
+      "circuit": "Northern",
+      "siteKind": "conservation-area",
+      "name": "Ngorongoro Highlands & Crater",
+      "location": "Arusha Region · Ngorongoro Conservation Area",
+      "summary": "Crater floor grassland birds and highland forest on the rim – combines with northern birding and wildlife itineraries.",
+      "keySpecies": ["Crowned Crane", "Rift valley grassland species", "Highland forest specials on the rim"],
+      "packageSlugs": ["15-days-tanzania-birding-tour", "4-days-ngorongoro-crater-escape", "8-days-northern-tarangire-manyara-ngorongoro-serengeti"],
+      "heroImage": "assets/images/wildlife/destinations/ngorongoro-conservation-area/hero.jpg",
+      "imageStatus": "partial"
+    }
+  ]
+}

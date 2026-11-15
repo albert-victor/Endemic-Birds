@@ -45,12 +45,14 @@
   }
 
   function breadcrumbs(items) {
-    const last = items[items.length - 1];
-    const parents = items.slice(0, -1);
-    return `<nav class="breadcrumbs" aria-label="Breadcrumb">
-      <ol>${parents.map((i) => `<li><a href="${i.href}">${escapeHtml(i.label)}</a></li>`).join("")}
-      <li aria-current="page">${escapeHtml(last.current || last.label)}</li></ol>
-    </nav>`;
+    if (!items?.length) return "";
+    const crumbs = items
+      .map((item) => {
+        if (item.href) return `<li><a href="${item.href}">${escapeHtml(item.label)}</a></li>`;
+        return `<li><span aria-current="page">${escapeHtml(item.label)}</span></li>`;
+      })
+      .join("");
+    return `<nav class="breadcrumbs" aria-label="Breadcrumb"><ol>${crumbs}</ol></nav>`;
   }
 
   function renderItinerary(days) {
@@ -189,10 +191,15 @@
   }
 
   async function renderPackage() {
-    const [packages, destinations, wildlifeDests] = await Promise.all([
+    if (!window.PackageDetail) {
+      console.error("PackageDetail module missing");
+      return;
+    }
+    const [packages, destinations, wildlifeDests, details] = await Promise.all([
       loadJson("packages.json"),
       loadJson("destinations.json"),
       loadJson("wildlife-destinations.json").catch(() => []),
+      loadJson("package-details.json").catch(() => ({})),
     ]);
     const pkg = packages.find((p) => p.slug === slug);
     if (!pkg) {
@@ -206,7 +213,6 @@
       : { hubSites: {}, siteCatalog: [] };
     const visits = window.PackageVisits?.resolvePackageVisits(pkg, { ...visitCtx, wDestMap }) || [];
     const destLinks = window.PackageVisits?.formatVisitLine(visits, 4) || "";
-
     document.body.dataset.nav = pkg.category === "wildlife" ? "wildlife" : "birding";
 
     const canonical = asset(`packages/${pkg.slug}/`);
@@ -214,6 +220,16 @@
     if (canonEl) canonEl.setAttribute("href", new URL(canonical, location.origin).href);
 
     const pkgHero = await heroUrl(pkg.slug, pkg.heroImage);
+    const pkgGalleryBand = renderGallerySection(pkg, "title", { placement: "top" });
+    const { introColumn, prelude, afterVisits } = await window.PackageDetail.buildPackageMain(pkg, {
+      details,
+      asset,
+      visitCtx,
+      wDestMap,
+      renderPackageVisitsSection,
+    });
+    const visitsBand = renderPackageVisitsSection(pkg, visitCtx, wDestMap);
+
     document.getElementById("main").innerHTML = `
       <section class="page-hero" style="--page-hero-img: url('${pkgHero}')">
         <div class="page-hero-scrim"></div>
@@ -224,60 +240,40 @@
               href: asset(pkg.category === "wildlife" ? "wildlife/index.html" : "packages/index.html"),
               label: pkg.category === "wildlife" ? "Wildlife safaris" : "All journeys",
             },
-            { label: shortTitle(pkg.title) || pkg.title, current: shortTitle(pkg.title) || pkg.title },
+            { label: shortTitle(pkg.title) || pkg.title },
           ])}
           <h1 class="page-hero-title reveal" data-reveal>${escapeHtml(shortTitle(pkg.title) || pkg.title)}</h1>
-          <p class="page-hero-meta reveal" data-reveal>${pkg.durationDays} days${destLinks ? ` · ${escapeHtml(destLinks)}` : ""}</p>
+          <p class="page-hero-meta reveal" data-reveal>${pkg.durationDays} days · ${escapeHtml(categoryLabels[pkg.category])}${destLinks ? ` · ${escapeHtml(destLinks)}` : ""}</p>
           <div class="hero-actions reveal" data-reveal>
-            <a class="btn btn-solid" href="${asset("plan-your-trip/index.html")}?journey=${encodeURIComponent(pkg.slug)}">Plan this journey</a>
+            <a class="btn btn-solid" href="${asset("plan-your-trip/index.html")}?journey=${encodeURIComponent(pkg.slug)}&interest=${encodeURIComponent(pkg.category === "wildlife" ? "wildlife" : "birding")}">Plan this journey</a>
+            <a class="btn btn-outline" href="#pkg-itinerary-heading">View itinerary</a>
           </div>
           <a class="scroll-cue" href="#overview" aria-label="Scroll to overview"><span></span></a>
         </div>
       </section>
-      <article class="detail-content" id="overview">
-        <div class="container detail-grid">
-          <div class="detail-main">
-            <section class="detail-section reveal" data-reveal>
-              <h2>Overview</h2>
-              <p class="lead">${escapeHtml(pkg.summary)}</p>
-            </section>
-            <section class="detail-section reveal" data-reveal>
-              <h2>Why this journey</h2>
-              <p>Routes are planned around field time for scanning, listening and photography – paced to your group. Specialist birding knowledge leads the design; wildlife encounters are woven in where the itinerary supports them.</p>
-            </section>
-            ${renderPackageVisitsSection(pkg, visitCtx, wDestMap)}
-            <section class="detail-section reveal" data-reveal>
-              <h2>Day-by-day itinerary</h2>
-              ${renderItinerary(pkg.itinerary)}
-            </section>
-            ${
-              pkg.category !== "wildlife"
-                ? `<section class="detail-section reveal" data-reveal><h2>Birding highlights</h2><p>${pkg.highlights?.birding?.length ? pkg.highlights.birding.map(escapeHtml).join("; ") : "Ask us for target species and habitat notes for this route."}</p></section>`
-                : ""
-            }
-            ${
-              pkg.category !== "birding"
-                ? `<section class="detail-section reveal" data-reveal><h2>Wildlife highlights</h2><p>${pkg.highlights?.wildlife?.length ? pkg.highlights.wildlife.map(escapeHtml).join("; ") : "Wildlife focal points will be confirmed per departure."}</p></section>`
-                : ""
-            }
-            <section class="detail-section reveal" data-reveal>
-              <h2>What's included</h2>
-              ${pkg.included?.length ? `<ul>${pkg.included.map((i) => `<li>${escapeHtml(i)}</li>`).join("")}</ul>` : `<p class="itinerary-placeholder">Contact us for a full trip dossier – inclusions, lodges and vehicle setup for your dates.</p>`}
-            </section>
-            <section class="detail-section reveal" data-reveal>
-              <h2>Practical notes</h2>
-              <p>Maximum six guests per vehicle with window seats. ${pkg.bestTime ? `Best time to travel: ${escapeHtml(pkg.bestTime)}.` : "Seasonal guidance available on enquiry."}</p>
-            </section>
+      ${pkgGalleryBand}
+      <article class="detail-content pkg-detail" id="overview" data-package-slug="${escapeHtml(pkg.slug)}">
+        <div class="container">
+          <div class="pkg-detail-intro-grid">
+            <div class="pkg-detail-intro-main">${introColumn}</div>
+            <aside class="detail-aside pkg-detail-aside reveal" data-reveal>
+              <div class="inquiry-panel inquiry-panel--sticky">
+                <p class="eyebrow">Enquire on this journey</p>
+                <h3>${escapeHtml(shortTitle(pkg.title) || pkg.title)}</h3>
+                <p>${pkg.durationDays} days · ${escapeHtml(categoryLabels[pkg.category])}</p>
+                <div class="pkg-inquiry-actions">
+                  <a class="btn btn-solid btn-block" href="${asset("plan-your-trip/index.html")}?journey=${encodeURIComponent(pkg.slug)}&interest=${encodeURIComponent(pkg.category === "wildlife" ? "wildlife" : "birding")}">Plan your trip</a>
+                  <a class="btn btn-outline btn-block" href="${asset("plan-your-trip/index.html")}?journey=${encodeURIComponent(pkg.slug)}&note=${encodeURIComponent("Please send the detailed itinerary for this journey.")}">Request detailed itinerary</a>
+                  <a class="btn btn-ghost btn-block" href="tel:+255627013348">Call +255 627 013 348</a>
+                </div>
+              </div>
+            </aside>
           </div>
-          <aside class="detail-aside reveal" data-reveal>
-            <div class="inquiry-panel">
-              <p class="eyebrow">Enquire</p>
-              <h3>${escapeHtml(pkg.title)}</h3>
-              <p>${pkg.durationDays} days · ${categoryLabels[pkg.category]}</p>
-              <a class="btn btn-solid btn-block" href="${asset("plan-your-trip/index.html")}?journey=${encodeURIComponent(pkg.slug)}">Plan Your Trip</a>
-              <a class="btn btn-outline btn-block" href="tel:+255627013348">Call +255 627 013 348</a>
-            </div>
-          </aside>
+          <div class="pkg-detail-flow">
+            ${prelude}
+            ${visitsBand ? `<div class="pkg-detail-visits-band reveal" data-reveal>${visitsBand}</div>` : ""}
+            <div class="pkg-detail-body">${afterVisits}</div>
+          </div>
         </div>
       </article>
       ${relatedPackages(packages, pkg, destMap)}

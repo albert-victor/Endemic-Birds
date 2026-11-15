@@ -14,7 +14,6 @@
     if (lead) {
       lead.textContent = "Every park and forest site we bird in Tanzania – pick a destination to open its field notes and linked safaris.";
     }
-    document.querySelector("[data-filters]")?.setAttribute("hidden", "");
     document.querySelector("[data-destinations-packages]")?.setAttribute("hidden", "");
   }
 

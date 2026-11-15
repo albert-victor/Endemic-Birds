@@ -1,0 +1,192 @@
+.tcal-updated {
+  margin: 0 0 1rem;
+}
+
+.tcal-toolbar {
+  margin-bottom: 1.25rem;
+}
+
+.tcal-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tcal-legend__item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.tcal-legend__swatch {
+  width: 0.85rem;
+  height: 0.85rem;
+  border-radius: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.tcal-year {
+  margin-bottom: 2rem;
+}
+
+.tcal-year__title {
+  font-size: 1.35rem;
+  margin: 0 0 0.75rem;
+}
+
+.tcal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9.5rem, 1fr));
+  gap: 0.55rem;
+}
+
+.tcal-month {
+  text-align: left;
+  padding: 0.65rem 0.7rem;
+  border-radius: 0.45rem;
+  border: 1px solid var(--color-border, rgba(0, 0, 0, 0.12));
+  background: #fff;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+  width: 100%;
+}
+
+.tcal-month:focus-visible {
+  outline: 2px solid var(--color-forest, #1c4a3a);
+  outline-offset: 2px;
+}
+
+.tcal-month__name {
+  display: block;
+  font-weight: 700;
+  font-size: 0.92rem;
+}
+
+.tcal-month__status {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  margin-top: 0.25rem;
+  line-height: 1.3;
+}
+
+.tcal-month__detail {
+  display: none;
+}
+
+.tcal-status--available .tcal-legend__swatch,
+.tcal-status--available.tcal-month {
+  background: rgba(28, 74, 58, 0.08);
+  border-color: rgba(28, 74, 58, 0.28);
+}
+
+.tcal-status--booked .tcal-legend__swatch,
+.tcal-status--booked.tcal-month {
+  background: rgba(90, 50, 50, 0.1);
+  border-color: rgba(90, 50, 50, 0.25);
+}
+
+.tcal-status--departure .tcal-legend__swatch,
+.tcal-status--departure.tcal-month {
+  background: rgba(40, 80, 120, 0.1);
+  border-color: rgba(40, 80, 120, 0.28);
+}
+
+.tcal-status--confirm .tcal-legend__swatch,
+.tcal-status--confirm.tcal-month {
+  background: rgba(120, 90, 20, 0.12);
+  border-color: rgba(120, 90, 20, 0.3);
+}
+
+.tcal-status--unpublished .tcal-legend__swatch,
+.tcal-status--unpublished.tcal-month {
+  background: rgba(0, 0, 0, 0.03);
+  border-style: dashed;
+}
+
+.tcal-panel-host {
+  margin: 1rem 0 1.5rem;
+}
+
+.tcal-detail {
+  padding: 1rem 1.1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-border, rgba(0, 0, 0, 0.1));
+  background: rgba(28, 74, 58, 0.04);
+}
+
+.tcal-detail__title {
+  margin: 0 0 0.35rem;
+}
+
+.tcal-detail__list {
+  margin: 0.5rem 0;
+  padding-left: 1.1rem;
+}
+
+.tcal-leons-cta {
+  margin: 0.85rem 0;
+  padding: 0.75rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.tcal-list-section {
+  margin: 2.5rem 0 2rem;
+}
+
+.tcal-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+}
+
+.tcal-list__item {
+  padding: 0.65rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  font-size: 0.95rem;
+}
+
+.tcal-list__status {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-right: 0.5rem;
+}
+
+.tcal-list__dates {
+  display: block;
+  font-size: 0.86rem;
+  color: var(--color-text-soft, #5a6560);
+  margin-top: 0.2rem;
+}
+
+.about-cal-teaser--rich {
+  border: 1px solid rgba(28, 74, 58, 0.15);
+  border-radius: 0.65rem;
+  padding: 1.35rem 1.5rem;
+  background: linear-gradient(135deg, rgba(28, 74, 58, 0.06), rgba(255, 255, 255, 0.9));
+}
+
+.about-cal-teaser__next {
+  margin: 0.75rem 0 1rem;
+  font-size: 0.95rem;
+}
+
+.about-cal-teaser__next strong {
+  color: var(--color-forest, #1c4a3a);
+}
+
+.about-cal-teaser__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1rem;
+}

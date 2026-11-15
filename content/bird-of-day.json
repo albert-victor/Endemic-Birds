@@ -1,0 +1,15 @@
+{
+  "sectionTitle": "Special birds",
+  "sectionLead": "Slideshow of target species – tap the info icon for notes and safari links in this section, or browse the",
+  "rotation": "dayOfYear",
+  "speciesSlugs": [
+    "iringa-akalat",
+    "udzungwa-forest-partridge",
+    "rufous-winged-sunbird",
+    "usambara-akalat",
+    "kilombero-weaver",
+    "beesleys-lark",
+    "african-pitta",
+    "pemba-scops-owl"
+  ]
+}

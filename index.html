@@ -14,14 +14,16 @@
     <meta property="og:type" content="website" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="preview-luxury/fonts.css" />
+    <link rel="stylesheet" href="preview-luxury/fonts/futura-pt.css" />
+    <link rel="stylesheet" href="assets/css/typography-site.css" />
     <link rel="icon" href="assets/images/from-live-site/brand/bird-logo.png" />
     <link rel="stylesheet" href="assets/css/styles.css" />
     <link rel="stylesheet" href="assets/css/clean-depth.css" />
     <link rel="stylesheet" href="assets/css/home-v2.css" />
+    <link rel="stylesheet" href="assets/css/species-birds.css" />
+    <link rel="stylesheet" href="assets/css/birds-showcase.css" />
   </head>
   <body class="has-grain has-hero-nav" data-nav="home">
     <div class="site-loader" data-site-loader aria-hidden="true">
@@ -60,8 +62,26 @@
         </div>
       </section>
 
+      <section class="hero-safari-strip" aria-label="Find a safari">
+        <div class="container hero-safari-dock" data-hero-safari-search></div>
+      </section>
+
       <section class="home-section why-split-section" id="why-us" aria-labelledby="why-us-heading">
         <div data-home-why-split></div>
+      </section>
+
+      <section class="home-section birds-showcase-section" id="bird-of-day" aria-labelledby="bird-of-day-heading">
+        <div class="home-section-head home-section-head--center birds-showcase-head">
+          <p class="eyebrow reveal is-visible" data-reveal>Special birds</p>
+          <h2 class="section-title section-title--wide reveal is-visible" id="bird-of-day-heading" data-reveal>
+            Rare &amp; endemic targets
+          </h2>
+          <p class="section-lead reveal is-visible" data-reveal>
+            Slideshow of target species – tap the info icon for notes and safari links in this section, or browse the
+            <a class="section-lead-link" href="birding/special-birds/index.html">full catalogue</a>.
+          </p>
+        </div>
+        <div data-bird-of-day class="birds-showcase-mount"></div>
       </section>
 
       <section class="home-section" id="explore-destinations" aria-labelledby="destinations-heading">
@@ -123,12 +143,12 @@
         </div>
       </section>
 
-      <section class="home-section" id="partners">
+      <section class="home-section" id="partners" hidden data-home-partners-section>
         <div class="home-section-head home-section-head--center">
-          <p class="eyebrow reveal" data-reveal>Accredited by</p>
+          <p class="eyebrow reveal" data-reveal>In partnership</p>
           <h2 class="section-title reveal" data-reveal>Our partners</h2>
           <p class="section-lead reveal" data-reveal>
-            Memberships and affiliations with Tanzania’s park authorities, tourism boards and international travel bodies.
+            Commercial partners we work with on birding and ground operations – published only with their permission.
           </p>
         </div>
         <div class="partners-row reveal" data-reveal data-home-partners></div>
@@ -160,7 +180,11 @@
     <script src="assets/js/whatsapp-chat.js" defer></script>
     <script src="assets/js/nav-motion.js" defer></script>
     <script src="assets/js/motion.js" defer></script>
+    <script src="assets/js/package-filters.js" defer></script>
     <script src="assets/js/hero-push.js" defer></script>
+    <script src="assets/js/hero-safari-search.js" defer></script>
+    <script src="assets/js/species-modal.js" defer></script>
+    <script src="assets/js/birds-showcase.js" defer></script>
     <script src="assets/js/carousels.js" defer></script>
     <script src="assets/js/home-content.js" defer></script>
     <script src="assets/js/main.js" defer></script>

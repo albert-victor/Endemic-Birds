@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Marck+Script&display=swap" rel="stylesheet" />
     <link rel="icon" href="../assets/images/from-live-site/brand/bird-logo.png" />
     <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link rel="stylesheet" href="../assets/css/site-enhancements.css" />
   </head>
   <body class="has-grain" data-nav="birding">
     <a class="skip-link" href="#main">Skip to main content</a>
@@ -19,52 +20,103 @@
         <div class="container">
           <p class="eyebrow">All journeys</p>
           <h1 class="section-title">Safari &amp; birding journeys</h1>
-          <p class="section-lead">Browse tailor-made routes – filter by experience, duration, destination or circuit.</p>
-          <form class="filters-bar" data-filters>
-            <label>Experience
-              <select name="category">
-                <option value="all">All</option>
-                <option value="birding">Birding-focused</option>
-                <option value="wildlife">Wildlife-focused</option>
-                <option value="combined">Birding + Wildlife</option>
-              </select>
-            </label>
-            <label>Duration
-              <select name="duration">
-                <option value="all">Any</option>
-                <option value="short">Up to 10 days</option>
-                <option value="medium">11–16 days</option>
-                <option value="long">17+ days</option>
-              </select>
-            </label>
-            <label>Destination
-              <select name="destination">
-                <option value="all">All</option>
-                <option value="northern">Northern</option>
-                <option value="southern">Southern</option>
-                <option value="eastern-arc">Eastern Arc</option>
-                <option value="western">Western</option>
-                <option value="north-west">North West</option>
-                <option value="eastern">Eastern</option>
-              </select>
-            </label>
-            <label>Circuit
-              <select name="circuit">
-                <option value="all">All</option>
-                <option value="Northern">Northern</option>
-                <option value="Southern">Southern</option>
-                <option value="Eastern">Eastern</option>
-                <option value="Western">Western</option>
-                <option value="North West">North West</option>
-              </select>
-            </label>
-            <button type="button" class="btn btn-outline" data-clear-filters>Clear filters</button>
+          <p class="section-lead">Refine by interest, circuit, duration and season. Comfort, field intensity and accommodation are separate – camping is not always budget, and birding trips vary from relaxed to expedition pace.</p>
+          <form class="filters-bar filters-bar--discover" data-filters>
+            <div class="filters-bar__primary">
+              <label>Safari interest
+                <select name="interest">
+                  <option value="all">All</option>
+                  <option value="birding">Birding-focused</option>
+                  <option value="wildlife">Wildlife-focused</option>
+                  <option value="combined">Birding + wildlife</option>
+                </select>
+              </label>
+              <label>Circuit
+                <select name="circuit">
+                  <option value="all">All</option>
+                  <option value="Northern">Northern</option>
+                  <option value="Southern">Southern</option>
+                  <option value="Eastern">Eastern</option>
+                  <option value="Western">Western</option>
+                  <option value="North West">North West</option>
+                </select>
+              </label>
+              <label>Duration
+                <select name="duration">
+                  <option value="all">Any</option>
+                  <option value="short">Up to 10 days</option>
+                  <option value="medium">11–16 days</option>
+                  <option value="long">17+ days</option>
+                </select>
+              </label>
+              <label>Travel month
+                <select name="month">
+                  <option value="all">Any</option>
+                  <option value="1">January</option>
+                  <option value="2">February</option>
+                  <option value="3">March</option>
+                  <option value="4">April</option>
+                  <option value="5">May</option>
+                  <option value="6">June</option>
+                  <option value="7">July</option>
+                  <option value="8">August</option>
+                  <option value="9">September</option>
+                  <option value="10">October</option>
+                  <option value="11">November</option>
+                  <option value="12">December</option>
+                </select>
+              </label>
+              <button type="button" class="btn btn-outline" data-clear-filters>Reset</button>
+            </div>
+            <details class="filters-bar__advanced">
+              <summary>More filters</summary>
+              <h2 class="visually-hidden">Advanced package filters</h2>
+              <p class="filters-bar__season-note">Travel month suggests typical season only – not live availability or guaranteed departures.</p>
+              <div class="filters-bar__advanced-grid">
+                <label>Region hub
+                  <select name="destination">
+                    <option value="all">All</option>
+                    <option value="northern">Northern</option>
+                    <option value="southern">Southern</option>
+                    <option value="eastern-arc">Eastern Arc</option>
+                    <option value="western">Western</option>
+                    <option value="north-west">North West</option>
+                    <option value="eastern">Eastern</option>
+                  </select>
+                </label>
+                <label>Field intensity
+                  <select name="intensity">
+                    <option value="all">Any</option>
+                    <option value="relaxed">Relaxed</option>
+                    <option value="moderate">Moderate</option>
+                    <option value="demanding">Demanding expedition</option>
+                  </select>
+                </label>
+                <label>Comfort level
+                  <select name="comfort">
+                    <option value="all">Any</option>
+                    <option value="budget">Budget</option>
+                    <option value="mid-range">Mid-range / premium</option>
+                    <option value="luxury">Luxury</option>
+                  </select>
+                </label>
+                <label>Accommodation type
+                  <select name="accommodation">
+                    <option value="all">Any</option>
+                    <option value="lodge">Lodge / hotel</option>
+                    <option value="tented-camp">Tented camp</option>
+                    <option value="camping">Camping / bush camp</option>
+                    <option value="villa">Villa</option>
+                  </select>
+                </label>
+              </div>
+            </details>
           </form>
           <div data-catalog="packages" data-layout="bento">
             <div class="catalog-bento-wrap" data-catalog-bento></div>
-            <p class="catalog-meta"><span data-count>0</span> journeys</p>
+            <p class="catalog-meta"><span data-count>0</span> journeys match</p>
             <div data-catalog-list></div>
-            <p class="catalog-empty" data-empty hidden>No journeys match – try clearing filters.</p>
+            <p class="catalog-empty" data-empty hidden>No journeys match these filters – try resetting or broadening season or circuit.</p>
           </div>
         </div>
       </section>
@@ -77,6 +129,7 @@
     <script src="../assets/js/site-search.js" defer></script>
     <script src="../assets/js/motion.js" defer></script>
     <script src="../assets/js/scroll-gallery.js" defer></script>
+    <script src="../assets/js/package-filters.js" defer></script>
     <script src="../assets/js/catalog.js" defer></script>
     <script src="../assets/js/main.js" defer></script>
   </body>

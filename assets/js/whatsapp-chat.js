@@ -1,9 +1,14 @@
 (function () {
   const WA_URL = "https://wa.me/255627013348";
-  const LEON_PHOTO = () => {
-    const p = window.__ASSET_PREFIX__ || "/";
-    return p + "endemics/leons.jpg";
+  const assetPrefix = () => window.__ASSET_PREFIX__ || "/";
+
+  const asset = (path) => {
+    const base = assetPrefix();
+    const clean = String(path).replace(/^\//, "");
+    return base + clean;
   };
+
+  const LEON_PHOTO = () => asset("endemics/leons.jpg");
 
   function ensureWidget() {
     if (document.getElementById("leon-chat-widget")) return;
@@ -21,11 +26,10 @@
         <p class="leon-chat__day">Today</p>
         <div class="leon-chat__body">
           <div class="leon-chat__bubble leon-chat__bubble--in">
-            <p>Hello &ndash; I'm Leon. I lead birding and wildlife safaris with Endemic Birds Tanzania.</p>
+            <p>Hello I'm Leon, your local guide for custom safari experiences.</p>
           </div>
           <div class="leon-chat__bubble leon-chat__bubble--in">
-            <p>Share your dates and what you are hoping to see &ndash; forests, migration, endemics or coast &ndash; and I'll reply with an honest route we would take our own guests on.</p>
-            <p class="leon-chat__services">Birding safaris · wildlife safaris · combined routes</p>
+            <p>Planning a birding trip, wildlife safari, or a custom combination? Tap below to chat on WhatsApp with your travel dates and interests, and let's craft your itinerary together!</p>
           </div>
         </div>
         <footer class="leon-chat__foot">
@@ -93,8 +97,20 @@
   document.addEventListener("site:layout-ready", bindFab);
   bindFab();
 
-  const fabObserver = new MutationObserver(() => bindFab());
-  if (document.body) {
+  /* One-shot: bind if layout injects FAB later. Avoid subtree observer (fires on every DOM change). */
+  if (document.body && !document.querySelector(".fab-whatsapp[data-leon-bound]")) {
+    const fabObserver = new MutationObserver((records) => {
+      for (const rec of records) {
+        for (const node of rec.addedNodes) {
+          if (node.nodeType !== 1) continue;
+          if (node.matches?.(".fab-whatsapp") || node.querySelector?.(".fab-whatsapp")) {
+            bindFab();
+            fabObserver.disconnect();
+            return;
+          }
+        }
+      }
+    });
     fabObserver.observe(document.body, { childList: true, subtree: true });
   }
 

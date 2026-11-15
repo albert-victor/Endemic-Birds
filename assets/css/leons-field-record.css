@@ -1,0 +1,536 @@
+/* Scoped to Leons profile – chronology table */
+
+.about-sub-container--wide .about-leon-profile--v2 {
+  max-width: min(58rem, 100%);
+}
+
+.about-leon-profile--v2 {
+  display: block;
+}
+
+.leon-profile-hero {
+  display: grid;
+  gap: 1.75rem;
+  margin-bottom: 2.25rem;
+}
+
+@media (min-width: 768px) {
+  .leon-profile-hero {
+    grid-template-columns: minmax(0, 280px) minmax(0, 1fr);
+    align-items: start;
+  }
+}
+
+.leon-profile-hero__media img {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 0.55rem;
+  box-shadow: 0 12px 36px rgba(28, 74, 58, 0.14);
+  object-fit: cover;
+  aspect-ratio: 1;
+}
+
+.leon-profile-role {
+  margin: 0.35rem 0 0;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--color-text-soft, #5a6560);
+}
+
+.leon-profile-tagline {
+  margin: 0.75rem 0 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--color-forest-deep, #143528);
+  font-family: var(--font-display, inherit);
+}
+
+.leon-profile-intro {
+  margin: 1rem 0 0;
+  line-height: 1.65;
+  color: var(--color-text-soft, #5a6560);
+}
+
+.leon-profile-story__body p {
+  margin: 0 0 0.85rem;
+  line-height: 1.65;
+  color: var(--color-text-soft, #5a6560);
+}
+
+.leon-species-note {
+  margin-top: 1rem !important;
+}
+
+.leon-safari-value {
+  margin: 2rem 0;
+}
+
+.leon-safari-value__grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 0.75rem;
+}
+
+@media (min-width: 640px) {
+  .leon-safari-value__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.leon-value-card {
+  padding: 1rem 1.1rem;
+  border-radius: 0.45rem;
+  border: 1px solid rgba(28, 74, 58, 0.12);
+  background: rgba(255, 252, 247, 0.85);
+  box-shadow: 0 4px 18px rgba(40, 36, 32, 0.04);
+}
+
+.leon-value-card__title {
+  margin: 0 0 0.4rem;
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: var(--color-forest-deep, #143528);
+}
+
+.leon-value-card p {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.58;
+  color: var(--color-text-soft, #5a6560);
+}
+
+/* Field record – timeline table */
+.leon-field-record {
+  margin: 2.75rem 0;
+}
+
+.leon-field-record__head {
+  max-width: 40rem;
+}
+
+.leon-field-record__lead,
+.leon-field-record__highlights-note {
+  margin: 0.35rem 0 0;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--color-text-soft, #5a6560);
+}
+
+.leon-field-record__scrim {
+  position: relative;
+  margin-top: 1.35rem;
+  border-radius: 0.75rem;
+  background:
+    radial-gradient(120% 80% at 50% 0%, rgba(196, 149, 42, 0.08) 0%, transparent 55%),
+    linear-gradient(165deg, #fffef9 0%, #f4f0e6 48%, #ebe4d6 100%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.9),
+    0 18px 48px rgba(28, 74, 58, 0.1),
+    0 2px 0 rgba(28, 74, 58, 0.06);
+  border: 1px solid rgba(28, 74, 58, 0.12);
+  overflow: hidden;
+}
+
+.leon-field-record:not(.is-expanded) .leon-field-record__scrim::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3.5rem;
+  background: linear-gradient(180deg, transparent 0%, rgba(244, 240, 230, 0.95) 70%);
+  pointer-events: none;
+  z-index: 3;
+}
+
+.leon-field-record__spine {
+  display: none;
+}
+
+@media (min-width: 640px) {
+  .leon-field-record__spine {
+    display: block;
+    position: absolute;
+    left: 17.5%;
+    top: 3.25rem;
+    bottom: 0.75rem;
+    width: 2px;
+    background: linear-gradient(
+      180deg,
+      rgba(196, 149, 42, 0.15) 0%,
+      rgba(28, 74, 58, 0.35) 12%,
+      rgba(28, 74, 58, 0.25) 88%,
+      transparent 100%
+    );
+    z-index: 1;
+    pointer-events: none;
+  }
+}
+
+.leon-field-record__scroll {
+  position: relative;
+  z-index: 2;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 0.35rem 0.65rem 0.85rem;
+}
+
+.leon-field-table {
+  width: 100%;
+  min-width: 34rem;
+  border-collapse: separate;
+  border-spacing: 0 0.35rem;
+  font-size: 0.9rem;
+}
+
+.leon-field-table__caption {
+  caption-side: top;
+  text-align: left;
+  padding: 0.95rem 0.85rem 0.65rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-text-soft, #6a635c);
+}
+
+.leon-field-table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 4;
+  padding: 0.7rem 0.9rem;
+  text-align: left;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #faf6ec;
+  background: linear-gradient(135deg, #1a4334 0%, #143528 55%, #1c4a3a 100%);
+  border-bottom: 2px solid rgba(228, 184, 74, 0.5);
+  box-shadow: 0 4px 12px rgba(20, 53, 40, 0.25);
+}
+
+.leon-field-table thead tr th:first-child {
+  border-radius: 0.5rem 0 0 0.5rem;
+  padding-left: 1rem;
+}
+
+.leon-field-table thead tr th:last-child {
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+/* Row cells – converge from left / right on scroll */
+.leon-field-row td,
+.leon-field-row th.leon-field-period {
+  padding: 0.8rem 0.9rem;
+  vertical-align: middle;
+  line-height: 1.48;
+  background: transparent;
+  border: none;
+}
+
+.leon-field-record:not(.leon-field-record--static) .leon-field-row:not(.is-row-visible) .leon-field-period {
+  opacity: 0;
+  transform: translateX(-2.75rem);
+}
+
+.leon-field-record:not(.leon-field-record--static) .leon-field-row:not(.is-row-visible) .leon-field-activity {
+  opacity: 0;
+  transform: translateY(0.65rem) scale(0.96);
+}
+
+.leon-field-record:not(.leon-field-record--static) .leon-field-row:not(.is-row-visible) .leon-field-where {
+  opacity: 0;
+  transform: translateX(2.75rem);
+}
+
+.leon-field-record:not(.leon-field-record--static) .leon-field-row--lane-right:not(.is-row-visible) .leon-field-period {
+  transform: translateX(-3.25rem);
+}
+
+.leon-field-record:not(.leon-field-record--static) .leon-field-row--lane-right:not(.is-row-visible) .leon-field-where {
+  transform: translateX(3.25rem);
+}
+
+.leon-field-period,
+.leon-field-activity,
+.leon-field-where {
+  transition:
+    opacity 0.65s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.72s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.leon-field-row.is-row-visible .leon-field-period {
+  transition-delay: 0.02s;
+}
+
+.leon-field-row.is-row-visible .leon-field-activity {
+  transition-delay: 0.1s;
+}
+
+.leon-field-row.is-row-visible .leon-field-where {
+  transition-delay: 0.18s;
+}
+
+.leon-field-row.is-row-visible .leon-field-period,
+.leon-field-row.is-row-visible .leon-field-activity,
+.leon-field-row.is-row-visible .leon-field-where {
+  opacity: 1;
+  transform: translate(0) scale(1);
+}
+
+.leon-field-record--static .leon-field-row .leon-field-period,
+.leon-field-record--static .leon-field-row .leon-field-activity,
+.leon-field-record--static .leon-field-row .leon-field-where {
+  opacity: 1;
+  transform: none;
+}
+
+@media (min-width: 640px) {
+  .leon-field-row .leon-field-period {
+    position: relative;
+    width: 11.5rem;
+    font-weight: 700;
+    font-size: 0.82rem;
+    color: var(--color-forest-deep, #143528);
+    white-space: nowrap;
+    padding-left: 1.15rem;
+  }
+
+  .leon-field-row .leon-field-period::after {
+    content: "";
+    position: absolute;
+    left: calc(100% + 0.35rem);
+    top: 50%;
+    width: 0.55rem;
+    height: 0.55rem;
+    margin-top: -0.28rem;
+    border-radius: 50%;
+    background: #faf6ec;
+    border: 2px solid rgba(196, 149, 42, 0.75);
+    box-shadow: 0 0 0 3px rgba(28, 74, 58, 0.08);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+  }
+
+  .leon-field-row.is-row-visible .leon-field-period::after {
+    transform: scale(1.08);
+    box-shadow: 0 0 0 5px rgba(196, 149, 42, 0.18);
+  }
+
+  .leon-field-row .leon-field-activity {
+    background: rgba(255, 255, 255, 0.72);
+    border-radius: 0.5rem;
+    border: 1px solid rgba(28, 74, 58, 0.08);
+    box-shadow: 0 4px 16px rgba(44, 36, 28, 0.05);
+    color: #243029;
+    font-weight: 600;
+    font-size: 0.91rem;
+  }
+
+  .leon-field-row:hover .leon-field-activity {
+    border-color: rgba(196, 149, 42, 0.35);
+    box-shadow: 0 8px 22px rgba(28, 74, 58, 0.09);
+  }
+
+  .leon-field-row .leon-field-where {
+    font-size: 0.84rem;
+    color: var(--color-text-soft, #5a6560);
+    padding-right: 0.5rem;
+  }
+}
+
+.leon-field-record:not(.is-expanded) .leon-field-row--more {
+  display: none;
+}
+
+.leon-field-record.is-expanded .leon-field-row--more {
+  display: table-row;
+}
+
+.leon-field-cat {
+  display: inline-block;
+  margin-top: 0.4rem;
+  padding: 0.14rem 0.5rem;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-radius: 999px;
+  color: #3d4a42;
+  background: rgba(28, 74, 58, 0.08);
+  border: 1px solid rgba(28, 74, 58, 0.12);
+}
+
+.leon-field-cat--bird-research {
+  background: rgba(28, 74, 58, 0.1);
+  border-color: rgba(28, 74, 58, 0.2);
+}
+
+.leon-field-cat--wildlife-surveys {
+  background: rgba(90, 110, 85, 0.12);
+}
+
+.leon-field-cat--environmental-assessment {
+  background: rgba(120, 90, 50, 0.1);
+  border-color: rgba(196, 149, 42, 0.25);
+}
+
+.leon-field-cat--guiding-leadership {
+  background: rgba(196, 149, 42, 0.12);
+}
+
+.leon-field-record__toggle {
+  margin-top: 1.15rem;
+}
+
+.leon-collab-grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 0.65rem;
+}
+
+@media (min-width: 640px) {
+  .leon-collab-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.leon-collab-card {
+  padding: 1rem 1.1rem;
+  border-radius: 0.45rem;
+  border: 1px solid var(--color-border, rgba(0, 0, 0, 0.08));
+  background: #fff;
+}
+
+.leon-collab-card h3 {
+  margin: 0 0 0.45rem;
+  font-size: 1rem;
+}
+
+.leon-collab-card p {
+  margin: 0 0 0.65rem;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--color-text-soft, #5a6560);
+}
+
+.leon-collab-explore-title {
+  margin: 1.25rem 0 0.35rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+/* Mobile – card stack with lateral slide */
+@media (max-width: 639px) {
+  .leon-field-record__spine {
+    display: none;
+  }
+
+  .leon-field-table,
+  .leon-field-table thead,
+  .leon-field-table tbody,
+  .leon-field-table tr,
+  .leon-field-table th,
+  .leon-field-table td {
+    display: block;
+    min-width: 0;
+  }
+
+  .leon-field-table {
+    border-spacing: 0;
+  }
+
+  .leon-field-table thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+  }
+
+  .leon-field-row {
+    margin-bottom: 0.9rem;
+    padding: 0.85rem 1rem;
+    border-radius: 0.55rem;
+    background: rgba(255, 255, 255, 0.85);
+    border: 1px solid rgba(28, 74, 58, 0.1);
+    box-shadow: 0 8px 24px rgba(28, 74, 58, 0.07);
+  }
+
+  .leon-field-record:not(.leon-field-record--static) .leon-field-row:not(.is-row-visible) {
+    opacity: 0;
+    transform: translateX(-1.5rem);
+  }
+
+  .leon-field-record:not(.leon-field-record--static) .leon-field-row--lane-right:not(.is-row-visible) {
+    transform: translateX(1.5rem);
+  }
+
+  .leon-field-row.is-row-visible {
+    opacity: 1;
+    transform: translateX(0);
+    transition:
+      opacity 0.55s ease,
+      transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .leon-field-row:not(.is-row-visible) .leon-field-period,
+  .leon-field-row:not(.is-row-visible) .leon-field-activity,
+  .leon-field-row:not(.is-row-visible) .leon-field-where {
+    opacity: 1;
+    transform: none;
+  }
+
+  .leon-field-record:not(.is-expanded) .leon-field-row--more {
+    display: none;
+  }
+
+  .leon-field-row th,
+  .leon-field-row td {
+    border: none;
+    padding: 0.22rem 0;
+  }
+
+  .leon-field-period {
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: var(--color-forest-deep);
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid rgba(196, 149, 42, 0.35);
+    margin-bottom: 0.35rem;
+  }
+
+  .leon-field-activity::before {
+    content: "Contribution";
+    display: block;
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-soft);
+    margin-bottom: 0.12rem;
+  }
+
+  .leon-field-where::before {
+    content: "Location / organisation";
+    display: block;
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-soft);
+    margin: 0.55rem 0 0.12rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .leon-field-row,
+  .leon-field-period,
+  .leon-field-activity,
+  .leon-field-where {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: background-color 0.15s ease !important;
+    animation: none !important;
+  }
+}

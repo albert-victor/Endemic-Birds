@@ -109,6 +109,21 @@
       { title: "Wildlife safaris", href: "wildlife/index.html", type: "Hub", summary: "National parks and plains" },
       { title: "All packages", href: "packages/index.html", type: "Hub", summary: "Curated itineraries" },
       { title: "Plan your trip", href: "plan-your-trip/index.html", type: "Enquiry", summary: "Book a tailor-made safari" },
+      { title: "About Us", href: "about/index.html", type: "About", summary: "Southern Tanzania birding company based in Iringa" },
+      { title: "Why Choose Us", href: "about/why-choose-us/index.html", type: "About", summary: "Private guiding and how a trip is run" },
+      { title: "Our Team", href: "about/team/index.html", type: "About", summary: "Who is in the field with you" },
+      {
+        title: "Leons J. Mlawila",
+        href: "about/leons-mlawila/index.html",
+        type: "About",
+        summary: "Tanzania birding guide – documented field chronology",
+      },
+      { title: "Trip Reports", href: "about/trip-reports/index.html", type: "About", summary: "Owner-approved field reports – sample packages listed separately" },
+      { title: "Tour Training", href: "about/tour-training/index.html", type: "About", summary: "Enquiry-led guide and operator familiarisation" },
+      { title: "Our Partners", href: "about/partners/index.html", type: "About", summary: "Verified commercial partners only" },
+      { title: "Terms and policies", href: "about/policies/index.html", type: "About", summary: "Privacy and how bookings are agreed" },
+      { title: "Tour calendar", href: "about/tour-calendar/index.html", type: "About", summary: "Seasonal planning for forests, miombo and plains" },
+      { title: "Special birds", href: "birding/special-birds/index.html", type: "Birding", summary: "Endemic and specialist target species catalogue" },
     ].forEach((h) => items.push({ ...h, href: asset(h.href), keywords: h.title }));
 
     return items;
@@ -162,7 +177,7 @@
     ensureIndex().then(() => {
       requestAnimationFrame(() => {
         input?.focus();
-        if (input && !input.value.trim()) renderDefaultHints();
+        if (input && !input.value.trim()) renderIdleSearch();
       });
     });
   }
@@ -207,7 +222,7 @@
     const q = input.value.trim();
     ensureIndex().then(() => {
       if (!q.length) {
-        renderDefaultHints();
+        renderIdleSearch();
         return;
       }
       if (q.length < 1) return;
@@ -215,14 +230,10 @@
     });
   }
 
-  function renderDefaultHints() {
-    ensureIndex().then(() => {
-      const picks = defaultSuggestions(8);
-      const hint = picks.length
-        ? `<li class="site-search-hint">Popular journeys &amp; places – keep typing for more</li>`
-        : `<li class="site-search-hint">Start typing to search all packages and destinations</li>`;
-      renderResults(picks, hint);
-    });
+  function renderIdleSearch() {
+    const ul = getShell()?.querySelector("[data-site-search-results]");
+    if (!ul) return;
+    ul.innerHTML = `<li class="site-search-hint site-search-hint--idle">Type a place, species or package name to search the site.</li>`;
   }
 
   function bindSearchShell() {
@@ -243,7 +254,7 @@
     });
 
     input?.addEventListener("focus", () => {
-      if (!input.value.trim()) renderDefaultHints();
+      if (!input.value.trim()) renderIdleSearch();
     });
   }
 

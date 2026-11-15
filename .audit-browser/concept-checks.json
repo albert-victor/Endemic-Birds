@@ -1,0 +1,170 @@
+{
+  "checks": [
+    {
+      "width": 1440,
+      "overflow": false,
+      "fonts": [
+        {
+          "family": "DM Sans",
+          "status": "loaded"
+        },
+        {
+          "family": "DM Sans",
+          "status": "loaded"
+        },
+        {
+          "family": "DM Sans",
+          "status": "loaded"
+        },
+        {
+          "family": "DM Sans",
+          "status": "loaded"
+        },
+        {
+          "family": "Playfair Display",
+          "status": "loaded"
+        },
+        {
+          "family": "Playfair Display",
+          "status": "loaded"
+        },
+        {
+          "family": "Playfair Display",
+          "status": "unloaded"
+        },
+        {
+          "family": "Playfair Display",
+          "status": "unloaded"
+        }
+      ],
+      "broken": []
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "fonts": [
+        {
+          "family": "DM Sans",
+          "status": "loaded"
+        },
+        {
+          "family": "DM Sans",
+          "status": "loaded"
+        },
+        {
+          "family": "DM Sans",
+          "status": "loaded"
+        },
+        {
+          "family": "DM Sans",
+          "status": "loaded"
+        },
+        {
+          "family": "Playfair Display",
+          "status": "loaded"
+        },
+        {
+          "family": "Playfair Display",
+          "status": "loaded"
+        },
+        {
+          "family": "Playfair Display",
+          "status": "unloaded"
+        },
+        {
+          "family": "Playfair Display",
+          "status": "unloaded"
+        }
+      ],
+      "broken": []
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "fonts": [
+        {
+          "family": "DM Sans",
+          "status": "loaded"
+        },
+        {
+          "family": "DM Sans",
+          "status": "loaded"
+        },
+        {
+          "family": "DM Sans",
+          "status": "loaded"
+        },
+        {
+          "family": "DM Sans",
+          "status": "loaded"
+        },
+        {
+          "family": "Playfair Display",
+          "status": "loaded"
+        },
+        {
+          "family": "Playfair Display",
+          "status": "loaded"
+        },
+        {
+          "family": "Playfair Display",
+          "status": "unloaded"
+        },
+        {
+          "family": "Playfair Display",
+          "status": "unloaded"
+        }
+      ],
+      "broken": []
+    },
+    {
+      "width": 320,
+      "overflow": false,
+      "fonts": [
+        {
+          "family": "DM Sans",
+          "status": "loaded"
+        },
+        {
+          "family": "DM Sans",
+          "status": "loaded"
+        },
+        {
+          "family": "DM Sans",
+          "status": "loaded"
+        },
+        {
+          "family": "DM Sans",
+          "status": "loaded"
+        },
+        {
+          "family": "Playfair Display",
+          "status": "loaded"
+        },
+        {
+          "family": "Playfair Display",
+          "status": "loaded"
+        },
+        {
+          "family": "Playfair Display",
+          "status": "unloaded"
+        },
+        {
+          "family": "Playfair Display",
+          "status": "unloaded"
+        }
+      ],
+      "broken": []
+    },
+    {
+      "menu": "true"
+    },
+    {
+      "journey": "endemics"
+    },
+    {
+      "brief": "Your preview brief: Tanzania endemics · 2 travellers · Dates flexible. This is a design demonstration; no enquiry has been sent."
+    }
+  ],
+  "errors": []
+}

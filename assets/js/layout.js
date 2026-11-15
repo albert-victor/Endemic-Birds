@@ -30,6 +30,34 @@
     document.head.appendChild(enh);
   }
 
+  if (!document.querySelector('link[href*="preview-luxury/fonts.css"]')) {
+    const playfairDm = document.createElement("link");
+    playfairDm.rel = "stylesheet";
+    playfairDm.href = asset("preview-luxury/fonts.css");
+    document.head.appendChild(playfairDm);
+  }
+
+  if (!document.querySelector('link[href*="futura-pt.css"]')) {
+    const futura = document.createElement("link");
+    futura.rel = "stylesheet";
+    futura.href = asset("preview-luxury/fonts/futura-pt.css");
+    document.head.appendChild(futura);
+  }
+
+  if (!document.querySelector('link[href*="typography-site.css"]')) {
+    const typo = document.createElement("link");
+    typo.rel = "stylesheet";
+    typo.href = asset("assets/css/typography-site.css");
+    document.head.appendChild(typo);
+  }
+
+  if (!document.querySelector('link[href*="fonts.googleapis.com/css2?family=Marck')) {
+    const marck = document.createElement("link");
+    marck.rel = "stylesheet";
+    marck.href = "https://fonts.googleapis.com/css2?family=Marck+Script&display=swap";
+    document.head.appendChild(marck);
+  }
+
   if (!document.querySelector('link[href*="font-awesome"]')) {
     const fa = document.createElement("link");
     fa.rel = "stylesheet";
@@ -42,7 +70,7 @@
     {
       href: "destinations/birding/index.html#destinations-grid",
       label: "Birding destinations",
-      desc: "Forests, miombo & endemics – Tanzania, Uganda & Rwanda",
+      desc: "Forests, miombo & endemics – Tanzania birding circuits",
       image: "endemics/perfect-moment-bird-watching-1536x872.jpg",
     },
     {
@@ -64,10 +92,12 @@
 
   const drawerLinks = [
     { href: "plan-your-trip/index.html", label: "Booking & Enquiries" },
+    { href: "accommodations/index.html", label: "Accommodation" },
+    { href: "birding/special-birds/index.html", label: "Special birds" },
     { href: "packages/index.html", label: "All Safari Packages" },
     { href: "destinations/index.html", label: "All destinations" },
     { href: "combined/index.html", label: "Birding + Wildlife" },
-    { href: "privacy/index.html", label: "Privacy policy" },
+    { href: "about/policies/index.html", label: "Terms & policies" },
     { href: "about/index.html#contact", label: "Contact" },
   ];
 
@@ -79,6 +109,7 @@
       id: "destinations",
       dropdown: destinationHubLinks,
     },
+    { href: asset("accommodations/index.html"), label: "Accommodation", id: "accommodations" },
     {
       label: "Wildlife",
       id: "wildlife",
@@ -86,7 +117,74 @@
       columns: [{ title: "Experiences", links: wildlifeActivities }],
       megaCta: { href: "wildlife/index.html", label: "View wildlife safaris →" },
     },
-    { href: asset("about/index.html"), label: "About Us", id: "about" },
+    {
+      label: "About",
+      id: "about",
+      groups: [
+        {
+          title: "The company",
+          links: [
+            {
+              href: "about/index.html",
+              label: "About Us",
+              desc: "Southern Tanzania birding, from Iringa",
+            },
+            {
+              href: "about/why-choose-us/index.html",
+              label: "Why Choose Us",
+              desc: "Private guiding and how a trip is run",
+            },
+            {
+              href: "about/team/index.html",
+              label: "Our Team",
+              desc: "Who is in the field with you",
+            },
+          ],
+        },
+        {
+          title: "Field and planning",
+          links: [
+            {
+              href: "about/trip-reports/index.html",
+              label: "Trip Reports",
+              desc: "Field notes, published when they are ready",
+            },
+            {
+              href: "about/tour-training/index.html",
+              label: "Tour Training",
+              desc: "Familiarisation for guides and operators",
+            },
+          ],
+        },
+        {
+          title: "Working with us",
+          links: [
+            {
+              href: "about/partners/index.html",
+              label: "Our Partners",
+              desc: "Ground support for overseas operators",
+            },
+            {
+              href: "about/policies/index.html",
+              label: "Terms & Policies",
+              desc: "Published privacy, draft booking terms, owner checklist",
+            },
+          ],
+        },
+      ],
+      secondary: [
+        {
+          href: "about/leons-mlawila/index.html",
+          label: "Leons J. Mlawila",
+          desc: "Guide and tour operator",
+        },
+        {
+          href: "about/tour-calendar/index.html",
+          label: "Tour Calendar",
+          desc: "When forests, woodland and plains are at their best",
+        },
+      ],
+    },
   ];
 
   function isActive(item) {
@@ -106,11 +204,63 @@
     return `<div class="nav-mega-col"><h3>${col.title}</h3><ul>${links}</ul></div>`;
   }
 
+  function renderAboutLink(link) {
+    return `<a class="nav-about-link" href="${asset(link.href)}">
+      <span class="nav-about-link-title">${link.label}</span>
+      ${link.desc ? `<span class="nav-about-link-desc">${link.desc}</span>` : ""}
+    </a>`;
+  }
+
+  function renderAboutPanel(item) {
+    const groups = item.groups
+      .map((group) => {
+        const links = group.links.map((link) => `<li>${renderAboutLink(link)}</li>`).join("");
+        return `<div class="nav-about-group"><h3>${group.title}</h3><ul>${links}</ul></div>`;
+      })
+      .join("");
+    const secondary = (item.secondary || []).map((link) => renderAboutLink(link)).join("");
+    return `<div class="nav-about-groups">${groups}</div><div class="nav-about-secondary">${secondary}</div>`;
+  }
+
+  function renderDrawerAbout(item) {
+    const subs = item.groups
+      .map((group) => {
+        const links = group.links
+          .map(
+            (link) =>
+              `<li><a href="${asset(link.href)}"><span class="nav-drawer-sub-title">${link.label}</span>${link.desc ? `<span class="nav-drawer-sub-desc">${link.desc}</span>` : ""}</a></li>`
+          )
+          .join("");
+        return `<li class="nav-drawer-kicker">${group.title}</li>${links}`;
+      })
+      .join("");
+    const secondary = (item.secondary || [])
+      .map(
+        (link) =>
+          `<li><a class="nav-drawer-sub-cta" href="${asset(link.href)}"><span class="nav-drawer-sub-title">${link.label}</span>${link.desc ? `<span class="nav-drawer-sub-desc">${link.desc}</span>` : ""}</a></li>`
+      )
+      .join("");
+    return `<li class="nav-drawer-group">
+      <button type="button" class="nav-drawer-accordion nav-drawer-tile" aria-expanded="false" aria-controls="nav-drawer-about" data-drawer-accordion>${item.label}</button>
+      <ul class="nav-drawer-sub" id="nav-drawer-about">${subs}${secondary}</ul>
+    </li>`;
+  }
+
   function buildNav(logos) {
     const logoOnLight = logos.onLight || DEFAULT_MEDIA.brandLogo;
     const logoOnDark = logos.onDark || DEFAULT_MEDIA.brandLogoLight;
     const links = navItems
       .map((item) => {
+        if (item.groups) {
+          const activeParent = item.id === document.body.dataset.nav ? " is-active" : "";
+          return `<li class="nav-item has-dropdown has-mega nav-about${activeParent}">
+            <button type="button" class="nav-dropdown-trigger nav-rail-link nav-link-animated" aria-expanded="false" aria-haspopup="true" aria-controls="nav-about-menu">
+              <span>${item.label}</span>
+              <svg class="nav-chevron" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+            </button>
+            <div class="nav-dropdown nav-mega nav-about-panel" id="nav-about-menu">${renderAboutPanel(item)}</div>
+          </li>`;
+        }
         if (item.dropdown) {
           const menuLinks = item.dropdown
             .map((l) => {
@@ -162,6 +312,7 @@
     function buildDrawerNav() {
       const primary = navItems
         .map((item) => {
+          if (item.groups) return renderDrawerAbout(item);
           if (item.href && !item.dropdown && !item.mega) {
             const active = isActive(item) ? ' aria-current="page"' : "";
             return `<li><a class="nav-drawer-tile" href="${item.href}"${active}>${item.label}</a></li>`;
@@ -231,11 +382,15 @@
     </header>
     <div class="nav-drawer-backdrop" data-nav-drawer-backdrop aria-hidden="true"></div>
     <aside class="nav-drawer" id="nav-drawer" aria-label="Site menu" aria-hidden="true">
-      <button type="button" class="nav-drawer-close" data-nav-drawer-close aria-label="Close menu">×</button>
-      <h2>Menu</h2>
+      <div class="nav-drawer-head">
+        <button type="button" class="nav-drawer-close" data-nav-drawer-close aria-label="Close menu">×</button>
+        <h2>Menu</h2>
+      </div>
       <ul class="nav-drawer-links">${drawer}</ul>
-      <a class="nav-drawer-book btn btn-solid" href="${asset("plan-your-trip/index.html")}"><i class="fa-solid fa-plane-departure" aria-hidden="true"></i> Book a safari</a>
-      <p class="nav-drawer-note">Specialist birding safaris · Iringa, Tanzania</p>
+      <div class="nav-drawer-foot">
+        <a class="nav-drawer-book btn btn-solid" href="${asset("plan-your-trip/index.html")}"><i class="fa-solid fa-plane-departure" aria-hidden="true"></i> Book a safari</a>
+        <p class="nav-drawer-note">Specialist birding safaris · Iringa, Tanzania</p>
+      </div>
     </aside>`;
   }
 
@@ -449,6 +604,13 @@
       document.body.appendChild(navScript);
     }
 
+    if (!document.querySelector('script[src*="motion.js"]')) {
+      const motionScript = document.createElement("script");
+      motionScript.src = asset("assets/js/motion.js");
+      motionScript.defer = true;
+      document.body.appendChild(motionScript);
+    }
+
     const footerBgResolved =
       media.footerBackground && !media.footerBackground.includes("sticky section")
         ? media.footerBackground
@@ -457,6 +619,7 @@
     const layoutDetail = { media: { ...media, footerBackground: footerBgResolved } };
     queueMicrotask(() => {
       document.dispatchEvent(new CustomEvent("site:layout-ready", { detail: layoutDetail }));
+      window.initNavMotion?.();
       window.EndemicSearch?.initSearch?.();
     });
   }

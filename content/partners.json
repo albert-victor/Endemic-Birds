@@ -1,0 +1,31 @@
+{
+  "page": {
+    "seo": {
+      "title": "Our Partners | Endemic Birds Tanzania",
+      "description": "Commercial ground partners and collaborators for birding safaris – published only with owner-verified agreements. No implied endorsement."
+    },
+    "eyebrow": "Our partners",
+    "title": "Ground partners and collaborators",
+    "lead": "We list commercial relationships here only when the owner has confirmed an active agreement and logo permission. Regulator or membership logos are not shown as endorsements unless separately verified.",
+    "groundPartnerBlurb": "International tour operators use Endemic Birds for routing, vehicles, permits, lodge blocks and specialist guiding on Southern Tanzania and Eastern Arc modules. Your brand stays in front; we execute in the field.",
+    "emptyCommercialTitle": "No public partner logos yet",
+    "emptyCommercialBody": "When agreements are confirmed, current partners appear below with a short description and outbound link. We do not display another company’s logo without permission.",
+    "cta": {
+      "label": "Operator and partnership enquiry",
+      "href": "plan-your-trip/index.html?interest=operator"
+    },
+    "related": [
+      { "label": "Tour training", "href": "about/tour-training/index.html" },
+      { "label": "Trip reports", "href": "about/trip-reports/index.html" },
+      { "label": "About overview", "href": "about/index.html" }
+    ]
+  },
+  "commercial": {
+    "current": [],
+    "past": []
+  },
+  "homeCarousel": {
+    "showOnlyVerified": true,
+    "note": "Home page carousel uses commercial.current entries with verified: true only."
+  }
+}

@@ -1,0 +1,414 @@
+{
+  "meta": {
+    "displayName": "Leons J. Mlawila",
+    "caption": "Documented field contributions drawn from owner-supplied chronology – a selected record, not a complete account of every year.",
+    "highlightIntro": "These highlights show the breadth of atlas work, surveys, environmental fieldwork and guiding. Open the full table for every dated entry on file.",
+    "entryCount": 48
+  },
+  "categoryLabels": {
+    "bird-research": "Bird research",
+    "wildlife-surveys": "Wildlife surveys",
+    "environmental-assessment": "Environmental assessment",
+    "guiding-leadership": "Guiding & leadership",
+    "professional-development": "Professional development"
+  },
+  "entries": [
+    {
+      "id": "tbap-training-1993",
+      "displayPeriod": "1993–1998",
+      "activity": "Training with Tanzania Bird Atlas Project (TBAP)",
+      "location": "Tanzania",
+      "organisation": "Tanzania Bird Atlas Project",
+      "category": "bird-research",
+      "highlight": true
+    },
+    {
+      "id": "tbap-atlas-1998",
+      "displayPeriod": "1998–2018",
+      "activity": "Atlas data collection for the TBAP citizen-science project",
+      "location": "Tanzania",
+      "organisation": "Tanzania Bird Atlas Project",
+      "category": "bird-research",
+      "highlight": true
+    },
+    {
+      "id": "nyumburuni-2002",
+      "displayPeriod": "2002",
+      "activity": "Fieldwork",
+      "location": "Nyumburuni Forest Reserve, Utete District",
+      "organisation": "REMP",
+      "category": "wildlife-surveys"
+    },
+    {
+      "id": "mufindi-2004",
+      "displayPeriod": "2004",
+      "activity": "Biodiversity surveys",
+      "location": "Mufindi District",
+      "organisation": "Tanzania Forest Conservation Group",
+      "category": "wildlife-surveys"
+    },
+    {
+      "id": "ntakata-2005",
+      "displayPeriod": "2005",
+      "activity": "Fieldwork",
+      "location": "Ntakata Forest Reserve",
+      "organisation": "Frankfurt Zoological Society",
+      "category": "wildlife-surveys",
+      "highlight": true
+    },
+    {
+      "id": "waterbird-2005",
+      "displayPeriod": "2005",
+      "activity": "International Waterbird Count",
+      "location": "Usangu, Bahi and Mtera",
+      "organisation": null,
+      "category": "bird-research"
+    },
+    {
+      "id": "mpingo-2006",
+      "displayPeriod": "2006",
+      "activity": "Fieldwork for Mpingo Conservation Project",
+      "location": "Kilwa District",
+      "organisation": "Mpingo Conservation Project",
+      "category": "wildlife-surveys"
+    },
+    {
+      "id": "ai-phase1-2006",
+      "displayPeriod": "2006",
+      "activity": "Avian influenza sampling fieldwork, Phase I",
+      "location": "Tanzania",
+      "organisation": "Ministry of Livestock Development",
+      "category": "wildlife-surveys"
+    },
+    {
+      "id": "ai-phase2-2007",
+      "displayPeriod": "2007",
+      "activity": "Avian influenza sampling fieldwork, Phase II",
+      "location": "Tanzania",
+      "organisation": "Ministry of Livestock Development",
+      "category": "wildlife-surveys"
+    },
+    {
+      "id": "house-crow-2007",
+      "displayPeriod": "2007",
+      "activity": "Village surveys of Indian House Crow",
+      "location": "Tanzania",
+      "organisation": "WCST Tanzania / MNRT",
+      "category": "wildlife-surveys"
+    },
+    {
+      "id": "ihefu-2007",
+      "displayPeriod": "2007",
+      "activity": "Fieldwork",
+      "location": "Ihefu Swamp, Usangu",
+      "organisation": "World Wildlife Fund",
+      "category": "wildlife-surveys"
+    },
+    {
+      "id": "rubeho-2007",
+      "displayPeriod": "2007",
+      "activity": "Biodiversity survey",
+      "location": "Rubeho Mountains",
+      "organisation": "Frontier Tanzania",
+      "category": "wildlife-surveys"
+    },
+    {
+      "id": "mantra-2008",
+      "displayPeriod": "2008",
+      "activity": "Fieldwork for Mantra Uranium Project environmental impact assessment",
+      "location": "Tanzania",
+      "organisation": "Mantra Uranium Project",
+      "category": "environmental-assessment"
+    },
+    {
+      "id": "paoc-2008",
+      "displayPeriod": "2008",
+      "activity": "Pan-African Ornithological Congress",
+      "location": "Cape Town",
+      "organisation": null,
+      "category": "professional-development",
+      "highlight": true
+    },
+    {
+      "id": "southern-africa-2008",
+      "displayPeriod": "2008",
+      "activity": "Two months of birding in southern Africa",
+      "location": "Southern Africa (countries not specified in source)",
+      "organisation": null,
+      "category": "professional-development"
+    },
+    {
+      "id": "songas-2009",
+      "displayPeriod": "2009",
+      "activity": "SONGAS environmental impact assessment fieldwork",
+      "location": "Tanzania",
+      "organisation": "Tanzania Forest Conservation Group",
+      "category": "environmental-assessment"
+    },
+    {
+      "id": "mantra-ii-2009",
+      "displayPeriod": "2009",
+      "activity": "Mantra fieldwork, Phase II",
+      "location": "Tanzania",
+      "organisation": "Mantra Uranium Project",
+      "category": "environmental-assessment"
+    },
+    {
+      "id": "wigu-2009",
+      "displayPeriod": "2009",
+      "activity": "Wigu Hill rare-earth minerals site environmental impact assessment fieldwork",
+      "location": "Wigu Hill",
+      "organisation": null,
+      "category": "environmental-assessment"
+    },
+    {
+      "id": "marabou-2009",
+      "displayPeriod": "2009",
+      "activity": "Fieldwork fitting satellite transmitters to Marabou Storks",
+      "location": "Tanzania",
+      "organisation": "AI project (as named in owner source)",
+      "category": "bird-research"
+    },
+    {
+      "id": "krakow-2009",
+      "displayPeriod": "2009",
+      "activity": "Fieldwork ringing Palaearctic migrants in the Masai Steppe",
+      "location": "Masai Steppe",
+      "organisation": "University of Krakow (as named in owner source)",
+      "category": "bird-research",
+      "highlight": true
+    },
+    {
+      "id": "widowbird-2010",
+      "displayPeriod": "2010",
+      "activity": "Southern Highlands widowbird project fieldwork",
+      "location": "Southern Highlands",
+      "organisation": "Gothenburg University",
+      "category": "bird-research"
+    },
+    {
+      "id": "widowbird-ii-2011",
+      "displayPeriod": "2011",
+      "activity": "Southern Highlands widowbird project fieldwork, Phase II",
+      "location": "Southern Highlands",
+      "organisation": "Gothenburg University",
+      "category": "bird-research"
+    },
+    {
+      "id": "makambako-i-2011",
+      "displayPeriod": "2011",
+      "activity": "Makambako Wind Farm environmental impact assessment fieldwork, Phase I",
+      "location": "Makambako",
+      "organisation": null,
+      "category": "environmental-assessment"
+    },
+    {
+      "id": "elephant-2012",
+      "displayPeriod": "2012",
+      "activity": "Elephant transects",
+      "location": "Ruaha and Katavi National Parks",
+      "organisation": "TAWIRI",
+      "category": "wildlife-surveys",
+      "highlight": true
+    },
+    {
+      "id": "paoc-2012",
+      "displayPeriod": "2012",
+      "activity": "Pan-African Ornithological Congress (certificate noted in owner source)",
+      "location": "Arusha",
+      "organisation": null,
+      "category": "professional-development",
+      "highlight": true
+    },
+    {
+      "id": "ruhudji-2012",
+      "displayPeriod": "2012",
+      "activity": "Ruhudji Hydro environmental impact assessment fieldwork",
+      "location": "Tanzania",
+      "organisation": null,
+      "category": "environmental-assessment"
+    },
+    {
+      "id": "blue-swallow-2012",
+      "displayPeriod": "2012",
+      "activity": "Blue Swallow survey",
+      "location": "Tanzania",
+      "organisation": "With Steven Evans",
+      "category": "bird-research"
+    },
+    {
+      "id": "step-2013",
+      "displayPeriod": "2013",
+      "activity": "Southern Tanzania Elephant Project (STEP) fieldwork",
+      "location": "Southern Tanzania",
+      "organisation": "STEP",
+      "category": "wildlife-surveys",
+      "highlight": true
+    },
+    {
+      "id": "acacia-2013",
+      "displayPeriod": "2013",
+      "activity": "Acacia mapping",
+      "location": "Songea, Njombe, Mbeya, Tabora and Iringa",
+      "organisation": "University of York",
+      "category": "wildlife-surveys"
+    },
+    {
+      "id": "raleigh-2013",
+      "displayPeriod": "2013–2018",
+      "activity": "Trekking team leader",
+      "location": "Iringa and Tanga regions",
+      "organisation": "Raleigh International",
+      "category": "guiding-leadership",
+      "highlight": true
+    },
+    {
+      "id": "step-2014",
+      "displayPeriod": "2014",
+      "activity": "Southern Tanzania Elephant Project (STEP) fieldwork",
+      "location": "Southern Tanzania",
+      "organisation": "STEP",
+      "category": "wildlife-surveys"
+    },
+    {
+      "id": "makambako-ii-2016",
+      "displayPeriod": "2016",
+      "activity": "Makambako Wind Farm environmental impact assessment fieldwork, Phase II",
+      "location": "Makambako",
+      "organisation": null,
+      "category": "environmental-assessment"
+    },
+    {
+      "id": "madaba-2016",
+      "displayPeriod": "2016",
+      "activity": "Madaba Uranium project fieldwork",
+      "location": "Selous Game Reserve",
+      "organisation": "Olympic Tanzania",
+      "category": "environmental-assessment"
+    },
+    {
+      "id": "ruangwa-2016",
+      "displayPeriod": "2016",
+      "activity": "Ruangwa Graphite Project environmental impact assessment fieldwork",
+      "location": "Tanzania",
+      "organisation": "Uranex Tanzania",
+      "category": "environmental-assessment"
+    },
+    {
+      "id": "helium-2017",
+      "displayPeriod": "2017",
+      "activity": "Helium One Rukwa environmental impact assessment fieldwork, Phases I and II",
+      "location": "Rukwa",
+      "organisation": "Align Tanzania",
+      "category": "environmental-assessment"
+    },
+    {
+      "id": "eacop-i-2017",
+      "displayPeriod": "2017",
+      "activity": "EACOP Uganda–Tanga Oil Pipeline environmental impact assessment fieldwork, Phase I",
+      "location": "Tanzania (as documented in source)",
+      "organisation": null,
+      "category": "environmental-assessment"
+    },
+    {
+      "id": "nala-i-ii-2017",
+      "displayPeriod": "2017",
+      "activity": "Nala Wind Farm environmental impact assessment fieldwork, Phases I and II",
+      "location": "Dodoma",
+      "organisation": null,
+      "category": "environmental-assessment"
+    },
+    {
+      "id": "vulture-2017",
+      "displayPeriod": "2017",
+      "activity": "Vulture transects",
+      "location": "Ruaha and Katavi National Parks",
+      "organisation": "WCS",
+      "category": "wildlife-surveys"
+    },
+    {
+      "id": "audit-ikoma-2017",
+      "displayPeriod": "2017",
+      "activity": "Environmental audits",
+      "location": "Ikoma and Ndutu",
+      "organisation": "Align Tanzania for Asalia Tanzania (as written in owner source)",
+      "category": "environmental-assessment"
+    },
+    {
+      "id": "guiding-2017",
+      "displayPeriod": "2017",
+      "activity": "Bird guiding",
+      "location": "Tanzania",
+      "organisation": "Matambezi Safaris / Rockjumper (as named in owner source)",
+      "category": "guiding-leadership",
+      "highlight": true
+    },
+    {
+      "id": "ihefu-tanapa-2017",
+      "displayPeriod": "2017",
+      "activity": "Fieldwork",
+      "location": "Ihefu Swamp, Ruaha National Park",
+      "organisation": "Tanzania National Parks",
+      "category": "wildlife-surveys"
+    },
+    {
+      "id": "ttga-2017",
+      "displayPeriod": "2017–2018",
+      "activity": "Vice Chairman, Southern Zone",
+      "location": "Tanzania",
+      "organisation": "Tanzania Tour Guides Association",
+      "category": "guiding-leadership",
+      "highlight": true
+    },
+    {
+      "id": "eacop-ii-2018",
+      "displayPeriod": "2018",
+      "activity": "EACOP Uganda–Tanga Oil Pipeline environmental impact assessment fieldwork, Phase II",
+      "location": "Tanzania (as documented in source)",
+      "organisation": null,
+      "category": "environmental-assessment"
+    },
+    {
+      "id": "makambako-iii-2018",
+      "displayPeriod": "2018",
+      "activity": "Makambako Wind Farm environmental impact assessment fieldwork, Phase III",
+      "location": "Makambako",
+      "organisation": null,
+      "category": "environmental-assessment"
+    },
+    {
+      "id": "nala-iii-2018",
+      "displayPeriod": "2018",
+      "activity": "Nala Wind Farm environmental impact assessment fieldwork, Phase III",
+      "location": "Dodoma",
+      "organisation": null,
+      "category": "environmental-assessment"
+    },
+    {
+      "id": "udzungwa-2018",
+      "displayPeriod": "2018",
+      "activity": "Field assistant at Udzungwa National Park for postdoctoral studies",
+      "location": "Udzungwa National Park",
+      "organisation": "University of Denmark (as described in owner source)",
+      "category": "bird-research",
+      "highlight": true
+    },
+    {
+      "id": "audit-2018",
+      "displayPeriod": "2018",
+      "activity": "Environmental audits",
+      "location": "Rubondo, Oliver's Tarangire and Jabali Ridge, Ruaha National Park",
+      "organisation": "Align Tanzania for Asalia Tanzania (as written in owner source)",
+      "category": "environmental-assessment"
+    },
+    {
+      "id": "vulture-2019",
+      "displayPeriod": "2019–2023",
+      "activity": "Vulture transect fieldwork",
+      "location": "Ruaha and Katavi National Parks",
+      "organisation": "WCS",
+      "category": "wildlife-surveys",
+      "highlight": true
+    }
+  ]
+}

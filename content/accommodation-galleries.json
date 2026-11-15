@@ -1,0 +1,419 @@
+{
+  "meta": {
+    "builtAt": "2026-11-15T22:35:37.010Z",
+    "note": "Built from accommodations/{slug} and assets/images/accommodations/{slug}. Run: npm run build:accommodation-galleries"
+  },
+  "galleries": {
+    "neema-craft-iringa": [
+      {
+        "src": "accommodations/neema-craft-iringa/neema craft3.jpg",
+        "v": 1794777028674,
+        "bytes": 320533
+      },
+      {
+        "src": "accommodations/neema-craft-iringa/neema craft_1.jpg",
+        "v": 1794776992617,
+        "bytes": 70654
+      },
+      {
+        "src": "accommodations/neema-craft-iringa/neema_craft2.webp",
+        "v": 1794777008426,
+        "bytes": 40532
+      },
+      {
+        "src": "assets/images/accommodations/neema-craft-iringa/hero.jpg",
+        "v": 1794737986000,
+        "bytes": 175249
+      }
+    ],
+    "ruaha-river-lodge": [
+      {
+        "src": "accommodations/ruaha-river-lodge/sven_la_ruaha-23_1abb0553.webp",
+        "v": 1794777351004,
+        "bytes": 891776
+      },
+      {
+        "src": "accommodations/ruaha-river-lodge/images (3).jpg",
+        "v": 1794777318787,
+        "bytes": 67962
+      },
+      {
+        "src": "accommodations/ruaha-river-lodge/images.jpg",
+        "v": 1794777329252,
+        "bytes": 50732
+      },
+      {
+        "src": "accommodations/ruaha-river-lodge/images (1).jpg",
+        "v": 1794777339617,
+        "bytes": 38298
+      },
+      {
+        "src": "assets/images/accommodations/ruaha-river-lodge/hero.jpg",
+        "v": 1794737989743,
+        "bytes": 879198
+      }
+    ],
+    "mufindi-fish-lodge": [
+      {
+        "src": "accommodations/mufindi-fish-lodge/Room-in-Mufindi-Highland-Lodge-Easy-Travel-Tanzania.jpg.webp",
+        "v": 1794778225156,
+        "bytes": 61786
+      },
+      {
+        "src": "accommodations/mufindi-fish-lodge/images (3).jpg",
+        "v": 1794778203784,
+        "bytes": 43162
+      },
+      {
+        "src": "accommodations/mufindi-fish-lodge/images.jpg",
+        "v": 1794778212403,
+        "bytes": 36914
+      },
+      {
+        "src": "assets/images/accommodations/mufindi-fish-lodge/hero.jpg",
+        "v": 1794738422383,
+        "bytes": 481297
+      }
+    ],
+    "old-kisolanza-farm": [
+      {
+        "src": "accommodations/old-kisolanza-farm/images.jpg",
+        "v": 1794778364170,
+        "bytes": 51159
+      },
+      {
+        "src": "accommodations/old-kisolanza-farm/images (2).jpg",
+        "v": 1794778385798,
+        "bytes": 47371
+      },
+      {
+        "src": "accommodations/old-kisolanza-farm/images (3).jpg",
+        "v": 1794778392718,
+        "bytes": 38431
+      },
+      {
+        "src": "accommodations/old-kisolanza-farm/images (1).jpg",
+        "v": 1794778373587,
+        "bytes": 26182
+      },
+      {
+        "src": "assets/images/accommodations/old-kisolanza-farm/hero.jpg",
+        "v": 1794738016822,
+        "bytes": 109902
+      }
+    ],
+    "ikoma-bush-tented-camp": [
+      {
+        "src": "accommodations/ikoma-bush-tented-camp/images (1).jpg",
+        "v": 1794777867381,
+        "bytes": 43068
+      },
+      {
+        "src": "accommodations/ikoma-bush-tented-camp/images.jpg",
+        "v": 1794777858918,
+        "bytes": 30006
+      },
+      {
+        "src": "accommodations/ikoma-bush-tented-camp/images (2).jpg",
+        "v": 1794777850055,
+        "bytes": 23445
+      },
+      {
+        "src": "assets/images/accommodations/ikoma-bush-tented-camp/hero.jpg",
+        "v": 1794738428965,
+        "bytes": 122214
+      }
+    ],
+    "southern-miombo-bush-camp": [
+      {
+        "src": "accommodations/southern-miombo-bush-camp/images.jpg",
+        "v": 1794778536598,
+        "bytes": 94083
+      },
+      {
+        "src": "accommodations/southern-miombo-bush-camp/images (1).jpg",
+        "v": 1794778543534,
+        "bytes": 76448
+      },
+      {
+        "src": "accommodations/southern-miombo-bush-camp/honeymoon-tent.jpg",
+        "v": 1794778613834,
+        "bytes": 75818
+      },
+      {
+        "src": "accommodations/southern-miombo-bush-camp/images (2).jpg",
+        "v": 1794778528598,
+        "bytes": 33981
+      },
+      {
+        "src": "assets/images/accommodations/southern-miombo-bush-camp/hero.jpg",
+        "v": 1794738477437,
+        "bytes": 486504
+      }
+    ],
+    "fq-hotel": [
+      {
+        "src": "accommodations/fq-hotel/images (1).jpg",
+        "v": 1794777821666,
+        "bytes": 48353
+      },
+      {
+        "src": "accommodations/fq-hotel/images.jpg",
+        "v": 1794777807269,
+        "bytes": 44929
+      },
+      {
+        "src": "accommodations/fq-hotel/images (3).jpg",
+        "v": 1794777778378,
+        "bytes": 31407
+      },
+      {
+        "src": "assets/images/accommodations/fq-hotel/hero.webp",
+        "v": 1794738195609,
+        "bytes": 369076
+      }
+    ],
+    "pemba-paradise-beach-resort": [
+      {
+        "src": "accommodations/pemba-paradise-beach-resort/images (4).jpg",
+        "v": 1794778461075,
+        "bytes": 71019
+      },
+      {
+        "src": "accommodations/pemba-paradise-beach-resort/images.jpg",
+        "v": 1794778472714,
+        "bytes": 60036
+      },
+      {
+        "src": "accommodations/pemba-paradise-beach-resort/images (1).jpg",
+        "v": 1794778480716,
+        "bytes": 17455
+      },
+      {
+        "src": "assets/images/accommodations/pemba-paradise-beach-resort/hero.jpg",
+        "v": 1794738420413,
+        "bytes": 399990
+      }
+    ],
+    "morogoro-hotel": [
+      {
+        "src": "accommodations/morogoro-hotel/images.jpg",
+        "v": 1794777984094,
+        "bytes": 30236
+      },
+      {
+        "src": "accommodations/morogoro-hotel/images (2).jpg",
+        "v": 1794778005589,
+        "bytes": 22273
+      },
+      {
+        "src": "accommodations/morogoro-hotel/images (1).jpg",
+        "v": 1794777999011,
+        "bytes": 6775
+      },
+      {
+        "src": "assets/images/accommodations/morogoro-hotel/hero.jpg",
+        "v": 1794738196310,
+        "bytes": 251819
+      }
+    ],
+    "sunset-hotel": [
+      {
+        "src": "accommodations/sunset-hotel/caption.jpg",
+        "v": 1794777424173,
+        "bytes": 222955
+      },
+      {
+        "src": "accommodations/sunset-hotel/images (2).jpg",
+        "v": 1794777405769,
+        "bytes": 48358
+      },
+      {
+        "src": "accommodations/sunset-hotel/images.jpg",
+        "v": 1794777447202,
+        "bytes": 30383
+      },
+      {
+        "src": "assets/images/accommodations/sunset-hotel/hero.jpg",
+        "v": 1794738073690,
+        "bytes": 257650
+      }
+    ],
+    "uluti-campsite": [
+      {
+        "src": "accommodations/uluti-campsite/Bulati-Campsite-Several-khaki-colored-dome-tents-pitched-in-dry-grassy-terrain-surrounded-by-acacia-trees.webp",
+        "v": 1794778716153,
+        "bytes": 176134
+      },
+      {
+        "src": "accommodations/uluti-campsite/images.jpg",
+        "v": 1794778756234,
+        "bytes": 40645
+      },
+      {
+        "src": "assets/images/accommodations/uluti-campsite/hero.jpg",
+        "v": 1794738076178,
+        "bytes": 575739
+      }
+    ],
+    "luala-camp": [
+      {
+        "src": "accommodations/luala-camp/images (3).jpg",
+        "v": 1794777903827,
+        "bytes": 59790
+      },
+      {
+        "src": "accommodations/luala-camp/images (1).jpg",
+        "v": 1794777925764,
+        "bytes": 55246
+      },
+      {
+        "src": "accommodations/luala-camp/images.jpg",
+        "v": 1794777912799,
+        "bytes": 45110
+      },
+      {
+        "src": "assets/images/accommodations/luala-camp/hero.jpg",
+        "v": 1794738082087,
+        "bytes": 562077
+      }
+    ],
+    "hondo-hondo-udzungwa-forest-lodge": [
+      {
+        "src": "accommodations/hondo-hondo-udzungwa-forest-lodge/images (2).jpg",
+        "v": 1794777238162,
+        "bytes": 84784
+      },
+      {
+        "src": "accommodations/hondo-hondo-udzungwa-forest-lodge/images.jpg",
+        "v": 1794777259056,
+        "bytes": 54570
+      },
+      {
+        "src": "accommodations/hondo-hondo-udzungwa-forest-lodge/images (1).jpg",
+        "v": 1794777274475,
+        "bytes": 41564
+      },
+      {
+        "src": "assets/images/accommodations/hondo-hondo-udzungwa-forest-lodge/hero.jpg",
+        "v": 1794738199851,
+        "bytes": 310700
+      }
+    ],
+    "tan-swiss-lodge": [
+      {
+        "src": "accommodations/tan-swiss-lodge/images.jpg",
+        "v": 1794778656937,
+        "bytes": 59365
+      },
+      {
+        "src": "accommodations/tan-swiss-lodge/images (3).jpg",
+        "v": 1794778641002,
+        "bytes": 49265
+      },
+      {
+        "src": "accommodations/tan-swiss-lodge/images (1).jpg",
+        "v": 1794778674749,
+        "bytes": 44083
+      },
+      {
+        "src": "assets/images/accommodations/tan-swiss-lodge/hero.jpg",
+        "v": 1794738348538,
+        "bytes": 807574
+      }
+    ],
+    "amani-nature-reserve": [
+      {
+        "src": "accommodations/amani-nature-reserve/Zanzibar_Holidays_01.jpg",
+        "v": 1794777707590,
+        "bytes": 639063
+      },
+      {
+        "src": "accommodations/amani-nature-reserve/images.jpg",
+        "v": 1794777719573,
+        "bytes": 60723
+      },
+      {
+        "src": "accommodations/amani-nature-reserve/images (1).jpg",
+        "v": 1794777727332,
+        "bytes": 34476
+      },
+      {
+        "src": "accommodations/amani-nature-reserve/images (2).jpg",
+        "v": 1794777737587,
+        "bytes": 25271
+      },
+      {
+        "src": "assets/images/accommodations/amani-nature-reserve/hero.jpg",
+        "v": 1794738482398,
+        "bytes": 132884
+      }
+    ],
+    "mullas-lodge": [
+      {
+        "src": "accommodations/mullers-lodge/mullers-mountain-lodge-2-7935928.webp",
+        "v": 1794778262779,
+        "bytes": 542812
+      },
+      {
+        "src": "accommodations/mullers-lodge/images (1).jpg",
+        "v": 1794778303128,
+        "bytes": 33083
+      },
+      {
+        "src": "accommodations/mullers-lodge/images.jpg",
+        "v": 1794778278249,
+        "bytes": 23648
+      },
+      {
+        "src": "assets/images/accommodations/mullas-lodge/hero.jpg",
+        "v": 1794738097245,
+        "bytes": 316978
+      }
+    ],
+    "elephant-motel": [
+      {
+        "src": "accommodations/elephant-motel/images (1).jpg",
+        "v": 1794777206600,
+        "bytes": 60865
+      },
+      {
+        "src": "accommodations/elephant-motel/elephant.jpg",
+        "v": 1794777105585,
+        "bytes": 42567
+      },
+      {
+        "src": "accommodations/elephant-motel/images.jpg",
+        "v": 1794777128808,
+        "bytes": 17680
+      },
+      {
+        "src": "assets/images/accommodations/elephant-motel/hero.jpg",
+        "v": 1794738203594,
+        "bytes": 309326
+      }
+    ],
+    "eliboru-lodge": [
+      {
+        "src": "accommodations/eliboru-lodge/images (1).jpg",
+        "v": 1794777634335,
+        "bytes": 47591
+      },
+      {
+        "src": "accommodations/eliboru-lodge/images (2).jpg",
+        "v": 1794777655282,
+        "bytes": 45769
+      },
+      {
+        "src": "accommodations/eliboru-lodge/images.jpg",
+        "v": 1794777645294,
+        "bytes": 32435
+      },
+      {
+        "src": "assets/images/accommodations/eliboru-lodge/hero.jpg",
+        "v": 1794738128844,
+        "bytes": 257694
+      }
+    ]
+  }
+}

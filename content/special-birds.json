@@ -1,0 +1,204 @@
+{
+  "meta": {
+    "purpose": "Curated target species for safari planning – not a complete country list.",
+    "imagePolicy": "Use verifiedPhoto true only for correctly identified species images. Habitat images must set imageRole habitat and must not imply a sighting at a nest site."
+  },
+  "categoryLabels": {
+    "endemic": "Tanzania endemic",
+    "range-restricted": "Range-restricted",
+    "specialist": "Habitat specialist"
+  },
+  "species": [
+    {
+      "slug": "udzungwa-forest-partridge",
+      "commonName": "Udzungwa Forest Partridge",
+      "scientificName": "Xenoperdix udzungwensis",
+      "category": "endemic",
+      "whyItMatters": "Flagship Eastern Arc endemic – shy, forest-floor partridge known only from Udzungwa massif forests.",
+      "habitatRegion": "Udzungwa montane forest · Eastern Arc",
+      "destinationSlugs": ["udzungwa-mountains"],
+      "packageSlugs": ["22-days-endemic-birding-tours", "19-days-southern-endemic-birding"],
+      "overview": "A true forest endemic confined to Udzungwa rainforest. Birds are heard on dawn walks long before they are seen – patience on mossy trails, not stakeouts.",
+      "identificationNotes": "Rotund, rufous-brown forest partridge; walks quietly on forest floor. Voice is the usual field clue.",
+      "habitatDistribution": "Eastern Arc: Udzungwa Mountains National Park and surrounding forest blocks above ~1,200 m.",
+      "viewingContext": "Early morning on park trails with a guide; wet-season mud slows pace. No guaranteed views.",
+      "images": [
+        {
+          "src": "assets/images/from-live-site/destinations/eastern-arc-mountain.jpg",
+          "alt": "Udzungwa montane forest habitat",
+          "credit": "Udzungwa forest – Endemic Birds",
+          "imageRole": "habitat",
+          "verifiedPhoto": false
+        }
+      ]
+    },
+    {
+      "slug": "iringa-akalat",
+      "commonName": "Iringa Akalat",
+      "scientificName": "Sheppardia lowei",
+      "category": "endemic",
+      "whyItMatters": "Montane akalat named for the Iringa highlands – a classic Southern Arc list target.",
+      "habitatRegion": "Southern highlands forest · Eastern Arc",
+      "destinationSlugs": ["mufindi-forest", "udzungwa-mountains"],
+      "packageSlugs": ["19-days-southern-tanzania-birding-trip", "8-days-birding-around-iringa"],
+      "overview": "Small forest robin-chat of cool highland forest. Often in mixed flocks with other mid-storey species.",
+      "identificationNotes": "Grey-brown above, warm rufous underparts; compare with other akalats by voice and elevation.",
+      "habitatDistribution": "Southern Tanzania highland forest – Mufindi, Udzungwa skirts and related arc patches.",
+      "viewingContext": "Listen-led birding on forest trails; photography needs patience and low light.",
+      "images": [
+        {
+          "src": "assets/images/from-live-site/destinations/southern-destination.jpg",
+          "alt": "Southern highlands forest and birding landscape",
+          "credit": "Southern highlands – habitat context",
+          "imageRole": "habitat",
+          "verifiedPhoto": false
+        },
+        {
+          "src": "assets/images/from-live-site/destinations/eastern-arc-mountain.jpg",
+          "alt": "Eastern Arc forest trail",
+          "credit": "Arc forest – habitat",
+          "imageRole": "habitat",
+          "verifiedPhoto": false
+        }
+      ]
+    },
+    {
+      "slug": "rufous-winged-sunbird",
+      "commonName": "Rufous-winged Sunbird",
+      "scientificName": "Cinnyris rufipennis",
+      "category": "endemic",
+      "whyItMatters": "Striking arc sunbird tied to flowering foothill and montane forest edges.",
+      "habitatRegion": "Udzungwa–Kilombero escarpment",
+      "destinationSlugs": ["udzungwa-mountains", "kilombero-plains"],
+      "packageSlugs": ["22-days-endemic-birding-tours", "20-day-endemic-birds-southern"],
+      "overview": "Endemic sunbird often tracked along forest edges and ridges with flowering trees.",
+      "identificationNotes": "Male with rufous wings and green head; forages in canopy and edge.",
+      "habitatDistribution": "Eastern Arc foothills and Kilombero–Udzungwa transition.",
+      "viewingContext": "Best on flowering peaks in dry windows – still weather-dependent.",
+      "images": [
+        {
+          "src": "assets/images/from-live-site/gallery/_mg_9641.jpg",
+          "alt": "Eastern Arc forest edge",
+          "credit": "Forest edge – Udzungwa",
+          "imageRole": "habitat",
+          "verifiedPhoto": false
+        }
+      ]
+    },
+    {
+      "slug": "usambara-akalat",
+      "commonName": "Usambara Akalat",
+      "scientificName": "Sheppardia montana",
+      "category": "endemic",
+      "whyItMatters": "East Usambara forest endemic – anchor species on northeastern arc modules.",
+      "habitatRegion": "East Usambara · Eastern",
+      "destinationSlugs": ["amani-nature-reserve", "west-usambara-magamba"],
+      "packageSlugs": ["22-days-endemic-birding-tours", "22-days-birding-itinerary-north-east-south-pemba"],
+      "overview": "Elusive understory akalat of Usambara rainforest – tape and patience, not crowds.",
+      "identificationNotes": "Warm brown akalat; best separated by range and voice from allies.",
+      "habitatDistribution": "East Usambara Mountains, Tanzania.",
+      "viewingContext": "Amani and forest reserves on multi-day northeastern routes.",
+      "images": [
+        {
+          "src": "assets/images/from-live-site/destinations/eastern-destination.jpg",
+          "alt": "Eastern Tanzania forest birding landscape",
+          "credit": "Eastern forests – habitat",
+          "imageRole": "habitat",
+          "verifiedPhoto": false
+        }
+      ]
+    },
+    {
+      "slug": "kilombero-weaver",
+      "commonName": "Kilombero Weaver",
+      "scientificName": "Ploceus burnieri",
+      "category": "endemic",
+      "whyItMatters": "Kilombero floodplain endemic – wetland focus between forest blocks.",
+      "habitatRegion": "Kilombero River floodplain",
+      "destinationSlugs": ["kilombero-plains"],
+      "packageSlugs": ["22-days-endemic-birding-tours", "19-days-southern-endemic-birding"],
+      "overview": "Colonial weaver of tall floodplain grasses and wetland edge – pairs with arc forest legs.",
+      "identificationNotes": "Large weaver; male plumage distinct in breeding season.",
+      "habitatDistribution": "Kilombero Valley wetlands, Tanzania.",
+      "viewingContext": "Boat and edge walks when water levels allow – season shapes access.",
+      "images": [
+        {
+          "src": "assets/images/from-live-site/destinations/southern-destination.jpg",
+          "alt": "Southern Tanzania wetland and floodplain birding",
+          "credit": "Floodplain habitat",
+          "imageRole": "habitat",
+          "verifiedPhoto": false
+        }
+      ]
+    },
+    {
+      "slug": "beesleys-lark",
+      "commonName": "Beesley's Lark",
+      "scientificName": "Chersomanes beesleyi",
+      "category": "range-restricted",
+      "whyItMatters": "Critically endangered lark confined to Lark Plains near Arusha – a measured northern add-on.",
+      "habitatRegion": "Lark Plains · Northern Tanzania",
+      "destinationSlugs": ["arusha-national-park-birding"],
+      "packageSlugs": ["10-day-birdwatching-northern", "15-days-tanzania-birding-tour"],
+      "overview": "Grassland lark with a tiny global range. Visits are short, respectful and guide-led.",
+      "identificationNotes": "Large lark of short-grass plains; structure and display flight aid ID.",
+      "habitatDistribution": "Lark Plains grassland near Arusha – not a general serengeti species.",
+      "viewingContext": "Morning on the plains with a local guide; no flushing for photography.",
+      "images": [
+        {
+          "src": "assets/images/from-live-site/destinations/northern-destination.jpg",
+          "alt": "Arusha region plains and montane backdrop",
+          "credit": "Northern grassland habitat",
+          "imageRole": "habitat",
+          "verifiedPhoto": false
+        }
+      ]
+    },
+    {
+      "slug": "pemba-scops-owl",
+      "commonName": "Pemba Scops-Owl",
+      "scientificName": "Otus pembaensis",
+      "category": "endemic",
+      "whyItMatters": "Island endemic owl – Pemba module on long national endemic tours.",
+      "habitatRegion": "Pemba Island · clove forest",
+      "destinationSlugs": ["pemba-island-birding"],
+      "packageSlugs": ["22-days-birding-itinerary-north-east-south-pemba", "20-day-endemic-birding-tanzania"],
+      "overview": "Nocturnal island endemic located by call in forest and plantations – not diurnal ticking.",
+      "identificationNotes": "Small scops-owl; identification by voice and brief night views.",
+      "habitatDistribution": "Pemba Island forests and wooded mosaics.",
+      "viewingContext": "Night walks with guide; respectful playback policies apply.",
+      "images": [
+        {
+          "src": "assets/images/from-live-site/misc/watchingstunningbirdsonpembaislandtanzaniaontheswahilidiversproperty-370x270.jpeg",
+          "alt": "Island forest birding context",
+          "credit": "Pemba module – habitat illustration",
+          "imageRole": "habitat",
+          "verifiedPhoto": false
+        }
+      ]
+    },
+    {
+      "slug": "african-pitta",
+      "commonName": "African Pitta",
+      "scientificName": "Pitta angolensis",
+      "category": "specialist",
+      "whyItMatters": "Seasonal forest-floor jewel on eastern and western forest routes – timing matters.",
+      "habitatRegion": "Lowland & escarpment forest",
+      "destinationSlugs": ["gombe-stream-national-park", "amani-nature-reserve"],
+      "packageSlugs": ["9-days-mahale-gombe-burigi-minziro", "22-days-endemic-birding-tours"],
+      "overview": "Migratory pitta on passage and breeding – brief windows, not year-round.",
+      "identificationNotes": "Unmistakable when seen; often located by display call at dawn.",
+      "habitatDistribution": "Eastern and western Tanzania forests in season – not guaranteed on every departure.",
+      "viewingContext": "Wet-season dawn listening in forest; no nest or stakeout detail published.",
+      "images": [
+        {
+          "src": "assets/images/from-live-site/destinations/western-destination.jpg",
+          "alt": "Lake Tanganyika forest escarpment",
+          "credit": "Western forest context",
+          "imageRole": "habitat",
+          "verifiedPhoto": false
+        }
+      ]
+    }
+  ]
+}

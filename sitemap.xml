@@ -2,12 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>/index.html</loc></url>
   <url><loc>/birding/index.html</loc></url>
+  <url><loc>/birding/special-birds/index.html</loc></url>
   <url><loc>/wildlife/index.html</loc></url>
   <url><loc>/combined/index.html</loc></url>
   <url><loc>/packages/index.html</loc></url>
+  <url><loc>/accommodations/index.html</loc></url>
   <url><loc>/destinations/index.html</loc></url>
+  <url><loc>/destinations/birding/index.html</loc></url>
   <url><loc>/about/index.html</loc></url>
+  <url><loc>/about/why-choose-us/index.html</loc></url>
+  <url><loc>/about/team/index.html</loc></url>
+  <url><loc>/about/leons-mlawila/index.html</loc></url>
+  <url><loc>/about/trip-reports/index.html</loc></url>
+  <url><loc>/about/tour-training/index.html</loc></url>
+  <url><loc>/about/partners/index.html</loc></url>
+  <url><loc>/about/policies/index.html</loc></url>
+  <url><loc>/about/tour-calendar/index.html</loc></url>
   <url><loc>/plan-your-trip/index.html</loc></url>
+  <url><loc>/privacy/index.html</loc></url>
   <url><loc>/packages/22-days-endemic-birding-tours/</loc></url>
   <url><loc>/packages/14-days-southern-tanzania-birding-tour/</loc></url>
   <url><loc>/packages/19-days-southern-tanzania-birding-trip/</loc></url>
@@ -37,6 +49,10 @@
   <url><loc>/packages/7-days-mahale-gombe-chimp-safari/</loc></url>
   <url><loc>/packages/8-days-ruaha-mikumi-safari/</loc></url>
   <url><loc>/packages/10-days-nyerere-katavi-expedition/</loc></url>
+  <url><loc>/packages/5-days-tarangire-serengeti-ngorongoro/</loc></url>
+  <url><loc>/packages/14-days-ultimate-tanzania-safari/</loc></url>
+  <url><loc>/packages/13-days-northern-tanzania-birding/</loc></url>
+  <url><loc>/packages/10-days-northern-lake-victoria-safari/</loc></url>
   <url><loc>/destinations/northern-destination/</loc></url>
   <url><loc>/destinations/southern-destination/</loc></url>
   <url><loc>/destinations/eastern-arc-mountain/</loc></url>
@@ -60,6 +76,16 @@
   <url><loc>/destinations/minziro-forest-reserve/</loc></url>
   <url><loc>/destinations/tarangire-national-park/</loc></url>
   <url><loc>/destinations/serengeti-national-park/</loc></url>
+  <url><loc>/destinations/amani-nature-reserve/</loc></url>
+  <url><loc>/destinations/west-usambara-magamba/</loc></url>
+  <url><loc>/destinations/pemba-island-birding/</loc></url>
+  <url><loc>/destinations/south-pare-chome/</loc></url>
+  <url><loc>/destinations/kitulo-national-park/</loc></url>
+  <url><loc>/destinations/mount-rungwe/</loc></url>
+  <url><loc>/destinations/mufindi-forest/</loc></url>
+  <url><loc>/destinations/arusha-national-park-birding/</loc></url>
+  <url><loc>/destinations/lake-manyara-birding/</loc></url>
+  <url><loc>/destinations/ngorongoro-birding/</loc></url>
   <url><loc>/wildlife/destinations/serengeti-national-park/</loc></url>
   <url><loc>/wildlife/destinations/ngorongoro-conservation-area/</loc></url>
   <url><loc>/wildlife/destinations/tarangire-national-park/</loc></url>
@@ -70,9 +96,28 @@
   <url><loc>/wildlife/destinations/nyerere-national-park/</loc></url>
   <url><loc>/wildlife/destinations/katavi-national-park/</loc></url>
   <url><loc>/wildlife/destinations/mahale-mountains-national-park/</loc></url>
+  <url><loc>/wildlife/destinations/gombe-stream-national-park/</loc></url>
   <url><loc>/wildlife/activities/great-migration-plains/</loc></url>
   <url><loc>/wildlife/activities/ngorongoro-northern-icons/</loc></url>
   <url><loc>/wildlife/activities/chimps-lake-forests/</loc></url>
   <url><loc>/wildlife/activities/southern-western-wilderness/</loc></url>
   <url><loc>/wildlife/activities/bush-beach-luxury/</loc></url>
+  <url><loc>/accommodations/neema-craft-iringa/</loc></url>
+  <url><loc>/accommodations/ruaha-river-lodge/</loc></url>
+  <url><loc>/accommodations/mufindi-fish-lodge/</loc></url>
+  <url><loc>/accommodations/old-kisolanza-farm/</loc></url>
+  <url><loc>/accommodations/ikoma-bush-tented-camp/</loc></url>
+  <url><loc>/accommodations/southern-miombo-bush-camp/</loc></url>
+  <url><loc>/accommodations/fq-hotel/</loc></url>
+  <url><loc>/accommodations/pemba-paradise-beach-resort/</loc></url>
+  <url><loc>/accommodations/morogoro-hotel/</loc></url>
+  <url><loc>/accommodations/sunset-hotel/</loc></url>
+  <url><loc>/accommodations/uluti-campsite/</loc></url>
+  <url><loc>/accommodations/luala-camp/</loc></url>
+  <url><loc>/accommodations/hondo-hondo-udzungwa-forest-lodge/</loc></url>
+  <url><loc>/accommodations/tan-swiss-lodge/</loc></url>
+  <url><loc>/accommodations/amani-nature-reserve/</loc></url>
+  <url><loc>/accommodations/mullas-lodge/</loc></url>
+  <url><loc>/accommodations/elephant-motel/</loc></url>
+  <url><loc>/accommodations/eliboru-lodge/</loc></url>
 </urlset>

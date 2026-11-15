@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-03-01",
+  "publisherNote": "Published entries are planning signals only – not instant booking or guaranteed availability.",
+  "statusLabels": {
+    "available": "Confirmed available",
+    "booked": "Booked / unavailable",
+    "departure-open": "Open departure – enquire",
+    "confirm-needed": "Confirm with us",
+    "unpublished": "No dates published"
+  },
+  "page": {
+    "eyebrow": "Tour calendar",
+    "title": "Departures, availability & seasons",
+    "lead": "Months with no published entry are not shown as available. Enquire to hold dates – we confirm routing, guides and lodges in writing.",
+    "disclaimer": "Calendar data is indicative. Climate, forest access and guide schedule change. We do not guarantee species, lodges or departures until your proposal is accepted."
+  },
+  "seasonReference": [
+    {
+      "region": "Eastern Arc montane forest",
+      "months": "Year-round; often clearest trails Jun–Oct",
+      "focus": "Arc endemics – akalats, warblers, bush-shrikes; mist and rain possible anytime"
+    },
+    {
+      "region": "Southern miombo (Ruaha, Mikumi, Nyerere)",
+      "months": "May–Nov drier; Jun–Sep popular",
+      "focus": "Miombo specials, raptors, mixed woodland–savanna birding"
+    },
+    {
+      "region": "Kilombero & wetland systems",
+      "months": "Dry season for access; rains for breeding and passage context",
+      "focus": "Floodplain and papyrus species; route depends on water levels"
+    }
+  ],
+  "guides": {
+    "leons": {
+      "name": "Leons Mlawila",
+      "periods": [
+        {
+          "id": "leons-2026-jun-available",
+          "start": "2026-06-05",
+          "end": "2026-06-28",
+          "status": "available",
+          "publicLabel": "Leons available – southern & arc modules"
+        },
+        {
+          "id": "leons-2026-aug-booked",
+          "start": "2026-08-01",
+          "end": "2026-08-18",
+          "status": "booked",
+          "visibility": "private",
+          "publicLabel": "Booked – Leons unavailable"
+        },
+        {
+          "id": "leons-2026-dec-confirm",
+          "start": "2026-12-10",
+          "end": "2026-12-22",
+          "status": "confirm-needed",
+          "publicLabel": "Dates to confirm with Leons"
+        }
+      ]
+    }
+  },
+  "departures": [
+    {
+      "id": "dep-2026-sep-south",
+      "start": "2026-09-08",
+      "end": "2026-09-22",
+      "status": "departure-open",
+      "visibility": "public",
+      "title": "Southern highlands & Ruaha birding block",
+      "packageSlug": "14-days-southern-tanzania-birding-tour",
+      "publicLabel": "Small group departure – enquire for spaces",
+      "leonsLikely": true
+    },
+    {
+      "id": "dep-2027-jan-north",
+      "start": "2027-01-12",
+      "end": "2027-01-22",
+      "status": "departure-open",
+      "visibility": "public",
+      "title": "Northern birdwatching extension",
+      "packageSlug": "10-day-birdwatching-northern",
+      "publicLabel": "Open to enquiries – route confirmed on booking",
+      "leonsLikely": false
+    }
+  ],
+  "companyBlocks": [
+    {
+      "id": "block-2026-nov-confirm",
+      "start": "2026-11-01",
+      "end": "2026-11-30",
+      "status": "confirm-needed",
+      "publicLabel": "November – confirm forest access & vehicle allocation"
+    }
+  ]
+}

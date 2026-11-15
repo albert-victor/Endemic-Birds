@@ -1,0 +1,10 @@
+/* Futura PT Web Book, identified from the Neema Crafts guesthouse paragraph.
+   Commercial font: see FUTURA-PT.md for source and licensing information.
+   Kept separate from the active preview styles. */
+@font-face {
+  font-family: 'Futura PT';
+  src: url('./FuturaPTWeb-Book.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}

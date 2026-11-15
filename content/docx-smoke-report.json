@@ -1,0 +1,40 @@
+{
+  "runAt": "2026-11-15T21:34:24.043Z",
+  "slugsChecked": 10,
+  "failures": [],
+  "httpChecks": [
+    [
+      "/",
+      200
+    ],
+    [
+      "/packages/index.html",
+      301
+    ],
+    [
+      "/packages/14-days-southern-tanzania-birding-tour/",
+      200
+    ],
+    [
+      "/packages/9-days-wildlife-safari-zanzibar/",
+      200
+    ],
+    [
+      "/packages/8-days-wildebeest-calving-migration/",
+      200
+    ],
+    [
+      "/packages/8-days-northern-tarangire-manyara-ngorongoro-serengeti/",
+      200
+    ],
+    [
+      "/packages/5-days-serengeti-migration-focus/",
+      200
+    ],
+    [
+      "/packages/5-days-tarangire-serengeti-ngorongoro/",
+      200
+    ]
+  ],
+  "ok": true
+}

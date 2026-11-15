@@ -16,8 +16,8 @@
       "Eastern",
       "Northern"
     ],
-    "summary": "Comprehensive endemic-focused birding route for serious listers and photographers – the flagship journey featured on endemicbirds.co.tz.",
-    "heroImage": "assets/images/from-live-site/packages/22-days-endemic-birding-tours.jpg",
+    "summary": "Comprehensive endemic-focused birding route for serious listers and photographers – our flagship multi-region Tanzania journey.",
+    "heroImage": "assets/images/packages/22-days-endemic-birding-tours/hero.jpg",
     "featured": true,
     "verified": true,
     "itinerary": [
@@ -106,117 +106,160 @@
       "birding": [],
       "wildlife": []
     },
-    "included": [],
-    "excluded": [],
-    "bestTime": null,
-    "needsOwnerReview": [
-      "included",
-      "excluded",
-      "bestTime"
+    "included": [
+      "Specialist birding guide (English; other languages on request)",
+      "Safari vehicle suited to the route – small group sizes",
+      "Park and reserve fees as per confirmed itinerary",
+      "Accommodation as proposed for your dates",
+      "Meals on the published meal plan while in the field",
+      "Bottled drinking water in the vehicle on drive days"
     ],
+    "excluded": [
+      "International flights, visas and airport taxes",
+      "Travel and medical insurance",
+      "Tips for guides, drivers and lodge staff",
+      "Personal expenses, alcoholic drinks and laundry",
+      "Optional extensions or activities not listed in the itinerary"
+    ],
+    "bestTime": "Jun–Oct dry season for general wildlife; calving Dec–Mar (Ndutu); river crossings Jul–Oct (north Serengeti) – we match sectors to your month.",
     "seo": {
       "title": "22 Days Endemic Birding Tours | Endemic Birds Tanzania",
       "description": "22-day endemic birding tour across Tanzania with specialist guides from Endemic Birds."
     },
     "liveUrl": "https://endemicbirds.co.tz/index.php/22-days-endemic-birding-tour/",
-    "liveListingTitle": "22 DAYS ENDEMIC BIRDING TOURS"
+    "gallery": [
+      "assets/images/packages/22-days-endemic-birding-tours/hero.jpg",
+      "assets/images/packages/22-days-endemic-birding-tours/gallery-1.jpg"
+    ]
   },
   {
     "id": "14-days-southern-tanzania-birding-tour",
     "slug": "14-days-southern-tanzania-birding-tour",
-    "title": "14 Days Southern Tanzania Birding Tour",
+    "title": "SOUTHERN TANZANIA BIRDING TOUR",
     "category": "birding",
     "durationDays": 14,
     "destinations": [
-      "southern"
+      "northern",
+      "southern",
+      "eastern",
+      "western",
+      "eastern-arc"
     ],
     "circuits": [
-      "Southern"
+      "Northern",
+      "Southern",
+      "Eastern",
+      "Western"
     ],
-    "summary": "Deep south circuits combining miombo, riverine forest and open woodland targets.",
-    "heroImage": "assets/images/from-live-site/packages/14-days-southern-tanzania-birding-tour.jpg",
+    "summary": "The Southern Tanzania Birding Tour can be combined with our Pemba Island endemic species. We also run camping trips in the remote Udzungwa Mountains, to search for forest specials; such as the endemic udzungwa forest patregide",
+    "heroImage": "assets/images/packages/14-days-southern-tanzania-birding-tour/hero.jpg",
     "featured": true,
-    "verified": true,
+    "verified": false,
     "itinerary": [
       {
         "day": 1,
-        "title": "Iringa",
-        "description": "Alive at Iringa and you will meet our guide at the airport. This day you will do birding around Iringa town and you will overnight at Iringa town at Neema craft. On this evening you will do the itinerary review with your guide."
+        "title": "ARRIVAL IN TANZANIA",
+        "description": "Our Southern Tanzania Birding Tour will start in Tanzania’s economic capital, Dar es Salaam. On this day, if we have an early arrival, we may explore local attractions around Dar es Salaam. Otherwise, we can relax and enjoy the nice Tanzania birds from our lodge. Night in Dar es Salaam."
       },
       {
         "day": 2,
-        "title": "Iringa- Hill Top lodge",
-        "description": "&#8211; waking up 600 and you will have a breakfast at the hotel, and then you will start your trip toward Ruaha national park. Birding on the road all the way to the lodge, where you will have a lunch, after lunch you will have 2 hours break. After break you will have a soft drink then you will go for the evening birding around the lodge. Back to the lodge for refreshment. Dinner it will be at the lodge. After dinner you will do the review with your guide."
+        "title": "DAR ES SALAAM TO MOROGORO",
+        "description": "The amazing Southern Tanzania Birding Tour will officially start today. We shall leave early and head west to the town of Morogoro. We shall enjoy birding on the way and we hope to start adding several special species on this route. On arrival, we shall continue birding around Morogoro, as we add more species of this interesting region. Night in Morogoro."
       },
       {
         "day": 3,
-        "title": "Hill top- Ruaha National Park",
-        "description": "&#8211; waking up 600, then breakfast at the lodge. After breakfast then we will start driving to Ruaha National Park gate. The guide he will do all the payment and you will continues with birding and game driving to your accommodation, where you will have a lunch. Birding and animal experience it will be on the evening. Dinner and overnight it will be at Ruaha River Lodge."
+        "title": "UKAGURU MOUNTAINS",
+        "description": "On this day, we shall make a trip to a nearby but remote part of Tanzania- the Ukagurus, which is less visited by many birding tours. This area often produces surprises; and we can expect to find some exciting species to add to our Southern Tanzania Birding Tour. We shall spend the day here as we try our luck on these exciting species. Night in Ukaguru."
       },
       {
         "day": 4,
-        "title": "Ruaha national park",
-        "description": "&#8211; Full day inside the national with pack lunch, and we will be spending most of our time on the acacia woodland and river line for the water birds. We will come back at the lodge for the dinner. After dinner we will do the review for the day."
-      },
-      {
-        "day": 5,
-        "title": "Ruaha national park",
-        "description": "&#8211; Full day inside the park. We will do our birding on the different habitat (Miombo Woodland) for the Miombo special."
+        "title": "AND 5: ULUGURU MOUNTAINS",
+        "description": "We shall move to the nearby Uluguru Mountains, where we shall be targeting the local endemics (Uluguru Greenbul, Winifred’s/ Mrs. Moreau’s Warbler, Loveridge’s Sunbird and Uluguru Bush-shrike); among an array of many other species. This area is remote and we hope to enjoy lots of rare birds, a key feature of our Southern Tanzania Birding Tour. We shall spend one night in the Ulugurus; then return to Morogoro on the second evening."
       },
       {
         "day": 6,
-        "title": "Ruaha national park",
-        "description": "Full day in the park. We will have a park lunch."
+        "title": "TO IRINGA; VIA MIKUMI",
+        "description": "Our Southern Tanzania Birding Tour will continue West. We shall drive through Mikumi National Park as we head to Iringa. This will be a great opportunity to bird in the Miombo Woodland habitat around Mikumi; but we shall return to this area later on our tour. We shall make several stops as we scan for species along this very productive road. In the afternoon we shall continue our birding adventure around Iringa. Night in Iringa."
       },
       {
         "day": 7,
-        "title": "Ruaha np-kisolanza oldfarm",
-        "description": "Breakfast at the Ruaha River Lodge , then we will do a short birding inside the national park then we will start driving back towards Iringa town where we will have a lunch at Neema Craft. After lunch we will drive to Old Kisolanza farm for the evening birding around the farm and we will overnight at Old farm Kisolanza."
+        "title": "UDZUNGWA SCARP AND ULUTI FOREST",
+        "description": "On this day we shall have an early start to scan another remote forest. We shall make a trip to Uluti Forest and the West Udzungwa Scarp; where we shall hope to spot the endemic Rufous-winged Sunbird. Many other rare birds occupy this forest and the nearby farms. This forest is often a major highlight on our Southern Tanzania Birding Tour. Night in Uluti."
       },
       {
         "day": 8,
-        "title": "Kisolanza old farm",
-        "description": "Full day birding at Kisolanza swamp and on the Miombo Woodland."
-      },
-      {
-        "day": 9,
-        "title": "Kisolanza-Mufindi",
-        "description": "we will live early in the morning to Mufindi Fish Lodge, the drive it will take 2 hours birding speed. We will spend most of our day in the rain forest and we will be doing birding. Lunch it will be packed and dinner we will have at the lodge where we will overnight"
+        "title": "AND 9: RUAHA NATIONAL PARK",
+        "description": "We shall continue the Southern Tanzania Birding Tour to the vast Ruaha National Park. Ruaha is the largest national park in Tanzania, and it always amazes on each visit. We shall hope for some great mammal encounters as we enjoy the vast landscapes of this beautiful park. Local mammals, include Sable Antelope, Roan Antelope, African Lion, Leopard, Cheetah, Maasai Giraffe, Common Zebra, Common Eland, Common Impala and Bat-eared Fox. If we are really lucky we may spot the rare African Wild Dogs. Our eyes will be keen to look for bird’s species that we do not find on other locations during our Southern Tanzania Birding Tour. Nights at Ruaha."
       },
       {
         "day": 10,
-        "title": "Mufindi fish lodge",
-        "description": "Full day birding on the rain forest and on the swamps. Lunch and dinner it will be at the lodge."
-      },
-      {
-        "day": 11,
-        "title": "Mufindi – Iringa tawn",
-        "description": "waking up 600, then you will have a breakfast at the lodge, and we will have a park lunch. After breakfast we will start driving towards Iringa town via Kiponzero swamp. Lunch at Kiponzero swamp. Birding it will be taking place on the road and at Kiponzero swamp. Dinner it will be at Iringa town (Neema Craft)"
+        "title": "AND 11: UDZUNGWA MOUNTAINS NATIONAL PARK",
+        "description": "After a final birding session in Ruaha National Park, we shall drive onwards to Sanje; at the East Udzungwa Mountains. We shall enjoy birding here as we track extra forest species. On some sessions we may choose to make short drives to certain sections of this vast area that provide higher chances of seeing certain rarities. Nights at Udzungwa."
       },
       {
         "day": 12,
-        "title": "Iringa-uluti (udzungwa scap",
-        "description": ")-It will be a day trip- waking up 500 then you will have a coffee at the lodge, after coffee we will start driving toward Dabaga, then Uluti village. We will have a park lunch. Birding it will be inside the forest. Dinner it will be at ( Neema Craft)"
+        "title": "KILOMBERO SWAMP TO MIKUMI NATIONAL PARK",
+        "description": "We shall enjoy a morning visit to a great location- where three Tanzanian endemics occur. Kilombero Swamp is always a highlight on our Southern Tanzania Birding Tour. We shall leave early and make a short trip to this very interesting floodplain where some birds’ species are yet to be fully described to science. These are Kilombero Cisticola, White-tailed Cisticola and Kilombero Weaver. Later we shall drive to the nearby Mikumi National Park, as we enjoy open country birds. Night in Mikumi."
+      },
+      {
+        "day": 13,
+        "title": "MIKUMI NATIONAL PARK",
+        "description": "The Miombo Woodland here is a fascinating habitat and allows birds’ species which will often be absent elsewhere in East Africa. This area will also allow us to add more big game to our already exciting Southern Tanzania Birding Tour species list. Mammals here include African Lion, Leopard, Ratel, Bushy-tailed Mongoose, Black-backed Jackal, African Wild Dog, Spotted Hyena, African Civet, African Elephant, Nile Hippopotamus, Maasai Giraffe, Bohor Reedbuck, Cape Buffalo and Blue Wildebeest. Night in Mikumi."
+      },
+      {
+        "day": 14,
+        "title": "MIKUMI NATIONAL PARK TO DAR ES SALAAM",
+        "description": "We shall enjoy some more birding at Mikumi in the morning, as we scan for additional species. We shall then leave for Dar es Salaam; as we enjoy birding stops on the way. We shall reach Dar es Salaam in the afternoon, where we shall take an airport transfer for the flights home- marking the end to our lovely Southern Tanzania Birding Tour. Livingstone’s Flycatcher, Black-and-white Shrike-Flycatcher, Southern/ Uhehe Fiscal, Fülleborn’s Boubou, Uluguru Bushshrike, African Broadbill, Moustached Tinkerbird, Green Barbet, Black-collared Barbet, Brown-breasted Barbet, Livingstone’s Turaco, Mountain (Green-throated/Yellow-throated) Greenbul, Mountain (Uluguru) Greenbul, Grey-olive Greenbul, Bohm’s Spinetail, Ruwenzori Nightjar, White-backed Night Heron, Forest (Dark) Batis, Kilombero Cisticola, White-tailed Cisticola, Chapin’s Apalis, White-winged Apalis, Brown Parisoma, African Tailorbird/Red-capped Forest Warbler, Miombo/ Stierling’s (Barred) Wren-Warbler, Winifred’s/ Mrs. Moreau’s Warbler, Rubeho/ Mrs. Moreau’s Warbler, Yellow-throated Woodland Warbler, Red-winged Warbler, Kretschmer’s Longbill, Crested Guineafowl, Moreau’s Sunbird, Loveridge’s Sunbird, Uluguru Violet-backed Sunbird, Hofmann’s Sunbird, Western and Eastern Miombo Double-collared Sunbird, Rufous-winged Sunbird, White-headed Black/ Arnott’s Chat and Ruaha chat, Swynnerton’s Robin, White-chested Alethe, Miombo Rock Thrush, Collared Palm Thrush, Spot-throat, Dappled Mountain-Robin/ Dapple-throat, Iringa (Rubeho) Akalat, Sharpe’s Akalat, Iringa Akalat, Ashy Starling, Greater / Miombo Blue-eared Starling, Southern Citril, Kilombero Weaver, Bertram’s Weaver, Ruvu Weaver, Usambara Weaver, Speckle-throated Woodpecker, Olive Woodpecker, Red-faced Crimsonwing, Blue Waxbill/ Southern Cordon-bleu, Magpie Mannikin, Orange-winged Pytilia, Swallow-tailed Bee-eater, Bohm’s Bee-eater, Oriole Finch, Green-headed Oriole, Bar-tailed Trogon, African Skimmer, White-crowned Lapwing, Coppery-tailed Coucal, Marsh (Anchieta’s) Tchagra, Pale-billed Hornbill, Tanzania/ Ruaha Red-billed Hornbill, Southern Ground Hornbill, African Barred (Scheffler’s) Owlet, Black-bellied Bustard, Brown-necked Parrot, White-breasted Cuckooshrike, Northern Pied Babbler, Racket-tailed Roller, Rufous-Bellied (Cinnamon-breasted) Tit, African Penduline Tit, Yellow-collared Lovebird, Yellow-bellied Hyliota, Zanzibar Red-Bishop Leopard, African Lion, Cheetah, Savannah Elephant, Maasai Giraffe, Cape Buffalo, Nile Hippopotamus, Common Zebra, Common Eland, Common Impala, Bat-eared Fox, Nile Crocodile Acacia woodland, Miombo Woodland, Eastern Arc Mountains, Wetland"
       }
     ],
     "highlights": {
       "birding": [],
       "wildlife": []
     },
-    "included": [],
-    "excluded": [],
-    "bestTime": null,
-    "needsOwnerReview": [
-      "included",
-      "excluded",
-      "bestTime"
+    "included": [
+      "Specialist birding guide (English; other languages on request)",
+      "Safari vehicle suited to the route – small group sizes",
+      "Park and reserve fees as per confirmed itinerary",
+      "Accommodation as proposed for your dates",
+      "Meals on the published meal plan while in the field",
+      "Bottled drinking water in the vehicle on drive days"
     ],
+    "excluded": [
+      "International flights, visas and airport taxes",
+      "Travel and medical insurance",
+      "Tips for guides, drivers and lodge staff",
+      "Personal expenses, alcoholic drinks and laundry",
+      "Optional extensions or activities not listed in the itinerary"
+    ],
+    "bestTime": "May–Nov often favoured for miombo, tracks and bush camps; forests bird year-round with weather flexibility.",
     "seo": {
-      "title": "14 Days Southern Tanzania Birding Tour | Endemic Birds",
-      "description": "14-day southern Tanzania birding tour with Endemic Birds."
+      "title": "SOUTHERN TANZANIA BIRDING TOUR | Endemic Birds",
+      "description": "The Southern Tanzania Birding Tour can be combined with our Pemba Island endemic species. We also run camping trips in the remote Udzungwa Mountains, to se"
     },
     "liveUrl": "https://endemicbirds.co.tz/index.php/14-days-southern-tanzania-birding-tour/",
-    "liveListingTitle": "14 DAYS SOUTHERN TANZANIA BIRDING TOUR"
+    "gallery": [
+      "assets/images/packages/14-days-southern-tanzania-birding-tour/hero.jpg",
+      "assets/images/packages/14-days-southern-tanzania-birding-tour/gallery-1.jpg"
+    ],
+    "activitySlugs": [],
+    "contentSource": {
+      "type": "docx",
+      "sourceFile": "itineraries/14 SOUTHERN TANZANIA BIRDING TOUR (2).docx",
+      "supplementaryFiles": [],
+      "importedAt": "2026-11-15T22:05:12.789Z",
+      "fidelity": "verbatim-itinerary",
+      "dayCountFromDoc": 11
+    },
+    "download": {
+      "file": "assets/downloads/packages/14-days-southern-tanzania-birding-tour.docx",
+      "fileType": "docx",
+      "sizeBytes": 20073,
+      "versionDate": "2026-11-15",
+      "label": "Download full itinerary (Word)"
+    },
+    "needsOwnerReview": [
+      "compressed day ranges in Word (e.g. Days 4–6)"
+    ]
   },
   {
     "id": "19-days-southern-tanzania-birding-trip",
@@ -231,7 +274,7 @@
       "Southern"
     ],
     "summary": "Extended southern exploration with extra time in key endemism zones.",
-    "heroImage": "assets/images/from-live-site/packages/19-days-southern-tanzania-birding-trip.jpg",
+    "heroImage": "assets/images/packages/19-days-southern-tanzania-birding-trip/hero.jpg",
     "featured": true,
     "verified": true,
     "itinerary": [
@@ -330,34 +373,55 @@
       "birding": [],
       "wildlife": []
     },
-    "included": [],
-    "excluded": [],
-    "bestTime": null,
+    "included": [
+      "Specialist birding guide (English; other languages on request)",
+      "Safari vehicle suited to the route – small group sizes",
+      "Park and reserve fees as per confirmed itinerary",
+      "Accommodation as proposed for your dates",
+      "Meals on the published meal plan while in the field",
+      "Bottled drinking water in the vehicle on drive days"
+    ],
+    "excluded": [
+      "International flights, visas and airport taxes",
+      "Travel and medical insurance",
+      "Tips for guides, drivers and lodge staff",
+      "Personal expenses, alcoholic drinks and laundry",
+      "Optional extensions or activities not listed in the itinerary"
+    ],
+    "bestTime": "May–Nov often favoured for miombo, tracks and bush camps; forests bird year-round with weather flexibility.",
+    "needsOwnerReview": [
+      "duplicate-itinerary-with-19-days-southern-endemic-birding",
+      "missing-day-19-in-import",
+      "distinction-between-two-19-day-listings"
+    ],
     "seo": {
       "title": "19 Days Southern Tanzania Birding Trip | Endemic Birds",
       "description": "19-day southern Tanzania birding trip."
     },
     "liveUrl": "https://endemicbirds.co.tz/index.php/19-days-southern-tanzania-birding-trip/",
-    "liveListingTitle": "19 Days Southern Tanzania Endemic birding tour itinerary"
+    "liveListingTitle": "19 Days Southern Tanzania Endemic birding tour itinerary",
+    "gallery": [
+      "assets/images/packages/19-days-southern-tanzania-birding-trip/hero.jpg",
+      "assets/images/packages/19-days-southern-tanzania-birding-trip/gallery-1.jpg"
+    ]
   },
   {
     "id": "15-days-tanzania-birding-tour",
     "slug": "15-days-tanzania-birding-tour",
-    "title": "15 Days Tanzania Birding Tour",
+    "title": "Acacia woodland, Highland Forest, Wetlands, Semi-arid Scrubland, Eastern Arc Mountains.",
     "category": "birding",
     "durationDays": 15,
     "destinations": [
-      "northern",
-      "southern"
+      "eastern",
+      "eastern-arc"
     ],
     "circuits": [
-      "Northern",
-      "Southern"
+      "Eastern"
     ],
-    "summary": "Balanced route including Tarangire, Lake Manyara, Ngorongoro, Serengeti and further birding habitats as listed on the live site.",
-    "heroImage": "assets/images/from-live-site/packages/15-days-tanzania-birding-tour.jpg",
+    "summary": "Leopard, African Lion, Cheetah, Black Rhino, Savannah Elephants, Cape Buffalo, Nile Hippopotamus, Nile Crocodile Acacia woodland, Highland Forest, Wetlands, Semi-arid Scrubland, Eastern Arc Mountains. All Meals (as specified in the day-by-day section) All activities (unless labeled as optional) All accommodation as stated in the itinerary All transportation (unless labeled as optional) Additional accommodation before and at the end of the tour The government imposed an increa",
+    "heroImage": "assets/images/packages/15-days-tanzania-birding-tour/hero.jpg",
     "featured": true,
-    "verified": true,
+    "verified": false,
     "itinerary": [
       {
         "day": 1,
@@ -414,18 +478,54 @@
       "birding": [],
       "wildlife": []
     },
-    "included": [],
-    "excluded": [],
-    "bestTime": null,
+    "included": [
+      "All Taxes/VAT",
+      "Round-trip airport transfer",
+      "All Meals (as specified in the day-by-day section)",
+      "Drinking water on all days",
+      "Park fees",
+      "All activities (unless labeled as optional)",
+      "All accommodation as stated in the itinerary",
+      "A professional driver/guide",
+      "All transportation (unless labeled as optional)"
+    ],
+    "excluded": [
+      "International flights",
+      "Additional accommodation before and at the end of the tour",
+      "The government imposed an increase in taxes and/or park fees",
+      "Alcohol drinks"
+    ],
+    "bestTime": "Jun–Oct dry season for general wildlife; calving Dec–Mar (Ndutu); river crossings Jul–Oct (north Serengeti) – we match sectors to your month.",
     "needsOwnerReview": [
-      "daily route detail"
+      "daily route detail",
+      "missing day headers in Word source"
     ],
     "seo": {
-      "title": "15 Days Tanzania Birding Tour | Endemic Birds",
-      "description": "15-day Tanzania birding tour across classic northern parks and beyond."
+      "title": "Acacia woodland, Highland Forest, Wetlands, Semi-arid Scrubland, Eastern Arc Mountains. | Endemic Birds",
+      "description": "Leopard, African Lion, Cheetah, Black Rhino, Savannah Elephants, Cape Buffalo, Nile Hippopotamus, Nile Crocodile Acacia woodland, Highland Forest, Wetlands"
     },
     "liveUrl": "https://endemicbirds.co.tz/index.php/tanzania-birding-tour/",
-    "liveListingTitle": "15 Days Tanzania Birding tour (Tarangire,Lake Manyara, Ngorongoro,Serengeti,etc"
+    "liveListingTitle": "15 Days Tanzania Birding tour (Tarangire,Lake Manyara, Ngorongoro,Serengeti,etc",
+    "gallery": [
+      "assets/images/packages/15-days-tanzania-birding-tour/hero.jpg",
+      "assets/images/packages/15-days-tanzania-birding-tour/gallery-1.jpg"
+    ],
+    "activitySlugs": [],
+    "contentSource": {
+      "type": "docx",
+      "sourceFile": "itineraries/15 Northern Tanzania birding tour.docx",
+      "supplementaryFiles": [],
+      "importedAt": "2026-11-15T22:05:12.789Z",
+      "fidelity": "verbatim-itinerary",
+      "dayCountFromDoc": 0
+    },
+    "download": {
+      "file": "assets/downloads/packages/15-days-tanzania-birding-tour.docx",
+      "fileType": "docx",
+      "sizeBytes": 17934,
+      "versionDate": "2026-11-15",
+      "label": "Download full itinerary (Word)"
+    }
   },
   {
     "id": "19-days-southern-endemic-birding",
@@ -440,8 +540,8 @@
     "circuits": [
       "Southern"
     ],
-    "summary": "Southern Tanzania endemic birding itinerary listed under Tanzania Birding Tours on endemicbirds.co.tz.",
-    "heroImage": "assets/images/from-live-site/packages/19-days-southern-tanzania-birding-trip.jpg",
+    "summary": "Southern Tanzania endemic birding itinerary – miombo, arc forests and remote wetlands with specialist guiding.",
+    "heroImage": "assets/images/packages/19-days-southern-endemic-birding/hero.jpg",
     "featured": false,
     "verified": true,
     "itinerary": [
@@ -540,18 +640,37 @@
       "birding": [],
       "wildlife": []
     },
-    "included": [],
-    "excluded": [],
-    "bestTime": null,
+    "included": [
+      "Specialist birding guide (English; other languages on request)",
+      "Safari vehicle suited to the route – small group sizes",
+      "Park and reserve fees as per confirmed itinerary",
+      "Accommodation as proposed for your dates",
+      "Meals on the published meal plan while in the field",
+      "Bottled drinking water in the vehicle on drive days"
+    ],
+    "excluded": [
+      "International flights, visas and airport taxes",
+      "Travel and medical insurance",
+      "Tips for guides, drivers and lodge staff",
+      "Personal expenses, alcoholic drinks and laundry",
+      "Optional extensions or activities not listed in the itinerary"
+    ],
+    "bestTime": "May–Nov often favoured for miombo, tracks and bush camps; forests bird year-round with weather flexibility.",
     "needsOwnerReview": [
-      "distinction from 19-day southern trip"
+      "duplicate-itinerary-with-19-days-southern-tanzania-birding-trip",
+      "missing-day-19-in-import",
+      "distinction-between-two-19-day-listings"
     ],
     "liveUrl": "https://endemicbirds.co.tz/index.php/19-days-southern-tanzania-birding-trip/",
     "liveListingTitle": "19 Days Southern Tanzania Endemic birding tour itinerary",
     "seo": {
       "title": "19 Days Southern Endemic Birding | Endemic Birds",
       "description": "Southern Tanzania endemic birding tour itinerary."
-    }
+    },
+    "gallery": [
+      "assets/images/packages/19-days-southern-endemic-birding/hero.jpg",
+      "assets/images/packages/19-days-southern-endemic-birding/gallery-1.jpg"
+    ]
   },
   {
     "id": "20-day-endemic-birds-southern",
@@ -567,7 +686,7 @@
       "Southern"
     ],
     "summary": "Extended southern route focused on endemic birds in southern Tanzania.",
-    "heroImage": "assets/images/from-live-site/packages/14-days-southern-tanzania-birding-tour.jpg",
+    "heroImage": "assets/images/packages/20-day-endemic-birds-southern/hero.jpg",
     "featured": false,
     "verified": true,
     "itinerary": [
@@ -651,15 +770,32 @@
       "birding": [],
       "wildlife": []
     },
-    "included": [],
-    "excluded": [],
-    "bestTime": null,
+    "included": [
+      "Specialist birding guide (English; other languages on request)",
+      "Safari vehicle suited to the route – small group sizes",
+      "Park and reserve fees as per confirmed itinerary",
+      "Accommodation as proposed for your dates",
+      "Meals on the published meal plan while in the field",
+      "Bottled drinking water in the vehicle on drive days"
+    ],
+    "excluded": [
+      "International flights, visas and airport taxes",
+      "Travel and medical insurance",
+      "Tips for guides, drivers and lodge staff",
+      "Personal expenses, alcoholic drinks and laundry",
+      "Optional extensions or activities not listed in the itinerary"
+    ],
+    "bestTime": "May–Nov often favoured for miombo, tracks and bush camps; forests bird year-round with weather flexibility.",
     "seo": {
       "title": "20-Day Southern Endemic Birds | Endemic Birds",
       "description": "20-day endemic birds itinerary in southern Tanzania."
     },
     "liveUrl": "https://endemicbirds.co.tz/index.php/20-day-itinerary-for-endemic-birds-in-southern-tanzania/",
-    "liveListingTitle": "20-Day Itinerary for Endemic Birds in Southern Tanzania"
+    "liveListingTitle": "20-Day Itinerary for Endemic Birds in Southern Tanzania",
+    "gallery": [
+      "assets/images/packages/20-day-endemic-birds-southern/hero.jpg",
+      "assets/images/packages/20-day-endemic-birds-southern/gallery-1.jpg"
+    ]
   },
   {
     "id": "20-day-endemic-birding-tanzania",
@@ -676,8 +812,8 @@
       "Northern",
       "Southern"
     ],
-    "summary": "National endemic birding tour itinerary listed on endemicbirds.co.tz birding tours page.",
-    "heroImage": "assets/images/from-live-site/packages/22-days-endemic-birding-tours.jpg",
+    "summary": "National endemic birding tour itinerary listed on birding tours page.",
+    "heroImage": "assets/images/packages/20-day-endemic-birding-tanzania/hero.jpg",
     "featured": false,
     "verified": true,
     "itinerary": [
@@ -746,9 +882,22 @@
       "birding": [],
       "wildlife": []
     },
-    "included": [],
-    "excluded": [],
-    "bestTime": null,
+    "included": [
+      "Specialist birding guide (English; other languages on request)",
+      "Safari vehicle suited to the route – small group sizes",
+      "Park and reserve fees as per confirmed itinerary",
+      "Accommodation as proposed for your dates",
+      "Meals on the published meal plan while in the field",
+      "Bottled drinking water in the vehicle on drive days"
+    ],
+    "excluded": [
+      "International flights, visas and airport taxes",
+      "Travel and medical insurance",
+      "Tips for guides, drivers and lodge staff",
+      "Personal expenses, alcoholic drinks and laundry",
+      "Optional extensions or activities not listed in the itinerary"
+    ],
+    "bestTime": "Jun–Oct dry season for general wildlife; calving Dec–Mar (Ndutu); river crossings Jul–Oct (north Serengeti) – we match sectors to your month.",
     "needsOwnerReview": [
       "overlap with 20-day southern route"
     ],
@@ -757,7 +906,11 @@
       "description": "20-day endemic birding tour across Tanzania."
     },
     "liveUrl": "https://endemicbirds.co.tz/index.php/20-day-itinerary-for-endemic-birds-in-tanzania-2/",
-    "liveListingTitle": "20-Day Itinerary for Endemic Birding tour in Tanzania"
+    "liveListingTitle": "20-Day Itinerary for Endemic Birding tour in Tanzania",
+    "gallery": [
+      "assets/images/packages/20-day-endemic-birding-tanzania/hero.jpg",
+      "assets/images/packages/20-day-endemic-birding-tanzania/gallery-1.jpg"
+    ]
   },
   {
     "id": "12-day-endemic-birds-northern",
@@ -772,7 +925,7 @@
       "Northern"
     ],
     "summary": "Northern Tanzania itinerary focused on endemic and specialty birds.",
-    "heroImage": "assets/images/from-live-site/destinations/northern-destination.jpg",
+    "heroImage": "assets/images/packages/12-day-endemic-birds-northern/hero.jpg",
     "featured": false,
     "verified": true,
     "itinerary": [
@@ -831,15 +984,32 @@
       "birding": [],
       "wildlife": []
     },
-    "included": [],
-    "excluded": [],
-    "bestTime": null,
+    "included": [
+      "Specialist birding guide (English; other languages on request)",
+      "Safari vehicle suited to the route – small group sizes",
+      "Park and reserve fees as per confirmed itinerary",
+      "Accommodation as proposed for your dates",
+      "Meals on the published meal plan while in the field",
+      "Bottled drinking water in the vehicle on drive days"
+    ],
+    "excluded": [
+      "International flights, visas and airport taxes",
+      "Travel and medical insurance",
+      "Tips for guides, drivers and lodge staff",
+      "Personal expenses, alcoholic drinks and laundry",
+      "Optional extensions or activities not listed in the itinerary"
+    ],
+    "bestTime": "Jun–Oct dry season for general wildlife; calving Dec–Mar (Ndutu); river crossings Jul–Oct (north Serengeti) – we match sectors to your month.",
     "seo": {
       "title": "12-Day Northern Endemic Birds | Endemic Birds",
       "description": "12-day endemic birds itinerary in northern Tanzania."
     },
     "liveUrl": "https://endemicbirds.co.tz/index.php/12-day-itinerary-for-endemic-birds-in-northern-tanzania/",
-    "liveListingTitle": "12-Day Itinerary for Endemic Birds in Northern Tanzania"
+    "liveListingTitle": "12-Day Itinerary for Endemic Birds in Northern Tanzania",
+    "gallery": [
+      "assets/images/packages/12-day-endemic-birds-northern/hero.jpg",
+      "assets/images/packages/12-day-endemic-birds-northern/gallery-1.jpg"
+    ]
   },
   {
     "id": "10-day-birding-northern-eastern",
@@ -856,7 +1026,7 @@
       "Eastern"
     ],
     "summary": "Ten-day birding safari combining northern and eastern Tanzania habitats.",
-    "heroImage": "assets/images/from-live-site/destinations/eastern-destination.jpg",
+    "heroImage": "assets/images/packages/10-day-birding-northern-eastern/hero.jpg",
     "featured": false,
     "verified": true,
     "itinerary": [
@@ -915,15 +1085,32 @@
       "birding": [],
       "wildlife": []
     },
-    "included": [],
-    "excluded": [],
-    "bestTime": null,
+    "included": [
+      "Specialist birding guide (English; other languages on request)",
+      "Safari vehicle suited to the route – small group sizes",
+      "Park and reserve fees as per confirmed itinerary",
+      "Accommodation as proposed for your dates",
+      "Meals on the published meal plan while in the field",
+      "Bottled drinking water in the vehicle on drive days"
+    ],
+    "excluded": [
+      "International flights, visas and airport taxes",
+      "Travel and medical insurance",
+      "Tips for guides, drivers and lodge staff",
+      "Personal expenses, alcoholic drinks and laundry",
+      "Optional extensions or activities not listed in the itinerary"
+    ],
+    "bestTime": "Jun–Oct dry season for general wildlife; calving Dec–Mar (Ndutu); river crossings Jul–Oct (north Serengeti) – we match sectors to your month.",
     "seo": {
       "title": "10-Day Northern & Eastern Birding | Endemic Birds",
       "description": "10-day birding safari in northern and eastern Tanzania."
     },
     "liveUrl": "https://endemicbirds.co.tz/index.php/10-day-birding-safaris-eastern-tanzania/",
-    "liveListingTitle": "10-Day Birding Safaris Northern and Eastern Tanzania"
+    "liveListingTitle": "10-Day Birding Safaris Northern and Eastern Tanzania",
+    "gallery": [
+      "assets/images/packages/10-day-birding-northern-eastern/hero.jpg",
+      "assets/images/packages/10-day-birding-northern-eastern/gallery-1.jpg"
+    ]
   },
   {
     "id": "10-day-birding-southeast",
@@ -940,7 +1127,7 @@
       "Southern"
     ],
     "summary": "Southeast Tanzania birding safari itinerary from the live birding tours listing.",
-    "heroImage": "assets/images/from-live-site/gallery/_mg_9057.jpg",
+    "heroImage": "assets/images/packages/10-day-birding-southeast/hero.jpg",
     "featured": false,
     "verified": true,
     "itinerary": [
@@ -999,15 +1186,32 @@
       "birding": [],
       "wildlife": []
     },
-    "included": [],
-    "excluded": [],
-    "bestTime": null,
+    "included": [
+      "Specialist birding guide (English; other languages on request)",
+      "Safari vehicle suited to the route – small group sizes",
+      "Park and reserve fees as per confirmed itinerary",
+      "Accommodation as proposed for your dates",
+      "Meals on the published meal plan while in the field",
+      "Bottled drinking water in the vehicle on drive days"
+    ],
+    "excluded": [
+      "International flights, visas and airport taxes",
+      "Travel and medical insurance",
+      "Tips for guides, drivers and lodge staff",
+      "Personal expenses, alcoholic drinks and laundry",
+      "Optional extensions or activities not listed in the itinerary"
+    ],
+    "bestTime": "May–Nov often favoured for miombo, tracks and bush camps; forests bird year-round with weather flexibility.",
     "seo": {
       "title": "10-Day Southeast Tanzania Birding | Endemic Birds",
       "description": "10-day birding safari in southeast Tanzania."
     },
     "liveUrl": "https://endemicbirds.co.tz/index.php/10-day-birding-safari-itinerary-in-southeast-tanzania/",
-    "liveListingTitle": "10-Day Birding Safari Itinerary in Southeast Tanzania"
+    "liveListingTitle": "10-Day Birding Safari Itinerary in Southeast Tanzania",
+    "gallery": [
+      "assets/images/packages/10-day-birding-southeast/hero.jpg",
+      "assets/images/packages/10-day-birding-southeast/gallery-1.jpg"
+    ]
   },
   {
     "id": "10-days-south-west-tanzania",
@@ -1023,8 +1227,8 @@
       "Western",
       "Southern"
     ],
-    "summary": "South-west Tanzania birding route listed on endemicbirds.co.tz.",
-    "heroImage": "assets/images/from-live-site/destinations/western-destination.jpg",
+    "summary": "South-west Tanzania birding route through remote western forests and plateau habitats.",
+    "heroImage": "assets/images/packages/10-days-south-west-tanzania/hero.jpg",
     "featured": false,
     "verified": true,
     "itinerary": [
@@ -1083,15 +1287,32 @@
       "birding": [],
       "wildlife": []
     },
-    "included": [],
-    "excluded": [],
-    "bestTime": null,
+    "included": [
+      "Specialist birding guide (English; other languages on request)",
+      "Safari vehicle suited to the route – small group sizes",
+      "Park and reserve fees as per confirmed itinerary",
+      "Accommodation as proposed for your dates",
+      "Meals on the published meal plan while in the field",
+      "Bottled drinking water in the vehicle on drive days"
+    ],
+    "excluded": [
+      "International flights, visas and airport taxes",
+      "Travel and medical insurance",
+      "Tips for guides, drivers and lodge staff",
+      "Personal expenses, alcoholic drinks and laundry",
+      "Optional extensions or activities not listed in the itinerary"
+    ],
+    "bestTime": "May–Nov often favoured for miombo, tracks and bush camps; forests bird year-round with weather flexibility.",
     "seo": {
       "title": "10 Days South West Tanzania Birding | Endemic Birds",
       "description": "10-day south-west Tanzania birding tour."
     },
     "liveUrl": "https://endemicbirds.co.tz/index.php/10-days-south-west-tanzania/",
-    "liveListingTitle": "10 Days South West Tanzania"
+    "liveListingTitle": "10 Days South West Tanzania",
+    "gallery": [
+      "assets/images/packages/10-days-south-west-tanzania/hero.jpg",
+      "assets/images/packages/10-days-south-west-tanzania/gallery-1.jpg"
+    ]
   },
   {
     "id": "9-days-mahale-gombe-burigi-minziro",
@@ -1108,7 +1329,7 @@
       "North West"
     ],
     "summary": "Western forest and lake-region birding across Mahale, Gombe, Burigi-Chato and Minziro.",
-    "heroImage": "assets/images/from-live-site/destinations/western-destination.jpg",
+    "heroImage": "assets/images/packages/9-days-mahale-gombe-burigi-minziro/hero.jpg",
     "featured": false,
     "verified": true,
     "itinerary": [
@@ -1162,15 +1383,32 @@
       "birding": [],
       "wildlife": []
     },
-    "included": [],
-    "excluded": [],
-    "bestTime": null,
+    "included": [
+      "Specialist birding guide (English; other languages on request)",
+      "Safari vehicle suited to the route – small group sizes",
+      "Park and reserve fees as per confirmed itinerary",
+      "Accommodation as proposed for your dates",
+      "Meals on the published meal plan while in the field",
+      "Bottled drinking water in the vehicle on drive days"
+    ],
+    "excluded": [
+      "International flights, visas and airport taxes",
+      "Travel and medical insurance",
+      "Tips for guides, drivers and lodge staff",
+      "Personal expenses, alcoholic drinks and laundry",
+      "Optional extensions or activities not listed in the itinerary"
+    ],
+    "bestTime": "Dry-season months simplify forest access and lake charters; enquire for chimp tracking availability.",
     "seo": {
       "title": "9 Days Western Tanzania Forest Birding | Endemic Birds",
       "description": "9-day birding itinerary for Mahale, Gombe, Burigi-Chato and Minziro."
     },
     "liveUrl": "https://endemicbirds.co.tz/index.php/9-days-birding-itinerary-for-mahale-gombe-burigi-chato-and-minziro-forest/",
-    "liveListingTitle": "9 Days Birding Itinerary for Mahale, Gombe, Burigi-Chato, and Minziro Forest"
+    "liveListingTitle": "9 Days Birding Itinerary for Mahale, Gombe, Burigi-Chato, and Minziro Forest",
+    "gallery": [
+      "assets/images/packages/9-days-mahale-gombe-burigi-minziro/hero.jpg",
+      "assets/images/packages/9-days-mahale-gombe-burigi-minziro/gallery-1.jpg"
+    ]
   },
   {
     "id": "8-days-birding-around-iringa",
@@ -1185,8 +1423,8 @@
     "circuits": [
       "Southern"
     ],
-    "summary": "Regional birding around Iringa including Kiponzero, Kisolanza, Uluti and Mufindi as listed on the live site.",
-    "heroImage": "assets/images/from-live-site/gallery/_mg_9641.jpg",
+    "summary": "Regional birding around Iringa including Kiponzero, Kisolanza, Uluti and Mufindi as listed on this route.",
+    "heroImage": "assets/images/packages/8-days-birding-around-iringa/hero.jpg",
     "featured": false,
     "verified": true,
     "itinerary": [
@@ -1235,16 +1473,33 @@
       "birding": [],
       "wildlife": []
     },
-    "included": [],
-    "excluded": [],
-    "bestTime": null,
+    "included": [
+      "Specialist birding guide (English; other languages on request)",
+      "Safari vehicle suited to the route – small group sizes",
+      "Park and reserve fees as per confirmed itinerary",
+      "Accommodation as proposed for your dates",
+      "Meals on the published meal plan while in the field",
+      "Bottled drinking water in the vehicle on drive days"
+    ],
+    "excluded": [
+      "International flights, visas and airport taxes",
+      "Travel and medical insurance",
+      "Tips for guides, drivers and lodge staff",
+      "Personal expenses, alcoholic drinks and laundry",
+      "Optional extensions or activities not listed in the itinerary"
+    ],
+    "bestTime": "May–Nov often favoured for miombo, tracks and bush camps; forests bird year-round with weather flexibility.",
     "seo": {
       "title": "8 Days Birding Around Iringa | Endemic Birds",
       "description": "8-day birding tour around Iringa, Tanzania."
     },
     "liveListingTitle": "8 Days Birding Around Iringa (Kiponzero,Kisolanza,Uluti,Mufindi)",
     "liveUrlNote": "Live card links to homepage; confirm dedicated page URL with owner.",
-    "liveUrl": "https://endemicbirds.co.tz/index.php/birding-around-iringa/"
+    "liveUrl": "https://endemicbirds.co.tz/index.php/birding-around-iringa/",
+    "gallery": [
+      "assets/images/packages/8-days-birding-around-iringa/hero.jpg",
+      "assets/images/packages/8-days-birding-around-iringa/gallery-1.jpg"
+    ]
   },
   {
     "id": "7-days-mpanda-to-mbeya",
@@ -1261,7 +1516,7 @@
       "Western"
     ],
     "summary": "Seven-day highland and forest-edge birding route in south-west Tanzania.",
-    "heroImage": "assets/images/from-live-site/destinations/eastern-arc-mountain.jpg",
+    "heroImage": "assets/images/packages/7-days-mpanda-to-mbeya/hero.jpg",
     "featured": false,
     "verified": true,
     "itinerary": [
@@ -1305,15 +1560,32 @@
       "birding": [],
       "wildlife": []
     },
-    "included": [],
-    "excluded": [],
-    "bestTime": null,
+    "included": [
+      "Specialist birding guide (English; other languages on request)",
+      "Safari vehicle suited to the route – small group sizes",
+      "Park and reserve fees as per confirmed itinerary",
+      "Accommodation as proposed for your dates",
+      "Meals on the published meal plan while in the field",
+      "Bottled drinking water in the vehicle on drive days"
+    ],
+    "excluded": [
+      "International flights, visas and airport taxes",
+      "Travel and medical insurance",
+      "Tips for guides, drivers and lodge staff",
+      "Personal expenses, alcoholic drinks and laundry",
+      "Optional extensions or activities not listed in the itinerary"
+    ],
+    "bestTime": "May–Nov often favoured for miombo, tracks and bush camps; forests bird year-round with weather flexibility.",
     "seo": {
       "title": "7 Days Mpanda to Mbeya Birding | Endemic Birds",
       "description": "7-day birding itinerary from Mpanda to Mbeya."
     },
     "liveUrl": "https://endemicbirds.co.tz/index.php/7-days-itinerary-from-mpanda-to-inyonga-rungwe-bitimanyanga-chunya-kituro-and-mbeya/",
-    "liveListingTitle": "7 Days Itinerary from Mpanda to Inyonga, Rungwe, Bitimanyanga, Chunya, Kituro, and Mbeya"
+    "liveListingTitle": "7 Days Itinerary from Mpanda to Inyonga, Rungwe, Bitimanyanga, Chunya, Kituro, and Mbeya",
+    "gallery": [
+      "assets/images/packages/7-days-mpanda-to-mbeya/hero.jpg",
+      "assets/images/packages/7-days-mpanda-to-mbeya/gallery-1.jpg"
+    ]
   },
   {
     "id": "10-day-birdwatching-northern",
@@ -1328,14 +1600,14 @@
       "Northern"
     ],
     "summary": "Northern Tanzania birdwatching safari combining specialist birding with classic wildlife landscapes.",
-    "heroImage": "assets/images/from-live-site/destinations/northern-destination.jpg",
+    "heroImage": "assets/images/packages/10-day-birdwatching-northern/hero.jpg",
     "featured": true,
     "verified": true,
     "itinerary": [
       {
         "day": 1,
         "title": "Arrival in Arusha",
-        "description": "Upon arrival at Kilimanjaro International Airport, you will be greeted by a representative who will assist you with your transfer to Arusha Town. You will stay overnight at Ilboru Safari Lodge, where you will receive a briefing about the upcoming birdwatching tour."
+        "description": "Upon arrival at Kilimanjaro International Airport, you will be greeted by a representative who will assist you with your transfer to Arusha Town. You will stay overnight at Eliboru Lodge, where you will receive a briefing about the upcoming birdwatching tour."
       },
       {
         "day": 2,
@@ -1387,9 +1659,22 @@
       "birding": [],
       "wildlife": []
     },
-    "included": [],
-    "excluded": [],
-    "bestTime": null,
+    "included": [
+      "Professional safari guide (English; other languages on request)",
+      "Safari vehicle with pop-up roof – maximum six guests, window seats",
+      "Park fees as per confirmed itinerary",
+      "Accommodation as listed per day",
+      "Meals on full-board basis while on safari unless noted",
+      "Bottled drinking water in the vehicle"
+    ],
+    "excluded": [
+      "International flights and visas",
+      "Travel insurance",
+      "Tips for guides and camp staff",
+      "Personal expenses, drinks and laundry",
+      "Optional activities not listed in the itinerary"
+    ],
+    "bestTime": "Jun–Oct dry season for general wildlife; calving Dec–Mar (Ndutu); river crossings Jul–Oct (north Serengeti) – we match sectors to your month.",
     "needsOwnerReview": [
       "category confirmation"
     ],
@@ -1398,7 +1683,11 @@
       "description": "10-day birdwatching safari in northern Tanzania."
     },
     "liveUrl": "https://endemicbirds.co.tz/index.php/10-day-birdwatching-safari-in-northern-tanzania/",
-    "liveListingTitle": "10-Day Birdwatching Safari in Northern Tanzania"
+    "liveListingTitle": "10-Day Birdwatching Safari in Northern Tanzania",
+    "gallery": [
+      "assets/images/packages/10-day-birdwatching-northern/hero.jpg",
+      "assets/images/packages/10-day-birdwatching-northern/gallery-1.jpg"
+    ]
   },
   {
     "id": "15-days-birding-wildlife-photographic",
@@ -1414,8 +1703,8 @@
       "Northern",
       "Southern"
     ],
-    "summary": "Combined birding and wildlife photographic journey referenced in the live site journal section.",
-    "heroImage": "assets/images/from-live-site/blog/15-days-birding-and-wildlife-photographic.jpg",
+    "summary": "Combined birding and wildlife photographic journey",
+    "heroImage": "assets/images/packages/15-days-birding-wildlife-photographic/hero.jpg",
     "featured": true,
     "verified": true,
     "itinerary": [
@@ -1474,9 +1763,22 @@
       "birding": [],
       "wildlife": []
     },
-    "included": [],
-    "excluded": [],
-    "bestTime": null,
+    "included": [
+      "Professional safari guide (English; other languages on request)",
+      "Safari vehicle with pop-up roof – maximum six guests, window seats",
+      "Park fees as per confirmed itinerary",
+      "Accommodation as listed per day",
+      "Meals on full-board basis while on safari unless noted",
+      "Bottled drinking water in the vehicle"
+    ],
+    "excluded": [
+      "International flights and visas",
+      "Travel insurance",
+      "Tips for guides and camp staff",
+      "Personal expenses, drinks and laundry",
+      "Optional activities not listed in the itinerary"
+    ],
+    "bestTime": "Jun–Oct dry season for general wildlife; calving Dec–Mar (Ndutu); river crossings Jul–Oct (north Serengeti) – we match sectors to your month.",
     "needsOwnerReview": [
       "full route"
     ],
@@ -1485,7 +1787,11 @@
       "description": "15-day birding and wildlife photographic safari."
     },
     "liveUrl": "https://endemicbirds.co.tz/index.php/2023/09/06/15-days-birding-and-wildlife-photographic/",
-    "liveListingTitle": "15 Days Birding And Wildlife Photographic"
+    "liveListingTitle": "15 Days Birding And Wildlife Photographic",
+    "gallery": [
+      "assets/images/packages/15-days-birding-wildlife-photographic/hero.jpg",
+      "assets/images/packages/15-days-birding-wildlife-photographic/gallery-1.jpg"
+    ]
   },
   {
     "id": "6-days-tanzania-safari",
@@ -1499,8 +1805,8 @@
     "circuits": [
       "Northern"
     ],
-    "summary": "Short Tanzania wildlife safari from the birding & wildlife safaris listing.",
-    "heroImage": "assets/images/wildlife/destinations/serengeti-national-park/hero.jpg",
+    "summary": "Short Tanzania wildlife safari",
+    "heroImage": "assets/images/packages/6-days-tanzania-safari/hero.jpg",
     "featured": true,
     "verified": true,
     "itinerary": [
@@ -1559,7 +1865,6 @@
       "Optional activities not listed in the itinerary"
     ],
     "bestTime": "Year-round; Jun–Oct peak dry season.",
-    "needsOwnerReview": [],
     "seo": {
       "title": "6 Days Tanzania Safari | Endemic Birds",
       "description": "6-day Tanzania wildlife safari."
@@ -1573,6 +1878,10 @@
       "tarangire-national-park",
       "ngorongoro-conservation-area",
       "serengeti-national-park"
+    ],
+    "gallery": [
+      "assets/images/packages/6-days-tanzania-safari/hero.jpg",
+      "assets/images/packages/6-days-tanzania-safari/gallery-1.jpg"
     ]
   },
   {
@@ -1588,7 +1897,7 @@
       "Northern"
     ],
     "summary": "Calving-season migration safari with Hadzabe cultural experience.",
-    "heroImage": "assets/images/wildlife/destinations/serengeti-national-park/gallery-1.jpg",
+    "heroImage": "assets/images/packages/7-days-wildebeest-migration-hadzabe/hero.jpg",
     "featured": true,
     "verified": true,
     "itinerary": [
@@ -1650,8 +1959,7 @@
       "Personal expenses, drinks and laundry",
       "Optional activities not listed in the itinerary"
     ],
-    "bestTime": null,
-    "needsOwnerReview": [],
+    "bestTime": "Jun–Oct dry season for general wildlife; calving Dec–Mar (Ndutu); river crossings Jul–Oct (north Serengeti) – we match sectors to your month.",
     "seo": {
       "title": "7 Days Migration & Hadzabe Safari | Endemic Birds",
       "description": "7-day wildebeest calving migration and Hadzabe safari."
@@ -1664,64 +1972,72 @@
     "wildlifeDestinations": [
       "serengeti-national-park",
       "ngorongoro-conservation-area"
+    ],
+    "gallery": [
+      "assets/images/packages/7-days-wildebeest-migration-hadzabe/hero.jpg",
+      "assets/images/packages/7-days-wildebeest-migration-hadzabe/gallery-1.jpg"
     ]
   },
   {
     "id": "8-days-wildebeest-calving-migration",
     "slug": "8-days-wildebeest-calving-migration",
-    "title": "8 Days Great Wildebeest Calving Migration Safari",
+    "title": "8 Days Wildebeest Migration Safari",
     "category": "wildlife",
     "durationDays": 8,
     "destinations": [
-      "northern"
+      "northern",
+      "southern",
+      "eastern"
     ],
     "circuits": [
-      "Northern"
+      "Northern",
+      "Southern",
+      "Eastern"
     ],
-    "summary": "Great wildebeest calving migration safari – wildlife-focused itinerary.",
-    "heroImage": "assets/images/wildlife/destinations/ngorongoro-conservation-area/gallery-2.jpg",
+    "summary": "A well-planned 8 Days Great Wildebeest Calving – Migration safari The Great Wildebeest Calving Migration Safari is best designed for those craving a wildebeest calving experience which takes place, especially between December and April. The 8 Days Great Wildebeest Calving – Migration Safari will take you to areas of the Lake Ndutu area, as well as the Southern and Central areas of Serengeti National Park where the majority of the wildebeest are usually found. A visit to the w",
+    "heroImage": "assets/images/packages/8-days-wildebeest-calving-migration/hero.jpg",
     "featured": false,
     "verified": true,
     "itinerary": [
       {
         "day": 1,
-        "title": "Arusha to Ndutu",
-        "description": "Calving flats wildlife immersion."
+        "title": "ARRIVAL IN ARUSHA",
+        "description": "Upon your arrival, you will be picked up from Kilimanjaro International Airport. Your professional guide will answer all your queries regarding your upcoming safari and provide you with a short briefing as well. Afterward, you will be taken to your accommodation for dinner and an overnight stay. Meals: Dinner"
       },
       {
         "day": 2,
-        "title": "Ndutu full day",
-        "description": "Wildebeest calving and predator action."
+        "title": "TARANGIRE NATIONAL PARK",
+        "description": "Following an early morning breakfast at your accommodation, you leave Arusha for Tarangire National Park. This park covering approximately 2600 square kilometers is spectacular in the dry season when many of the migratory wildlife species come back to the permanent waters of the Tarangire River. Huge herds of wildebeest, zebras, elephants, eland, and oryx gather to stay in Tarangire until the onset of the rains when they migrate again to good grazing areas. Expect to encounter large herds of elephants while here that are accustomed to vehicles. You will enjoy your lunch at the park and later have an evening game drive before heading to your accommodation for dinner and an overnight stay. Meals: Breakfast, Lunch, and Dinner"
       },
       {
         "day": 3,
-        "title": "Ndutu full day",
-        "description": "Second day in southern Serengeti ecosystem."
+        "title": "LAKE MANYARA NATIONAL PARK",
+        "description": "Following an early morning breakfast, you will depart for Lake Manyara National Park. Lake Manyara provides a perfect introduction to Tanzania’s birdlife. More than 400 species have been recorded, and even a first-time visitor to Africa might reasonably expect to observe 100 of these in one day. Inland of the floodplain, a narrow belt of acacia woodland is the favored haunt of Manyara’s legendary tree-climbing lions and impressively tusked elephants. Overnight will be at Lake Manyara Serena Lodge, a towering terracotta escarpment with panoramic views over the glittering alkaline waters of Lake Manyara. Meals: Breakfast, Lunch, and Dinner"
       },
       {
         "day": 4,
-        "title": "Serengeti move north",
-        "description": "Transfer with game drives en route."
+        "title": "SERENGETI NATIONAL PARK (NDUTU AREA)",
+        "description": "After breakfast, you will set off for the Ndutu area situated in the Ngorongoro conservation area, which is part of the southern Serengeti ecosystem. Lake Ndutu like most other rift lakes is alkaline however the water is still drinkable and consumed by a wide array of local wildlife. We will spend the afternoon with a game drive in the Ndutu area. The majority of the wildebeest migration can normally be found on the short-grass plains from December to April. The area is usually heavily populated with elephants, birds, and resident games. You will have dinner at your accommodation and an overnight stay. Meals: Breakfast, lunch, and dinner"
       },
       {
         "day": 5,
-        "title": "Serengeti full day",
-        "description": "Plains cats and vultures on kills."
+        "title": "SERENGETI NATIONAL PARK (NDUTU AREA – SERONERA)",
+        "description": "Following an early morning breakfast, you will enjoy a full-day game drive in the Ndutu area exploring a great range of various habitats such as swamps, woodland, soda lakes, and the world-famous Serengeti short grass plains. You will witness herds of wildebeest and zebras, especially during a short time frame from around February and lasting for about 3 weeks where the majority of the wildebeest calve. While here, you will enjoy wildlife sightings with big games. The sea of grass provides little cover and the young make easy prey for a variety of predators. Wildebeest calves can run minutes after they were born and within 3 days, they are normally strong enough to keep up with the herd. Later in the afternoon, you will enjoy your trip back to Serengeti national park. Meals: Breakfast, lunch, and dinner"
       },
       {
         "day": 6,
-        "title": "Serengeti full day",
-        "description": "Flexible sector based on reports."
+        "title": "SERENGETI NATIONAL PARK (SERONERA)",
+        "description": "After breakfast at your accommodation, you will proceed to the Central part of Serengeti. This park is well-known for its healthy stock of resident wildlife, particularly the “big five”, named for the five most prized trophies taken by hunters: Lion, Leopard, Elephant, Buffaloes, and Rhinos. You will enjoy wildlife sightings on your game drives in this wildlife-rich area before heading back for dinner and an overnight stay at your already booked accommodation. Meals: Breakfast, Lunch, and Dinner"
       },
       {
         "day": 7,
-        "title": "Ngorongoro",
-        "description": "Crater rim overnight."
+        "title": "NGORONGORO CRATER",
+        "description": "The other top area on this safari is the crater area. You start with an early morning game drive inside the Ngorongoro Crater. The Ngorongoro Conservation Area (NCA) is an extensive highland area along the eastern arm of the Rift Valley, with the world-renowned Ngorongoro Crater as its focal point. Ngorongoro was established to conserve wildlife and other natural resources. It also safeguards the interests of indigenous people and promotes tourism. While here, you will enjoy wildlife sightings with all the big games available. Meal Plan: Breakfast, Lunch, and Dinner"
       },
       {
         "day": 8,
-        "title": "Crater & exit",
-        "description": "Crater floor; return to Arusha."
+        "title": "MTO WA MBU – ARUSHA",
+        "description": "After breakfast, we will drive Mto Wa Mbu for a morning cultural tour and a walking safari. We will have a sumptuous local lunch as we take in the stunning views hovering over us. An optional mountain biking activity can be arranged at an added cost if interested. In the late afternoon, you will head back to Arusha or to the airport for your flight back home. Meals: Breakfast & Lunch End of the 8 Days the Great Wildebeest Calving Migration Safari"
       }
     ],
     "highlights": {
@@ -1745,26 +2061,48 @@
       "Personal expenses, drinks and laundry",
       "Optional activities not listed in the itinerary"
     ],
-    "bestTime": null,
-    "needsOwnerReview": [],
+    "bestTime": "Jun–Oct dry season for general wildlife; calving Dec–Mar (Ndutu); river crossings Jul–Oct (north Serengeti) – we match sectors to your month.",
     "seo": {
-      "title": "8 Days Calving Migration Safari | Endemic Birds",
-      "description": "8-day great wildebeest calving migration safari."
+      "title": "8 Days Wildebeest Migration Safari | Endemic Birds",
+      "description": "A well-planned 8 Days Great Wildebeest Calving – Migration safari The Great Wildebeest Calving Migration Safari is best designed for those craving a wildeb"
     },
     "liveUrl": "https://endemicbirds.co.tz/index.php/2023/09/06/8-days-wildebeest-migration-calving-safari-and-hadzabe/",
     "liveListingTitle": "8 Days Wildebeest Migration Calving Safari And Hadzabe",
     "activitySlugs": [
-      "great-migration-plains"
+      "great-migration-plains",
+      "ngorongoro-northern-icons"
     ],
     "wildlifeDestinations": [
-      "serengeti-national-park",
-      "ngorongoro-conservation-area"
-    ]
+      "tarangire-national-park",
+      "lake-manyara-national-park",
+      "ngorongoro-conservation-area",
+      "serengeti-national-park"
+    ],
+    "gallery": [
+      "assets/images/packages/8-days-wildebeest-calving-migration/hero.jpg",
+      "assets/images/packages/8-days-wildebeest-calving-migration/gallery-1.jpg"
+    ],
+    "contentSource": {
+      "type": "docx",
+      "sourceFile": "itineraries/8 Days Wildebeest Migration Safari.docx",
+      "supplementaryFiles": [],
+      "importedAt": "2026-11-15T22:05:12.789Z",
+      "fidelity": "verbatim-itinerary",
+      "dayCountFromDoc": 8
+    },
+    "download": {
+      "file": "assets/downloads/packages/8-days-wildebeest-calving-migration.docx",
+      "fileType": "docx",
+      "sizeBytes": 16964,
+      "versionDate": "2026-11-15",
+      "label": "Download full itinerary (Word)"
+    },
+    "needsOwnerReview": []
   },
   {
     "id": "9-days-wildlife-safari-zanzibar",
     "slug": "9-days-wildlife-safari-zanzibar",
-    "title": "9 Days Tanzania Wildlife Safari and Zanzibar Beach Holiday",
+    "title": "9 Days Wildlife Safari and Zanzibar Beach Holiday",
     "category": "wildlife",
     "durationDays": 9,
     "destinations": [
@@ -1775,55 +2113,55 @@
       "Northern",
       "Eastern"
     ],
-    "summary": "Wildlife safari combined with Zanzibar beach time.",
-    "heroImage": "assets/images/wildlife/destinations/serengeti-national-park/gallery-4.jpg",
+    "summary": "9 Days Tanzania Wildlife Safari and Zanzibar Beach Holiday 9 days Wildlife Safari & Zanzibar Beach Holiday safari package is a bush2beach Safari that combines the wildlife safari of Tanzania with the Zanzibar beach holiday. On a well planes 9 days wildlife safari and Zanzibar beach holiday, expect to visit some of the most famous safari destinations in the country for wildlife sighting. Parks to be visited include Lake Manyara, Serengeti, and Ngorongoro National Park. Finally",
+    "heroImage": "assets/images/packages/9-days-wildlife-safari-zanzibar/hero.jpg",
     "featured": false,
     "verified": true,
     "itinerary": [
       {
         "day": 1,
-        "title": "Arusha to Tarangire/Serengeti",
-        "description": "Start northern wildlife loop."
+        "title": "ARRIVAL IN TANZANIA",
+        "description": "Upon your arrival, you will be picked up from Kilimanjaro International Airport. Your professional guide will answer all your queries regarding your upcoming safari and provide you with a short briefing as well. Afterward, you will be taken to your accommodation at Mount Meru Hotel for dinner and an overnight stay. Meals: Dinner"
       },
       {
         "day": 2,
-        "title": "Serengeti",
-        "description": "Full-day game drives."
+        "title": "TARANGIRE NATIONAL PARK",
+        "description": "Following an early morning breakfast at your accommodation, you leave Arusha for Tarangire National Park. This park covering approximately 2600 square kilometers is spectacular in the dry season when many of the migratory wildlife species come back to the permanent waters of the Tarangire River. Huge herds of wildebeest, zebras, elephants, eland and oryx gather to stay in Tarangire until the onset of the rains when they migrate again to good grazing areas. Expect to encounter large herds of elephants while here that are accustomed to vehicles. You will enjoy your lunch at the park and later have an evening game drive before heading to your accommodation for dinner and an overnight stay. Meals: Breakfast, Lunch and Dinner"
       },
       {
         "day": 3,
-        "title": "Serengeti",
-        "description": "Second full day on plains."
+        "title": "SERENGETI CENTRAL (CENTRAL SERONERA)",
+        "description": "After breakfast, we proceed to the Central part of Serengeti. This park is well-known for its healthy stock of resident wildlife, particularly the “big five”, named for the five most prized trophies taken by hunters: Lion, Leopard, Elephant, Buffaloes, and Rhinos. While on safari here, you will also come across a variety f birdlife which is both resident and migrant. You will enjoy a picnic lunch at the national park before heading for an afternoon game drive. You will later be transferred to Serengeti Acacia Camp for an overnight stay and dinner. Meals: Breakfast, Lunch and Dinner"
       },
       {
         "day": 4,
-        "title": "Ngorongoro",
-        "description": "Crater descent."
+        "title": "SERENGETTI CENTRAL (SERONERA)",
+        "description": "After breakfast, we will leave for Central Serengeti National Park with picnic lunch and game drive along the way. Serengeti, among other incredible wildlife and stunning views is famed for the annual migration of over 1.5 million wildebeest and hundred thousand of zebras, a frenzied bout of territorial conquests and mating happening from July-October. Witness an actual survival of the fittest as these animals plunge through crocodile-infested waters. The wildebeest produces more than 8,000 calves daily before the 1,000 km (600 mile) pilgrimage begins again. After a long day with game drives, you will head to Serengeti Acacia Camp for dinner and an overnight stay Meals: Breakfast, Lunch and Dinner"
       },
       {
         "day": 5,
-        "title": "Fly/drive to Zanzibar",
-        "description": "Transfer to Stone Town or beach."
+        "title": "NGORONGORO CRATER",
+        "description": "After breakfast, we will drive to Ngorongoro for the crater tour with picnic descent to the crater floor for the day tour. Some 20,000 mammals live in the area including about 20 black rhinoceros, making the crater the best place in Tanzania to see these amazing creatures. The crater floor also has one of the highest carnivore densities in the world. Lions, cheetahs, hyenas and jackals are commonly seen, while leopards, servals and bat-eared foxes may be seen with some luck. Meals: Breakfast, Lunch and dinner"
       },
       {
         "day": 6,
-        "title": "Zanzibar leisure",
-        "description": "Beach time and optional spice tour."
+        "title": "FLIGHT TO ZANZIBAR",
+        "description": "After breakfast, we head back to Arusha Hotel for lunch. You will then take a flight from Kilimanjaro International Airport to Zanzibar in the afternoon. Meals: Breakfast, Lunch and Dinner"
       },
       {
         "day": 7,
-        "title": "Zanzibar leisure",
-        "description": "Snorkel or dhow cruise on request."
+        "title": "Day 7: ZANZIBAR BEACH LIFE EXPERIENCE",
+        "description": "After breakfast, you will go on a guided tour of stone town, a UNESCO World Heritage Site. Experience tracing the footsteps of Arab Sultans on Zanzibar and ponder on the interesting historical sites and labyrinths. See actual Zanzibar doors famous for its unique architectural tradition. After lunch, we will proceed to a tour of the countryside to the spice plantations. This place has a rich history and you will be welcomed by the rich aroma of spices such as nutmeg and cinnamon. Afterwards, we take you to Nungwi for your 2 nights’ accommodation at Z Hotel. Meals: Breakfast, lunch and Dinner"
       },
       {
         "day": 8,
-        "title": "Zanzibar",
-        "description": "Free day."
+        "title": "Day 8: ZANZIBAR BEACH LIFE EXPERIENCE",
+        "description": "After breakfast, you will go on a guided tour of stone town, a UNESCO World Heritage Site. Experience tracing the footsteps of Arab Sultans on Zanzibar and ponder on the interesting historical sites and labyrinths. See actual Zanzibar doors famous for its unique architectural tradition. After lunch, we will proceed to a tour of the countryside to the spice plantations. This place has a rich history and you will be welcomed by the rich aroma of spices such as nutmeg and cinnamon. Afterwards, we take you to Nungwi for your 2 nights’ accommodation at Z Hotel. Meals: Breakfast, lunch and Dinner"
       },
       {
         "day": 9,
-        "title": "Depart",
-        "description": "Airport transfer from Zanzibar."
+        "title": "DEPARTURE",
+        "description": "On your last day, enjoy the rest of your stay by relaxing in the pool or in the beach while taking in as much sunshine as you can. In the afternoon, we will take you to the airport for your onward destination as per booked flight. Meals: Breakfast and Lunch End of the 9 Days Wildlife Safari and Zanzibar Beach Holiday Safari includes Park fees All activities (unless labeled as optional) All accommodation as stated in the itinerary A professional driver/guide All transportation (unless labeled as optional) All Taxes/VAT Round-trip airport transfer All Meals (as specified in the day-by-day section) Drinking water on all days International flights (from/to home) Additional accommodation before and at the end of the tour Tips Personal items (souvenirs, travel insurance, visa fees, etc.) Government imposed increase of taxes and/or park fees Alcohol drinks"
       }
     ],
     "highlights": {
@@ -1841,27 +2179,50 @@
       "Domestic flight safari-Zanzibar if listed"
     ],
     "excluded": [
-      "International flights and visas",
-      "Travel insurance",
-      "Tips for guides and camp staff",
-      "Personal expenses, drinks and laundry",
-      "Optional activities not listed in the itinerary"
+      "International flights (from/to home)",
+      "Additional accommodation before and at the end of the tour",
+      "Tips",
+      "Personal items (souvenirs, travel insurance, visa fees, etc.)",
+      "Government imposed increase of taxes and/or park fees",
+      "Alcohol drinks"
     ],
-    "bestTime": null,
-    "needsOwnerReview": [],
+    "bestTime": "Jun–Oct dry season for general wildlife; calving Dec–Mar (Ndutu); river crossings Jul–Oct (north Serengeti) – we match sectors to your month.",
     "seo": {
-      "title": "9 Days Safari & Zanzibar | Endemic Birds",
-      "description": "9-day Tanzania wildlife safari and Zanzibar beach holiday."
+      "title": "9 Days Wildlife Safari and Zanzibar Beach Holiday | Endemic Birds",
+      "description": "9 Days Tanzania Wildlife Safari and Zanzibar Beach Holiday 9 days Wildlife Safari & Zanzibar Beach Holiday safari package is a bush2beach Safari that combi"
     },
     "liveUrl": "https://endemicbirds.co.tz/index.php/9-days-tanzania-wildlife-safari-and-zanzibar-beach-holiday/",
     "liveListingTitle": "9 Days Tanzania Wildlife Safari and Zanzibar Beach Holiday",
     "activitySlugs": [
-      "bush-beach-luxury"
+      "bush-beach-luxury",
+      "ngorongoro-northern-icons"
     ],
     "wildlifeDestinations": [
-      "serengeti-national-park",
-      "ngorongoro-conservation-area"
-    ]
+      "tarangire-national-park",
+      "lake-manyara-national-park",
+      "ngorongoro-conservation-area",
+      "serengeti-national-park"
+    ],
+    "gallery": [
+      "assets/images/packages/9-days-wildlife-safari-zanzibar/hero.jpg",
+      "assets/images/packages/9-days-wildlife-safari-zanzibar/gallery-1.jpg"
+    ],
+    "contentSource": {
+      "type": "docx",
+      "sourceFile": "itineraries/9 Days Wildlife Safari and Zanzibar Beach Holiday.docx",
+      "supplementaryFiles": [],
+      "importedAt": "2026-11-15T22:05:12.789Z",
+      "fidelity": "verbatim-itinerary",
+      "dayCountFromDoc": 9
+    },
+    "download": {
+      "file": "assets/downloads/packages/9-days-wildlife-safari-zanzibar.docx",
+      "fileType": "docx",
+      "sizeBytes": 17547,
+      "versionDate": "2026-11-15",
+      "label": "Download full itinerary (Word)"
+    },
+    "needsOwnerReview": []
   },
   {
     "id": "10-days-luxury-flying-safari",
@@ -1878,7 +2239,7 @@
       "Southern"
     ],
     "summary": "Luxury flying safari across Tanzania – wildlife-focused journey.",
-    "heroImage": "assets/images/wildlife/destinations/ruaha-national-park/gallery-1.jpg",
+    "heroImage": "assets/images/packages/10-days-luxury-flying-safari/hero.jpg",
     "featured": false,
     "verified": true,
     "itinerary": [
@@ -1954,8 +2315,7 @@
       "Personal expenses, drinks and laundry",
       "Optional activities not listed in the itinerary"
     ],
-    "bestTime": null,
-    "needsOwnerReview": [],
+    "bestTime": "Jun–Oct dry season for general wildlife; calving Dec–Mar (Ndutu); river crossings Jul–Oct (north Serengeti) – we match sectors to your month.",
     "seo": {
       "title": "10 Days Luxury Flying Safari | Endemic Birds",
       "description": "10-day Tanzania luxury flying safari."
@@ -1969,6 +2329,10 @@
       "serengeti-national-park",
       "ngorongoro-conservation-area",
       "ruaha-national-park"
+    ],
+    "gallery": [
+      "assets/images/packages/10-days-luxury-flying-safari/hero.jpg",
+      "assets/images/packages/10-days-luxury-flying-safari/gallery-1.jpg"
     ]
   },
   {
@@ -1984,7 +2348,7 @@
       "Western"
     ],
     "summary": "Chimpanzee tracking safari in western Tanzania forests.",
-    "heroImage": "assets/images/wildlife/destinations/mahale-mountains-national-park/gallery-4.jpg",
+    "heroImage": "assets/images/packages/10-days-chimpanzee-tracking/hero.jpg",
     "featured": false,
     "verified": true,
     "itinerary": [
@@ -2060,8 +2424,7 @@
       "Personal expenses, drinks and laundry",
       "Optional activities not listed in the itinerary"
     ],
-    "bestTime": null,
-    "needsOwnerReview": [],
+    "bestTime": "Dry-season months simplify forest access and lake charters; enquire for chimp tracking availability.",
     "seo": {
       "title": "10 Days Chimpanzee Tracking | Endemic Birds",
       "description": "10-day chimpanzee tracking safari in Tanzania."
@@ -2073,6 +2436,10 @@
     ],
     "wildlifeDestinations": [
       "mahale-mountains-national-park"
+    ],
+    "gallery": [
+      "assets/images/packages/10-days-chimpanzee-tracking/hero.jpg",
+      "assets/images/packages/10-days-chimpanzee-tracking/gallery-1.jpg"
     ]
   },
   {
@@ -2092,8 +2459,8 @@
       "Eastern",
       "Southern"
     ],
-    "summary": "Multi-region birding route covering north, east, south and Pemba – listed on the live site as a dedicated itinerary article.",
-    "heroImage": "assets/images/from-live-site/packages/22-days-endemic-birding-tours.jpg",
+    "summary": "Multi-region birding route covering north, east, south and Pemba – listed on this route as a dedicated itinerary article.",
+    "heroImage": "assets/images/packages/22-days-birding-itinerary-north-east-south-pemba/hero.jpg",
     "featured": false,
     "verified": true,
     "liveUrl": "https://endemicbirds.co.tz/index.php/2023/09/23/22-days-birding-itinerary-for-north-east-south-and-pemba/",
@@ -2204,29 +2571,48 @@
       "birding": [],
       "wildlife": []
     },
-    "included": [],
-    "excluded": [],
-    "bestTime": null,
+    "included": [
+      "Specialist birding guide (English; other languages on request)",
+      "Safari vehicle suited to the route – small group sizes",
+      "Park and reserve fees as per confirmed itinerary",
+      "Accommodation as proposed for your dates",
+      "Meals on the published meal plan while in the field",
+      "Bottled drinking water in the vehicle on drive days"
+    ],
+    "excluded": [
+      "International flights, visas and airport taxes",
+      "Travel and medical insurance",
+      "Tips for guides, drivers and lodge staff",
+      "Personal expenses, alcoholic drinks and laundry",
+      "Optional extensions or activities not listed in the itinerary"
+    ],
+    "bestTime": "Jun–Oct dry season for general wildlife; calving Dec–Mar (Ndutu); river crossings Jul–Oct (north Serengeti) – we match sectors to your month.",
     "needsOwnerReview": [
       "distinction from 22-day endemic birding tour"
     ],
     "seo": {
       "title": "22 Days North, East, South & Pemba Birding | Endemic Birds",
       "description": "22-day birding itinerary across Tanzania and Pemba from Endemic Birds."
-    }
+    },
+    "gallery": [
+      "assets/images/packages/22-days-birding-itinerary-north-east-south-pemba/hero.jpg",
+      "assets/images/packages/22-days-birding-itinerary-north-east-south-pemba/gallery-1.jpg"
+    ]
   },
   {
     "id": "5-days-serengeti-migration-focus",
     "slug": "5-days-serengeti-migration-focus",
-    "title": "5 Days Serengeti Migration Focus Safari",
+    "title": "5 Days Wildebeest Migration Calving Safari",
     "category": "wildlife",
     "durationDays": 5,
     "activitySlugs": [
-      "great-migration-plains"
+      "great-migration-plains",
+      "ngorongoro-northern-icons"
     ],
     "wildlifeDestinations": [
-      "serengeti-national-park",
-      "ngorongoro-conservation-area"
+      "tarangire-national-park",
+      "lake-manyara-national-park",
+      "serengeti-national-park"
     ],
     "destinations": [
       "northern"
@@ -2234,35 +2620,35 @@
     "circuits": [
       "Northern"
     ],
-    "summary": "Five-day Serengeti-centred safari timed for migration viewing – Ndutu or central/northern sectors depending on season.",
-    "heroImage": "assets/images/wildlife/destinations/serengeti-national-park/hero.jpg",
+    "summary": "5 Days Wildebeest Migration Calving Safari 5 Days Wildebeest Migration Calving safari is a tailor-made safari package that grants a great opportunity to witness one of the world’s natural wonders, The Great Wildebeest Migration. The wildebeest migration river crossing begins in July, as the mammal grazers move north and pass through the Lobo and the Wagakuria area en-route to Kenya’s Masai Mara Game Reserve. In September, the wildebeest herds are spread out over the northern ",
+    "heroImage": "assets/images/packages/5-days-serengeti-migration-focus/hero.jpg",
     "featured": true,
     "verified": true,
     "itinerary": [
       {
         "day": 1,
-        "title": "Arusha to Serengeti",
-        "description": "Drive or fly to Serengeti; afternoon game drive on arrival sector."
+        "title": "ARUSHA – TARANGIRE NATIONAL PARK",
+        "description": "Today we will start our safari as we head from Arusha to Tarangire National Park for our game drive. One of the largest national parks in Tanzania located in the Manyara region, this place is characterized by the large herds of elephants, tree-climbing lions, and the fascinating baobab trees also called the Tree of Life for its almost mythical powers that some cultures attach to it. This park is especially known for the Tarangire River which flows all year round and is the only source of water for wild animals during dry seasons. While here, you will enjoy wildlife sightings in large numbers. In the late afternoon, you will head to your accommodation for dinner and an overnight stay. Meal Plan: Lunch and Dinner"
       },
       {
         "day": 2,
-        "title": "Full day Serengeti",
-        "description": "Dawn drive for cats and herds; picnic lunch on the plains."
+        "title": "SERENGETI NATIONAL PARK (SERONERA)",
+        "description": "After breakfast at your accommodation, you will proceed to the Central part of Serengeti. This park is well-known for its healthy stock of resident wildlife, particularly the “big five”, named for the five most prized trophies taken by hunters: Lion, Leopard, Elephant, Buffaloes, and Rhinos. You will enjoy wildlife sightings on your game drives in this wildlife-rich area before heading back for dinner and overnight stay at your already booked accommodation. Meal Plan: Breakfast, Lunch, and Dinner"
       },
       {
         "day": 3,
-        "title": "Migration sector full day",
-        "description": "Follow herd movements with guide updates from park networks."
+        "title": "SERENGETI NATIONAL PARK",
+        "description": "Following an early morning breakfast, you will set off on a full-day game drive in the wilderness following the Great Migration trails. Your experienced driver tour guide will provide you with interesting facts about this highly renowned event, which makes Tanzania the top safari destination in Africa. A renowned UNESCO world heritage site is home to around 200,000 zebras, and 300,000 Thomson’s gazelle, which join in the wildebeest’s trek for fresh grazing. Listen to the exotic sounds of over six million hooves pounding the open plains. This is just like you imagined Africa to be! Meal Plan: Breakfast, Lunch, and Dinner"
       },
       {
         "day": 4,
-        "title": "Serengeti to Ngorongoro rim",
-        "description": "Morning drive en route; crater rim sunset viewpoints."
+        "title": "SERENGETI NATIONAL PARK (KOGATENDE)",
+        "description": "After breakfast, you will proceed for a full-day game drive viewing the great migration at Mara area. Resident wildlife numbers are exceptionally high in the Wagakuria area. The key feature is the Mara River and there is a great chance to see the herds cross the Mara River to the north on one day and back south a few days later. Please note that it can be very difficult to witness crossing and is sometimes a matter of luck. A herd can be seen next to the river and only decide to cross a couple of days later. This area is a stunning region with kopjes, woodland, riverine vegetation and open plains, similar to Kenya’s Masai Mara Game Reserve. Late in the afternoon, you will head to your booked accommodation for dinner and overnight stay. Meal Plan: Breakfast, Lunch and Dinner"
       },
       {
         "day": 5,
-        "title": "Crater floor & return",
-        "description": "Half-day Ngorongoro Crater drive; return to Arusha."
+        "title": "SERENGETI – ARUSHA",
+        "description": "On this day of your safari, you will enjoy another game drive in Serengeti National Park and in the afternoon, you make your way back to Arusha or at the airport for your flight back home. Meal Plan: Breakfast, Lunch End of 5 Days Wildebeest Migration Calving Safari"
       }
     ],
     "highlights": {
@@ -2274,26 +2660,47 @@
       ]
     },
     "included": [
-      "Professional safari guide (English; other languages on request)",
-      "Safari vehicle with pop-up roof – maximum six guests, window seats",
-      "Park fees as per confirmed itinerary",
-      "Accommodation as listed per day",
-      "Meals on full-board basis while on safari unless noted",
-      "Bottled drinking water in the vehicle"
+      "All Taxes/VAT",
+      "Round-trip airport transfer",
+      "All Meals (as specified in the day-by-day section)",
+      "Drinking water on all days",
+      "Park fees",
+      "All activities (unless labeled as optional)",
+      "All accommodation as stated in the itinerary",
+      "A professional driver/guide",
+      "All transportation (unless labeled as optional)"
     ],
     "excluded": [
-      "International flights and visas",
-      "Travel insurance",
-      "Tips for guides and camp staff",
-      "Personal expenses, drinks and laundry",
-      "Optional activities not listed in the itinerary"
+      "International flights",
+      "Additional accommodation before and at the end of the tour",
+      "The government imposed an increase in taxes and/or park fees",
+      "Alcohol drinks"
     ],
     "bestTime": "Calving Dec–Mar (Ndutu); river crossings Jul–Oct (north) – confirm sector when booking.",
-    "needsOwnerReview": [],
     "seo": {
-      "title": "5 Days Serengeti Migration Safari | Endemic Birds",
-      "description": "Five-day Serengeti migration wildlife safari with Ngorongoro Crater – small groups."
-    }
+      "title": "5 Days Wildebeest Migration Calving Safari | Endemic Birds",
+      "description": "5 Days Wildebeest Migration Calving Safari 5 Days Wildebeest Migration Calving safari is a tailor-made safari package that grants a great opportunity to wi"
+    },
+    "gallery": [
+      "assets/images/packages/5-days-serengeti-migration-focus/hero.jpg",
+      "assets/images/packages/5-days-serengeti-migration-focus/gallery-1.jpg"
+    ],
+    "contentSource": {
+      "type": "docx",
+      "sourceFile": "itineraries/5 Days Wildebeest Migration Calving Safari.docx",
+      "supplementaryFiles": [],
+      "importedAt": "2026-11-15T22:05:12.789Z",
+      "fidelity": "verbatim-itinerary",
+      "dayCountFromDoc": 5
+    },
+    "download": {
+      "file": "assets/downloads/packages/5-days-serengeti-migration-focus.docx",
+      "fileType": "docx",
+      "sizeBytes": 17179,
+      "versionDate": "2026-11-15",
+      "label": "Download full itinerary (Word)"
+    },
+    "needsOwnerReview": []
   },
   {
     "id": "4-days-ngorongoro-crater-escape",
@@ -2316,7 +2723,7 @@
       "Northern"
     ],
     "summary": "Compact northern safari – Momella Lakes, Lake Manyara and a full Ngorongoro Crater descent.",
-    "heroImage": "assets/images/wildlife/destinations/ngorongoro-conservation-area/hero.jpg",
+    "heroImage": "assets/images/packages/4-days-ngorongoro-crater-escape/hero.jpg",
     "featured": false,
     "verified": true,
     "itinerary": [
@@ -2365,19 +2772,23 @@
       "Optional activities not listed in the itinerary"
     ],
     "bestTime": "Year-round; dry season (Jun–Oct) for clearer crater views.",
-    "needsOwnerReview": [],
     "seo": {
       "title": "4 Days Ngorongoro Safari | Endemic Birds",
       "description": "Four-day Ngorongoro Crater safari with Manyara and Arusha National Park."
-    }
+    },
+    "gallery": [
+      "assets/images/packages/4-days-ngorongoro-crater-escape/hero.jpg",
+      "assets/images/packages/4-days-ngorongoro-crater-escape/gallery-1.jpg"
+    ]
   },
   {
     "id": "8-days-northern-tarangire-manyara-ngorongoro-serengeti",
     "slug": "8-days-northern-tarangire-manyara-ngorongoro-serengeti",
-    "title": "8 Days Tarangire, Manyara, Ngorongoro & Serengeti",
+    "title": "8 Days Best of Northern Tanzania Safari Package",
     "category": "wildlife",
     "durationDays": 8,
     "activitySlugs": [
+      "great-migration-plains",
       "ngorongoro-northern-icons"
     ],
     "wildlifeDestinations": [
@@ -2392,50 +2803,50 @@
     "circuits": [
       "Northern"
     ],
-    "summary": "Classic eight-day northern circuit – elephants, crater, and extended Serengeti time.",
-    "heroImage": "assets/images/wildlife/destinations/tarangire-national-park/hero.jpg",
+    "summary": "8 Days Best of Northern Tanzania Safari Package A well-planned 8 Days Best of Northern Tanzania Safari Package takes you through the highlights of renowned parks of northern Tanzania. The tour starts at Tarangire, famous for its dense wildlife population then to Ngorongoro crater, which supports a year-round resident population of mammals. A visit to Serengeti is a must as the famous safari park hosts some of the famous world natural wonders, the Great Wildebeest Migration wh",
+    "heroImage": "assets/images/packages/8-days-northern-tarangire-manyara-ngorongoro-serengeti/hero.jpg",
     "featured": true,
     "verified": true,
     "itinerary": [
       {
         "day": 1,
-        "title": "Arusha to Tarangire",
-        "description": "Baobab country and river-line elephants."
+        "title": "ARRIVAL IN ARUSHA",
+        "description": "Upon your arrival, you will be picked up from c. Your professional guide will answer all your queries regarding your upcoming safari and provide you with a short briefing as well. Afterward, you will be taken to your accommodation for dinner and an overnight stay. Meals: Dinner"
       },
       {
         "day": 2,
-        "title": "Tarangire full day",
-        "description": "Extended drives on dry-season wildlife corridors."
+        "title": "TARANGIRE NATIONAL PARK",
+        "description": "Following an early morning breakfast at your accommodation, you leave Arusha for Tarangire National Park. This park covering approximately 2600 square kilometers is spectacular in the dry season when many of the migratory wildlife species come back to the permanent waters of the Tarangire River. Huge herds of wildebeest, zebras, elephants, eland, and oryx gather to stay in Tarangire until the onset of the rains when they migrate again to good grazing areas. Expect to encounter large herds of elephants while here that are accustomed to vehicles. You will enjoy your lunch at the park and later have an evening game drive before heading to your accommodation for dinner and an overnight stay. Meals: Breakfast, Lunch, and Dinner"
       },
       {
         "day": 3,
-        "title": "Lake Manyara",
-        "description": "Groundwater forest and lake viewpoints."
+        "title": "NGORONGORO CONSERVATION AREA",
+        "description": "Following an early morning breakfast, you depart for the Ngorongoro conservation area, which sits at the rim of the Ngorongoro crater. An afternoon tour of the crater follows. The game drive begins with a 600m descent to the crater floor, a magnificent natural amphitheater. Covering 260 sq. km, the crater is an attraction in its own right and is one of the wonders of the natural world. The crater supports a year-round resident population of a variety of wildlife and you can easily spot lions, elephants, rhinos, buffalo, and other species of plain animals. The crater will truly leave you in awe of the beauty of creation as you will witness the existence of both carnivores and herbivores. Meal Plan: Breakfast, Lunch, and dinner"
       },
       {
         "day": 4,
-        "title": "Ngorongoro highlands",
-        "description": "Crater rim overnight; optional Empakai."
+        "title": "Day 4: SERENGETI NATIONAL PARK",
+        "description": "The following three days of your safari will be spent in Serengeti National Park, one of the top wildlife spots in the world. Our safari will take us via Olduvai Gorge. This is the prehistoric site where Dr. Louis Leakey discovered the remains of homo habilis, which is regarded as mankind’s first path of human evolution. An afternoon game drive at Serengeti follows home to more than 35 species of plains animals such as zebra, wildebeest, eland, giraffe, among many others. The park is the staging zone for one of the most spectacular events in the world- the annual migration of wildebeest. This commences around June when over 1 million wildebeest, zebra, and gazelle head for the Masai Mara in Kenya in search of greener pasture. They are followed closely by the predators of the savanna- lion, cheetah, wild dog, jackal, hyena, and vultures. The Serengeti also has over 500 species of birds. Meal Plan: Breakfast, Lunch, and dinner"
       },
       {
         "day": 5,
-        "title": "Crater & Serengeti",
-        "description": "Morning crater descent; transfer to Serengeti."
+        "title": "Day 5: SERENGETI NATIONAL PARK",
+        "description": "The following three days of your safari will be spent in Serengeti National Park, one of the top wildlife spots in the world. Our safari will take us via Olduvai Gorge. This is the prehistoric site where Dr. Louis Leakey discovered the remains of homo habilis, which is regarded as mankind’s first path of human evolution. An afternoon game drive at Serengeti follows home to more than 35 species of plains animals such as zebra, wildebeest, eland, giraffe, among many others. The park is the staging zone for one of the most spectacular events in the world- the annual migration of wildebeest. This commences around June when over 1 million wildebeest, zebra, and gazelle head for the Masai Mara in Kenya in search of greener pasture. They are followed closely by the predators of the savanna- lion, cheetah, wild dog, jackal, hyena, and vultures. The Serengeti also has over 500 species of birds. Meal Plan: Breakfast, Lunch, and dinner"
       },
       {
         "day": 6,
-        "title": "Serengeti full day",
-        "description": "Plains predators and kopje circuits."
+        "title": "Day 6: SERENGETI NATIONAL PARK",
+        "description": "The following three days of your safari will be spent in Serengeti National Park, one of the top wildlife spots in the world. Our safari will take us via Olduvai Gorge. This is the prehistoric site where Dr. Louis Leakey discovered the remains of homo habilis, which is regarded as mankind’s first path of human evolution. An afternoon game drive at Serengeti follows home to more than 35 species of plains animals such as zebra, wildebeest, eland, giraffe, among many others. The park is the staging zone for one of the most spectacular events in the world- the annual migration of wildebeest. This commences around June when over 1 million wildebeest, zebra, and gazelle head for the Masai Mara in Kenya in search of greener pasture. They are followed closely by the predators of the savanna- lion, cheetah, wild dog, jackal, hyena, and vultures. The Serengeti also has over 500 species of birds. Meal Plan: Breakfast, Lunch, and dinner"
       },
       {
         "day": 7,
-        "title": "Serengeti full day",
-        "description": "Second full day in migration or central sector."
+        "title": "SERENGETI NATIONAL PARK – KARATU",
+        "description": "Following an early morning breakfast at your accommodation, you will head for a morning game drive in the national park before returning for lunch at your accommodation. In the late afternoon, you will enjoy it as you depart Serengeti to Karatu where you will have your dinner and overnight stay. Meal Plan: Breakfast, Lunch, and dinner"
       },
       {
         "day": 8,
-        "title": "Serengeti to Arusha",
-        "description": "Morning drive; return to Arusha or airport."
+        "title": "LAKE MANYARA NATIONAL PARK",
+        "description": "After early morning breakfast at your accommodation, you will head out for an early morning game drive in Lake Manyara National Park where you will enjoy more of the sighting experience. The park covers 330 sq. km, 70% of which is occupied by the lake. The varied ecosystem consists of groundwater forests, acacia woodland, and open grassland along the lakeshore and sustains a wealth of wildlife, including the big five -lion, elephant, leopard and buffalo. The park is famous for the elusive tree-climbing lions that inhabit the woodland between the lake and the rift valley. We head back to the lodge for lunch and return to Arusha afterward. Meal Plan: Breakfast and Lunch"
       }
     ],
     "highlights": {
@@ -2447,26 +2858,52 @@
       ]
     },
     "included": [
-      "Professional safari guide (English; other languages on request)",
-      "Safari vehicle with pop-up roof – maximum six guests, window seats",
-      "Park fees as per confirmed itinerary",
-      "Accommodation as listed per day",
-      "Meals on full-board basis while on safari unless noted",
-      "Bottled drinking water in the vehicle"
+      "A professional driver/guide",
+      "All transportation (unless labeled as optional)",
+      "All Taxes/VAT",
+      "Roundtrip airport transfer",
+      "Park fees",
+      "All activities (unless labeled as optional)",
+      "All accommodation as stated in the itinerary",
+      "All Meals (as specified in the day-by-day section)",
+      "Drinking water on all days"
     ],
     "excluded": [
-      "International flights and visas",
-      "Travel insurance",
-      "Tips for guides and camp staff",
-      "Personal expenses, drinks and laundry",
-      "Optional activities not listed in the itinerary"
+      "International flights",
+      "Additional accommodation before and at the end of the tour",
+      "The government imposed an increase in taxes and/or park fees",
+      "Alcohol drinks",
+      "Services not mentioned in the program",
+      "Travel insurance and medical repatriation",
+      "Items of a personal nature"
     ],
     "bestTime": "Jun–Oct dry season; migration timing varies by month.",
-    "needsOwnerReview": [],
     "seo": {
-      "title": "8 Days Northern Circuit Safari | Endemic Birds",
-      "description": "Eight-day Tarangire, Manyara, Ngorongoro and Serengeti wildlife safari."
-    }
+      "title": "8 Days Best of Northern Tanzania Safari Package | Endemic Birds",
+      "description": "8 Days Best of Northern Tanzania Safari Package A well-planned 8 Days Best of Northern Tanzania Safari Package takes you through the highlights of renowned"
+    },
+    "gallery": [
+      "assets/images/packages/8-days-northern-tarangire-manyara-ngorongoro-serengeti/hero.jpg",
+      "assets/images/packages/8-days-northern-tarangire-manyara-ngorongoro-serengeti/gallery-1.jpg"
+    ],
+    "contentSource": {
+      "type": "docx",
+      "sourceFile": "itineraries/SAFARIS TANZANIA.docx",
+      "supplementaryFiles": [
+        "itineraries/8 day northern tanzania safari.docx"
+      ],
+      "importedAt": "2026-11-15T22:05:12.789Z",
+      "fidelity": "verbatim-itinerary",
+      "dayCountFromDoc": 8
+    },
+    "download": {
+      "file": "assets/downloads/packages/8-days-northern-tarangire-manyara-ngorongoro-serengeti.docx",
+      "fileType": "docx",
+      "sizeBytes": 17232,
+      "versionDate": "2026-11-15",
+      "label": "Download full itinerary (Word)"
+    },
+    "needsOwnerReview": []
   },
   {
     "id": "7-days-mahale-gombe-chimp-safari",
@@ -2487,7 +2924,7 @@
       "Western"
     ],
     "summary": "Week-long western Tanzania primate safari – Lake Tanganyika lodges and chimp treks.",
-    "heroImage": "assets/images/wildlife/destinations/mahale-mountains-national-park/hero.jpg",
+    "heroImage": "assets/images/packages/7-days-mahale-gombe-chimp-safari/hero.jpg",
     "featured": false,
     "verified": true,
     "itinerary": [
@@ -2553,11 +2990,14 @@
       "Optional activities not listed in the itinerary"
     ],
     "bestTime": "Dry months (May–Oct) for clearer forest trails.",
-    "needsOwnerReview": [],
     "seo": {
       "title": "7 Days Mahale Gombe Chimp Safari | Endemic Birds",
       "description": "Seven-day Mahale and Gombe chimpanzee safari on Lake Tanganyika."
-    }
+    },
+    "gallery": [
+      "assets/images/packages/7-days-mahale-gombe-chimp-safari/hero.jpg",
+      "assets/images/packages/7-days-mahale-gombe-chimp-safari/gallery-1.jpg"
+    ]
   },
   {
     "id": "8-days-ruaha-mikumi-safari",
@@ -2579,7 +3019,7 @@
       "Southern"
     ],
     "summary": "Southern savanna loop – Mkata plains then Ruaha’s baobab wilds and Ruaha River game.",
-    "heroImage": "assets/images/wildlife/destinations/ruaha-national-park/hero.jpg",
+    "heroImage": "assets/images/packages/8-days-ruaha-mikumi-safari/hero.jpg",
     "featured": true,
     "verified": true,
     "itinerary": [
@@ -2648,11 +3088,14 @@
       "Optional activities not listed in the itinerary"
     ],
     "bestTime": "Dry season Jun–Nov for Ruaha wildlife concentrations.",
-    "needsOwnerReview": [],
     "seo": {
       "title": "8 Days Ruaha Mikumi Safari | Endemic Birds",
       "description": "Eight-day southern Tanzania Ruaha and Mikumi wildlife safari."
-    }
+    },
+    "gallery": [
+      "assets/images/packages/8-days-ruaha-mikumi-safari/hero.jpg",
+      "assets/images/packages/8-days-ruaha-mikumi-safari/gallery-1.jpg"
+    ]
   },
   {
     "id": "10-days-nyerere-katavi-expedition",
@@ -2676,7 +3119,7 @@
       "Western"
     ],
     "summary": "Fly-in expedition combining Rufiji boat safaris with Katavi’s remote hippo and buffalo plains.",
-    "heroImage": "assets/images/wildlife/destinations/nyerere-national-park/hero.jpg",
+    "heroImage": "assets/images/packages/10-days-nyerere-katavi-expedition/hero.jpg",
     "featured": false,
     "verified": true,
     "itinerary": [
@@ -2756,10 +3199,527 @@
       "Optional activities not listed in the itinerary"
     ],
     "bestTime": "Jul–Oct for Katavi dry-season wildlife; Nyerere strong year-round.",
-    "needsOwnerReview": [],
     "seo": {
       "title": "10 Days Nyerere Katavi Safari | Endemic Birds",
       "description": "Ten-day Nyerere and Katavi fly-in wilderness safari in Tanzania."
-    }
+    },
+    "gallery": [
+      "assets/images/packages/10-days-nyerere-katavi-expedition/hero.jpg",
+      "assets/images/packages/10-days-nyerere-katavi-expedition/gallery-1.jpg"
+    ]
+  },
+  {
+    "id": "5-days-tarangire-serengeti-ngorongoro",
+    "slug": "5-days-tarangire-serengeti-ngorongoro",
+    "title": "5 Days Tanzania Safari to Tarangire, Serengeti & Ngorongoro",
+    "category": "wildlife",
+    "durationDays": 5,
+    "destinations": [
+      "northern"
+    ],
+    "circuits": [
+      "Northern"
+    ],
+    "summary": "5 Days Tanzania Safari to Tarangire, Serengeti & Ngorongoro A classical 5 Days Tanzania Safari is a safari package for travelers who wish to travel on a mid-range package but enjoy incredible wildlife sightings just like those on a Tanzania luxury safari package. This amazing safari is made affordable through cheaper lodge and camping options that will take you to an unparalleled concentration of wildlife including the Serengeti national park, the most famous park in Tanzania",
+    "heroImage": "assets/images/packages/5-days-tarangire-serengeti-ngorongoro/hero.jpg",
+    "featured": false,
+    "verified": true,
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "ARUSHA – TARANGIRE NATIONAL PARK",
+        "description": "Very early in the morning, your safari guide will pick you up from your accommodation in Arusha and drive you to Tarangire National Park. One of the largest national parks in Tanzania is located in the Manyara region. This park covering approximately 2600 square kilometers is spectacular in the dry season when many of the migratory wildlife species come back to the permanent waters of the Tarangire River. Huge herds of wildebeest, zebras, elephants, eland, and oryx gather to stay in Tarangire until the onset of the rains when they migrate again to good grazing areas. Expect to encounter large herds of elephants while here that are accustomed to vehicles. You will enjoy your lunch at the park and later have an evening game drive before heading to your accommodation for dinner and an overnight stay. Meals: Breakfast, Lunch, and Dinner"
+      },
+      {
+        "day": 2,
+        "title": "Day 2: SERENGETI NATIONAL PARK (SERONERA)",
+        "description": "Following an early morning breakfast, you will head to Serengeti National Park in Central Seronera. This park is well known for its healthy stock of resident wildlife, particularly the “Big Five”: Lion, Leopard, Elephant, Rhino, and Buffalo. Lions: Serengeti is believed to hold the largest population of lions in Africa due in part to the abundance of prey species. More than 3,000 lions live in this ecosystem. African Leopard: These reclusive predators are commonly seen in the Seronera region but are present throughout the national park with a population of around 1,000. A renowned UNESCO world heritage site is home to around 200,000 zebras, and 300,000 Thomson’s gazelle join the wildebeest’s trek for fresh grazing. Listen to the exotic sounds of over 6 million hooves pounding the open plains of Serengeti just like how you imagined African wildlife to be. Later in the afternoon, you will be taken to your booked accommodation for dinner and an overnight stay. Meals: Breakfast, Lunch, and Dinner"
+      },
+      {
+        "day": 3,
+        "title": "Day 3: SERENGETI NATIONAL PARK (SERONERA)",
+        "description": "Following an early morning breakfast, you will head to Serengeti National Park in Central Seronera. This park is well known for its healthy stock of resident wildlife, particularly the “Big Five”: Lion, Leopard, Elephant, Rhino, and Buffalo. Lions: Serengeti is believed to hold the largest population of lions in Africa due in part to the abundance of prey species. More than 3,000 lions live in this ecosystem. African Leopard: These reclusive predators are commonly seen in the Seronera region but are present throughout the national park with a population of around 1,000. A renowned UNESCO world heritage site is home to around 200,000 zebras, and 300,000 Thomson’s gazelle join the wildebeest’s trek for fresh grazing. Listen to the exotic sounds of over 6 million hooves pounding the open plains of Serengeti just like how you imagined African wildlife to be. Later in the afternoon, you will be taken to your booked accommodation for dinner and an overnight stay. Meals: Breakfast, Lunch, and Dinner"
+      },
+      {
+        "day": 4,
+        "title": "NGORONGORO CONSERVATION AREA",
+        "description": "Following an early morning breakfast, you depart for the Ngorongoro conservation area, which sits at the rim of the Ngorongoro crater. An afternoon tour of the crater follows. The game drive begins with a 600m descent to the crater floor, a magnificent natural amphitheater. Covering 260 sq. km, the crater is an attraction in its own right and is one of the wonders of the natural world. The crater supports a year-round resident population of a variety of wildlife and you can easily spot lions, elephants, rhinos, buffalo, and other species of plain animals. The crater will truly leave you in awe of the beauty of creation as you will witness the existence of both carnivores and herbivores. Meal Plan: Breakfast, Lunch, and dinner"
+      },
+      {
+        "day": 5,
+        "title": "LAKE MANYARA NATIONAL PARK – ARUSHA",
+        "description": "After early morning breakfast at your accommodation, you will head out for an early morning game drive in Lake Manyara National Park where you will enjoy more of the sighting experience. The park covers 330 sq. km, 70% of which is occupied by the lake. The varied ecosystem consists of groundwater forests, acacia woodland, and open grassland along the lakeshore and sustains a wealth of wildlife, including the big five -lion, elephant, leopard, rhino, and buffalo. The park is famous for the elusive tree-climbing lions that inhabit the woodland between the lake and the rift valley. We head back to Arusha afterward. Meals: Breakfast, lunch, and dinner End of the 5 Days Tanzania Midrange Safari TOUR INCLUSIONS Drinking water on all days Park fees All activities (unless labeled as optional) All accommodation as stated in the itinerary A professional driver/guide All transportation (unless labeled as optional) All Taxes/VAT Round-trip airport transfer All Meals (as specified in the day-by-day section) TOUR EXCLUSIONS International flights Additional accommodation before and at the end of the tour The government imposed an increase in taxes and/or park fees Alcohol drinks Services not mentioned in the program Travel insurance and medical repatriation Items of a personal nature"
+      }
+    ],
+    "highlights": {
+      "birding": [],
+      "wildlife": [
+        "Big five focus",
+        "Serengeti plains",
+        "Ngorongoro Crater"
+      ]
+    },
+    "included": [
+      "Professional safari guide (English; other languages on request)",
+      "Safari vehicle with pop-up roof – maximum six guests, window seats",
+      "Park fees as per confirmed itinerary",
+      "Accommodation as listed per day",
+      "Meals on full-board basis while on safari unless noted",
+      "Bottled drinking water in the vehicle"
+    ],
+    "excluded": [
+      "International flights and visas",
+      "Travel insurance",
+      "Tips for guides and camp staff",
+      "Personal expenses, drinks and laundry",
+      "Optional activities not listed in the itinerary"
+    ],
+    "bestTime": "Year-round; Jun–Oct peak dry season.",
+    "seo": {
+      "title": "5 Days Tanzania Safari to Tarangire, Serengeti & Ngorongoro | Endemic Birds",
+      "description": "5 Days Tanzania Safari to Tarangire, Serengeti & Ngorongoro A classical 5 Days Tanzania Safari is a safari package for travelers who wish to travel on a mi"
+    },
+    "liveUrl": "https://endemicbirds.co.tz/index.php/6-days-tanzania-safari/",
+    "liveListingTitle": "6 Days Tanzania Safari",
+    "activitySlugs": [
+      "great-migration-plains",
+      "ngorongoro-northern-icons"
+    ],
+    "wildlifeDestinations": [
+      "tarangire-national-park",
+      "lake-manyara-national-park",
+      "ngorongoro-conservation-area",
+      "serengeti-national-park"
+    ],
+    "gallery": [
+      "assets/images/packages/5-days-tarangire-serengeti-ngorongoro/hero.jpg",
+      "assets/images/packages/5-days-tarangire-serengeti-ngorongoro/gallery-1.jpg"
+    ],
+    "contentSource": {
+      "type": "docx",
+      "sourceFile": "itineraries/5 Days Tanzania Safari to Tarangire, Serengeti & Ngorongoro.docx",
+      "supplementaryFiles": [],
+      "importedAt": "2026-11-15T22:05:12.789Z",
+      "fidelity": "verbatim-itinerary",
+      "dayCountFromDoc": 5
+    },
+    "download": {
+      "file": "assets/downloads/packages/5-days-tarangire-serengeti-ngorongoro.docx",
+      "fileType": "docx",
+      "sizeBytes": 17284,
+      "versionDate": "2026-11-15",
+      "label": "Download full itinerary (Word)"
+    },
+    "needsOwnerReview": []
+  },
+  {
+    "id": "14-days-ultimate-tanzania-safari",
+    "slug": "14-days-ultimate-tanzania-safari",
+    "title": "14 Days Ultimate Tanzania Safari",
+    "category": "wildlife",
+    "durationDays": 14,
+    "destinations": [
+      "northern",
+      "southern",
+      "eastern"
+    ],
+    "circuits": [
+      "Northern",
+      "Southern",
+      "Eastern"
+    ],
+    "summary": "A well-planned 14 Days Ultimate Tanzania Safari is a cut across safari package that allows travelers to explore both the northern circuit and southern circuit of Tanzania. On this 14 Days Ultimate Tanzania Safari, there is a guaranteed sighting experience as it will let you see wild animals, plants, wildlife habitat, bush, birds, rocks Serengeti kopjes, geographical features, local people, and much more. Tarangire, Ngorongoro, Ndutu, and Serengeti wildlife safari area in the ",
+    "heroImage": "assets/images/packages/14-days-ultimate-tanzania-safari/hero.jpg",
+    "featured": false,
+    "verified": false,
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "ARUSHA – TARANGIRE NATIONAL PARK",
+        "description": "After breakfast, you will be picked up and driven to Tarangire National Park for the day game drive with your picnic lunch boxes. The park Located slightly off the main safari route, Tarangire National Park is a lovely quiet park in Northern Tanzania that is most famous for its elephant migration, birding, and quiet authentic safari atmosphere."
+      },
+      {
+        "day": 2,
+        "title": "TARANGIRE NATIONAL PARK",
+        "description": "Following an early morning breakfast, you will proceed to a walking safari with an armed ranger. Later depart for a game drive until the evening. One of the largest national parks in Tanzania located in the Manyara region, this place is characterized by the large herds of elephants, tree-climbing lions, and the fascinating baobab trees also called the Tree of Life for its almost mythical powers that some cultures attached to it. This park is especially known for the Tarangire River which flows all year round and is the only source of water for wild animals during dry seasons."
+      },
+      {
+        "day": 3,
+        "title": "NGORONGORO CONSERVATION AREA",
+        "description": "You will depart after breakfast for an extended morning game drive. In the afternoon, drive to Ngorongoro Conservation Area for dinner and overnight Ngorongoro Crater Area After breakfast you descend 600m into this magnificent crater for a morning, half-day game drive. The Ngorongoro Crater is one of the most densely crowded African wildlife areas in the world and is home to an estimated 30,000 animals including some of Tanzania’s last remaining black rhino. Supported by a year-round water supply and fodder, the Ngorongoro Crater supports a vast variety of animals, which include herds of wildebeest, zebra, buffalo, eland, warthog, hippo, and giant African elephants. Another big draw card to this picturesque national park is its dense population of predators, which include lions, hyenas, jackals, cheetahs and the ever-elusive leopard, which sometimes requires a trained eye to spot. We will enjoy a picnic lunch in the crater, after which we travel to the Tarangire National Park. Dinner and overnight as per the standard and type of accommodation option request"
+      },
+      {
+        "day": 6,
+        "title": "NDUTU CONTROLLED AREA",
+        "description": "Following breakfast, depart for a full day game drive at Ndutu Controlled area with your picnic lunch boxes."
+      },
+      {
+        "day": 7,
+        "title": "NDUTU CONTROLLED AREA – CENTRAL SERENGETI",
+        "description": "Following breakfast, depart for a full day game drive at Ndutu Controlled area with your picnic lunch boxes."
+      },
+      {
+        "day": 8,
+        "title": "SERENGETI NATIONAL PARK (Central Seronera)",
+        "description": "After breakfast at your accommodation, you will proceed to the Central part of Serengeti. This park is well-known for its healthy stock of resident wildlife, particularly the “big five”, named for the five most prized trophies taken by hunters: Lion, Leopard, Elephant, Buffaloes, and Rhinos. You will enjoy wildlife sightings on your game drives in this wildlife-rich area before heading back for dinner and overnight stay at your already booked accommodation."
+      },
+      {
+        "day": 9,
+        "title": "FLY FROM SERONERA TO NYERERE NATIONAL PARK",
+        "description": "After breakfast, transfer to the Ndutu airstrip for your flight to Selous departing at 9:50 AM and arriving at 12:50 (Coastal Air flight). Upon your arrival, you will be picked up by the driver and depart for a game drive."
+      },
+      {
+        "day": 10,
+        "title": "&11: Nyerere national park",
+        "description": "After breakfast, depart for a full day game drive at Selous Game reserve. Meal Plan: Breakfast, Lunch and Dinner"
+      },
+      {
+        "day": 12,
+        "title": "& 13: RUAHA NATIONAL PARK",
+        "description": "Take a flight from Nyerere national park to Ruaha national park (flight departing at 9:20 am arriving at 11:20 am). You will be picked up and drive to Ruaha National Park. In the evening drive to the lodge. After breakfast, depart for a full-day game drive at Ruaha National Park. Meal Plan: Breakfast, Lunch and Dinner"
+      },
+      {
+        "day": 14,
+        "title": "FLY FROM RUAHA TO DAR ES SALAAM",
+        "description": "Light aircraft flight at Ruaha-Dar Es Salaam (flight departing at 11:45 am and arriving at 13:50 – Coastal air flight. Meal Plan: No meals included Safari Includes A professional driver/guide Conservation Fees All activities (unless labeled as optional) All accommodation as stated in the itinerary All transportation (unless labeled as optional) Round-trip airport transfer All Meals (as specified in the day-by-day section) Drinking water on all days Safari excludes International flights (from/to home) Services not mentioned in the program Travel insurance and medical repatriation Items of a personal nature"
+      }
+    ],
+    "highlights": {
+      "birding": [],
+      "wildlife": [
+        "Big five focus",
+        "Serengeti plains",
+        "Ngorongoro Crater"
+      ]
+    },
+    "included": [
+      "Professional safari guide (English; other languages on request)",
+      "Safari vehicle with pop-up roof – maximum six guests, window seats",
+      "Park fees as per confirmed itinerary",
+      "Accommodation as listed per day",
+      "Meals on full-board basis while on safari unless noted",
+      "Bottled drinking water in the vehicle"
+    ],
+    "excluded": [
+      "International flights and visas",
+      "Travel insurance",
+      "Tips for guides and camp staff",
+      "Personal expenses, drinks and laundry",
+      "Optional activities not listed in the itinerary"
+    ],
+    "bestTime": "Year-round; Jun–Oct peak dry season.",
+    "seo": {
+      "title": "14 Days Ultimate Tanzania Safari | Endemic Birds",
+      "description": "A well-planned 14 Days Ultimate Tanzania Safari is a cut across safari package that allows travelers to explore both the northern circuit and southern circ"
+    },
+    "liveUrl": "https://endemicbirds.co.tz/index.php/6-days-tanzania-safari/",
+    "liveListingTitle": "6 Days Tanzania Safari",
+    "activitySlugs": [
+      "great-migration-plains",
+      "ngorongoro-northern-icons"
+    ],
+    "wildlifeDestinations": [
+      "tarangire-national-park",
+      "lake-manyara-national-park",
+      "ngorongoro-conservation-area",
+      "serengeti-national-park"
+    ],
+    "gallery": [
+      "assets/images/packages/14-days-ultimate-tanzania-safari/hero.jpg",
+      "assets/images/packages/14-days-ultimate-tanzania-safari/gallery-1.jpg"
+    ],
+    "contentSource": {
+      "type": "docx",
+      "sourceFile": "itineraries/14 Days Ultimate Tanzania Safari.docx",
+      "supplementaryFiles": [],
+      "importedAt": "2026-11-15T22:05:12.789Z",
+      "fidelity": "verbatim-itinerary",
+      "dayCountFromDoc": 10
+    },
+    "download": {
+      "file": "assets/downloads/packages/14-days-ultimate-tanzania-safari.docx",
+      "fileType": "docx",
+      "sizeBytes": 18949,
+      "versionDate": "2026-11-15",
+      "label": "Download full itinerary (Word)"
+    },
+    "needsOwnerReview": [
+      "compressed day ranges in Word (e.g. Days 4–6)"
+    ]
+  },
+  {
+    "id": "13-days-northern-tanzania-birding",
+    "slug": "13-days-northern-tanzania-birding",
+    "title": "13 days Northern Tanzania Birding Trip",
+    "category": "combined",
+    "durationDays": 13,
+    "destinations": [
+      "northern",
+      "eastern",
+      "western"
+    ],
+    "circuits": [
+      "Northern",
+      "Eastern",
+      "Western"
+    ],
+    "summary": "With its huge, unspoiled wilderness areas and plains loaded with game, the vast landscapes of Tanzania reflect an Africa of old. This tour, timed to coincide with the arrival of masses of wildebeest in the central Serengeti, explores northern Tanzania’s exceptional diversity. With the rains having fallen recently, the landscapes display a fabulous palate of colors, from the fresh green grass to the red sands, to the billowing black afternoon thunderstorm clouds. Almost every ",
+    "heroImage": "assets/images/packages/13-days-northern-tanzania-birding/hero.jpg",
+    "featured": false,
+    "verified": true,
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Arusha",
+        "description": "After arrival at Kilimanjaro Airport, we head to a lodge near Arusha National Park."
+      },
+      {
+        "day": 2,
+        "title": "Arusha NP",
+        "description": "We’ll spend the day on Mt. Meru, which looms over Arusha. The mix of habitats here includes montane forest, and offers us many exciting birds including Crowned Hawk-Eagle, Cinnamon-chested Bee-eater, and splendid songster Rueppell’s Robin-Chat. As we head up the mist-shrouded slopes, the yellowwood trees become draped in Usnea old man’s beard lichen and we search for skulking gems such as White-starred Robin and the dapper Brown Woodland-Warbler. The park is also an excellent place to find large herds of buffalo grazing the mountain’s lower slopes, not to mention a remarkable abundance of giraffes and a chance for scarce forest antelope like Harvey’s duiker."
+      },
+      {
+        "day": 3,
+        "title": "Arusha District",
+        "description": "We drive around the looming Mt. Meru to the lark plains. These grasslands are home to the last 100 or so Beesley’s Larks on Earth, and we will search long and hard for this critically endangered Tanzanian endemic. Other interesting species here include Chestnut-bellied and Yellow-throated Sandgrouse, shrikes, migrant wheatears, pipits, and larks galore. The plains are lined by Drepanolobium whistling thorn trees, while hills offer a scrubby habitat that can deliver Red-fronted and Black-throated Barbets, Red-throated Tit, Eremomelas, and Crombecs. Thicket habitat and riparian strips offer many great birds, including Slate-colored Boubou, Nubian Woodpecker, the highly gregarious Gray-headed Social-Weaver, and the possibility of migrants like Spotted Flycatcher and Common Nightingale."
+      },
+      {
+        "day": 4,
+        "title": "Day 4: Tarangire National Park",
+        "description": "From Arusha we head to Tarangire, where we shall enjoy some of northern Tanzania’s finest birding. The low baobab-clad plains and fever-tree groves here support many cool species including three Tanzanian endemics and near-endemics: Ashy Starling, Yellow-collared Lovebird, and Rufous-tailed Weaver. The lush grasses are full of ground birds like Northern White-bellied Bustard and both Red-necked and Yellow-necked Francolins. This is one of the better places to see elephants, which can occur in great numbers along the Tarangire River. We also stand a good chance of seeing our first lions, and maybe even a leopard or cheetah."
+      },
+      {
+        "day": 5,
+        "title": "Day 5: Tarangire National Park",
+        "description": "From Arusha we head to Tarangire, where we shall enjoy some of northern Tanzania’s finest birding. The low baobab-clad plains and fever-tree groves here support many cool species including three Tanzanian endemics and near-endemics: Ashy Starling, Yellow-collared Lovebird, and Rufous-tailed Weaver. The lush grasses are full of ground birds like Northern White-bellied Bustard and both Red-necked and Yellow-necked Francolins. This is one of the better places to see elephants, which can occur in great numbers along the Tarangire River. We also stand a good chance of seeing our first lions, and maybe even a leopard or cheetah."
+      },
+      {
+        "day": 6,
+        "title": "Day 6: Tarangire National Park",
+        "description": "From Arusha we head to Tarangire, where we shall enjoy some of northern Tanzania’s finest birding. The low baobab-clad plains and fever-tree groves here support many cool species including three Tanzanian endemics and near-endemics: Ashy Starling, Yellow-collared Lovebird, and Rufous-tailed Weaver. The lush grasses are full of ground birds like Northern White-bellied Bustard and both Red-necked and Yellow-necked Francolins. This is one of the better places to see elephants, which can occur in great numbers along the Tarangire River. We also stand a good chance of seeing our first lions, and maybe even a leopard or cheetah."
+      },
+      {
+        "day": 7,
+        "title": "Tarangire to Ngorongoro Crater",
+        "description": "After leaving Tarangire, we’ll stay in the Rift Valley, spending most of the day birding the fabulous Lake Manyara National Park. This diverse gem of a park holds lush forest with Silvery-cheeked Hornbill and Crowned Eagle, vast mudflats which might be covered in migrating shorebirds, and marshes that support the likes of African Swamphen and a range of herons and egrets. This park is also good for mammals like African Buffalo and Hippo. Around mid-afternoon, we’ll drive up the western Rift escarpment, wind through some pleasant agricultural areas, then enter the Ngorongoro Conservation Area. Our lodge here enjoys spectacular panoramic views of what might be the world’s most famous wildlife preserve, and with good reason."
+      },
+      {
+        "day": 8,
+        "title": "Ngorongoro Crater",
+        "description": "We have a full day to explore the magical Ngorongoro, though in the morning we won’t be in a hurry to descend into the crater, as the forest and heath along the rim offers excellent birding. We’ll keep our eyes peeled for flowering Leonotis, if we find a patch, we might be get to savor the coolest sunbird spectacle in Africa: the impressive Golden-winged, coppery-colored Bronze, and iridescent-purple Tacazee Sunbirds all competing for nectar from the same flowers. Descending into the crater with its towering vertical walls is like finding Africa’s Garden of Eden. Inside, we seek myriad grassland and woodland birds, as well as scavenging vultures amidst a thronging wildlife spectacle virtually unequalled on earth. Thirty thousand-some big mammals are resident here, and a decent proportion of them can be seen from a single view point within the crater, an indescribably magnificent sight."
+      },
+      {
+        "day": 9,
+        "title": "Day 9: Ndutu",
+        "description": "From the crater rim,we move through the Malanja depression and onto the Serengeti plains, where sandgrouse, bustards, and larks abound. Grant’s gazelles are scattered across the plains, while Ostrich and giraffe walk swaying in the haze. Towards Ndutu we enter beautiful mature Acacia woodland with alkaline lakes and swamps. The lodge’s waterhole is a bird magnet with ever-present Fischer’s Lovebird, a variety of bishops, waxbills, and widowbird, and the endemic Gray-breasted Francolin. The woodlands harbor Rufous Chatterer, Cardinal and Bearded Woodpeckers, Black-faced Babbler, and Green Wood hoopoe. With a bit of luck, and depending on the rains, the wildebeest will have recently calved in this area, and up to half a million females may be in attendance with their young, presenting a wildlife spectacle of awesome proportions, impossible to describe and enthralling to experience. The attendant predators, particularly lions and hyenas, follow their movements closely, and the vultures await each kill with renewed enthusiasm."
+      },
+      {
+        "day": 10,
+        "title": "Day 10: Ndutu",
+        "description": "From the crater rim,we move through the Malanja depression and onto the Serengeti plains, where sandgrouse, bustards, and larks abound. Grant’s gazelles are scattered across the plains, while Ostrich and giraffe walk swaying in the haze. Towards Ndutu we enter beautiful mature Acacia woodland with alkaline lakes and swamps. The lodge’s waterhole is a bird magnet with ever-present Fischer’s Lovebird, a variety of bishops, waxbills, and widowbird, and the endemic Gray-breasted Francolin. The woodlands harbor Rufous Chatterer, Cardinal and Bearded Woodpeckers, Black-faced Babbler, and Green Wood hoopoe. With a bit of luck, and depending on the rains, the wildebeest will have recently calved in this area, and up to half a million females may be in attendance with their young, presenting a wildlife spectacle of awesome proportions, impossible to describe and enthralling to experience. The attendant predators, particularly lions and hyenas, follow their movements closely, and the vultures await each kill with renewed enthusiasm."
+      },
+      {
+        "day": 11,
+        "title": "Day 11: Serengeti NP",
+        "description": "We explore the vast acacia-studded plains of Serengeti NP, encountering herds of wildebeest, zebra, gazelle, and giraffe alongside their associated predators. Although it’s always difficult to find, this is one of the best places in East Africa for leopard. The birds, of course, are party to this drama. We’ll search for Meyer’s Parrot, Tanzanian Red-billed Hornbill, Bare-faced Go-away-bird, Usambiro Barbet, and Gray-headed Silver bill."
+      },
+      {
+        "day": 12,
+        "title": "Day 12: Serengeti NP",
+        "description": "We explore the vast acacia-studded plains of Serengeti NP, encountering herds of wildebeest, zebra, gazelle, and giraffe alongside their associated predators. Although it’s always difficult to find, this is one of the best places in East Africa for leopard. The birds, of course, are party to this drama. We’ll search for Meyer’s Parrot, Tanzanian Red-billed Hornbill, Bare-faced Go-away-bird, Usambiro Barbet, and Gray-headed Silver bill."
+      },
+      {
+        "day": 13,
+        "title": "Serengeti to Kilimanjaro Airport",
+        "description": "We return to Arusha, stopping for lunch at the picturesque karatu town, a good place for Green-headed Sunbird and Grosbeak Weaver. Safari includes Park fees All activities (unless labeled as optional) All accommodation as stated in the itinerary A professional driver/guide All transportation (unless labeled as optional) All Taxes/VAT Round-trip airport transfer All Meals (as specified in the day-by-day section) Drinking water on all days International flights (from/to home) Additional accommodation before and at the end of the tour Tips Personal items (souvenirs, travel insurance, visa fees, etc.) Government imposed increase of taxes and/or park fees Alcohol drinks"
+      }
+    ],
+    "highlights": {
+      "birding": [],
+      "wildlife": [
+        "Big five focus",
+        "Serengeti plains",
+        "Ngorongoro Crater"
+      ]
+    },
+    "included": [
+      "Professional safari guide (English; other languages on request)",
+      "Safari vehicle with pop-up roof – maximum six guests, window seats",
+      "Park fees as per confirmed itinerary",
+      "Accommodation as listed per day",
+      "Meals on full-board basis while on safari unless noted",
+      "Bottled drinking water in the vehicle"
+    ],
+    "excluded": [
+      "International flights (from/to home)",
+      "Additional accommodation before and at the end of the tour",
+      "Tips",
+      "Personal items (souvenirs, travel insurance, visa fees, etc.)",
+      "Government imposed increase of taxes and/or park fees",
+      "Alcohol drinks"
+    ],
+    "bestTime": "Year-round; Jun–Oct peak dry season.",
+    "seo": {
+      "title": "13 days Northern Tanzania Birding Trip | Endemic Birds",
+      "description": "With its huge, unspoiled wilderness areas and plains loaded with game, the vast landscapes of Tanzania reflect an Africa of old. This tour, timed to coinci"
+    },
+    "liveUrl": "https://endemicbirds.co.tz/index.php/6-days-tanzania-safari/",
+    "liveListingTitle": "6 Days Tanzania Safari",
+    "activitySlugs": [
+      "great-migration-plains",
+      "ngorongoro-northern-icons"
+    ],
+    "wildlifeDestinations": [
+      "tarangire-national-park",
+      "lake-manyara-national-park",
+      "ngorongoro-conservation-area",
+      "serengeti-national-park"
+    ],
+    "gallery": [
+      "assets/images/packages/13-days-northern-tanzania-birding/hero.jpg",
+      "assets/images/packages/13-days-northern-tanzania-birding/gallery-1.jpg"
+    ],
+    "contentSource": {
+      "type": "docx",
+      "sourceFile": "itineraries/13 days Northern Tanzania Birding Trip.docx",
+      "supplementaryFiles": [],
+      "importedAt": "2026-11-15T22:05:12.789Z",
+      "fidelity": "verbatim-itinerary",
+      "dayCountFromDoc": 13
+    },
+    "download": {
+      "file": "assets/downloads/packages/13-days-northern-tanzania-birding.docx",
+      "fileType": "docx",
+      "sizeBytes": 18190,
+      "versionDate": "2026-11-15",
+      "label": "Download full itinerary (Word)"
+    },
+    "needsOwnerReview": []
+  },
+  {
+    "id": "10-days-northern-lake-victoria-safari",
+    "slug": "10-days-northern-lake-victoria-safari",
+    "title": "Itinerary of Tanzania itinerary 10 days",
+    "category": "wildlife",
+    "durationDays": 10,
+    "destinations": [
+      "northern"
+    ],
+    "circuits": [
+      "Northern"
+    ],
+    "summary": "Itinerary of Tanzania itinerary 10 days",
+    "heroImage": "assets/images/packages/10-days-northern-lake-victoria-safari/hero.jpg",
+    "featured": false,
+    "verified": false,
+    "itinerary": [
+      {
+        "day": 1,
+        "title": "Arusha – Tarangire National Park",
+        "description": "In 5 days, Tanzania camping safari, after a safari briefing in the morning, you will travel southwest towards the Tarangire National Park. With its interesting landscapes – from swamps to baobab trees – it is considered as one of the most beautiful parks in northern Tanzania. Elephants can be seen in herds of up to 600, along with wildebeests, Masai giraffes, buffaloes and zebras. You will enjoy an extensive game drive until you leave the park in the late afternoon to travel to the Lake Burunge Tented Camp, where you will overnight. Lunch; Dinner"
+      },
+      {
+        "day": 2,
+        "title": "Tarangire Area",
+        "description": "Lake Manyara National Park – Karatu After breakfast you will travel from the Tarangire Area to the Lake Manyara National Park. The park is known for its over 400 bird species, primate-filled forests and grassy plains. A large area of the park is covered by the alkaline Lake Manyara, the seasonal breeding grounds for large colonies of flamingos and many more waterfowls. The park is also home to giraffes, hippos, wildebeests, impalas and groups of noisy monkeys and baboons. After an extensive game drive, you will travel to Karatu in the Ngorongoro highlands. After your arrival, there might be time for an optional walk in the coffee plantations to learn more about coffee production. You will spend the night at one of the three beautifully located Tanganyika Wilderness Adventure Lodges.Breakfast; Lunch; Dinner"
+      },
+      {
+        "day": 3,
+        "title": "Karatu",
+        "description": "Ngorongoro Crater – Serengeti National Park Rise and shine! After breakfast you will drive to the crater rim from where you will take on the steep and adventurous trail into the crater. Here, within a few square kilometres, you can find all the animals that live in the East African savannah. You will see a diversity of wildlife ranging from the “Big Five” – lion, elephant, buffalo, rhino and leopard – to wildebeests, Grant’s and Thomson’s gazelles and mountain reedbucks in the forests on the slopes. The crater is also one of the best places to see the magnificent but almost extinct black rhino. You will spend the morning on a game drive followed by a picnic lunch. During the early afternoon, you will leave the crater and travel to the Serengeti. The Serengeti National Park is the most famous park in Tanzania and it is here where the biggest animal migration in the world takes place. Herds of wildebeests and zebras cross the border between Tanzania and Kenya in search of fresh grass and water and predators are never far behind. Tonight, you will stay at the Kati Kati Tented Camp in the central Serengeti. Breakfast; Lunch; Dinner"
+      },
+      {
+        "day": 4,
+        "title": "Serengeti National Park",
+        "description": "After sunrise you will leave the camp for an early morning game drive and return in the late morning to a hearty breakfast. Alternatively, adventurous guests can experience the Serengeti from the sky when joining a hot air balloon ride, followed by a champagne breakfast. This activity is optional and needs to be booked in advance. Those interested in seeing the visitor central are also able to do so. Depending on time there will be another game drive in the afternoon before you return to the Kati Kati Tented Camp to spend another night. Breakfast; Lunch; Dinner"
+      },
+      {
+        "day": 5,
+        "title": "Serengeti National Park – Lake Victoria",
+        "description": "After an early start, you will continue through the Serengeti National Park on your way out. There will be more time to spot animals you may not have seen already, perhaps the rare African wild dog? The Serengeti is also home to the “Big Five” – lion, elephant, buffalo, rhino and leopard – and today you might be able to tick off all the members of this group. After leaving the park, the journey continues to Lake Victoria, the largest lake in Africa and the second largest in the world. The area around Lake Victoria is the most fertile and densely inhabited region of Tanzania. Here at the ocean-like lake, you will see another side of Tanzania – away from the masses you will experience how the local people live. You can take a walk along the lake shore and watch fishermen at work – an experience unavailable on the usual tourist routes. You will overnight at the Speke Bay Lodge. Breakfast; Lunch; Dinner"
+      },
+      {
+        "day": 6,
+        "title": "Lake Victoria – Masai Mara Area",
+        "description": "After breakfast you will join the local fishermen and a guide on a canoe trip on Lake Victoria. You will see how the locals catch fish the traditional way and admire the previous night’s catch. Back on dry land you will depart on the longest journey of your safari – the trip to the Masai Mara. The road towards the Kenyan border is a long and adventurous one, but it should be worth it as the “Mara” is reputed to have the highest lion population of all reserves in Africa. Other large cats also live here and can be spotted all year round, as their sightings are not dependent upon the seasons or the great migration. You will overnight in safari tents at Mara West Camp on the outskirts of the reserve. Breakfast; Lunch; Dinner"
+      },
+      {
+        "day": 7,
+        "title": "+ 8 Masai Mara Game Reserve",
+        "description": "The next two days are dedicated to game viewing in the Masai Mara Game Reserve. You will also take a trip to the Mara River, the greatest hurdle for the wildebeests and zebras on their yearly trek. An incredible scene is set when the river has swollen to almost bursting levels. Thousands of animals must cross it, risking death as crocodiles wait below the surface of the swirling water. It can be a gruesome sight. At other times of the year, hippos, hungry crocodiles and other animals can also be seen at the river. You will spend two nights at the Ashnil Mara Camp. Breakfast; Lunch; Dinner"
+      },
+      {
+        "day": 9,
+        "title": "Masai Mara Game Reserve – Lake Nakuru National Park",
+        "description": "After breakfast you will leave the Mara to reach Lake Nakuru National Park in the early afternoon. The shallow alkaline lake attracts seasonally flocks of flamingos. Not only can you see over 450 bird species and 50 mammals, but you might spot both the endangered white and black rhino. Other animals in the park include waterbucks, buffaloes, Rothschild’s giraffes, lions, cheetahs and leopards as well as troops of baboons and monkeys and lots of pythons hanging around in the trees. Tonight, you will stay at the Flamingo Hill Camp.Breakfast; Lunch; Dinner"
+      },
+      {
+        "day": 10,
+        "title": "Lake Nakuru National Park – Nairobi",
+        "description": "After breakfast you will leave the Lake Nakuru National Park to travel southeast towards Nairobi, Kenya’s bustling and often chaotic capital. You will arrive in the early afternoon and depending on the rest of your travel plans, you will be taken to the city center or directly to the airport. Breakfast; Lunch"
+      }
+    ],
+    "highlights": {
+      "birding": [],
+      "wildlife": [
+        "Big five focus",
+        "Serengeti plains",
+        "Ngorongoro Crater"
+      ]
+    },
+    "included": [
+      "Professional safari guide (English; other languages on request)",
+      "Safari vehicle with pop-up roof – maximum six guests, window seats",
+      "Park fees as per confirmed itinerary",
+      "Accommodation as listed per day",
+      "Meals on full-board basis while on safari unless noted",
+      "Bottled drinking water in the vehicle"
+    ],
+    "excluded": [
+      "International flights and visas",
+      "Travel insurance",
+      "Tips for guides and camp staff",
+      "Personal expenses, drinks and laundry",
+      "Optional activities not listed in the itinerary"
+    ],
+    "bestTime": "Year-round; Jun–Oct peak dry season.",
+    "seo": {
+      "title": "Itinerary of Tanzania itinerary 10 days | Endemic Birds",
+      "description": "Itinerary of Tanzania itinerary 10 days"
+    },
+    "liveUrl": "https://endemicbirds.co.tz/index.php/6-days-tanzania-safari/",
+    "liveListingTitle": "6 Days Tanzania Safari",
+    "activitySlugs": [
+      "great-migration-plains",
+      "ngorongoro-northern-icons"
+    ],
+    "wildlifeDestinations": [
+      "tarangire-national-park",
+      "lake-manyara-national-park",
+      "ngorongoro-conservation-area",
+      "serengeti-national-park"
+    ],
+    "gallery": [
+      "assets/images/packages/10-days-northern-lake-victoria-safari/hero.jpg",
+      "assets/images/packages/10-days-northern-lake-victoria-safari/gallery-1.jpg"
+    ],
+    "contentSource": {
+      "type": "docx",
+      "sourceFile": "itineraries/Itinerary of Tanzania itinerary 10 days.docx",
+      "supplementaryFiles": [],
+      "importedAt": "2026-11-15T22:05:12.789Z",
+      "fidelity": "verbatim-itinerary",
+      "dayCountFromDoc": 9
+    },
+    "download": {
+      "file": "assets/downloads/packages/10-days-northern-lake-victoria-safari.docx",
+      "fileType": "docx",
+      "sizeBytes": 16025,
+      "versionDate": "2026-11-15",
+      "label": "Download full itinerary (Word)"
+    },
+    "needsOwnerReview": [
+      "compressed day ranges in Word (e.g. Days 4–6)"
+    ]
   }
 ]

@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Marck+Script&display=swap" rel="stylesheet" />
     <link rel="icon" href="../../assets/images/from-live-site/brand/bird-logo.png" />
     <link rel="stylesheet" href="../../assets/css/styles.css" />
+    <link rel="stylesheet" href="../../assets/css/site-enhancements.css" />
   </head>
   <body
     class="has-grain destinations-mode-birding"
@@ -28,6 +29,22 @@
               Every park and forest site we bird in Tanzania – pick a destination to open its field notes and linked safaris.
             </p>
           </header>
+          <form class="filters-bar filters-bar--compact filters-bar--discover" data-filters>
+            <input type="hidden" name="interest" value="birding" />
+            <label class="filters-bar__static">Safari interest <span class="filters-bar__pill">Birding</span></label>
+            <label>Circuit
+              <select name="circuit">
+                <option value="all">All circuits</option>
+                <option value="Northern">Northern</option>
+                <option value="Southern">Southern</option>
+                <option value="Eastern">Eastern</option>
+                <option value="Western">Western</option>
+                <option value="North West">North West</option>
+              </select>
+            </label>
+            <button type="button" class="btn btn-outline" data-clear-filters>Reset</button>
+          </form>
+          <p class="section-lead filters-lead-note">Circuit pages summarise regions; cards below are individual parks and forest sites with linked safaris where published.</p>
           <div id="destinations-grid" data-catalog="destinations" data-destinations-preset="birding">
             <p class="catalog-meta"><span data-count>0</span> destinations</p>
             <div data-catalog-grid></div>

@@ -1,0 +1,839 @@
+/* Homepage special birds – one viewport, inline details */
+.birds-showcase-section {
+  --showcase-gold: var(--color-gold, #c4952a);
+  --showcase-forest: var(--color-forest, #1c4a3a);
+  --showcase-deep: var(--color-forest-deep, #0f261e);
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  height: 100svh;
+  height: 100dvh;
+  max-height: 100dvh;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  scroll-margin-top: 4rem;
+  background: var(--color-paper, #faf9f7);
+  overflow: hidden;
+}
+
+.birds-showcase-section.home-section {
+  padding: 0;
+}
+
+.birds-showcase-section .birds-showcase-head {
+  flex-shrink: 0;
+  margin-bottom: clamp(0.65rem, 1.8vh, 1.15rem);
+  padding-top: clamp(0.85rem, 2.2vh, 1.35rem);
+}
+
+.birds-showcase-section .birds-showcase-head .section-lead {
+  max-width: min(100%, 34rem);
+}
+
+.birds-showcase-section [data-bird-of-day] {
+  flex: 1;
+  min-height: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.birds-showcase-mount:empty {
+  min-height: 12rem;
+}
+
+.birds-showcase {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+  max-height: 100%;
+}
+
+.birds-showcase__viewport {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  min-height: 0;
+  height: 100%;
+  padding: clamp(0.55rem, 1.8vh, 1rem) 0 clamp(0.45rem, 1.2vh, 0.75rem);
+  box-sizing: border-box;
+}
+
+.birds-showcase__stage {
+  position: relative;
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.65rem;
+  min-height: 0;
+  height: 100%;
+  overflow: hidden;
+  align-items: stretch;
+}
+
+@media (max-width: 899px) {
+  .birds-showcase__stage {
+    grid-template-rows: 1fr auto;
+  }
+}
+
+@media (min-width: 900px) {
+  .birds-showcase__stage {
+    grid-template-columns: minmax(14rem, 17.5rem) 1fr;
+    gap: 1.15rem;
+    align-items: stretch;
+  }
+
+  .birds-showcase__daily {
+    grid-column: 1;
+    grid-row: 1;
+    align-self: start;
+  }
+
+  .birds-showcase__carousel {
+    grid-column: 2;
+    grid-row: 1;
+    min-height: 100%;
+  }
+}
+
+/* Carousel */
+.birds-showcase__carousel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  max-height: 100%;
+  border-radius: 0.85rem;
+  overflow: hidden;
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.6) inset,
+    0 24px 48px rgba(15, 38, 30, 0.18);
+  border: 1px solid rgba(28, 74, 58, 0.18);
+  background: var(--showcase-deep);
+}
+
+.birds-showcase__track {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.birds-showcase__slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.65s ease,
+    visibility 0.65s;
+  z-index: 0;
+}
+
+.birds-showcase__slide.is-active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 1;
+}
+
+.birds-showcase__slide-bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(145deg, #0f261e 0%, #1c4a3a 45%, #2d5c4a 100%);
+}
+
+.birds-showcase__slide-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.02);
+  transition: transform 8s ease;
+}
+
+.birds-showcase__slide.is-active .birds-showcase__slide-bg img {
+  transform: scale(1.06);
+}
+
+.birds-showcase__slide-scrim {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    linear-gradient(0deg, rgba(15, 38, 30, 0.92) 0%, rgba(15, 38, 30, 0.45) 38%, rgba(15, 38, 30, 0.35) 100%),
+    linear-gradient(90deg, rgba(15, 38, 30, 0.75) 0%, rgba(15, 38, 30, 0.15) 62%);
+  pointer-events: none;
+}
+
+.birds-showcase__slide.is-fallback-img .birds-showcase__slide-scrim {
+  background: linear-gradient(0deg, rgba(15, 38, 30, 0.94) 0%, rgba(15, 38, 30, 0.72) 50%, rgba(15, 38, 30, 0.55) 100%);
+}
+
+.birds-showcase__slide-caption {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: clamp(1.35rem, 4vw, 2.5rem);
+  padding-bottom: clamp(3.5rem, 8vw, 4.25rem);
+  max-width: 38rem;
+  color: #f4f7f5;
+  text-shadow: 0 1px 18px rgba(0, 0, 0, 0.35);
+}
+
+.birds-showcase__slide-cat {
+  margin: 0 0 0.35rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.birds-showcase__slide-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.65rem, 3.5vw, 2.15rem);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+
+.birds-showcase__slide-sci {
+  margin: 0.35rem 0 0.75rem;
+  font-size: 0.92rem;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.birds-showcase__slide-tease {
+  margin: 0 0 1rem;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.9);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.birds-showcase__info {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.15rem;
+  height: 3.15rem;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  color: var(--showcase-forest);
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.birds-showcase__info i {
+  font-size: 1.35rem;
+}
+
+.birds-showcase__info:hover,
+.birds-showcase__info:focus-visible {
+  transform: scale(1.06);
+  background: #fff;
+  color: var(--showcase-gold);
+  outline: 2px solid rgba(196, 149, 42, 0.5);
+  outline-offset: 2px;
+}
+
+.birds-showcase__controls {
+  position: absolute;
+  z-index: 3;
+  bottom: 0.85rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.5rem;
+  border-radius: 999px;
+  background: rgba(15, 38, 30, 0.55);
+  backdrop-filter: blur(8px);
+}
+
+.birds-showcase__arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #fff;
+  background: transparent;
+  transition: background 0.2s ease;
+}
+
+.birds-showcase__arrow:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.birds-showcase__dots {
+  display: flex;
+  gap: 0.35rem;
+}
+
+.birds-showcase__dot {
+  width: 0.45rem;
+  height: 0.45rem;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.35);
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.birds-showcase__dot.is-active {
+  transform: scale(1.25);
+  background: var(--showcase-gold);
+}
+
+/* Bird of the day – stacked: photo top, details below */
+.birds-showcase__daily {
+  position: relative;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  width: 100%;
+  height: auto;
+  padding: 0.55rem 0.6rem 0.65rem;
+  border-radius: 0.85rem;
+  background: var(--color-paper, #faf9f7);
+  border: 1px solid rgba(28, 74, 58, 0.14);
+  box-shadow: 0 10px 28px rgba(15, 38, 30, 0.08);
+  flex-shrink: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+@media (min-width: 900px) {
+  .birds-showcase__daily {
+    align-self: stretch;
+    height: 100%;
+    min-height: 0;
+    padding: 0.55rem 0.6rem 0.7rem;
+  }
+}
+
+.birds-showcase__daily-glow {
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  background: linear-gradient(120deg, rgba(196, 149, 42, 0.25), transparent 50%);
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.birds-showcase__daily-badge {
+  position: relative;
+  align-self: flex-start;
+  margin: 0 0 0.4rem;
+  padding: 0.22rem 0.55rem;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #5c4210;
+  background: var(--showcase-gold);
+  border-radius: 999px;
+  box-shadow: 0 4px 12px rgba(196, 149, 42, 0.35);
+}
+
+.birds-showcase__daily-badge i {
+  margin-right: 0.25rem;
+  font-size: 0.7rem;
+}
+
+.birds-showcase__daily-media {
+  position: relative;
+  margin: 0;
+  border-radius: 0.55rem;
+  overflow: hidden;
+  border: 1px solid rgba(28, 74, 58, 0.12);
+  box-shadow: 0 6px 18px rgba(15, 38, 30, 0.1);
+  height: clamp(5.5rem, 18vh, 8.5rem);
+  width: 100%;
+  flex-shrink: 0;
+  background: var(--showcase-deep);
+}
+
+@media (min-width: 900px) {
+  .birds-showcase__daily-media {
+    flex: 1 1 auto;
+    min-height: 6.5rem;
+    height: auto;
+    max-height: none;
+  }
+}
+
+.birds-showcase__daily-track {
+  position: absolute;
+  inset: 0;
+}
+
+.birds-showcase__daily-slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.45s ease;
+}
+
+.birds-showcase__daily-slide.is-active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.birds-showcase__daily-dots {
+  position: absolute;
+  z-index: 2;
+  bottom: 0.35rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.25rem;
+  padding: 0.15rem 0.35rem;
+  border-radius: 999px;
+  background: rgba(15, 38, 30, 0.45);
+}
+
+.birds-showcase__daily-dot {
+  width: 0.35rem;
+  height: 0.35rem;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.45);
+}
+
+.birds-showcase__daily-dot.is-active {
+  background: var(--showcase-gold);
+}
+
+.birds-showcase__daily-body {
+  flex-shrink: 0;
+  min-width: 0;
+  margin-top: 0.55rem;
+  padding: 0.5rem 2.15rem 0 0;
+  border-top: 1px solid rgba(28, 74, 58, 0.1);
+}
+
+.birds-showcase__daily-cat {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #9a7324;
+}
+
+.birds-showcase__daily-name {
+  margin: 0.35rem 0 0;
+  font-family: var(--font-body);
+  font-size: clamp(1.08rem, 2.1vw, 1.28rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--color-forest-deep, #2c241c);
+}
+
+.birds-showcase__daily-sci {
+  margin: 0.2rem 0 0;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-style: italic;
+  font-weight: 500;
+  color: var(--color-forest, #3a342e);
+  opacity: 0.88;
+}
+
+.birds-showcase__daily-tease {
+  margin: 0.45rem 0 0;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  line-height: 1.45;
+  color: var(--color-text-soft, #6b5f52);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.birds-showcase__info--daily {
+  position: absolute;
+  top: 0.45rem;
+  right: 0.45rem;
+  z-index: 3;
+  width: 2.15rem;
+  height: 2.15rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.95);
+  color: #8a6118;
+  box-shadow: 0 4px 12px rgba(15, 38, 30, 0.12);
+  border: 1px solid rgba(196, 149, 42, 0.35);
+}
+
+.birds-showcase__info--daily:hover {
+  background: rgba(196, 149, 42, 0.28);
+  color: #3d2c08;
+}
+
+.birds-showcase__daily--synced {
+  border-color: rgba(28, 74, 58, 0.45);
+  box-shadow:
+    0 16px 40px rgba(28, 74, 58, 0.18),
+    0 0 0 2px rgba(28, 74, 58, 0.15);
+}
+
+/* Inline detail layer – compact text popup */
+.birds-showcase__detail {
+  position: absolute;
+  inset: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem;
+  background: rgba(15, 38, 30, 0.5);
+  backdrop-filter: blur(5px);
+  overflow: hidden;
+}
+
+.birds-showcase__detail[hidden] {
+  display: none !important;
+}
+
+.birds-showcase__detail-card {
+  position: relative;
+  width: min(100%, 22rem);
+  max-height: none;
+  overflow: visible;
+  padding: 0.9rem 1rem 1rem;
+  border-radius: 0.85rem;
+  background: #fff;
+  box-shadow: 0 20px 48px rgba(15, 38, 30, 0.22);
+  animation: birds-showcase-detail-in 0.3s ease;
+}
+
+.birds-showcase__detail-card--compact .birds-showcase__detail-lead {
+  margin: 0 0 0.55rem;
+  font-size: 0.82rem;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.birds-showcase__detail-card--compact h3 {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.12;
+  padding-right: 1.75rem;
+  color: var(--color-forest-deep, var(--showcase-deep));
+}
+
+.birds-showcase__detail-card--compact .birds-showcase__detail-sci {
+  margin: 0.15rem 0 0.45rem;
+  font-size: 0.8rem;
+}
+
+.birds-showcase__detail-facts--compact {
+  margin: 0 0 0.55rem;
+  gap: 0.45rem;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.birds-showcase__detail-facts--compact dd {
+  font-size: 0.78rem;
+  line-height: 1.35;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.birds-showcase__detail-facts--compact dt {
+  font-size: 0.65rem;
+}
+
+.birds-showcase__pills--compact {
+  margin-bottom: 0.35rem;
+  gap: 0.3rem;
+}
+
+.birds-showcase__pills--compact .birds-showcase__pill {
+  padding: 0.2rem 0.45rem;
+  font-size: 0.7rem;
+}
+
+.birds-showcase__detail-card--compact .birds-showcase__enquire {
+  margin-top: 0.5rem;
+  width: auto;
+  display: inline-flex;
+  font-size: 0.78rem;
+  padding: 0.4rem 0.75rem;
+}
+
+.birds-showcase__detail-card--daily {
+  border-top: 4px solid var(--showcase-gold);
+  background: linear-gradient(180deg, #fffdf8 0%, #fff 12%);
+}
+
+@keyframes birds-showcase-detail-in {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .birds-showcase__slide,
+  .birds-showcase__slide-bg img,
+  .birds-showcase__detail-card {
+    transition: none;
+    animation: none;
+  }
+}
+
+.birds-showcase__detail-close {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  color: var(--showcase-deep);
+  background: rgba(28, 74, 58, 0.08);
+}
+
+.birds-showcase__detail-ribbon {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin: 0 0 0.75rem;
+  padding: 0.25rem 0.6rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #5c4210;
+  background: rgba(196, 149, 42, 0.18);
+  border-radius: 999px;
+}
+
+.birds-showcase__detail-gallery {
+  position: relative;
+  margin: 0 0 1rem;
+  border-radius: 0.65rem;
+  overflow: hidden;
+  background: var(--showcase-deep);
+  aspect-ratio: 16 / 10;
+}
+
+.birds-showcase__detail-figure {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.birds-showcase__detail-figure.is-active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.birds-showcase__detail-figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.birds-showcase__detail-figure figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.4rem 0.6rem;
+  font-size: 0.72rem;
+  color: #fff;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.65));
+}
+
+.birds-showcase__detail-gallery-nav {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.4rem;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.birds-showcase__detail-gallery-nav button {
+  border: none;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  padding: 0.25rem 0.4rem;
+}
+
+.birds-showcase__detail-gallery-dots {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.birds-showcase__detail-gallery-dots button {
+  width: 0.4rem;
+  height: 0.4rem;
+  padding: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.birds-showcase__detail-gallery-dots button.is-active {
+  background: #fff;
+}
+
+.birds-showcase__detail-cat {
+  margin: 0 0 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--showcase-forest);
+}
+
+.birds-showcase__detail-card h3 {
+  margin: 0;
+  font-size: 1.35rem;
+  padding-right: 2rem;
+}
+
+.birds-showcase__detail-sci {
+  margin: 0.35rem 0 0.75rem;
+  font-size: 0.92rem;
+  color: var(--color-text-soft, #5a6560);
+}
+
+.birds-showcase__detail-lead {
+  margin: 0 0 1rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.birds-showcase__detail-facts {
+  margin: 0 0 1rem;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.birds-showcase__detail-facts div {
+  margin: 0;
+}
+
+.birds-showcase__detail-facts dt {
+  margin: 0 0 0.2rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--showcase-forest);
+}
+
+.birds-showcase__detail-facts dd {
+  margin: 0;
+  font-size: 0.88rem;
+  line-height: 1.45;
+  color: var(--color-text, #2a332f);
+}
+
+.birds-showcase__detail-kicker {
+  margin: 0.75rem 0 0.35rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-soft, #5a6560);
+}
+
+.birds-showcase__pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.birds-showcase__pill {
+  display: inline-block;
+  padding: 0.28rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--showcase-forest);
+  background: rgba(28, 74, 58, 0.08);
+  border: 1px solid rgba(28, 74, 58, 0.12);
+}
+
+.birds-showcase__pill:hover {
+  border-color: rgba(196, 149, 42, 0.45);
+}
+
+.birds-showcase__enquire {
+  margin-top: 0.75rem;
+  width: 100%;
+}
+
+.birds-showcase--detail-open .birds-showcase__carousel {
+  pointer-events: none;
+}

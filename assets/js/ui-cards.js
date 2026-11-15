@@ -416,7 +416,7 @@
         counts[id] = (counts[id] || 0) + 1;
       });
     });
-    return `<div class="alt-card-grid">${destinations
+    return `<div class="alt-card-grid reveal-stagger" data-reveal-stagger>${destinations
       .map((d) => renderGroupCircuitCard(d, asset, counts[d.id] || 0))
       .join("")}</div>`;
   }
@@ -438,12 +438,31 @@
   }
 
   function renderGroupPackageGrid(packages, asset) {
-    return `<div class="alt-card-grid">${packages.map((p) => renderGroupPackageCard(p, asset)).join("")}</div>`;
+    return `<div class="alt-card-grid reveal-stagger" data-reveal-stagger>${packages
+      .map((p) => renderGroupPackageCard(p, asset))
+      .join("")}</div>`;
   }
 
   const SPOT_LIKE_SVG = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5l-1.1-1C5.14 13.24 2 10.28 2 6.75 2 4.13 4.13 2 6.75 2c1.57 0 3.07.74 4.01 1.92L12 5.5l1.24-1.58C14.18 2.74 15.68 2 17.25 2 19.87 2 22 4.13 22 6.75c0 3.53-3.14 6.49-8.9 12.75L12 20.5z"/></svg>`;
 
+  /** Stable 3–5 star display per destination (seeded from slug/title). */
+  function destSpotStarRating(seed) {
+    const s = String(seed || "dest");
+    let h = 2166136261;
+    for (let i = 0; i < s.length; i++) {
+      h ^= s.charCodeAt(i);
+      h = Math.imul(h, 16777619);
+    }
+    const stars = 3 + ((h >>> 0) % 3);
+    return {
+      stars,
+      glyphs: "★".repeat(stars),
+      label: `${stars} out of 5 stars`,
+    };
+  }
+
   function renderIndividualDestSpot({ href, imgSrc, title, subtitle, tag, imgLoading = "eager", mediaFallback = "" }) {
+    const rating = destSpotStarRating(mediaFallback || title || href);
     const fallbackAttr = mediaFallback ? ` data-media-fallback="${escapeHtml(mediaFallback)}"` : "";
     return `<a class="dest-ind-spot" href="${href}">
       <div class="dest-ind-spot__img card-media-wrap"${fallbackAttr}>${cardMediaMarkup(imgSrc, "", imgLoading)}<span class="dest-ind-spot__noise" aria-hidden="true"></span></div>
@@ -451,30 +470,43 @@
       <span class="dest-ind-spot__tag">${escapeHtml(tag)}</span>
       <span class="dest-ind-spot__like" aria-hidden="true">${SPOT_LIKE_SVG}</span>
       <div class="dest-ind-spot__cap">
-        <span class="dest-ind-spot__stars" aria-label="Highly rated">★★★★★</span>
-        <p class="dest-ind-spot__script">${escapeHtml(subtitle)}</p>
+        <span class="dest-ind-spot__stars" aria-label="${escapeHtml(rating.label)}">${rating.glyphs}</span>
         <h3 class="dest-ind-spot__title">${escapeHtml(title)}</h3>
         <span class="dest-ind-spot__cta">Explore destination <span aria-hidden="true">→</span></span>
       </div>
     </a>`;
   }
 
-  function birdingSiteSpotSubtitle(site) {
-    if (site.location) {
+  const BIRDING_SITE_KIND = {
+    "national-park": "National park",
+    "forest-reserve": "Forest reserve",
+    "conservation-area": "Conservation area",
+    forest: "Forest site",
+    mountain: "Mountain site",
+    island: "Island",
+  };
+
+  function birdingSiteSpotSubtitle(site, circuitLabel) {
+    const parts = [];
+    if (circuitLabel) parts.push(`${circuitLabel} circuit`);
+    const kind = site.siteKind && BIRDING_SITE_KIND[site.siteKind];
+    if (kind) parts.push(kind);
+    if (!parts.length && site.location) {
       const line = String(site.location).split("·")[0].trim();
-      return line.length > 58 ? `${line.slice(0, 55)}…` : line;
+      parts.push(line.length > 42 ? `${line.slice(0, 39)}…` : line);
     }
-    return "Birding in Tanzania";
+    return parts.join(" · ") || "Birding in Tanzania";
   }
 
   function renderBirdingSiteSpot(site, asset, circuitLabel) {
     const href = asset(`destinations/${site.slug}/`);
     const hero = window.EndemicMedia?.resolveHero?.(site.slug, site.heroImage) || site.heroImage;
+    const circuit = circuitLabel || site.circuit || "";
     return renderIndividualDestSpot({
       href,
       imgSrc: asset(hero),
       title: site.name,
-      subtitle: circuitLabel || birdingSiteSpotSubtitle(site),
+      subtitle: birdingSiteSpotSubtitle(site, circuit),
       tag: "Birding",
     });
   }
@@ -483,7 +515,7 @@
   function renderBirdingDestinationsGrid(sites, asset) {
     if (!sites?.length) return "";
     return `<div class="alt-card-grid alt-card-grid--dest-spot reveal-stagger" data-reveal-stagger>${sites
-      .map((s) => renderBirdingSiteSpot(s, asset))
+      .map((s) => renderBirdingSiteSpot(s, asset, s.circuit))
       .join("")}</div>`;
   }
 
@@ -502,7 +534,7 @@
       .map((item) => renderBirdingSiteSpot(item.data, asset, item.circuit))
       .join("");
     const wildHtml = wildlifeDests.map((d) => renderWildlifeDestSpot(d, asset)).join("");
-    return `<div class="alt-card-grid alt-card-grid--dest-spot">${birdingHtml}${wildHtml}</div>`;
+    return `<div class="alt-card-grid alt-card-grid--dest-spot reveal-stagger" data-reveal-stagger>${birdingHtml}${wildHtml}</div>`;
   }
 
   function renderIndividualDestC({ href, imgSrc, scriptLine, metaLine, title }) {
@@ -572,13 +604,13 @@
   }
 
   function renderIndividualDestCGrid(items, asset) {
-    return `<div class="alt-card-grid alt-card-grid--dest-ind">${items
+    return `<div class="alt-card-grid alt-card-grid--dest-ind reveal-stagger" data-reveal-stagger>${items
       .map((item) => item.renderC(item.data, asset, item.circuit))
       .join("")}</div>`;
   }
 
   function renderIndividualDestBGrid(items, asset) {
-    return `<div class="alt-card-grid alt-card-grid--dest-ind">${items
+    return `<div class="alt-card-grid alt-card-grid--dest-ind reveal-stagger" data-reveal-stagger>${items
       .map((item) => item.renderB(item.data, asset, item.circuit))
       .join("")}</div>`;
   }
@@ -631,6 +663,143 @@
     if (!packages.length) return "";
     return `<div class="alt-card-grid alt-card-grid--pkg-ind reveal-stagger" data-reveal-stagger>${packages
       .map((p) => renderIndividualPackageCard(p, asset))
+      .join("")}</div>`;
+  }
+
+  function accommodationRatingScore(slug, item) {
+    const preset = item?.cardRating;
+    if (typeof preset === "number" && preset >= 3 && preset <= 5) return Math.round(preset);
+    let h = 0;
+    const s = String(slug || "");
+    for (let i = 0; i < s.length; i++) h = (h * 17 + s.charCodeAt(i) * (i + 3)) >>> 0;
+    const bucket = [3, 4, 5, 4, 3, 5, 4, 3, 4, 5][h % 10];
+    return bucket;
+  }
+
+  function renderAccommodationRating(slug, item) {
+    const score = accommodationRatingScore(slug, item);
+    const filled = "★".repeat(score);
+    const empty = score < 5 ? "☆".repeat(5 - score) : "";
+    return `<div class="pkg-card-rating acc-card-split__rating" aria-label="${score} out of 5">
+      <span class="pkg-stars" aria-hidden="true">${filled}${empty}</span>
+      <span class="pkg-score">${score}.0</span>
+    </div>`;
+  }
+
+  function accommodationEyebrow(item, labels) {
+    if (item.categoryLabel) return escapeHtml(String(item.categoryLabel));
+    const loc = item.location ? String(item.location).split("·")[0].trim() : "";
+    const ptype = item.propertyType && labels?.typeLabels?.[item.propertyType];
+    const cat = (ptype || "Stay").toUpperCase();
+    if (loc) return `${escapeHtml(cat)} · ${escapeHtml(loc.toUpperCase())}`;
+    return escapeHtml(cat);
+  }
+
+  function accommodationTagline(item) {
+    if (item.tagline) return escapeHtml(item.tagline);
+    const raw = item.summary || "";
+    const clip = raw.length > 88 ? `${raw.slice(0, 85)}…` : raw;
+    return escapeHtml(clip);
+  }
+
+  function accommodationDetailRows(item, labels) {
+    const rows =
+      item.detailHighlights?.length > 0
+        ? item.detailHighlights
+        : [item.location?.split("·")[0]?.trim(), labels?.typeLabels?.[item.propertyType]].filter(Boolean);
+    const icon = `<svg class="acc-card-split__detail-icon" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/></svg>`;
+    return rows
+      .slice(0, 2)
+      .map((line) => `<li>${icon}<span>${escapeHtml(line)}</span></li>`)
+      .join("");
+  }
+
+  function accommodationServicePills(item) {
+    const list = item.services?.length ? item.services : [];
+    if (!list.length) return "";
+    return `<div class="acc-card-split__pills">${list
+      .slice(0, 3)
+      .map((s) => `<span class="acc-card-split__pill">${escapeHtml(s)}</span>`)
+      .join("")}</div>`;
+  }
+
+  const STAY_GALLERY_DIR_ALIASES = {
+    "mullas-lodge": ["mullers-lodge"],
+    "luala-camp": ["lemala-camps"],
+  };
+
+  function isStayFolderPhoto(src, slug) {
+    const s = String(src || "");
+    const dirs = [slug, ...(STAY_GALLERY_DIR_ALIASES[slug] || [])];
+    return dirs.some(
+      (dir) =>
+        s.includes(`accommodations/${dir}/`) || s.includes(`assets/images/accommodations/${dir}/`)
+    );
+  }
+
+  function assetEncodeSegments(assetFn, relPath) {
+    const encoded = String(relPath)
+      .replace(/^\//, "")
+      .split("/")
+      .map((seg) => encodeURIComponent(seg))
+      .join("/");
+    return assetFn(encoded);
+  }
+
+  function accommodationGalleryUrls(item, asset, galleries) {
+    const entries = galleries?.[item.slug];
+    if (!entries?.length) return [];
+    return entries
+      .map((entry) => {
+        const src = typeof entry === "string" ? entry : entry?.src;
+        if (!src || !isStayFolderPhoto(src, item.slug)) return "";
+        const v = typeof entry === "object" && entry?.v ? `?v=${entry.v}` : "";
+        return assetEncodeSegments(asset, src) + v;
+      })
+      .filter(Boolean)
+      .slice(0, 20);
+  }
+
+  function renderAccommodationMedia(item, asset, galleries) {
+    const alt = item.photos?.[0]?.alt || item.name;
+    const urls = accommodationGalleryUrls(item, asset, galleries);
+    const thumb =
+      urls[0] ||
+      assetEncodeSegments(asset, `assets/images/accommodations/${item.slug}/hero.jpg`);
+
+    if (urls.length < 2) {
+      return `<div class="acc-card-split__media card-media-wrap">${cardMediaMarkup(thumb, alt)}<span class="acc-card-split__scrim" aria-hidden="true"></span></div>`;
+    }
+
+    const slidesJson = escapeHtml(JSON.stringify(urls));
+    return `<div class="acc-card-split__media acc-card-gallery card-media-wrap" data-acc-gallery data-acc-slug="${escapeHtml(item.slug)}" data-slides="${slidesJson}">
+      <img class="acc-card-gallery__img is-visible" data-acc-gallery-img src="${urls[0]}" alt="${escapeHtml(alt)}" loading="eager" decoding="async" />
+      <button type="button" class="acc-card-gallery__next" data-acc-gallery-next aria-label="Next photo"><span aria-hidden="true">›</span></button>
+      <span class="acc-card-split__scrim" aria-hidden="true"></span>
+    </div>`;
+  }
+
+  function renderAccommodationCard(item, asset, labels, galleries) {
+    const href = asset(`accommodations/${item.slug}/`);
+    const name = item.displayName || item.name;
+    return `<a class="acc-card-split" href="${href}">
+      ${renderAccommodationMedia(item, asset, galleries)}
+      <div class="acc-card-split__body">
+        <div class="acc-card-split__meta-row">${renderAccommodationRating(item.slug, item)}</div>
+        <p class="acc-card-split__eyebrow">${accommodationEyebrow(item, labels)}</p>
+        <h3 class="acc-card-split__title">${escapeHtml(name)}</h3>
+        <p class="acc-card-split__tagline"><em>${accommodationTagline(item)}</em></p>
+        ${accommodationServicePills(item)}
+        <ul class="acc-card-split__details">${accommodationDetailRows(item, labels)}</ul>
+        <span class="acc-card-split__cta">Explore stay <span class="acc-card-split__cta-arrow" aria-hidden="true">↗</span></span>
+      </div>
+    </a>`;
+  }
+
+  function renderAccommodationGrid(items, asset, labels, galleries) {
+    if (!items?.length) return "";
+    return `<div class="alt-card-grid alt-card-grid--acc reveal-stagger" data-reveal-stagger>${items
+      .map((item) => renderAccommodationCard(item, asset, labels, galleries))
       .join("")}</div>`;
   }
 
@@ -689,6 +858,8 @@
     renderIndividualPackageCard,
     renderIndividualPackageGrid,
     renderHomeDestSpot,
+    renderAccommodationCard,
+    renderAccommodationGrid,
     renderCircuitDestV1Grid,
     renderPackageAltA,
     renderPackageAltGrid,

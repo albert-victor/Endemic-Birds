@@ -1,0 +1,521 @@
+{
+  "generatedAt": "2026-11-15T21:34:07.784Z",
+  "packageCount": 33,
+  "duplicateGroups": [
+    {
+      "fingerprint": "c635607804e3bad5",
+      "slugs": [
+        "19-days-southern-tanzania-birding-trip",
+        "19-days-southern-endemic-birding"
+      ]
+    },
+    {
+      "fingerprint": "ee001dd999655377",
+      "slugs": [
+        "15-days-tanzania-birding-tour",
+        "15-days-birding-wildlife-photographic"
+      ]
+    }
+  ],
+  "packages": [
+    {
+      "slug": "22-days-endemic-birding-tours",
+      "durationDays": 22,
+      "itineraryEntryCount": 16,
+      "missingDayNumbers": [
+        10,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "fingerprint": "2ab4f64df0f25e0c"
+    },
+    {
+      "slug": "14-days-southern-tanzania-birding-tour",
+      "durationDays": 14,
+      "itineraryEntryCount": 11,
+      "missingDayNumbers": [
+        5,
+        9,
+        11
+      ],
+      "fingerprint": "aa2e0b4368c1f403"
+    },
+    {
+      "slug": "19-days-southern-tanzania-birding-trip",
+      "durationDays": 19,
+      "itineraryEntryCount": 18,
+      "missingDayNumbers": [
+        19
+      ],
+      "fingerprint": "c635607804e3bad5"
+    },
+    {
+      "slug": "15-days-tanzania-birding-tour",
+      "durationDays": 15,
+      "itineraryEntryCount": 10,
+      "missingDayNumbers": [
+        3,
+        7,
+        10,
+        12,
+        14
+      ],
+      "fingerprint": "ee001dd999655377"
+    },
+    {
+      "slug": "19-days-southern-endemic-birding",
+      "durationDays": 19,
+      "itineraryEntryCount": 18,
+      "missingDayNumbers": [
+        19
+      ],
+      "fingerprint": "c635607804e3bad5"
+    },
+    {
+      "slug": "20-day-endemic-birds-southern",
+      "durationDays": 20,
+      "itineraryEntryCount": 15,
+      "missingDayNumbers": [
+        12,
+        14,
+        16,
+        18,
+        20
+      ],
+      "fingerprint": "ee45cfabff634ab5"
+    },
+    {
+      "slug": "20-day-endemic-birding-tanzania",
+      "durationDays": 20,
+      "itineraryEntryCount": 12,
+      "missingDayNumbers": [
+        12,
+        13,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "fingerprint": "36c023e9b2f780ad"
+    },
+    {
+      "slug": "12-day-endemic-birds-northern",
+      "durationDays": 12,
+      "itineraryEntryCount": 10,
+      "missingDayNumbers": [
+        6,
+        7
+      ],
+      "fingerprint": "f3387f727a8c36ac"
+    },
+    {
+      "slug": "10-day-birding-northern-eastern",
+      "durationDays": 10,
+      "itineraryEntryCount": 10,
+      "missingDayNumbers": [],
+      "fingerprint": "d13a769ff56567ff"
+    },
+    {
+      "slug": "10-day-birding-southeast",
+      "durationDays": 10,
+      "itineraryEntryCount": 10,
+      "missingDayNumbers": [],
+      "fingerprint": "bf9b893bd665564f"
+    },
+    {
+      "slug": "10-days-south-west-tanzania",
+      "durationDays": 10,
+      "itineraryEntryCount": 10,
+      "missingDayNumbers": [],
+      "fingerprint": "8feeed5541e740a9"
+    },
+    {
+      "slug": "9-days-mahale-gombe-burigi-minziro",
+      "durationDays": 9,
+      "itineraryEntryCount": 9,
+      "missingDayNumbers": [],
+      "fingerprint": "e7b8f654b457321c"
+    },
+    {
+      "slug": "8-days-birding-around-iringa",
+      "durationDays": 8,
+      "itineraryEntryCount": 8,
+      "missingDayNumbers": [],
+      "fingerprint": "c1cf2c598fa6040c"
+    },
+    {
+      "slug": "7-days-mpanda-to-mbeya",
+      "durationDays": 7,
+      "itineraryEntryCount": 7,
+      "missingDayNumbers": [],
+      "fingerprint": "2d55c3b984526107"
+    },
+    {
+      "slug": "10-day-birdwatching-northern",
+      "durationDays": 10,
+      "itineraryEntryCount": 10,
+      "missingDayNumbers": [],
+      "fingerprint": "f58fd764889cd7b9"
+    },
+    {
+      "slug": "15-days-birding-wildlife-photographic",
+      "durationDays": 15,
+      "itineraryEntryCount": 10,
+      "missingDayNumbers": [
+        3,
+        7,
+        10,
+        12,
+        14
+      ],
+      "fingerprint": "ee001dd999655377"
+    },
+    {
+      "slug": "6-days-tanzania-safari",
+      "durationDays": 6,
+      "itineraryEntryCount": 6,
+      "missingDayNumbers": [],
+      "fingerprint": "216c5090c0e6f9c4"
+    },
+    {
+      "slug": "7-days-wildebeest-migration-hadzabe",
+      "durationDays": 7,
+      "itineraryEntryCount": 7,
+      "missingDayNumbers": [],
+      "fingerprint": "dbab7751ef85f328"
+    },
+    {
+      "slug": "8-days-wildebeest-calving-migration",
+      "durationDays": 8,
+      "itineraryEntryCount": 8,
+      "missingDayNumbers": [],
+      "fingerprint": "0506ec08944ffe99"
+    },
+    {
+      "slug": "9-days-wildlife-safari-zanzibar",
+      "durationDays": 9,
+      "itineraryEntryCount": 9,
+      "missingDayNumbers": [],
+      "fingerprint": "7255ec29c03d2ca0"
+    },
+    {
+      "slug": "10-days-luxury-flying-safari",
+      "durationDays": 10,
+      "itineraryEntryCount": 10,
+      "missingDayNumbers": [],
+      "fingerprint": "83aa2a1d7c409098"
+    },
+    {
+      "slug": "10-days-chimpanzee-tracking",
+      "durationDays": 10,
+      "itineraryEntryCount": 10,
+      "missingDayNumbers": [],
+      "fingerprint": "0335674eb52578aa"
+    },
+    {
+      "slug": "22-days-birding-itinerary-north-east-south-pemba",
+      "durationDays": 22,
+      "itineraryEntryCount": 20,
+      "missingDayNumbers": [
+        10,
+        11
+      ],
+      "fingerprint": "fe405ede5dad6ec6"
+    },
+    {
+      "slug": "5-days-serengeti-migration-focus",
+      "durationDays": 5,
+      "itineraryEntryCount": 5,
+      "missingDayNumbers": [],
+      "fingerprint": "d549ecb5ac59afd4"
+    },
+    {
+      "slug": "4-days-ngorongoro-crater-escape",
+      "durationDays": 4,
+      "itineraryEntryCount": 4,
+      "missingDayNumbers": [],
+      "fingerprint": "cdba7e9a96565fea"
+    },
+    {
+      "slug": "8-days-northern-tarangire-manyara-ngorongoro-serengeti",
+      "durationDays": 8,
+      "itineraryEntryCount": 8,
+      "missingDayNumbers": [],
+      "fingerprint": "58cb4a7c79e33d71"
+    },
+    {
+      "slug": "7-days-mahale-gombe-chimp-safari",
+      "durationDays": 7,
+      "itineraryEntryCount": 7,
+      "missingDayNumbers": [],
+      "fingerprint": "c05aecbf1149d2fc"
+    },
+    {
+      "slug": "8-days-ruaha-mikumi-safari",
+      "durationDays": 8,
+      "itineraryEntryCount": 8,
+      "missingDayNumbers": [],
+      "fingerprint": "1db1e3fa3967d0b0"
+    },
+    {
+      "slug": "10-days-nyerere-katavi-expedition",
+      "durationDays": 10,
+      "itineraryEntryCount": 10,
+      "missingDayNumbers": [],
+      "fingerprint": "f099d6efd93a10d6"
+    },
+    {
+      "slug": "5-days-tarangire-serengeti-ngorongoro",
+      "durationDays": 5,
+      "itineraryEntryCount": 5,
+      "missingDayNumbers": [],
+      "fingerprint": "89e4eff1ef6aa352"
+    },
+    {
+      "slug": "14-days-ultimate-tanzania-safari",
+      "durationDays": 14,
+      "itineraryEntryCount": 14,
+      "missingDayNumbers": [],
+      "fingerprint": "4122698b09b81109"
+    },
+    {
+      "slug": "13-days-northern-tanzania-birding",
+      "durationDays": 13,
+      "itineraryEntryCount": 13,
+      "missingDayNumbers": [],
+      "fingerprint": "3fd87c479e15b0d8"
+    },
+    {
+      "slug": "10-days-northern-lake-victoria-safari",
+      "durationDays": 10,
+      "itineraryEntryCount": 9,
+      "missingDayNumbers": [
+        8
+      ],
+      "fingerprint": "00316ec3b2470ac7"
+    }
+  ],
+  "issues": [
+    {
+      "type": "missing-days",
+      "slug": "22-days-endemic-birding-tours",
+      "missing": [
+        10,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "message": "22-days-endemic-birding-tours: missing day numbers 10, 12, 13, 14, 15, 16 (duration 22)"
+    },
+    {
+      "type": "sparse-itinerary",
+      "slug": "22-days-endemic-birding-tours",
+      "message": "22-days-endemic-birding-tours: only 16 itinerary entries for 22-day package"
+    },
+    {
+      "type": "missing-days",
+      "slug": "14-days-southern-tanzania-birding-tour",
+      "missing": [
+        5,
+        9,
+        11
+      ],
+      "message": "14-days-southern-tanzania-birding-tour: missing day numbers 5, 9, 11 (duration 14)"
+    },
+    {
+      "type": "sparse-itinerary",
+      "slug": "14-days-southern-tanzania-birding-tour",
+      "message": "14-days-southern-tanzania-birding-tour: only 11 itinerary entries for 14-day package"
+    },
+    {
+      "type": "missing-days",
+      "slug": "19-days-southern-tanzania-birding-trip",
+      "missing": [
+        19
+      ],
+      "message": "19-days-southern-tanzania-birding-trip: missing day numbers 19 (duration 19)"
+    },
+    {
+      "type": "sparse-itinerary",
+      "slug": "19-days-southern-tanzania-birding-trip",
+      "message": "19-days-southern-tanzania-birding-trip: only 18 itinerary entries for 19-day package"
+    },
+    {
+      "type": "missing-days",
+      "slug": "15-days-tanzania-birding-tour",
+      "missing": [
+        3,
+        7,
+        10,
+        12,
+        14
+      ],
+      "message": "15-days-tanzania-birding-tour: missing day numbers 3, 7, 10, 12, 14 (duration 15)"
+    },
+    {
+      "type": "sparse-itinerary",
+      "slug": "15-days-tanzania-birding-tour",
+      "message": "15-days-tanzania-birding-tour: only 10 itinerary entries for 15-day package"
+    },
+    {
+      "type": "missing-days",
+      "slug": "19-days-southern-endemic-birding",
+      "missing": [
+        19
+      ],
+      "message": "19-days-southern-endemic-birding: missing day numbers 19 (duration 19)"
+    },
+    {
+      "type": "sparse-itinerary",
+      "slug": "19-days-southern-endemic-birding",
+      "message": "19-days-southern-endemic-birding: only 18 itinerary entries for 19-day package"
+    },
+    {
+      "type": "missing-days",
+      "slug": "20-day-endemic-birds-southern",
+      "missing": [
+        12,
+        14,
+        16,
+        18,
+        20
+      ],
+      "message": "20-day-endemic-birds-southern: missing day numbers 12, 14, 16, 18, 20 (duration 20)"
+    },
+    {
+      "type": "sparse-itinerary",
+      "slug": "20-day-endemic-birds-southern",
+      "message": "20-day-endemic-birds-southern: only 15 itinerary entries for 20-day package"
+    },
+    {
+      "type": "missing-days",
+      "slug": "20-day-endemic-birding-tanzania",
+      "missing": [
+        12,
+        13,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "message": "20-day-endemic-birding-tanzania: missing day numbers 12, 13, 15, 16, 17, 18, 19, 20 (duration 20)"
+    },
+    {
+      "type": "sparse-itinerary",
+      "slug": "20-day-endemic-birding-tanzania",
+      "message": "20-day-endemic-birding-tanzania: only 12 itinerary entries for 20-day package"
+    },
+    {
+      "type": "missing-days",
+      "slug": "12-day-endemic-birds-northern",
+      "missing": [
+        6,
+        7
+      ],
+      "message": "12-day-endemic-birds-northern: missing day numbers 6, 7 (duration 12)"
+    },
+    {
+      "type": "sparse-itinerary",
+      "slug": "12-day-endemic-birds-northern",
+      "message": "12-day-endemic-birds-northern: only 10 itinerary entries for 12-day package"
+    },
+    {
+      "type": "missing-days",
+      "slug": "15-days-birding-wildlife-photographic",
+      "missing": [
+        3,
+        7,
+        10,
+        12,
+        14
+      ],
+      "message": "15-days-birding-wildlife-photographic: missing day numbers 3, 7, 10, 12, 14 (duration 15)"
+    },
+    {
+      "type": "sparse-itinerary",
+      "slug": "15-days-birding-wildlife-photographic",
+      "message": "15-days-birding-wildlife-photographic: only 10 itinerary entries for 15-day package"
+    },
+    {
+      "type": "missing-days",
+      "slug": "22-days-birding-itinerary-north-east-south-pemba",
+      "missing": [
+        10,
+        11
+      ],
+      "message": "22-days-birding-itinerary-north-east-south-pemba: missing day numbers 10, 11 (duration 22)"
+    },
+    {
+      "type": "sparse-itinerary",
+      "slug": "22-days-birding-itinerary-north-east-south-pemba",
+      "message": "22-days-birding-itinerary-north-east-south-pemba: only 20 itinerary entries for 22-day package"
+    },
+    {
+      "type": "missing-days",
+      "slug": "10-days-northern-lake-victoria-safari",
+      "missing": [
+        8
+      ],
+      "message": "10-days-northern-lake-victoria-safari: missing day numbers 8 (duration 10)"
+    },
+    {
+      "type": "sparse-itinerary",
+      "slug": "10-days-northern-lake-victoria-safari",
+      "message": "10-days-northern-lake-victoria-safari: only 9 itinerary entries for 10-day package"
+    },
+    {
+      "type": "duplicate-itinerary",
+      "slugs": [
+        "19-days-southern-tanzania-birding-trip",
+        "19-days-southern-endemic-birding"
+      ],
+      "fingerprint": "c635607804e3bad5",
+      "message": "Identical itinerary on: 19-days-southern-tanzania-birding-trip, 19-days-southern-endemic-birding"
+    },
+    {
+      "type": "duplicate-itinerary",
+      "slugs": [
+        "15-days-tanzania-birding-tour",
+        "15-days-birding-wildlife-photographic"
+      ],
+      "fingerprint": "ee001dd999655377",
+      "message": "Identical itinerary on: 15-days-tanzania-birding-tour, 15-days-birding-wildlife-photographic"
+    },
+    {
+      "type": "editorial-distinction-needed",
+      "slugs": [
+        "19-days-southern-tanzania-birding-trip",
+        "19-days-southern-endemic-birding"
+      ],
+      "identicalItinerary": true,
+      "message": "19-days-southern-tanzania-birding-trip and 19-days-southern-endemic-birding share identical itinerary text – owner must clarify positioning or merge."
+    },
+    {
+      "type": "editorial-distinction-needed",
+      "slugs": [
+        "20-day-endemic-birds-southern",
+        "20-day-endemic-birding-tanzania"
+      ],
+      "identicalItinerary": false,
+      "message": "20-day-endemic-birds-southern and 20-day-endemic-birding-tanzania differ in itinerary – owner should confirm marketing distinction on package pages."
+    },
+    {
+      "type": "editorial-distinction-needed",
+      "slugs": [
+        "22-days-endemic-birding-tours",
+        "22-days-birding-itinerary-north-east-south-pemba"
+      ],
+      "identicalItinerary": false,
+      "message": "22-days-endemic-birding-tours and 22-days-birding-itinerary-north-east-south-pemba differ in itinerary – owner should confirm marketing distinction on package pages."
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "generatedAt": "2026-11-15T06:59:25.448Z",
+  "notes": "Raw name extractions from package itinerary text – review before publishing in accommodations.json. Do not auto-publish.",
+  "mentions": [
+    {
+      "name": "a lakeside lodge or campsite",
+      "packageSlugs": [
+        "10-days-south-west-tanzania"
+      ]
+    },
+    {
+      "name": "a lodge overlooking the crater",
+      "packageSlugs": [
+        "10-day-birding-northern-eastern"
+      ]
+    },
+    {
+      "name": "a lodge within or near the park",
+      "packageSlugs": [
+        "10-day-birding-northern-eastern"
+      ]
+    },
+    {
+      "name": "bush camp",
+      "packageSlugs": [
+        "19-days-southern-endemic-birding",
+        "19-days-southern-tanzania-birding-trip"
+      ]
+    },
+    {
+      "name": "Dar salaam",
+      "packageSlugs": [
+        "19-days-southern-endemic-birding",
+        "19-days-southern-tanzania-birding-trip"
+      ]
+    },
+    {
+      "name": "E Unoto Retreat You have the option for an early morning bird walk or spend the day game viewing in Lake Manyara or rela",
+      "packageSlugs": [
+        "10-day-birdwatching-northern"
+      ]
+    },
+    {
+      "name": "Ikoma Bush Tented Camp for dinner and overnight stay",
+      "packageSlugs": [
+        "10-day-birdwatching-northern"
+      ]
+    },
+    {
+      "name": "Ilboru Safari Lodge, where you will receive a briefing about the upcoming birdwatching tour",
+      "packageSlugs": [
+        "10-day-birdwatching-northern"
+      ]
+    },
+    {
+      "name": "Iringa town at Neema craft",
+      "packageSlugs": [
+        "14-days-southern-tanzania-birding-tour"
+      ]
+    },
+    {
+      "name": "Kilimanjaro International Airport and transfer to your lodge in Arusha",
+      "packageSlugs": [
+        "10-day-birding-northern-eastern"
+      ]
+    },
+    {
+      "name": "kirwa town",
+      "packageSlugs": [
+        "19-days-southern-endemic-birding",
+        "19-days-southern-tanzania-birding-trip"
+      ]
+    },
+    {
+      "name": "Old farm Kisolanza",
+      "packageSlugs": [
+        "14-days-southern-tanzania-birding-tour"
+      ]
+    },
+    {
+      "name": "Rondo plateau",
+      "packageSlugs": [
+        "19-days-southern-endemic-birding",
+        "19-days-southern-tanzania-birding-trip"
+      ]
+    },
+    {
+      "name": "Ruaha River Lodge",
+      "packageSlugs": [
+        "14-days-southern-tanzania-birding-tour"
+      ]
+    },
+    {
+      "name": "songea after we will drive west part of Selous GR when we gate to the GR or at the campsite, we will do evening birding ",
+      "packageSlugs": [
+        "19-days-southern-endemic-birding",
+        "19-days-southern-tanzania-birding-trip"
+      ]
+    },
+    {
+      "name": "Songea heritage cottage",
+      "packageSlugs": [
+        "19-days-southern-endemic-birding",
+        "19-days-southern-tanzania-birding-trip"
+      ]
+    },
+    {
+      "name": "the age of the plateau or at the camp site",
+      "packageSlugs": [
+        "19-days-southern-endemic-birding",
+        "19-days-southern-tanzania-birding-trip"
+      ]
+    },
+    {
+      "name": "the campsite",
+      "packageSlugs": [
+        "19-days-southern-endemic-birding",
+        "19-days-southern-tanzania-birding-trip"
+      ]
+    },
+    {
+      "name": "the forest which is around the lodge or guest house",
+      "packageSlugs": [
+        "19-days-southern-endemic-birding",
+        "19-days-southern-tanzania-birding-trip"
+      ]
+    },
+    {
+      "name": "the lodge",
+      "packageSlugs": [
+        "14-days-southern-tanzania-birding-tour"
+      ]
+    },
+    {
+      "name": "the lodge for the dinner",
+      "packageSlugs": [
+        "14-days-southern-tanzania-birding-tour"
+      ]
+    },
+    {
+      "name": "the lodge where we will overnight",
+      "packageSlugs": [
+        "14-days-southern-tanzania-birding-tour"
+      ]
+    },
+    {
+      "name": "the lodge, after coffee we will start driving toward Dabaga, then Uluti village",
+      "packageSlugs": [
+        "14-days-southern-tanzania-birding-tour"
+      ]
+    },
+    {
+      "name": "the lodge, and we will have a park lunch",
+      "packageSlugs": [
+        "14-days-southern-tanzania-birding-tour"
+      ]
+    },
+    {
+      "name": "the Ruaha River Lodge , then we will do a short birding inside the national park then we will start driving back towards",
+      "packageSlugs": [
+        "14-days-southern-tanzania-birding-tour"
+      ]
+    },
+    {
+      "name": "to lakeshore lodge",
+      "packageSlugs": [
+        "10-days-chimpanzee-tracking"
+      ]
+    },
+    {
+      "name": "transfer to lakeshore camp",
+      "packageSlugs": [
+        "7-days-mahale-gombe-chimp-safari"
+      ]
+    },
+    {
+      "name": "your accommodation",
+      "packageSlugs": [
+        "7-days-mpanda-to-mbeya",
+        "8-days-birding-around-iringa"
+      ]
+    },
+    {
+      "name": "your hotel or guesthouse",
+      "packageSlugs": [
+        "7-days-mpanda-to-mbeya"
+      ]
+    }
+  ]
+}

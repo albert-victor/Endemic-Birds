@@ -1,0 +1,91 @@
+{
+  "menu": "true",
+  "safariDialog": true,
+  "filterURL": "http://localhost:12511/packages",
+  "count": "29",
+  "wildlifeCount": "12",
+  "planURL": "http://localhost:12511/plan-your-trip",
+  "planInputs": [
+    {
+      "name": "",
+      "value": ""
+    },
+    {
+      "name": "_subject",
+      "value": "Trip inquiry – Endemic Birds website"
+    },
+    {
+      "name": "_captcha",
+      "value": "false"
+    },
+    {
+      "name": "_template",
+      "value": "table"
+    },
+    {
+      "name": "name",
+      "value": ""
+    },
+    {
+      "name": "email",
+      "value": ""
+    },
+    {
+      "name": "phone",
+      "value": ""
+    },
+    {
+      "name": "interest",
+      "value": "birding"
+    },
+    {
+      "name": "interest",
+      "value": "wildlife"
+    },
+    {
+      "name": "interest",
+      "value": "both"
+    },
+    {
+      "name": "interest",
+      "value": "unsure"
+    },
+    {
+      "name": "interest",
+      "value": "operator"
+    },
+    {
+      "name": "arrival_date",
+      "value": ""
+    },
+    {
+      "name": "departure_date",
+      "value": ""
+    },
+    {
+      "name": "party",
+      "value": ""
+    },
+    {
+      "name": "message",
+      "value": ""
+    }
+  ],
+  "invalidForm": true,
+  "renderedFonts": {
+    "fonts": [
+      {
+        "familyName": "Segoe UI",
+        "postScriptName": "SegoeUI",
+        "isCustomFont": false,
+        "glyphCount": 122
+      }
+    ]
+  },
+  "partners": {
+    "hidden": true,
+    "display": "flex",
+    "height": 607.671875,
+    "logos": 0
+  }
+}

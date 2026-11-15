@@ -42,6 +42,8 @@ function detailShell({ title, description, bodyAttrs, mainExtra = "", depth = 2 
     />
     <link rel="icon" href="${assetPrefix}assets/images/from-live-site/brand/bird-logo.png" />
     <link rel="stylesheet" href="${assetPrefix}assets/css/styles.css" />
+    <link rel="stylesheet" href="${assetPrefix}assets/css/package-detail.css" />
+    <link rel="stylesheet" href="${assetPrefix}assets/css/species-birds.css" />
   </head>
   <body class="has-grain" ${bodyAttrs}>
     <a class="skip-link" href="#main">Skip to main content</a>
@@ -58,7 +60,12 @@ function detailShell({ title, description, bodyAttrs, mainExtra = "", depth = 2 
     <script src="${assetPrefix}assets/js/site-search.js" defer></script>
     <script src="${assetPrefix}assets/js/motion.js" defer></script>
     <script src="${assetPrefix}assets/js/scroll-gallery.js" defer></script>
+    <script src="${assetPrefix}assets/js/package-detail.js" defer></script>
+    <script src="${assetPrefix}assets/js/package-route-map.js" defer></script>
+    <script src="${assetPrefix}assets/js/accommodation-detail.js" defer></script>
+    <script src="${assetPrefix}assets/js/species-modal.js" defer></script>
     <script src="${assetPrefix}assets/js/detail.js" defer></script>
+    <script src="${assetPrefix}assets/js/eastern-arc-enhance.js" defer></script>
     <script src="${assetPrefix}assets/js/main.js" defer></script>
   </body>
 </html>
@@ -67,6 +74,8 @@ function detailShell({ title, description, bodyAttrs, mainExtra = "", depth = 2 
 
 const packages = readJson("packages.json");
 const destinations = readJson("destinations.json");
+const accommodationsData = readJson("accommodations.json");
+const accommodations = (accommodationsData.accommodations || []).filter((a) => a.verified);
 const wildlifeDestinations = readJson("wildlife-destinations.json");
 const wildlifeActivities = readJson("wildlife-activities.json");
 const circuitSiteSources = [
@@ -74,10 +83,20 @@ const circuitSiteSources = [
   { file: "western-sites.json", circuit: "western" },
   { file: "northern-sites.json", circuit: "northern" },
 ];
+const circuitSiteSlugSet = new Set();
 const allCircuitSites = circuitSiteSources.flatMap(({ file, circuit }) => {
   const data = readJson(file);
-  return (data.sites || []).map((site) => ({ site, data, circuit }));
+  return (data.sites || []).map((site) => {
+    circuitSiteSlugSet.add(site.slug);
+    return { site, data, circuit };
+  });
 });
+const birdingExtra = readJson("birding-sites-extra.json");
+for (const site of birdingExtra.sites || []) {
+  if (circuitSiteSlugSet.has(site.slug)) continue;
+  const circuitKey = String(site.circuit || "eastern").toLowerCase();
+  allCircuitSites.push({ site, data: birdingExtra, circuit: circuitKey });
+}
 
 for (const pkg of packages) {
   const dir = path.join(root, "packages", pkg.slug);
@@ -142,21 +161,46 @@ for (const act of wildlifeActivities) {
   fs.writeFileSync(path.join(dir, "index.html"), html, "utf8");
 }
 
+for (const acc of accommodations) {
+  const dir = path.join(root, "accommodations", acc.slug);
+  ensureDir(dir);
+  const html = detailShell({
+    title: acc.seo?.title || `${acc.name} | Endemic Birds`,
+    description: (acc.seo?.description || acc.summary || "").slice(0, 155),
+    bodyAttrs: `data-nav="accommodations" data-detail="accommodation" data-slug="${acc.slug}"`,
+    depth: 2,
+    mainExtra: "",
+  });
+  fs.writeFileSync(path.join(dir, "index.html"), html, "utf8");
+}
+
 const sitemapUrls = [
   "/index.html",
   "/birding/index.html",
+  "/birding/special-birds/index.html",
   "/wildlife/index.html",
   "/combined/index.html",
   "/packages/index.html",
+  "/accommodations/index.html",
   "/destinations/index.html",
   "/destinations/birding/index.html",
   "/about/index.html",
+  "/about/why-choose-us/index.html",
+  "/about/team/index.html",
+  "/about/leons-mlawila/index.html",
+  "/about/trip-reports/index.html",
+  "/about/tour-training/index.html",
+  "/about/partners/index.html",
+  "/about/policies/index.html",
+  "/about/tour-calendar/index.html",
   "/plan-your-trip/index.html",
+  "/privacy/index.html",
   ...packages.map((p) => `/packages/${p.slug}/`),
   ...destinations.map((d) => `/destinations/${d.slug}/`),
   ...allCircuitSites.map(({ site }) => `/destinations/${site.slug}/`),
   ...wildlifeDestinations.map((d) => `/wildlife/destinations/${d.slug}/`),
   ...wildlifeActivities.map((a) => `/wildlife/activities/${a.slug}/`),
+  ...accommodations.map((a) => `/accommodations/${a.slug}/`),
 ];
 
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
@@ -167,5 +211,5 @@ ${sitemapUrls.map((loc) => `  <url><loc>${loc}</loc></url>`).join("\n")}
 fs.writeFileSync(path.join(root, "sitemap.xml"), sitemap, "utf8");
 
 console.log(
-  `Generated ${packages.length} package pages, ${destinations.length} destination pages, ${allCircuitSites.length} circuit site pages, ${wildlifeDestinations.length} wildlife destinations, ${wildlifeActivities.length} wildlife activities.`
+  `Generated ${packages.length} package pages, ${destinations.length} destination pages, ${allCircuitSites.length} circuit site pages, ${wildlifeDestinations.length} wildlife destinations, ${wildlifeActivities.length} wildlife activities, ${accommodations.length} accommodations.`
 );

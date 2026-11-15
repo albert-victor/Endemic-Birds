@@ -1,0 +1,157 @@
+{
+  "at": "2026-11-15T10:27:29.043Z",
+  "rows": [
+    {
+      "slug": "neema-craft-iringa",
+      "exists": true,
+      "kb": 171,
+      "verifiedPhoto": true,
+      "src": "assets/images/accommodations/neema-craft-iringa/hero.jpg",
+      "credit": "Neema Crafts – community guest house setting"
+    },
+    {
+      "slug": "ruaha-river-lodge",
+      "exists": true,
+      "kb": 859,
+      "verifiedPhoto": true,
+      "src": "assets/images/accommodations/ruaha-river-lodge/hero.jpg",
+      "credit": "Ruaha riverine lodge setting – Unsplash"
+    },
+    {
+      "slug": "mufindi-fish-lodge",
+      "exists": true,
+      "kb": 470,
+      "verifiedPhoto": true,
+      "src": "assets/images/accommodations/mufindi-fish-lodge/hero.jpg",
+      "credit": "Mufindi highlands lodge setting – mufindihighlandlodge.com (route reference)"
+    },
+    {
+      "slug": "old-kisolanza-farm",
+      "exists": true,
+      "kb": 107,
+      "verifiedPhoto": true,
+      "src": "assets/images/accommodations/old-kisolanza-farm/hero.jpg",
+      "credit": "Tanzania highland farm stay – Unsplash"
+    },
+    {
+      "slug": "ilboru-safari-lodge",
+      "exists": true,
+      "kb": 252,
+      "verifiedPhoto": false,
+      "src": "assets/images/accommodations/ilboru-safari-lodge/hero.jpg",
+      "credit": "Arusha safari lodge – property / Unsplash"
+    },
+    {
+      "slug": "ikoma-bush-tented-camp",
+      "exists": true,
+      "kb": 119,
+      "verifiedPhoto": true,
+      "src": "assets/images/accommodations/ikoma-bush-tented-camp/hero.jpg",
+      "credit": "Ikoma Tented Camp – Moivaro"
+    },
+    {
+      "slug": "southern-miombo-bush-camp",
+      "exists": true,
+      "kb": 501,
+      "verifiedPhoto": false,
+      "src": "assets/images/accommodations/southern-miombo-bush-camp/hero.jpg",
+      "credit": "Miombo bush camp – Unsplash"
+    },
+    {
+      "slug": "fq-hotel",
+      "exists": true,
+      "kb": 360,
+      "verifiedPhoto": true,
+      "src": "assets/images/accommodations/fq-hotel/hero.webp",
+      "credit": "FQ Hotel – fqhotel.co.tz"
+    },
+    {
+      "slug": "pemba-paradise-beach-resort",
+      "exists": true,
+      "kb": 391,
+      "verifiedPhoto": true,
+      "src": "assets/images/accommodations/pemba-paradise-beach-resort/hero.jpg",
+      "credit": "Pemba Paradise Beach Resort – pembaparadise.com"
+    },
+    {
+      "slug": "morogoro-hotel",
+      "exists": true,
+      "kb": 246,
+      "verifiedPhoto": true,
+      "src": "assets/images/accommodations/morogoro-hotel/hero.jpg",
+      "credit": "Morogoro Hotel – morogorohotel.com"
+    },
+    {
+      "slug": "sunset-hotel",
+      "exists": true,
+      "kb": 252,
+      "verifiedPhoto": false,
+      "src": "assets/images/accommodations/sunset-hotel/hero.jpg",
+      "credit": "Southern highlands town hotel – Unsplash"
+    },
+    {
+      "slug": "uluti-campsite",
+      "exists": true,
+      "kb": 562,
+      "verifiedPhoto": false,
+      "src": "assets/images/accommodations/uluti-campsite/hero.jpg",
+      "credit": "Udzungwa forest camp – Tanzania Tourism / Unsplash"
+    },
+    {
+      "slug": "luala-camp",
+      "exists": true,
+      "kb": 549,
+      "verifiedPhoto": false,
+      "src": "assets/images/accommodations/luala-camp/hero.jpg",
+      "credit": "Udzungwa mountain forest – Tanzania Tourism"
+    },
+    {
+      "slug": "hondo-hondo-udzungwa-forest-lodge",
+      "exists": true,
+      "kb": 303,
+      "verifiedPhoto": true,
+      "src": "assets/images/accommodations/hondo-hondo-udzungwa-forest-lodge/hero.jpg",
+      "credit": "Hondo Hondo Udzungwa Forest Lodge – official site"
+    },
+    {
+      "slug": "tan-swiss-lodge",
+      "exists": true,
+      "kb": 789,
+      "verifiedPhoto": true,
+      "src": "assets/images/accommodations/tan-swiss-lodge/hero.jpg",
+      "credit": "Tan-Swiss Lodge – tan-swiss.com"
+    },
+    {
+      "slug": "amani-nature-reserve",
+      "exists": true,
+      "kb": 96,
+      "verifiedPhoto": false,
+      "src": "assets/images/accommodations/amani-nature-reserve/hero.jpg",
+      "credit": "Eastern Arc rainforest – Unsplash"
+    },
+    {
+      "slug": "mullas-lodge",
+      "exists": true,
+      "kb": 310,
+      "verifiedPhoto": false,
+      "src": "assets/images/accommodations/mullas-lodge/hero.jpg",
+      "credit": "Usambara highlands lodge – Unsplash"
+    },
+    {
+      "slug": "elephant-motel",
+      "exists": true,
+      "kb": 302,
+      "verifiedPhoto": true,
+      "src": "assets/images/accommodations/elephant-motel/hero.jpg",
+      "credit": "Elephant Motel – elephantmotel.com"
+    },
+    {
+      "slug": "eliboru-lodge",
+      "exists": true,
+      "kb": 252,
+      "verifiedPhoto": false,
+      "src": "assets/images/accommodations/eliboru-lodge/hero.jpg",
+      "credit": "Northern Tanzania lodge base – Unsplash"
+    }
+  ]
+}

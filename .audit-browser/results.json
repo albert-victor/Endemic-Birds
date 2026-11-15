@@ -1,0 +1,418 @@
+[
+  {
+    "mode": "desktop",
+    "name": "home",
+    "title": "Endemic Birds Tanzania – Specialist Birding Safaris",
+    "width": 1440,
+    "scrollWidth": 1440,
+    "height": 8260,
+    "fonts": true,
+    "bodyFont": "\"Plus Jakarta Sans\", system-ui, -apple-system, sans-serif",
+    "h1": "Life Is Short,\nLet's Go Birding,\nTanzania",
+    "buttons": [
+      {
+        "text": "",
+        "color": "rgb(58, 52, 46)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "font": "\"Plus Jakarta Sans\", system-ui, -apple-system, sans-serif"
+      },
+      {
+        "text": "EXPLORE BIRDING SAFARIS",
+        "color": "rgb(255, 255, 255)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "font": "\"Plus Jakarta Sans\", system-ui, -apple-system, sans-serif"
+      },
+      {
+        "text": "Find a safari",
+        "color": "rgb(58, 52, 46)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "font": "Arial"
+      },
+      {
+        "text": "PLAN YOUR TRIP",
+        "color": "rgb(26, 20, 8)",
+        "bg": "rgb(201, 146, 42)",
+        "font": "\"Plus Jakarta Sans\", system-ui, -apple-system, sans-serif"
+      }
+    ],
+    "brokenImages": [
+      "https://flagcdn.com/w80/fr.png",
+      "https://flagcdn.com/w80/nl.png",
+      "https://flagcdn.com/w80/au.png",
+      "https://flagcdn.com/w80/jp.png",
+      "https://flagcdn.com/w80/no.png"
+    ],
+    "errors": []
+  },
+  {
+    "mode": "desktop",
+    "name": "packages",
+    "title": "All Safaris & Birding Journeys | Endemic Birds",
+    "width": 1440,
+    "scrollWidth": 1440,
+    "height": 5583,
+    "fonts": true,
+    "bodyFont": "\"Plus Jakarta Sans\", system-ui, -apple-system, sans-serif",
+    "h1": "Safari & birding journeys",
+    "buttons": [
+      {
+        "text": "",
+        "color": "rgb(58, 52, 46)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "font": "\"Plus Jakarta Sans\", system-ui, -apple-system, sans-serif"
+      }
+    ],
+    "brokenImages": [],
+    "errors": []
+  },
+  {
+    "mode": "desktop",
+    "name": "detail",
+    "title": "15 Days Tanzania Birding Tour | Endemic Birds",
+    "width": 1440,
+    "scrollWidth": 1440,
+    "height": 6974,
+    "fonts": true,
+    "bodyFont": "\"Plus Jakarta Sans\", system-ui, -apple-system, sans-serif",
+    "h1": "Tanzania Birding Tour",
+    "buttons": [
+      {
+        "text": "",
+        "color": "rgb(58, 52, 46)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "font": "\"Plus Jakarta Sans\", system-ui, -apple-system, sans-serif"
+      },
+      {
+        "text": "Plan this journey",
+        "color": "rgb(26, 20, 8)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "font": "\"Plus Jakarta Sans\", system-ui, -apple-system, sans-serif"
+      },
+      {
+        "text": "View itinerary",
+        "color": "rgb(255, 255, 255)",
+        "bg": "rgba(255, 255, 255, 0.12)",
+        "font": "\"Plus Jakarta Sans\", system-ui, -apple-system, sans-serif"
+      },
+      {
+        "text": "Request the detailed itinerary",
+        "color": "rgb(58, 52, 46)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "font": "\"Plus Jakarta Sans\", system-ui, -apple-system, sans-serif"
+      },
+      {
+        "text": "Plan your trip",
+        "color": "rgb(58, 52, 46)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "font": "\"Plus Jakarta Sans\", system-ui, -apple-system, sans-serif"
+      },
+      {
+        "text": "Request detailed itinerary",
+        "color": "rgb(58, 52, 46)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "font": "\"Plus Jakarta Sans\", system-ui, -apple-system, sans-serif"
+      },
+      {
+        "text": "Call +255 627 013 348",
+        "color": "rgb(255, 255, 255)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "font": "\"Plus Jakarta Sans\", system-ui, -apple-system, sans-serif"
+      },
+      {
+        "text": "Start planning",
+        "color": "rgb(26, 20, 8)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "font": "\"Plus Jakarta Sans\", system-ui, -apple-system, sans-serif"
+      }
+    ],
+    "brokenImages": [],
+    "errors": []
+  },
+  {
+    "mode": "desktop",
+    "name": "about",
+    "title": "About Endemic Birds | Southern Tanzania Birding Safaris",
+    "width": 1440,
+    "scrollWidth": 1440,
+    "height": 6391,
+    "fonts": true,
+    "bodyFont": "\"Plus Jakarta Sans\", system-ui, -apple-system, sans-serif",
+    "h1": "Endemic Birds Tanzania",
+    "buttons": [
+      {
+        "text": "",
+        "color": "rgb(58, 52, 46)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "font": "\"Plus Jakarta Sans\", system-ui, -apple-system, sans-serif"
+      },
+      {
+        "text": "Full profile",
+        "color": "rgb(58, 52, 46)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "font": "\"Plus Jakarta Sans\", system-ui, -apple-system, sans-serif"
+      },
+      {
+        "text": "Tour calendar",
+        "color": "rgb(58, 52, 46)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "font": "\"Plus Jakarta Sans\", system-ui, -apple-system, sans-serif"
+      },
+      {
+        "text": "Open tour calendar",
+        "color": "rgb(58, 52, 46)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "font": "\"Plus Jakarta Sans\", system-ui, -apple-system, sans-serif"
+      },
+      {
+        "text": "Enquire on dates",
+        "color": "rgb(58, 52, 46)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "font": "\"Plus Jakarta Sans\", system-ui, -apple-system, sans-serif"
+      },
+      {
+        "text": "Start an enquiry",
+        "color": "rgb(26, 20, 8)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "font": "\"Plus Jakarta Sans\", system-ui, -apple-system, sans-serif"
+      },
+      {
+        "text": "Operator enquiry",
+        "color": "rgb(58, 52, 46)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "font": "\"Plus Jakarta Sans\", system-ui, -apple-system, sans-serif"
+      }
+    ],
+    "brokenImages": [],
+    "errors": []
+  },
+  {
+    "mode": "desktop",
+    "name": "inquiry",
+    "title": "Plan Your Trip | Endemic Birds Tanzania",
+    "width": 1440,
+    "scrollWidth": 1440,
+    "height": 1880,
+    "fonts": true,
+    "bodyFont": "\"Plus Jakarta Sans\", system-ui, -apple-system, sans-serif",
+    "h1": "Safari enquiry",
+    "buttons": [
+      {
+        "text": "",
+        "color": "rgb(58, 52, 46)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "font": "\"Plus Jakarta Sans\", system-ui, -apple-system, sans-serif"
+      },
+      {
+        "text": "Send enquiry",
+        "color": "rgb(58, 52, 46)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "font": "Arial"
+      }
+    ],
+    "brokenImages": [],
+    "errors": []
+  },
+  {
+    "mode": "mobile",
+    "name": "home",
+    "title": "Endemic Birds Tanzania – Specialist Birding Safaris",
+    "width": 390,
+    "scrollWidth": 390,
+    "height": 8259,
+    "fonts": true,
+    "bodyFont": "\"Plus Jakarta Sans\", system-ui, -apple-system, sans-serif",
+    "h1": "Life Is Short,\nLet's Go Birding,\nTanzania",
+    "buttons": [
+      {
+        "text": "",
+        "color": "rgb(58, 52, 46)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "font": "\"Plus Jakarta Sans\", system-ui, -apple-system, sans-serif"
+      },
+      {
+        "text": "EXPLORE BIRDING SAFARIS",
+        "color": "rgb(255, 255, 255)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "font": "\"Plus Jakarta Sans\", system-ui, -apple-system, sans-serif"
+      },
+      {
+        "text": "PLAN YOUR TRIP",
+        "color": "rgb(26, 20, 8)",
+        "bg": "rgb(201, 146, 42)",
+        "font": "\"Plus Jakarta Sans\", system-ui, -apple-system, sans-serif"
+      }
+    ],
+    "brokenImages": [
+      "https://flagcdn.com/w80/gb.png"
+    ],
+    "errors": []
+  },
+  {
+    "mode": "mobile",
+    "name": "packages",
+    "title": "All Safaris & Birding Journeys | Endemic Birds",
+    "width": 390,
+    "scrollWidth": 390,
+    "height": 14324,
+    "fonts": true,
+    "bodyFont": "\"Plus Jakarta Sans\", system-ui, -apple-system, sans-serif",
+    "h1": "Safari & birding journeys",
+    "buttons": [
+      {
+        "text": "",
+        "color": "rgb(58, 52, 46)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "font": "\"Plus Jakarta Sans\", system-ui, -apple-system, sans-serif"
+      }
+    ],
+    "brokenImages": [],
+    "errors": []
+  },
+  {
+    "mode": "mobile",
+    "name": "detail",
+    "title": "15 Days Tanzania Birding Tour | Endemic Birds",
+    "width": 390,
+    "scrollWidth": 390,
+    "height": 10695,
+    "fonts": true,
+    "bodyFont": "\"Plus Jakarta Sans\", system-ui, -apple-system, sans-serif",
+    "h1": "Tanzania Birding Tour",
+    "buttons": [
+      {
+        "text": "",
+        "color": "rgb(58, 52, 46)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "font": "\"Plus Jakarta Sans\", system-ui, -apple-system, sans-serif"
+      },
+      {
+        "text": "Plan this journey",
+        "color": "rgb(26, 20, 8)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "font": "\"Plus Jakarta Sans\", system-ui, -apple-system, sans-serif"
+      },
+      {
+        "text": "View itinerary",
+        "color": "rgb(255, 255, 255)",
+        "bg": "rgba(255, 255, 255, 0.12)",
+        "font": "\"Plus Jakarta Sans\", system-ui, -apple-system, sans-serif"
+      },
+      {
+        "text": "Request the detailed itinerary",
+        "color": "rgb(58, 52, 46)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "font": "\"Plus Jakarta Sans\", system-ui, -apple-system, sans-serif"
+      },
+      {
+        "text": "Plan your trip",
+        "color": "rgb(58, 52, 46)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "font": "\"Plus Jakarta Sans\", system-ui, -apple-system, sans-serif"
+      },
+      {
+        "text": "Request detailed itinerary",
+        "color": "rgb(58, 52, 46)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "font": "\"Plus Jakarta Sans\", system-ui, -apple-system, sans-serif"
+      },
+      {
+        "text": "Call +255 627 013 348",
+        "color": "rgb(255, 255, 255)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "font": "\"Plus Jakarta Sans\", system-ui, -apple-system, sans-serif"
+      },
+      {
+        "text": "Start planning",
+        "color": "rgb(26, 20, 8)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "font": "\"Plus Jakarta Sans\", system-ui, -apple-system, sans-serif"
+      }
+    ],
+    "brokenImages": [],
+    "errors": []
+  },
+  {
+    "mode": "mobile",
+    "name": "about",
+    "title": "About Endemic Birds | Southern Tanzania Birding Safaris",
+    "width": 390,
+    "scrollWidth": 390,
+    "height": 7776,
+    "fonts": true,
+    "bodyFont": "\"Plus Jakarta Sans\", system-ui, -apple-system, sans-serif",
+    "h1": "Endemic Birds Tanzania",
+    "buttons": [
+      {
+        "text": "",
+        "color": "rgb(58, 52, 46)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "font": "\"Plus Jakarta Sans\", system-ui, -apple-system, sans-serif"
+      },
+      {
+        "text": "Full profile",
+        "color": "rgb(58, 52, 46)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "font": "\"Plus Jakarta Sans\", system-ui, -apple-system, sans-serif"
+      },
+      {
+        "text": "Tour calendar",
+        "color": "rgb(58, 52, 46)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "font": "\"Plus Jakarta Sans\", system-ui, -apple-system, sans-serif"
+      },
+      {
+        "text": "Open tour calendar",
+        "color": "rgb(58, 52, 46)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "font": "\"Plus Jakarta Sans\", system-ui, -apple-system, sans-serif"
+      },
+      {
+        "text": "Enquire on dates",
+        "color": "rgb(58, 52, 46)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "font": "\"Plus Jakarta Sans\", system-ui, -apple-system, sans-serif"
+      },
+      {
+        "text": "Start an enquiry",
+        "color": "rgb(26, 20, 8)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "font": "\"Plus Jakarta Sans\", system-ui, -apple-system, sans-serif"
+      },
+      {
+        "text": "Operator enquiry",
+        "color": "rgb(58, 52, 46)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "font": "\"Plus Jakarta Sans\", system-ui, -apple-system, sans-serif"
+      }
+    ],
+    "brokenImages": [],
+    "errors": []
+  },
+  {
+    "mode": "mobile",
+    "name": "inquiry",
+    "title": "Plan Your Trip | Endemic Birds Tanzania",
+    "width": 390,
+    "scrollWidth": 390,
+    "height": 2651,
+    "fonts": true,
+    "bodyFont": "\"Plus Jakarta Sans\", system-ui, -apple-system, sans-serif",
+    "h1": "Safari enquiry",
+    "buttons": [
+      {
+        "text": "",
+        "color": "rgb(58, 52, 46)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "font": "\"Plus Jakarta Sans\", system-ui, -apple-system, sans-serif"
+      },
+      {
+        "text": "Send enquiry",
+        "color": "rgb(58, 52, 46)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "font": "Arial"
+      }
+    ],
+    "brokenImages": [],
+    "errors": []
+  }
+]

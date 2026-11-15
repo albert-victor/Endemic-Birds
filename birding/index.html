@@ -10,16 +10,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Marck+Script&display=swap" rel="stylesheet" />
     <link rel="icon" href="../assets/images/from-live-site/brand/bird-logo.png" />
     <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link rel="stylesheet" href="../assets/css/site-enhancements.css" />
   </head>
-  <body class="has-grain has-hero-nav" data-nav="birding">
+  <body class="has-grain has-hero-nav destinations-mode-birding" data-nav="birding">
     <a class="skip-link" href="#main">Skip to main content</a>
     <div id="site-header"></div>
     <main id="main">
       <section class="hero hero--landing" aria-label="Birding safaris">
         <div class="hero-media" aria-hidden="true">
-          <div class="hero-slide is-active" style="--hero-img: url('/assets/images/from-live-site/gallery/_mg_9057.jpg')"></div>
-          <div class="hero-slide" style="--hero-img: url('/assets/images/from-live-site/destinations/eastern-arc-mountain.jpg')"></div>
-          <div class="hero-slide" style="--hero-img: url('/assets/images/from-live-site/packages/14-days-southern-tanzania-birding-tour.jpg')"></div>
+          <div class="hero-slide is-active" style="--hero-img: url('../assets/images/packages/22-days-endemic-birding-tours/hero.jpg')"></div>
+          <div class="hero-slide" style="--hero-img: url('../assets/images/packages/14-days-southern-tanzania-birding-tour/hero.jpg')"></div>
+          <div class="hero-slide" style="--hero-img: url('../assets/images/packages/12-day-endemic-birds-northern/hero.jpg')"></div>
         </div>
         <div class="hero-scrim"></div>
         <div class="container page-hero-inner hero-inner">
@@ -34,30 +35,152 @@
         </div>
       </section>
 
-      <section class="section section--paper-band" id="destinations">
-        <div class="container landing-lede">
-          <header class="section-head section-head--landing">
+      <section class="section section--paper-band" id="destinations" data-catalog-scope>
+        <div class="container catalog-page">
+          <header class="catalog-page-head">
+            <p class="eyebrow">Where we bird</p>
             <h2 class="section-title reveal" data-reveal>Birding destinations</h2>
+            <p class="section-lead reveal" data-reveal>
+              Every park, forest and reserve on our birding circuit – filter by region and open a site for field notes and linked journeys.
+            </p>
             <div class="section-head-cta reveal" data-reveal>
-              <a class="btn btn-solid" href="../destinations/birding/index.html#destinations-grid">View all birding destinations</a>
+              <a class="btn btn-outline" href="special-birds/index.html">Special birds</a>
             </div>
           </header>
+          <form class="filters-bar filters-bar--compact filters-bar--discover" data-filters>
+            <input type="hidden" name="interest" value="birding" />
+            <label class="filters-bar__static">Focus <span class="filters-bar__pill">Birding only</span></label>
+            <label>Circuit
+              <select name="circuit">
+                <option value="all">All circuits</option>
+                <option value="Northern">Northern</option>
+                <option value="Southern">Southern</option>
+                <option value="Eastern">Eastern</option>
+                <option value="Western">Western</option>
+                <option value="North West">North West</option>
+              </select>
+            </label>
+            <button type="button" class="btn btn-outline" data-clear-filters>Reset</button>
+          </form>
+          <div data-catalog="destinations" data-destinations-preset="birding" data-sync-url="false">
+            <p class="catalog-meta"><span data-count>0</span> destinations</p>
+            <div data-catalog-grid class="catalog-grid"></div>
+            <p class="catalog-empty" data-empty hidden>No destinations match – try another circuit.</p>
+          </div>
         </div>
-        <div class="container" data-birding-destinations data-birding-dest-limit="6"></div>
       </section>
 
-      <section class="section" id="journeys">
-        <div class="container landing-lede">
-          <header class="section-head section-head--landing">
-            <h2 class="section-title reveal" data-reveal>Ready-made birding safaris</h2>
-            <div class="section-head-cta reveal" data-reveal>
-              <a class="btn btn-outline" href="../packages/index.html?category=birding">View all safari packages</a>
-            </div>
+      <section class="section" id="journeys" data-catalog-scope>
+        <div class="container catalog-page">
+          <header class="catalog-page-head">
+            <p class="eyebrow">Ready-made routes</p>
+            <h2 class="section-title reveal" data-reveal>Birding safaris</h2>
+            <p class="section-lead reveal" data-reveal>
+              All published birding and birding + wildlife journeys – wildlife-only safaris are on the
+              <a href="../wildlife/index.html">wildlife page</a>.
+            </p>
           </header>
-        </div>
-        <div class="container" data-catalog="packages" data-default-category="birding" data-layout="bento">
-          <div class="catalog-bento-wrap" data-catalog-bento></div>
-          <div data-catalog-list data-package-teaser-limit="4"></div>
+          <form class="filters-bar filters-bar--discover" data-filters data-default-interest="all">
+            <div class="filters-bar__primary">
+              <label>Journey type
+                <select name="interest">
+                  <option value="all">All birding journeys</option>
+                  <option value="birding">Birding-focused</option>
+                  <option value="combined">Birding + wildlife</option>
+                </select>
+              </label>
+              <label>Circuit
+                <select name="circuit">
+                  <option value="all">All</option>
+                  <option value="Northern">Northern</option>
+                  <option value="Southern">Southern</option>
+                  <option value="Eastern">Eastern</option>
+                  <option value="Western">Western</option>
+                  <option value="North West">North West</option>
+                </select>
+              </label>
+              <label>Duration
+                <select name="duration">
+                  <option value="all">Any</option>
+                  <option value="short">Up to 10 days</option>
+                  <option value="medium">11–16 days</option>
+                  <option value="long">17+ days</option>
+                </select>
+              </label>
+              <label>Travel month
+                <select name="month">
+                  <option value="all">Any</option>
+                  <option value="1">January</option>
+                  <option value="2">February</option>
+                  <option value="3">March</option>
+                  <option value="4">April</option>
+                  <option value="5">May</option>
+                  <option value="6">June</option>
+                  <option value="7">July</option>
+                  <option value="8">August</option>
+                  <option value="9">September</option>
+                  <option value="10">October</option>
+                  <option value="11">November</option>
+                  <option value="12">December</option>
+                </select>
+              </label>
+              <button type="button" class="btn btn-outline" data-clear-filters>Reset</button>
+            </div>
+            <details class="filters-bar__advanced">
+              <summary>More filters</summary>
+              <h2 class="visually-hidden">Advanced safari filters</h2>
+              <p class="filters-bar__season-note">Travel month suggests typical season only – not live availability.</p>
+              <div class="filters-bar__advanced-grid">
+                <label>Region hub
+                  <select name="destination">
+                    <option value="all">All</option>
+                    <option value="northern">Northern</option>
+                    <option value="southern">Southern</option>
+                    <option value="eastern-arc">Eastern Arc</option>
+                    <option value="western">Western</option>
+                    <option value="north-west">North West</option>
+                    <option value="eastern">Eastern</option>
+                  </select>
+                </label>
+                <label>Field intensity
+                  <select name="intensity">
+                    <option value="all">Any</option>
+                    <option value="relaxed">Relaxed</option>
+                    <option value="moderate">Moderate</option>
+                    <option value="demanding">Demanding expedition</option>
+                  </select>
+                </label>
+                <label>Comfort level
+                  <select name="comfort">
+                    <option value="all">Any</option>
+                    <option value="budget">Budget</option>
+                    <option value="mid-range">Mid-range / premium</option>
+                    <option value="luxury">Luxury</option>
+                  </select>
+                </label>
+                <label>Accommodation type
+                  <select name="accommodation">
+                    <option value="all">Any</option>
+                    <option value="lodge">Lodge / hotel</option>
+                    <option value="tented-camp">Tented camp</option>
+                    <option value="camping">Camping / bush camp</option>
+                    <option value="villa">Villa</option>
+                  </select>
+                </label>
+              </div>
+            </details>
+          </form>
+          <div
+            data-catalog="packages"
+            data-exclude-categories="wildlife"
+            data-layout="bento"
+            data-sync-url="false"
+          >
+            <div class="catalog-bento-wrap" data-catalog-bento></div>
+            <p class="catalog-meta"><span data-count>0</span> safaris match</p>
+            <div data-catalog-list class="catalog-grid"></div>
+            <p class="catalog-empty" data-empty hidden>No safaris match these filters – try resetting or broadening circuit or duration.</p>
+          </div>
         </div>
       </section>
 
@@ -77,8 +200,8 @@
     <script src="../assets/js/whatsapp-chat.js" defer></script>
     <script src="../assets/js/motion.js" defer></script>
     <script src="../assets/js/scroll-gallery.js" defer></script>
+    <script src="../assets/js/package-filters.js" defer></script>
     <script src="../assets/js/catalog.js" defer></script>
-    <script src="../assets/js/birding-hub.js" defer></script>
     <script src="../assets/js/main.js" defer></script>
   </body>
 </html>

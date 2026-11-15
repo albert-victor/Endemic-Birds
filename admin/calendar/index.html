@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Calendar administration (staff) | Endemic Birds</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css" />
+    <link rel="stylesheet" href="../../assets/css/site-enhancements.css" />
+  </head>
+  <body class="has-grain">
+    <main id="main" class="section" style="padding-top: 4rem">
+      <div class="container" style="max-width: 46rem">
+        <p class="eyebrow">Staff reference</p>
+        <h1 class="section-title">Tour calendar – administration</h1>
+        <p class="section-lead">
+          This static site has <strong>no in-browser admin</strong> and <strong>no</strong> localStorage editor. Calendar data lives in
+          <code>content/tour-calendar.json</code> and deploys with the site.
+        </p>
+        <h2 class="about-section-heading">Update workflow today</h2>
+        <ol>
+          <li>Edit <code>content/tour-calendar.json</code> in the repository.</li>
+          <li>Run <code>npm run validate:calendar</code>.</li>
+          <li>Run <code>npm run build</code> and deploy.</li>
+          <li>Set <code>updatedAt</code> to the publish date.</li>
+        </ol>
+        <h2 class="about-section-heading">Authenticated CMS</h2>
+        <p>
+          For secure updates and optional PDF uploads, follow the integration proposal in
+          <a href="../../content/TOUR-CALENDAR-CMS.md">content/TOUR-CALENDAR-CMS.md</a> (Cloudflare Access + Worker + R2, or Git-based CMS).
+        </p>
+        <p class="about-sub-note" role="note">
+          Do not add upload forms to this page without server-side authentication, file type limits and private object storage.
+        </p>
+        <p><a class="text-link" href="../../about/tour-calendar/index.html">← Public tour calendar</a></p>
+      </div>
+    </main>
+  </body>
+</html>

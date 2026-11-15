@@ -30,14 +30,13 @@
     "enabled": true
   },
   "social": {
-    "facebook": "https://www.facebook.com/",
+    "facebook": null,
     "twitter": null,
-    "instagram": "https://www.instagram.com/",
+    "instagram": null,
     "linkedin": null,
-    "youtube": null,
-    "tripadvisor": "https://www.tripadvisor.com/Search?q=Endemic+Birds+Tanzania"
+    "youtube": null
   },
-  "footerBlurb": "Based in Iringa, Tanzania – specialist birding and wildlife safaris across East Africa. Tailor-made routes, indigenous guides, max six guests per vehicle.",
+  "footerBlurb": "Based in Iringa – specialist Southern Tanzania birding, Eastern Arc forests and wildlife safaris. Tailor-made routes, max six guests per vehicle.",
   "about": {
     "liveUrl": "https://endemicbirds.co.tz/index.php/about-endemic-birds-tanzania/",
     "intro": "We are a dedicated safari company based in Tanzania East Africa and we are leading top Birding safaris, wildlife safaris and Nature Tours in Tanzania, Uganda and Rwanda Endemic Birds Tanzania is dedicated to providing exceptional birdwatching experiences in the stunning landscapes of Tanzania. With a focus on sustainable tourism, we aim to connect bird enthusiasts with the rich avian diversity found across various ecosystems, from lush forests to expansive savannas.",

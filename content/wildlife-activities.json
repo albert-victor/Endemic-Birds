@@ -10,8 +10,10 @@
     "destinationSlugs": ["serengeti-national-park", "ngorongoro-conservation-area"],
     "packageSlugs": [
       "5-days-serengeti-migration-focus",
+      "5-days-tarangire-serengeti-ngorongoro",
       "7-days-wildebeest-migration-hadzabe",
-      "8-days-wildebeest-calving-migration"
+      "8-days-wildebeest-calving-migration",
+      "14-days-ultimate-tanzania-safari"
     ],
     "seo": {
       "title": "Great Migration Safaris Tanzania | Endemic Birds",
@@ -35,8 +37,12 @@
     ],
     "packageSlugs": [
       "4-days-ngorongoro-crater-escape",
+      "5-days-tarangire-serengeti-ngorongoro",
       "6-days-tanzania-safari",
-      "8-days-northern-tarangire-manyara-ngorongoro-serengeti"
+      "8-days-northern-tarangire-manyara-ngorongoro-serengeti",
+      "9-days-wildlife-safari-zanzibar",
+      "10-days-northern-lake-victoria-safari",
+      "14-days-ultimate-tanzania-safari"
     ],
     "seo": {
       "title": "Northern Circuit Wildlife Safaris | Endemic Birds",
@@ -51,7 +57,7 @@
     "overview": "Western Tanzania delivers primate encounters that feel worlds away from the busier north. Chimp treks are on foot with park rangers; we build in lake time, boat transfers and comfortable pacing for repeat photographers and first-time Africa travellers alike.",
     "heroImage": "assets/images/wildlife/destinations/mahale-mountains-national-park/hero.jpg",
     "wildlifeFocus": ["Chimpanzee tracking", "Lake Tanganyika shoreline", "Forest birds & primates", "Boat transfers"],
-    "destinationSlugs": ["mahale-mountains-national-park", "katavi-national-park"],
+    "destinationSlugs": ["mahale-mountains-national-park", "gombe-stream-national-park", "katavi-national-park"],
     "packageSlugs": ["10-days-chimpanzee-tracking", "7-days-mahale-gombe-chimp-safari"],
     "seo": {
       "title": "Chimpanzee Safaris Tanzania | Endemic Birds",

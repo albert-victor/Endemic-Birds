@@ -1,0 +1,76 @@
+{
+  "page": {
+    "seo": {
+      "title": "Tour Training & Familiarisation | Endemic Birds Tanzania",
+      "description": "Enquiry-led birding familiarisation for aspiring guides and tour operators – Southern Tanzania and Eastern Arc routes. No fixed public syllabus until confirmed with the owner."
+    },
+    "eyebrow": "Tour training",
+    "title": "Familiarisation for guides and operators",
+    "lead": "Endemic Birds can host tailored familiarisation for people who will lead birding in Tanzania – especially Southern circuits and Eastern Arc forests. Programmes are agreed by enquiry; we do not list fixed course dates or accredited certificates on this site until they are confirmed.",
+    "enquiryNote": "Everything below describes topics we can shape together – not a standing advertised curriculum.",
+    "audiences": [
+      {
+        "title": "Aspiring specialist guides",
+        "body": "Field guides moving into endemic-focused birding who want route-specific habitat reading, pacing and guest management on forest days."
+      },
+      {
+        "title": "Tour operators and leaders",
+        "body": "International companies sending a leader on a Tanzanian module who need local ground knowledge, realistic drive matrices and park–forest logistics before clients arrive."
+      },
+      {
+        "title": "In-country driver-guides",
+        "body": "Experienced safari drivers who will support a senior birder on multi-day southern or arc routes."
+      }
+    ],
+    "topicAreas": [
+      {
+        "title": "Habitat and altitude",
+        "body": "Miombo, floodplain, escarpment and montane forest – what to expect each day and how weather shifts the plan."
+      },
+      {
+        "title": "Target planning",
+        "body": "Building a realistic species list by month without over-promising; playback, stake-outs and ethical field practice."
+      },
+      {
+        "title": "Logistics on our circuits",
+        "body": "Gates, permits, lodge pacing, fuel, 4×4 legs and backup when trails are muddy or roads are slow."
+      },
+      {
+        "title": "Guest pacing",
+        "body": "Listers vs photographers vs mixed groups – shared vehicle, different expectations."
+      }
+    ],
+    "deliveryOptions": [
+      {
+        "title": "Pre-departure briefing",
+        "body": "Video or document orientation for an operator’s leader before clients fly – scope agreed in writing.",
+        "status": "by-enquiry"
+      },
+      {
+        "title": "Field familiarisation days",
+        "body": "Time on southern or arc routes with Leons or assigned leadership – duration and sites confirmed per enquiry.",
+        "status": "by-enquiry"
+      },
+      {
+        "title": "Embedded on a private departure",
+        "body": "Observe or co-lead on a paying itinerary when dates and client consent allow – not a free ride-along guarantee.",
+        "status": "by-enquiry"
+      }
+    ],
+    "notPublishedUntilConfirmed": [
+      "Fixed calendar dates and group intakes",
+      "Course fees or training prices",
+      "Accreditation, certificates or employment guarantees",
+      "A formal multi-week curriculum document"
+    ],
+    "cta": {
+      "label": "Discuss training by enquiry",
+      "href": "plan-your-trip/index.html?interest=operator&note=Tour%20training%20/%20familiarisation%20enquiry%20%E2%80%93%20please%20describe%20your%20role%20and%20preferred%20regions."
+    },
+    "related": [
+      { "label": "Our partners", "href": "about/partners/index.html" },
+      { "label": "Why choose us", "href": "about/why-choose-us/index.html" },
+      { "label": "Leons Mlawila", "href": "about/leons-mlawila/index.html" }
+    ]
+  }
+}

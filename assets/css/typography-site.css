@@ -1,0 +1,70 @@
+/* Site typography – Playfair headings, Futura PT body/details; Marck Script nav only */
+
+/* Nav signature (not Playfair) */
+.site-header--rail .nav-rail-link,
+.site-header--rail .nav-dropdown-trigger.nav-rail-link,
+.site-header--rail .nav-rail-links > li > a,
+.nav-drawer-accordion.nav-drawer-tile {
+  font-family: "Marck Script", "Segoe Script", cursive !important;
+  font-weight: 400 !important;
+}
+
+/* Hero – Playfair stack */
+.hero-push-title,
+.hero-push-title-line {
+  font-family: var(--font-display);
+  font-weight: 400;
+  letter-spacing: -0.03em;
+}
+
+/* Sticky inspiration quote */
+.inspire-band-quote {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 400;
+}
+
+.inspire-band-cite {
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+}
+
+/* Footer readability */
+.site-footer .footer-tagline {
+  font-size: 1.05rem;
+}
+
+.site-footer .footer-tagline--soft {
+  font-size: 0.92rem;
+}
+
+.footer-link-list a,
+.footer-contact-list,
+.footer-contact-list li {
+  font-size: 0.92rem;
+}
+
+.footer-col-title {
+  font-size: 0.76rem;
+}
+
+.site-footer .footer-bottom,
+.footer-bottom {
+  font-size: 0.88rem;
+}
+
+/* WhatsApp FAB */
+.fab-whatsapp,
+.fab-whatsapp--enriched {
+  min-width: 3.55rem;
+  height: 3.55rem;
+}
+
+.fab-whatsapp svg {
+  width: 1.95rem;
+  height: 1.95rem;
+}
+
+.fab-whatsapp-label {
+  font-size: clamp(0.72rem, 2.8vw, 0.84rem);
+}

@@ -1,0 +1,131 @@
+{
+  "runAt": "2026-11-15T22:05:12.789Z",
+  "assurance": "Itinerary day titles and descriptions are taken verbatim from Word paragraphs under each Day header. Summaries use the document overview text (not rewritten). Packages without day headers in Word are flagged in results.",
+  "results": [
+    {
+      "file": "14 SOUTHERN TANZANIA BIRDING TOUR (2).docx",
+      "slug": "14-days-southern-tanzania-birding-tour",
+      "status": "updated",
+      "category": "birding",
+      "durationDays": 14,
+      "itineraryDays": 11,
+      "activitySlugs": []
+    },
+    {
+      "file": "9 Days Wildlife Safari and Zanzibar Beach Holiday.docx",
+      "slug": "9-days-wildlife-safari-zanzibar",
+      "status": "updated",
+      "category": "wildlife",
+      "durationDays": 9,
+      "itineraryDays": 9,
+      "activitySlugs": [
+        "bush-beach-luxury",
+        "ngorongoro-northern-icons"
+      ]
+    },
+    {
+      "file": "8 Days Wildebeest Migration Safari.docx",
+      "slug": "8-days-wildebeest-calving-migration",
+      "status": "updated",
+      "category": "wildlife",
+      "durationDays": 8,
+      "itineraryDays": 8,
+      "activitySlugs": [
+        "great-migration-plains",
+        "ngorongoro-northern-icons"
+      ]
+    },
+    {
+      "file": "SAFARIS TANZANIA.docx",
+      "slug": "8-days-northern-tarangire-manyara-ngorongoro-serengeti",
+      "status": "updated",
+      "category": "wildlife",
+      "durationDays": 8,
+      "itineraryDays": 8,
+      "activitySlugs": [
+        "great-migration-plains",
+        "ngorongoro-northern-icons"
+      ]
+    },
+    {
+      "file": "5 Days Wildebeest Migration Calving Safari.docx",
+      "slug": "5-days-serengeti-migration-focus",
+      "status": "updated",
+      "category": "wildlife",
+      "durationDays": 5,
+      "itineraryDays": 5,
+      "activitySlugs": [
+        "great-migration-plains",
+        "ngorongoro-northern-icons"
+      ]
+    },
+    {
+      "file": "5 Days Tanzania Safari to Tarangire, Serengeti & Ngorongoro.docx",
+      "slug": "5-days-tarangire-serengeti-ngorongoro",
+      "status": "updated",
+      "category": "wildlife",
+      "durationDays": 5,
+      "itineraryDays": 5,
+      "activitySlugs": [
+        "great-migration-plains",
+        "ngorongoro-northern-icons"
+      ]
+    },
+    {
+      "file": "14 Days Ultimate Tanzania Safari.docx",
+      "slug": "14-days-ultimate-tanzania-safari",
+      "status": "updated",
+      "category": "wildlife",
+      "durationDays": 14,
+      "itineraryDays": 10,
+      "activitySlugs": [
+        "great-migration-plains",
+        "ngorongoro-northern-icons"
+      ]
+    },
+    {
+      "file": "13 days Northern Tanzania Birding Trip.docx",
+      "slug": "13-days-northern-tanzania-birding",
+      "status": "updated",
+      "category": "combined",
+      "durationDays": 13,
+      "itineraryDays": 13,
+      "activitySlugs": [
+        "great-migration-plains",
+        "ngorongoro-northern-icons"
+      ]
+    },
+    {
+      "file": "15 Northern Tanzania birding tour.docx",
+      "slug": "15-days-tanzania-birding-tour",
+      "status": "updated",
+      "category": "birding",
+      "durationDays": 15,
+      "itineraryDays": 0,
+      "activitySlugs": []
+    },
+    {
+      "file": "Itinerary of Tanzania itinerary 10 days.docx",
+      "slug": "10-days-northern-lake-victoria-safari",
+      "status": "updated",
+      "category": "wildlife",
+      "durationDays": 10,
+      "itineraryDays": 9,
+      "activitySlugs": [
+        "great-migration-plains",
+        "ngorongoro-northern-icons"
+      ]
+    }
+  ],
+  "skipped": [
+    {
+      "file": "8 Day Amazing Tanzania Safari Itinerary..docx",
+      "reason": "Superseded by SAFARIS TANZANIA.docx for the 8-day northern package"
+    },
+    {
+      "file": "8 day northern tanzania safari.docx",
+      "reason": "Supplementary copy; canonical import is SAFARIS TANZANIA.docx"
+    }
+  ],
+  "tripConsiderationsLinkedTo": "13-days-northern-tanzania-birding"
+}

@@ -1,0 +1,550 @@
+/* Bird of the day */
+.bird-of-day-section {
+  padding: 3rem 0;
+  background: rgba(28, 74, 58, 0.04);
+}
+
+.home-special-strip {
+  margin-top: 1.75rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(28, 74, 58, 0.1);
+}
+
+.home-special-strip__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.65rem;
+}
+
+.home-special-strip__title {
+  margin: 0;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--color-forest-deep, #143528);
+}
+
+.home-special-strip__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.home-special-chip {
+  display: inline-block;
+  padding: 0.32rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #1c4a3a;
+  background: #fff;
+  border: 1px solid rgba(28, 74, 58, 0.14);
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.home-special-chip:hover {
+  background: rgba(28, 74, 58, 0.08);
+  border-color: rgba(196, 149, 42, 0.4);
+}
+
+.bird-of-day {
+  display: grid;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+@media (min-width: 900px) {
+  .bird-of-day {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+}
+
+.bird-day__category {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-forest, #1c4a3a);
+}
+
+.bird-day__sci {
+  margin: 0.25rem 0 0.75rem;
+  font-size: 0.95rem;
+  color: var(--color-text-soft, #5a6560);
+}
+
+.bird-day__region {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.bird-day__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.bird-day__figure {
+  margin: 0;
+  border-radius: 0.55rem;
+  overflow: hidden;
+}
+
+.bird-day__figure img {
+  width: 100%;
+  display: block;
+  max-height: 22rem;
+  object-fit: cover;
+}
+
+.bird-day__figure figcaption {
+  font-size: 0.78rem;
+  padding: 0.35rem 0;
+  color: var(--color-text-soft, #5a6560);
+}
+
+.bird-day__thumbs {
+  display: flex;
+  gap: 0.35rem;
+  margin-top: 0.5rem;
+}
+
+.bird-day__thumb {
+  border: 2px solid transparent;
+  padding: 0;
+  border-radius: 0.35rem;
+  overflow: hidden;
+  width: 3.25rem;
+  height: 3.25rem;
+  cursor: pointer;
+}
+
+.bird-day__thumb.is-active {
+  border-color: var(--color-forest, #1c4a3a);
+}
+
+.bird-day__thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bird-day__pause {
+  margin-top: 0.5rem;
+  font-size: 0.82rem;
+  text-decoration: underline;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-forest, #1c4a3a);
+}
+
+/* Special birds grid */
+.special-birds-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.special-birds-filters button {
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background: #fff;
+  font-weight: 600;
+  font-size: 0.86rem;
+  cursor: pointer;
+}
+
+.special-birds-filters button.is-active {
+  background: var(--color-forest, #1c4a3a);
+  color: #fff;
+  border-color: transparent;
+}
+
+.special-birds-grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+}
+
+.special-bird-card {
+  border-radius: 0.55rem;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  background: #fff;
+}
+
+.special-bird-card__media {
+  display: block;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+}
+
+.special-bird-card__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.special-bird-card__body {
+  padding: 0.85rem 1rem 1.1rem;
+}
+
+.special-bird-card__cat {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-forest, #1c4a3a);
+}
+
+.special-bird-card__title {
+  margin: 0.2rem 0;
+  font-size: 1.05rem;
+}
+
+.special-bird-card__sci {
+  font-size: 0.88rem;
+  margin: 0 0 0.5rem;
+}
+
+.special-bird-card__why,
+.special-bird-card__region {
+  font-size: 0.9rem;
+  color: var(--color-text-soft, #5a6560);
+  line-height: 1.45;
+}
+
+/* Species detail modal – compact text card (no photo; image stays on page) */
+.species-modal {
+  border: none;
+  border-radius: 0.75rem;
+  padding: 0;
+  width: min(26.5rem, calc(100vw - 1.75rem));
+  max-width: 26.5rem;
+  max-height: none;
+  overflow: visible;
+  background: transparent;
+  box-shadow: none;
+}
+
+.species-modal::backdrop {
+  background: rgba(12, 28, 22, 0.48);
+  backdrop-filter: blur(4px);
+}
+
+.species-modal__inner {
+  padding: 0;
+  overflow: visible;
+  max-height: none;
+}
+
+.species-modal__card {
+  background: linear-gradient(165deg, #fffef9 0%, #f9f5ec 100%);
+  border: 1px solid rgba(28, 74, 58, 0.14);
+  border-radius: 0.75rem;
+  box-shadow:
+    0 20px 50px rgba(12, 28, 22, 0.18),
+    0 2px 0 rgba(228, 184, 74, 0.35) inset;
+  padding: 1rem 1.1rem 1.05rem;
+}
+
+.species-modal__head {
+  position: relative;
+  padding-right: 2.1rem;
+  margin-bottom: 0.35rem;
+}
+
+.species-modal__category {
+  margin: 0 0 0.2rem;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #9a7424;
+}
+
+.species-modal__head h2 {
+  margin: 0;
+  font-size: 1.22rem;
+  font-weight: 700;
+  line-height: 1.22;
+  color: #1a3328;
+}
+
+.species-modal__sci {
+  margin: 0.2rem 0 0;
+  font-size: 0.86rem;
+  color: #5a6b62;
+  font-style: italic;
+}
+
+.species-modal__close {
+  position: absolute;
+  top: -0.15rem;
+  right: -0.1rem;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid rgba(28, 74, 58, 0.12);
+  border-radius: 999px;
+  background: #fff;
+  font-size: 1.25rem;
+  line-height: 1;
+  color: #3a342e;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.species-modal__close:hover {
+  background: rgba(28, 74, 58, 0.08);
+  border-color: rgba(28, 74, 58, 0.22);
+}
+
+.species-modal__lead {
+  margin: 0 0 0.65rem;
+  padding: 0.55rem 0.65rem;
+  font-size: 0.84rem;
+  line-height: 1.48;
+  color: #2a3d34;
+  background: rgba(28, 74, 58, 0.06);
+  border-left: 3px solid rgba(196, 149, 42, 0.7);
+  border-radius: 0 0.35rem 0.35rem 0;
+}
+
+.species-modal__facts {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.species-modal__row {
+  display: grid;
+  grid-template-columns: 5.5rem 1fr;
+  gap: 0.5rem 0.65rem;
+  align-items: start;
+}
+
+.species-modal__label {
+  margin: 0;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #6a756f;
+  line-height: 1.35;
+  padding-top: 0.08rem;
+}
+
+.species-modal__value {
+  margin: 0;
+  font-size: 0.84rem;
+  line-height: 1.45;
+  color: #243029;
+}
+
+.species-modal__links {
+  margin-top: 0.75rem;
+  padding-top: 0.65rem;
+  border-top: 1px solid rgba(28, 74, 58, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.species-modal__link-kicker {
+  display: block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8a8076;
+  margin-bottom: 0.3rem;
+}
+
+.species-modal__pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.species-modal__pill {
+  display: inline-block;
+  max-width: 100%;
+  padding: 0.28rem 0.55rem;
+  font-size: 0.74rem;
+  font-weight: 600;
+  line-height: 1.3;
+  text-decoration: none;
+  color: #1c4a3a;
+  background: #fff;
+  border: 1px solid rgba(28, 74, 58, 0.18);
+  border-radius: 999px;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.species-modal__pill:hover {
+  background: rgba(28, 74, 58, 0.07);
+  border-color: rgba(196, 149, 42, 0.45);
+}
+
+.species-modal__pill--pkg {
+  font-size: 0.72rem;
+  font-weight: 500;
+}
+
+.species-modal__foot {
+  margin-top: 0.85rem;
+  text-align: center;
+}
+
+.species-modal__enquire {
+  width: 100%;
+  font-size: 0.86rem;
+  padding: 0.55rem 0.85rem;
+}
+
+@media (max-width: 380px) {
+  .species-modal__row {
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+  }
+}
+
+@media (max-height: 520px) {
+  .species-modal {
+    max-height: calc(100vh - 1.5rem);
+    overflow: auto;
+  }
+
+  .species-modal__inner {
+    overflow: auto;
+    max-height: calc(100vh - 1.5rem);
+  }
+}
+
+/* Gallery (bird of day only – not used in modal) */
+.species-modal__figure {
+  margin: 0.75rem 0;
+}
+
+.species-gallery__controls {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.35rem;
+}
+
+.species-gallery__controls button {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background: #fff;
+  border-radius: 0.35rem;
+  padding: 0.25rem 0.55rem;
+  cursor: pointer;
+}
+
+/* Eastern Arc destination */
+.eastern-arc-blocks {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 720px) {
+  .eastern-arc-blocks {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.eastern-arc-block {
+  padding: 0.85rem 1rem;
+  border-radius: 0.45rem;
+  background: rgba(28, 74, 58, 0.05);
+  border: 1px solid rgba(28, 74, 58, 0.1);
+}
+
+.eastern-arc-species {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 0.75rem 0;
+}
+
+.eastern-arc-chip {
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  border: 1px solid rgba(28, 74, 58, 0.25);
+  background: #fff;
+  font-size: 0.86rem;
+  cursor: pointer;
+}
+
+.eastern-arc-sticky {
+  position: fixed;
+  bottom: max(1rem, env(safe-area-inset-bottom));
+  left: max(1rem, env(safe-area-inset-left));
+  z-index: 38;
+  max-width: 14rem;
+  padding: 0.7rem 0.85rem 0.85rem;
+  border-radius: 0.5rem;
+  background: #fff;
+  border: 1px solid rgba(28, 74, 58, 0.2);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
+}
+
+.eastern-arc-sticky__label {
+  margin: 0;
+  font-weight: 700;
+  font-size: 0.88rem;
+}
+
+.eastern-arc-sticky__short {
+  margin: 0.25rem 0 0.5rem;
+  font-size: 0.78rem;
+  line-height: 1.35;
+  color: var(--color-text-soft, #5a6560);
+}
+
+.eastern-arc-sticky__dismiss {
+  position: absolute;
+  top: 0.25rem;
+  right: 0.35rem;
+  border: none;
+  background: transparent;
+  font-size: 1.2rem;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.eastern-arc-sticky .btn-sm {
+  font-size: 0.82rem;
+  padding: 0.4rem 0.65rem;
+}
+
+@media (max-width: 899px) {
+  .eastern-arc-sticky {
+    left: 0.65rem;
+    right: auto;
+    max-width: 11.5rem;
+    bottom: max(4.5rem, calc(env(safe-area-inset-bottom) + 3.5rem));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .species-gallery--reduce .species-gallery__stage img {
+    transition: none;
+  }
+}

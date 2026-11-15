@@ -1,0 +1,400 @@
+{
+  "overview": {
+    "seo": {
+      "title": "About Endemic Birds | Southern Tanzania Birding Safaris",
+      "description": "Iringa-based birding and wildlife safaris with Eastern Arc expertise, endemic-focused fieldcraft and ground support for private guests and international operators."
+    },
+    "heroLead": "From Iringa we design specialist birding and wildlife journeys – with Southern Tanzania, the Eastern Arc and miombo woodland at the heart of what we do.",
+    "intro": "Endemic Birds is a Tanzania safari company built around serious birding: forest endemics on the Eastern Arc, miombo specials of the south, and wildlife parks when your route calls for plains, rivers or lakes. We work privately with listers, photographers and naturalists – and as a local ground partner for overseas tour operators who need dependable logistics and a guide who reads habitat, not just mileage.",
+    "storyQuote": "We plan for dawn choruses, forest light and the unhurried stops that endemics demand – then weave in comfort, clear communication and wildlife where it strengthens the story of your route.",
+    "storyCite": "Endemic Birds · Iringa, Tanzania",
+    "approach": {
+      "title": "How we bird",
+      "lead": "Our approach is habitat-first and guest-paced – not a race through a checklist.",
+      "points": [
+        {
+          "title": "Endemics and arc forests",
+          "body": "Eastern Arc massifs – Udzungwa, Uluguru, Ukaguru, Rubeho and allies – are where Tanzania's montane endemics concentrate. We build altitude, trail time and lodge nights around realistic forest access and weather windows."
+        },
+        {
+          "title": "Southern miombo and rivers",
+          "body": "Ruaha, Mikumi, Nyerere and the Kilombero floodplain add woodland, wetland and raptor country. Routes pair southern savanna birding with arc forests when you want breadth without flying the whole country."
+        },
+        {
+          "title": "Wildlife when it fits",
+          "body": "The same vehicles and guides cover classic wildlife circuits – Serengeti, Ngorongoro, Mahale, Katavi – so combined birding and wildlife safaris stay on one team and one coherent plan."
+        }
+      ]
+    },
+    "wildlifeBand": {
+      "title": "Birding-first, wildlife-capable",
+      "body": "Many guests travel for endemics and arc forest; others want elephants, cats or chimps on the same trip. We keep one itinerary logic: where you sleep, how early you leave, and which guide stays with you from forest track to game drive."
+    },
+    "leonTeaser": {
+      "eyebrow": "Lead guiding",
+      "heading": "Leons J. Mlawila",
+      "lead": "Leons is an experienced birding guide and tour operator, central to how Endemic Birds runs in the field. He shapes routes, leads or supervises guiding, and stays close to guests who want endemic targets and steady pace.",
+      "points": [
+        "Private and small-group birding across Tanzania",
+        "Southern circuits and Eastern Arc forests",
+        "Wildlife and combined itineraries on the same team"
+      ],
+      "profileHref": "about/leons-mlawila/index.html",
+      "calendarHref": "about/tour-calendar/index.html"
+    },
+    "exploreHub": {
+      "title": "People and field notes",
+      "lead": "Meet the team behind your route and follow trip reports when they are published.",
+      "cards": [
+        {
+          "title": "Why choose us",
+          "desc": "How routes, habitat knowledge and preparation differ on an Endemic Birds safari.",
+          "href": "about/why-choose-us/index.html"
+        },
+        {
+          "title": "Our team",
+          "desc": "Verified profiles – lead guiding with Leons J. Mlawila.",
+          "href": "about/team/index.html"
+        },
+        {
+          "title": "Trip reports",
+          "desc": "Honest notes from recent routes – species context, habitat and logistics, not hype.",
+          "href": "about/trip-reports/index.html"
+        }
+      ]
+    },
+    "calendarTeaser": {
+      "title": "Tour calendar & departures",
+      "lead": "See published guide availability, open departures and months that need confirmation – not a booking engine. Seasonal habitat notes help you narrow dates before you enquire.",
+      "href": "about/tour-calendar/index.html",
+      "highlights": [
+        {
+          "season": "Jun–Oct",
+          "note": "Cooler, drier months – strong for miombo, Ruaha and many forest edges; pack layers for montane mornings."
+        },
+        {
+          "season": "Nov–Mar",
+          "note": "Rains and breeding activity in parts of the south; some forest trails muddier – flexibility rewarded."
+        },
+        {
+          "season": "Year-round",
+          "note": "Eastern Arc endemics are resident; we adjust daily pace to mist, rain and lodge access."
+        }
+      ]
+    },
+    "enquiries": {
+      "title": "Plan your safari",
+      "traveller": {
+        "heading": "Private travellers",
+        "body": "Share target species, dates and fitness for forest days. We reply with a clear route, indicative pacing and what is included.",
+        "href": "plan-your-trip/index.html",
+        "label": "Start an enquiry"
+      },
+      "operator": {
+        "heading": "International operators",
+        "body": "Need a Tanzanian ground partner for a birding group or FIT extension? Tell us your client profile, inclusions and dates.",
+        "href": "plan-your-trip/index.html?interest=operator",
+        "label": "Operator enquiry"
+      }
+    }
+  },
+  "team": {
+    "staffLabel": "Company leadership",
+    "associatesLabel": "Associate guides",
+    "associateNote": "We work with associate guides on larger departures and specialist modules. Profiles are published here only when bios and photos are owner-verified.",
+    "driversNote": "Safari drivers and camp liaison staff support every departure. Named driver profiles will be added when approved for the website.",
+    "members": [
+      {
+        "id": "leons-mlawila",
+        "category": "staff",
+        "name": "Leons J. Mlawila",
+        "role": "Lead birding guide & tour operator",
+        "specialty": "Eastern Arc forest endemics · Southern miombo & wetlands",
+        "bio": "Field career spanning decades – from Tanzania Bird Atlas work to guiding specialist birding safaris. Full profile includes a documented chronology of research, surveys and field support.",
+        "photo": "endemics/leons.jpg",
+        "photoAlt": "Leons J. Mlawila, birding guide",
+        "languages": null,
+        "regions": "Tanzania – Southern circuits, Eastern Arc massifs; northern and western parks on combined itineraries",
+        "profileHref": "about/leons-mlawila/index.html"
+      }
+    ],
+    "associates": []
+  },
+  "pages": {
+    "why-choose-us": {
+      "layout": "why-choose",
+      "seo": {
+        "title": "Why Choose Endemic Birds | Specialist Tanzania Birding",
+        "description": "Habitat-led birding from Iringa – Eastern Arc and Southern Tanzania expertise, flexible routes, realistic preparation and ground support for overseas operators."
+      },
+      "eyebrow": "Why choose us",
+      "title": "Evidence-led birding, not checklist tourism",
+      "lead": "Benefits show up in how a day is structured: where the vehicle stops, how long you wait on a forest skulker, and whether the schedule still makes sense after rain on an arc trail.",
+      "pillars": [
+        {
+          "title": "Identification and habitat knowledge",
+          "body": "Guides work from sound, silhouette and behaviour – then habitat. Miombo specials are not searched in wetland fringe; Rubeho targets are not squeezed into a rushed road stop.",
+          "example": "On an Eastern Arc week, dawn starts align with forest edge activity; mid-morning may shift to a sheltered gully for ground-thrushes rather than marching the trail for mileage."
+        },
+        {
+          "title": "Southern Tanzania and the Eastern Arc",
+          "body": "Our base in Iringa keeps southern logic central: Udzungwa, Uluguru, Ukaguru, Rubeho, Ruaha, Mikumi, Nyerere and Kilombero appear on routes we know by season – not only as brochure names.",
+          "example": "A lister pairing Udzungwa forest with Ruaha miombo gets realistic drive matrices and lodge nights that match altitude – not four nights in the wrong habitat."
+        },
+        {
+          "title": "Routes shaped to your targets",
+          "body": "Nights, vehicle order and rest days move with your species list, fitness and heat tolerance. We do not sell fixed departures that ignore your pace.",
+          "example": "Photographers may trade one productive forest extras for an afternoon hide at a wetland; mixed-interest couples can split a day between forest birds and a relaxed game drive."
+        },
+        {
+          "title": "Who we plan for",
+          "body": "Dedicated listers, photographers, wildlife enthusiasts and mixed groups are each paced differently – same guide team, different emphasis on time, light and walking.",
+          "example": "Wildlife-first guests still get birds led properly on drives; listers get unhurried forest sessions even when a big mammal appears on the road."
+        },
+        {
+          "title": "Preparation and honest expectations",
+          "body": "You receive upfront notes on trail conditions, likely weather bands, start times and what is realistic in a given season. We do not promise species; we prepare habitat and timing.",
+          "example": "Before travel we flag steep Uluguru days, optional 4×4 legs to Rubeho, and wet-season trail limits – so you pack and train accordingly."
+        },
+        {
+          "title": "Support for overseas operators",
+          "body": "International companies book us for ground execution: vehicles, permits, lodge blocks, local guiding and a single Tanzanian contact who understands lister clients.",
+          "example": "Your leader arrives with targets agreed in advance; we provide driver–guide coordination and park logistics so field time is not lost to admin."
+        }
+      ],
+      "audiences": [
+        {
+          "title": "Dedicated birders",
+          "body": "Arc endemics, miombo specials and wetland targets with dawn discipline and patient stake-outs."
+        },
+        {
+          "title": "Photographers",
+          "body": "Light, angle and time at a perch – schedule built around shots, not only tick counts."
+        },
+        {
+          "title": "Mixed-interest travellers",
+          "body": "Forest one day, wildlife the next – one coherent vehicle plan and one guide team."
+        },
+        {
+          "title": "Wildlife enthusiasts",
+          "body": "Classic game viewing with bins treated seriously on drives and at camp."
+        }
+      ],
+      "preparation": {
+        "title": "Before you travel",
+        "points": [
+          "Target species and optional stretch goals, so we sequence habitats sensibly.",
+          "Fitness for forest altitude and typical walking times – we adjust trails to match.",
+          "Season and region from our tour calendar, then refine together.",
+          "Gear notes: wet forest, dust on miombo tracks, early starts – shared in writing."
+        ]
+      },
+      "related": [
+        { "label": "About overview", "href": "about/index.html" },
+        { "label": "Leons J. Mlawila", "href": "about/leons-mlawila/index.html" },
+        { "label": "Our team", "href": "about/team/index.html" },
+        { "label": "Birding safaris", "href": "birding/index.html" }
+      ],
+      "cta": {
+        "label": "Start a birding enquiry",
+        "href": "plan-your-trip/index.html?interest=birding"
+      }
+    },
+    "team": {
+      "layout": "team",
+      "seo": {
+        "title": "Our Team | Endemic Birds Tanzania",
+        "description": "Meet the Endemic Birds team – lead guiding with Leons J. Mlawila and room for verified associate guides as routes grow."
+      },
+      "eyebrow": "Our team",
+      "title": "People behind your route",
+      "lead": "Published profiles show who we can introduce by name. Core leadership is on the ground today; associate guides are added only with owner-verified bios and photos.",
+      "related": [
+        { "label": "Why choose us", "href": "about/why-choose-us/index.html" },
+        { "label": "Leons J. Mlawila", "href": "about/leons-mlawila/index.html" },
+        { "label": "About overview", "href": "about/index.html" }
+      ]
+    },
+    "leons-mlawila": {
+      "layout": "profile",
+      "seo": {
+        "title": "Leons J. Mlawila | Tanzania Birding Guide & Local Field Support",
+        "description": "Leons J. Mlawila – specialist birding guide and tour operator in Tanzania. Documented atlas, survey and research-assistant experience; Southern Tanzania and Eastern Arc safaris for travellers and overseas operators."
+      },
+      "eyebrow": "Guide profile",
+      "displayName": "Leons J. Mlawila",
+      "title": "Leons J. Mlawila",
+      "roleLine": "Birding guide · tour operator · ornithological research assistant (field)",
+      "tagline": "Field knowledge behind your next birding journey.",
+      "lead": "A Tanzania-born guide whose routes are built from years of atlas work, biodiversity surveys, research assistance and time in Southern Tanzania forests and parks – not from brochure promises.",
+      "portrait": "endemics/leons.jpg",
+      "portraitAlt": "Leons J. Mlawila, birding guide and tour operator, Endemic Birds Tanzania",
+      "intro": "Leons J. Mlawila founded Endemic Birds Tanzania and works as a birding guide and tour operator from Iringa. Owner-published biography describes life-long bird work in Tanzania – including periods around Kilimanjaro – mist-netting as part of field studies, and long involvement with the Tanzania Bird Atlas. He trained as an ornithological research assistant and has supported wildlife and environmental fieldwork beyond birds. This profile links that documented record to how he plans and leads safaris today.",
+      "story": [
+        "Born and raised in Tanzania, Leons built his birding practice through atlas training and citizen-science data collection, then through repeated survey and research-assistant deployments across forests, swamps, miombo and parks. Website biography notes bird observation and field work from 1997; owner chronology records Tanzania Bird Atlas training from 1993–1998 – we keep those dates on the table below rather than folding them into a single career-start line.",
+        "That work was practical, not ceremonial: waterbird counts, elephant and vulture transects, biodiversity and environmental impact assessment fieldwork, and stints as field assistant on university-led bird projects. He later led trekking teams and served in a guide-association leadership role – experience that shows up in how groups move through long field days.",
+        "Today he designs specialist birding safaris for private guests and provides local guiding and ground support when overseas operators bring leaders to Tanzania. Historical organisations in the chronology are documented past work, not implied current endorsements."
+      ],
+      "speciesRecordNote": "Owner-published biography reports observing more than 1,000 bird species through training and fieldwork. That is a career observation record – not a promise that every guest will see 1,000 species, nor a claim about Tanzanian endemics alone.",
+      "safariValue": {
+        "title": "What his experience brings to your safari",
+        "themes": [
+          {
+            "heading": "Bird observation and identification",
+            "body": "Years on the Tanzania Bird Atlas and on bird-focused survey teams inform how he reads habitat and builds a day list – grounded in documented field time, not guesswork."
+          },
+          {
+            "heading": "Habitats and field conditions",
+            "body": "Repeated work in forests, wetlands, steppe and parks means routes account for season, access and mud – especially on Eastern Arc trails and Southern miombo."
+          },
+          {
+            "heading": "Southern Tanzania familiarity",
+            "body": "Ruaha, Katavi, Udzungwa and wider southern circuits appear often in his chronology. Itineraries for Southern Tanzania birding draw on that time on the ground."
+          },
+          {
+            "heading": "Patient, purposeful days",
+            "body": "Atlas transects and long survey days set a pace suited to serious birders and photographers – start early, stay with the habitat, avoid rushing past skulkers."
+          },
+          {
+            "heading": "Research-informed wildlife attention",
+            "body": "Elephant, vulture and wider biodiversity surveys complement birding – useful when your trip combines endemic targets with mammals or landscape."
+          },
+          {
+            "heading": "Support for visiting leaders",
+            "body": "Documented guiding for specialist tour companies and association leadership experience underpin ground support for overseas leaders and small groups – logistics, parks and realistic timing."
+          }
+        ]
+      },
+      "collaboration": {
+        "title": "Guiding and collaboration",
+        "traveller": {
+          "heading": "Travel with Leons",
+          "body": "Private travellers and small groups enquiring for Southern Tanzania birding, Eastern Arc endemics or combined wildlife circuits. Share dates, targets and fitness for forest days.",
+          "href": "plan-your-trip/index.html?interest=birding&guide=leons&note=I%20would%20like%20to%20request%20Leons%20J.%20Mlawila%20as%20lead%20guide%20where%20possible."
+        },
+        "operator": {
+          "heading": "Local guiding and field support",
+          "body": "Overseas tour operators needing a Tanzanian birding guide, driver–guide coordination or route planning for specialist groups – without implying current agency contracts from historical chronology entries.",
+          "href": "plan-your-trip/index.html?interest=operator&note=Enquiry%20about%20local%20birding%20guiding%20/%20field%20support%20with%20Leons%20J.%20Mlawila."
+        },
+        "exploreLinks": [
+          { "label": "Birding destinations", "href": "destinations/birding/index.html" },
+          { "label": "Eastern Arc mountains", "href": "destinations/eastern-arc-mountain/index.html" },
+          { "label": "Southern Tanzania", "href": "destinations/southern-destination/index.html" },
+          { "label": "Safari packages", "href": "packages/index.html" },
+          { "label": "Trip reports", "href": "about/trip-reports/index.html" }
+        ]
+      },
+      "availability": {
+        "label": "Tour calendar – published availability",
+        "href": "about/tour-calendar/index.html",
+        "fallbackLabel": "Enquire about your dates",
+        "fallbackHref": "plan-your-trip/index.html?interest=birding&guide=leons&note=Please%20advise%20Leons%20J.%20Mlawila%20availability%20for%20my%20dates."
+      },
+      "ctas": {
+        "safari": {
+          "label": "Request Leons for your safari",
+          "href": "plan-your-trip/index.html?interest=birding&guide=leons&note=I%20would%20like%20to%20request%20Leons%20J.%20Mlawila%20as%20lead%20guide%20where%20possible."
+        },
+        "operator": {
+          "label": "Enquire about local guiding support",
+          "href": "plan-your-trip/index.html?interest=operator&note=Enquiry%20about%20local%20birding%20guiding%20/%20field%20support%20with%20Leons%20J.%20Mlawila."
+        }
+      },
+      "related": [
+        { "label": "Our team", "href": "about/team/index.html" },
+        { "label": "Why choose us", "href": "about/why-choose-us/index.html" },
+        { "label": "Tour calendar", "href": "about/tour-calendar/index.html" }
+      ]
+    },
+    "trip-reports": {
+      "seo": {
+        "title": "Trip Reports | Endemic Birds Tanzania",
+        "description": "Field notes from Endemic Birds safaris – habitat, season and logistics. New reports added when routes are complete and approved for publication."
+      },
+      "eyebrow": "Trip reports",
+      "title": "From the field",
+      "lead": "Reports summarise how a route felt – weather, access, standout habitats and representative species – without promising repeats on your dates.",
+      "emptyMessage": "We are preparing the first reports for publication. Until then, contact us for recent route notes on Southern Tanzania, the Eastern Arc or combined wildlife circuits.",
+      "reports": []
+    },
+    "tour-training": {
+      "seo": {
+        "title": "Tour Training | Endemic Birds Tanzania",
+        "description": "Familiarisation and training for birding guides and international operators working in Tanzania – habitats, logistics and guest pacing."
+      },
+      "eyebrow": "Tour training",
+      "title": "Learn the ground we work",
+      "lead": "We host familiarisation for overseas tour leaders and in-country guides who will run birding modules on our routes – especially Southern Tanzania and the Eastern Arc.",
+      "sections": [
+        {
+          "heading": "What training covers",
+          "body": "Habitat reading, endemic target planning, realistic drive matrices, lodge and camp standards on our circuits, and guest pacing on long forest days."
+        },
+        {
+          "heading": "Who it is for",
+          "body": "International operators sending leaders to Tanzania, and local guides stepping into specialist birding departures who want route-specific preparation."
+        },
+        {
+          "heading": "Format",
+          "body": "Training is arranged by enquiry – duration, regions and group size are agreed with the owner. We do not publish fixed course dates until a schedule is confirmed."
+        }
+      ],
+      "cta": {
+        "label": "Discuss training dates",
+        "href": "plan-your-trip/index.html?interest=operator&note=Interested%20in%20tour%20training%20/%20familiarisation."
+      }
+    },
+    "partners": {
+      "seo": {
+        "title": "Our Partners | Endemic Birds Ground Support",
+        "description": "Ground arrangements and guiding support for international tour operators birding in Tanzania – Southern circuits and Eastern Arc expertise."
+      },
+      "eyebrow": "Our partners",
+      "title": "Working with overseas operators",
+      "lead": "Endemic Birds acts as a Tanzanian ground partner: routing, vehicles, permits, lodge blocks and specialist guiding for birding groups and FIT travellers booked through your brand.",
+      "sections": [
+        {
+          "heading": "What we provide",
+          "body": "Route design from Iringa, endemic target lists by month, driver–guide teams, park and forest logistics, and transparent communication before clients arrive."
+        },
+        {
+          "heading": "Partner logos",
+          "body": "We will display partner relationships here once commercial agreements and logo permissions are confirmed – we do not show unverified affiliations."
+        }
+      ],
+      "cta": {
+        "label": "Operator enquiry",
+        "href": "plan-your-trip/index.html?interest=operator"
+      }
+    },
+    "policies": {
+      "seo": {
+        "title": "Terms & Policies | Endemic Birds Tanzania",
+        "description": "Privacy policy, draft booking terms and owner checklist. Published privacy; other policies marked draft until legal review."
+      },
+      "eyebrow": "Terms & policies",
+      "title": "How we work with you",
+      "lead": "Contractual safari terms are agreed in writing when you book. Below: published privacy, draft legal pages and an owner checklist.",
+      "note": "Draft booking, cancellation and website terms require lawyer sign-off before removing DRAFT banners."
+    },
+    "tour-calendar": {
+      "seo": {
+        "title": "Tour Calendar | Departures & Guide Availability",
+        "description": "Published departures, Leons Mlawila availability and seasonal habitat notes – enquire to confirm; not instant booking."
+      },
+      "eyebrow": "Tour calendar",
+      "title": "Departures, availability & seasons",
+      "lead": "Months without a published entry are not shown as available. Use the list view if you prefer text to the month grid."
+    }
+  },
+  "ownerContentChecklist": [
+    "Final booking terms and cancellation policy page (legal text)",
+    "Team member bios, photos and languages for associate guides",
+    "Trip reports: titles, dates, routes and owner approval to publish",
+    "Partner logos and permitted names for Our Partners page",
+    "Fixed tour training dates, fees and syllabi if offered publicly",
+    "Confirmed social profile URLs (Facebook, Instagram)",
+    "Leons J. Mlawila: confirm chronology row count vs owner screenshots (LEONS-PROFILE-OWNER-NOTES.md)"
+  ]
+}

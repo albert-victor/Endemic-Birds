@@ -1,0 +1,50 @@
+{
+  "destinationId": "eastern-arc",
+  "slug": "eastern-arc-mountain",
+  "title": "Eastern Arc Mountains",
+  "significance": "Ancient forest islands rising from the Tanzanian lowlands – globally important for endemics evolved in isolation over millions of years.",
+  "blocks": [
+    {
+      "name": "Udzungwa & Kilombero block",
+      "habitats": "Montane rainforest, escarpment, floodplain edge",
+      "routeNote": "Strongest southern arc module – links Iringa, Udzungwa, Kilombero and miombo legs.",
+      "destinationSlugs": ["udzungwa-mountains", "kilombero-plains"]
+    },
+    {
+      "name": "Uluguru & Ukaguru",
+      "habitats": "Montane forest, steep escarpments",
+      "routeNote": "Often approached from Morogoro–Iringa corridors; trail mud and fitness shape daily pace.",
+      "destinationSlugs": ["uluti-mountain", "ukaguru-mountains"]
+    },
+    {
+      "name": "Rubeho & Rondo",
+      "habitats": "High arc ridges, coastal forest remnants",
+      "routeNote": "Low-traffic forests for travellers who want quiet endemics away from main highways.",
+      "destinationSlugs": ["rubeho-mountains", "rondo-plateau"]
+    },
+    {
+      "name": "Usambara (East & West)",
+      "habitats": "Montane and lowland arc forest",
+      "routeNote": "Northeastern modules – combines with Pemba or northern parks on long tours.",
+      "destinationSlugs": ["amani-nature-reserve", "west-usambara-magamba"]
+    }
+  ],
+  "routePractical": [
+    "Southern arc tours stack forest days before long miombo drives – altitude and mud dictate footwear, not daily lists.",
+    "Northeastern arc tours often fly or drive to Usambara after Dar or Arusha starters – lodge nights split forest blocks.",
+    "We do not promise every block on one departure – targets and fitness choose the subset."
+  ],
+  "speciesSlugs": [
+    "udzungwa-forest-partridge",
+    "iringa-akalat",
+    "rufous-winged-sunbird",
+    "usambara-akalat",
+    "kilombero-weaver"
+  ],
+  "stickyInvite": {
+    "label": "Eastern Arc birding",
+    "short": "Forest endemics – explore blocks & routes",
+    "href": "birding/special-birds/index.html?region=eastern-arc",
+    "dismissKey": "easternArcStickyDismissed"
+  }
+}

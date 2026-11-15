@@ -1,0 +1,47 @@
+{
+  "hub": {
+    "eyebrow": "Terms & policies",
+    "title": "How we work with you",
+    "lead": "Contractual safari terms are agreed in writing when you book. Below: our published privacy policy, owner-draft pages for legal review, and a checklist for missing formal wording.",
+    "professionalReviewNote": "Booking, cancellation and governing law need review by a qualified adviser in Tanzania and your guests' home jurisdictions – we do not publish invented percentages or penalties here."
+  },
+  "policies": [
+    {
+      "id": "privacy",
+      "title": "Privacy policy",
+      "desc": "What this website collects and which third parties process enquiry data.",
+      "href": "privacy/index.html",
+      "status": "published"
+    },
+    {
+      "id": "booking-terms",
+      "title": "Booking & payment terms",
+      "desc": "Draft structure only – deposits and payment milestones to be supplied by owner.",
+      "href": "about/policies/booking-terms/index.html",
+      "status": "draft"
+    },
+    {
+      "id": "cancellation-refund",
+      "title": "Cancellation & refunds",
+      "desc": "Draft structure only – no refund percentages until owner approval.",
+      "href": "about/policies/cancellation-refund/index.html",
+      "status": "draft"
+    },
+    {
+      "id": "terms-of-service",
+      "title": "Terms of service (website)",
+      "desc": "Draft – use of site, enquiries and limitation of liability.",
+      "href": "about/policies/terms-of-service/index.html",
+      "status": "draft"
+    }
+  ],
+  "ownerChecklist": [
+    "Confirm legal entity name and registered address for all policies",
+    "Provide final deposit schedule, payment methods and invoice terms",
+    "Provide cancellation tiers, refund rules and force-majeure wording",
+    "Confirm governing law and dispute resolution (Tanzania vs other)",
+    "Confirm whether FormSubmit.co remains the enquiry processor or move to owned SMTP",
+    "Decide on analytics (if any) and update privacy before enabling",
+    "Lawyer sign-off before removing DRAFT banners from booking/cancellation/terms pages"
+  ]
+}

@@ -4,20 +4,33 @@
   "private": true,
   "description": "Endemic Birds Tanzania – specialist birding safaris site",
   "scripts": {
-    "build": "node scripts/build-pages.mjs",
+    "build": "node scripts/build-package-meta.mjs && node scripts/validate-tour-calendar.mjs && node scripts/build-legal-pages.mjs && node scripts/build-accommodation-galleries.mjs && node scripts/build-pages.mjs",
+    "build:accommodation-galleries": "node scripts/build-accommodation-galleries.mjs",
+    "build:package-meta": "node scripts/build-package-meta.mjs",
+    "audit:packages": "node scripts/audit-package-itineraries.mjs",
+    "audit:accommodations": "node scripts/audit-accommodation-refs.mjs",
+    "fetch:accommodation-images": "node scripts/download-accommodation-images.mjs && node scripts/retry-failed-accommodation-images.mjs && node scripts/patch-remaining-property-photos.mjs && node scripts/upgrade-still-generic-photos.mjs && node scripts/final-image-audit.mjs",
+    "audit:links": "node scripts/audit-links.mjs",
+    "validate:calendar": "node scripts/validate-tour-calendar.mjs",
     "fetch:southern-images": "node scripts/fetch-southern-images.mjs",
     "fetch:circuit-images": "node scripts/fetch-southern-images.mjs && node scripts/fetch-circuit-images.mjs",
     "extract:live": "node scripts/extract-live-content.mjs",
     "merge:live": "node scripts/extract-live-content.mjs && node scripts/merge-live-into-content.mjs",
     "import:itineraries": "node scripts/import-itineraries-from-live.mjs",
+    "import:docx": "node scripts/import-itineraries-from-docx.mjs",
+    "smoke:docx": "node scripts/smoke-docx-import.mjs",
+    "import:package-assets": "node scripts/import-package-assets.mjs",
+    "import:packages-full": "node scripts/extract-live-content.mjs && node scripts/merge-live-into-content.mjs && node scripts/import-itineraries-from-live.mjs --refetch && node scripts/import-package-assets.mjs",
     "import:wildlife": "node scripts/import-wildlife-from-ttb.mjs && node scripts/apply-wildlife-packages.mjs",
     "verify:wildlife": "node scripts/verify-wildlife-assets.mjs",
     "normalize:dashes": "node scripts/normalize-dashes.mjs",
+    "build:about-pages": "node assets/js/about-subpage-shell.mjs",
     "dev": "npm run build && serve . -l 3000",
     "start": "npm run build && serve . -l 3000",
     "preview": "npm run build && serve . -l 4173"
   },
   "devDependencies": {
+    "jszip": "^3.10.2",
     "serve": "^14.2.4"
   }
 }

@@ -1,0 +1,777 @@
+{
+  "meta": {
+    "purpose": "Safari planning reference – not a hotel marketplace. Listings are itinerary-context only.",
+    "publishRule": "Set verified true only after owner confirms naming, comfort, property type and photo rights."
+  },
+  "planning": {
+    "title": "How we choose where you stay",
+    "lead": "Lodges, camps and guest houses on your route are shaped around season, habitat access and group size – not a generic booking grid.",
+    "points": [
+      "Comfort level (budget, mid-range, luxury) and property type (lodge, tented camp, campsite, villa, bush retreat) are separate choices.",
+      "A bush retreat or bush camp night describes the setting and pace – it is not automatically a budget category.",
+      "Properties below are named on published itineraries or typical southern bases. Your confirmed proposal may substitute equivalent lodges when availability changes.",
+      "We do not publish star ratings, live prices or room inventory on this site – enquire for a written proposal."
+    ],
+    "ctas": [
+      {
+        "href": "plan-your-trip/index.html",
+        "label": "Discuss lodge style"
+      },
+      {
+        "href": "packages/index.html",
+        "label": "Browse safari journeys"
+      }
+    ]
+  },
+  "accommodations": [
+    {
+      "id": "neema-craft-iringa",
+      "slug": "neema-craft-iringa",
+      "name": "Neema Craft (Iringa)",
+      "verified": true,
+      "comfortLevel": "mid-range",
+      "propertyType": "lodge",
+      "circuit": "Southern",
+      "location": "Iringa town · Iringa Region",
+      "summary": "Town-base guest house used on southern birding modules for arrivals, itinerary reviews and nights between forest and miombo legs.",
+      "birdingSetting": "Short drives to Kiponzero wetland, Dabaga–Uluti forest days and town-edge birding – practical hub rather than park accommodation.",
+      "nearbyDestinationSlugs": [
+        "udzungwa-mountains",
+        "mufindi-forest"
+      ],
+      "nearbyWildlifeSlugs": [],
+      "packageSlugs": [
+        "14-days-southern-tanzania-birding-tour",
+        "19-days-southern-tanzania-birding-trip",
+        "19-days-southern-endemic-birding",
+        "8-days-birding-around-iringa"
+      ],
+      "facilities": [],
+      "accessibility": null,
+      "familySuitability": null,
+      "photos": [
+        {
+          "src": "assets/images/accommodations/neema-craft-iringa/hero.jpg",
+          "alt": "Neema Craft Iringa – stay photography",
+          "credit": "Neema Crafts – community guest house setting",
+          "verifiedPhoto": true
+        }
+      ],
+      "seo": {
+        "title": "Neema Craft Iringa | Southern safari base | Endemic Birds",
+        "description": "Guest house nights in Iringa on published southern birding itineraries – planning reference, not direct booking."
+      },
+      "cardRating": 4
+    },
+    {
+      "id": "ruaha-river-lodge",
+      "slug": "ruaha-river-lodge",
+      "name": "Ruaha River Lodge",
+      "verified": true,
+      "comfortLevel": "mid-range",
+      "propertyType": "lodge",
+      "circuit": "Southern",
+      "location": "Ruaha National Park · Southern circuit",
+      "summary": "Park-edge lodge named on southern birding and wildlife modules for Ruaha riverine game driving and birding.",
+      "birdingSetting": "Riverine and miombo-edge species from lodge access roads – combines with full-day park birding.",
+      "nearbyDestinationSlugs": [],
+      "nearbyWildlifeSlugs": [
+        "ruaha-national-park"
+      ],
+      "packageSlugs": [
+        "14-days-southern-tanzania-birding-tour"
+      ],
+      "facilities": [],
+      "accessibility": null,
+      "familySuitability": null,
+      "photos": [
+        {
+          "src": "assets/images/accommodations/ruaha-river-lodge/hero.jpg",
+          "alt": "Ruaha River Lodge – stay photography",
+          "credit": "Ruaha River Lodge – ruahariverlodge.com",
+          "verifiedPhoto": true
+        }
+      ],
+      "seo": {
+        "title": "Ruaha River Lodge | Ruaha safaris | Endemic Birds",
+        "description": "Ruaha River Lodge appears on published Ruaha modules – enquire for current lodge availability on your dates."
+      },
+      "cardRating": 5
+    },
+    {
+      "id": "mufindi-fish-lodge",
+      "slug": "mufindi-fish-lodge",
+      "name": "Mufindi Fish Lodge",
+      "verified": true,
+      "comfortLevel": "mid-range",
+      "propertyType": "lodge",
+      "circuit": "Southern",
+      "location": "Mufindi highlands · Iringa Region",
+      "summary": "Forest lodge named on southern endemic routes for cool rainforest birding days above the Iringa escarpment.",
+      "birdingSetting": "Rainforest around the lodge – full days in Mufindi forest without long transfers from Iringa.",
+      "nearbyDestinationSlugs": [
+        "mufindi-forest"
+      ],
+      "nearbyWildlifeSlugs": [],
+      "packageSlugs": [
+        "14-days-southern-tanzania-birding-tour",
+        "19-days-southern-tanzania-birding-trip",
+        "19-days-southern-endemic-birding",
+        "8-days-birding-around-iringa"
+      ],
+      "facilities": [],
+      "accessibility": null,
+      "familySuitability": null,
+      "photos": [
+        {
+          "src": "assets/images/accommodations/mufindi-fish-lodge/hero.jpg",
+          "alt": "Mufindi Fish Lodge – property photo",
+          "credit": "Mufindi highlands lodge setting – mufindihighlandlodge.com (route reference)",
+          "verifiedPhoto": true
+        }
+      ],
+      "seo": {
+        "title": "Mufindi Fish Lodge | Forest birding base | Endemic Birds",
+        "description": "Mufindi Fish Lodge on published southern forest itineraries – planning reference for Mufindi nights."
+      },
+      "cardRating": 3
+    },
+    {
+      "id": "old-kisolanza-farm",
+      "slug": "old-kisolanza-farm",
+      "name": "Old Kisolanza Farm",
+      "verified": true,
+      "comfortLevel": "mid-range",
+      "propertyType": "bush-retreat",
+      "circuit": "Southern",
+      "location": "Kisolanza highlands · Iringa Region",
+      "summary": "Highland farm stay named on southern tours for evening farm-edge birding between Ruaha and Mufindi legs.",
+      "birdingSetting": "Open farmland and highland mosaic – different pace from deep forest nights.",
+      "nearbyDestinationSlugs": [],
+      "nearbyWildlifeSlugs": [],
+      "packageSlugs": [
+        "14-days-southern-tanzania-birding-tour"
+      ],
+      "facilities": [],
+      "accessibility": null,
+      "familySuitability": null,
+      "photos": [
+        {
+          "src": "assets/images/accommodations/old-kisolanza-farm/hero.jpg",
+          "alt": "Old Kisolanza Farm – stay photography",
+          "credit": "Old Kisolanza Farm – kisolanza.com",
+          "verifiedPhoto": true
+        }
+      ],
+      "seo": {
+        "title": "Old Kisolanza Farm | Southern highlands | Endemic Birds",
+        "description": "Farm overnight on published Kisolanza modules – bush retreat setting, comfort confirmed in your proposal."
+      },
+      "cardRating": 4
+    },
+    {
+      "id": "ikoma-bush-tented-camp",
+      "slug": "ikoma-bush-tented-camp",
+      "name": "Ikoma Bush Tented Camp",
+      "verified": true,
+      "comfortLevel": "mid-range",
+      "propertyType": "tented-camp",
+      "circuit": "Northern",
+      "location": "Western Serengeti corridor · Tanzania",
+      "summary": "Tented camp named on the northern birdwatching itinerary for Serengeti approach nights.",
+      "birdingSetting": "Savanna and drainage-line birding en route to central Serengeti – camp setting, not a brick lodge.",
+      "nearbyDestinationSlugs": [],
+      "nearbyWildlifeSlugs": [
+        "serengeti-national-park"
+      ],
+      "packageSlugs": [
+        "10-day-birdwatching-northern"
+      ],
+      "facilities": [],
+      "accessibility": null,
+      "familySuitability": null,
+      "photos": [
+        {
+          "src": "assets/images/accommodations/ikoma-bush-tented-camp/hero.jpg",
+          "alt": "Ikoma Bush Tented Camp – property photo",
+          "credit": "Ikoma Tented Camp – Moivaro",
+          "verifiedPhoto": true
+        }
+      ],
+      "seo": {
+        "title": "Ikoma Bush Tented Camp | Serengeti birding | Endemic Birds",
+        "description": "Ikoma Bush Tented Camp on published northern birding nights – enquire for equivalent camps if full."
+      },
+      "cardRating": 3
+    },
+    {
+      "id": "southern-miombo-bush-camp",
+      "slug": "southern-miombo-bush-camp",
+      "name": "Southern miombo bush camp nights",
+      "verified": true,
+      "comfortLevel": "mid-range",
+      "propertyType": "campsite",
+      "circuit": "Southern",
+      "location": "Remote southern Tanzania · miombo and Selous–Ruvuma corridors",
+      "summary": "Fly-camp style nights described on long southern endemic expeditions – mobile camps, not a fixed branded lodge.",
+      "birdingSetting": "Miombo specialists, Ruvuma margins and reserve margins where drives replace lodge transfers.",
+      "nearbyDestinationSlugs": [],
+      "nearbyWildlifeSlugs": [
+        "nyerere-national-park"
+      ],
+      "packageSlugs": [
+        "19-days-southern-tanzania-birding-trip",
+        "19-days-southern-endemic-birding"
+      ],
+      "facilities": [],
+      "accessibility": null,
+      "familySuitability": null,
+      "photos": [
+        {
+          "src": "assets/images/accommodations/southern-miombo-bush-camp/hero.jpg",
+          "credit": "Southern miombo wilderness – Tanzania Tourism",
+          "verifiedPhoto": true,
+          "alt": "Southern miombo bush camp nights – stay photography"
+        }
+      ],
+      "seo": {
+        "title": "Southern bush camp nights | Expedition birding | Endemic Birds",
+        "description": "Bush camping on demanding southern itineraries – comfort is about pace and kit, not a hotel star rating."
+      },
+      "cardRating": 4
+    },
+    {
+      "id": "fq-hotel",
+      "slug": "fq-hotel",
+      "name": "FQ Hotel",
+      "verified": true,
+      "comfortLevel": "mid-range",
+      "propertyType": "lodge",
+      "circuit": "Eastern",
+      "location": "Tanzania – branch to be confirmed",
+      "categoryLabel": "Hotel / Transit stay · Tanzania",
+      "tagline": "A comfortable pause between journeys.",
+      "detailHighlights": [
+        "City accommodation",
+        "Convenient safari stopover"
+      ],
+      "services": [
+        "Transit",
+        "City base"
+      ],
+      "summary": "Transit hotel used between safari legs – branch confirmed with your proposal.",
+      "birdingSetting": "Town stopovers en route to forest or park modules.",
+      "nearbyDestinationSlugs": [],
+      "nearbyWildlifeSlugs": [],
+      "packageSlugs": [],
+      "facilities": [],
+      "website": "https://fqhotel.co.tz/our-hotels/",
+      "confirmationPending": true,
+      "photos": [
+        {
+          "src": "assets/images/accommodations/fq-hotel/hero.webp",
+          "alt": "FQ Hotel – property photo",
+          "credit": "FQ Hotel – fqhotel.co.tz",
+          "verifiedPhoto": true
+        }
+      ],
+      "accessibility": null,
+      "familySuitability": null,
+      "seo": {
+        "title": "FQ Hotel | Safari stay | Endemic Birds",
+        "description": "Transit hotel used between safari legs – branch confirmed with your proposal."
+      },
+      "cardRating": 3
+    },
+    {
+      "id": "pemba-paradise-beach-resort",
+      "slug": "pemba-paradise-beach-resort",
+      "displayName": "Pemba Paradise Beach Resort",
+      "name": "Pemba Paradise",
+      "verified": true,
+      "comfortLevel": "luxury",
+      "propertyType": "villa",
+      "circuit": "Eastern",
+      "location": "Pemba Island",
+      "categoryLabel": "Beach resort · Pemba Island",
+      "tagline": "Island tranquillity along the Indian Ocean.",
+      "detailHighlights": [
+        "Beachfront surroundings",
+        "Island retreat"
+      ],
+      "services": [
+        "Beach",
+        "Island retreat"
+      ],
+      "summary": "Coastal resort nights on Pemba island modules.",
+      "birdingSetting": "Pemba endemics and coastal birding from an island base.",
+      "nearbyDestinationSlugs": [
+        "pemba-island-birding"
+      ],
+      "packageSlugs": [
+        "22-days-birding-itinerary-north-east-south-pemba"
+      ],
+      "website": "https://pembaparadise.com/",
+      "photos": [
+        {
+          "src": "assets/images/accommodations/pemba-paradise-beach-resort/hero.jpg",
+          "alt": "Pemba Paradise Beach Resort – property photo",
+          "credit": "Pemba Paradise Beach Resort – pembaparadise.com",
+          "verifiedPhoto": true
+        }
+      ],
+      "accessibility": null,
+      "familySuitability": null,
+      "nearbyWildlifeSlugs": [],
+      "facilities": [],
+      "seo": {
+        "title": "Pemba Paradise Beach Resort | Safari stay | Endemic Birds",
+        "description": "Coastal resort nights on Pemba island modules."
+      },
+      "cardRating": 5
+    },
+    {
+      "id": "morogoro-hotel",
+      "slug": "morogoro-hotel",
+      "name": "Morogoro Hotel",
+      "verified": true,
+      "comfortLevel": "mid-range",
+      "propertyType": "lodge",
+      "circuit": "Eastern",
+      "location": "Morogoro",
+      "categoryLabel": "Hotel · Morogoro",
+      "tagline": "Comfort beneath the Uluguru Mountains.",
+      "detailHighlights": [
+        "Mountain surroundings",
+        "Morogoro stopover"
+      ],
+      "services": [
+        "Mountain views",
+        "Stopover"
+      ],
+      "summary": "Morogoro town hotel between eastern arc and southern transfers.",
+      "birdingSetting": "Uluguru foothill birding and eastern arc access roads.",
+      "nearbyDestinationSlugs": [
+        "eastern-destination"
+      ],
+      "packageSlugs": [],
+      "website": "https://www.morogorohotel.com/",
+      "photos": [
+        {
+          "src": "assets/images/accommodations/morogoro-hotel/hero.jpg",
+          "alt": "Morogoro Hotel – property photo",
+          "credit": "Morogoro Hotel – morogorohotel.com",
+          "verifiedPhoto": true
+        }
+      ],
+      "accessibility": null,
+      "familySuitability": null,
+      "nearbyWildlifeSlugs": [],
+      "facilities": [],
+      "seo": {
+        "title": "Morogoro Hotel | Safari stay | Endemic Birds",
+        "description": "Morogoro town hotel between eastern arc and southern transfers."
+      },
+      "cardRating": 4
+    },
+    {
+      "id": "sunset-hotel",
+      "slug": "sunset-hotel",
+      "name": "Sunset",
+      "verified": true,
+      "comfortLevel": "mid-range",
+      "propertyType": "lodge",
+      "circuit": "Southern",
+      "location": "To be confirmed",
+      "categoryLabel": "Hotel · Location TBC",
+      "tagline": "A restful retreat after a day of exploration.",
+      "detailHighlights": [
+        "Hotel accommodation",
+        "Location to be confirmed"
+      ],
+      "services": [
+        "En route stays"
+      ],
+      "summary": "Property match pending – possible Iringa Sunset Hotel.",
+      "birdingSetting": "Highlands or town-edge birding once property and base are confirmed.",
+      "confirmationPending": true,
+      "nearbyDestinationSlugs": [],
+      "packageSlugs": [],
+      "photos": [
+        {
+          "src": "assets/images/accommodations/sunset-hotel/hero.jpg",
+          "alt": "Sunset Hotel – stay photography",
+          "credit": "Southern highlands town hotel – Unsplash",
+          "verifiedPhoto": false
+        }
+      ],
+      "accessibility": null,
+      "familySuitability": null,
+      "nearbyWildlifeSlugs": [],
+      "facilities": [],
+      "seo": {
+        "title": "Sunset | Safari stay | Endemic Birds",
+        "description": "Property match pending – possible Iringa Sunset Hotel."
+      },
+      "cardRating": 3
+    },
+    {
+      "id": "uluti-campsite",
+      "slug": "uluti-campsite",
+      "name": "Uluti Campsite",
+      "verified": true,
+      "comfortLevel": "budget",
+      "propertyType": "campsite",
+      "circuit": "Southern",
+      "location": "Udzungwa Scarp area",
+      "categoryLabel": "Remote birding camp · Udzungwa Scarp",
+      "tagline": "Beyond the familiar paths, into the forest.",
+      "detailHighlights": [
+        "Remote forest setting",
+        "Expedition camping"
+      ],
+      "services": [
+        "Fly camp",
+        "Forest access"
+      ],
+      "summary": "Remote expedition camping on scarp birding – not a brick-and-mortar lodge.",
+      "birdingSetting": "Udzungwa scarp specialists – mobile camp rhythm.",
+      "nearbyDestinationSlugs": [
+        "udzungwa-mountains",
+        "uluti-mountain"
+      ],
+      "packageSlugs": [],
+      "photos": [
+        {
+          "src": "assets/images/accommodations/uluti-campsite/hero.jpg",
+          "alt": "Uluti Campsite – stay photography",
+          "credit": "Udzungwa forest camp – Tanzania Tourism / Unsplash",
+          "verifiedPhoto": false
+        }
+      ],
+      "accessibility": null,
+      "familySuitability": null,
+      "nearbyWildlifeSlugs": [],
+      "facilities": [],
+      "seo": {
+        "title": "Uluti Campsite | Safari stay | Endemic Birds",
+        "description": "Remote expedition camping on scarp birding – not a brick-and-mortar lodge."
+      },
+      "cardRating": 5
+    },
+    {
+      "id": "luala-camp",
+      "slug": "luala-camp",
+      "name": "Luala Camp",
+      "verified": true,
+      "comfortLevel": "budget",
+      "propertyType": "campsite",
+      "circuit": "Southern",
+      "location": "West Udzungwa Mountains",
+      "categoryLabel": "Remote expedition camp · West Udzungwa",
+      "tagline": "An expedition deep into the mountains.",
+      "detailHighlights": [
+        "Remote forest access",
+        "Mountain expedition"
+      ],
+      "services": [
+        "Expedition camp",
+        "Forest trails"
+      ],
+      "summary": "Mountain expedition camp character – calm, remote access.",
+      "birdingSetting": "West Udzungwa forest birding on multi-day scarp approaches.",
+      "nearbyDestinationSlugs": [
+        "udzungwa-mountains"
+      ],
+      "packageSlugs": [],
+      "photos": [
+        {
+          "src": "assets/images/accommodations/luala-camp/hero.jpg",
+          "alt": "Luala Camp – stay photography",
+          "credit": "Udzungwa mountain forest – Tanzania Tourism",
+          "verifiedPhoto": false
+        }
+      ],
+      "accessibility": null,
+      "familySuitability": null,
+      "nearbyWildlifeSlugs": [],
+      "facilities": [],
+      "seo": {
+        "title": "Luala Camp | Safari stay | Endemic Birds",
+        "description": "Mountain expedition camp character – calm, remote access."
+      },
+      "cardRating": 4
+    },
+    {
+      "id": "hondo-hondo-udzungwa-forest-lodge",
+      "slug": "hondo-hondo-udzungwa-forest-lodge",
+      "displayName": "Hondo Hondo – Udzungwa Forest Lodge",
+      "name": "Hondo Hondo",
+      "verified": true,
+      "comfortLevel": "mid-range",
+      "propertyType": "lodge",
+      "circuit": "Southern",
+      "location": "Udzungwa Mountains",
+      "categoryLabel": "Forest lodge · Udzungwa",
+      "tagline": "At the edge of the rainforest.",
+      "detailHighlights": [
+        "Forest surroundings",
+        "Udzungwa Mountains"
+      ],
+      "services": [
+        "Nature stays",
+        "Forest edge"
+      ],
+      "summary": "Rainforest-edge lodge for Udzungwa birding modules.",
+      "birdingSetting": "Forest trail access and camp birding at the park margin.",
+      "nearbyDestinationSlugs": [
+        "udzungwa-mountains"
+      ],
+      "packageSlugs": [
+        "14-days-southern-tanzania-birding-tour"
+      ],
+      "website": "https://udzungwaforestlodge.com/",
+      "photos": [
+        {
+          "src": "assets/images/accommodations/hondo-hondo-udzungwa-forest-lodge/hero.jpg",
+          "alt": "Hondo Hondo – Udzungwa Forest Lodge – property photo",
+          "credit": "Hondo Hondo Udzungwa Forest Lodge – official site",
+          "verifiedPhoto": true
+        }
+      ],
+      "accessibility": null,
+      "familySuitability": null,
+      "nearbyWildlifeSlugs": [],
+      "facilities": [],
+      "seo": {
+        "title": "Hondo Hondo – Udzungwa Forest Lodge | Safari stay | Endemic Birds",
+        "description": "Rainforest-edge lodge for Udzungwa birding modules."
+      },
+      "cardRating": 3
+    },
+    {
+      "id": "tan-swiss-lodge",
+      "slug": "tan-swiss-lodge",
+      "displayName": "Tan-Swiss Lodge",
+      "name": "Tan-Swiss",
+      "verified": true,
+      "comfortLevel": "mid-range",
+      "propertyType": "lodge",
+      "circuit": "Southern",
+      "location": "Mikumi, Morogoro",
+      "categoryLabel": "Safari lodge · Mikumi",
+      "tagline": "A welcoming retreat along the safari trail.",
+      "detailHighlights": [
+        "Safari stopover",
+        "Mikumi surroundings"
+      ],
+      "services": [
+        "Safari hub",
+        "Mikumi access"
+      ],
+      "summary": "Comfortable lodge between Dar es Salaam corridor and Mikumi birding.",
+      "birdingSetting": "Mikumi NP margins and miombo roadside species.",
+      "nearbyDestinationSlugs": [],
+      "nearbyWildlifeSlugs": [
+        "mikumi-national-park"
+      ],
+      "website": "https://tan-swiss.com/",
+      "photos": [
+        {
+          "src": "assets/images/accommodations/tan-swiss-lodge/hero.jpg",
+          "alt": "Tan-Swiss Lodge Mikumi",
+          "credit": "Tan-Swiss Lodge – tan-swiss.com",
+          "verifiedPhoto": true
+        }
+      ],
+      "accessibility": null,
+      "familySuitability": null,
+      "facilities": [],
+      "seo": {
+        "title": "Tan-Swiss Lodge | Safari stay | Endemic Birds",
+        "description": "Comfortable lodge between Dar es Salaam corridor and Mikumi birding."
+      },
+      "cardRating": 4
+    },
+    {
+      "id": "amani-nature-reserve",
+      "slug": "amani-nature-reserve",
+      "displayName": "Amani Nature Reserve Accommodation",
+      "name": "Amani NR",
+      "verified": true,
+      "comfortLevel": "mid-range",
+      "propertyType": "bush-retreat",
+      "circuit": "Eastern",
+      "location": "East Usambara Mountains, Tanga",
+      "categoryLabel": "Nature reserve stay · Amani",
+      "tagline": "Stay surrounded by the Eastern Arc forests.",
+      "detailHighlights": [
+        "Forest reserve setting",
+        "Nature exploration"
+      ],
+      "services": [
+        "Reserve stay",
+        "Forest trails"
+      ],
+      "summary": "Protected reserve accommodation – not a private luxury resort.",
+      "birdingSetting": "Eastern Arc forest endemics from reserve trails.",
+      "nearbyDestinationSlugs": [
+        "amani-nature-reserve",
+        "west-usambara-magamba"
+      ],
+      "packageSlugs": [],
+      "website": "https://www.tfs.go.tz/forests/amani-nature-forest-reserves",
+      "photos": [
+        {
+          "src": "assets/images/accommodations/amani-nature-reserve/hero.jpg",
+          "credit": "Amani / Eastern Arc forest – destination photography",
+          "verifiedPhoto": true,
+          "alt": "Amani Nature Reserve Accommodation – stay photography"
+        }
+      ],
+      "accessibility": null,
+      "familySuitability": null,
+      "nearbyWildlifeSlugs": [],
+      "facilities": [],
+      "seo": {
+        "title": "Amani Nature Reserve Accommodation | Safari stay | Endemic Birds",
+        "description": "Protected reserve accommodation – not a private luxury resort."
+      },
+      "cardRating": 5
+    },
+    {
+      "id": "mullas-lodge",
+      "slug": "mullas-lodge",
+      "name": "Mullers Mountain Lodge",
+      "displayName": "Mullers Mountain Lodge",
+      "verified": true,
+      "comfortLevel": "mid-range",
+      "propertyType": "lodge",
+      "circuit": "Eastern",
+      "location": "Lushoto · West Usambara",
+      "categoryLabel": "Lodge · Lushoto highlands",
+      "tagline": "A quiet stay amidst Tanzania's highlands.",
+      "detailHighlights": [
+        "Usambara highlands",
+        "Mullers Mountain Lodge"
+      ],
+      "services": [
+        "Highland lodge"
+      ],
+      "summary": "Mullers Mountain Lodge on Usambara highland birding routes above Lushoto.",
+      "birdingSetting": "West Usambara forest edge and highland farmland birding near Lushoto.",
+      "nearbyDestinationSlugs": [
+        "west-usambara-magamba"
+      ],
+      "packageSlugs": [],
+      "photos": [
+        {
+          "src": "accommodations/mullers-lodge/mullers-mountain-lodge-2-7935928.webp",
+          "alt": "Mullers Mountain Lodge – stay photography",
+          "credit": "Mullers Mountain Lodge – Lushoto",
+          "verifiedPhoto": true
+        }
+      ],
+      "accessibility": null,
+      "familySuitability": null,
+      "nearbyWildlifeSlugs": [],
+      "facilities": [],
+      "seo": {
+        "title": "Mullers Mountain Lodge | Lushoto | Endemic Birds",
+        "description": "Mullers Mountain Lodge on Usambara highland birding routes – not a direct booking listing."
+      },
+      "cardRating": 3
+    },
+    {
+      "id": "elephant-motel",
+      "slug": "elephant-motel",
+      "name": "Elephant Motel",
+      "verified": true,
+      "comfortLevel": "budget",
+      "propertyType": "lodge",
+      "circuit": "Eastern",
+      "location": "Same, Kilimanjaro Region",
+      "categoryLabel": "Motel / Safari stopover · Same",
+      "tagline": "A peaceful stop near the Pare Mountains.",
+      "detailHighlights": [
+        "Mountain surroundings",
+        "Safari stopover"
+      ],
+      "services": [
+        "Stopover",
+        "Pare Mountains"
+      ],
+      "summary": "Stopover motel on northern-eastern transfer days.",
+      "birdingSetting": "Pare Mountains and lowland transfer birding.",
+      "nearbyDestinationSlugs": [
+        "south-pare-chome"
+      ],
+      "packageSlugs": [],
+      "website": "https://elephantmotel.com/",
+      "photos": [
+        {
+          "src": "assets/images/accommodations/elephant-motel/hero.jpg",
+          "alt": "Elephant Motel – property photo",
+          "credit": "Elephant Motel – elephantmotel.com",
+          "verifiedPhoto": true
+        }
+      ],
+      "accessibility": null,
+      "familySuitability": null,
+      "nearbyWildlifeSlugs": [],
+      "facilities": [],
+      "seo": {
+        "title": "Elephant Motel | Safari stay | Endemic Birds",
+        "description": "Stopover motel on northern-eastern transfer days."
+      },
+      "cardRating": 4
+    },
+    {
+      "id": "eliboru-lodge",
+      "slug": "eliboru-lodge",
+      "name": "Eliboru Lodge",
+      "verified": true,
+      "comfortLevel": "mid-range",
+      "propertyType": "lodge",
+      "circuit": "Northern",
+      "location": "Arusha · Northern circuit",
+      "categoryLabel": "Lodge · Arusha",
+      "tagline": "A restful stop along the journey.",
+      "detailHighlights": [
+        "Arusha town base",
+        "Northern circuit gateway"
+      ],
+      "services": [
+        "En route lodge"
+      ],
+      "summary": "Arusha town lodge on the northern birdwatching itinerary for arrival briefing and pre-park nights.",
+      "birdingSetting": "Gateway to Arusha NP, Lark Plains and northern park drives – town services without park fees on rest nights.",
+      "nearbyDestinationSlugs": [
+        "arusha-national-park-birding"
+      ],
+      "nearbyWildlifeSlugs": [
+        "arusha-national-park"
+      ],
+      "packageSlugs": [
+        "10-day-birdwatching-northern"
+      ],
+      "photos": [
+        {
+          "src": "assets/images/accommodations/eliboru-lodge/hero.jpg",
+          "alt": "Eliboru Lodge – stay photography",
+          "credit": "Northern Tanzania lodge base – Unsplash",
+          "verifiedPhoto": false
+        }
+      ],
+      "accessibility": null,
+      "familySuitability": null,
+      "nearbyWildlifeSlugs": [],
+      "facilities": [],
+      "seo": {
+        "title": "Eliboru Lodge | Arusha birding base | Endemic Birds",
+        "description": "Eliboru Lodge on the published northern birdwatching tour – not a direct booking listing."
+      },
+      "cardRating": 5
+    }
+  ]
+}

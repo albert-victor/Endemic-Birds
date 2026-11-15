@@ -287,14 +287,28 @@
       );
 
       const partnersHost = mount.querySelector("[data-home-partners]");
-      if (partnersHost) partnersHost.innerHTML = renderPartners(home.partners || []);
+      const partnersSection = document.querySelector("[data-home-partners-section]");
+      fetch(asset("content/partners.json"))
+        .then((r) => (r.ok ? r.json() : { commercial: { current: [] } }))
+        .then((pdata) => {
+          const verified = (pdata.commercial?.current || []).filter((p) => p.verified === true);
+          const html = renderPartners(
+            verified.map((p) => ({
+              name: p.name,
+              logo: p.logo,
+            }))
+          );
+          if (partnersHost) partnersHost.innerHTML = html;
+          if (partnersSection) partnersSection.hidden = !verified.length;
+        })
+        .catch(() => {
+          if (partnersSection) partnersSection.hidden = true;
+        });
 
       const reviewsHost = mount.querySelector("[data-home-reviews]");
       if (reviewsHost) reviewsHost.innerHTML = renderReviews(home.reviews || []);
 
       if (window.initHeroPush) window.initHeroPush();
-      if (window.initCarousels) window.initCarousels();
-      if (window.initPageMotion) window.initPageMotion();
       if (window.EndemicUI?.initCardMedia) window.EndemicUI.initCardMedia(mount);
 
       document.dispatchEvent(new CustomEvent("site:content-rendered"));
