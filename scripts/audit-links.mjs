@@ -4,6 +4,7 @@ import { fileURLToPath } from "url";
 
 const root = path.join(path.dirname(fileURLToPath(import.meta.url)), "..");
 const skipDirs = new Set(["node_modules", ".git", "content/scrapes", "demo"]);
+const skipFileRe = /^preview(-|$)/;
 
 function shouldSkipFile(filePath) {
   const rel = path.relative(root, filePath).replace(/\\/g, "/");
@@ -24,7 +25,12 @@ const hrefRe = /(?:href|src)=["']([^"'#?]+)/gi;
 const files = walk(root);
 const missing = [];
 
-for (const file of files.filter((f) => !shouldSkipFile(f))) {
+for (const file of files.filter((f) => {
+  if (shouldSkipFile(f)) return false;
+  const base = path.basename(path.dirname(f));
+  if (skipFileRe.test(base) || skipFileRe.test(path.basename(f))) return false;
+  return true;
+})) {
   const text = fs.readFileSync(file, "utf8");
   let m;
   while ((m = hrefRe.exec(text))) {

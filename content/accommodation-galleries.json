@@ -1,6 +1,6 @@
 {
   "meta": {
-    "builtAt": "2026-11-16T13:36:57.398Z",
+    "builtAt": "2026-11-16T14:29:25.498Z",
     "note": "Built from accommodations/{slug} and assets/images/accommodations/{slug}. Run: npm run build:accommodation-galleries"
   },
   "galleries": {

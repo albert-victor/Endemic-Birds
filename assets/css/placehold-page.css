@@ -5,6 +5,12 @@ body.has-placehold-splash {
   height: 100dvh;
 }
 
+body.has-placehold-splash #site-header,
+body.has-placehold-splash .fab-whatsapp {
+  visibility: visible !important;
+  pointer-events: auto !important;
+}
+
 body.has-placehold-splash #main {
   padding: 0;
   max-width: none;

@@ -77,7 +77,17 @@
   Promise.all([loadJson("accommodations.json"), loadJson("packages.json")])
     .then(async ([data, packages]) => {
       const item = (data.accommodations || []).find((a) => a.slug === slug && a.verified);
-      if (!item || !main) return;
+      if (!main) return;
+      if (!item) {
+        const show = window.showEndemicPlacehold;
+        if (typeof show === "function") {
+          await show("not-found");
+        } else if (window.EndemicPlacehold?.ensureLoaded && window.EndemicPlacehold?.mount) {
+          await window.EndemicPlacehold.ensureLoaded();
+          window.EndemicPlacehold.mount(main, "not-found");
+        }
+        return;
+      }
 
       const hero = await heroUrl(item.photos?.[0]?.src);
       const related = (item.packageSlugs || [])

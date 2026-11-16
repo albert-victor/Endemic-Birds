@@ -44,6 +44,38 @@
     return res.json();
   }
 
+  async function showDetailPlacehold(variant = "not-found") {
+    const main = document.getElementById("main");
+    if (!main) return;
+    try {
+      if (window.EndemicPlacehold?.ensureLoaded) await window.EndemicPlacehold.ensureLoaded();
+      else if (!window.EndemicPlacehold?.mount) {
+        const prefix = window.__ASSET_PREFIX__ || "/";
+        const a = (p) => prefix + String(p).replace(/^\//, "");
+        if (!document.querySelector('link[href*="placehold-page.css"]')) {
+          const link = document.createElement("link");
+          link.rel = "stylesheet";
+          link.href = a("assets/css/placehold-page.css");
+          document.head.appendChild(link);
+        }
+        await new Promise((resolve, reject) => {
+          const s = document.createElement("script");
+          s.src = a("assets/js/placehold-page.js");
+          s.onload = () => resolve();
+          s.onerror = () => reject(new Error("placehold load failed"));
+          document.head.appendChild(s);
+        });
+      }
+      if (window.EndemicPlacehold?.mount) window.EndemicPlacehold.mount(main, variant);
+      else main.innerHTML = `<div class="container section"><h1>Page not found</h1></div>`;
+    } catch (e) {
+      console.error(e);
+      main.innerHTML = `<div class="container section"><h1>Page not found</h1></div>`;
+    }
+  }
+
+  window.showEndemicPlacehold = showDetailPlacehold;
+
   function breadcrumbs(items) {
     if (!items?.length) return "";
     const crumbs = items
@@ -203,7 +235,7 @@
     ]);
     const pkg = packages.find((p) => p.slug === slug);
     if (!pkg) {
-      document.getElementById("main").innerHTML = `<div class="container section"><h1>Journey not found</h1></div>`;
+      await showDetailPlacehold("not-found");
       return;
     }
     const destMap = Object.fromEntries(destinations.map((d) => [d.id, d]));
@@ -409,7 +441,7 @@
     if (!site) {
       const found = await findCircuitSite(slug);
       if (!found) {
-        document.getElementById("main").innerHTML = `<div class="container section"><h1>Site not found</h1></div>`;
+        await showDetailPlacehold("not-found");
         return;
       }
       data = found.data;
@@ -550,7 +582,7 @@
     ]);
     const dest = destinations.find((d) => d.slug === slug);
     if (!dest) {
-      document.getElementById("main").innerHTML = `<div class="container section"><h1>Destination not found</h1></div>`;
+      await showDetailPlacehold("not-found");
       return;
     }
     const destMap = Object.fromEntries(destinations.map((d) => [d.id, d]));
@@ -639,7 +671,7 @@
     ]);
     const dest = dests.find((d) => d.slug === slug);
     if (!dest) {
-      document.getElementById("main").innerHTML = `<div class="container section"><h1>Destination not found</h1></div>`;
+      await showDetailPlacehold("not-found");
       return;
     }
     const linkedActs = activities.filter((a) => (dest.activitySlugs || []).includes(a.slug));
@@ -711,7 +743,7 @@
     ]);
     const act = activities.find((a) => a.slug === slug);
     if (!act) {
-      document.getElementById("main").innerHTML = `<div class="container section"><h1>Activity not found</h1></div>`;
+      await showDetailPlacehold("not-found");
       return;
     }
     const destMap = Object.fromEntries(dests.map((d) => [d.slug, d]));

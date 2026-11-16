@@ -73,6 +73,13 @@
     document.head.appendChild(pat);
   }
 
+  if (!document.querySelector('link[href*="placehold-page.css"]')) {
+    const ph = document.createElement("link");
+    ph.rel = "stylesheet";
+    ph.href = asset("assets/css/placehold-page.css");
+    document.head.appendChild(ph);
+  }
+
   const destinationHubLinks = [
     {
       href: "destinations/birding/index.html#destinations-grid",

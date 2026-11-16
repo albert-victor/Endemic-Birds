@@ -19,6 +19,7 @@
     "import:itineraries": "node scripts/import-itineraries-from-live.mjs",
     "import:docx": "node scripts/import-itineraries-from-docx.mjs",
     "smoke:docx": "node scripts/smoke-docx-import.mjs",
+    "smoke:site": "node scripts/smoke-site.mjs",
     "import:package-assets": "node scripts/import-package-assets.mjs",
     "import:packages-full": "node scripts/extract-live-content.mjs && node scripts/merge-live-into-content.mjs && node scripts/import-itineraries-from-live.mjs --refetch && node scripts/import-package-assets.mjs",
     "import:wildlife": "node scripts/import-wildlife-from-ttb.mjs && node scripts/apply-wildlife-packages.mjs",

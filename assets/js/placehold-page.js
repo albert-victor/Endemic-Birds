@@ -62,9 +62,7 @@
     if (!mainEl) return;
     document.body.classList.add("has-placehold-splash");
     mainEl.innerHTML = renderPlacehold(variant);
-    document.title = document.title.includes("|")
-      ? document.title.replace(/^[^|]+/, "Page in preparation ")
-      : "Page in preparation | Endemic Birds Tanzania";
+    document.title = "Page in preparation | Endemic Birds Tanzania";
     const meta = document.querySelector('meta[name="description"]');
     if (meta) {
       meta.setAttribute(
@@ -74,10 +72,39 @@
     }
   }
 
+  function ensureLoaded() {
+    if (window.EndemicPlacehold?.mount) return Promise.resolve();
+    const prefix = window.__ASSET_PREFIX__ || "/";
+    const a = (p) => (p.startsWith("http") ? p : prefix + p.replace(/^\//, ""));
+
+    if (!document.querySelector('link[href*="placehold-page.css"]')) {
+      const link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.href = a("assets/css/placehold-page.css");
+      document.head.appendChild(link);
+    }
+
+    return new Promise((resolve, reject) => {
+      const existing = document.querySelector('script[src*="placehold-page.js"]');
+      if (existing) {
+        existing.addEventListener("load", () => resolve(), { once: true });
+        existing.addEventListener("error", () => reject(new Error("placehold-page.js failed")), { once: true });
+        if (window.EndemicPlacehold?.mount) resolve();
+        return;
+      }
+      const script = document.createElement("script");
+      script.src = a("assets/js/placehold-page.js");
+      script.onload = () => resolve();
+      script.onerror = () => reject(new Error("placehold-page.js failed"));
+      document.head.appendChild(script);
+    });
+  }
+
   window.EndemicPlacehold = {
     VARIANTS,
     DEFAULT_PHOTO,
     renderPlacehold,
     mount,
+    ensureLoaded,
   };
 })();
