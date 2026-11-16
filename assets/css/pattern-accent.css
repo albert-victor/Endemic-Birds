@@ -8,6 +8,11 @@
 }
 
 /* Coloured fills only (not ghost / outline / hero rect) */
+.placehold-page .btn-solid::after,
+.placehold-page .btn-solid::before {
+  display: none;
+}
+
 .btn-solid,
 .btn-primary,
 .nav-book--safari,

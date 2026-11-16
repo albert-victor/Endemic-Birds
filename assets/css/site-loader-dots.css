@@ -1,0 +1,182 @@
+/* Site loader – logo + three dots (orange, green, charcoal) */
+
+:root {
+  --loader-dot-orange: #e85d3a;
+  --loader-dot-green: #1c4a3a;
+  --loader-dot-charcoal: #3c3935;
+  --loader-ease: cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+html.is-loading {
+  overflow: hidden;
+}
+
+html.is-loading.is-branded-entry body > :not(.site-loader):not(.skip-link):not(.fab-whatsapp) {
+  visibility: hidden;
+}
+
+.site-loader {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: grid;
+  place-items: center;
+  background: var(--color-bg, #faf9f7);
+  transition:
+    opacity 0.5s var(--loader-ease),
+    visibility 0.5s;
+}
+
+.site-loader.is-done {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.site-loader-inner {
+  text-align: center;
+}
+
+.eb-loader-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.1rem;
+  text-align: center;
+}
+
+.eb-loader-stack.is-sequenced .eb-loader-logo-wrap {
+  animation: eb-loader-logo-rise 0.48s var(--loader-ease) both;
+}
+
+.eb-loader-logo-wrap {
+  display: block;
+  line-height: 0;
+}
+
+.eb-loader-logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  display: block;
+  box-shadow: none;
+}
+
+.eb-loader-stack.is-sequenced .eb-loader-dots {
+  opacity: 0;
+  animation: eb-loader-dots-reveal 0.4s var(--loader-ease) 0.42s both;
+}
+
+@keyframes eb-loader-logo-rise {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes eb-loader-dots-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.eb-loader-dots {
+  display: inline-flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 0.55rem;
+  padding: 0.15rem 0.35rem;
+}
+
+.eb-loader-dots__dot {
+  width: 0.72rem;
+  height: 0.72rem;
+  border-radius: 50%;
+  animation: eb-dot-bounce 0.9s var(--loader-ease) infinite;
+  box-shadow: none;
+}
+
+.eb-loader-stack.is-sequenced .eb-loader-dots__dot {
+  animation-play-state: paused;
+}
+
+.eb-loader-stack.is-sequenced.is-playing .eb-loader-dots__dot,
+.eb-loader-stack:not(.is-sequenced) .eb-loader-dots__dot {
+  animation-play-state: running;
+}
+
+.eb-loader-dots__dot--orange {
+  background: var(--loader-dot-orange);
+  animation-delay: 0s;
+}
+
+.eb-loader-dots__dot--green {
+  background: var(--loader-dot-green);
+  animation-delay: 0.14s;
+}
+
+.eb-loader-dots__dot--charcoal {
+  background: var(--loader-dot-charcoal);
+  animation-delay: 0.28s;
+}
+
+@keyframes eb-dot-bounce {
+  0%,
+  70%,
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 0.7;
+  }
+  35% {
+    transform: translateY(-0.65rem) scale(1.06);
+    opacity: 1;
+  }
+}
+
+/* Inline mounts (about subpages, catalog pockets) */
+.eb-loader-inline {
+  display: grid;
+  place-items: center;
+  min-height: 8rem;
+  padding: 2rem 1rem;
+}
+
+.eb-loader-inline .eb-loader-logo {
+  width: 64px;
+  height: 64px;
+}
+
+.eb-loader-inline .eb-loader-dots__dot {
+  width: 0.65rem;
+  height: 0.65rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .eb-loader-dots__dot,
+  .eb-loader-stack.is-sequenced .eb-loader-dots {
+    animation: none !important;
+  }
+
+  .eb-loader-logo-wrap {
+    animation: none !important;
+    opacity: 1;
+    transform: none;
+  }
+
+  .eb-loader-stack.is-sequenced .eb-loader-dots {
+    opacity: 1;
+  }
+
+  .eb-loader-dots__dot {
+    opacity: 0.9;
+  }
+}

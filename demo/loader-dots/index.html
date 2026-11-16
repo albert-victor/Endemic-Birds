@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loader dots demo – Endemic Birds (preview)</title>
+    <meta name="robots" content="noindex" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../preview-luxury/fonts/futura-pt.css" />
+    <link rel="stylesheet" href="loader-dots.css" />
+  </head>
+  <body class="ld-page">
+    <p class="ld-banner">
+      <strong>DEMO ONLY</strong> – loading animation preview. Haijaunganishwa kwenye tovuti halisi bado.
+    </p>
+    <div class="ld-wrap">
+      <h1 class="ld-title">Three-dot loader</h1>
+      <p class="ld-lead">
+        Logo juu (inapanda mara moja, kisha static), dots tatu chini pekee – hakuna maandishi “loading”. Orange,
+        green, charcoal <code>#3C3935</code>, bila drop shadow.
+      </p>
+
+      <div class="ld-static-preview" aria-label="Live preview">
+        <div class="eb-loader-stack eb-loader-stack--static is-playing">
+          <span class="eb-loader-logo-wrap">
+            <img
+              class="eb-loader-logo"
+              src="../../assets/images/from-live-site/brand/bird-logo.png"
+              alt=""
+              width="80"
+              height="80"
+              decoding="async"
+            />
+          </span>
+          <div class="eb-loader-dots" role="status" aria-label="Please wait">
+            <span class="eb-loader-dots__dot eb-loader-dots__dot--orange" aria-hidden="true"></span>
+            <span class="eb-loader-dots__dot eb-loader-dots__dot--green" aria-hidden="true"></span>
+            <span class="eb-loader-dots__dot eb-loader-dots__dot--charcoal" aria-hidden="true"></span>
+          </div>
+        </div>
+        <p class="ld-color-row">
+          <span class="ld-swatch"><i style="background: #e85d3a"></i> Orange</span>
+          <span class="ld-swatch"><i style="background: #1c4a3a"></i> Green</span>
+          <span class="ld-swatch"><i style="background: #3c3935"></i> Charcoal</span>
+        </p>
+      </div>
+
+      <section class="ld-panel" aria-labelledby="ld-full-heading">
+        <h2 id="ld-full-heading">1. Full page – first visit / hard reload</h2>
+        <p>Overlay nzima: logo, kisha dots zinacheza – si “loading” kavu, hakuna maandishi juu.</p>
+        <div class="ld-actions">
+          <button type="button" class="ld-btn ld-btn--primary" data-ld-fullscreen data-ld-ms="2400">
+            Play full-screen load (~2.4s)
+          </button>
+          <button type="button" class="ld-btn" data-ld-fullscreen data-ld-ms="1200">Quick (~1.2s)</button>
+        </div>
+      </section>
+
+      <section class="ld-panel" aria-labelledby="ld-page-heading">
+        <h2 id="ld-page-heading">2. Page content – filters / JSON fetch</h2>
+        <p>Mfano wa eneo la catalog: skeleton nyuma, dots katikati, kisha maudhui yanaingia.</p>
+        <div class="ld-actions">
+          <button
+            type="button"
+            class="ld-btn ld-btn--primary"
+            data-ld-inline
+            data-ld-target="[data-ld-preview-page]"
+            data-ld-ms="2000"
+          >
+            Simulate page load
+          </button>
+        </div>
+        <div class="ld-preview ld-preview--page" data-ld-preview-page>
+          <div class="ld-preview__skeleton" aria-hidden="true"></div>
+          <div data-ld-mount></div>
+          <p class="ld-preview__content">6 journeys match – cards zinaweza kuonekana hapa baada ya load.</p>
+        </div>
+      </section>
+
+      <section class="ld-panel" aria-labelledby="ld-motion-heading">
+        <h2 id="ld-motion-heading">3. Motion variants</h2>
+        <p>Bounce (default) vs wave vs calm – rangi sawa, kasi tofauti kidogo.</p>
+        <div class="ld-actions">
+          <button
+            type="button"
+            class="ld-btn"
+            data-ld-inline
+            data-ld-target="[data-ld-preview-bounce]"
+            data-ld-variant=""
+            data-ld-ms="1600"
+          >
+            Bounce
+          </button>
+          <button
+            type="button"
+            class="ld-btn"
+            data-ld-inline
+            data-ld-target="[data-ld-preview-wave]"
+            data-ld-variant="wave"
+            data-ld-ms="1600"
+          >
+            Wave
+          </button>
+          <button
+            type="button"
+            class="ld-btn"
+            data-ld-inline
+            data-ld-target="[data-ld-preview-calm]"
+            data-ld-variant="calm"
+            data-ld-ms="1600"
+          >
+            Calm / slower
+          </button>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr)); gap: 0.75rem; margin-top: 1rem">
+          <div class="ld-preview" data-ld-preview-bounce style="min-height: 7rem">
+            <div data-ld-mount></div>
+          </div>
+          <div class="ld-preview" data-ld-preview-wave style="min-height: 7rem">
+            <div data-ld-mount></div>
+          </div>
+          <div class="ld-preview" data-ld-preview-calm style="min-height: 7rem">
+            <div data-ld-mount></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ld-panel">
+        <h2>Next step</h2>
+        <p>
+          Baada ya kuidhinisha, tutabadilisha <code>site-loader</code> kwenye home na kuongeza dots inline kwenye catalog /
+          about subpages badala ya “Loading…” plain.
+        </p>
+        <p style="margin-bottom: 0">
+          <a href="../../index.html">← Rudi kwenye tovuti halisi</a>
+        </p>
+      </section>
+    </div>
+    <script src="loader-dots.js" defer></script>
+  </body>
+</html>

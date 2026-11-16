@@ -29,43 +29,8 @@
             Routes built around habitat, endemics and field time – led by guides who know forests, wetlands and miombo.
           </p>
           <div class="hero-actions reveal" data-reveal>
-            <a class="btn btn-solid" href="#destinations">Explore destinations</a>
-            <a class="btn btn-ghost" href="#journeys">View safaris</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section--paper-band" id="destinations" data-catalog-scope>
-        <div class="container catalog-page">
-          <header class="catalog-page-head">
-            <p class="eyebrow">Where we bird</p>
-            <h2 class="section-title reveal" data-reveal>Birding destinations</h2>
-            <p class="section-lead reveal" data-reveal>
-              Every park, forest and reserve on our birding circuit – filter by region and open a site for field notes and linked journeys.
-            </p>
-            <div class="section-head-cta reveal" data-reveal>
-              <a class="btn btn-outline" href="special-birds/index.html">Special birds</a>
-            </div>
-          </header>
-          <form class="filters-bar filters-bar--compact filters-bar--discover" data-filters>
-            <input type="hidden" name="interest" value="birding" />
-            <label class="filters-bar__static">Focus <span class="filters-bar__pill">Birding only</span></label>
-            <label>Circuit
-              <select name="circuit">
-                <option value="all">All circuits</option>
-                <option value="Northern">Northern</option>
-                <option value="Southern">Southern</option>
-                <option value="Eastern">Eastern</option>
-                <option value="Western">Western</option>
-                <option value="North West">North West</option>
-              </select>
-            </label>
-            <button type="button" class="btn btn-outline" data-clear-filters>Reset</button>
-          </form>
-          <div data-catalog="destinations" data-destinations-preset="birding" data-sync-url="false">
-            <p class="catalog-meta"><span data-count>0</span> destinations</p>
-            <div data-catalog-grid class="catalog-grid"></div>
-            <p class="catalog-empty" data-empty hidden>No destinations match – try another circuit.</p>
+            <a class="btn btn-solid" href="#journeys">View safaris</a>
+            <a class="btn btn-ghost" href="#destinations">Explore destinations</a>
           </div>
         </div>
       </section>
@@ -180,6 +145,41 @@
             <p class="catalog-meta"><span data-count>0</span> safaris match</p>
             <div data-catalog-list class="catalog-grid"></div>
             <p class="catalog-empty" data-empty hidden>No safaris match these filters – try resetting or broadening circuit or duration.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--paper-band" id="destinations" data-catalog-scope>
+        <div class="container catalog-page">
+          <header class="catalog-page-head">
+            <p class="eyebrow">Where we bird</p>
+            <h2 class="section-title reveal" data-reveal>Birding destinations</h2>
+            <p class="section-lead reveal" data-reveal>
+              Every park, forest and reserve on our birding circuit – filter by region and open a site for field notes and linked journeys.
+            </p>
+            <div class="section-head-cta reveal" data-reveal>
+              <a class="btn btn-outline" href="special-birds/index.html">Special birds</a>
+            </div>
+          </header>
+          <form class="filters-bar filters-bar--compact filters-bar--discover" data-filters>
+            <input type="hidden" name="interest" value="birding" />
+            <label class="filters-bar__static">Focus <span class="filters-bar__pill">Birding only</span></label>
+            <label>Circuit
+              <select name="circuit">
+                <option value="all">All circuits</option>
+                <option value="Northern">Northern</option>
+                <option value="Southern">Southern</option>
+                <option value="Eastern">Eastern</option>
+                <option value="Western">Western</option>
+                <option value="North West">North West</option>
+              </select>
+            </label>
+            <button type="button" class="btn btn-outline" data-clear-filters>Reset</button>
+          </form>
+          <div data-catalog="destinations" data-destinations-preset="birding" data-sync-url="false">
+            <p class="catalog-meta"><span data-count>0</span> destinations</p>
+            <div data-catalog-grid class="catalog-grid"></div>
+            <p class="catalog-empty" data-empty hidden>No destinations match – try another circuit.</p>
           </div>
         </div>
       </section>

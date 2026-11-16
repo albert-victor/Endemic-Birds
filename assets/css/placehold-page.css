@@ -1,0 +1,280 @@
+/* Cinematic placeholder – one viewport, bird hero, white type */
+
+body.has-placehold-splash {
+  overflow: hidden;
+  height: 100dvh;
+}
+
+body.has-placehold-splash #main {
+  padding: 0;
+  max-width: none;
+}
+
+body.has-placehold-splash .site-footer {
+  display: none;
+}
+
+body.has-placehold-splash:has(.placehold-demo-bar) #main {
+  --placehold-demo-offset: 2.35rem;
+}
+
+body.has-placehold-splash:not(:has(.placehold-demo-bar)) #main {
+  --placehold-demo-offset: 0px;
+}
+
+.placehold-page--splash {
+  --placehold-vh: calc(100dvh - var(--placehold-demo-offset, 0px));
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  min-height: var(--placehold-vh);
+  max-height: var(--placehold-vh);
+  padding:
+    calc(var(--header-height, 4.5rem) + clamp(0.35rem, 2vw, 0.75rem))
+    var(--gutter)
+    clamp(0.75rem, 3vw, 1.25rem);
+  overflow: hidden;
+  color: #fff;
+}
+
+.placehold-page__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.placehold-page__photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 72% 42%;
+  transform: scale(1.02);
+}
+
+.placehold-page__scrim {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      115deg,
+      rgba(8, 7, 6, 0.88) 0%,
+      rgba(18, 14, 11, 0.62) 38%,
+      rgba(12, 10, 8, 0.35) 58%,
+      rgba(6, 5, 4, 0.72) 100%
+    ),
+    linear-gradient(180deg, rgba(10, 8, 6, 0.55) 0%, rgba(10, 8, 6, 0.25) 42%, rgba(8, 6, 5, 0.82) 100%);
+}
+
+.placehold-page__vignette {
+  position: absolute;
+  inset: 0;
+  box-shadow: inset 0 0 min(140px, 22vw) rgba(0, 0, 0, 0.45);
+}
+
+.placehold-page__inner {
+  position: relative;
+  z-index: 1;
+  width: min(36rem, 100%);
+  margin: 0 auto;
+  text-align: center;
+  transform-origin: center center;
+}
+
+.placehold-page__code {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 clamp(0.65rem, 2.5vw, 1rem);
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(6px);
+  font-family: var(--font-body);
+  font-size: clamp(0.72rem, 2.2vw, 0.82rem);
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  color: rgba(255, 255, 255, 0.92);
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.35);
+}
+
+.placehold-page__eyebrow {
+  margin: 0 0 0.55rem;
+  font-family: var(--font-body);
+  font-size: clamp(0.62rem, 1.8vw, 0.68rem);
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.82);
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.35);
+}
+
+.placehold-page__title {
+  margin: 0 0 0.65rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.55rem, 5.8vw, 2.35rem);
+  font-weight: 400;
+  line-height: 1.12;
+  color: #fff;
+  letter-spacing: -0.01em;
+  text-shadow: 0 2px 28px rgba(0, 0, 0, 0.45);
+}
+
+.placehold-page__title em {
+  font-style: italic;
+  font-weight: 400;
+}
+
+.placehold-page__lead {
+  margin: 0 auto clamp(1rem, 3.5vw, 1.35rem);
+  max-width: 32rem;
+  font-size: clamp(0.88rem, 2.6vw, 1.02rem);
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 1px 16px rgba(0, 0, 0, 0.4);
+}
+
+.placehold-page__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.placehold-page__actions .btn {
+  position: relative;
+  z-index: 1;
+  font-size: clamp(0.74rem, 2.2vw, 0.82rem);
+  font-weight: 700;
+  padding: 0.62rem 1.1rem;
+  min-height: 2.65rem;
+  letter-spacing: 0.02em;
+}
+
+.placehold-page__btn-primary.btn-solid {
+  background: linear-gradient(165deg, #ecc85a 0%, #e4b84a 42%, #c9922a 100%) !important;
+  color: #1a1408 !important;
+  border: 1px solid rgba(255, 255, 255, 0.45) !important;
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.42);
+}
+
+.placehold-page__btn-primary.btn-solid::after,
+.placehold-page__btn-primary.btn-solid::before {
+  display: none !important;
+}
+
+.placehold-page__btn-secondary.btn-ghost {
+  color: #fff !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.88) !important;
+  background: rgba(255, 255, 255, 0.14) !important;
+}
+
+.placehold-page__btn-secondary.btn-ghost::before {
+  background: #fff;
+  z-index: -1;
+}
+
+.placehold-page__btn-secondary.btn-ghost:hover {
+  color: var(--color-forest-deep) !important;
+  border-color: #fff !important;
+  transform: scale(0.98);
+}
+
+@supports not (height: 100dvh) {
+  body.has-placehold-splash {
+    height: 100vh;
+  }
+
+  .placehold-page--splash {
+    --placehold-vh: calc(100vh - var(--placehold-demo-offset, 0px));
+  }
+}
+
+@media (max-height: 760px) {
+  .placehold-page__inner {
+    transform: scale(0.94);
+  }
+
+  .placehold-page__code {
+    margin-bottom: 0.5rem;
+  }
+
+  .placehold-page__title {
+    margin-bottom: 0.5rem;
+  }
+
+  .placehold-page__lead {
+    margin-bottom: 0.85rem;
+    font-size: 0.9rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
+@media (max-height: 640px) {
+  .placehold-page__inner {
+    transform: scale(0.88);
+  }
+
+  .placehold-page__lead {
+    -webkit-line-clamp: 2;
+  }
+}
+
+@media (max-width: 420px) {
+  .placehold-page__actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .placehold-page__actions .btn {
+    width: 100%;
+    max-width: 17.5rem;
+  }
+}
+
+/* Demo switcher only */
+.placehold-demo-bar {
+  padding: 0.55rem var(--gutter);
+  background: var(--color-forest-deep);
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.76rem;
+  text-align: center;
+  line-height: 1.45;
+}
+
+.placehold-demo-bar a {
+  color: var(--color-gold);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.placehold-demo-bar a:hover {
+  text-decoration: underline;
+}
+
+.placehold-demo-bar button {
+  margin: 0 0.15rem;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  font: inherit;
+  font-size: 0.72rem;
+  cursor: pointer;
+}
+
+.placehold-demo-bar button[aria-pressed="true"] {
+  background: rgba(196, 160, 98, 0.35);
+  border-color: rgba(196, 160, 98, 0.55);
+}

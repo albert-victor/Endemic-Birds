@@ -1,0 +1,420 @@
+/* Demo – logo + three-dot loader (orange, forest green, charcoal). Not on live site yet. */
+
+:root {
+  --ld-paper: #faf9f7;
+  --ld-ink: #2c241c;
+  --ld-muted: #6a635c;
+  --ld-orange: #e85d3a;
+  --ld-green: #1c4a3a;
+  --ld-charcoal: #3c3935;
+  --ld-ease: cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.ld-page {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--ld-ink);
+  background: var(--ld-paper);
+}
+
+.ld-banner {
+  margin: 0;
+  padding: 0.65rem 1rem;
+  text-align: center;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  background: var(--ld-green);
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.ld-banner strong {
+  color: #ffe8a8;
+  font-weight: 700;
+}
+
+.ld-wrap {
+  width: min(720px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 2.5rem 0 4rem;
+}
+
+.ld-title {
+  margin: 0 0 0.35rem;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(1.65rem, 4vw, 2.1rem);
+  font-weight: 600;
+}
+
+.ld-lead {
+  margin: 0 0 2rem;
+  color: var(--ld-muted);
+  font-size: 0.95rem;
+  max-width: 38rem;
+}
+
+.ld-panel {
+  border: 1px solid rgba(58, 52, 46, 0.12);
+  border-radius: 0.65rem;
+  padding: 1.25rem 1.35rem 1.4rem;
+  margin-bottom: 1.35rem;
+  background: #fff;
+  box-shadow: 0 8px 28px rgba(44, 36, 28, 0.06);
+}
+
+.ld-panel h2 {
+  margin: 0 0 0.35rem;
+  font-size: 1.05rem;
+}
+
+.ld-panel p {
+  margin: 0 0 1rem;
+  font-size: 0.88rem;
+  color: var(--ld-muted);
+}
+
+.ld-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.75rem;
+}
+
+.ld-btn {
+  font: inherit;
+  font-size: 0.88rem;
+  font-weight: 600;
+  padding: 0.55rem 1rem;
+  border-radius: 0.45rem;
+  border: 1px solid rgba(28, 74, 58, 0.25);
+  background: #fff;
+  color: var(--ld-green);
+  cursor: pointer;
+  transition:
+    transform 0.22s var(--ld-ease),
+    border-color 0.22s;
+}
+
+.ld-btn:hover {
+  transform: scale(0.98);
+  border-color: var(--ld-orange);
+}
+
+.ld-btn--primary {
+  background: var(--ld-green);
+  border-color: var(--ld-green);
+  color: #fff;
+}
+
+.ld-btn--primary:hover {
+  background: #163a2e;
+}
+
+.ld-preview {
+  margin-top: 1.15rem;
+  min-height: 11rem;
+  border-radius: 0.5rem;
+  border: 1px dashed rgba(58, 52, 46, 0.2);
+  background: linear-gradient(180deg, rgba(250, 249, 247, 0.5), rgba(246, 242, 234, 0.9));
+  display: grid;
+  place-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.ld-preview--page {
+  min-height: 14rem;
+}
+
+.ld-preview__skeleton {
+  position: absolute;
+  inset: 1rem;
+  opacity: 0.35;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.6), transparent) 0 0 / 40% 100% no-repeat,
+    linear-gradient(#e8e4dc 0 0) 1rem 1rem / 45% 0.65rem no-repeat,
+    linear-gradient(#e8e4dc 0 0) 1rem 2.2rem / 70% 0.5rem no-repeat,
+    linear-gradient(#e8e4dc 0 0) 1rem 3.2rem / 55% 0.5rem no-repeat;
+  animation: ld-shimmer 1.8s ease-in-out infinite;
+}
+
+@keyframes ld-shimmer {
+  0% {
+    background-position: -40% 0, 1rem 1rem, 1rem 2.2rem, 1rem 3.2rem;
+  }
+  100% {
+    background-position: 140% 0, 1rem 1rem, 1rem 2.2rem, 1rem 3.2rem;
+  }
+}
+
+.ld-preview.is-active .ld-preview__skeleton {
+  opacity: 0.15;
+}
+
+.ld-preview__content {
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--ld-ink);
+  opacity: 0;
+  transform: translateY(8px);
+  transition:
+    opacity 0.45s var(--ld-ease),
+    transform 0.45s var(--ld-ease);
+}
+
+.ld-preview.is-done .ld-preview__content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.ld-preview.is-done .eb-loader-stack {
+  opacity: 0;
+  transform: scale(0.98);
+  pointer-events: none;
+}
+
+/* Logo juu, dots chini – kama site-loader */
+.eb-loader-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.1rem;
+  text-align: center;
+  transition:
+    opacity 0.35s var(--ld-ease),
+    transform 0.35s var(--ld-ease);
+}
+
+.eb-loader-logo-wrap {
+  display: block;
+  line-height: 0;
+}
+
+.eb-loader-stack.is-sequenced .eb-loader-logo-wrap {
+  animation: eb-loader-logo-rise 0.48s var(--ld-ease) both;
+}
+
+.eb-loader-logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  display: block;
+  filter: none;
+  box-shadow: none;
+}
+
+.eb-loader-stack.is-sequenced .eb-loader-dots {
+  opacity: 0;
+  animation: eb-loader-dots-reveal 0.4s var(--ld-ease) 0.42s both;
+}
+
+.eb-loader-stack--static .eb-loader-dots {
+  opacity: 1;
+}
+
+@keyframes eb-loader-logo-rise {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes eb-loader-dots-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Three dots – hakuna drop shadow */
+.eb-loader-dots {
+  display: inline-flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 0.55rem;
+  padding: 0.15rem 0.35rem;
+}
+
+.eb-loader-dots__dot {
+  width: 0.72rem;
+  height: 0.72rem;
+  border-radius: 50%;
+  transform: translateY(0);
+  animation: eb-dot-bounce 0.9s var(--ld-ease) infinite;
+  box-shadow: none;
+}
+
+.eb-loader-stack.is-sequenced .eb-loader-dots__dot {
+  animation-play-state: paused;
+}
+
+.eb-loader-stack.is-sequenced.is-playing .eb-loader-dots__dot {
+  animation-play-state: running;
+}
+
+.eb-loader-dots__dot--orange {
+  background: var(--ld-orange);
+  animation-delay: 0s;
+}
+
+.eb-loader-dots__dot--green {
+  background: var(--ld-green);
+  animation-delay: 0.14s;
+}
+
+.eb-loader-dots__dot--charcoal {
+  background: var(--ld-charcoal);
+  animation-delay: 0.28s;
+}
+
+@keyframes eb-dot-bounce {
+  0%,
+  70%,
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 0.7;
+  }
+  35% {
+    transform: translateY(-0.65rem) scale(1.06);
+    opacity: 1;
+  }
+}
+
+.eb-loader-dots--wave .eb-loader-dots__dot {
+  animation-name: eb-dot-wave;
+}
+
+@keyframes eb-dot-wave {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.6;
+  }
+  25% {
+    transform: translateY(-0.5rem);
+    opacity: 0.95;
+  }
+  50% {
+    transform: translateY(0.12rem);
+    opacity: 1;
+  }
+}
+
+.eb-loader-dots--calm .eb-loader-dots__dot {
+  animation-duration: 1.15s;
+  width: 0.62rem;
+  height: 0.62rem;
+}
+
+.eb-loader-dots-label {
+  display: block;
+  margin-top: 0.35rem;
+  font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+  font-size: 0.92rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ld-ink);
+  text-align: center;
+}
+
+.ld-static-preview {
+  margin: 1rem 0 0;
+  padding: 2rem 1rem;
+  border-radius: 0.5rem;
+  background: var(--ld-paper);
+  border: 1px solid rgba(58, 52, 46, 0.1);
+  display: grid;
+  place-items: center;
+}
+
+.ld-color-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  margin: 0.5rem 0 0;
+  font-size: 0.8rem;
+  color: var(--ld-muted);
+}
+
+.ld-swatch {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.ld-swatch i {
+  width: 0.65rem;
+  height: 0.65rem;
+  border-radius: 50%;
+  font-style: normal;
+}
+
+/* Full-screen overlay */
+.eb-loader-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: grid;
+  place-items: center;
+  background: var(--ld-paper);
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.4s var(--ld-ease),
+    visibility 0.4s;
+}
+
+.eb-loader-overlay.is-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.eb-loader-overlay.is-playing .eb-loader-stack {
+  animation: none;
+}
+
+.eb-loader-overlay .eb-loader-dots__dot {
+  width: 0.85rem;
+  height: 0.85rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .eb-loader-dots__dot,
+  .ld-preview__skeleton,
+  .eb-loader-stack.is-sequenced .eb-loader-dots {
+    animation: none !important;
+  }
+
+  .eb-loader-logo-wrap {
+    animation: none !important;
+    opacity: 1;
+    transform: none;
+  }
+
+  .eb-loader-dots__dot {
+    opacity: 0.9;
+  }
+
+  .eb-loader-stack.is-sequenced .eb-loader-dots {
+    opacity: 1;
+  }
+}
