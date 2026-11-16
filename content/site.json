@@ -30,11 +30,12 @@
     "enabled": true
   },
   "social": {
-    "facebook": null,
+    "facebook": "https://www.facebook.com/search/top?q=endemic%20birds%20tanzania",
+    "instagram": "https://www.instagram.com/explore/tags/tanzaniabirding/",
+    "tripadvisor": "https://www.tripadvisor.com/Search?q=Endemic+Birds+Tanzania",
+    "youtube": "https://www.youtube.com/results?search_query=Endemic+Birds+Tanzania+birding",
     "twitter": null,
-    "instagram": null,
-    "linkedin": null,
-    "youtube": null
+    "linkedin": null
   },
   "footerBlurb": "Based in Iringa – specialist Southern Tanzania birding, Eastern Arc forests and wildlife safaris. Tailor-made routes, max six guests per vehicle.",
   "about": {

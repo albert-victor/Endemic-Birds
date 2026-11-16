@@ -47,6 +47,12 @@
     { "slug": "nyerere-national-park", "name": "Nyerere", "image": "endemics/southern-destination.jpg" },
     { "slug": "katavi-national-park", "name": "Katavi", "image": "endemics/kori-bustard-serengeti-savannah-1536x872.jpg" }
   ],
+  "featuredAccommodations": [
+    "ruaha-river-lodge",
+    "hondo-hondo-udzungwa-forest-lodge",
+    "ikoma-bush-tented-camp",
+    "mufindi-fish-lodge"
+  ],
   "wildlifeActivities": [
     { "slug": "great-migration", "title": "Great Migration", "href": "wildlife/index.html#great-migration" },
     { "slug": "chimp-tracking", "title": "Chimpanzee Tracking", "href": "wildlife/index.html#chimp-tracking" },

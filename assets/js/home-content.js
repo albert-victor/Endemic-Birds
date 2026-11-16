@@ -120,6 +120,16 @@
     return { label: "TripAdvisor", icon: "fa-brands fa-tripadvisor", mod: "review-source--tripadvisor" };
   }
 
+  const ACC_LABELS = {
+    typeLabels: {
+      lodge: "Lodge",
+      "tented-camp": "Tented camp",
+      campsite: "Campsite",
+      villa: "Villa",
+      "bush-retreat": "Bush retreat",
+    },
+  };
+
   const WILDLIFE_HOME_SLUG_ALIASES = {
     "ngorongoro-crater": "ngorongoro-conservation-area",
   };
@@ -139,12 +149,17 @@
     });
   }
 
+  function wrapScrollRevealSlot(html) {
+    if (!html) return "";
+    return `<div class="scroll-reveal-slot">${html}</div>`;
+  }
+
   function renderDestRow(label, items, options = {}) {
     const wildlife = options.wildlife;
     const tiles = items
-      .map((d) => {
+      .map((d, i) => {
         if (!window.EndemicUI?.renderHomeDestSpot) return "";
-        return window.EndemicUI.renderHomeDestSpot(d, asset, { wildlife });
+        return wrapScrollRevealSlot(window.EndemicUI.renderHomeDestSpot(d, asset, { wildlife, revealIndex: i }));
       })
       .join("");
     return `<div class="dest-row" data-dest-carousel>
@@ -155,14 +170,14 @@
           <button type="button" data-dest-carousel-next aria-label="Next"><span aria-hidden="true">›</span></button>
         </div>
       </div>
-      <div class="dest-row-track dest-row-track--scroll" data-dest-carousel-track>${tiles}</div>
+      <div class="dest-row-track dest-row-track--scroll reveal-stagger" data-dest-carousel-track data-reveal-stagger>${tiles}</div>
     </div>`;
   }
 
   function renderPackageCarousel(packages) {
     if (!window.EndemicUI?.renderIndividualPackageCard) return "";
     return packages
-      .map((p) => window.EndemicUI.renderIndividualPackageCard(p, asset))
+      .map((p, i) => wrapScrollRevealSlot(window.EndemicUI.renderIndividualPackageCard(p, asset, i)))
       .join("");
   }
 
@@ -250,8 +265,14 @@
     fetch(asset("content/wildlife-destinations.json"))
       .then((r) => (r.ok ? r.json() : []))
       .catch(() => []),
+    fetch(asset("content/accommodations.json"))
+      .then((r) => (r.ok ? r.json() : { accommodations: [] }))
+      .catch(() => ({ accommodations: [] })),
+    fetch(asset("content/accommodation-galleries.json"))
+      .then((r) => (r.ok ? r.json() : { galleries: {} }))
+      .catch(() => ({ galleries: {} })),
   ])
-    .then(([home, packages, wildlifeCatalog]) => {
+    .then(([home, packages, wildlifeCatalog, accData, accGalleries]) => {
       window.__PACKAGE_WDEST_MAP__ = Object.fromEntries((wildlifeCatalog || []).map((d) => [d.slug, d]));
       const heroRoot = mount.querySelector("[data-hero-push]");
       renderHeroSlides(home.heroSlides || [], mount.querySelector("[data-hero-push-media]"), heroRoot);
@@ -277,6 +298,16 @@
       if (wildlifeHost) {
         const wildlife = featured.filter((p) => p.category === "wildlife");
         wildlifeHost.innerHTML = renderPackageCarousel(wildlife.length ? wildlife : packages.filter((p) => p.category === "wildlife").slice(0, 8));
+      }
+
+      const accHost = mount.querySelector("[data-home-accommodations]");
+      if (accHost && window.EndemicUI?.renderAccommodationGrid) {
+        const slugs = home.featuredAccommodations || [];
+        const bySlug = new Map((accData.accommodations || []).filter((a) => a.verified).map((a) => [a.slug, a]));
+        const featured = slugs.map((s) => bySlug.get(s)).filter(Boolean);
+        const fallback = (accData.accommodations || []).filter((a) => a.verified).slice(0, 4);
+        const list = featured.length ? featured : fallback;
+        accHost.innerHTML = window.EndemicUI.renderAccommodationGrid(list, asset, ACC_LABELS, accGalleries.galleries || {});
       }
 
       renderQuoteBand(

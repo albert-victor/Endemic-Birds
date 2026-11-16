@@ -170,14 +170,14 @@
     </div>`;
   }
 
-  function renderDestScriptCard(d, asset, tourCount) {
+  function renderDestScriptCard(d, asset, tourCount, revealIndex = 0) {
     const types = (d.experienceTypes || [])
       .map((t) => (t === "birding" ? "Birding" : t === "wildlife" ? "Wildlife" : t))
       .join(" · ");
     const meta = tourCount ? `${tourCount} tour${tourCount > 1 ? "s" : ""}` : "Safari circuit";
     const title = circuitRegionTitle(d.name);
     const thumbPath = window.EndemicMedia?.resolveHero?.(d.slug, d.thumbnail || d.heroImage) || d.thumbnail || d.heroImage;
-    return `<a class="dest-script-card reveal" data-reveal href="${asset(`destinations/${d.slug}/`)}">
+    return `<a class="dest-script-card"${revealIndexStyle(revealIndex)} href="${asset(`destinations/${d.slug}/`)}">
       ${cardMediaWrap("dest-script-media", asset(thumbPath))}
       <div class="dest-script-overlay"></div>
       <p class="dest-script-meta">${escapeHtml(meta)}</p>
@@ -200,7 +200,7 @@
       site.imageStatus === "pending" ? `<p class="southern-site-card-note">Photos pending – enquire for current field images</p>` : "";
     const tourCount = (site.packageSlugs || []).length;
     const meta = tourCount ? `${tourCount} journey${tourCount > 1 ? "s" : ""}` : circuitLabel;
-    return `<a class="dest-script-card southern-site-card${noPhoto} reveal" data-reveal href="${href}">
+    return `<a class="dest-script-card southern-site-card${noPhoto}" href="${href}">
       ${img}
       <div class="dest-script-overlay"></div>
       <p class="dest-script-meta">${escapeHtml(meta)}</p>
@@ -212,7 +212,7 @@
 
   function renderCircuitSiteGrid(sites, asset, circuitLabel) {
     return `<div class="alt-card-grid alt-card-grid--dest-spot reveal-stagger" data-reveal-stagger>${sites
-      .map((s) => renderBirdingSiteSpot(s, asset, circuitLabel))
+      .map((s, i) => renderBirdingSiteSpot(s, asset, circuitLabel, i))
       .join("")}</div>`;
   }
 
@@ -229,7 +229,7 @@
       });
     });
     return `<div class="dest-script-grid reveal-stagger" data-reveal-stagger>${destinations
-      .map((d) => renderDestScriptCard(d, asset, counts[d.id] || 0))
+      .map((d, i) => renderDestScriptCard(d, asset, counts[d.id] || 0, i))
       .join("")}</div>`;
   }
 
@@ -239,7 +239,7 @@
 
   function renderWildlifeDestGrid(destinations, asset) {
     return `<div class="alt-card-grid alt-card-grid--dest-spot reveal-stagger" data-reveal-stagger>${destinations
-      .map((d) => renderWildlifeDestSpot(d, asset))
+      .map((d, i) => renderWildlifeDestSpot(d, asset, i))
       .join("")}</div>`;
   }
 
@@ -289,7 +289,7 @@
       (window.EndemicMedia?.mediaUrl && imgPath && window.EndemicMedia.mediaUrl(imgPath)) || asset(imgPath || "");
     const summary = String(a.summary || a.overview || "").trim();
     const blurb = summary.length > 140 ? `${summary.slice(0, 137)}…` : summary;
-    return `<a class="theme-rec-card reveal" data-reveal href="${href}">
+    return `<a class="theme-rec-card" href="${href}">
       <div class="theme-rec-card__media card-media-wrap">${cardMediaMarkup(imgSrc)}<span class="theme-rec-card__noise" aria-hidden="true"></span></div>
       <div class="theme-rec-card__body">
         <p class="theme-rec-card__eyebrow">Recommended safari theme</p>
@@ -334,6 +334,7 @@
       subtitle: options.subtitle || (wildlife ? "Wildlife Tanzania" : "Birding Tanzania"),
       tag: wildlife ? "Safari" : "Birding",
       imgLoading: "eager",
+      revealIndex: options.revealIndex,
     });
   }
 
@@ -347,7 +348,7 @@
     const tags = packageTags(p);
     const mod =
       (p.featured ? " pkg-corp-card--featured" : "") + (index % 4 === 2 ? " pkg-corp-card--tall" : "");
-    return `<a class="pkg-corp-card reveal${mod}" data-reveal href="${asset(`packages/${p.slug}/`)}">
+    return `<a class="pkg-corp-card${mod}" style="--reveal-i:${index}" href="${asset(`packages/${p.slug}/`)}">
       <div class="pkg-corp-media card-media-wrap">
         ${cardMediaMarkup(packageHeroSrc(p, asset))}
         <div class="pkg-corp-media-shine" aria-hidden="true"></div>
@@ -461,10 +462,23 @@
     };
   }
 
-  function renderIndividualDestSpot({ href, imgSrc, title, subtitle, tag, imgLoading = "eager", mediaFallback = "" }) {
+  function revealIndexStyle(revealIndex) {
+    return typeof revealIndex === "number" ? ` style="--reveal-i:${revealIndex}"` : "";
+  }
+
+  function renderIndividualDestSpot({
+    href,
+    imgSrc,
+    title,
+    subtitle,
+    tag,
+    imgLoading = "eager",
+    mediaFallback = "",
+    revealIndex,
+  }) {
     const rating = destSpotStarRating(mediaFallback || title || href);
     const fallbackAttr = mediaFallback ? ` data-media-fallback="${escapeHtml(mediaFallback)}"` : "";
-    return `<a class="dest-ind-spot" href="${href}">
+    return `<a class="dest-ind-spot"${revealIndexStyle(revealIndex)} href="${href}">
       <div class="dest-ind-spot__img card-media-wrap"${fallbackAttr}>${cardMediaMarkup(imgSrc, "", imgLoading)}<span class="dest-ind-spot__noise" aria-hidden="true"></span></div>
       <div class="dest-ind-spot__shade" aria-hidden="true"></div>
       <span class="dest-ind-spot__tag">${escapeHtml(tag)}</span>
@@ -498,7 +512,7 @@
     return parts.join(" · ") || "Birding in Tanzania";
   }
 
-  function renderBirdingSiteSpot(site, asset, circuitLabel) {
+  function renderBirdingSiteSpot(site, asset, circuitLabel, revealIndex) {
     const href = asset(`destinations/${site.slug}/`);
     const hero = window.EndemicMedia?.resolveHero?.(site.slug, site.heroImage) || site.heroImage;
     const circuit = circuitLabel || site.circuit || "";
@@ -508,6 +522,7 @@
       title: site.name,
       subtitle: birdingSiteSpotSubtitle(site, circuit),
       tag: "Birding",
+      revealIndex,
     });
   }
 
@@ -515,25 +530,29 @@
   function renderBirdingDestinationsGrid(sites, asset) {
     if (!sites?.length) return "";
     return `<div class="alt-card-grid alt-card-grid--dest-spot reveal-stagger" data-reveal-stagger>${sites
-      .map((s) => renderBirdingSiteSpot(s, asset, s.circuit))
+      .map((s, i) => renderBirdingSiteSpot(s, asset, s.circuit, i))
       .join("")}</div>`;
   }
 
-  function renderWildlifeDestSpot(d, asset) {
+  function renderWildlifeDestSpot(d, asset, revealIndex) {
     return renderIndividualDestSpot({
       href: asset(`wildlife/destinations/${d.slug}/`),
       imgSrc: asset(d.heroImage),
       title: d.name,
       subtitle: d.circuit ? `${d.circuit} circuit` : "Wildlife Tanzania",
       tag: "Safari",
+      revealIndex,
     });
   }
 
   function renderIndividualDestSpotGrid(birdingItems, wildlifeDests, asset) {
     const birdingHtml = birdingItems
-      .map((item) => renderBirdingSiteSpot(item.data, asset, item.circuit))
+      .map((item, i) => renderBirdingSiteSpot(item.data, asset, item.circuit, i))
       .join("");
-    const wildHtml = wildlifeDests.map((d) => renderWildlifeDestSpot(d, asset)).join("");
+    const offset = birdingItems.length;
+    const wildHtml = wildlifeDests
+      .map((d, i) => renderWildlifeDestSpot(d, asset, offset + i))
+      .join("");
     return `<div class="alt-card-grid alt-card-grid--dest-spot reveal-stagger" data-reveal-stagger>${birdingHtml}${wildHtml}</div>`;
   }
 
@@ -628,7 +647,7 @@
     return `${s.slice(0, 97).trim()}…`;
   }
 
-  function renderIndividualPackageCard(p, asset) {
+  function renderIndividualPackageCard(p, asset, revealIndex = 0) {
     const service = packageServiceTag(p);
     const meta = `${p.durationDays} days`;
     const ratingLabel = p.featured ? "Guest favourite" : "Highly rated";
@@ -638,7 +657,7 @@
           .map((t) => `<span class="pkg-ind-sheet__insight">${escapeHtml(t)}</span>`)
           .join("")}</div>`
       : "";
-    return `<a class="pkg-ind-sheet" href="${asset(`packages/${p.slug}/`)}">
+    return `<a class="pkg-ind-sheet"${revealIndexStyle(revealIndex)} href="${asset(`packages/${p.slug}/`)}">
       <div class="pkg-ind-sheet__frame card-media-wrap" data-media-fallback="${escapeHtml(p.slug || p.heroImage || "")}">
         ${cardMediaMarkup(packageHeroSrc(p, asset), "", "eager")}
         <span class="pkg-ind-sheet__warm-scrim" aria-hidden="true"></span>
@@ -662,7 +681,7 @@
   function renderIndividualPackageGrid(packages, asset) {
     if (!packages.length) return "";
     return `<div class="alt-card-grid alt-card-grid--pkg-ind reveal-stagger" data-reveal-stagger>${packages
-      .map((p) => renderIndividualPackageCard(p, asset))
+      .map((p, i) => renderIndividualPackageCard(p, asset, i))
       .join("")}</div>`;
   }
 

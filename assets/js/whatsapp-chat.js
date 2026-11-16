@@ -14,11 +14,11 @@
     if (document.getElementById("leon-chat-widget")) return;
     const html = `<div class="leon-chat" id="leon-chat-widget" aria-hidden="true">
       <button type="button" class="leon-chat__backdrop" data-leon-chat-close aria-label="Close chat" tabindex="-1"></button>
-      <div class="leon-chat__panel" role="dialog" aria-label="Chat with Leon">
+      <div class="leon-chat__panel" role="dialog" aria-label="Chat with Leons">
         <header class="leon-chat__head">
-          <img class="leon-chat__avatar" src="" alt="Leon" width="44" height="44" data-leon-avatar />
+          <img class="leon-chat__avatar" src="" alt="Leons" width="44" height="44" data-leon-avatar />
           <div>
-            <p class="leon-chat__name">Leon</p>
+            <p class="leon-chat__name">Leons</p>
             <p class="leon-chat__status"><span class="leon-chat__dot" aria-hidden="true"></span> Usually replies soon</p>
           </div>
           <button type="button" class="leon-chat__close" data-leon-chat-close aria-label="Close chat">×</button>
@@ -26,7 +26,7 @@
         <p class="leon-chat__day">Today</p>
         <div class="leon-chat__body">
           <div class="leon-chat__bubble leon-chat__bubble--in">
-            <p>Hello I'm Leon, your local guide for custom safari experiences.</p>
+            <p>Hello I'm Leons, your local guide for custom safari experiences.</p>
           </div>
           <div class="leon-chat__bubble leon-chat__bubble--in">
             <p>Planning a birding trip, wildlife safari, or a custom combination? Tap below to chat on WhatsApp with your travel dates and interests, and let's craft your itinerary together!</p>

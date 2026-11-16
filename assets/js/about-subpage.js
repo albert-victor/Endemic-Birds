@@ -263,6 +263,18 @@
         return;
       } else if (slug === "leons-mlawila") {
         body = renderLeonsProfile(page);
+      } else if (slug === "gallery" || page.status === "maintenance") {
+        body = `<header class="about-sub-head">
+          <p class="eyebrow">${escapeHtml(page.eyebrow)}</p>
+          <h1 class="about-sub-title">${escapeHtml(page.title)}</h1>
+          <p class="about-sub-lead">${escapeHtml(page.lead)}</p>
+        </header>
+        <p class="about-sub-note" role="status"><strong>Currently under maintenance.</strong> ${escapeHtml(page.maintenanceMessage || "This page will return when content is ready.")}</p>
+        ${renderRelated(page.related)}
+        <p class="about-sub-actions">
+          <a class="btn btn-solid" href="${asset("plan-your-trip/index.html")}">Enquire</a>
+          <a class="text-link" href="${asset("about/index.html")}">← About overview</a>
+        </p>`;
       } else if (slug === "trip-reports") {
         const list = (page.reports || [])
           .map(

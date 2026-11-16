@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 48" preserveAspectRatio="none" aria-hidden="true">
+  <path
+    fill="#fff0d8"
+    fill-opacity="0.7"
+    d="M24 18 C 88 12, 168 14, 248 15 C 300 16, 332 13, 348 14 L 346 20 C 268 22, 188 20, 108 19 C 64 18, 36 17, 24 18 Z"
+  />
+  <path fill="#ffffff" fill-opacity="0.4" d="M56 16 L 68 15 L 70 18 L 58 19 Z M196 15 L 208 14 L 210 17 L 198 18 Z M316 15 L 328 14 L 330 17 L 318 18 Z"/>
+  <!-- Wet edge streak inayofuatia mkono -->
+  <path
+    fill="#ffc899"
+    fill-opacity="0.55"
+    d="M12 22 C 48 20, 0 24, 0 26 C 0 28, 18 26, 12 22 Z M348 20 C 360 22, 358 26, 340 24 C 334 22, 348 20, 348 20 Z"
+  />
+</svg>

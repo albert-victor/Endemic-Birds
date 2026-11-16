@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 48" preserveAspectRatio="none" aria-hidden="true">
+  <!-- Pass 1  msongamano wa kwanza, mwinuko wa juu -->
+  <path
+    fill="#ff9a4d"
+    fill-opacity="0.88"
+    d="M2 26 C 32 10, 68 22, 102 16 C 136 10, 172 24, 206 18 C 240 12, 276 20, 310 14 C 330 11, 348 18, 358 14
+       L 356 32 C 326 38, 296 34, 266 36 C 236 38, 206 32, 176 34 C 146 36, 116 30, 86 32 C 56 34, 30 28, 8 30 C 4 30, 2 28, 2 26 Z"
+  />
+  <!-- Pass 2  bristle drag chini -->
+  <path
+    fill="#ff6b1a"
+    fill-opacity="0.62"
+    d="M0 32 C 44 38, 128 34, 212 36 C 288 38, 336 34, 358 36 L 356 40 C 268 44, 128 42, 0 38 Z"
+  />
+  <!-- Dry gaps  uchoraji halisi -->
+  <path
+    fill="#ff7a2e"
+    fill-opacity="0.55"
+    d="M48 20 C 72 14, 98 18, 92 22 C 86 26, 58 24, 48 20 Z M168 18 C 192 12, 218 16, 212 20 C 206 24, 178 22, 168 18 Z M288 17 C 312 11, 338 15, 332 19 C 326 23, 298 21, 288 17 Z"
+  />
+  <!-- Tail taper kushoto -->
+  <path fill="#ffb07a" fill-opacity="0.5" d="M0 24 C 8 22, 14 26, 6 28 C 2 28, 0 26, 0 24 Z"/>
+  <!-- Head taper kulia -->
+  <path fill="#ff8f45" fill-opacity="0.45" d="M350 16 C 358 14, 360 20, 354 22 C 348 22, 350 18, 350 16 Z"/>
+</svg>

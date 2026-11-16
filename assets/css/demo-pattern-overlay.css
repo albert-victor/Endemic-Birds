@@ -1,0 +1,329 @@
+/* Demo – African pattern overlays (endemics/pattern-overlay1–2.jpg) */
+
+:root {
+  --po-paper: #faf9f7;
+  --po-forest: #3a342e;
+  --po-forest-deep: #2c241c;
+  --po-gold: #c4a062;
+  --po-gold-lit: #e4b84a;
+  --po-line: rgba(58, 52, 46, 0.14);
+  --po-gutter: clamp(1rem, 4vw, 1.5rem);
+  --po-container: min(1080px, calc(100% - 2 * var(--po-gutter)));
+
+  --pattern-src: url("../../endemics/pattern-overlay1.jpg");
+  --pattern-tile: 240px;
+  --pattern-opacity-light: 0.11;
+  --pattern-opacity-mid: 0.14;
+  --pattern-opacity-strong: 0.18;
+}
+
+.pattern-demo-page {
+  margin: 0;
+  font-family: "Futura PT", system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--po-forest-deep);
+  background: var(--po-paper);
+}
+
+.pattern-demo-page.pattern-demo--overlay-2 {
+  --pattern-src: url("../../endemics/pattern-overlay2.jpg");
+  --pattern-tile: 200px;
+  --pattern-opacity-light: 0.1;
+  --pattern-opacity-mid: 0.15;
+}
+
+.pattern-demo-banner {
+  padding: 0.55rem var(--po-gutter);
+  background: var(--po-forest-deep);
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 0.76rem;
+  text-align: center;
+}
+
+.pattern-demo-banner a {
+  color: var(--po-gold-lit);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.pattern-demo-wrap {
+  width: var(--po-container);
+  margin-inline: auto;
+  padding: 2rem var(--po-gutter) 3.5rem;
+}
+
+.pattern-demo-kicker {
+  margin: 0 0 0.35rem;
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(107, 95, 82, 0.95);
+}
+
+.pattern-demo h1 {
+  margin: 0 0 0.75rem;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(1.75rem, 4vw, 2.45rem);
+  font-weight: 400;
+  line-height: 1.12;
+}
+
+.pattern-demo-lead {
+  margin: 0 0 2rem;
+  max-width: 40rem;
+  color: rgba(58, 52, 46, 0.82);
+  font-size: 0.95rem;
+}
+
+/* Reusable pattern layer */
+.has-african-pattern {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.has-african-pattern::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  border-radius: inherit;
+  background-image: var(--pattern-src);
+  background-size: var(--pattern-tile) auto;
+  background-repeat: repeat;
+  background-position: center;
+  opacity: var(--pattern-fill-opacity, var(--pattern-opacity-light));
+  mix-blend-mode: multiply;
+}
+
+.has-african-pattern--soft-light::before {
+  mix-blend-mode: soft-light;
+  opacity: var(--pattern-fill-opacity, var(--pattern-opacity-mid));
+}
+
+.has-african-pattern--screen::before {
+  mix-blend-mode: screen;
+  opacity: var(--pattern-fill-opacity, 0.22);
+}
+
+.has-african-pattern > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Buttons */
+.pattern-btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 2.25rem;
+}
+
+.pattern-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.75rem;
+  padding: 0.55rem 1.25rem;
+  border-radius: 0.35rem;
+  font-family: inherit;
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid transparent;
+  color: #fff;
+  background: var(--po-forest-deep);
+  --pattern-fill-opacity: var(--pattern-opacity-strong);
+}
+
+.pattern-btn--gold {
+  background: linear-gradient(165deg, #a8843a 0%, var(--po-gold) 48%, #9a6f18 100%);
+  color: var(--po-forest-deep);
+  --pattern-fill-opacity: 0.15;
+  mix-blend-mode: normal;
+}
+
+.pattern-btn.has-african-pattern::before {
+  mix-blend-mode: soft-light;
+}
+
+.pattern-btn--ghost {
+  background: var(--po-paper);
+  color: var(--po-forest-deep);
+  border-color: var(--po-line);
+  --pattern-fill-opacity: 0.09;
+}
+
+.pattern-btn--outline {
+  background: transparent;
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.55);
+  --pattern-fill-opacity: 0.12;
+}
+
+/* Cards & rectangles */
+.pattern-demo-grid {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 2.25rem;
+}
+
+@media (min-width: 720px) {
+  .pattern-demo-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.pattern-rect {
+  padding: 1.15rem 1.2rem;
+  border-radius: 0.65rem;
+  border: 1px solid var(--po-line);
+  background: #fff;
+  --pattern-fill-opacity: 0.1;
+}
+
+.pattern-rect--forest {
+  background: var(--po-forest-deep);
+  color: rgba(255, 255, 255, 0.94);
+  border-color: rgba(255, 255, 255, 0.12);
+  --pattern-fill-opacity: 0.16;
+}
+
+.pattern-rect--forest::before {
+  mix-blend-mode: soft-light;
+}
+
+.pattern-rect--gold {
+  background: linear-gradient(145deg, #e8d4a8 0%, var(--po-gold-lit) 40%, #c9922a 100%);
+  color: var(--po-forest-deep);
+  border-color: rgba(58, 52, 46, 0.2);
+  --pattern-fill-opacity: 0.13;
+}
+
+.pattern-rect h3 {
+  margin: 0 0 0.35rem;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.15rem;
+  font-weight: 400;
+}
+
+.pattern-rect p {
+  margin: 0;
+  font-size: 0.86rem;
+  opacity: 0.88;
+}
+
+/* Destination-style tile */
+.pattern-dest {
+  position: relative;
+  display: block;
+  aspect-ratio: 3 / 3.6;
+  border-radius: 1rem;
+  overflow: hidden;
+  text-decoration: none;
+  color: #fff;
+  background: #526845 center/cover no-repeat;
+  background-image: linear-gradient(rgba(44, 36, 28, 0.15), rgba(44, 36, 28, 0.55)),
+    url("../../endemics/slideshow-main.jpg");
+}
+
+.pattern-dest.has-african-pattern::before {
+  z-index: 1;
+  mix-blend-mode: overlay;
+  opacity: 0.2;
+}
+
+.pattern-dest__cap {
+  position: absolute;
+  left: 0.85rem;
+  right: 0.85rem;
+  bottom: 0.85rem;
+  z-index: 2;
+}
+
+.pattern-dest__title {
+  margin: 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+/* Footer mock */
+.pattern-footer-mock {
+  margin-top: 2.5rem;
+  padding: 2.25rem var(--po-gutter) 2rem;
+  color: rgba(255, 255, 255, 0.92);
+  background: linear-gradient(180deg, rgba(58, 52, 46, 0.92), var(--po-forest-deep));
+  --pattern-fill-opacity: 0.14;
+}
+
+.pattern-footer-mock.has-african-pattern::before {
+  mix-blend-mode: soft-light;
+}
+
+.pattern-footer-mock__inner {
+  width: var(--po-container);
+  margin-inline: auto;
+  display: grid;
+  gap: 1.25rem;
+}
+
+@media (min-width: 720px) {
+  .pattern-footer-mock__inner {
+    grid-template-columns: 1.2fr 1fr 1fr;
+  }
+}
+
+.pattern-footer-mock h2 {
+  margin: 0 0 0.5rem;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.35rem;
+  font-weight: 400;
+}
+
+.pattern-footer-mock a {
+  color: #fff;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.pattern-footer-mock ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.pattern-section-band {
+  margin: 2rem calc(-1 * var(--po-gutter));
+  padding: 1.75rem var(--po-gutter);
+  background: rgba(196, 160, 98, 0.14);
+  border-block: 1px solid var(--po-line);
+  --pattern-fill-opacity: 0.08;
+}
+
+.pattern-chip {
+  display: inline-block;
+  padding: 0.3rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  border: 1px solid var(--po-line);
+  background: #fff;
+  --pattern-fill-opacity: 0.12;
+}
+
+.pattern-note {
+  margin-top: 1.5rem;
+  padding: 1rem 1.1rem;
+  font-size: 0.82rem;
+  line-height: 1.55;
+  color: rgba(58, 52, 46, 0.8);
+  background: rgba(58, 52, 46, 0.05);
+  border-radius: 0.45rem;
+  border: 1px solid var(--po-line);
+}

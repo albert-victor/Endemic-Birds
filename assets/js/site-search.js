@@ -119,6 +119,7 @@
         summary: "Tanzania birding guide – documented field chronology",
       },
       { title: "Trip Reports", href: "about/trip-reports/index.html", type: "About", summary: "Owner-approved field reports – sample packages listed separately" },
+      { title: "Gallery", href: "about/gallery/index.html", type: "About", summary: "Safari, habitat and birding photography from our routes" },
       { title: "Tour Training", href: "about/tour-training/index.html", type: "About", summary: "Enquiry-led guide and operator familiarisation" },
       { title: "Our Partners", href: "about/partners/index.html", type: "About", summary: "Verified commercial partners only" },
       { title: "Terms and policies", href: "about/policies/index.html", type: "About", summary: "Privacy and how bookings are agreed" },

@@ -97,6 +97,8 @@
       const html = window.EndemicUI?.renderPackageCorpGrid(show, asset) || "";
       if (listHost) listHost.innerHTML = html;
       else if (grid) grid.innerHTML = html;
+      window.EndemicUI?.initCardMedia?.(root);
+      document.dispatchEvent(new CustomEvent("site:content-rendered"));
     }
 
     if (form && window.EndemicPackageFilters) {

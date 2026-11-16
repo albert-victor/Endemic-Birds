@@ -80,26 +80,49 @@
   const openBtn = root.querySelector("[data-hero-safari-open]");
   const mobileForm = root.querySelector("[data-hero-safari-mobile-form]");
 
-  function goToCatalog(fromForm) {
+  function syncCustomSelects(container) {
+    container?.querySelectorAll(".hero-custom-select").forEach((wrap) => {
+      const select = wrap.querySelector("select");
+      const selected = wrap.querySelector('[role="option"][aria-selected="true"]');
+      if (select && selected?.dataset?.value != null) select.value = selected.dataset.value;
+    });
+  }
+
+  function pulseSubmit(btn) {
+    if (!btn) return;
+    btn.classList.add("is-searching");
+    window.setTimeout(() => btn.classList.remove("is-searching"), 520);
+  }
+
+  function goToCatalog(fromForm, submitBtn) {
+    syncCustomSelects(fromForm);
+    pulseSubmit(submitBtn);
     const href =
       window.EndemicPackageFilters?.buildPackagesQueryFromForm(fromForm, packagesUrl) || packagesUrl;
-    location.href = href;
+    window.setTimeout(() => {
+      location.href = href;
+    }, 220);
   }
 
   form.addEventListener("submit", (e) => {
     e.preventDefault();
-    goToCatalog(form);
+    goToCatalog(form, form.querySelector(".hero-safari-dock__submit"));
   });
 
   mobileForm?.addEventListener("submit", (e) => {
     e.preventDefault();
-    goToCatalog(mobileForm);
+    goToCatalog(mobileForm, mobileForm.querySelector(".hero-safari-panel__go"));
     dialog?.close();
   });
 
   openBtn?.addEventListener("click", () => {
+    root.classList.add("hero-safari-dock--open");
     if (dialog?.showModal) dialog.showModal();
     else dialog?.setAttribute("open", "");
+  });
+
+  dialog?.addEventListener("close", () => {
+    root.classList.remove("hero-safari-dock--open");
   });
   root.querySelector("[data-hero-safari-close]")?.addEventListener("click", () => dialog?.close());
 

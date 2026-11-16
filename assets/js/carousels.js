@@ -14,8 +14,9 @@
 
     const step = () => {
       const card =
-        track.querySelector(".pkg-ind-sheet, .pkg-card-editorial, .dest-card-editorial, .carousel-card") ||
-        track.firstElementChild;
+        track.querySelector(
+          ".scroll-reveal-slot, .pkg-ind-sheet, .pkg-card-editorial, .dest-card-editorial, .carousel-card"
+        ) || track.firstElementChild;
       return card ? card.offsetWidth + 20 : track.clientWidth * 0.85;
     };
 
@@ -59,7 +60,8 @@
     row.dataset.destCarouselInit = "true";
 
     const step = () => {
-      const card = track.querySelector(".dest-ind-spot, .dest-card-editorial") || track.firstElementChild;
+      const card =
+        track.querySelector(".scroll-reveal-slot, .dest-ind-spot, .dest-card-editorial") || track.firstElementChild;
       return card ? card.offsetWidth + 16 : 240;
     };
 

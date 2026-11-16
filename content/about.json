@@ -318,6 +318,22 @@
       "emptyMessage": "We are preparing the first reports for publication. Until then, contact us for recent route notes on Southern Tanzania, the Eastern Arc or combined wildlife circuits.",
       "reports": []
     },
+    "gallery": {
+      "seo": {
+        "title": "Gallery | Endemic Birds Tanzania",
+        "description": "Safari, habitat and birding photography from Endemic Birds routes across Southern Tanzania and the Eastern Arc."
+      },
+      "eyebrow": "Gallery",
+      "title": "Safari and habitat imagery",
+      "lead": "A curated look at forests, miombo, wetlands and wildlife moments from our routes – published when each image is cleared for the website.",
+      "status": "maintenance",
+      "maintenanceMessage": "This gallery is currently under maintenance. We are organising and approving field photos before they go live. If you need sample visuals for an enquiry, contact us and we will share what we can off-site.",
+      "related": [
+        { "label": "Trip reports", "href": "about/trip-reports/index.html" },
+        { "label": "Why choose us", "href": "about/why-choose-us/index.html" },
+        { "label": "Plan your trip", "href": "plan-your-trip/index.html" }
+      ]
+    },
     "tour-training": {
       "seo": {
         "title": "Tour Training | Endemic Birds Tanzania",

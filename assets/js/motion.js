@@ -3,52 +3,166 @@
   let revealObserver = null;
   let heroKenBurnsTimer = null;
 
-  function initReveal() {
-    const revealEls = document.querySelectorAll(
-      "[data-reveal], [data-reveal-stagger], [data-image-reveal], .reveal-fade-up"
+  function isStaggerItem(el) {
+    const parent = el.parentElement;
+    return Boolean(parent?.hasAttribute("data-reveal-stagger"));
+  }
+
+  function revealMirrors(el) {
+    if (el.hasAttribute("data-reveal-once")) return false;
+    if (isStaggerItem(el)) return true;
+    if (el.hasAttribute("data-reveal-mirror")) return true;
+    return el.hasAttribute("data-reveal") || el.classList.contains("reveal-fade-up");
+  }
+
+  function syncStaggerItem(el) {
+    const vh = window.innerHeight || document.documentElement.clientHeight;
+    const vw = window.innerWidth || document.documentElement.clientWidth;
+    const rect = el.getBoundingClientRect();
+    const bandY = vh * 0.07;
+    const bandX = vw * 0.03;
+    const inView =
+      rect.top < vh - bandY &&
+      rect.bottom > bandY &&
+      rect.left < vw - bandX &&
+      rect.right > bandX;
+    const gone =
+      rect.bottom < -bandY || rect.top > vh + bandY || rect.right < -bandX || rect.left > vw + bandX;
+    if (inView) el.classList.add("is-visible");
+    else if (gone) el.classList.remove("is-visible");
+  }
+
+  function syncRevealVisibility(el) {
+    if (!el.getBoundingClientRect) return;
+    const vh = window.innerHeight || document.documentElement.clientHeight;
+    const vw = window.innerWidth || document.documentElement.clientWidth;
+    const rect = el.getBoundingClientRect();
+    const bandY = vh * 0.08;
+    const bandX = vw * 0.04;
+
+    if (el.hasAttribute("data-reveal-once")) {
+      if (!el.classList.contains("is-visible") && rect.top < vh * 0.94 && rect.bottom > vh * 0.04) {
+        el.classList.add("is-visible");
+      }
+      return;
+    }
+
+    if (isStaggerItem(el) || el.classList.contains("reveal-item")) {
+      syncStaggerItem(el);
+      return;
+    }
+
+    if (!revealMirrors(el)) {
+      if (!el.classList.contains("is-visible") && rect.top < vh * 0.94 && rect.bottom > vh * 0.04) {
+        el.classList.add("is-visible");
+        if (revealObserver) revealObserver.unobserve(el);
+      }
+      return;
+    }
+
+    const inView =
+      rect.top < vh - bandY &&
+      rect.bottom > bandY &&
+      rect.left < vw - bandX &&
+      rect.right > bandX;
+    const gone =
+      rect.bottom < -bandY || rect.top > vh + bandY || rect.right < -bandX || rect.left > vw + bandX;
+
+    if (inView) el.classList.add("is-visible");
+    else if (gone) el.classList.remove("is-visible");
+  }
+
+  function bindStaggerScroll(parent) {
+    if (parent.dataset.revealScrollBound === "1") return;
+    parent.dataset.revealScrollBound = "1";
+    parent.addEventListener(
+      "scroll",
+      () => {
+        requestAnimationFrame(flushRevealPending);
+      },
+      { passive: true }
     );
+  }
+
+  function setupStaggerChildren(parent) {
+    bindStaggerScroll(parent);
+    const freeze =
+      parent.hasAttribute("data-reveal-once") || Boolean(parent.closest(".pkg-detail-flow, .pkg-detail-body"));
+    const kids = [...parent.children];
+    kids.forEach((child, i) => {
+      child.style.setProperty("--reveal-i", String(i));
+      child.classList.add("reveal-item");
+      if (freeze) {
+        child.setAttribute("data-reveal-once", "");
+        child.classList.add("is-visible");
+        return;
+      }
+      if (revealObserver) revealObserver.observe(child);
+      syncStaggerItem(child);
+    });
+  }
+
+  function flushRevealPending() {
+    document
+      .querySelectorAll("[data-reveal], [data-image-reveal], .reveal-fade-up, [data-reveal-stagger] > *")
+      .forEach((el) => {
+        if (el.hasAttribute("data-reveal-stagger")) return;
+        syncRevealVisibility(el);
+      });
+  }
+
+  function initReveal() {
     if (reduceMotion) {
-      revealEls.forEach((el) => el.classList.add("is-visible"));
+      document
+        .querySelectorAll("[data-reveal], [data-image-reveal], .reveal-fade-up, [data-reveal-stagger] > *")
+        .forEach((el) => el.classList.add("is-visible"));
+      document.querySelectorAll("[data-reveal-stagger]").forEach(setupStaggerChildren);
       return;
     }
     if (!("IntersectionObserver" in window)) {
-      revealEls.forEach((el) => el.classList.add("is-visible"));
+      document
+        .querySelectorAll("[data-reveal], [data-image-reveal], .reveal-fade-up, [data-reveal-stagger] > *")
+        .forEach((el) => el.classList.add("is-visible"));
       return;
     }
+
     if (!revealObserver) {
       revealObserver = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add("is-visible");
-              revealObserver.unobserve(entry.target);
+            const el = entry.target;
+            if (el.classList.contains("reveal-item") || isStaggerItem(el)) {
+              if (entry.isIntersecting && entry.intersectionRatio >= 0.1) {
+                el.classList.add("is-visible");
+              } else if (!entry.isIntersecting || entry.intersectionRatio <= 0.02) {
+                el.classList.remove("is-visible");
+              }
+              return;
             }
+            syncRevealVisibility(el);
           });
         },
-        { rootMargin: "0px 0px -4% 0px", threshold: 0.08 }
+        { rootMargin: "-5% 0px -5% 0px", threshold: [0, 0.08, 0.15, 0.35, 0.55] }
       );
     }
-    revealEls.forEach((el) => {
-      if (el.dataset.revealObserved && !el.hasAttribute("data-reveal-stagger")) return;
-      if (el.hasAttribute("data-reveal-stagger")) {
-        el.classList.remove("is-visible");
-        delete el.dataset.revealObserved;
-      }
-      el.dataset.revealObserved = "1";
-      if (el.classList.contains("is-visible") && !el.hasAttribute("data-reveal-stagger")) return;
-      revealObserver.observe(el);
-      revealIfInView(el);
-    });
-  }
 
-  function revealIfInView(el) {
-    if (!el.getBoundingClientRect || el.classList.contains("is-visible")) return;
-    const vh = window.innerHeight || document.documentElement.clientHeight;
-    const rect = el.getBoundingClientRect();
-    if (rect.top < vh * 0.94 && rect.bottom > vh * 0.04) {
-      el.classList.add("is-visible");
-      if (revealObserver) revealObserver.unobserve(el);
-    }
+    document.querySelectorAll("[data-reveal-stagger]").forEach((parent) => setupStaggerChildren(parent));
+
+    document
+      .querySelectorAll("[data-reveal], [data-image-reveal], .reveal-fade-up")
+      .forEach((el) => {
+        if (isStaggerItem(el)) return;
+        if (el.dataset.revealObserved === "1" && el.classList.contains("is-visible") && el.hasAttribute("data-reveal-once")) {
+          return;
+        }
+        if (el.dataset.revealObserved !== "1") {
+          el.dataset.revealObserved = "1";
+          revealObserver.observe(el);
+        }
+        syncRevealVisibility(el);
+      });
+
+    requestAnimationFrame(() => requestAnimationFrame(flushRevealPending));
   }
 
   function initHeroKenBurns() {
@@ -75,14 +189,29 @@
         el.classList.add("is-visible");
         return;
       }
-      requestAnimationFrame(() => el.classList.add("is-visible"));
+      el.classList.add("is-visible");
+      el.querySelectorAll("[data-reveal], .reveal, .reveal-fade-up").forEach((child) => {
+        child.setAttribute("data-reveal-once", "");
+        child.classList.add("is-visible");
+      });
     });
   }
 
   function revealPackageDetailFlow() {
     document
-      .querySelectorAll(".pkg-detail-flow .reveal, .pkg-detail-flow .reveal-stagger, .pkg-detail-body .reveal")
-      .forEach((el) => el.classList.add("is-visible"));
+      .querySelectorAll(
+        ".pkg-detail-flow [data-reveal-stagger], .pkg-detail-body [data-reveal-stagger]"
+      )
+      .forEach((parent) => {
+        parent.setAttribute("data-reveal-once", "");
+        setupStaggerChildren(parent);
+      });
+    document
+      .querySelectorAll(".pkg-detail-flow .reveal, .pkg-detail-body .reveal")
+      .forEach((el) => {
+        el.setAttribute("data-reveal-once", "");
+        el.classList.add("is-visible");
+      });
   }
 
   window.initPageMotion = function () {
@@ -99,4 +228,39 @@
   }
 
   document.addEventListener("site:content-rendered", () => window.initPageMotion());
+  document.addEventListener("site:layout-ready", () => window.initPageMotion());
+
+  if (!window.__revealScrollCheck) {
+    window.__revealScrollCheck = true;
+    let scrollPending = false;
+    window.addEventListener(
+      "scroll",
+      () => {
+        if (scrollPending || reduceMotion) return;
+        scrollPending = true;
+        requestAnimationFrame(() => {
+          scrollPending = false;
+          flushRevealPending();
+        });
+      },
+      { passive: true }
+    );
+  }
+
+  if (!window.__revealResizeCheck) {
+    window.__revealResizeCheck = true;
+    let resizePending = false;
+    window.addEventListener(
+      "resize",
+      () => {
+        if (resizePending || reduceMotion) return;
+        resizePending = true;
+        requestAnimationFrame(() => {
+          resizePending = false;
+          flushRevealPending();
+        });
+      },
+      { passive: true }
+    );
+  }
 })();

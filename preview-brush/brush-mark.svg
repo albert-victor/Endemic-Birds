@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 36" preserveAspectRatio="none" aria-hidden="true">
+  <defs>
+    <linearGradient id="bm" x1="4%" y1="0%" x2="96%" y2="100%">
+      <stop offset="0%" stop-color="#fff8d6" stop-opacity="0.95" />
+      <stop offset="42%" stop-color="#ffe347" stop-opacity="0.88" />
+      <stop offset="100%" stop-color="#e4b215" stop-opacity="0.82" />
+    </linearGradient>
+  </defs>
+  <!-- Pass 1 – mkono msongamano, mwisho wenye taper -->
+  <path
+    fill="url(#bm)"
+    d="M0 20 C 22 12, 48 14, 78 11 C 108 8, 138 16, 168 12 C 198 8, 228 15, 258 11 C 268 10, 276 14, 280 12
+       L 278 24 C 248 28, 218 26, 188 27 C 158 28, 128 25, 98 26 C 68 27, 38 24, 18 22 C 8 21, 2 21, 0 20 Z"
+  />
+  <!-- Gleam juu ya stroke -->
+  <path
+    fill="#fffce8"
+    fill-opacity="0.5"
+    d="M16 14 C 62 10, 118 11, 172 12 C 214 13, 248 11, 264 12
+       L 262 18 C 200 19, 132 18, 48 17 C 32 16, 22 15, 16 14 Z"
+  />
+  <!-- Dry skip – gaps za uchoraji (cinematic) -->
+  <path
+    fill="#f6f3eb"
+    fill-opacity="0.55"
+    d="M52 17 L 58 15 L 62 19 L 56 20 Z M134 16 L 140 14 L 144 18 L 138 19 Z M216 17 L 222 15 L 226 19 L 220 20 Z"
+  />
+  <path
+    fill="#ffd21f"
+    fill-opacity="0.4"
+    d="M8 22 C 42 25, 118 23, 196 24 C 232 25, 264 22, 272 23 L 270 26 C 196 29, 84 27, 6 24 Z"
+  />
+</svg>

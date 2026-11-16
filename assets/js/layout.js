@@ -66,6 +66,13 @@
     document.head.appendChild(fa);
   }
 
+  if (!document.querySelector('link[href*="pattern-accent.css"]')) {
+    const pat = document.createElement("link");
+    pat.rel = "stylesheet";
+    pat.href = asset("assets/css/pattern-accent.css");
+    document.head.appendChild(pat);
+  }
+
   const destinationHubLinks = [
     {
       href: "destinations/birding/index.html#destinations-grid",
@@ -148,6 +155,11 @@
               href: "about/trip-reports/index.html",
               label: "Trip Reports",
               desc: "Field notes, published when they are ready",
+            },
+            {
+              href: "about/gallery/index.html",
+              label: "Gallery",
+              desc: "Field, habitat and wildlife moments from our routes",
             },
             {
               href: "about/tour-training/index.html",
@@ -421,14 +433,14 @@
       if (fab.dataset.fabReady) return;
       fab.dataset.fabReady = "true";
       fab.classList.add("fab-whatsapp--enriched");
-      fab.setAttribute("aria-label", "Plan your safari with Leon on WhatsApp");
+      fab.setAttribute("aria-label", "Plan your safari with Leons on WhatsApp");
       const href = fab.getAttribute("href") || "https://wa.me/255627013348";
       fab.setAttribute("href", href);
       fab.innerHTML = `<span class="fab-whatsapp-pulse" aria-hidden="true"></span>
         <span class="fab-whatsapp-icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.511-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.881 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
         </span>
-        <span class="fab-whatsapp-label">Plan with Leon</span>`;
+        <span class="fab-whatsapp-label">Plan with Leons</span>`;
     });
   }
 
@@ -436,24 +448,46 @@
     return `<li><a href="${href}">${label}</a></li>`;
   }
 
+  const FOOTER_SOCIAL_FALLBACK = {
+    facebook: "https://www.facebook.com/search/top?q=endemic%20birds%20tanzania",
+    instagram: "https://www.instagram.com/explore/tags/tanzaniabirding/",
+    tripadvisor: "https://www.tripadvisor.com/Search?q=Endemic+Birds+Tanzania",
+    youtube: "https://www.youtube.com/results?search_query=Endemic+Birds+Tanzania+birding",
+  };
+
+  function resolveSocialUrl(social, key) {
+    const raw = social?.[key];
+    if (raw && String(raw).trim() && raw !== "#") return String(raw).trim();
+    return FOOTER_SOCIAL_FALLBACK[key] || "";
+  }
+
   function buildFooterSocial(site) {
     const contact = site?.contact || {};
     const social = site?.social || {};
-    const items = [];
-    const push = (href, icon, label) => {
-      if (!href) return;
-      items.push({ href, icon, label });
-    };
-    push(contact.email ? `mailto:${contact.email}` : "mailto:info@endemicbirds.co.tz", "fa-solid fa-envelope", "Email");
-    push(social.facebook, "fa-brands fa-facebook-f", "Facebook");
-    push(social.instagram, "fa-brands fa-instagram", "Instagram");
-    push(social.tripadvisor, "fa-brands fa-tripadvisor", "TripAdvisor");
-    push(social.youtube, "fa-brands fa-youtube", "YouTube");
+    const email = contact.email || "info@endemicbirds.co.tz";
+    const wa = contact.whatsapp || "https://wa.me/255627013348";
+
+    const items = [
+      { brand: "email", href: `mailto:${email}`, icon: "fa-solid fa-envelope", label: "Email us" },
+      { brand: "facebook", href: resolveSocialUrl(social, "facebook"), icon: "fa-brands fa-facebook-f", label: "Facebook" },
+      { brand: "instagram", href: resolveSocialUrl(social, "instagram"), icon: "fa-brands fa-instagram", label: "Instagram" },
+      { brand: "tripadvisor", href: resolveSocialUrl(social, "tripadvisor"), icon: "fa-brands fa-tripadvisor", label: "TripAdvisor" },
+      { brand: "youtube", href: resolveSocialUrl(social, "youtube"), icon: "fa-brands fa-youtube", label: "YouTube" },
+      { brand: "whatsapp", href: wa, icon: "fa-brands fa-whatsapp", label: "WhatsApp" },
+    ].filter((item) => item.href);
+
+    const tripadvisorMark = `<svg class="footer-social-ta" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 64" width="22" height="15" aria-hidden="true" focusable="false"><g fill="currentColor"><path d="M10 20 18 6 22 24Z M86 20 78 6 74 24Z"/><path d="M15 23.5Q48 9 81 23.5V29Q48 17 15 29Z"/><path fill-rule="evenodd" d="M30 36m-15 0a15 15 0 1 0 30 0a15 15 0 1 0 -30 0M30 36m-8.5 0a8.5 8.5 0 1 1 17 0a8.5 8.5 0 1 1 -17 0"/><path fill-rule="evenodd" d="M66 36m-15 0a15 15 0 1 0 30 0a15 15 0 1 0 -30 0M66 36m-8.5 0a8.5 8.5 0 1 1 17 0a8.5 8.5 0 1 1 -17 0"/><circle cx="30" cy="36" r="5.25"/><circle cx="66" cy="36" r="5.25"/><path d="M48 41.5 43.2 50.5h9.6Z"/></g></svg>`;
+
     return items
-      .map(
-        (item, i) =>
-          `<a class="footer-social-link" href="${item.href}" rel="noopener noreferrer" aria-label="${item.label}" style="--social-i:${i}"><span class="footer-social-link__rim" aria-hidden="true"></span><span class="footer-social-link__icon" aria-hidden="true"><i class="${item.icon}"></i></span></a>`
-      )
+      .map((item, i) => {
+        const iconInner =
+          item.brand === "tripadvisor"
+            ? tripadvisorMark
+            : `<i class="${item.icon}" aria-hidden="true"></i>`;
+        return `<a class="footer-social-link footer-social-link--${item.brand}" href="${item.href}"${
+          item.brand === "email" ? "" : ' target="_blank" rel="noopener noreferrer"'
+        } aria-label="${item.label}"><span class="footer-social-link__icon" aria-hidden="true">${iconInner}</span></a>`;
+      })
       .join("");
   }
 
@@ -476,21 +510,31 @@
       footerLink(asset("combined/index.html"), "Birding + wildlife"),
       footerLink(asset("packages/index.html"), "Safari packages"),
       footerLink(asset("destinations/index.html"), "All destinations"),
+      footerLink(asset("destinations/birding/index.html"), "Birding circuits"),
       footerLink(asset("about/index.html"), "About us"),
     ].join("");
 
     const quickLinks = [
+      footerLink(asset("plan-your-trip/index.html"), "Plan your trip"),
+      footerLink(asset("accommodations/index.html"), "Safari stays"),
+      footerLink(asset("birding/special-birds/index.html"), "Special birds catalogue"),
+      footerLink(asset("about/trip-reports/index.html"), "Trip reports"),
+      footerLink(asset("about/gallery/index.html"), "Gallery"),
+      footerLink(asset("about/team/index.html"), "Our team"),
+      footerLink(asset("about/why-choose-us/index.html"), "Why choose us"),
+      footerLink(asset("about/partners/index.html"), "Our partners"),
+      footerLink(asset("about/tour-training/index.html"), "Tour training"),
       footerLink(asset("birding/index.html#journeys"), "Birding journeys"),
-      footerLink(asset("birding/index.html#destinations"), "Birding circuits"),
-      footerLink(asset("wildlife/index.html#destinations"), "Wildlife parks"),
       footerLink(asset("wildlife/index.html#activities"), "Safari experiences"),
+      footerLink(`${asset("index.html")}#packages`, "Featured packages"),
       footerLink(`${asset("index.html")}#reviews`, "Guest reviews"),
-      footerLink(`${asset("index.html")}#packages`, "Featured journeys"),
+      footerLink(asset("privacy/index.html"), "Privacy policy"),
+      footerLink(asset("about/policies/booking-terms/index.html"), "Booking terms"),
     ].join("");
 
     return `<footer class="site-footer site-footer--photo" style="--footer-photo: url('${footerPhoto}')">
       <div class="site-footer-scrim" aria-hidden="true"></div>
-      <div class="container footer-grid footer-grid--rich">
+      <div class="container footer-grid footer-grid--rich reveal-stagger" data-reveal-stagger>
         <div class="footer-brand footer-brand-col">
           <a class="footer-brand-lockup" href="${asset("index.html")}">
             <img class="footer-brand-logo-full" src="${asset(logoOnDark)}" alt="Endemic Birds Tanzania" width="300" height="72" decoding="async" />
@@ -499,9 +543,9 @@
           <p class="footer-blurb">${blurb}</p>
           <div class="footer-cta-row">
             <a class="footer-cta footer-cta--primary" href="${plan}"><i class="fa-solid fa-plane-departure" aria-hidden="true"></i> Book a safari</a>
-            <a class="footer-cta footer-cta--ghost" href="${contact.whatsapp || "https://wa.me/255627013348"}" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> WhatsApp Leon</a>
+            <a class="footer-cta footer-cta--ghost" href="${contact.whatsapp || "https://wa.me/255627013348"}" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> WhatsApp Leons</a>
           </div>
-          <div class="footer-social" aria-label="Follow us">${buildFooterSocial(site)}</div>
+          <div class="footer-social footer-social--calm" aria-label="Social media">${buildFooterSocial(site)}</div>
         </div>
         <div class="footer-links-row">
           <div class="footer-col footer-col--links">
@@ -510,7 +554,7 @@
           </div>
           <div class="footer-col footer-col--links">
             <p class="footer-col-title">Quick links</p>
-            <ul class="footer-link-list footer-link-list--dense">${quickLinks}</ul>
+            <ul class="footer-link-list footer-link-list--dense footer-link-list--two-col">${quickLinks}</ul>
           </div>
         </div>
         <div class="footer-col footer-contact">
@@ -522,7 +566,7 @@
           </ul>
         </div>
       </div>
-      <div class="container footer-bottom footer-bottom--rich">
+      <div class="container footer-bottom footer-bottom--rich reveal-fade-up" data-reveal data-reveal-mirror>
         <p>© ${year} Endemic Birds &amp; Wildlife Experiences Ltd.</p>
         <nav class="footer-bottom-links" aria-label="Footer legal">
           <a href="${asset("about/index.html")}">About</a>
@@ -620,6 +664,7 @@
     queueMicrotask(() => {
       document.dispatchEvent(new CustomEvent("site:layout-ready", { detail: layoutDetail }));
       window.initNavMotion?.();
+      window.initPageMotion?.();
       window.EndemicSearch?.initSearch?.();
     });
   }

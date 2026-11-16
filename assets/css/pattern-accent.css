@@ -1,0 +1,68 @@
+/* African pattern overlay 1 – footer scrim + coloured buttons only */
+
+:root {
+  --african-pattern-url: url("../../endemics/pattern-overlay1.jpg");
+  --african-pattern-tile: 260px;
+  --african-pattern-btn-opacity: 0.14;
+  --african-pattern-footer-opacity: 0.055;
+}
+
+/* Coloured fills only (not ghost / outline / hero rect) */
+.btn-solid,
+.btn-primary,
+.nav-book--safari,
+.footer-cta--primary {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.btn-solid::after,
+.btn-primary::after,
+.nav-book--safari::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  z-index: 1;
+  background-image: var(--african-pattern-url);
+  background-size: var(--african-pattern-tile) auto;
+  background-repeat: repeat;
+  background-position: center;
+  opacity: var(--african-pattern-btn-opacity);
+  mix-blend-mode: multiply;
+}
+
+.btn-solid > *,
+.btn-primary > *,
+.nav-book--safari > * {
+  position: relative;
+  z-index: 2;
+}
+
+.footer-cta--primary::after {
+  display: none;
+}
+
+.footer-cta--primary > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Footer photo scrim */
+.site-footer-scrim {
+  isolation: isolate;
+}
+
+.site-footer-scrim::after {
+  display: none;
+}
+
+/* Windows “transparency effects” off – pattern stays visible (slightly softer) */
+@media (prefers-reduced-transparency: reduce) {
+  :root {
+    --african-pattern-btn-opacity: 0.09;
+    --african-pattern-footer-opacity: 0.04;
+  }
+}

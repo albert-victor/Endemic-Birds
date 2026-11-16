@@ -20,10 +20,12 @@
     <link rel="stylesheet" href="assets/css/typography-site.css" />
     <link rel="icon" href="assets/images/from-live-site/brand/bird-logo.png" />
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/site-enhancements.css" />
     <link rel="stylesheet" href="assets/css/clean-depth.css" />
     <link rel="stylesheet" href="assets/css/home-v2.css" />
     <link rel="stylesheet" href="assets/css/species-birds.css" />
     <link rel="stylesheet" href="assets/css/birds-showcase.css" />
+    <link rel="stylesheet" href="assets/css/pattern-accent.css" />
   </head>
   <body class="has-grain has-hero-nav" data-nav="home">
     <div class="site-loader" data-site-loader aria-hidden="true">
@@ -86,9 +88,9 @@
 
       <section class="home-section" id="explore-destinations" aria-labelledby="destinations-heading">
         <div class="home-section-head home-section-head--center">
-          <p class="eyebrow reveal" data-reveal>Destination inspiration</p>
-          <h2 class="section-title reveal" id="destinations-heading" data-reveal>Parks &amp; places to explore</h2>
-          <p class="section-lead reveal" data-reveal>
+          <p class="eyebrow reveal" data-reveal data-reveal-once>Destination inspiration</p>
+          <h2 class="section-title reveal" id="destinations-heading" data-reveal data-reveal-once>Parks &amp; places to explore</h2>
+          <p class="section-lead reveal" data-reveal data-reveal-once>
             A taste of where we bird and safari – browse
             <a class="section-lead-link" href="destinations/index.html">all circuits &amp; regions</a>
             for Northern, Southern, Eastern Arc and more.
@@ -99,9 +101,9 @@
 
       <section class="home-section" id="packages">
         <div class="home-section-head home-section-head--center">
-          <p class="eyebrow reveal" data-reveal>Safari packages</p>
-          <h2 class="section-title section-title--wide reveal" data-reveal>Curated birding &amp; wildlife journeys</h2>
-          <p class="section-lead reveal" data-reveal>
+          <p class="eyebrow reveal" data-reveal data-reveal-once>Safari packages</p>
+          <h2 class="section-title section-title--wide reveal" data-reveal data-reveal-once>Curated birding &amp; wildlife journeys</h2>
+          <p class="section-lead reveal" data-reveal data-reveal-once>
             A taste of how we pace the field – browse
             <a class="section-lead-link" href="packages/index.html">all safari packages</a>
             for birding, wildlife and combined routes.
@@ -116,7 +118,7 @@
                 <button type="button" data-carousel-next aria-label="Next birding packages"><span aria-hidden="true">›</span></button>
               </div>
             </div>
-            <div class="carousel-track" data-carousel-track data-home-packages-birding></div>
+            <div class="carousel-track reveal-stagger" data-carousel-track data-reveal-stagger data-home-packages-birding></div>
           </div>
           <div class="carousel-wrap" data-carousel data-carousel-autoplay="5600">
             <div class="carousel-row-head">
@@ -126,11 +128,27 @@
                 <button type="button" data-carousel-next aria-label="Next wildlife packages"><span aria-hidden="true">›</span></button>
               </div>
             </div>
-            <div class="carousel-track" data-carousel-track data-home-packages-wildlife></div>
+            <div class="carousel-track reveal-stagger" data-carousel-track data-reveal-stagger data-home-packages-wildlife></div>
           </div>
         </div>
         <p class="reveal packages-all-link" data-reveal>
           <a class="section-lead-link" href="packages/index.html">All safari packages →</a>
+        </p>
+      </section>
+
+      <section class="home-section home-acc-section" id="safari-stays" aria-labelledby="home-acc-heading">
+        <div class="home-section-head home-section-head--center">
+          <p class="eyebrow reveal" data-reveal data-reveal-once>Safari stays</p>
+          <h2 class="section-title section-title--wide reveal" id="home-acc-heading" data-reveal data-reveal-once>
+            Lodges &amp; camps on your route
+          </h2>
+          <p class="section-lead reveal" data-reveal data-reveal-once>
+            Named bases on published itineraries – comfort matched to habitat access, season and group size.
+          </p>
+        </div>
+        <div class="home-acc-shell reveal" data-reveal data-reveal-once data-home-accommodations></div>
+        <p class="home-acc-foot reveal" data-reveal data-reveal-once>
+          <a class="home-acc-catalog-cta" href="accommodations/index.html">View all safari stays</a>
         </p>
       </section>
 
@@ -186,6 +204,7 @@
     <script src="assets/js/species-modal.js" defer></script>
     <script src="assets/js/birds-showcase.js" defer></script>
     <script src="assets/js/carousels.js" defer></script>
+    <script src="assets/js/acc-card-slideshow.js" defer></script>
     <script src="assets/js/home-content.js" defer></script>
     <script src="assets/js/main.js" defer></script>
   </body>

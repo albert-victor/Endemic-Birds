@@ -1,0 +1,406 @@
+/* Heading accents demo only - do not import into global site CSS yet */
+
+:root {
+  --ha-orange: #db873f;
+  --ha-orange-alt: #df9250;
+  --ha-terracotta: #c87942;
+  --ha-bird: #657d4a;
+  --ha-bird-deep: #45613c;
+
+  --color-paper: #faf9f7;
+  --color-forest: #3a342e;
+  --color-forest-deep: #2c241c;
+  --color-gold: #c4a062;
+  --color-text: #3a342e;
+  --color-text-soft: #6b5f52;
+  --color-border: rgba(107, 95, 82, 0.18);
+
+  --font-display: "Playfair Display", Georgia, "Times New Roman", serif;
+  --font-body: "Futura PT", system-ui, -apple-system, sans-serif;
+
+  --gutter: clamp(1rem, 4vw, 1.25rem);
+  --container: min(1120px, calc(100% - 2 * var(--gutter)));
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+
+  --ha-stroke-a: url("strokes/brush-underline-a.svg?v=3");
+  --ha-stroke-b: url("strokes/brush-underline-b.svg?v=3");
+  --ha-stroke-c: url("strokes/brush-underline-c.svg?v=3");
+  --ha-stroke-behind: url("strokes/brush-behind.svg?v=3");
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body.ha-demo {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--color-text);
+  background: var(--color-paper);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+.ha-banner {
+  margin: 0;
+  padding: 0.65rem 1rem;
+  text-align: center;
+  font-size: 0.74rem;
+  letter-spacing: 0.04em;
+  background: var(--color-forest-deep);
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.ha-banner a {
+  color: #e4b84a;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.ha-banner a:hover {
+  text-decoration: underline;
+}
+
+.ha-intro {
+  width: var(--container);
+  max-width: 100%;
+  margin: 0 auto;
+  padding: clamp(1.75rem, 4vw, 2.75rem) var(--gutter);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.ha-intro h1 {
+  margin: 0 0 0.65rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.7rem, 3.5vw, 2.2rem);
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.ha-intro p {
+  margin: 0;
+  max-width: 58ch;
+  font-size: 0.95rem;
+  color: var(--color-text-soft);
+}
+
+.ha-intro .ha-note {
+  margin-top: 0.85rem;
+  font-size: 0.82rem;
+  color: var(--color-text-soft);
+}
+
+.ha-intro code {
+  font-size: 0.78em;
+  padding: 0.1em 0.35em;
+  background: rgba(58, 52, 46, 0.06);
+  border-radius: 3px;
+}
+
+/* Mirror live home section heads */
+.home-section {
+  padding: clamp(3.25rem, 7vw, 5rem) 0;
+}
+
+.home-section--alt {
+  background: #f3f1ec;
+}
+
+.home-section-head {
+  width: var(--container);
+  max-width: 100%;
+  margin: 0 auto 2.25rem;
+  padding-inline: var(--gutter);
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.home-section-head--center {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.eyebrow {
+  margin: 0 0 0.75rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+}
+
+.home-section-head--center .eyebrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.85rem;
+  width: 100%;
+  max-width: 100%;
+}
+
+.home-section-head--center .eyebrow::before,
+.home-section-head--center .eyebrow::after {
+  content: "";
+  flex: 0 1 3.5rem;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(196, 145, 42, 0.55), transparent);
+}
+
+.section-title {
+  margin: 0 0 0.75rem;
+  font-family: var(--font-display);
+  font-size: clamp(2.25rem, 5vw, 3.1rem);
+  font-weight: 400;
+  line-height: 1.08;
+  letter-spacing: 0;
+  color: var(--color-text);
+}
+
+.home-section-head--center .section-title {
+  text-align: center;
+  max-width: min(100%, 22rem);
+}
+
+.home-section-head--center .section-title.section-title--wide {
+  max-width: min(100%, 32rem);
+}
+
+.section-lead {
+  margin: 0.5rem 0 0;
+  max-width: 36rem;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.65;
+  letter-spacing: 0.01em;
+  color: var(--color-text-soft);
+}
+
+.home-section-head--center .section-lead {
+  text-align: center;
+}
+
+.section-lead a {
+  color: #9a7324;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: rgba(154, 115, 36, 0.45);
+  text-underline-offset: 0.18em;
+}
+
+.ha-panel {
+  width: var(--container);
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1.5rem var(--gutter);
+  color: var(--color-text-soft);
+  font-size: 0.9rem;
+  border-top: 1px dashed var(--color-border);
+}
+
+.ha-meta {
+  width: var(--container);
+  max-width: 100%;
+  margin: -1.25rem auto 0;
+  padding: 0 var(--gutter) 0.5rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-text-soft);
+  opacity: 0.85;
+}
+
+.ha-meta--center {
+  text-align: center;
+}
+
+/* ----- Accent system ----- */
+
+.ha-heading {
+  position: relative;
+}
+
+/* Phrase wrapper – stroke stays BEHIND glyphs, thin & quiet */
+.ha-phrase {
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+  vertical-align: baseline;
+  padding-bottom: 0.12em;
+  isolation: isolate;
+}
+
+.ha-phrase-text {
+  position: relative;
+  z-index: 2;
+}
+
+.ha-stroke {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0.2em;
+  min-height: 3px;
+  max-height: 7px;
+  bottom: 0.02em;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+  display: block;
+  opacity: 0.78;
+  transform: rotate(-0.8deg);
+  transform-origin: left center;
+}
+
+.ha-phrase--b .ha-stroke {
+  height: 0.18em;
+  width: 92%;
+  left: 4%;
+  opacity: 0.72;
+  transform: rotate(0.6deg);
+}
+
+.ha-phrase--c .ha-stroke {
+  height: 0.17em;
+  width: 88%;
+  left: 6%;
+  opacity: 0.7;
+  transform: rotate(-1deg);
+}
+
+/* Treatment B: soft mark behind lower portion of the word only */
+.ha-phrase--behind {
+  padding-bottom: 0.04em;
+  padding-inline: 0.04em;
+}
+
+.ha-stroke--behind {
+  height: 0.32em;
+  max-height: 10px;
+  bottom: 0.08em;
+  top: auto;
+  opacity: 0.45;
+  z-index: 0;
+  transform: rotate(0.4deg);
+}
+
+.ha-phrase--wrap {
+  white-space: normal;
+}
+
+/* Font Awesome dove – small secondary accent */
+.ha-phrase--bird {
+  padding-right: 0.25em;
+}
+
+.ha-bird {
+  position: absolute;
+  pointer-events: none;
+  user-select: none;
+  z-index: 3;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ha-bird-deep);
+  font-size: clamp(0.95rem, 2.2vw, 1.25rem);
+  line-height: 1;
+  opacity: 0.88;
+}
+
+.ha-bird .fa-solid,
+.ha-bird .fas {
+  display: block;
+  line-height: 1;
+}
+
+.ha-bird--open {
+  top: -0.7em;
+  right: -1.05em;
+  transform: rotate(-22deg);
+}
+
+.ha-bird--glide {
+  top: -0.75em;
+  right: -1em;
+  transform: rotate(-10deg);
+  font-size: clamp(1rem, 2.4vw, 1.35rem);
+}
+
+.ha-bird--sweep {
+  top: -0.65em;
+  right: -1.1em;
+  transform: scaleX(-1) rotate(12deg);
+}
+
+.ha-bird--perched {
+  top: auto;
+  bottom: 0.1em;
+  right: -1.15em;
+  transform: rotate(0deg);
+  font-size: clamp(0.85rem, 2vw, 1.1rem);
+  color: var(--ha-bird);
+  opacity: 0.8;
+}
+
+.home-section-head--center .ha-heading,
+.home-section-head .ha-heading {
+  overflow: visible;
+}
+
+@media (max-width: 720px) {
+  .ha-stroke {
+    height: 0.16em;
+    max-height: 5px;
+  }
+
+  .ha-phrase--b .ha-stroke,
+  .ha-phrase--c .ha-stroke {
+    height: 0.15em;
+  }
+
+  .ha-stroke--behind {
+    height: 0.26em;
+    max-height: 8px;
+    opacity: 0.4;
+  }
+
+  .ha-bird {
+    font-size: 0.95rem;
+  }
+
+  .ha-bird--glide {
+    font-size: 1.05rem;
+  }
+
+  .ha-bird--perched {
+    font-size: 0.85rem;
+    right: -0.95em;
+  }
+}
+
+@media (max-width: 360px) {
+  /* Only hide bird when the title block is too tight */
+  .ha-heading--hide-bird-sm .ha-bird {
+    display: none;
+  }
+
+  .ha-phrase {
+    white-space: normal;
+    display: inline;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+  }
+
+  .home-section-head--center .ha-heading .ha-bird--open,
+  .home-section-head--center .ha-heading .ha-bird--glide,
+  .home-section-head--center .ha-heading .ha-bird--sweep {
+    right: 0;
+  }
+}

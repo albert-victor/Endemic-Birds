@@ -57,7 +57,7 @@
           `<a class="btn btn-outline" href="${asset(c.href)}">${String(c.label).replace(/&/g, "&amp;")}</a>`
       )
       .join("");
-    planningHost.innerHTML = `<div class="accommodation-planning reveal" data-reveal>
+    planningHost.innerHTML = `<div class="accommodation-planning reveal" data-reveal data-reveal-mirror>
       <h2 class="section-title">${planning.title}</h2>
       <p class="section-lead">${planning.lead}</p>
       <ul class="accommodation-planning__list">${points}</ul>

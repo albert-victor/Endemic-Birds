@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 18" preserveAspectRatio="none" aria-hidden="true">
+  <defs>
+    <linearGradient id="sw-fill" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#2d7d68" stop-opacity="0" />
+      <stop offset="12%" stop-color="#2d7d68" />
+      <stop offset="88%" stop-color="#163e33" />
+      <stop offset="100%" stop-color="#163e33" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+  <path
+    fill="url(#sw-fill)"
+    opacity="0.88"
+    d="M0 11 C 28 7, 52 13, 78 9 C 105 5, 128 12, 155 8 C 178 5, 192 10, 200 9
+       L 199 15 C 170 17, 142 14, 115 16 C 88 18, 55 15, 24 16 C 12 16, 4 14, 0 13 Z"
+  />
+</svg>

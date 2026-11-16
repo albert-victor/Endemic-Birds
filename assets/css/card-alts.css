@@ -594,14 +594,21 @@
   box-shadow: 0 2px 8px rgba(44, 36, 28, 0.12);
 }
 
-.carousel-track .pkg-ind-sheet {
+.carousel-track .scroll-reveal-slot {
   flex: 0 0 min(300px, 82vw);
   scroll-snap-align: start;
 }
 
-.dest-row-track--scroll .dest-ind-spot {
+.dest-row-track--scroll .scroll-reveal-slot {
   flex: 0 0 min(278px, 86vw);
   scroll-snap-align: start;
+}
+
+.carousel-track .scroll-reveal-slot .pkg-ind-sheet,
+.dest-row-track--scroll .scroll-reveal-slot .dest-ind-spot {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 /* Card image loading – circular spinner until photo loads */
