@@ -210,16 +210,53 @@
     </section>`;
   }
 
-  function renderLinkedPackagesBand(packages, slugs, title = "Wildlife safaris here") {
-    if (!slugs?.length || !window.EndemicUI) return "";
-    const linked = packages.filter((p) => slugs.includes(p.slug));
-    if (!linked.length) return "";
-    return `<section class="detail-band reveal" data-reveal>
-      <div class="container">
-        <h2 class="detail-heading">${escapeHtml(title)}</h2>
-        ${window.EndemicUI.renderPackageCorpGrid(linked, asset)}
-      </div>
-    </section>`;
+  async function loadBirdingSiteCatalog() {
+    const files = ["southern-sites.json", "western-sites.json", "northern-sites.json"];
+    const bundles = await Promise.all(files.map((f) => loadJson(f).catch(() => ({ sites: [] }))));
+    return bundles.flatMap((b) => b.sites || []);
+  }
+
+  function packagesMatchingPlace(packages, { siteSlug, siteName, packageSlugs, siteCatalog, wDestMap }) {
+    const slugSet = new Set((packageSlugs || []).filter(Boolean));
+    const slugNorm = String(siteSlug || "").toLowerCase();
+    const nameToken = String(siteName || "").split(/[\s(/]/)[0];
+    const tokenLower = nameToken.length >= 4 ? nameToken.toLowerCase() : "";
+
+    packages.forEach((p) => {
+      if (slugSet.has(p.slug)) return;
+      if ((p.wildlifeDestinations || []).some((s) => String(s).toLowerCase() === slugNorm)) {
+        slugSet.add(p.slug);
+        return;
+      }
+      if (window.PackageVisits?.resolvePackageVisits) {
+        const visits = window.PackageVisits.resolvePackageVisits(p, {
+          wDestMap: wDestMap || {},
+          hubSites: {},
+          siteCatalog: siteCatalog || [],
+        });
+        if (visits.some((v) => v.href && v.href.toLowerCase().includes(slugNorm))) {
+          slugSet.add(p.slug);
+        }
+      }
+      if (slugSet.has(p.slug) || !tokenLower) return;
+      const blob = `${p.title || ""} ${(p.itinerary || [])
+        .map((d) => `${d.title || ""} ${d.description || ""}`)
+        .join(" ")}`.toLowerCase();
+      if (blob.includes(tokenLower)) slugSet.add(p.slug);
+    });
+
+    return packages.filter((p) => slugSet.has(p.slug));
+  }
+
+  function renderDestinationPackagesBand(linked, placeName, options = {}) {
+    if (!linked.length || !window.EndemicUI) return "";
+    return packagesInCircuitSection(linked, placeName, {
+      eyebrow: options.eyebrow || "Safari packages",
+      title: options.title || "Safaris including this destination",
+      lead:
+        options.lead ||
+        `Published birding and wildlife journeys that visit ${escapeHtml(placeName)} – filter and enquire for dates.`,
+    });
   }
 
   async function renderPackage() {
@@ -320,6 +357,15 @@
   }
 
   function renderSpeciesSection(site) {
+    if (site.speciesFound?.length) {
+      const labels = site.speciesFound.map((sp) =>
+        typeof sp === "string" ? sp : sp.commonName || ""
+      );
+      return `<section class="detail-section reveal" data-reveal>
+      <h2>Species found</h2>
+      <ul class="pill-list pill-list--wrap">${labels.map((s) => `<li>${escapeHtml(s)}</li>`).join("")}</ul>
+    </section>`;
+    }
     if (!site.keySpecies?.length) return "";
     return `<section class="detail-section reveal" data-reveal>
       <h2>Key species</h2>
@@ -426,12 +472,15 @@
     return null;
   }
 
-  function renderSitePackages(site, packages) {
-    const slugs = site.packageSlugs || [];
-    if (!slugs.length) return "";
-    const linked = packages.filter((p) => slugs.includes(p.slug));
-    if (!linked.length) return "";
-    return renderLinkedPackagesBand(packages, slugs, "Journeys including this site");
+  function renderSitePackages(site, packages, ctx = {}) {
+    const linked = packagesMatchingPlace(packages, {
+      siteSlug: site.slug,
+      siteName: site.name,
+      packageSlugs: site.packageSlugs,
+      siteCatalog: ctx.siteCatalog,
+      wDestMap: ctx.wDestMap,
+    });
+    return renderDestinationPackagesBand(linked, site.name);
   }
 
   async function renderCircuitSite() {
@@ -447,10 +496,18 @@
       data = found.data;
       site = found.site;
     }
-    const packages = await loadJson("packages.json");
+    const [packages, wildlifeCatalog, siteCatalog] = await Promise.all([
+      loadJson("packages.json"),
+      loadJson("wildlife-destinations.json").catch(() => []),
+      loadBirdingSiteCatalog(),
+    ]);
+    const wDestMap = Object.fromEntries((wildlifeCatalog || []).map((d) => [d.slug, d]));
     const circuitLabel = data.circuitLabel || `${data.circuit} circuit`;
     const siteHero = await heroUrl(site.slug, site.heroImage);
-    const heroStyle = `--page-hero-img: url('${siteHero}')`;
+    const heroPosition = site.heroImagePosition
+      ? `--page-hero-position: ${site.heroImagePosition};`
+      : "";
+    const heroStyle = `--page-hero-img: url('${siteHero}');${heroPosition}`;
 
     document.getElementById("main").innerHTML = `
       <section class="page-hero" style="${heroStyle}">
@@ -491,7 +548,7 @@
           </aside>
         </div>
       </article>
-      ${renderSitePackages(site, packages)}`;
+      ${renderSitePackages(site, packages, { siteCatalog, wDestMap })}`;
 
     finishDetailRender();
   }
@@ -544,7 +601,12 @@
     </section>`;
   }
 
-  function packagesInCircuitSection(linked, destName) {
+  function packagesInCircuitSection(linked, destName, options = {}) {
+    const eyebrow = options.eyebrow || "Safari packages";
+    const title = options.title || "Journeys in this region";
+    const lead =
+      options.lead ||
+      `Packaged birding &amp; wildlife routes that include ${escapeHtml(destName)}.`;
     if (!linked.length || !window.EndemicUI) {
       return `<section class="section" id="journeys">
         <div class="container detail-section reveal" data-reveal>
@@ -557,9 +619,9 @@
     return `<section class="section section--paper-band" id="journeys">
       <div class="container">
         <header class="section-head">
-          <p class="eyebrow reveal" data-reveal>Safari packages</p>
-          <h2 class="section-title reveal" data-reveal>Journeys in this region</h2>
-          <p class="section-lead reveal" data-reveal>Packaged birding &amp; wildlife routes that include ${escapeHtml(destName)}.</p>
+          <p class="eyebrow reveal" data-reveal>${escapeHtml(eyebrow)}</p>
+          <h2 class="section-title reveal" data-reveal>${escapeHtml(title)}</h2>
+          <p class="section-lead reveal" data-reveal>${lead}</p>
         </header>
         ${window.EndemicUI.renderPackageCorpGrid(linked, asset)}
       </div>
@@ -664,10 +726,11 @@
   }
 
   async function renderWildlifeDestination() {
-    const [dests, packages, activities] = await Promise.all([
+    const [dests, packages, activities, siteCatalog] = await Promise.all([
       loadJson("wildlife-destinations.json"),
       loadJson("packages.json"),
       loadJson("wildlife-activities.json"),
+      loadBirdingSiteCatalog(),
     ]);
     const dest = dests.find((d) => d.slug === slug);
     if (!dest) {
@@ -731,15 +794,25 @@
           </div>
         </div>
       </article>
-      ${renderLinkedPackagesBand(packages, dest.packageSlugs)}`;
+      ${renderDestinationPackagesBand(
+        packagesMatchingPlace(packages, {
+          siteSlug: dest.slug,
+          siteName: dest.name,
+          packageSlugs: dest.packageSlugs,
+          siteCatalog,
+          wDestMap: Object.fromEntries(dests.map((d) => [d.slug, d])),
+        }),
+        dest.name
+      )}`;
     finishDetailRender();
   }
 
   async function renderWildlifeActivity() {
-    const [activities, packages, dests] = await Promise.all([
+    const [activities, packages, dests, siteCatalog] = await Promise.all([
       loadJson("wildlife-activities.json"),
       loadJson("packages.json"),
       loadJson("wildlife-destinations.json"),
+      loadBirdingSiteCatalog(),
     ]);
     const act = activities.find((a) => a.slug === slug);
     if (!act) {
@@ -798,7 +871,17 @@
           </aside>
         </div>
       </article>
-      ${renderLinkedPackagesBand(packages, act.packageSlugs)}`;
+      ${renderDestinationPackagesBand(
+        packagesMatchingPlace(packages, {
+          siteSlug: act.slug,
+          siteName: act.name,
+          packageSlugs: act.packageSlugs,
+          siteCatalog,
+          wDestMap: Object.fromEntries(dests.map((d) => [d.slug, d])),
+        }),
+        act.name,
+        { title: "Safaris including this experience" }
+      )}`;
     finishDetailRender();
   }
 

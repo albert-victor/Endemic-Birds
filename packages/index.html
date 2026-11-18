@@ -12,11 +12,36 @@
     <link rel="stylesheet" href="../assets/css/styles.css" />
     <link rel="stylesheet" href="../assets/css/site-enhancements.css" />
     <link rel="stylesheet" href="../assets/css/site-loader-dots.css" />
+    <script>
+      document.documentElement.classList.add("is-loading", "is-branded-entry");
+    </script>
   </head>
   <body class="has-grain" data-nav="birding">
     <div class="site-loader" data-site-loader data-loader-scope="packages" aria-hidden="true">
-      <div class="site-loader-inner"></div>
+      <div class="site-loader-inner">
+        <div class="eb-loader-stack is-ready">
+          <span class="eb-loader-logo-wrap">
+            <img
+              class="eb-loader-logo"
+              src="../assets/images/from-live-site/brand/bird-logo.png"
+              alt=""
+              width="80"
+              height="80"
+              fetchpriority="high"
+              decoding="sync"
+            />
+          </span>
+          <div class="eb-loader-dots" role="status" aria-label="Please wait">
+            <span class="eb-loader-dots__dot eb-loader-dots__dot--orange" aria-hidden="true"></span>
+            <span class="eb-loader-dots__dot eb-loader-dots__dot--green" aria-hidden="true"></span>
+            <span class="eb-loader-dots__dot eb-loader-dots__dot--charcoal" aria-hidden="true"></span>
+          </div>
+        </div>
+      </div>
     </div>
+    <script>window.__ASSET_PREFIX__ = "../";</script>
+    <script src="../assets/js/loader-dots.js"></script>
+    <script src="../assets/js/site-loader.js"></script>
     <a class="skip-link" href="#main">Skip to main content</a>
     <div id="site-header"></div>
     <main id="main">
@@ -126,9 +151,6 @@
       </section>
     </main>
     <div id="site-footer"></div>
-    <script>window.__ASSET_PREFIX__ = "../";</script>
-    <script src="../assets/js/loader-dots.js"></script>
-    <script src="../assets/js/site-loader.js"></script>
     <script src="../assets/js/package-visits.js" defer></script>
     <script src="../assets/js/ui-cards.js" defer></script>
     <script src="../assets/js/layout.js" defer></script>

@@ -1565,3 +1565,116 @@ body[data-nav="accommodations"] #main {
     }
   }
 }
+
+/* Compact footer – detail / minor pages (data-detail on body) */
+.site-footer--compact {
+  background:
+    linear-gradient(180deg, rgba(42, 36, 32, 0.92) 0%, var(--color-text, #2a2420) 55%, #221c18 100%);
+  color: rgba(255, 255, 255, 0.9);
+  border-top: 1px solid rgba(196, 160, 98, 0.22);
+  padding: clamp(1.5rem, 4vw, 2rem) 0 1.35rem;
+}
+
+.site-footer-compact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.95rem;
+  max-width: 38rem;
+  margin: 0 auto;
+}
+
+.site-footer-compact__brand {
+  font-family: var(--font-display);
+  font-size: clamp(1.1rem, 2.8vw, 1.2rem);
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+}
+
+.site-footer-compact__brand:hover {
+  color: var(--color-gold, #e4b84a);
+}
+
+.site-footer-compact__tagline {
+  margin: 0;
+  font-size: clamp(0.875rem, 2.4vw, 0.92rem);
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.site-footer-compact__contact {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem 1.25rem;
+  font-size: clamp(0.9rem, 2.5vw, 0.96rem);
+}
+
+.site-footer-compact__contact a {
+  color: rgba(255, 255, 255, 0.88);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.site-footer-compact__contact a i {
+  font-size: 1.05rem;
+  width: 1.15rem;
+  text-align: center;
+}
+
+.site-footer-compact__contact a:hover {
+  color: #fff;
+}
+
+.site-footer-compact__social {
+  justify-content: center;
+  gap: 0.65rem;
+}
+
+.site-footer--compact .footer-social-link {
+  width: 2.65rem;
+  height: 2.65rem;
+}
+
+.site-footer--compact .footer-social-link__icon {
+  font-size: 1.12rem;
+}
+
+.site-footer--compact .footer-social-ta {
+  width: 1.45rem;
+}
+
+.site-footer-compact__legal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.55rem 0.95rem;
+  font-size: clamp(0.84rem, 2.3vw, 0.88rem);
+}
+
+.site-footer-compact__legal a {
+  color: rgba(255, 255, 255, 0.72);
+  text-decoration: none;
+}
+
+.site-footer-compact__legal a:hover {
+  color: #fff;
+}
+
+.site-footer-compact__copy {
+  margin: 0.25rem 0 0;
+  font-size: clamp(0.78rem, 2.1vw, 0.8rem);
+  color: rgba(255, 255, 255, 0.55);
+}
+
+body.has-footer-compact #main + #site-footer,
+body.has-footer-compact .site-footer--compact {
+  margin-top: 0;
+}

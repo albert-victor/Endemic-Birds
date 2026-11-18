@@ -585,6 +585,43 @@
     </footer>`;
   }
 
+  function usesCompactFooter() {
+    return Boolean(document.body.dataset.detail);
+  }
+
+  function buildFooterCompact(site) {
+    const year = new Date().getFullYear();
+    const contact = site?.contact || {};
+    const location = contact.location || "Iringa, Tanzania";
+    const phone = contact.phone || "+255 627 013 348";
+    const phoneTel = contact.phoneTel || "+255627013348";
+    const email = contact.email || "info@endemicbirds.co.tz";
+    const plan = asset("plan-your-trip/index.html");
+
+    return `<footer class="site-footer site-footer--compact" role="contentinfo">
+      <div class="container site-footer-compact">
+        <div class="site-footer-compact__top">
+          <a class="site-footer-compact__brand" href="${asset("index.html")}">Endemic Birds Tanzania</a>
+          <p class="site-footer-compact__tagline">Specialist birding &amp; wildlife safaris · ${location}</p>
+        </div>
+        <ul class="site-footer-compact__contact">
+          <li><a href="tel:${phoneTel}"><i class="fa-solid fa-phone" aria-hidden="true"></i> ${phone}</a></li>
+          <li><a href="mailto:${email}"><i class="fa-solid fa-envelope" aria-hidden="true"></i> ${email}</a></li>
+          <li><a href="${contact.whatsapp || "https://wa.me/255627013348"}" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> WhatsApp</a></li>
+        </ul>
+        <div class="footer-social footer-social--calm site-footer-compact__social" aria-label="Social media">${buildFooterSocial(site)}</div>
+        <nav class="site-footer-compact__legal" aria-label="Footer legal">
+          <a href="${asset("about/index.html")}">About</a>
+          <a href="${asset("about/index.html#contact")}">Contact</a>
+          <a href="${asset("privacy/index.html")}">Privacy</a>
+          <a href="${asset("about/policies/booking-terms/index.html")}">Booking terms</a>
+          <a href="${plan}">Enquire</a>
+        </nav>
+        <p class="site-footer-compact__copy">© ${year} Endemic Birds &amp; Wildlife Experiences Ltd.</p>
+      </div>
+    </footer>`;
+  }
+
   async function ensureSiteSearchScript() {
     if (window.EndemicSearch) return;
     let el = document.querySelector('script[src*="site-search.js"]');
@@ -621,7 +658,14 @@
     const headerEl = document.getElementById("site-header");
     const footerEl = document.getElementById("site-footer");
     if (headerEl) headerEl.outerHTML = buildNav({ onLight: logoOnLight, onDark: logoOnDark });
-    if (footerEl) footerEl.outerHTML = buildFooter(site, logoOnDark, footerBg);
+    if (footerEl) {
+      if (usesCompactFooter()) {
+        document.body.classList.add("has-footer-compact");
+        footerEl.outerHTML = buildFooterCompact(site);
+      } else {
+        footerEl.outerHTML = buildFooter(site, logoOnDark, footerBg);
+      }
+    }
 
     const header = document.querySelector("[data-header]");
     if (header && !document.getElementById("site-search")) {

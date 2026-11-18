@@ -1,31 +1,39 @@
 (function () {
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const BRANDED_LOADER_SCOPES = new Set(["home", "packages"]);
+  let siteContentRendered = false;
 
-  function pageLoadWeight() {
-    let w = 1;
-    if (document.querySelector("[data-hero-push], .hero-push")) w += 2.2;
-    if (document.querySelector("[data-home-why-split], [data-bird-of-day], [data-home-reviews]")) w += 1.4;
-    if (document.querySelector('[data-catalog], [data-catalog-grid], [data-catalog-list]')) w += 1.1;
-    if (document.querySelector("[data-about-sub-mount]")) w += 0.85;
-    if (document.querySelector("[data-accommodation-catalog]")) w += 0.75;
-    const deferScripts = document.querySelectorAll("script[src][defer], script[src]:not([async])").length;
-    w += Math.min(deferScripts * 0.06, 1.25);
+  /* defer scripts (catalog, home-content) can fire before DOMContentLoaded / init */
+  document.addEventListener("site:content-rendered", () => {
+    siteContentRendered = true;
+  });
+
+  function pageLoadWeight(scope) {
+    let w = 0.6;
+    if (scope === "home") {
+      if (document.querySelector("[data-hero-push], .hero-push")) w += 1.2;
+      if (document.querySelector("[data-home-why-split], [data-bird-of-day], [data-home-reviews]")) w += 0.9;
+    }
+    if (scope === "packages" || document.querySelector("[data-catalog]")) w += 0.65;
     return w;
   }
 
-  function minDisplayMs(weight) {
-    return Math.round(600 + weight * 340);
-  }
-
-  function maxWaitMs(weight) {
-    return Math.round(4500 + weight * 1200);
+  function timingForScope(scope, weight) {
+    const caps =
+      scope === "packages"
+        ? { minBase: 520, minPerW: 90, maxBase: 2400, maxPerW: 380, maxCap: 3400 }
+        : { minBase: 420, minPerW: 90, maxBase: 2600, maxPerW: 450, maxCap: 4000 };
+    return {
+      minMs: Math.min(Math.round(caps.minBase + weight * caps.minPerW), scope === "packages" ? 720 : 980),
+      maxMs: Math.min(Math.round(caps.maxBase + weight * caps.maxPerW), caps.maxCap),
+    };
   }
 
   function ensureLoaderMarkup(loader, attempt = 0) {
     const inner = loader.querySelector(".site-loader-inner");
     if (!inner) return;
-    if (inner.querySelector(".eb-loader-stack")) return;
+    const existing = inner.querySelector(".eb-loader-stack");
+    if (existing) return;
     if (!window.EndemicLoaderDots) {
       if (attempt < 25) window.setTimeout(() => ensureLoaderMarkup(loader, attempt + 1), 40);
       return;
@@ -36,48 +44,70 @@
 
   function finish(loader) {
     loader.classList.add("is-done");
-    document.documentElement.classList.remove("is-loading");
+    document.documentElement.classList.remove("is-loading", "is-branded-entry");
     document.documentElement.classList.add("is-app-ready");
     document.querySelector(".hero-push")?.classList.add("is-ready");
     document.dispatchEvent(new CustomEvent("site:app-ready"));
-    window.setTimeout(() => loader.remove(), reduceMotion ? 0 : 620);
+    window.setTimeout(() => loader.remove(), reduceMotion ? 0 : 480);
   }
 
-  function needsContentEvent() {
-    return Boolean(
-      document.querySelector(
-        "[data-catalog], [data-about-sub-mount], [data-home-why-split], [data-bird-of-day], [data-accommodation-catalog], [data-hero-push]"
-      )
-    );
+  function needsContentEvent(scope) {
+    if (scope === "packages") return true;
+    if (scope === "home") {
+      return Boolean(
+        document.querySelector("[data-home-why-split], [data-bird-of-day], [data-home-reviews], [data-hero-push]")
+      );
+    }
+    return Boolean(document.querySelector("[data-catalog], [data-about-sub-mount]"));
   }
 
-  function waitUntilReady(weight) {
-    const minMs = minDisplayMs(weight);
-    const maxMs = maxWaitMs(weight);
+  function packagesCatalogPopulated() {
+    const root = document.querySelector('[data-catalog="packages"]');
+    if (!root) return false;
+    const list = root.querySelector("[data-catalog-list]");
+    const bento = root.querySelector("[data-catalog-bento]");
+    return Boolean((list && list.children.length > 0) || (bento && bento.children.length > 0));
+  }
+
+  function scopeContentReady(scope) {
+    if (!needsContentEvent(scope)) return true;
+    if (scope === "packages") {
+      return siteContentRendered && packagesCatalogPopulated();
+    }
+    return siteContentRendered;
+  }
+
+  function waitUntilReady(scope, weight) {
+    const { minMs, maxMs } = timingForScope(scope, weight);
     const started = Date.now();
-    let windowLoaded = document.readyState === "complete";
-    let contentReady = !needsContentEvent();
+    let domReady = document.readyState !== "loading";
+    let contentReady = scopeContentReady(scope);
 
     return new Promise((resolve) => {
-      const done = () => {
+      let settled = false;
+      const settle = () => {
+        if (settled) return;
+        settled = true;
+        resolve();
+      };
+
+      const tryDone = () => {
+        if (settled) return;
+        if (!contentReady) contentReady = scopeContentReady(scope);
         const elapsed = Date.now() - started;
-        if (windowLoaded && contentReady && elapsed >= minMs) {
-          resolve();
-          return true;
-        }
-        return false;
+        if (domReady && contentReady && elapsed >= minMs) settle();
+        else if (elapsed >= maxMs) settle();
       };
 
-      const tick = () => {
-        if (done()) return;
-        if (Date.now() - started >= maxMs) resolve();
-      };
-
-      if (!windowLoaded) {
-        window.addEventListener("load", () => {
-          windowLoaded = true;
-          tick();
-        }, { once: true });
+      if (!domReady) {
+        document.addEventListener(
+          "DOMContentLoaded",
+          () => {
+            domReady = true;
+            tryDone();
+          },
+          { once: true }
+        );
       }
 
       if (!contentReady) {
@@ -85,18 +115,18 @@
           "site:content-rendered",
           () => {
             contentReady = true;
-            tick();
+            tryDone();
           },
           { once: true }
         );
       }
 
-      const interval = window.setInterval(tick, 90);
-      window.setTimeout(() => {
-        window.clearInterval(interval);
-        resolve();
-      }, maxMs + 50);
-      tick();
+      const onFrame = () => {
+        tryDone();
+        if (!settled) window.requestAnimationFrame(onFrame);
+      };
+      window.requestAnimationFrame(onFrame);
+      window.setTimeout(settle, maxMs + 80);
     });
   }
 
@@ -118,8 +148,8 @@
       return;
     }
 
-    const weight = pageLoadWeight();
-    waitUntilReady(weight).then(() => finish(loader));
+    const weight = pageLoadWeight(scope);
+    waitUntilReady(scope, weight).then(() => finish(loader));
   }
 
   if (document.readyState === "loading") {

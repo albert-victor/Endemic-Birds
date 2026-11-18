@@ -68,6 +68,20 @@
   }
 
   async function initPackages(root) {
+    const bentoHostEarly = root.querySelector("[data-catalog-bento]");
+    const listHostEarly = root.querySelector("[data-catalog-list]");
+    let catalogLoadingEl = null;
+    if (window.EndemicLoaderDots && listHostEarly && !listHostEarly.children.length) {
+      catalogLoadingEl = document.createElement("div");
+      catalogLoadingEl.className = "eb-catalog-loading";
+      catalogLoadingEl.innerHTML = window.EndemicLoaderDots.inlineMarkup({ compact: true });
+      if (bentoHostEarly && !bentoHostEarly.children.length) {
+        bentoHostEarly.appendChild(catalogLoadingEl);
+      } else {
+        listHostEarly.appendChild(catalogLoadingEl);
+      }
+    }
+
     const [packages, wildlifeDests, metaDoc] = await Promise.all([
       loadJson("packages.json"),
       loadJson("wildlife-destinations.json").catch(() => []),
@@ -84,6 +98,8 @@
     const syncUrl = root.dataset.syncUrl !== "false" && !listHost?.dataset?.packageTeaserLimit;
 
     function renderFiltered(filtered) {
+      catalogLoadingEl?.remove();
+      catalogLoadingEl = null;
       const sorted = [...filtered].sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0));
       const teaserLimit = listHost?.dataset?.packageTeaserLimit
         ? Number(listHost.dataset.packageTeaserLimit)
@@ -117,7 +133,6 @@
       renderFiltered(filtered);
       if (countEl) countEl.textContent = String(filtered.length);
     }
-    document.dispatchEvent(new CustomEvent("site:content-rendered"));
   }
 
   async function initDestinations(root) {

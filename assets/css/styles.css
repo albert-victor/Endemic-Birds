@@ -3193,9 +3193,7 @@ a.nav-drawer-tile[aria-current="page"],
   display: flex;
   align-items: flex-end;
   color: var(--color-white);
-  background-image: var(--page-hero-img);
-  background-size: cover;
-  background-position: center;
+  background-color: #122820;
   overflow: hidden;
 }
 
@@ -3203,9 +3201,10 @@ a.nav-drawer-tile[aria-current="page"],
   content: "";
   position: absolute;
   inset: 0;
-  background: inherit;
+  background-image: var(--page-hero-img);
   background-size: cover;
-  background-position: center;
+  background-position: var(--page-hero-position, center);
+  background-repeat: no-repeat;
   transform: scale(1.02);
   transition: transform 2.4s var(--ease-out);
 }

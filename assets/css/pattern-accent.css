@@ -64,6 +64,32 @@
   display: none;
 }
 
+/* Compact footer – same African tile as .btn-solid, softer at a distance */
+.site-footer--compact {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.site-footer--compact::before {
+  content: "";
+  position: absolute;
+  inset: -8% 0;
+  pointer-events: none;
+  z-index: 0;
+  background-image: var(--african-pattern-url);
+  background-size: var(--african-pattern-tile) auto;
+  background-repeat: repeat;
+  background-position: center;
+  opacity: var(--african-pattern-footer-opacity);
+  mix-blend-mode: soft-light;
+}
+
+.site-footer--compact .site-footer-compact {
+  position: relative;
+  z-index: 1;
+}
+
 /* Windows “transparency effects” off – pattern stays visible (slightly softer) */
 @media (prefers-reduced-transparency: reduce) {
   :root {

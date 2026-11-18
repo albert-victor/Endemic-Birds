@@ -1,0 +1,53 @@
+{
+  "generatedAt": "2026-11-18T14:26:22.087Z",
+  "report": [
+    {
+      "slug": "15-days-tanzania-birding-tour",
+      "referenceUrl": "https://www.cisticolatours.com/tanzania-birding-tour/",
+      "hero": {
+        "bytes": 19907,
+        "url": "https://www.cisticolatours.com/wp-content/uploads/2016/08/Z62_2529.jpg"
+      },
+      "gallery": {
+        "bytes": 383127,
+        "url": "https://www.cisticolatours.com/wp-content/uploads/2022/08/Z62_5103.jpg"
+      }
+    },
+    {
+      "slug": "7-days-tanzania-budget-birding",
+      "referenceUrl": "https://www.cisticolatours.com/tanzania-budget-birding-tour/",
+      "hero": {
+        "bytes": 14796,
+        "url": "https://www.cisticolatours.com/wp-content/uploads/2022/04/Z62_8304.jpg"
+      },
+      "gallery": {
+        "bytes": 217818,
+        "url": "https://www.cisticolatours.com/wp-content/uploads/2022/01/Z62_5328.jpg"
+      }
+    },
+    {
+      "slug": "13-days-northern-tanzania-birding",
+      "referenceUrl": "https://www.birdquest-tours.com/birding-tours/tanzania-northern/",
+      "hero": {
+        "bytes": 763508,
+        "url": "https://www.birdquest-tours.com/wp-content/uploads/2019/06/Fischers-Lovebird-Tanzania-Pete-Morris.jpg"
+      },
+      "gallery": {
+        "bytes": 1344621,
+        "url": "https://www.birdquest-tours.com/wp-content/uploads/2026/04/Sentinel-Lark-Northern-Tanzania-2026-Nik-Borrow.jpg"
+      }
+    },
+    {
+      "slug": "23-days-ultimate-tanzania-birding",
+      "referenceUrl": "https://www.birdquest-tours.com/birding-tours/tanzania-ultimate/",
+      "hero": {
+        "bytes": 1726820,
+        "url": "https://www.birdquest-tours.com/wp-content/uploads/2023/01/Udzungwa-Forest-Partridge-Luala-Valley-JO.jpg"
+      },
+      "gallery": {
+        "bytes": 1775826,
+        "url": "https://www.birdquest-tours.com/wp-content/uploads/2023/01/Pemba-White-eye2-Pemba-Island-JO.jpg"
+      }
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "generatedAt": "2026-11-18T14:22:07.920Z",
+  "report": [
+    {
+      "slug": "15-days-tanzania-birding-tour",
+      "hero": "assets/images/packages/15-days-tanzania-birding-tour/hero.jpg",
+      "gallery": [
+        "assets/images/packages/15-days-tanzania-birding-tour/hero.jpg",
+        "assets/images/packages/15-days-tanzania-birding-tour/gallery-1.jpg"
+      ],
+      "remoteCount": 14,
+      "sources": [
+        "https://endemicbirds.co.tz/wp-content/uploads/2025/02/MG_0822.jpg",
+        "https://endemicbirds.co.tz/wp-content/uploads/2025/02/MG_0092-scaled.jpg",
+        "https://endemicbirds.co.tz/wp-content/uploads/2025/02/MG_0092.jpg"
+      ]
+    },
+    {
+      "slug": "13-days-northern-tanzania-birding",
+      "hero": "assets/images/packages/13-days-northern-tanzania-birding/hero.jpg",
+      "gallery": [
+        "assets/images/packages/13-days-northern-tanzania-birding/hero.jpg",
+        "assets/images/packages/13-days-northern-tanzania-birding/gallery-1.jpg"
+      ],
+      "remoteCount": 6,
+      "sources": [
+        "https://endemicbirds.co.tz/wp-content/uploads/2025/02/220410284_4434473833270194_6669339884777299579_n-1.jpg",
+        "https://endemicbirds.co.tz/wp-content/uploads/2025/02/20220222_154816-scaled.jpg",
+        "https://endemicbirds.co.tz/wp-content/uploads/2025/02/20220222_154816.jpg"
+      ]
+    },
+    {
+      "slug": "7-days-tanzania-budget-birding",
+      "hero": "assets/images/packages/7-days-tanzania-budget-birding/hero.jpg",
+      "gallery": [
+        "assets/images/packages/7-days-tanzania-budget-birding/hero.jpg",
+        "assets/images/packages/7-days-tanzania-budget-birding/gallery-1.jpg"
+      ],
+      "remoteCount": 8,
+      "sources": [
+        "https://endemicbirds.co.tz/wp-content/uploads/2025/02/DSC_7567-1-scaled.jpg",
+        "https://endemicbirds.co.tz/wp-content/uploads/2025/02/DSC_7567-1.jpg",
+        "https://endemicbirds.co.tz/wp-content/uploads/2025/02/MG_1356-scaled.jpg"
+      ]
+    },
+    {
+      "slug": "23-days-ultimate-tanzania-birding",
+      "hero": "assets/images/packages/23-days-ultimate-tanzania-birding/hero.jpg",
+      "gallery": [
+        "assets/images/packages/23-days-ultimate-tanzania-birding/hero.jpg",
+        "assets/images/packages/23-days-ultimate-tanzania-birding/gallery-1.jpg"
+      ],
+      "remoteCount": 1,
+      "sources": [
+        "https://endemicbirds.co.tz/wp-content/uploads/2023/09/WatchingstunningbirdsonPembaIslandTanzaniaontheSwahiliDiversproperty.jpeg"
+      ]
+    }
+  ]
+}

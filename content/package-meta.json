@@ -1,216 +1,7 @@
 {
-  "generatedAt": "2026-11-16T14:29:25.078Z",
+  "generatedAt": "2026-11-18T13:46:05.932Z",
   "notes": "Safari interest, intensity, comfort and accommodation are inferred conservatively from package copy. Empty values mean do not filter-match on that axis. Re-run: npm run build:package-meta",
   "packages": {
-    "22-days-endemic-birding-tours": {
-      "safariInterest": "birding",
-      "intensity": "demanding",
-      "comfort": "mid-range",
-      "accommodationTypes": [
-        "lodge"
-      ],
-      "seasonMonths": [
-        3,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        12
-      ],
-      "circuits": [
-        "Southern",
-        "Eastern",
-        "Northern"
-      ],
-      "destinationHubs": [
-        "southern",
-        "eastern-arc",
-        "northern",
-        "eastern"
-      ],
-      "durationDays": 22
-    },
-    "14-days-southern-tanzania-birding-tour": {
-      "safariInterest": "birding",
-      "intensity": "moderate",
-      "comfort": "mid-range",
-      "accommodationTypes": [
-        "lodge"
-      ],
-      "seasonMonths": [
-        3,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11
-      ],
-      "circuits": [
-        "Northern",
-        "Southern",
-        "Eastern",
-        "Western"
-      ],
-      "destinationHubs": [
-        "northern",
-        "southern",
-        "eastern",
-        "western",
-        "eastern-arc"
-      ],
-      "durationDays": 14
-    },
-    "19-days-southern-tanzania-birding-trip": {
-      "safariInterest": "birding",
-      "intensity": "demanding",
-      "comfort": "mid-range",
-      "accommodationTypes": [
-        "lodge",
-        "camping"
-      ],
-      "seasonMonths": [
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11
-      ],
-      "circuits": [
-        "Southern"
-      ],
-      "destinationHubs": [
-        "southern"
-      ],
-      "durationDays": 19
-    },
-    "15-days-tanzania-birding-tour": {
-      "safariInterest": "birding",
-      "intensity": "moderate",
-      "comfort": null,
-      "accommodationTypes": [],
-      "seasonMonths": [
-        3,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        12
-      ],
-      "circuits": [
-        "Eastern"
-      ],
-      "destinationHubs": [
-        "eastern",
-        "eastern-arc"
-      ],
-      "durationDays": 15
-    },
-    "19-days-southern-endemic-birding": {
-      "safariInterest": "birding",
-      "intensity": "demanding",
-      "comfort": "mid-range",
-      "accommodationTypes": [
-        "lodge",
-        "camping"
-      ],
-      "seasonMonths": [
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11
-      ],
-      "circuits": [
-        "Southern"
-      ],
-      "destinationHubs": [
-        "southern",
-        "eastern-arc"
-      ],
-      "durationDays": 19
-    },
-    "20-day-endemic-birds-southern": {
-      "safariInterest": "birding",
-      "intensity": "demanding",
-      "comfort": null,
-      "accommodationTypes": [],
-      "seasonMonths": [
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11
-      ],
-      "circuits": [
-        "Southern"
-      ],
-      "destinationHubs": [
-        "southern",
-        "eastern-arc"
-      ],
-      "durationDays": 20
-    },
-    "20-day-endemic-birding-tanzania": {
-      "safariInterest": "birding",
-      "intensity": "demanding",
-      "comfort": null,
-      "accommodationTypes": [],
-      "seasonMonths": [
-        3,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        12
-      ],
-      "circuits": [
-        "Northern",
-        "Southern"
-      ],
-      "destinationHubs": [
-        "northern",
-        "southern",
-        "eastern-arc"
-      ],
-      "durationDays": 20
-    },
-    "12-day-endemic-birds-northern": {
-      "safariInterest": "birding",
-      "intensity": "moderate",
-      "comfort": null,
-      "accommodationTypes": [],
-      "seasonMonths": [
-        3,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        12
-      ],
-      "circuits": [
-        "Northern"
-      ],
-      "destinationHubs": [
-        "northern"
-      ],
-      "durationDays": 12
-    },
     "10-day-birding-northern-eastern": {
       "safariInterest": "birding",
       "intensity": null,
@@ -262,6 +53,120 @@
       ],
       "durationDays": 10
     },
+    "10-day-birdwatching-northern": {
+      "safariInterest": "combined",
+      "intensity": null,
+      "comfort": "mid-range",
+      "accommodationTypes": [
+        "lodge",
+        "tented-camp"
+      ],
+      "seasonMonths": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        12
+      ],
+      "circuits": [
+        "Northern"
+      ],
+      "destinationHubs": [
+        "northern"
+      ],
+      "durationDays": 10
+    },
+    "10-days-chimpanzee-tracking": {
+      "safariInterest": "wildlife",
+      "intensity": null,
+      "comfort": "mid-range",
+      "accommodationTypes": [
+        "lodge"
+      ],
+      "seasonMonths": [],
+      "circuits": [
+        "Western"
+      ],
+      "destinationHubs": [
+        "western"
+      ],
+      "durationDays": 10
+    },
+    "10-days-luxury-flying-safari": {
+      "safariInterest": "wildlife",
+      "intensity": null,
+      "comfort": "luxury",
+      "accommodationTypes": [
+        "lodge"
+      ],
+      "seasonMonths": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        12
+      ],
+      "circuits": [
+        "Northern",
+        "Southern"
+      ],
+      "destinationHubs": [
+        "northern",
+        "southern"
+      ],
+      "durationDays": 10
+    },
+    "10-days-northern-lake-victoria-safari": {
+      "safariInterest": "wildlife",
+      "intensity": null,
+      "comfort": "mid-range",
+      "accommodationTypes": [
+        "lodge",
+        "tented-camp",
+        "camping"
+      ],
+      "seasonMonths": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "circuits": [
+        "Northern"
+      ],
+      "destinationHubs": [
+        "northern"
+      ],
+      "durationDays": 10
+    },
+    "10-days-nyerere-katavi-expedition": {
+      "safariInterest": "wildlife",
+      "intensity": null,
+      "comfort": null,
+      "accommodationTypes": [],
+      "seasonMonths": [
+        7,
+        10
+      ],
+      "circuits": [
+        "Southern",
+        "Western"
+      ],
+      "destinationHubs": [
+        "southern",
+        "western"
+      ],
+      "durationDays": 10
+    },
     "10-days-south-west-tanzania": {
       "safariInterest": "birding",
       "intensity": null,
@@ -290,31 +195,176 @@
       ],
       "durationDays": 10
     },
-    "9-days-mahale-gombe-burigi-minziro": {
+    "12-day-endemic-birds-northern": {
       "safariInterest": "birding",
-      "intensity": null,
-      "comfort": null,
-      "accommodationTypes": [],
-      "seasonMonths": [
-        10
-      ],
-      "circuits": [
-        "Western",
-        "North West"
-      ],
-      "destinationHubs": [
-        "western",
-        "north-west"
-      ],
-      "durationDays": 9
-    },
-    "8-days-birding-around-iringa": {
-      "safariInterest": "birding",
-      "intensity": null,
+      "intensity": "moderate",
       "comfort": null,
       "accommodationTypes": [],
       "seasonMonths": [
         3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        12
+      ],
+      "circuits": [
+        "Northern"
+      ],
+      "destinationHubs": [
+        "northern"
+      ],
+      "durationDays": 12
+    },
+    "13-days-northern-tanzania-birding": {
+      "safariInterest": "combined",
+      "intensity": "moderate",
+      "comfort": null,
+      "accommodationTypes": [],
+      "seasonMonths": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "circuits": [
+        "Northern",
+        "Eastern",
+        "Western"
+      ],
+      "destinationHubs": [
+        "northern",
+        "eastern",
+        "western"
+      ],
+      "durationDays": 15
+    },
+    "14-days-southern-tanzania-birding-tour": {
+      "safariInterest": "birding",
+      "intensity": "moderate",
+      "comfort": "mid-range",
+      "accommodationTypes": [
+        "lodge"
+      ],
+      "seasonMonths": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "circuits": [
+        "Northern",
+        "Southern",
+        "Eastern",
+        "Western"
+      ],
+      "destinationHubs": [
+        "northern",
+        "southern",
+        "eastern",
+        "western",
+        "eastern-arc"
+      ],
+      "durationDays": 14
+    },
+    "14-days-ultimate-tanzania-safari": {
+      "safariInterest": "wildlife",
+      "intensity": "moderate",
+      "comfort": "mid-range",
+      "accommodationTypes": [
+        "lodge"
+      ],
+      "seasonMonths": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "circuits": [
+        "Northern",
+        "Southern",
+        "Eastern"
+      ],
+      "destinationHubs": [
+        "northern",
+        "southern",
+        "eastern"
+      ],
+      "durationDays": 14
+    },
+    "15-days-birding-wildlife-photographic": {
+      "safariInterest": "combined",
+      "intensity": "moderate",
+      "comfort": null,
+      "accommodationTypes": [],
+      "seasonMonths": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        12
+      ],
+      "circuits": [
+        "Northern",
+        "Southern"
+      ],
+      "destinationHubs": [
+        "northern",
+        "southern"
+      ],
+      "durationDays": 15
+    },
+    "15-days-tanzania-birding-tour": {
+      "safariInterest": "birding",
+      "intensity": "moderate",
+      "comfort": "mid-range",
+      "accommodationTypes": [
+        "lodge"
+      ],
+      "seasonMonths": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "circuits": [
+        "Northern",
+        "Eastern"
+      ],
+      "destinationHubs": [
+        "northern",
+        "eastern",
+        "eastern-arc"
+      ],
+      "durationDays": 15
+    },
+    "19-days-southern-endemic-birding": {
+      "safariInterest": "birding",
+      "intensity": "demanding",
+      "comfort": "mid-range",
+      "accommodationTypes": [
+        "lodge",
+        "camping"
+      ],
+      "seasonMonths": [
         5,
         6,
         7,
@@ -330,7 +380,271 @@
         "southern",
         "eastern-arc"
       ],
-      "durationDays": 8
+      "durationDays": 19
+    },
+    "19-days-southern-tanzania-birding-trip": {
+      "safariInterest": "birding",
+      "intensity": "demanding",
+      "comfort": "mid-range",
+      "accommodationTypes": [
+        "lodge",
+        "camping"
+      ],
+      "seasonMonths": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "circuits": [
+        "Southern"
+      ],
+      "destinationHubs": [
+        "southern"
+      ],
+      "durationDays": 19
+    },
+    "20-day-endemic-birding-tanzania": {
+      "safariInterest": "birding",
+      "intensity": "demanding",
+      "comfort": null,
+      "accommodationTypes": [],
+      "seasonMonths": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        12
+      ],
+      "circuits": [
+        "Northern",
+        "Southern"
+      ],
+      "destinationHubs": [
+        "northern",
+        "southern",
+        "eastern-arc"
+      ],
+      "durationDays": 20
+    },
+    "20-day-endemic-birds-southern": {
+      "safariInterest": "birding",
+      "intensity": "demanding",
+      "comfort": null,
+      "accommodationTypes": [],
+      "seasonMonths": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "circuits": [
+        "Southern"
+      ],
+      "destinationHubs": [
+        "southern",
+        "eastern-arc"
+      ],
+      "durationDays": 20
+    },
+    "22-days-birding-itinerary-north-east-south-pemba": {
+      "safariInterest": "birding",
+      "intensity": "demanding",
+      "comfort": "mid-range",
+      "accommodationTypes": [
+        "lodge"
+      ],
+      "seasonMonths": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        12
+      ],
+      "circuits": [
+        "Northern",
+        "Eastern",
+        "Southern"
+      ],
+      "destinationHubs": [
+        "northern",
+        "eastern",
+        "southern",
+        "eastern"
+      ],
+      "durationDays": 22
+    },
+    "22-days-endemic-birding-tours": {
+      "safariInterest": "birding",
+      "intensity": "demanding",
+      "comfort": "mid-range",
+      "accommodationTypes": [
+        "lodge"
+      ],
+      "seasonMonths": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        12
+      ],
+      "circuits": [
+        "Southern",
+        "Eastern",
+        "Northern"
+      ],
+      "destinationHubs": [
+        "southern",
+        "eastern-arc",
+        "northern",
+        "eastern"
+      ],
+      "durationDays": 22
+    },
+    "23-days-ultimate-tanzania-birding": {
+      "safariInterest": "birding",
+      "intensity": "demanding",
+      "comfort": "mid-range",
+      "accommodationTypes": [
+        "lodge",
+        "camping"
+      ],
+      "seasonMonths": [
+        7,
+        8
+      ],
+      "circuits": [
+        "Southern",
+        "Eastern",
+        "Northern"
+      ],
+      "destinationHubs": [
+        "southern",
+        "eastern-arc",
+        "eastern",
+        "northern"
+      ],
+      "durationDays": 23
+    },
+    "4-days-ngorongoro-crater-escape": {
+      "safariInterest": "wildlife",
+      "intensity": "relaxed",
+      "comfort": null,
+      "accommodationTypes": [],
+      "seasonMonths": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "circuits": [
+        "Northern"
+      ],
+      "destinationHubs": [
+        "northern"
+      ],
+      "durationDays": 4
+    },
+    "5-days-serengeti-migration-focus": {
+      "safariInterest": "wildlife",
+      "intensity": "relaxed",
+      "comfort": null,
+      "accommodationTypes": [],
+      "seasonMonths": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        12
+      ],
+      "circuits": [
+        "Northern"
+      ],
+      "destinationHubs": [
+        "northern"
+      ],
+      "durationDays": 5
+    },
+    "5-days-tarangire-serengeti-ngorongoro": {
+      "safariInterest": "wildlife",
+      "intensity": "relaxed",
+      "comfort": null,
+      "accommodationTypes": [],
+      "seasonMonths": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "circuits": [
+        "Northern"
+      ],
+      "destinationHubs": [
+        "northern"
+      ],
+      "durationDays": 5
+    },
+    "6-days-tanzania-safari": {
+      "safariInterest": "wildlife",
+      "intensity": "relaxed",
+      "comfort": "mid-range",
+      "accommodationTypes": [
+        "lodge"
+      ],
+      "seasonMonths": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "circuits": [
+        "Northern"
+      ],
+      "destinationHubs": [
+        "northern"
+      ],
+      "durationDays": 6
+    },
+    "7-days-mahale-gombe-chimp-safari": {
+      "safariInterest": "wildlife",
+      "intensity": null,
+      "comfort": null,
+      "accommodationTypes": [],
+      "seasonMonths": [
+        5,
+        10
+      ],
+      "circuits": [
+        "Western"
+      ],
+      "destinationHubs": [
+        "western"
+      ],
+      "durationDays": 7
     },
     "7-days-mpanda-to-mbeya": {
       "safariInterest": "birding",
@@ -359,79 +673,27 @@
       ],
       "durationDays": 7
     },
-    "10-day-birdwatching-northern": {
-      "safariInterest": "combined",
+    "7-days-tanzania-budget-birding": {
+      "safariInterest": "birding",
       "intensity": null,
-      "comfort": "mid-range",
-      "accommodationTypes": [
-        "lodge",
-        "tented-camp"
-      ],
-      "seasonMonths": [
-        3,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        12
-      ],
-      "circuits": [
-        "Northern"
-      ],
-      "destinationHubs": [
-        "northern"
-      ],
-      "durationDays": 10
-    },
-    "15-days-birding-wildlife-photographic": {
-      "safariInterest": "combined",
-      "intensity": "moderate",
-      "comfort": null,
-      "accommodationTypes": [],
-      "seasonMonths": [
-        3,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        12
-      ],
-      "circuits": [
-        "Northern",
-        "Southern"
-      ],
-      "destinationHubs": [
-        "northern",
-        "southern"
-      ],
-      "durationDays": 15
-    },
-    "6-days-tanzania-safari": {
-      "safariInterest": "wildlife",
-      "intensity": "relaxed",
       "comfort": "mid-range",
       "accommodationTypes": [
         "lodge"
       ],
       "seasonMonths": [
-        5,
         6,
-        7,
-        8,
-        9,
-        10
+        11
       ],
       "circuits": [
-        "Northern"
+        "Northern",
+        "Eastern"
       ],
       "destinationHubs": [
-        "northern"
+        "northern",
+        "eastern",
+        "eastern-arc"
       ],
-      "durationDays": 6
+      "durationDays": 7
     },
     "7-days-wildebeest-migration-hadzabe": {
       "safariInterest": "wildlife",
@@ -455,6 +717,78 @@
         "northern"
       ],
       "durationDays": 7
+    },
+    "8-days-birding-around-iringa": {
+      "safariInterest": "birding",
+      "intensity": null,
+      "comfort": null,
+      "accommodationTypes": [],
+      "seasonMonths": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "circuits": [
+        "Southern"
+      ],
+      "destinationHubs": [
+        "southern",
+        "eastern-arc"
+      ],
+      "durationDays": 8
+    },
+    "8-days-northern-tarangire-manyara-ngorongoro-serengeti": {
+      "safariInterest": "wildlife",
+      "intensity": null,
+      "comfort": "mid-range",
+      "accommodationTypes": [
+        "lodge"
+      ],
+      "seasonMonths": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "circuits": [
+        "Northern"
+      ],
+      "destinationHubs": [
+        "northern"
+      ],
+      "durationDays": 8
+    },
+    "8-days-ruaha-mikumi-safari": {
+      "safariInterest": "wildlife",
+      "intensity": null,
+      "comfort": "mid-range",
+      "accommodationTypes": [
+        "lodge"
+      ],
+      "seasonMonths": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "circuits": [
+        "Southern"
+      ],
+      "destinationHubs": [
+        "southern"
+      ],
+      "durationDays": 8
     },
     "8-days-wildebeest-calving-migration": {
       "safariInterest": "wildlife",
@@ -487,6 +821,24 @@
       ],
       "durationDays": 8
     },
+    "9-days-mahale-gombe-burigi-minziro": {
+      "safariInterest": "birding",
+      "intensity": null,
+      "comfort": null,
+      "accommodationTypes": [],
+      "seasonMonths": [
+        10
+      ],
+      "circuits": [
+        "Western",
+        "North West"
+      ],
+      "destinationHubs": [
+        "western",
+        "north-west"
+      ],
+      "durationDays": 9
+    },
     "9-days-wildlife-safari-zanzibar": {
       "safariInterest": "wildlife",
       "intensity": null,
@@ -513,310 +865,6 @@
         "eastern"
       ],
       "durationDays": 9
-    },
-    "10-days-luxury-flying-safari": {
-      "safariInterest": "wildlife",
-      "intensity": null,
-      "comfort": "luxury",
-      "accommodationTypes": [
-        "lodge"
-      ],
-      "seasonMonths": [
-        3,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        12
-      ],
-      "circuits": [
-        "Northern",
-        "Southern"
-      ],
-      "destinationHubs": [
-        "northern",
-        "southern"
-      ],
-      "durationDays": 10
-    },
-    "10-days-chimpanzee-tracking": {
-      "safariInterest": "wildlife",
-      "intensity": null,
-      "comfort": "mid-range",
-      "accommodationTypes": [
-        "lodge"
-      ],
-      "seasonMonths": [],
-      "circuits": [
-        "Western"
-      ],
-      "destinationHubs": [
-        "western"
-      ],
-      "durationDays": 10
-    },
-    "22-days-birding-itinerary-north-east-south-pemba": {
-      "safariInterest": "birding",
-      "intensity": "demanding",
-      "comfort": "mid-range",
-      "accommodationTypes": [
-        "lodge"
-      ],
-      "seasonMonths": [
-        3,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        12
-      ],
-      "circuits": [
-        "Northern",
-        "Eastern",
-        "Southern"
-      ],
-      "destinationHubs": [
-        "northern",
-        "eastern",
-        "southern",
-        "eastern"
-      ],
-      "durationDays": 22
-    },
-    "5-days-serengeti-migration-focus": {
-      "safariInterest": "wildlife",
-      "intensity": "relaxed",
-      "comfort": null,
-      "accommodationTypes": [],
-      "seasonMonths": [
-        3,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        12
-      ],
-      "circuits": [
-        "Northern"
-      ],
-      "destinationHubs": [
-        "northern"
-      ],
-      "durationDays": 5
-    },
-    "4-days-ngorongoro-crater-escape": {
-      "safariInterest": "wildlife",
-      "intensity": "relaxed",
-      "comfort": null,
-      "accommodationTypes": [],
-      "seasonMonths": [
-        5,
-        6,
-        7,
-        8,
-        9,
-        10
-      ],
-      "circuits": [
-        "Northern"
-      ],
-      "destinationHubs": [
-        "northern"
-      ],
-      "durationDays": 4
-    },
-    "8-days-northern-tarangire-manyara-ngorongoro-serengeti": {
-      "safariInterest": "wildlife",
-      "intensity": null,
-      "comfort": "mid-range",
-      "accommodationTypes": [
-        "lodge"
-      ],
-      "seasonMonths": [
-        3,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10
-      ],
-      "circuits": [
-        "Northern"
-      ],
-      "destinationHubs": [
-        "northern"
-      ],
-      "durationDays": 8
-    },
-    "7-days-mahale-gombe-chimp-safari": {
-      "safariInterest": "wildlife",
-      "intensity": null,
-      "comfort": null,
-      "accommodationTypes": [],
-      "seasonMonths": [
-        5,
-        10
-      ],
-      "circuits": [
-        "Western"
-      ],
-      "destinationHubs": [
-        "western"
-      ],
-      "durationDays": 7
-    },
-    "8-days-ruaha-mikumi-safari": {
-      "safariInterest": "wildlife",
-      "intensity": null,
-      "comfort": "mid-range",
-      "accommodationTypes": [
-        "lodge"
-      ],
-      "seasonMonths": [
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11
-      ],
-      "circuits": [
-        "Southern"
-      ],
-      "destinationHubs": [
-        "southern"
-      ],
-      "durationDays": 8
-    },
-    "10-days-nyerere-katavi-expedition": {
-      "safariInterest": "wildlife",
-      "intensity": null,
-      "comfort": null,
-      "accommodationTypes": [],
-      "seasonMonths": [
-        7,
-        10
-      ],
-      "circuits": [
-        "Southern",
-        "Western"
-      ],
-      "destinationHubs": [
-        "southern",
-        "western"
-      ],
-      "durationDays": 10
-    },
-    "5-days-tarangire-serengeti-ngorongoro": {
-      "safariInterest": "wildlife",
-      "intensity": "relaxed",
-      "comfort": null,
-      "accommodationTypes": [],
-      "seasonMonths": [
-        5,
-        6,
-        7,
-        8,
-        9,
-        10
-      ],
-      "circuits": [
-        "Northern"
-      ],
-      "destinationHubs": [
-        "northern"
-      ],
-      "durationDays": 5
-    },
-    "14-days-ultimate-tanzania-safari": {
-      "safariInterest": "wildlife",
-      "intensity": "moderate",
-      "comfort": "mid-range",
-      "accommodationTypes": [
-        "lodge"
-      ],
-      "seasonMonths": [
-        5,
-        6,
-        7,
-        8,
-        9,
-        10
-      ],
-      "circuits": [
-        "Northern",
-        "Southern",
-        "Eastern"
-      ],
-      "destinationHubs": [
-        "northern",
-        "southern",
-        "eastern"
-      ],
-      "durationDays": 14
-    },
-    "13-days-northern-tanzania-birding": {
-      "safariInterest": "combined",
-      "intensity": "moderate",
-      "comfort": "mid-range",
-      "accommodationTypes": [
-        "lodge"
-      ],
-      "seasonMonths": [
-        3,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        12
-      ],
-      "circuits": [
-        "Northern",
-        "Eastern",
-        "Western"
-      ],
-      "destinationHubs": [
-        "northern",
-        "eastern",
-        "western"
-      ],
-      "durationDays": 13
-    },
-    "10-days-northern-lake-victoria-safari": {
-      "safariInterest": "wildlife",
-      "intensity": null,
-      "comfort": "mid-range",
-      "accommodationTypes": [
-        "lodge",
-        "tented-camp",
-        "camping"
-      ],
-      "seasonMonths": [
-        3,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10
-      ],
-      "circuits": [
-        "Northern"
-      ],
-      "destinationHubs": [
-        "northern"
-      ],
-      "durationDays": 10
     }
   }
 }

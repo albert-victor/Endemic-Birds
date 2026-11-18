@@ -1,0 +1,42 @@
+{
+  "importedAt": "2026-11-18T13:46:00.032Z",
+  "sources": [
+    {
+      "url": "https://www.cisticolatours.com/tanzania-birding-tour/",
+      "action": "Updated slug 15-days-tanzania-birding-tour: title, summary, 15-day itinerary, highlights, contentSource"
+    },
+    {
+      "url": "https://www.cisticolatours.com/tanzania-budget-birding-tour/",
+      "action": "Created slug 7-days-tanzania-budget-birding (new package + package-details + placeholder images)"
+    },
+    {
+      "url": "https://www.birdquest-tours.com/africa/tanzania/",
+      "children": [
+        {
+          "programme": "Northern Tanzania",
+          "url": "https://www.birdquest-tours.com/birding-tours/tanzania-northern/",
+          "action": "Updated 13-days-northern-tanzania-birding to 15-day outline (durationDays 15); slug unchanged pending owner review"
+        },
+        {
+          "programme": "Ultimate Tanzania",
+          "url": "https://www.birdquest-tours.com/birding-tours/tanzania-ultimate/",
+          "action": "Created slug 23-days-ultimate-tanzania-birding with 23-day outline editorial"
+        }
+      ]
+    }
+  ],
+  "discipline": {
+    "dataFiles": [
+      "content/packages.json",
+      "content/package-details.json"
+    ],
+    "copyPolicy": "Route structure from reference operators; all visitor-facing text rewritten for Endemic Birds – no verbatim third-party prose.",
+    "images": "2026-11-18 (corrected): assign-reference-import-images.mjs – hero + gallery-1 from the import reference URLs (Cisticola + Birdquest). See content/reference-import-images-report.json. Earlier pass used endemicbirds.co.tz only – superseded.",
+    "nextSteps": [
+      "npm run build:package-meta",
+      "npm run build (regenerate package HTML shells)",
+      "Owner: approve slug rename 13-days → 15-days-northern URL if desired",
+      "Owner: replace placeholder images for 7-day and 23-day packages"
+    ]
+  }
+}

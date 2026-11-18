@@ -16,8 +16,7 @@
 
   function stackMarkup(options = {}) {
     const { sequenced = true, logoSize = 80 } = options;
-    const seqClass = sequenced ? " is-sequenced" : "";
-    return `<div class="eb-loader-stack${seqClass}">
+    return `<div class="eb-loader-stack is-ready">
       <span class="eb-loader-logo-wrap">
         <img class="eb-loader-logo" src="${assetLogo()}" alt="" width="${logoSize}" height="${logoSize}" decoding="async" />
       </span>
@@ -26,12 +25,9 @@
   }
 
   function activate(stack) {
-    if (!stack || reduceMotion) {
-      stack?.classList.add("is-playing");
-      return;
-    }
-    stack.classList.remove("is-playing");
-    window.setTimeout(() => stack.classList.add("is-playing"), 480);
+    if (!stack) return;
+    if (stack.classList.contains("is-ready")) return;
+    stack.classList.add("is-ready");
   }
 
   function inlineMarkup(options = {}) {

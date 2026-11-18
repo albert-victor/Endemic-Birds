@@ -9,14 +9,15 @@
       "name": "Udzungwa Mountains",
       "location": "Udzungwa Mountains National Park, Morogoro & Iringa regions",
       "summary": "Rainforest peaks and waterfalls at the heart of the Eastern Arc – a global biodiversity hotspot and essential stop for forest endemics and primate-rich birding.",
-      "keySpecies": [
-        "Udzungwa Forest Partridge",
-        "Iringa Akalat",
+      "keySpecies": [],
+      "speciesFound": [
+        "Swynnerton's Robin",
         "Rufous-winged Sunbird",
-        "Dapple-throat",
-        "Green-headed Oriole",
-        "Uluguru Violet-backed Sunbird (range overlap)"
+        "Spot-throat",
+        "Udzungwa Forest Partridge",
+        "Green-headed Oriole"
       ],
+      "heroImagePosition": "center 38%",
       "whyItMatters": [
         "Part of the ancient Eastern Arc Mountains, often called the “Galápagos of Africa” for exceptional levels of endemism.",
         "Misty escarpment forests isolate populations that evolved into species found nowhere else on Earth.",
@@ -29,7 +30,8 @@
         "assets/images/southern-circuit/udzungwa/gallery-2.jpg",
         "assets/images/southern-circuit/udzungwa/gallery-3.jpg",
         "assets/images/southern-circuit/udzungwa/gallery-4.jpg",
-        "assets/images/southern-circuit/udzungwa/gallery-5.jpg"
+        "assets/images/southern-circuit/udzungwa/gallery-6.jpg",
+        "assets/images/southern-circuit/udzungwa/gallery-wildlife-colobus.jpg"
       ],
       "imageStatus": "complete"
     },
