@@ -37,8 +37,34 @@
     }
   }
 
+  function titleFromSlug(slug) {
+    return String(slug || "")
+      .replace(/-/g, " ")
+      .replace(/\b\w/g, (c) => c.toUpperCase());
+  }
+
+  function formatChecklistDestinations(slugs, nameBySlug, maxShown = 4) {
+    if (!slugs?.length) return "On our destination field checklists.";
+    const names = slugs.map((s) => nameBySlug.get(s) || titleFromSlug(s));
+    const visible = names.slice(0, maxShown);
+    const tail =
+      names.length > maxShown ? ` and ${names.length - maxShown} more site${names.length - maxShown > 1 ? "s" : ""}` : "";
+    return `Checklisted at ${visible.join(", ")}${tail}. Planning reference only – not live records.`;
+  }
+
   async function buildIndex() {
-    const [packages, destinations, wildlifeDest, wildlifeAct, southern, western, northern] = await Promise.all([
+    const [
+      packages,
+      destinations,
+      wildlifeDest,
+      wildlifeAct,
+      southern,
+      western,
+      northern,
+      birdingExtra,
+      birdIndex,
+      specialBirds,
+    ] = await Promise.all([
       fetchJson("content/packages.json"),
       fetchJson("content/destinations.json"),
       fetchJson("content/wildlife-destinations.json"),
@@ -46,7 +72,17 @@
       fetchJson("content/southern-sites.json"),
       fetchJson("content/western-sites.json"),
       fetchJson("content/northern-sites.json"),
+      fetchJson("content/birding-sites-extra.json"),
+      fetchJson("content/bird-species-index.json"),
+      fetchJson("content/special-birds.json"),
     ]);
+
+    const destNameBySlug = new Map();
+    for (const blob of [southern, western, northern, birdingExtra]) {
+      (blob?.sites || []).forEach((s) => {
+        if (s.slug && s.name) destNameBySlug.set(s.slug, s.name);
+      });
+    }
 
     const items = [];
 
@@ -71,8 +107,8 @@
       });
     });
 
-    for (const blob of [southern, western, northern]) {
-      const circuit = blob?.circuit || "";
+    for (const blob of [southern, western, northern, birdingExtra]) {
+      const circuit = blob?.circuit || blob?.circuitLabel || "";
       (blob?.sites || []).forEach((s) => {
         items.push({
           title: s.name,
@@ -83,6 +119,45 @@
         });
       });
     }
+
+    const indexedSlugs = new Set();
+    (birdIndex?.species || []).forEach((sp) => {
+      if (!sp.commonName) return;
+      indexedSlugs.add(sp.slug);
+      const destSlugs = sp.destinationSlugs || [];
+      const summary = formatChecklistDestinations(destSlugs, destNameBySlug);
+      const primaryDest = destSlugs[0];
+      const href = sp.inSpecialCatalog
+        ? asset(`birding/special-birds/index.html?species=${encodeURIComponent(sp.slug)}`)
+        : primaryDest
+          ? asset(`destinations/${primaryDest}/index.html#listed-species`)
+          : asset("birding/special-birds/index.html");
+      const destKeywords = destSlugs.flatMap((s) => [s, destNameBySlug.get(s)]).filter(Boolean);
+      items.push({
+        title: sp.commonName,
+        summary,
+        type: "Bird species",
+        href,
+        keywords: [sp.commonName, sp.scientificName, sp.slug, ...destKeywords, ...(sp.sourceLabels || [])]
+          .filter(Boolean)
+          .join(" "),
+      });
+    });
+
+    (specialBirds?.species || []).forEach((sp) => {
+      if (!sp.commonName || indexedSlugs.has(sp.slug)) return;
+      const destSlugs = sp.destinationSlugs || [];
+      const routeHint = destSlugs.length
+        ? ` ${formatChecklistDestinations(destSlugs, destNameBySlug, 3)}`
+        : "";
+      items.push({
+        title: sp.commonName,
+        summary: `${sp.whyItMatters || "Featured in our special birds catalogue."}${routeHint}`,
+        type: "Bird species",
+        href: asset(`birding/special-birds/index.html?species=${encodeURIComponent(sp.slug)}`),
+        keywords: [sp.commonName, sp.scientificName, sp.slug, ...destSlugs].filter(Boolean).join(" "),
+      });
+    });
 
     (wildlifeDest || []).forEach((d) => {
       items.push({
@@ -124,7 +199,12 @@
       { title: "Our Partners", href: "about/partners/index.html", type: "About", summary: "Verified commercial partners only" },
       { title: "Terms and policies", href: "about/policies/index.html", type: "About", summary: "Privacy and how bookings are agreed" },
       { title: "Tour calendar", href: "about/tour-calendar/index.html", type: "About", summary: "Seasonal planning for forests, miombo and plains" },
-      { title: "Special birds", href: "birding/special-birds/index.html", type: "Birding", summary: "Endemic and specialist target species catalogue" },
+      {
+        title: "Special birds",
+        href: "birding/special-birds/index.html",
+        type: "Birding",
+        summary: "Specialty checklist species – highlights from our field lists",
+      },
     ].forEach((h) => items.push({ ...h, href: asset(h.href), keywords: h.title }));
 
     return items;
@@ -195,7 +275,7 @@
     const ul = getShell()?.querySelector("[data-site-search-results]");
     if (!ul) return;
     if (!list.length) {
-      ul.innerHTML = `${hintHtml}<li class="site-search-empty">No matches – try “Serengeti”, “endemic”, or “Ruaha”.</li>`;
+      ul.innerHTML = `${hintHtml}<li class="site-search-empty">No matches – try a bird name, “Serengeti”, or “Ruaha”.</li>`;
       return;
     }
     ul.innerHTML =
@@ -234,7 +314,7 @@
   function renderIdleSearch() {
     const ul = getShell()?.querySelector("[data-site-search-results]");
     if (!ul) return;
-    ul.innerHTML = `<li class="site-search-hint site-search-hint--idle">Type a place, species or package name to search the site.</li>`;
+    ul.innerHTML = `<li class="site-search-hint site-search-hint--idle">Search birds, parks, or packages – bird results show checklist destinations, not sightings.</li>`;
   }
 
   function bindSearchShell() {

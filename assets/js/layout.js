@@ -524,7 +524,7 @@
     const quickLinks = [
       footerLink(asset("plan-your-trip/index.html"), "Plan your trip"),
       footerLink(asset("accommodations/index.html"), "Safari stays"),
-      footerLink(asset("birding/special-birds/index.html"), "Special birds catalogue"),
+      footerLink(asset("birding/special-birds/index.html"), "Special birds"),
       footerLink(asset("about/trip-reports/index.html"), "Trip reports"),
       footerLink(asset("about/gallery/index.html"), "Gallery"),
       footerLink(asset("about/team/index.html"), "Our team"),

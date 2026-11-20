@@ -26,6 +26,10 @@
     "verify:wildlife": "node scripts/verify-wildlife-assets.mjs",
     "normalize:dashes": "node scripts/normalize-dashes.mjs",
     "build:about-pages": "node assets/js/about-subpage-shell.mjs",
+    "build:bird-checklists": "node scripts/build-destination-checklists.mjs",
+    "build:bird-index": "node scripts/build-bird-species-index.mjs",
+    "scan:bird-media": "node scripts/scan-bird-species-media.mjs",
+    "build:bird-data": "npm run build:bird-checklists && npm run build:bird-index && npm run scan:bird-media",
     "dev": "npm run build && serve . -l 3000",
     "start": "npm run build && serve . -l 3000",
     "preview": "npm run build && serve . -l 4173"

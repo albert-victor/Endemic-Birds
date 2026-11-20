@@ -149,7 +149,7 @@
         href: asset(v.href),
         imgSrc: asset(hero),
         title: v.name,
-        subtitle: "Birding site",
+        scriptLine: site ? UI.destSpotScriptLine?.(site) || "" : "",
         tag: "Birding",
       });
     }
@@ -158,7 +158,7 @@
       href: asset(v.href),
       imgSrc: asset(VISIT_FALLBACK_IMG),
       title: v.name,
-      subtitle: "On this route",
+      scriptLine: "On this route",
       tag: v.kind === "wildlife" ? "Safari" : "Birding",
     });
   }
@@ -457,10 +457,21 @@
     northern: "northern-sites.json",
   };
 
+  const CIRCUIT_PARENT_SLUG = {
+    Southern: "southern-destination",
+    Western: "western-destination",
+    Northern: "northern-destination",
+    Eastern: "eastern-destination",
+  };
+
   async function loadCircuitSiteBundle(circuitKey) {
     const file = CIRCUIT_SITE_FILES[circuitKey];
     if (!file) return null;
     return loadJson(file).catch(() => null);
+  }
+
+  async function loadSupplementBirdingSites() {
+    return loadJson("birding-sites-extra.json").catch(() => ({ sites: [] }));
   }
 
   async function findCircuitSite(siteSlug) {
@@ -470,6 +481,50 @@
       if (site) return { data, site, circuitKey: key };
     }
     return null;
+  }
+
+  async function resolveBirdingSite(siteSlug, circuitKey) {
+    const preferred = CIRCUIT_SITE_FILES[circuitKey]
+      ? await loadCircuitSiteBundle(circuitKey)
+      : null;
+    const preferredSite = preferred?.sites?.find((s) => s.slug === siteSlug);
+    if (preferredSite) return { data: preferred, site: preferredSite, circuitKey };
+
+    const found = await findCircuitSite(siteSlug);
+    if (found) return found;
+
+    const extra = await loadSupplementBirdingSites();
+    const site = extra.sites?.find((s) => s.slug === siteSlug);
+    if (!site) return null;
+
+    const circuitLabel = site.circuit ? `${site.circuit} circuit` : extra.circuitLabel || "Birding site";
+    const parentSlug = site.parentSlug || CIRCUIT_PARENT_SLUG[site.circuit] || "eastern-destination";
+    return {
+      data: {
+        circuit: site.circuit || extra.circuit,
+        circuitLabel,
+        parentSlug,
+      },
+      site,
+      circuitKey: null,
+    };
+  }
+
+  async function ensureDestChecklistModule() {
+    if (window.EndemicDestChecklist) return;
+    const href = asset("assets/js/destination-checklist.js");
+    const already = [...document.scripts].some(
+      (s) => s.src && (s.getAttribute("src") === href || s.src.endsWith("destination-checklist.js"))
+    );
+    if (already && window.EndemicDestChecklist) return;
+    await new Promise((resolve, reject) => {
+      const s = document.createElement("script");
+      s.src = href;
+      s.defer = true;
+      s.onload = () => resolve();
+      s.onerror = () => reject(new Error("destination-checklist.js"));
+      document.head.appendChild(s);
+    });
   }
 
   function renderSitePackages(site, packages, ctx = {}) {
@@ -485,17 +540,27 @@
 
   async function renderCircuitSite() {
     const circuitKey = document.body.dataset.circuit || "southern";
-    let data = await loadCircuitSiteBundle(circuitKey);
-    let site = data?.sites?.find((s) => s.slug === slug);
-    if (!site) {
-      const found = await findCircuitSite(slug);
-      if (!found) {
-        await showDetailPlacehold("not-found");
-        return;
-      }
-      data = found.data;
-      site = found.site;
+    const resolved = await resolveBirdingSite(slug, circuitKey);
+    if (!resolved) {
+      await showDetailPlacehold("not-found");
+      return;
     }
+    const { data, site } = resolved;
+
+    await ensureDestChecklistModule().catch((e) => console.warn(e));
+    let checklist = null;
+    let checklistEnrich = null;
+    if (window.EndemicDestChecklist) {
+      try {
+        checklist = await window.EndemicDestChecklist.getForSite(slug, asset);
+        if (checklist) {
+          checklistEnrich = await window.EndemicDestChecklist.loadEnrichment(asset);
+        }
+      } catch (e) {
+        console.warn(e);
+      }
+    }
+
     const [packages, wildlifeCatalog, siteCatalog] = await Promise.all([
       loadJson("packages.json"),
       loadJson("wildlife-destinations.json").catch(() => []),
@@ -503,6 +568,18 @@
     ]);
     const wDestMap = Object.fromEntries((wildlifeCatalog || []).map((d) => [d.slug, d]));
     const circuitLabel = data.circuitLabel || `${data.circuit} circuit`;
+    const parentSlug = data.parentSlug || `${circuitKey}-destination`;
+    const locationLine = checklist?.location || site.location || "Tanzania";
+    const habitatLine = checklist?.habitat
+      ? `<p class="meta-line">Habitat: ${escapeHtml(checklist.habitat)}</p>`
+      : "";
+    const speciesBlock = checklist
+      ? window.EndemicDestChecklist.renderHighlightsSection(checklist.birdingHighlights)
+      : renderSpeciesSection(site);
+    const checklistBlock = checklist
+      ? window.EndemicDestChecklist.renderChecklistSection(checklist, checklistEnrich, asset)
+      : "";
+
     const siteHero = await heroUrl(site.slug, site.heroImage);
     const heroPosition = site.heroImagePosition
       ? `--page-hero-position: ${site.heroImagePosition};`
@@ -516,7 +593,7 @@
           ${breadcrumbs([
             { href: asset("index.html"), label: "Home" },
             { href: asset("destinations/index.html"), label: "Destinations" },
-            { href: asset(`destinations/${data.parentSlug}/`), label: circuitLabel },
+            { href: asset(`destinations/${parentSlug}/`), label: circuitLabel },
             { label: site.name, current: site.name },
           ])}
           <p class="eyebrow reveal" data-reveal>${escapeHtml(circuitLabel)} · Birding site</p>
@@ -532,25 +609,31 @@
             <section class="detail-section reveal" data-reveal>
               <h2>Overview</h2>
               <p class="lead">${escapeHtml(site.summary)}</p>
-              <p class="meta-line">Location: ${escapeHtml(site.location || "Tanzania")}</p>
+              <p class="meta-line">Location: ${escapeHtml(locationLine)}</p>
+              ${habitatLine}
               ${site.displayNameNote ? `<p class="meta-line">${escapeHtml(site.displayNameNote)}</p>` : ""}
               ${site.generalNotes ? `<p>${escapeHtml(site.generalNotes)}</p>` : ""}
             </section>
-            ${renderSpeciesSection(site)}
+            ${speciesBlock}
             ${renderWhySection(site)}
           </div>
           <aside class="detail-aside reveal" data-reveal>
             <div class="inquiry-panel">
               <p class="eyebrow">Plan a visit</p>
               <h3>${escapeHtml(site.name)}</h3>
-              <a class="btn btn-solid btn-block" href="${asset("plan-your-trip/index.html")}?destination=${encodeURIComponent(data.parentSlug)}&site=${encodeURIComponent(site.slug)}">Plan Your Trip</a>
+              <a class="btn btn-solid btn-block" href="${asset("plan-your-trip/index.html")}?destination=${encodeURIComponent(parentSlug)}&site=${encodeURIComponent(site.slug)}">Plan Your Trip</a>
             </div>
           </aside>
+          ${checklistBlock ? `<div class="detail-grid-span dest-checklist-layout">${checklistBlock}</div>` : ""}
         </div>
       </article>
       ${renderSitePackages(site, packages, { siteCatalog, wDestMap })}`;
 
     finishDetailRender();
+    if (checklist && window.EndemicDestChecklist) {
+      const el = document.querySelector(".dest-checklist");
+      if (el) window.EndemicDestChecklist.mount(el);
+    }
   }
 
   async function renderSouthernSite() {

@@ -860,11 +860,12 @@ body.nav-dropdown-open .hero-push-arrow {
   overscroll-behavior-y: auto;
   touch-action: auto;
   scroll-snap-type: x mandatory;
-  padding-bottom: 0.35rem;
+  padding-bottom: 0.75rem;
   scrollbar-width: none;
   width: 100%;
   max-width: 100%;
   min-width: 0;
+  align-items: stretch;
 }
 
 .dest-row-track--scroll::-webkit-scrollbar {

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1.0.0",
+  "updatedAt": "2026-11-20",
+  "folderConvention": "assets/images/species/{slug}/",
+  "namingHints": [
+    "Folder name must match species slug from content/bird-species-index.json",
+    "Use hero.jpg (or hero.webp) as the main image; additional files become gallery slides",
+    "Run npm run build:bird-index after changing checklists, then npm run scan:bird-media"
+  ],
+  "bySlug": {},
+  "scan": {
+    "foldersScanned": 0,
+    "unlinkedFolders": []
+  }
+}

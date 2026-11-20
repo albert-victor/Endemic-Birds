@@ -321,37 +321,12 @@ body[data-detail="package"] .page-hero-title {
 }
 
 .alt-card-grid--pkg-visits .dest-ind-spot {
-  aspect-ratio: 4 / 3;
-  min-height: 12.5rem;
-  border-radius: 1rem;
   max-width: none;
   width: 100%;
 }
 
-.alt-card-grid--pkg-visits .dest-ind-spot__title {
-  font-family: var(--font-display);
-  font-size: clamp(1rem, 2.25vw, 1.22rem);
-  font-style: normal;
-  font-weight: 400;
-  letter-spacing: -0.02em;
-  text-transform: none;
-  margin-bottom: 0.35rem;
-}
-
-.alt-card-grid--pkg-visits .dest-ind-spot__cap {
-  left: 0.75rem;
-  right: 0.75rem;
-  bottom: 0.65rem;
-}
-
-.alt-card-grid--pkg-visits .dest-ind-spot__cta {
-  font-size: 0.58rem;
-  letter-spacing: 0.12em;
-}
-
-.alt-card-grid--pkg-visits .dest-ind-spot__tag {
-  font-size: 0.58rem;
-  padding: 0.28rem 0.6rem;
+.alt-card-grid--pkg-visits .dest-ind-spot__img {
+  aspect-ratio: 41 / 50;
 }
 
 .pkg-itinerary .itinerary-timeline li h3 {

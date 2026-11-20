@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destination plate cards – demo | Endemic Birds</title>
+    <meta name="robots" content="noindex" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../preview-luxury/fonts/futura-pt.css" />
+    <link rel="stylesheet" href="../../assets/css/styles.css" />
+    <link rel="stylesheet" href="dest-plate-card.css" />
+    <style>
+      :root {
+        --font-display: "Playfair Display", Georgia, "Times New Roman", serif;
+        --font-body: "Futura PT", Figtree, system-ui, sans-serif;
+      }
+    </style>
+  </head>
+  <body class="dest-plate-page">
+    <p class="dest-plate-banner" role="status">
+      <strong>Demo only</strong> – destination cards kama mockup yako (panel nyeupe, tag juu kushoto, moyo juu kulia). Badge
+      (<code>SAFARI</code>, <code>Birding site</code>, <code>Birding · Safari</code>, n.k.) inabadilika kwa
+      <em>destination type</em>. Baada ya kuidhinisha, tutaunganisha kwenye <code>ui-cards.js</code> kwa site nzima.
+    </p>
+
+    <p class="dest-plate-banner" data-plate-error hidden style="border-color: #c44; background: #fff5f5"></p>
+
+    <section class="dest-plate-section" aria-labelledby="plate-wildlife-heading">
+      <h2 id="plate-wildlife-heading">Wildlife parks (kama picha yako)</h2>
+      <p class="dest-plate-lead">Serengeti, Ruaha, Tarangire, Ngorongoro – tag <strong>Safari</strong> au <strong>Conservation area</strong> kwa jina la park.</p>
+      <div class="dest-plate-grid" data-plate-wildlife></div>
+    </section>
+
+    <section class="dest-plate-section" aria-labelledby="plate-birding-heading">
+      <h2 id="plate-birding-heading">Individual birding sites</h2>
+      <p class="dest-plate-lead">Maeneo kutoka southern sites – tag inafuata <code>siteKind</code> (forest, national park, n.k.).</p>
+      <div class="dest-plate-grid" data-plate-birding></div>
+      <p class="dest-plate-legend">Mfano wa logic: <code>destinationTypeLabel(site, "birding")</code></p>
+    </section>
+
+    <section class="dest-plate-section" aria-labelledby="plate-circuit-heading">
+      <h2 id="plate-circuit-heading">Circuit hubs</h2>
+      <p class="dest-plate-lead">Northern / Southern / … – tag inaonyesha birding, safari, au mchanganyiko.</p>
+      <div class="dest-plate-grid" data-plate-circuits></div>
+    </section>
+
+    <script src="dest-plate-card.js" defer></script>
+  </body>
+</html>

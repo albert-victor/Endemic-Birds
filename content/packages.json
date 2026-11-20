@@ -300,8 +300,15 @@
     "liveListingTitle": "10-Day Birdwatching Safari in Northern Tanzania",
     "gallery": [
       "assets/images/packages/10-day-birdwatching-northern/hero.jpg",
-      "assets/images/packages/10-day-birdwatching-northern/gallery-1.jpg"
-    ]
+      "assets/images/packages/10-day-birdwatching-northern/gallery-1.jpg",
+      "assets/images/packages/10-day-birdwatching-northern/gallery-2.jpg"
+    ],
+    "imageSources": {
+      "hero": "https://endemicbirds.co.tz/wp-content/uploads/2025/02/DSC_7793.jpg",
+      "gallery-1": "https://endemicbirds.co.tz/wp-content/uploads/2025/02/DSC_7793-2048x1365.jpg",
+      "gallery-2": "https://endemicbirds.co.tz/wp-content/uploads/2025/01/MG_7322-scaled.jpg",
+      "listingCard": "https://endemicbirds.co.tz/wp-content/uploads/2025/02/DSC_7793-1024x683.jpg"
+    }
   },
   {
     "id": "10-days-chimpanzee-tracking",

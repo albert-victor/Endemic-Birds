@@ -1,0 +1,24 @@
+{
+  "slug": "10-day-birdwatching-northern",
+  "liveUrl": "https://endemicbirds.co.tz/index.php/10-day-birdwatching-safari-in-northern-tanzania/",
+  "fetchedAt": "2026-11-20",
+  "images": [
+    {
+      "role": "hero",
+      "local": "assets/images/packages/10-day-birdwatching-northern/hero.jpg",
+      "source": "https://endemicbirds.co.tz/wp-content/uploads/2025/02/DSC_7793.jpg",
+      "note": "Safaris listing card (DSC_7793) – full size"
+    },
+    {
+      "role": "gallery-1",
+      "local": "assets/images/packages/10-day-birdwatching-northern/gallery-1.jpg",
+      "source": "https://endemicbirds.co.tz/wp-content/uploads/2025/02/DSC_7793-2048x1365.jpg"
+    },
+    {
+      "role": "gallery-2",
+      "local": "assets/images/packages/10-day-birdwatching-northern/gallery-2.jpg",
+      "source": "https://endemicbirds.co.tz/wp-content/uploads/2025/01/MG_7322-scaled.jpg",
+      "note": "Package detail page breadcrumb / header wash"
+    }
+  ]
+}

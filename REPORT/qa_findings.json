@@ -1,0 +1,61 @@
+{
+  "source": "Bird_Checklists_27_Areas (1).xlsx",
+  "warnings": [
+    {
+      "severity": "info",
+      "destination": "Arusha National Park",
+      "issue": "Index highlight text not exactly matched to a species common name",
+      "values": [
+        "Momella flamingos"
+      ],
+      "suggestedAction": "Keep as source highlight text, not a verified species record"
+    },
+    {
+      "severity": "info",
+      "destination": "Gombe Stream National Park",
+      "issue": "Index highlight text not exactly matched to a species common name",
+      "values": [
+        "forest and lakeshore birds"
+      ],
+      "suggestedAction": "Keep as source highlight text, not a verified species record"
+    },
+    {
+      "severity": "info",
+      "destination": "Lake Manyara National Park",
+      "issue": "Index highlight text not exactly matched to a species common name",
+      "values": [
+        "flamingos and pelicans"
+      ],
+      "suggestedAction": "Keep as source highlight text, not a verified species record"
+    },
+    {
+      "severity": "high",
+      "destination": "Nyerere National Park (former Selous Game Reserve, north)",
+      "commonName": "Scaly-Crested Sunbird",
+      "issue": "Scientific name missing in source worksheet",
+      "suggestedAction": "Do not invent; display common name only until verified"
+    },
+    {
+      "severity": "high",
+      "destination": "Nyerere National Park (former Selous Game Reserve, north)",
+      "commonName": "Slender Bee-eater",
+      "issue": "Scientific name missing in source worksheet",
+      "suggestedAction": "Do not invent; display common name only until verified"
+    },
+    {
+      "severity": "info",
+      "destination": "Rubondo Island National Park",
+      "issue": "Index highlight text not exactly matched to a species common name",
+      "values": [
+        "African Fish-Eagle (very dense)",
+        "waterbirds"
+      ],
+      "suggestedAction": "Keep as source highlight text, not a verified species record"
+    }
+  ],
+  "summary": {
+    "totalWarnings": 6,
+    "missingScientificNames": 2,
+    "unmatchedHighlightGroups": 4
+  }
+}

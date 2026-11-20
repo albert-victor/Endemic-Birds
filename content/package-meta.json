@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T13:46:05.932Z",
+  "generatedAt": "2026-11-20T11:07:12.244Z",
   "notes": "Safari interest, intensity, comfort and accommodation are inferred conservatively from package copy. Empty values mean do not filter-match on that axis. Re-run: npm run build:package-meta",
   "packages": {
     "10-day-birding-northern-eastern": {

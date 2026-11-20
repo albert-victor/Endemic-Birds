@@ -264,7 +264,7 @@
       href: asset(`destinations/${d.slug}/`),
       imgSrc: asset(thumbPath),
       title: destDisplayName(d.name),
-      subtitle: d.circuit ? `${d.circuit} circuit` : "Tanzania",
+      scriptLine: destSpotScriptLine(d),
       tag: (d.experienceTypes || []).includes("wildlife") ? "Safari" : "Birding",
     });
   }
@@ -331,8 +331,8 @@
       imgSrc,
       mediaFallback: item.image || slug,
       title: item.name,
-      subtitle: options.subtitle || (wildlife ? "Wildlife Tanzania" : "Birding Tanzania"),
-      tag: wildlife ? "Safari" : "Birding",
+      scriptLine: destSpotScriptLine({ ...item, slug }),
+      tag: wildlife ? wildlifeDestTypeTag({ name: item.name, slug }) : "Birding",
       imgLoading: "eager",
       revealIndex: options.revealIndex,
     });
@@ -444,22 +444,80 @@
       .join("")}</div>`;
   }
 
-  const SPOT_LIKE_SVG = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5l-1.1-1C5.14 13.24 2 10.28 2 6.75 2 4.13 4.13 2 6.75 2c1.57 0 3.07.74 4.01 1.92L12 5.5l1.24-1.58C14.18 2.74 15.68 2 17.25 2 19.87 2 22 4.13 22 6.75c0 3.53-3.14 6.49-8.9 12.75L12 20.5z"/></svg>`;
+  const SPOT_LIKE_SVG = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.1 21.35l-1.1-1.02C5.14 15.24 2 12.36 2 8.98 2 6.02 4.24 3.78 7.2 3.78c1.68 0 3.29.79 4.3 2.05.42.52 1 .52 1.42 0 1.01-1.26 2.62-2.05 4.3-2.05 2.96 0 5.2 2.24 5.2 5.2 0 3.38-3.14 6.26-8.9 11.35l-1.32 1.22z" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linejoin="round"/></svg>`;
 
-  /** Stable 3–5 star display per destination (seeded from slug/title). */
-  function destSpotStarRating(seed) {
-    const s = String(seed || "dest");
-    let h = 2166136261;
-    for (let i = 0; i < s.length; i++) {
-      h ^= s.charCodeAt(i);
-      h = Math.imul(h, 16777619);
+  const DEST_SPOT_SCRIPTS = {
+    "serengeti-national-park": "The legendary plains of the Great Migration",
+    "ruaha-national-park": "A remote wilderness of rivers and rugged beauty",
+    "tarangire-national-park": "Land of giants and ancient baobabs",
+    "ngorongoro-conservation-area": "A remarkable ecosystem within a volcanic crater",
+  };
+
+  const BIRDING_SPOT_KIND_TAGS = {
+    "national-park": "National park",
+    "forest-reserve": "Forest reserve",
+    "conservation-area": "Conservation area",
+    forest: "Birding site",
+    mountain: "Mountain site",
+    island: "Island site",
+  };
+
+  function trimSpotSubdetail(text, maxLen = 54) {
+    let t = String(text || "").replace(/\s+/g, " ").trim();
+    if (!t) return "";
+    const clause = t.split(/\s[–—]\s/)[0]?.trim();
+    if (clause && clause.length >= 16 && clause.length < t.length) t = clause;
+    const sentence = t.split(/[.!?]/)[0]?.trim();
+    if (sentence && sentence.length >= 14 && sentence.length < t.length * 0.9) t = sentence;
+    if (t.length <= maxLen) return t;
+    const slice = t.slice(0, maxLen);
+    const lastSpace = slice.lastIndexOf(" ");
+    const cut = lastSpace > 22 ? slice.slice(0, lastSpace) : slice.trim();
+    return `${cut}…`;
+  }
+
+  function destSpotScriptLine(data) {
+    if (!data) return "";
+    const slug = data.slug;
+    if (slug && DEST_SPOT_SCRIPTS[slug]) return trimSpotSubdetail(DEST_SPOT_SCRIPTS[slug], 58);
+    const highlight = data.wildlifeHighlights?.[0] || data.birdingNotes;
+    if (highlight) return trimSpotSubdetail(highlight);
+    const summary = String(data.summary || data.overview || "").replace(/\s+/g, " ").trim();
+    if (summary) return trimSpotSubdetail(summary);
+    return "";
+  }
+
+  function wildlifeDestTypeTag(d) {
+    const name = String(d?.name || "");
+    if (/conservation area/i.test(name)) return "Safari";
+    if (/national park/i.test(name)) return "Safari";
+    return "Safari";
+  }
+
+  function birdingDestTypeTag(site) {
+    if (site?.siteKind && BIRDING_SPOT_KIND_TAGS[site.siteKind]) return BIRDING_SPOT_KIND_TAGS[site.siteKind];
+    return "Birding";
+  }
+
+  function formatDestSpotTitleHtml(name) {
+    const clean = String(name || "")
+      .replace(/\s+Destination$/i, "")
+      .trim();
+    const suffixes = [
+      "Conservation Area",
+      "National Park",
+      "Game Reserve",
+      "Mountains",
+      "Mountain",
+    ];
+    for (const suffix of suffixes) {
+      const re = new RegExp(`^(.+?)\\s+(${suffix.replace(/\s/g, "\\s")})$`, "i");
+      const m = clean.match(re);
+      if (m) {
+        return `${escapeHtml(m[1].trim().toUpperCase())}<br class="dest-ind-spot__title-br" aria-hidden="true" />${escapeHtml(m[2].trim().toUpperCase())}`;
+      }
     }
-    const stars = 3 + ((h >>> 0) % 3);
-    return {
-      stars,
-      glyphs: "★".repeat(stars),
-      label: `${stars} out of 5 stars`,
-    };
+    return escapeHtml(clean.toUpperCase());
   }
 
   function revealIndexStyle(revealIndex) {
@@ -470,23 +528,23 @@
     href,
     imgSrc,
     title,
-    subtitle,
     tag,
     imgLoading = "eager",
     mediaFallback = "",
     revealIndex,
   }) {
-    const rating = destSpotStarRating(mediaFallback || title || href);
     const fallbackAttr = mediaFallback ? ` data-media-fallback="${escapeHtml(mediaFallback)}"` : "";
     return `<a class="dest-ind-spot"${revealIndexStyle(revealIndex)} href="${href}">
-      <div class="dest-ind-spot__img card-media-wrap"${fallbackAttr}>${cardMediaMarkup(imgSrc, "", imgLoading)}<span class="dest-ind-spot__noise" aria-hidden="true"></span></div>
-      <div class="dest-ind-spot__shade" aria-hidden="true"></div>
-      <span class="dest-ind-spot__tag">${escapeHtml(tag)}</span>
-      <span class="dest-ind-spot__like" aria-hidden="true">${SPOT_LIKE_SVG}</span>
-      <div class="dest-ind-spot__cap">
-        <span class="dest-ind-spot__stars" aria-label="${escapeHtml(rating.label)}">${rating.glyphs}</span>
-        <h3 class="dest-ind-spot__title">${escapeHtml(title)}</h3>
-        <span class="dest-ind-spot__cta">Explore destination <span aria-hidden="true">→</span></span>
+      <div class="dest-ind-spot__frame">
+        <div class="dest-ind-spot__photo">
+          <div class="dest-ind-spot__img card-media-wrap"${fallbackAttr}>${cardMediaMarkup(imgSrc, "", imgLoading)}</div>
+          <span class="dest-ind-spot__tag">${escapeHtml(tag)}</span>
+          <span class="dest-ind-spot__like" aria-hidden="true">${SPOT_LIKE_SVG}</span>
+          <div class="dest-ind-spot__cap">
+            <h3 class="dest-ind-spot__title">${formatDestSpotTitleHtml(title)}</h3>
+            <span class="dest-ind-spot__cta">Explore destination <span aria-hidden="true">→</span></span>
+          </div>
+        </div>
       </div>
     </a>`;
   }
@@ -520,8 +578,8 @@
       href,
       imgSrc: asset(hero),
       title: site.name,
-      subtitle: birdingSiteSpotSubtitle(site, circuit),
-      tag: "Birding",
+      scriptLine: destSpotScriptLine(site),
+      tag: birdingDestTypeTag(site),
       revealIndex,
     });
   }
@@ -539,8 +597,8 @@
       href: asset(`wildlife/destinations/${d.slug}/`),
       imgSrc: asset(d.heroImage),
       title: d.name,
-      subtitle: d.circuit ? `${d.circuit} circuit` : "Wildlife Tanzania",
-      tag: "Safari",
+      scriptLine: destSpotScriptLine(d),
+      tag: wildlifeDestTypeTag(d),
       revealIndex,
     });
   }
@@ -861,6 +919,7 @@
     renderGroupPackageCard,
     renderGroupPackageGrid,
     renderIndividualDestSpot,
+    destSpotScriptLine,
     renderBirdingSiteSpot,
     renderBirdingDestinationsGrid,
     birdingSiteSpotSubtitle,

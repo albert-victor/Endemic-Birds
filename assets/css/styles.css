@@ -2211,7 +2211,6 @@ body.site-search-open {
 }
 
 .reveal-stagger.dest-row-track--scroll > .scroll-reveal-slot.reveal-item:not(.is-visible) .dest-ind-spot__img,
-.reveal-stagger.dest-row-track--scroll > .scroll-reveal-slot.reveal-item:not(.is-visible) .dest-ind-spot__cap,
 .reveal-stagger.dest-row-track--scroll > .scroll-reveal-slot.reveal-item:not(.is-visible) .dest-ind-spot__tag,
 .reveal-stagger.dest-row-track--scroll > .scroll-reveal-slot.reveal-item:not(.is-visible) .dest-ind-spot__like,
 .reveal-stagger.carousel-track > .scroll-reveal-slot.reveal-item:not(.is-visible) .pkg-ind-sheet__frame,
@@ -2220,8 +2219,17 @@ body.site-search-open {
   transform: translate3d(0, 36px, 0);
 }
 
+.reveal-stagger.dest-row-track--scroll > .scroll-reveal-slot.reveal-item:not(.is-visible) .dest-ind-spot__cap {
+  opacity: 0;
+  transform: none;
+}
+
+.reveal-stagger.carousel-track > .scroll-reveal-slot.reveal-item:not(.is-visible) .pkg-ind-sheet__frame,
+.reveal-stagger.carousel-track > .scroll-reveal-slot.reveal-item:not(.is-visible) .pkg-ind-sheet__body {
+  transform: none;
+}
+
 .dest-ind-spot__img,
-.dest-ind-spot__cap,
 .dest-ind-spot__tag,
 .dest-ind-spot__like,
 .pkg-ind-sheet__frame,
@@ -2231,8 +2239,11 @@ body.site-search-open {
     transform var(--reveal-fade-duration) var(--reveal-ease);
 }
 
+.dest-ind-spot__cap {
+  transition: opacity var(--reveal-fade-duration) var(--reveal-ease);
+}
+
 .reveal-stagger.dest-row-track--scroll > .scroll-reveal-slot.reveal-item.is-visible .dest-ind-spot__img,
-.reveal-stagger.dest-row-track--scroll > .scroll-reveal-slot.reveal-item.is-visible .dest-ind-spot__cap,
 .reveal-stagger.dest-row-track--scroll > .scroll-reveal-slot.reveal-item.is-visible .dest-ind-spot__tag,
 .reveal-stagger.dest-row-track--scroll > .scroll-reveal-slot.reveal-item.is-visible .dest-ind-spot__like,
 .reveal-stagger.carousel-track > .scroll-reveal-slot.reveal-item.is-visible .pkg-ind-sheet__frame,
@@ -2240,6 +2251,17 @@ body.site-search-open {
   opacity: 1;
   transform: translate3d(0, 0, 0);
   transition-delay: calc(var(--reveal-i, 0) * var(--reveal-stagger-step));
+}
+
+.reveal-stagger.dest-row-track--scroll > .scroll-reveal-slot.reveal-item.is-visible .dest-ind-spot__cap {
+  opacity: 1;
+  transform: none;
+  transition-delay: calc(var(--reveal-i, 0) * var(--reveal-stagger-step));
+}
+
+.reveal-stagger.carousel-track > .scroll-reveal-slot.reveal-item.is-visible .pkg-ind-sheet__frame,
+.reveal-stagger.carousel-track > .scroll-reveal-slot.reveal-item.is-visible .pkg-ind-sheet__body {
+  transform: none;
 }
 
 .site-footer .footer-grid > .reveal-item.is-visible,
@@ -5060,7 +5082,8 @@ a.nav-drawer-tile[aria-current="page"],
     grid-template-columns: repeat(2, minmax(0, 1fr));
     justify-content: stretch;
     justify-items: stretch;
-    gap: 0.7rem;
+    align-items: start;
+    gap: 1.4rem 0.65rem;
     width: 100%;
     margin-top: 0.35rem;
     padding-inline: 0;

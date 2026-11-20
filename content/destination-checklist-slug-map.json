@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "1.0.0",
+  "description": "Maps REPORT destination ids to live site slugs under destinations/",
+  "byReportId": {
+    "area-01": "amani-nature-reserve",
+    "area-02": "arusha-national-park-birding",
+    "area-03": "burigi-chato-national-park",
+    "area-04": "gombe-stream-national-park",
+    "area-05": "katavi-national-park",
+    "area-06": "kilombero-plains",
+    "area-07": "kitulo-national-park",
+    "area-08": "lake-manyara-birding",
+    "area-09": "mahale-mountains-national-park",
+    "area-10": "mikumi-national-park",
+    "area-11": "minziro-forest-reserve",
+    "area-12": "mount-rungwe",
+    "area-13": "mufindi-forest",
+    "area-14": "ngorongoro-birding",
+    "area-15": "nyerere-national-park",
+    "area-16": "pemba-island-birding",
+    "area-17": "rondo-plateau",
+    "area-18": "ruaha-national-park",
+    "area-19": "rubeho-mountains",
+    "area-20": "rubondo-island-national-park",
+    "area-21": "serengeti-national-park",
+    "area-22": "south-pare-chome",
+    "area-23": "tarangire-national-park",
+    "area-24": "udzungwa-mountains",
+    "area-25": "ukaguru-mountains",
+    "area-26": "uluti-mountain",
+    "area-27": "west-usambara-magamba"
+  }
+}

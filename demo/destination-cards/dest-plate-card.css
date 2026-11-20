@@ -1,0 +1,239 @@
+/* Demo – destination plate cards (overlapping cream panel). Not wired to production yet. */
+
+:root {
+  --plate-ink: #3c3935;
+  --plate-paper: #f7f4ed;
+  --plate-page: #ebe6dc;
+  --plate-radius: 1.35rem;
+  --plate-panel-radius: 1.05rem;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.dest-plate-page {
+  min-height: 100vh;
+  margin: 0;
+  padding: 2.5rem 1.25rem 4rem;
+  background: var(--plate-page);
+  color: var(--plate-ink);
+  font-family: var(--font-body, system-ui, sans-serif);
+}
+
+.dest-plate-banner {
+  max-width: 42rem;
+  margin: 0 auto 2.25rem;
+  padding: 1rem 1.15rem;
+  border-radius: 0.85rem;
+  border: 1px solid rgba(60, 57, 53, 0.14);
+  background: rgba(255, 255, 255, 0.55);
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.dest-plate-banner strong {
+  font-weight: 700;
+}
+
+.dest-plate-section {
+  max-width: 1180px;
+  margin: 0 auto 3rem;
+}
+
+.dest-plate-section h2 {
+  margin: 0 0 0.35rem;
+  font-family: var(--font-display, Georgia, serif);
+  font-size: clamp(1.35rem, 3vw, 1.75rem);
+  font-weight: 400;
+}
+
+.dest-plate-section .dest-plate-lead {
+  margin: 0 0 1.35rem;
+  font-size: 0.88rem;
+  color: rgba(60, 57, 53, 0.72);
+  max-width: 36rem;
+}
+
+.dest-plate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 252px), 1fr));
+  gap: clamp(1rem, 2.5vw, 1.5rem);
+}
+
+.dest-plate-card {
+  position: relative;
+  display: block;
+  aspect-ratio: 3 / 4.25;
+  border-radius: var(--plate-radius);
+  overflow: hidden;
+  text-decoration: none;
+  color: var(--plate-ink);
+  background: #d8d2c8;
+  box-shadow: 0 14px 36px rgba(44, 36, 28, 0.1);
+  transition:
+    transform 0.45s var(--ease-out),
+    box-shadow 0.45s var(--ease-out);
+}
+
+.dest-plate-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 44px rgba(44, 36, 28, 0.14);
+}
+
+.dest-plate-card__media {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.dest-plate-card__media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transform: scale(1);
+  transition: transform 0.85s var(--ease-out);
+}
+
+.dest-plate-card:hover .dest-plate-card__media img {
+  transform: scale(1.04);
+}
+
+.dest-plate-card__tag {
+  position: absolute;
+  top: 0.72rem;
+  left: 0.72rem;
+  z-index: 3;
+  padding: 0.32rem 0.62rem;
+  font-size: 0.54rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--plate-ink);
+  background: rgba(255, 255, 255, 0.94);
+  border-radius: 999px;
+  box-shadow: 0 2px 10px rgba(44, 36, 28, 0.08);
+}
+
+.dest-plate-card__like {
+  position: absolute;
+  top: 0.62rem;
+  right: 0.68rem;
+  z-index: 3;
+  display: grid;
+  place-items: center;
+  width: 2.15rem;
+  height: 2.15rem;
+  padding: 0;
+  border: none;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(8px);
+  color: rgba(255, 255, 255, 0.95);
+  pointer-events: none;
+}
+
+.dest-plate-card__like svg {
+  width: 1.2rem;
+  height: 1.2rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.65;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.35));
+}
+
+.dest-plate-card__panel {
+  position: absolute;
+  left: 0.72rem;
+  right: 0.72rem;
+  bottom: 0.72rem;
+  z-index: 2;
+  padding: 0.95rem 1rem 1.05rem;
+  background: var(--plate-paper);
+  border-radius: var(--plate-panel-radius);
+  box-shadow: 0 12px 32px rgba(44, 36, 28, 0.14);
+}
+
+.dest-plate-card__script {
+  margin: 0 0 0.55rem;
+  font-family: var(--font-display, Georgia, serif);
+  font-size: clamp(0.92rem, 2.2vw, 1.02rem);
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.38;
+  color: var(--plate-ink);
+}
+
+.dest-plate-card__name {
+  margin: 0 0 0.65rem;
+  font-family: var(--font-body, system-ui, sans-serif);
+  font-size: clamp(0.72rem, 1.8vw, 0.8rem);
+  font-weight: 800;
+  line-height: 1.3;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.dest-plate-card__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.54rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--plate-ink);
+}
+
+.dest-plate-card__cta span {
+  display: inline-block;
+  transition: transform 0.35s var(--ease-out);
+}
+
+.dest-plate-card:hover .dest-plate-card__cta span {
+  transform: translateX(4px);
+}
+
+.dest-plate-legend {
+  margin-top: 1rem;
+  font-size: 0.78rem;
+  color: rgba(60, 57, 53, 0.65);
+}
+
+.dest-plate-legend code {
+  font-size: 0.76rem;
+}
+
+@media (max-width: 599px) {
+  .dest-plate-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+  }
+
+  .dest-plate-card__panel {
+    left: 0.55rem;
+    right: 0.55rem;
+    bottom: 0.55rem;
+    padding: 0.75rem 0.8rem 0.85rem;
+  }
+
+  .dest-plate-card__script {
+    font-size: 0.82rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .dest-plate-card__name {
+    font-size: 0.62rem;
+    margin-bottom: 0.45rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dest-plate-card,
+  .dest-plate-card__media img,
+  .dest-plate-card__cta span {
+    transition: none !important;
+  }
+  .dest-plate-card:hover {
+    transform: none;
+  }
+}

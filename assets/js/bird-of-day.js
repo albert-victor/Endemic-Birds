@@ -27,19 +27,23 @@
     return pool[idx];
   }
 
-  Promise.all([
-    fetch(asset("content/bird-of-day.json")).then((r) => r.json()),
-    fetch(asset("content/special-birds.json")).then((r) => r.json()),
-  ])
-    .then(([botd, birdsData]) => {
+  function whenSpeciesReady() {
+    if (window.EndemicSpecies?.load) return window.EndemicSpecies.load();
+    return new Promise((resolve) => {
+      document.addEventListener("endemic:species-ready", () => resolve(), { once: true });
+    });
+  }
+
+  Promise.all([fetch(asset("content/bird-of-day.json")).then((r) => r.json()), whenSpeciesReady()])
+    .then(([botd]) => {
+      const birdsData = window.__SPECIAL_BIRDS__ || { species: [], categoryLabels: {} };
       const labels = birdsData.categoryLabels || {};
       const species = birdsData.species || [];
-      const bySlug = Object.fromEntries(species.map((s) => [s.slug, s]));
       const slug = pickSlug(botd, species);
-      const sp = bySlug[slug];
+      const sp = window.EndemicSpecies?.get?.(slug);
       if (!sp) return;
 
-      const images = sp.images || [];
+      const images = (sp.images || []).filter((im) => im.imageRole !== "habitat");
       const cat = labels[sp.category] || sp.category;
       const primary = images[0];
       const extra = images.slice(1);
